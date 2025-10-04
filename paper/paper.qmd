@@ -1,0 +1,89 @@
+---
+title: "Sensitivity to within-experiment statistics: A case from Turkish agreement attraction"
+subtitle: "Within-experiment statistics in agreement attraction"
+author:
+  - name: Utku Turk
+    email: utkuturk@umd.edu
+    affiliations: 
+        - id: umd
+          name: University of Maryland, College Park
+          department: Linguistics
+          address: Marie Mount Hall
+          city: College Park
+          state: MD
+          postal-code: 20742
+    attributes:
+        corresponding: true
+    # note: This is the first author footnote.
+abstract: |
+  This is the abstract. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum augue turpis, dictum non malesuada a, volutpat eget velit. Nam placerat turpis purus, eu tristique ex tincidunt et. Mauris sed augue eget turpis ultrices tincidunt. Sed et mi in leo porta egestas. Aliquam non laoreet velit. Nunc quis ex vitae eros aliquet auctor nec ac libero. Duis laoreet sapien eu mi luctus, in bibendum leo molestie. Sed hendrerit diam diam, ac dapibus nisl volutpat vitae. Aliquam bibendum varius libero, eu efficitur justo rutrum at. Sed at tempus elit.
+keywords: 
+  - keyword1
+  - keyword2
+date: last-modified
+bibliography: bibliography.bib
+format:
+  elsevier-pdf:
+    keep-tex: true
+    journal:
+      name: Cognition
+      formatting: preprint
+      # model: 3p # Don't set a model with preprint
+      cite-style: authoryear
+---
+
+
+# Introduction 
+- Background: Agreement attraction refers to cases where verbs incorrectly agree with a nearby noun rather than the true subject, producing “grammaticality illusions” in both production and comprehension tasks.
+- Cross-linguistic picture: Attraction magnitudes vary widely across tasks and exposure contexts, sometimes depending on participants’ expectations or response biases within an experiment (e.g., Hammerly et al., 2019; Laurinavichyute & von der Malsburg, 2023).
+- Turkish as a test case: Turkish number agreement offers a unique window into this issue because the plural morpheme –lAr is homophonous across nouns and verbs. This overlap allows us to test whether attraction effects stem from surface-form similarity or abstract morphosyntactic features.
+- Current motivation: In many experiments, the distribution of conditions may itself shape how participants respond—when certain types of ungrammatical sentences are more frequent, people may adjust their acceptance patterns. Such within-experiment statistical sensitivity could inflate or suppress apparent attraction effects.
+- Goals of this study:
+	1.	Form-driven test: Determine whether the presence of a plural morpheme on a verbal attractor (sharing surface form with nominal plurals) triggers attraction.
+	2.	Statistical-sensitivity test: Examine whether attraction magnitude changes when different attractor types (nominal vs. verbal) co-occur in the same experiment.
+- Overview: Two speeded acceptability-judgment experiments address these questions using Bayesian hierarchical modeling of response patterns.
+
+# Experiment 1: Testing Form-Driven Processing 
+- Goal: determine if surface plural forms (verbal -lAr) elicit illusionary agreement.
+- Participants: 80 Turkish speakers (Boğaziçi undergraduates).
+- Design: 2 × 2 (Grammaticality × Attractor Number).
+- Materials: relative-clause verbs as attractors; same surface morphology as nominal plurals.
+- Procedure: speeded acceptability judgments, 1500 ms deadline.
+- Analysis: Bayesian probit GLM (brms); random intercepts/slopes by subject/item.
+- Results:
+  - High filler accuracy (> .9).
+  - No difference in ungrammatical sentences between plural vs singular attractors.
+  - Posterior coefficients near 0; 95 % CIs within ROPE.
+- Discussion:
+  - No evidence for form-driven guessing.
+  - Participants rely on abstract number features, not phonological similarity.
+
+# Experiment 2: Testing Within-Experiment Statistical Sensitivity 
+- Goal: test whether attraction changes when both attractor types occur in one experiment.
+- Participants: 95 Turkish speakers.
+- Design: 2 × 2 × 2 (Grammaticality × Attractor Number × Attractor Type [nominal vs verbal]).
+- Procedure & analysis: same as Experiment 1.
+- Results:
+  - Attraction replicated for nominal attractors (Δ ≈ 0.07).
+  - Verbal attractors again showed null effect.
+  - Global decline in yes-responses relative to earlier studies → participants became more conservative.
+- Discussion:
+  - Exposure to verbal conditions reduced attraction magnitude overall.
+  - Indicates participants adapt to statistical properties of the task.
+  - Aligns with learning-based cue-weighting accounts (Haskell et al. 2010).
+
+# General Discussion 
+- Synthesis:
+  - No evidence for surface-form matching; effects are feature-based.
+  - Attraction magnitude changes with condition distribution → adaptive tuning.
+- Interpretation:
+  - Supports an adaptive parser sensitive to within-experiment statistics.
+  - Challenges “shallow” or “good-enough” accounts that attribute attraction to phonological overlap.
+- Broader implication:
+  - Agreement processing is flexible and probabilistic; illusions arise from learned cue validity.
+- Limitations:
+  - Syntactic depth asymmetry (verbal attractors more embedded).
+  - Need future designs equating structure (e.g., embedded-object attractors).
+- Conclusion:
+  - Turkish attraction effects arise from abstract feature retrieval not surface level shallow form-matching.  
+  - The evaluation of abstract features are modulated by distributional learning within the experiment. 
