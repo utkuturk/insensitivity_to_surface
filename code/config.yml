@@ -1,0 +1,125 @@
+refit:  "never"
+##########################
+########## EXP1 ##########
+exp1:
+  data: resources/raw/no_syncretism/results/results
+  freqData: resources/supp/frequencies_exp1_and_lago.xlsx
+  thresholds:
+    accuracy: 0.25
+    rt_below: 200
+    rt_upper: 4999
+  out:
+    dataPrep: resources/exp1_data.RData
+    plot:     resources/exp1_plots.rds
+    models:   resources/exp1_models.rds
+    merged:   resources/exp1_merged_df.rds
+  model:
+    path:     resources/models/
+    chains:   4
+    cores:    4
+    iter:     4000
+    warmup:   2000
+
+##########################
+########## EXP2 ##########
+exp2:
+  data: resources/raw/form_matching/results/results
+  thresholds:
+    accuracy: 0.25
+    rt_below: 200
+    rt_upper: 4999
+  out:
+    dataPrep: resources/exp2_data.RData
+    plot:     resources/exp2_plots.rds
+    models:   resources/exp2_models.rds
+  model:
+    path:     resources/models/
+    chains:   4
+    cores:    4
+    iter:     4000
+    warmup:   2000
+
+
+##########################
+########## EXP2 ##########
+exp2b:
+  data: resources/raw/form_matching_8cond/results/results
+  thresholds:
+    accuracy: 0.25
+    rt_below: 200
+    rt_upper: 4999
+  out:
+    dataPrep: resources/exp2b_data.RData
+    plot:     resources/exp2b_plots.rds
+    models:   resources/exp2b_models.rds
+  model:
+    path:     resources/models/
+    chains:   4
+    cores:    4
+    iter:     4000
+    warmup:   2000
+##########################
+########## EXP3 ##########
+exp3:
+  gramData: resources/raw/hsd_replication_gram/results/results
+  ungramData: resources/raw/hsd_replication_ungram/results/results
+  pilotData: resources/raw/hsd_replication_pilot/results/results
+  thresholds:
+    accuracy: 0.25
+    rt_below: 200
+    rt_upper: 4999
+  out:
+    dataPrep: resources/exp3_data.RData
+    plot:     resources/exp3_plots.rds
+    models:   resources/exp3_models.rds
+  model:
+    path:     resources/models/
+    chains:   4
+    cores:    4
+    iter:     4000
+    warmup:   2000
+
+##########################
+########## EXP4 ##########
+exp4:
+  data: resources/raw/honorific/results/results.xlsx
+  datacsv: resources/raw/honorific/results/results.csv
+  thresholds:
+    accuracy: 0.25
+    rt_below: 200
+    rt_upper: 4999
+  out:
+    data:     resources/exp4_data.RData
+    plot:     resources/exp4_plots.rds
+    models:   resources/exp4_models.rds
+  model:
+    path:     resources/models/
+    chains:   4
+    cores:    4
+    iter:     4000
+    warmup:   2000
+
+
+##########################
+
+##################
+### LIT REVIEW ###
+litRev:
+  hammerly1: resources/raw/hsd2019/experiment1-all.csv
+  hammerly3: resources/raw/hsd2019/experiment3-all.csv
+  lago2019: resources/raw/lago2019/Lago_data.csv
+
+
+
+
+#######################
+### RENDER DETAILS ####
+writing:    /writing/
+main:       main.Rnw
+pdfEng:     xelatex
+fnameKnitr: main-knitr.Rnw
+output:     main.pdf 
+openPdf:    FALSE
+leaf:       TRUE
+leafLink:   ~/Dropbox/Apps/Overleaf/ma_thesis/
+#######################
