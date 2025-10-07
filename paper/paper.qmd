@@ -16,7 +16,7 @@ author:
         corresponding: true
     # note: This is the first author footnote.
 abstract: |
-  This is the abstract. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum augue turpis, dictum non malesuada a, volutpat eget velit. Nam placerat turpis purus, eu tristique ex tincidunt et. Mauris sed augue eget turpis ultrices tincidunt. Sed et mi in leo porta egestas. Aliquam non laoreet velit. Nunc quis ex vitae eros aliquet auctor nec ac libero. Duis laoreet sapien eu mi luctus, in bibendum leo molestie. Sed hendrerit diam diam, ac dapibus nisl volutpat vitae. Aliquam bibendum varius libero, eu efficitur justo rutrum at. Sed at tempus elit.
+  Surface level does not affect it, but within-experiment statistics effect the findings.
 keywords: 
   - keyword1
   - keyword2
@@ -28,20 +28,77 @@ format:
     journal:
       name: Cognition
       formatting: preprint
-      # model: 3p # Don't set a model with preprint
+      # model: 5p # Don't set a model with preprint
       cite-style: authoryear
 ---
 
 
 # Introduction 
-- Background: Agreement attraction refers to cases where verbs incorrectly agree with a nearby noun rather than the true subject, producing “grammaticality illusions” in both production and comprehension tasks.
-- Cross-linguistic picture: Attraction magnitudes vary widely across tasks and exposure contexts, sometimes depending on participants’ expectations or response biases within an experiment (e.g., Hammerly et al., 2019; Laurinavichyute & von der Malsburg, 2023).
-- Turkish as a test case: Turkish number agreement offers a unique window into this issue because the plural morpheme –lAr is homophonous across nouns and verbs. This overlap allows us to test whether attraction effects stem from surface-form similarity or abstract morphosyntactic features.
-- Current motivation: In many experiments, the distribution of conditions may itself shape how participants respond—when certain types of ungrammatical sentences are more frequent, people may adjust their acceptance patterns. Such within-experiment statistical sensitivity could inflate or suppress apparent attraction effects.
-- Goals of this study:
-	1.	Form-driven test: Determine whether the presence of a plural morpheme on a verbal attractor (sharing surface form with nominal plurals) triggers attraction.
-	2.	Statistical-sensitivity test: Examine whether attraction magnitude changes when different attractor types (nominal vs. verbal) co-occur in the same experiment.
-- Overview: Two speeded acceptability-judgment experiments address these questions using Bayesian hierarchical modeling of response patterns.
+
+Speakers often rely on additional sources of information when processing sentences, including distributional expectations about forms and tasks, as well as the overall composition of an experimental session (e.g., the ratio of fillers to critical items). Recent work has demonstrated that such task-specific factors can substantially modulate reading and judgment behavior (e.g., Malsburg, Logacev; Hammerly et al.; Arehalli). One line of research has used the agreement-attraction phenomenon to probe the heuristics that influence sentence processing. Agreement attraction refers to cases in which a verb erroneously agrees with a nearby noun rather than the true subject, giving rise to so-called grammaticality illusions in both production and comprehension.
+
+1. *The key to the cabinets are rusty.
+
+Recent experiments show that even small changes in task expectations can alter attraction patterns. For example, Malsburg and colleagues found that varying the practice structure and task demands (reading vs. judgment) affected reading times at the verb in sentences such as the following: 
+
+2. The singer that the actor openly admires apparently received broad international recognition.
+3. The singers that the actor openly admires apparently received broad international recognition.
+
+In a self-paced reading task, when participants answered a comprehension question after each trial, reading times at the verb did not differ between (2) and (3). However, when participants were asked to judge grammaticality instead, they spent more time reading the verb admires in (3), suggesting that processing heuristics depend on the expected output of the task.
+
+A related set of findings comes from work by Slioussar, who showed that surface form can sometimes override abstract features in Russian. Exploiting the syncretism between singular genitives and nominative plurals—a pattern absent in plural genitives—she found that participants made more errors and showed longer reading times in sentences like (4) than in (5). She argued that, rather than accessing abstract case features, readers relied on surface-level cues that were easier to retrieve.
+
+4. [Example sentence with syncretic form …]
+5. [Example sentence with non-syncretic form …]
+
+Building on these observations, we utilize Turkish as a testing ground to examine how surface-form overlap influences agreement processing and whether exposure to different kinds of distractors modulates attraction. Turkish provides an especially informative case because both nominal and verbal plural markers are realized with the same morpheme, –lAr, yet only nominal plurals bear the syntactic features required for agreement. This allows us to ask whether participants rely on surface-form similarity or on abstract feature representations when evaluating agreement.
+
+In our first experiment, we test whether plural marking on a verbal distractor—which is morphologically identical but syntactically irrelevant—can elicit attraction. In the second experiment, we combine these verbal distractor conditions with standard nominal attractor conditions to assess how their co-occurrence affects participants’ judgments. If attraction effects reflect flexible, context-sensitive processing, the inclusion of verbal distractors should dilute or eliminate the illusion typically observed with nominal attractors.
+
+Together, these experiments extend previous findings on agreement attraction and task sensitivity in two key ways.
+First, they show that surface-level overlap—even when morphologically identical—does not by itself produce agreement attraction, indicating that participants rely on abstract morphosyntactic features rather than phonological forms.
+Second, they reveal that participants are not only influenced by the global structure of an experiment (such as the proportion of fillers or grammatical items) but also by the presence of other condition types within the same task. In other words, attraction effects are attenuated when competing, non-attracting conditions are included, suggesting that agreement processing is dynamically tuned to the statistical context of the experiment itself.
+
+
+## Agreement attraction and its modulation
+
+- Core phenomenon and theoretical accounts. Briefly summarize leading explanations:
+- Cue-based retrieval / similarity-based interference (Wagers, Lau & Phillips 2009; Dillon et al. 2013): attraction arises because plural attractors partially match number cues used in retrieval.
+- Feature-percolation accounts (Bock & Miller 1991; Franck et al. 2002): features spread upward within noun phrases, confusing the parser.
+
+- Context and task modulation
+- Show that attraction strength varies across tasks and experimental context:
+- Task type: self-paced reading vs. acceptability judgment (Malsburg).
+- Response expectations and bias: Hammerly et al. 2019 — participants’ error patterns change when they expect more ungrammatical items.
+- Item composition: Laurinavichyute & von der Malsburg 2023 — manipulating filler ratios or condition mixes alters accuracy patterns.
+- Conclude that participants adapt their behavior to the statistical environment of the experiment; attraction is not fixed but context-sensitive.
+
+- Form-based influences. in some languages, surface-form similarity can exacerbate attraction or even drive illusions on its own.
+- Cite Slioussar (2018) and related Russian work: case syncretism between nominative plurals and genitive singulars increased attraction or slowed reading, suggesting reliance on form-based heuristics rather than abstract case features.
+- Cite Chromy and checz data. tell it is not very consistent.
+
+open question — when morphology overlaps across categories, does attraction arise from form or feature?
+
+## Background on Turkish
+
+- Morphological properties
+- Turkish marks number on both nouns and verbs using the identical plural morpheme –lAr.
+- Only nominal plurals introduce number features that can agree with the verb; verbal –lAr expresses verbal agreement but is not a potential controller.
+- Because of this homophony, Turkish allows form-overlap and feature-mismatch to be disentangled experimentally.
+
+- Previous attraction findings in Turkish
+- Prior work has reported typical attraction effects with genitive-marked nominal attractors, showing higher acceptance of ungrammatical plural-verb sentences.
+- However, no work has directly tested whether verbal plural morphology can induce similar illusions, or how mixing different attractor types within an experiment affects the magnitude of attraction.
+
+
+## Experimental logic and predictions
+- Goal 1: test whether purely form-based overlap (verbal –lAr) elicits attraction.
+- Prediction: if attraction is driven by form, verbal plural distractors should yield higher “acceptable” rates for ungrammatical plurals.
+- Alternative: if attraction depends on abstract features, no effect of verbal –lAr should appear.
+
+- Goal 2: test whether the co-occurrence of different attractor types modulates attraction.
+- Prediction: if participants adapt to the distribution of conditions, adding verbal distractors (which share the plural form but lack agreement features) should attenuate or eliminate the nominal-attractor illusion.
+- Summary: These experiments jointly test whether agreement attraction in Turkish reflects shallow form matching or feature-based computation that is sensitive to the statistical context of the task.
 
 # Experiment 1: Testing Form-Driven Processing 
 - Goal: determine if surface plural forms (verbal -lAr) elicit illusionary agreement.
