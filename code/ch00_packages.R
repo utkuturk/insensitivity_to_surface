@@ -1,6 +1,3 @@
-# SETTINGS ====
-setwd(here::here())
-
 # settings
 set.seed(01110011)
 

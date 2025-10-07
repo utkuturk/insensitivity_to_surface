@@ -107,6 +107,7 @@
 \bibliographystyle{elsarticle-harv}
 
 
+\usepackage{gb4e}
 \makeatletter
 \@ifpackageloaded{caption}{}{\usepackage{caption}}
 \AtBeginDocument{%
@@ -206,73 +207,183 @@ sentences, including distributional expectations about forms and tasks,
 as well as the overall composition of an experimental session (e.g., the
 ratio of fillers to critical items). Recent work has demonstrated that
 such task-specific factors can substantially modulate reading and
-judgment behavior (e.g., Malsburg, Logacev; Hammerly et al.; Arehalli).
+judgment behavior
+\citep{LauraMalsbug24, ArehalliWittenberg2021, HammerlyEtAl2019, LogacevVasishth2016}.
 One line of research has used the agreement-attraction phenomenon to
 probe the heuristics that influence sentence processing. Agreement
 attraction refers to cases in which a verb erroneously agrees with a
 nearby noun rather than the true subject, giving rise to so-called
-grammaticality illusions in both production and comprehension.
+grammaticality illusions in both production and comprehension
+\citep{BockMiller:1991, PearlmutterGarnseyBock:1999}.
 
-\begin{enumerate}
-\def\labelenumi{\arabic{enumi}.}
-\tightlist
-\item
-  *The key to the cabinets are rusty.
-\end{enumerate}
+\begin{exe}
+\ex[*]{\label{og}The key to the cabinets are rusty.} 
+\end{exe}
 
-Recent experiments show that even small changes in task expectations can
-alter attraction patterns. For example, Malsburg and colleagues found
-that varying the practice structure and task demands (reading
-vs.~judgment) affected reading times at the verb in sentences such as
-the following:
+Agreement errors in sentences like (\ref{og}) have been treated either
+as a failure of feature reconcilation or a failure of memory encoding.
+The former set of accounts explain these errors as a by-product of how
+number feature of a phrase is calculated in real-time
+\citep{BockMiller:1991, EberhardEtAl2005, HammerlyEtAl2019}. For
+example, \citet{EberhardEtAl2005} argue that depending on conceptual
+number, morphophonological number marking, or syntactic dependencies
+within a phrase, speakers assign a probabilistic number value to
+phrases. The errors arise when additional plurality features from
+different sources end up contributing to the final number representation
+of a phrase. On the other hand, the latter set of accounts claim that
+the initial representation is not erroneous, but speakers are sometimes
+unable to correctly retrieve the controller
+\citep{WagersEtAl:2009, Dillon2013a}. For example,
+\citet{WagersEtAl:2009} argue that the parser normally check the
+agreement relation by retrieving the relevant chunk in memory using the
+retrieval cues provided by the agreement probe. In sentences like (1),
+speakers occasionally retrieve the incorrect element due to the fact
+that neither nouns fully match the relevant cues.
 
-\begin{enumerate}
-\def\labelenumi{\arabic{enumi}.}
-\setcounter{enumi}{1}
-\tightlist
-\item
-  The singer that the actor openly admires apparently received broad
-  international recognition.
-\item
-  The singers that the actor openly admires apparently received broad
-  international recognition.
-\end{enumerate}
-
+However, both group of accounts generally are underspecified in terms of
+how meta-linguistic information should be integrated to the
+inter-sentential dependency mechanisms. Recently, a growing literature
+have been testing how different types of additional sources that are
+independent of the linguistic information affects these errors. Recent
+experiments show that even small changes in task expectations can alter
+attraction patterns. For example, \citet{LauraMalsbug24} found that
+varying the practice structure and task demands (reading vs.~judgment)
+affected reading times at the verb in sentences as in (\ref{malsburg}).
 In a self-paced reading task, when participants answered a comprehension
-question after each trial, reading times at the verb did not differ
-between (2) and (3). However, when participants were asked to judge
-grammaticality instead, they spent more time reading the verb admires in
-(3), suggesting that processing heuristics depend on the expected output
-of the task.
+question after each trial, reading times at the verb `admires' did not
+differ between (\ref{malsburg-singer}) and (\ref{malsburg-singers}).
+However, when participants were asked to judge grammaticality instead,
+they spent more time reading the verb `admires' in
+(\ref{malsburg-singers}), suggesting that processing mechanisms can
+change depending on the expected task.
 
-A related set of findings comes from work by Slioussar, who showed that
-surface form can sometimes override abstract features in Russian.
-Exploiting the syncretism between singular genitives and nominative
-plurals---a pattern absent in plural genitives---she found that
-participants made more errors and showed longer reading times in
-sentences like (4) than in (5). She argued that, rather than accessing
-abstract case features, readers relied on surface-level cues that were
-easier to retrieve.
+\begin{exe}
+\ex \label{malsburg}
+\begin{xlist}
+\ex \label{malsburg-singer} The singer that the actor openly admires apparently received broad international recognition.
+\ex \label{malsburg-singers} The singers that the actor openly admires apparently received broad international recognition.
+\end{xlist}
+\end{exe}
 
-\begin{enumerate}
-\def\labelenumi{\arabic{enumi}.}
-\setcounter{enumi}{3}
+A related set of findings came from \citet{HammerlyEtAl2019}. They
+challenge long-standing assumption that the agreement errors only
+surfaced in ungrammatical sentences such as (\ref{og}), but not in
+grammatical sentences as in (\ref{og-g}). That is, while people are
+illusioned into thinking ungrammatical sentences are grammatical, they
+rarely misidentified grammatical sentences as ungrammatical.
+\citet{HammerlyEtAl2019} showed that similar effect surfaced in
+grammatical sentences, when participants' a priori expectations about
+the experiment is altered. They manipulated the instructions and the
+number of ungrammatical in an experiment so that participants expected
+to see more ungrammatical sentences than grammatical sentences. With
+reduced bias towards grammaticality, they found that attraction effects
+surfaced both in ungrammatical sentences (\ref{og}) and grammatical
+sentences (\ref{og-g}).
+
+\begin{exe}
+\ex[]{\label{og-g}The key to the cabinets is rusty.}
+\end{exe}
+
+\begin{itemize}
 \tightlist
 \item
-  {[}Example sentence with syncretic form \ldots{]}
+  Context and task modulation
 \item
-  {[}Example sentence with non-syncretic form \ldots{]}
-\end{enumerate}
+  Show that attraction strength varies across tasks and experimental
+  context:
+\item
+  Task type: self-paced reading with acceptability judgment or
+  comprehension (Laurinavichyute \& von der Malsburg 2023).
+\item
+  Response expectations and bias: Hammerly et al.~2019 Turk 2022,
+  participants' error patterns change when they expect more
+  ungrammatical items.
+\item
+  Item composition: Arehalli --- manipulating filler ratios mixes alters
+  accuracy patterns.
+\item
+  Conclude that participants adapt their behavior to the statistical
+  environment of the experiment; attraction is not fixed but
+  context-sensitive.
+\end{itemize}
+
+A related set of findings comes from work by \citet{Slioussar2018}, who
+showed that surface form can sometimes override abstract features in
+Russian. Exploiting the syncretism between singular genitives and
+nominative plurals---a pattern absent in plural genitives---she found
+that participants made more errors and showed faster reading times in
+sentences like (\ref{rus-gen-pl}) than in (\ref{rus-gen-sg}). She argued
+that, rather than accessing abstract case features, readers relied on
+surface-level cues that were easier to retrieve.
+
+\begin{exe}
+\ex \label{rus}
+\begin{xlist}
+\ex \label{rus-gen-sg}
+\gll The singer that the actor openly \\
+The singer that the actor openly \\
+\glt `The singer that the actor openly' 
+\ex \label{rus-gen-pl}
+\gll The singers that the actor openly admires \\
+The singers that the actor openly admires \\
+\glt `The singers that the actor openly admires'
+\end{xlist}
+\end{exe}
+
+\begin{itemize}
+\tightlist
+\item
+  Form-based influences. in some languages, surface-form similarity can
+  exacerbate attraction or even drive illusions on its own.
+\item
+  Cite \citet{Slioussar2018} and related Russian work: case syncretism
+  between nominative plurals and genitive singulars increased attraction
+  or slowed reading, suggesting reliance on form-based heuristics rather
+  than abstract case features.
+\item
+  Cite Chromy and checz data. tell it is not very consistent.
+\end{itemize}
 
 Building on these observations, we utilize Turkish as a testing ground
 to examine how surface-form overlap influences agreement processing and
 whether exposure to different kinds of distractors modulates attraction.
+
+\begin{itemize}
+\tightlist
+\item
+  Previous attraction findings in Turkish
+\item
+  Prior work has reported typical attraction effects with
+  genitive-marked nominal attractors, showing higher acceptance of
+  ungrammatical plural-verb sentences.
+\item
+  However, no work has directly tested whether verbal plural morphology
+  can induce similar illusions, or how mixing different attractor types
+  within an experiment affects the magnitude of attraction.
+\end{itemize}
+
 Turkish provides an especially informative case because both nominal and
 verbal plural markers are realized with the same morpheme, --lAr, yet
 only nominal plurals bear the syntactic features required for agreement.
 This allows us to ask whether participants rely on surface-form
 similarity or on abstract feature representations when evaluating
 agreement.
+
+\begin{itemize}
+\tightlist
+\item
+  Morphological properties
+\item
+  Turkish marks number on both nouns and verbs using the identical
+  plural morpheme --lAr.
+\item
+  Only nominal plurals introduce number features that can agree with the
+  verb; verbal --lAr expresses verbal agreement but is not a potential
+  controller.
+\item
+  Because of this homophony, Turkish allows form-overlap and
+  feature-mismatch to be disentangled experimentally.
+\end{itemize}
 
 In our first experiment, we test whether plural marking on a verbal
 distractor---which is morphologically identical but syntactically
@@ -295,82 +406,6 @@ within the same task. In other words, attraction effects are attenuated
 when competing, non-attracting conditions are included, suggesting that
 agreement processing is dynamically tuned to the statistical context of
 the experiment itself.
-
-\subsection{Agreement attraction and its
-modulation}\label{agreement-attraction-and-its-modulation}
-
-\begin{itemize}
-\item
-  Core phenomenon and theoretical accounts. Briefly summarize leading
-  explanations:
-\item
-  Cue-based retrieval / similarity-based interference (Wagers, Lau \&
-  Phillips 2009; Dillon et al.~2013): attraction arises because plural
-  attractors partially match number cues used in retrieval.
-\item
-  Feature-percolation accounts (Bock \& Miller 1991; Franck et al.~2002;
-  Eberhard et al.~2005): features spread within noun phrases, confusing
-  the parser.
-\item
-  Context and task modulation
-\item
-  Show that attraction strength varies across tasks and experimental
-  context:
-\item
-  Task type: self-paced reading with acceptability judgment or
-  comprehension (Laurinavichyute \& von der Malsburg 2023).
-\item
-  Response expectations and bias: Hammerly et al.~2019 Turk 2022,
-  participants' error patterns change when they expect more
-  ungrammatical items.
-\item
-  Item composition: Arehalli --- manipulating filler ratios mixes alters
-  accuracy patterns.
-\item
-  Conclude that participants adapt their behavior to the statistical
-  environment of the experiment; attraction is not fixed but
-  context-sensitive.
-\item
-  Form-based influences. in some languages, surface-form similarity can
-  exacerbate attraction or even drive illusions on its own.
-\item
-  Cite Slioussar (2018) and related Russian work: case syncretism
-  between nominative plurals and genitive singulars increased attraction
-  or slowed reading, suggesting reliance on form-based heuristics rather
-  than abstract case features.
-\item
-  Cite Chromy and checz data. tell it is not very consistent.
-\end{itemize}
-
-open question --- when morphology overlaps across categories, does
-attraction arise from form or feature?
-
-\subsection{Background on Turkish}\label{background-on-turkish}
-
-\begin{itemize}
-\item
-  Morphological properties
-\item
-  Turkish marks number on both nouns and verbs using the identical
-  plural morpheme --lAr.
-\item
-  Only nominal plurals introduce number features that can agree with the
-  verb; verbal --lAr expresses verbal agreement but is not a potential
-  controller.
-\item
-  Because of this homophony, Turkish allows form-overlap and
-  feature-mismatch to be disentangled experimentally.
-\item
-  Previous attraction findings in Turkish
-\item
-  Prior work has reported typical attraction effects with
-  genitive-marked nominal attractors, showing higher acceptance of
-  ungrammatical plural-verb sentences.
-\item
-  However, no work has directly tested whether verbal plural morphology
-  can induce similar illusions, or how mixing different attractor types
-  within an experiment affects the magnitude of attraction.
-\end{itemize}
 
 \subsection{Experimental logic and
 predictions}\label{experimental-logic-and-predictions}
@@ -401,6 +436,71 @@ predictions}\label{experimental-logic-and-predictions}
 
 \section{Experiment 1: Testing Form-Driven
 Processing}\label{experiment-1-testing-form-driven-processing}
+
+\subsection{Participants}\label{participants}
+
+We recruited 118 undergraduate students to participate in the experiment
+in exchange for course credit. All participants were native Turkish
+speakers, with an average age of 20 (range: 18 -- 32). The experiment
+was carried out following the principles of the Declaration of Helsinki
+and the regulations concerning research ethics at Bogazici University.
+All participants provided informed consent before their participation
+and their identities were completely anonymised.
+
+\subsection{Materials}\label{materials}
+
+We used 40 sets of sentences like (5), in which we manipulated (i) the
+number of the attractor noun and (ii) the number agreement on the verb.
+Plural number and plural agreement were both marked with the suffix
+-ler/-lar, while the singular number and singular agreement were marked
+by its absence. We used the experimental items from
+
+Lago et al.~(2019) as a starting point for all items. We substituted
+ambiguous nouns for unambiguous alternatives, and in some cases,
+modified other parts of the sentence for plausibility reasons.
+
+All sentences started with a complex subject NP like milyonerlerin
+terzisi ``the millionaires' tailor,'' in which the genitive possessor
+functioned as the attractor, and the head noun carried an unambiguous
+possessive case marker. Because the plural marking on nominals is not
+optional and the head noun was singular, absent of -lar, in all
+conditions, sentences with plural verb agreement were ungrammatical.
+More- over, the semantic relationship between the possessor and the head
+noun was kept as it is in Lago et al.'s (2019) original study and
+genitive-possessive structures can be paraphrased using 's or of in
+English.
+
+One example set of experimental items is in (5). The subject phrase is
+marked with square brackets, and the dependency between the subject head
+and the matrix verb is signaled using bold-face.
+
+\subsection{Procedures}\label{procedures}
+
+The experiment was run online, using the web-based platform Ibex Farm
+\citep{Drummond2013}. Each experimental session took approximately 25
+minutes to complete. Participants provided demographic information and
+gave informed consent to participate in the experiment. They then
+proceeded to read the instructions and were given nine practice trials
+before the experiment began.
+
+Each trial began with a blank screen for 600 ms, followed by a
+word-by-word RSVP presentation of the sentence in the center of the
+screen, followed by a prompt to indicate their acceptability judgment.
+Sentences were presented word-by-word in the center of the screen in 30
+pt font size, at a rate of 400 ms per word. Participants saw a blank
+screen for 100 ms between each word, and to see the next item, they
+needed to press the space key. Participants were asked to press the key
+P to indicate that a sentence is acceptable and Q to indicate that the
+sentence is unacceptable. They were instructed to provide judgments as
+quickly as possible. During the experiment, a warning message in red
+font appeared if they did not respond within 5,000 ms.
+
+Participants saw 40 experimental and 40 filler sentences. Experimental
+sentences were distributed among four different lists according to a
+Latin-square design. Every participant saw one version of the experiment
+with a specific list and one item per condition
+
+\subsection{Analysis and Results}\label{analysis-and-results}
 
 \begin{itemize}
 \tightlist
@@ -447,6 +547,27 @@ Processing}\label{experiment-1-testing-form-driven-processing}
 
 \section{Experiment 2: Testing Within-Experiment Statistical
 Sensitivity}\label{experiment-2-testing-within-experiment-statistical-sensitivity}
+
+\subsection{Participants}\label{participants-1}
+
+We recruited 118 undergraduate students to participate in the experiment
+in exchange for course credit. All participants were native Turkish
+speakers, with an average age of 20 (range: 18 -- 32). The experiment
+was carried out following the principles of the Declaration of Helsinki
+and the regulations concerning research ethics at Bogazici University.
+All participants provided informed consent before their participation
+and their identities were completely anonymised.
+
+\subsection{Materials}\label{materials-1}
+
+The same materials were used with Exp1. We added items from
+TurkLogacev2024 as an additional condition.
+
+\subsection{Procedures}\label{procedures-1}
+
+The same procedure with Experiment 1 was used.
+
+\subsection{Analysis and Results}\label{analysis-and-results-1}
 
 \begin{itemize}
 \tightlist
