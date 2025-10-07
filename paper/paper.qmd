@@ -64,13 +64,13 @@ Second, they reveal that participants are not only influenced by the global stru
 
 - Core phenomenon and theoretical accounts. Briefly summarize leading explanations:
 - Cue-based retrieval / similarity-based interference (Wagers, Lau & Phillips 2009; Dillon et al. 2013): attraction arises because plural attractors partially match number cues used in retrieval.
-- Feature-percolation accounts (Bock & Miller 1991; Franck et al. 2002): features spread upward within noun phrases, confusing the parser.
+- Feature-percolation accounts (Bock & Miller 1991; Franck et al. 2002; Eberhard et al. 2005): features spread within noun phrases, confusing the parser.
 
 - Context and task modulation
 - Show that attraction strength varies across tasks and experimental context:
-- Task type: self-paced reading vs. acceptability judgment (Malsburg).
-- Response expectations and bias: Hammerly et al. 2019 — participants’ error patterns change when they expect more ungrammatical items.
-- Item composition: Laurinavichyute & von der Malsburg 2023 — manipulating filler ratios or condition mixes alters accuracy patterns.
+- Task type: self-paced reading with acceptability judgment or comprehension (Laurinavichyute & von der Malsburg 2023).
+- Response expectations and bias: Hammerly et al. 2019 Turk 2022, participants’ error patterns change when they expect more ungrammatical items. 
+- Item composition: Arehalli — manipulating filler ratios mixes alters accuracy patterns.
 - Conclude that participants adapt their behavior to the statistical environment of the experiment; attraction is not fixed but context-sensitive.
 
 - Form-based influences. in some languages, surface-form similarity can exacerbate attraction or even drive illusions on its own.
