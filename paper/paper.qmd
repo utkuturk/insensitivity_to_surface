@@ -46,9 +46,106 @@ set.seed(01110011)
 library(tidyverse)
 library(brms)
 library(data.table)
-
+library(gdata)
+library(magrittr)
+library(DescTools)
 select <- dplyr::select
 ```
+
+
+```{r functions}
+read_experimental_data <- function(fname, subj_offset = 0, item_offset = 0)
+{
+  data <- read.csv(fname, 
+                   header = F, 
+                   comment.char = "#", 
+                   encoding = "UTF-8" , 
+                   col.names = paste0("V",seq_len(11)), 
+                   fill = TRUE, 
+                   stringsAsFactors = FALSE)
+  colnames(data) = c("Time", "MD5", "ControllerType", "SentenceNoInStimFile", "Element", "exp_condition", "item", "Sentence", "Question","Answer", "RT")
+  
+  subject_id <- with(data, { as.integer(as.factor(paste(Time, MD5))) })
+  data$item[data$exp_condition == "intro" | data$exp_condition == "practice"] <- 0
+  data$item_num <- as.integer(data$item)
+  data$subject <- sprintf("S[%d]", subject_id + subj_offset)
+  data$item <- sprintf("I[%d]", data$item_num + item_offset)
+  
+  df_forms <- data %>% subset(ControllerType != "DashedAcceptabilityJudgment" ) %>% gdata::drop.levels()
+  data %<>% subset(ControllerType == "DashedAcceptabilityJudgment")
+  
+  age <- df_forms %>% dplyr::filter(Sentence == "age") %>% 
+    dplyr::select(subject, age = Question)
+  natturk <- df_forms %>% dplyr::filter(Sentence == "natturk") %>% 
+    dplyr::select(subject, natturk = Question) %T>% 
+    { .$natturk %<>% recode(male ="nat_turk", female = "nat_non_turk") } 
+  forms <- dplyr::left_join(age, natturk, by = "subject")
+  
+  stopifnot( nrow(data) %% 2 == 0 )
+  rows_stim <- data[c(T,F),]
+  rows_resp <- data[c(F,T),]
+  stopifnot( all(is.na( rows_stim$RT )) )
+  
+  data <- rows_resp %>% left_join(forms) %>% 
+    dplyr::select(-MD5, -Time, -ControllerType, -Sentence, -Element) %>%
+    dplyr::rename(ResponseCorrect=Answer, Response=Question) %>%
+    dplyr::select(-ResponseCorrect)
+  data %<>% group_by(subject) %>% mutate(trial_no = seq(subject))
+  data %<>% mutate( late_response = (Response == "NULL"), Response = ifelse(late_response, NA, as.character(Response)) )
+  
+  responses <- c(yes="İYİ (P'ye basınız)", no="KÖTÜ (Q'ya basınız)")
+  data$Response %<>% as.character() %>% enc2native()
+  stopifnot( all(data$Response %in% responses | is.na(data$Response) ) )
+  
+  data$response_yes <- ifelse(grepl("P'ye",data$Response) , T, 
+                              ifelse(grepl("Q'ya",data$Response) , F, NA))
+  print( with(data, table(Response, response_yes)) )
+  data %<>% dplyr::select(-Response)
+  data
+}
+
+
+exclude_bad_subjects <- function(data_to_clean, accuracy_threshold = 0.25, rt_below = 200, rt_upper = 4999) {
+  avg_by_subj <- data_to_clean %>%
+    group_by(subject, experiment, condition, 
+             grammatical, verb_num, attractor_num) %>%
+    summarize(avRT = mean(RT), 
+              p_yes = mean(response_yes, na.rm = T), 
+              N = sum(!is.na(response_yes))  )
+  
+  avg_by_subj_wide <- avg_by_subj %>% 
+    mutate(expcond = paste(experiment, condition, sep="_")) %>% 
+    ungroup() %>%
+    dplyr::select(-experiment, -condition, -avRT, -N,
+                  -grammatical, -verb_num, -attractor_num) %>%
+    tidyr::spread(expcond, p_yes) %>% 
+    mutate(delta_dc = AgrAttr_d - AgrAttr_c)
+  
+  bad_subjects <- subset(avg_by_subj_wide, delta_dc <= accuracy_threshold ) %>% .$subject
+  data_clean <- data_to_clean %>% subset(!subject %in% bad_subjects)
+  
+  data_clean %<>% filter(RT < rt_upper & rt_below< RT)
+  if("natturk" %in% colnames(data_clean)){
+    data_clean %<>% subset(natturk == "nat_turk")
+  }
+  
+  print( with(data_clean, table(exp_condition, response_yes)) )
+  print( sprintf("number of bad subjects: %f", length(bad_subjects)))
+  data_clean
+  
+}
+
+no_null_no_practice <- function(data_to_clean) {
+  data_to_clean %<>% subset(exp_condition != "practice") %>% subset(!is.na(response_yes))
+}
+
+asi <- function(x) {as.integer(x)}
+asf <- function(x) {as.factor(x)}
+asc <- function(x) {as.character(x)}
+
+
+```
+
 
 # Introduction 
 
@@ -151,14 +248,175 @@ Together, these experiments extend previous findings on agreement attraction and
 
 ```{r exp1-data-prep}
 
+exp1 <- read_experimental_data("../data/results.txt", subj_offset = 2000, item_offset = 2000) 
+
+exp1 %<>% mutate(exp_condition = case_when(
+  exp_condition == "filler" & item_num <= 120 ~ "filler_ung",
+  exp_condition == "filler" & item_num >= 121 ~ "filler_g",
+  exp_condition == "practice" ~ "practice",
+  exp_condition == "condition_b" ~ "condition_b",
+  exp_condition == "condition_a" ~ "condition_a",
+  exp_condition == "condition_c" ~ "condition_c",
+  exp_condition == "condition_d" ~ "condition_d"
+))
+
+
+exp1.conditions <- data.frame(
+  exp_condition = c("practice", "condition_a", "condition_b", "condition_c", "condition_d", "filler_ung", "filler_g"),
+  experiment =    c("practice", "AgrAttr",     "AgrAttr",     "AgrAttr",     "AgrAttr",     "filler",     "filler"),
+  condition =     c("practice", "a",           "b",           "c",           "d",           "filler_ung", "filler_g"),
+  grammatical =   c("practice", "ungram",      "gram",        "ungram",      "gram",        "ungram",     "gram"),
+  verb_num =      c("practice", "pl",          "sg",          "pl",          "sg",          "sg",         "pl"),
+  attractor_num = c("practice", "pl",          "pl",          "sg",          "sg",          'filler',     'filler'),
+  match =         c("practice", "mismatch",    "mismatch",    "match",       "match",       'filler',     'filler'),
+  stringsAsFactors = T
+)
+
+exp1 %<>% left_join(exp1.conditions, by = "exp_condition")
+
+exp1.no.practice <- exp1 %>% subset(exp_condition != "practice")
+
+# accuracy: 0.25
+# rt_below: 200
+# rt_upper: 4999
+exp1.clean <- exclude_bad_subjects(
+  exp1,
+  accuracy_threshold = 0.25,
+  rt_below = 200,
+  rt_upper = 4999
+)
+
+exp1.clean %<>% no_null_no_practice(.)
+
+stopifnot(exp1.clean %>% subset(is.na(response_yes)) %>% nrow() == 0)
+
+# DIFF DATA =====
+exp1.diff <- dplyr::anti_join(exp1, exp1.clean) %>%
+  filter(exp_condition != "practice")
+
+exp1.clean$isGram <- ifelse(exp1.clean$grammatical == "ungram", F, T)
+exp1.clean$p_acc <- with(exp1.clean, response_yes & isGram)
+exp1.clean %<>% mutate(ResponseCorrect = (response_yes == (grammatical == "gram")))
+
+# Merge
+
+exp1.clean %<>% ungroup() %>% 
+                      dplyr::select(source=experiment, 
+                                    grammatical, 
+                                    attractor_num,
+                                    match,
+                                    age,
+                                    # condition,
+                                    subject, 
+                                    trial_no,
+                                    item,
+                                    response_yes, 
+                                    RT,
+                                    ResponseCorrect)
+exp1.clean$experiment <- "Experiment 1"
+exp1.clean$grammatical %<>% dplyr::recode(gram="grammatical", ungram="ungrammatical")
+exp1.clean$attractor_num %<>% dplyr::recode(pl="plural", sg="singular")
+exp1.clean$item %<>% as.factor()
+exp1.clean$subject %<>% as.character()
+
 ```
 
 ```{r exp1-avgs}
 
+exp1.avgs <- exp1.clean %>%
+  filter(match != "filler") %>%
+  group_by(grammatical, attractor_num, match) %>%
+  summarise(
+    successes = sum(response_yes == 1, na.rm = TRUE),
+    N         = sum(!is.na(response_yes)),
+    .groups = "drop"
+  ) %>%
+  mutate(ci_mat = purrr::pmap(
+    list(successes, N),
+    ~ DescTools::BinomCI(x = ..1, n = ..2, conf.level = 0.95, method = "clopper-pearson")
+  )) %>%
+  mutate(ci_mat = purrr::map(ci_mat, ~ as_tibble(.))) %>%
+  unnest(ci_mat) %>%    
+  mutate(
+    p_hat = successes / N,
+    lwr   = lwr.ci,
+    upr   = upr.ci
+  ) %>%
+  select(grammatical, attractor_num, match, successes, N, p_hat, lwr, upr)
+
+exp1.avgs.filler <- exp1.clean %>%
+  filter(match == "filler") %>%
+  group_by(grammatical, attractor_num, match) %>%
+  summarise(
+    successes = sum(response_yes == 1, na.rm = TRUE),
+    N         = sum(!is.na(response_yes)),
+    .groups = "drop"
+  ) %>%
+  mutate(ci_mat = purrr::pmap(
+    list(successes, N),
+    ~ DescTools::BinomCI(x = ..1, n = ..2, conf.level = 0.95, method = "clopper-pearson")
+  )) %>%
+  mutate(ci_mat = purrr::map(ci_mat, ~ as_tibble(.))) %>%
+  unnest(ci_mat) %>%    
+  mutate(
+    p_hat = successes / N,
+    lwr   = lwr.ci,
+    upr   = upr.ci
+  ) %>%
+  select(grammatical, attractor_num, match, successes, N, p_hat, lwr, upr)
+
+
 ```
 
 ```{r exp1-text-inputs}
+# I want accuracy, not the response yes
+exp1.avgs.filler %<>% mutate(p_hat = if_else(grammatical == "ungrammatical", 1 - p_hat, p_hat))
 
+
+exp1.nsubj <- exp1$subject %>% unique() %>% length() 
+
+exp1.nsubj.nontr <- exp1 %>%
+  subset(natturk == "nat_non_turk") %>%
+  .$subject %>%
+  unique() %>%
+  length()
+
+exp1.nsubj.threshold <- 2
+
+exp1.deletion <- round(100*((nrow(exp1.no.practice)-nrow(exp1.clean))  / nrow(exp1.no.practice)),2)
+
+
+exp1.meanage <- mean(asi(exp1.clean$age)) %>% round()
+exp1.maxage <- max(asi(exp1.clean$age))
+exp1.minage <- min(asi(exp1.clean$age))
+
+# FILLER AVERAGES
+
+### YOU ARE HERE.
+FGM2 <- exp2.f.avgs[resp.grammatical == "grammatical" & resp.experiment == "Experiment 2"]$resp.M %>% round(2)
+FUM2 <- exp2.f.avgs[resp.grammatical == "ungrammatical" & resp.experiment == "Experiment 2"]$resp.M %>% round(2)
+FGSE2 <- exp2.f.avgs[resp.grammatical == "grammatical" & resp.experiment == "Experiment 2"]$resp.SE %>% round(2)
+FUSE2 <- exp2.f.avgs[resp.grammatical == "ungrammatical" & resp.experiment == "Experiment 2"]$resp.SE %>% round(2)
+
+
+
+# EXP AVERAGES
+# SOURCE - GRAM - ATTNUM - mean or se
+GPM2 <- round(exp2.avgs[resp.experiment == "Experiment 2" &  resp.grammatical == "grammatical" & resp.attractor_num == "plural"]$resp.M,2)
+
+GPSE2 <- round(exp2.avgs[resp.experiment == "Experiment 2" &  resp.grammatical == "grammatical" & resp.attractor_num == "plural"]$resp.SE,2)
+
+GSM2 <- round(exp2.avgs[resp.experiment == "Experiment 2" &  resp.grammatical == "grammatical" & resp.attractor_num == "singular"]$resp.M,2)
+
+GSSE2 <- round(exp2.avgs[resp.experiment == "Experiment 2" &  resp.grammatical == "grammatical" & resp.attractor_num == "singular"]$resp.SE,2)
+
+UPM2 <- round(exp2.avgs[resp.experiment == "Experiment 2" &  resp.grammatical == "ungrammatical" & resp.attractor_num == "plural"]$resp.M,2)
+
+UPSE2 <- round(exp2.avgs[resp.experiment == "Experiment 2" &  resp.grammatical == "ungrammatical" & resp.attractor_num == "plural"]$resp.SE,2)
+
+USM2 <- round(exp2.avgs[resp.experiment == "Experiment 2" &  resp.grammatical == "ungrammatical" & resp.attractor_num == "singular"]$resp.M,2)
+
+USSE2 <- round(exp2.avgs[resp.experiment == "Experiment 2" &  resp.grammatical == "ungrammatical" & resp.attractor_num == "singular"]$resp.SE,2)
 ```
 
 
