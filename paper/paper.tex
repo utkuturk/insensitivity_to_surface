@@ -209,11 +209,11 @@ effect the findings.
 \section{Introduction}\label{introduction}
 
 Speakers often rely on additional sources of information when processing
-sentences, including distributional expectations about forms and tasks,
-as well as the overall composition of an experimental session (e.g., the
-ratio of fillers to critical items). Recent work has demonstrated that
-such task-specific factors can substantially modulate reading and
-judgment behavior
+sentences, including plausability, frequency, distributional
+expectations about forms and tasks, as well as the overall composition
+of an experimental session (e.g., the ratio of fillers to critical
+items). Recent work has demonstrated that such task or item-specific
+factors can substantially modulate reading and judgment behavior
 \citep{LauraMalsbug24, ArehalliWittenberg2021, HammerlyEtAl2019, LogacevVasishth2016}.
 One line of research has used the agreement-attraction phenomenon to
 probe the heuristics that influence sentence processing. Agreement
@@ -276,7 +276,7 @@ challenge long-standing assumption that the agreement errors only
 surfaced in ungrammatical sentences such as (\ref{og}), but not in
 grammatical sentences as in (\ref{og-g}). It has been repeatedly shown
 that a plural noun increased participants' likelihood to erroneously
-judgme ungrammatical sentences as grammatical; however, participants
+judge ungrammatical sentences as grammatical; however, participants
 rarely misidentified grammatical sentences as ungrammatical even when
 there is an attractor. \citet{HammerlyEtAl2019} showed that similar
 effect surfaced in grammatical sentences when participants' a priori
@@ -293,18 +293,26 @@ completed ungrammatical sentences (\ref{og}) and grammatical sentences
 \end{exe}
 
 Another set of meta-linguistic information that comes from form-driven
-task strategies. Attraction effects is argued to be sensitive how
-similar the attractor is to a possible agreement controller.
-\citet{HartsuikerEtAl2003}, for example, showed that participants made
-agreement errors more often when the preambles contained two NPs that
-are not marked distinctively (\ref{ger-amb}) compared to cases where the
-attractor is distinguishable solely using the form (\ref{ger-dist}).
+task strategies. In some languages, surface-form similarity to the
+agreement controller can exacerbate attraction {[}BUNCH OF PAPERS{]} or
+even drive illusions on its own {[}CHROMY{]}.
+\citet{HartsuikerEtAl2003}, for example, used the the accusative marked
+determiners' form similarity to the nominative marked articles in
+German, that can be the determiner of an agreement controller, and
+compared them to distinctively marked dative marked determiners. They
+showed that participants made agreement errors more often when the
+preambles contained two NPs that are not marked distinctively
+(\ref{ger-amb}) compared to cases where the attractor is distinguishable
+solely using the form (\ref{ger-dist}). More importantly, this effect
+only surfaced when the head and the distractors are both nouns with
+feminine gender, and not masculine or neuter gender, which do not show
+the surface level similarity in plurals.
 
 \begin{exe}
 \ex \label{ger}
 \begin{xlist}
 \ex \label{ger-amb}
-\gll Die Stellungnahme gegen ie Demonstration-en\\
+\gll Die Stellungnahme gegen die Demonstration-en\\
 the.F.NOM.SG position against the.F.ACC.PL demonstration-PL\\
 \glt `The position against the demonstrations' 
 \ex \label{ger-dist}
@@ -314,43 +322,49 @@ the.F.NOM.SG position on the.F.DAT.PL demonstration-PL\\
 \end{xlist}
 \end{exe}
 
-However, the most striking evidence comes from work by
-\citet{Slioussar2018}, who showed that surface form can sometimes
-override abstract features in Russian. Exploiting the syncretism between
-singular genitives and nominative plurals---a pattern absent in plural
-genitives---she found that participants made more production and
-comprehension errors and showed faster reading times in sentences like
-(\ref{rus-gen-pl}) than in (\ref{rus-gen-sg}). She argued that, rather
-than accessing abstract case features, readers relied on surface-level
-cues that were easier to retrieve.
+The most striking evidence comes from work by \citet{Slioussar2018}, who
+showed that surface form can sometimes override abstract features in
+Russian. Exploiting the syncretism between singular genitives and
+nominative plurals, a pattern absent in plural genitives, she found that
+participants made more production and comprehension errors and showed
+faster reading times in sentences like (\ref{rus-gen-sg}) than in
+(\ref{rus-gen-pl}). This finding is fairly surprising given that a noun
+that is unambigously singular and only \emph{seems} plural due to form
+similarity can induce more attraction errors, than grammatically plural
+nouns. She argued that, rather than accessing abstract case features,
+speakers and comprehenders sometimes relied on surface-level cues that
+were easier to retrieve.
 
 \begin{exe}
 \ex \label{rus}
 \begin{xlist}
 \ex \label{rus-gen-sg}
 \gll Korobka dlya kraski byla/*byli \ldots \\
-box.F.SG.NOM for paint.GEN.SG$_{\neg NOM.PL}$ be.PST.F.SG/*be.PST.F.PL \\
+box.F.SG.NOM for paint.GEN.SG$_{=NOM.PL}$ be.PST.F.SG/*be.PST.F.PL \\
 \glt `A box for the paint(s) was/*were \dots'
 \ex \label{rus-gen-pl}
 \gll Korobka dlya krasok byla/*byli \ldots \\
-box.F.SG.NOM for paint.GEN.PL$_{\neg NOM.PL}$ be.PST.F.SG/*be.PST.F.PL \\
+box.F.SG.NOM for paint.GEN.PL$_{\neq NOM.PL}$ be.PST.F.SG/*be.PST.F.PL \\
 \glt `A box for the paint(s) was/*were \dots'
 \end{xlist}
 \end{exe}
 
-\begin{itemize}
-\tightlist
-\item
-  Form-based influences. in some languages, surface-form similarity can
-  exacerbate attraction or even drive illusions on its own.
-\item
-  Cite \citet{Slioussar2018} and related Russian work: case syncretism
-  between nominative plurals and genitive singulars increased attraction
-  or slowed reading, suggesting reliance on form-based heuristics rather
-  than abstract case features.
-\item
-  Cite Chromy and checz data. tell it is not very consistent.
-\end{itemize}
+Together, these studies converge on the idea that speakers are sensitive
+not only to the immediate syntactic cues in a sentence, but also to
+broader distributional regularities that shape how those cues are
+interpreted. Some of these regularities reflect long-term experience
+with the language, such as recurring patterns of form syncretism and
+probability of being a controller, while others arise within the course
+of a single experiment, as participants adjust to the statistical
+composition of the materials, the frequency of ungrammatical items, or
+the mix of structure types they encounter. These findings raise the
+possibility that agreement attraction is not a fixed structural reflex,
+but rather a dynamic outcome of how the processing system weighs and
+re-weights cues based on both linguistic and contextual experience. If
+so, the strength and even the presence of attraction effects should
+depend on how strongly surface form and feature structure are correlated
+in the input, and on what participants learn about those correlations in
+real time.
 
 Building on these observations, we utilize Turkish as a testing ground
 to examine how surface-form overlap influences agreement processing and

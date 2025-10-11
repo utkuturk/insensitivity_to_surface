@@ -42,6 +42,7 @@ execute:
   warning: false
 ---
 
+
 ```{r setup}
 set.seed(01110011)
 
@@ -154,7 +155,7 @@ asc <- function(x) {as.character(x)}
 
 # Introduction 
 
-Speakers often rely on additional sources of information when processing sentences, including distributional expectations about forms and tasks, as well as the overall composition of an experimental session (e.g., the ratio of fillers to critical items).  Recent work has demonstrated that such task-specific factors can substantially modulate reading and judgment behavior [@LauraMalsbug24; @ArehalliWittenberg2021; @HammerlyEtAl2019; @LogacevVasishth2016].  One line of research has used the agreement-attraction phenomenon to probe the heuristics that influence sentence processing.  Agreement attraction refers to cases in which a verb erroneously agrees with a nearby noun rather than the true subject, giving rise to so-called grammaticality illusions in both production and comprehension [@BockMiller:1991; @PearlmutterGarnseyBock:1999].
+Speakers often rely on additional sources of information when processing sentences, including plausability, frequency, distributional expectations about forms and tasks, as well as the overall composition of an experimental session (e.g., the ratio of fillers to critical items).  Recent work has demonstrated that such task or item-specific factors can substantially modulate reading and judgment behavior [@LauraMalsbug24; @ArehalliWittenberg2021; @HammerlyEtAl2019; @LogacevVasishth2016].  One line of research has used the agreement-attraction phenomenon to probe the heuristics that influence sentence processing.  Agreement attraction refers to cases in which a verb erroneously agrees with a nearby noun rather than the true subject, giving rise to so-called grammaticality illusions in both production and comprehension [@BockMiller:1991; @PearlmutterGarnseyBock:1999].
 
 ```{=latex}
 \begin{exe}
@@ -164,7 +165,7 @@ Speakers often rely on additional sources of information when processing sentenc
 
 Agreement errors in sentences like (\ref{og}) have been treated either as a failure of feature reconcilation or a failure of memory encoding.  The former set of accounts explain these errors as a by-product of how number feature of a phrase is calculated in real-time [@BockMiller:1991; @EberhardEtAl2005; @HammerlyEtAl2019].  For example, @EberhardEtAl2005 argue that depending on conceptual number, morphophonological number marking, or syntactic dependencies within a phrase, speakers assign a probabilistic number value to phrases.  The errors arise when additional plurality features from different sources end up contributing to the final number representation of a phrase.  On the other hand, the latter set of accounts claim that the initial representation is not erroneous, but speakers are sometimes unable to correctly retrieve the controller [@WagersEtAl:2009; @Dillon2013a].  For example, @WagersEtAl:2009 argue that the parser normally check the agreement relation by retrieving the relevant chunk in memory using the retrieval cues provided by the agreement probe.  In sentences like (1), speakers occasionally retrieve the incorrect element due to the fact that neither nouns fully match the relevant cues.
 
-However, both group of accounts generally are underspecified in terms of how meta-linguistic information should be integrated to the inter-sentential dependency mechanisms.  Recently, a growing literature have been testing how different types of additional sources that are independent of the linguistic information affects these errors.  Recent experiments show that even small changes in task expectations can alter attraction patterns. For example, @LauraMalsbug24 found that varying the practice structure and task demands (reading vs. judgment) affected reading times at the verb in sentences as in (\ref{malsburg}).  In a series of high-powered self-paced reading tasks, they found that when participants answered a comprehension question after each trial, reading times at the verb 'admires' did not differ between (\ref{malsburg-singer}) and (\ref{malsburg-singers}). However, when participants were asked to judge grammaticality instead, they spent more time reading the verb 'admires' in (\ref{malsburg-singers}), suggesting that processing mechanisms can change depending on the expected task.
+However, both group of accounts generally are underspecified in terms of how meta-linguistic information should be integrated to the inter-sentential dependency mechanisms.  Recently, a growing literature have been testing how different types of additional sources that are independent of the linguistic information affects these errors.  Recent experiments show that even small changes in task expectations can alter attraction patterns. For example, @LauraMalsbug24 found that varying the practice structure and task demands (reading vs. judgment) affected reading times at the verb in sentences as in (\ref{malsburg}).  In a series of high-powered self-paced reading tasks, they found that when participants answered a comprehension question after each trial, reading times at the verb 'admires' did not differ between (\ref{malsburg-singer}) and (\ref{malsburg-singers}).  However, when participants were asked to judge grammaticality instead, they spent more time reading the verb 'admires' in (\ref{malsburg-singers}), suggesting that processing mechanisms can change depending on the expected task.
 
 
 ```{=latex}
@@ -176,8 +177,8 @@ However, both group of accounts generally are underspecified in terms of how met
 \end{xlist}
 \end{exe}
 ```
-A related set of findings came from @HammerlyEtAl2019. They challenge long-standing assumption that the agreement errors only surfaced in ungrammatical sentences such as (\ref{og}), but not in grammatical sentences as in (\ref{og-g}). It has been repeatedly shown that a plural noun increased participants' likelihood to erroneously judgme ungrammatical sentences as grammatical; however, participants rarely misidentified grammatical sentences as ungrammatical even when there is an attractor. @HammerlyEtAl2019 showed that similar effect surfaced in grammatical sentences when participants' a priori expectations about the experiment is altered. They manipulated the instructions and the number of ungrammatical in an experiment so that participants expected to see more ungrammatical sentences than grammatical sentences. With reduced bias towards grammaticality, they found that the presence of a plural nearby noun affected how speakers completed ungrammatical sentences (\ref{og}) and grammatical sentences (\ref{og-g}) [see @Turk2022 for acceptability]. 
 
+A related set of findings came from @HammerlyEtAl2019.  They challenge long-standing assumption that the agreement errors only surfaced in ungrammatical sentences such as (\ref{og}), but not in grammatical sentences as in (\ref{og-g}).  It has been repeatedly shown that a plural noun increased participants' likelihood to erroneously judge ungrammatical sentences as grammatical; however, participants rarely misidentified grammatical sentences as ungrammatical even when there is an attractor.  @HammerlyEtAl2019 showed that similar effect surfaced in grammatical sentences when participants' a priori expectations about the experiment is altered.  They manipulated the instructions and the number of ungrammatical in an experiment so that participants expected to see more ungrammatical sentences than grammatical sentences.  With reduced bias towards grammaticality, they found that the presence of a plural nearby noun affected how speakers completed ungrammatical sentences (\ref{og}) and grammatical sentences (\ref{og-g}) [see @Turk2022 for acceptability]. 
 
 ```{=latex}
 \begin{exe}
@@ -185,14 +186,14 @@ A related set of findings came from @HammerlyEtAl2019. They challenge long-stand
 \end{exe}
 ```
 
-Another set of meta-linguistic information that comes from form-driven task strategies. Attraction effects is argued to be sensitive how similar the attractor is to a possible agreement controller. @HartsuikerEtAl2003, for example, showed that participants made agreement errors more often when the preambles contained two NPs that are not marked distinctively (\ref{ger-amb}) compared to cases where the attractor is distinguishable solely using the form (\ref{ger-dist}).  
+Another set of meta-linguistic information that comes from form-driven task strategies.  In some languages, surface-form similarity to the agreement controller can exacerbate attraction [BUNCH OF PAPERS] or even drive illusions on its own [CHROMY].  @HartsuikerEtAl2003, for example, used the the accusative marked determiners' form similarity to the nominative marked articles in German, that can be the determiner of an agreement controller, and compared them to distinctively marked dative marked determiners. They showed that participants made agreement errors more often when the preambles contained two NPs that are not marked distinctively (\ref{ger-amb}) compared to cases where the attractor is distinguishable solely using the form (\ref{ger-dist}).  More importantly, this effect only surfaced when the head and the distractors are both nouns with feminine gender, and not masculine or neuter gender, which do not show the surface level similarity in plurals.
 
 ```{=latex}
 \begin{exe}
 \ex \label{ger}
 \begin{xlist}
 \ex \label{ger-amb}
-\gll Die Stellungnahme gegen ie Demonstration-en\\
+\gll Die Stellungnahme gegen die Demonstration-en\\
 the.F.NOM.SG position against the.F.ACC.PL demonstration-PL\\
 \glt `The position against the demonstrations' 
 \ex \label{ger-dist}
@@ -203,7 +204,7 @@ the.F.NOM.SG position on the.F.DAT.PL demonstration-PL\\
 \end{exe}
 ```
 
-However, the most striking evidence comes from work by @Slioussar2018, who showed that surface form can sometimes override abstract features in Russian. Exploiting the syncretism between singular genitives and nominative plurals—a pattern absent in plural genitives—she found that participants made more production and comprehension errors and showed faster reading times in sentences like (\ref{rus-gen-pl}) than in (\ref{rus-gen-sg}). She argued that, rather than accessing abstract case features, readers relied on surface-level cues that were easier to retrieve.
+The most striking evidence comes from work by @Slioussar2018, who showed that surface form can sometimes override abstract features in Russian.  Exploiting the syncretism between singular genitives and nominative plurals, a pattern absent in plural genitives, she found that participants made more production and comprehension errors and showed faster reading times in sentences like (\ref{rus-gen-sg}) than in (\ref{rus-gen-pl}).  This finding is fairly surprising given that a noun that is unambigously singular and only *seems* plural due to form similarity can induce more attraction errors, than grammatically plural nouns.  She argued that, rather than accessing abstract case features, speakers and comprehenders sometimes relied on surface-level cues that were easier to retrieve.
 
 ```{=latex}
 \begin{exe}
@@ -220,11 +221,7 @@ box.F.SG.NOM for paint.GEN.PL$_{\neq NOM.PL}$ be.PST.F.SG/*be.PST.F.PL \\
 \end{xlist}
 \end{exe}
 ```
-
-- Form-based influences. in some languages, surface-form similarity can exacerbate attraction or even drive illusions on its own.
-- Cite @Slioussar2018 and related Russian work: case syncretism between nominative plurals and genitive singulars increased attraction or slowed reading, suggesting reliance on form-based heuristics rather than abstract case features.
-- Cite Chromy and checz data. tell it is not very consistent.
-
+Together, these studies converge on the idea that speakers are sensitive not only to the immediate syntactic cues in a sentence, but also to broader distributional regularities that shape how those cues are interpreted.  Some of these regularities reflect long-term experience with the language, such as recurring patterns of form syncretism and probability of being a controller, while others arise within the course of a single experiment, as participants adjust to the statistical composition of the materials, the frequency of ungrammatical items, or the mix of structure types they encounter.  These findings raise the possibility that agreement attraction is not a fixed structural reflex, but rather a dynamic outcome of how the processing system weighs and re-weights cues based on both linguistic and contextual experience.  If so, the strength and even the presence of attraction effects should depend on how strongly surface form and feature structure are correlated in the input, and on what participants learn about those correlations in real time.
 
 Building on these observations, we utilize Turkish as a testing ground to examine how surface-form overlap influences agreement processing and whether exposure to different kinds of distractors modulates attraction. 
 
