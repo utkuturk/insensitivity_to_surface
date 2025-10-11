@@ -164,7 +164,7 @@ Speakers often rely on additional sources of information when processing sentenc
 
 Agreement errors in sentences like (\ref{og}) have been treated either as a failure of feature reconcilation or a failure of memory encoding.  The former set of accounts explain these errors as a by-product of how number feature of a phrase is calculated in real-time [@BockMiller:1991; @EberhardEtAl2005; @HammerlyEtAl2019].  For example, @EberhardEtAl2005 argue that depending on conceptual number, morphophonological number marking, or syntactic dependencies within a phrase, speakers assign a probabilistic number value to phrases.  The errors arise when additional plurality features from different sources end up contributing to the final number representation of a phrase.  On the other hand, the latter set of accounts claim that the initial representation is not erroneous, but speakers are sometimes unable to correctly retrieve the controller [@WagersEtAl:2009; @Dillon2013a].  For example, @WagersEtAl:2009 argue that the parser normally check the agreement relation by retrieving the relevant chunk in memory using the retrieval cues provided by the agreement probe.  In sentences like (1), speakers occasionally retrieve the incorrect element due to the fact that neither nouns fully match the relevant cues.
 
-However, both group of accounts generally are underspecified in terms of how meta-linguistic information should be integrated to the inter-sentential dependency mechanisms.  Recently, a growing literature have been testing how different types of additional sources that are independent of the linguistic information affects these errors.  Recent experiments show that even small changes in task expectations can alter attraction patterns. For example, @LauraMalsbug24 found that varying the practice structure and task demands (reading vs. judgment) affected reading times at the verb in sentences as in (\ref{malsburg}).  In a self-paced reading task, when participants answered a comprehension question after each trial, reading times at the verb 'admires' did not differ between (\ref{malsburg-singer}) and (\ref{malsburg-singers}). However, when participants were asked to judge grammaticality instead, they spent more time reading the verb 'admires' in (\ref{malsburg-singers}), suggesting that processing mechanisms can change depending on the expected task.
+However, both group of accounts generally are underspecified in terms of how meta-linguistic information should be integrated to the inter-sentential dependency mechanisms.  Recently, a growing literature have been testing how different types of additional sources that are independent of the linguistic information affects these errors.  Recent experiments show that even small changes in task expectations can alter attraction patterns. For example, @LauraMalsbug24 found that varying the practice structure and task demands (reading vs. judgment) affected reading times at the verb in sentences as in (\ref{malsburg}).  In a series of high-powered self-paced reading tasks, they found that when participants answered a comprehension question after each trial, reading times at the verb 'admires' did not differ between (\ref{malsburg-singer}) and (\ref{malsburg-singers}). However, when participants were asked to judge grammaticality instead, they spent more time reading the verb 'admires' in (\ref{malsburg-singers}), suggesting that processing mechanisms can change depending on the expected task.
 
 
 ```{=latex}
@@ -176,7 +176,7 @@ However, both group of accounts generally are underspecified in terms of how met
 \end{xlist}
 \end{exe}
 ```
-A related set of findings came from @HammerlyEtAl2019. They challenge long-standing assumption that the agreement errors only surfaced in ungrammatical sentences such as (\ref{og}), but not in grammatical sentences as in (\ref{og-g}). That is, while people are illusioned into thinking ungrammatical sentences are grammatical, they rarely misidentified grammatical sentences as ungrammatical. @HammerlyEtAl2019 showed that similar effect surfaced in grammatical sentences, when participants' a priori expectations about the experiment is altered. They manipulated the instructions and the number of ungrammatical in an experiment so that participants expected to see more ungrammatical sentences than grammatical sentences. With reduced bias towards grammaticality, they found that attraction effects surfaced both in ungrammatical sentences (\ref{og}) and grammatical sentences (\ref{og-g}). 
+A related set of findings came from @HammerlyEtAl2019. They challenge long-standing assumption that the agreement errors only surfaced in ungrammatical sentences such as (\ref{og}), but not in grammatical sentences as in (\ref{og-g}). It has been repeatedly shown that a plural noun increased participants' likelihood to erroneously judgme ungrammatical sentences as grammatical; however, participants rarely misidentified grammatical sentences as ungrammatical even when there is an attractor. @HammerlyEtAl2019 showed that similar effect surfaced in grammatical sentences when participants' a priori expectations about the experiment is altered. They manipulated the instructions and the number of ungrammatical in an experiment so that participants expected to see more ungrammatical sentences than grammatical sentences. With reduced bias towards grammaticality, they found that the presence of a plural nearby noun affected how speakers completed ungrammatical sentences (\ref{og}) and grammatical sentences (\ref{og-g}) [see @Turk2022 for acceptability]. 
 
 
 ```{=latex}
@@ -185,29 +185,38 @@ A related set of findings came from @HammerlyEtAl2019. They challenge long-stand
 \end{exe}
 ```
 
+Another set of meta-linguistic information that comes from form-driven task strategies. Attraction effects is argued to be sensitive how similar the attractor is to a possible agreement controller. @HartsuikerEtAl2003, for example, showed that participants made agreement errors more often when the preambles contained two NPs that are not marked distinctively (\ref{ger-amb}) compared to cases where the attractor is distinguishable solely using the form (\ref{ger-dist}).  
 
-- Context and task modulation
-- Show that attraction strength varies across tasks and experimental context:
-- Task type: self-paced reading with acceptability judgment or comprehension (Laurinavichyute & von der Malsburg 2023).
-- Response expectations and bias: Hammerly et al. 2019 Turk 2022, participants’ error patterns change when they expect more ungrammatical items. 
-- Item composition: Arehalli — manipulating filler ratios mixes alters accuracy patterns.
-- Conclude that participants adapt their behavior to the statistical environment of the experiment; attraction is not fixed but context-sensitive.
+```{=latex}
+\begin{exe}
+\ex \label{ger}
+\begin{xlist}
+\ex \label{ger-amb}
+\gll Die Stellungnahme gegen ie Demonstration-en\\
+the.F.NOM.SG position against the.F.ACC.PL demonstration-PL\\
+\glt `The position against the demonstrations' 
+\ex \label{ger-dist}
+\gll Die Stellungnahme zu den Demonstration-en\\
+the.F.NOM.SG position on the.F.DAT.PL demonstration-PL\\
+\glt `the position on the demonstrations' 
+\end{xlist}
+\end{exe}
+```
 
-
-A related set of findings comes from work by @Slioussar2018, who showed that surface form can sometimes override abstract features in Russian. Exploiting the syncretism between singular genitives and nominative plurals—a pattern absent in plural genitives—she found that participants made more errors and showed faster reading times in sentences like (\ref{rus-gen-pl}) than in (\ref{rus-gen-sg}). She argued that, rather than accessing abstract case features, readers relied on surface-level cues that were easier to retrieve.
+However, the most striking evidence comes from work by @Slioussar2018, who showed that surface form can sometimes override abstract features in Russian. Exploiting the syncretism between singular genitives and nominative plurals—a pattern absent in plural genitives—she found that participants made more production and comprehension errors and showed faster reading times in sentences like (\ref{rus-gen-pl}) than in (\ref{rus-gen-sg}). She argued that, rather than accessing abstract case features, readers relied on surface-level cues that were easier to retrieve.
 
 ```{=latex}
 \begin{exe}
 \ex \label{rus}
 \begin{xlist}
 \ex \label{rus-gen-sg}
-\gll The singer that the actor openly \\
-The singer that the actor openly \\
-\glt `The singer that the actor openly' 
+\gll Korobka dlya kraski byla/*byli \ldots \\
+box.F.SG.NOM for paint.GEN.SG$_{=NOM.PL}$ be.PST.F.SG/*be.PST.F.PL \\
+\glt `A box for the paint(s) was/*were \dots'
 \ex \label{rus-gen-pl}
-\gll The singers that the actor openly admires \\
-The singers that the actor openly admires \\
-\glt `The singers that the actor openly admires'
+\gll Korobka dlya krasok byla/*byli \ldots \\
+box.F.SG.NOM for paint.GEN.PL$_{\neq NOM.PL}$ be.PST.F.SG/*be.PST.F.PL \\
+\glt `A box for the paint(s) was/*were \dots'
 \end{xlist}
 \end{exe}
 ```
@@ -483,7 +492,7 @@ exp1.avgs %>%
 ```
 
 
-```{r exp1-models}
+```{r exp1-models, eval=FALSE}
 options(mc.cores = parallel::detectCores())
 theme_set(theme_bw(base_family = "Times"))
 
@@ -537,6 +546,18 @@ make_priors <- function(inter_mean = 0.4, inter_sd = 0.25,
 #exp2.priors_strong_interaction <- make_exp2_priors(inter_mean = 0.8, inter_sd = 0.25)
 
 m.exp1.int <- brm(
+  response_yes ~ grammatical * attractor_num +
+    (1 + grammatical * attractor_num | subject) +
+    (1 + grammatical * attractor_num | item),
+  data   = exp1.dfModel,
+  family = bernoulli(link = "logit"),
+  prior  = make_priors(inter_mean = 0, inter_sd = 0.10),
+  sample_prior = "yes",           
+  chains = 4, iter = 4000, warmup = 1000, seed = 1
+)
+
+
+m.exp1.no.int <- brm(
   response_yes ~ grammatical * attractor_num +
     (1 + grammatical * attractor_num | subject) +
     (1 + grammatical * attractor_num | item),
