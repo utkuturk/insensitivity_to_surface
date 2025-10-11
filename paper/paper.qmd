@@ -27,6 +27,8 @@ format:
     include-in-header:
       - preamble.tex
     keep-tex: true
+    # latex-clean: false
+    # latex-min-runs: 3
     journal:
       name: Cognition
       formatting: preprint
@@ -54,7 +56,7 @@ select <- dplyr::select
 
 
 ```{r functions}
-read_experimental_data <- function(fname, subj_offset = 0, item_offset = 0)
+read_experimental_data <- function(fname, subj_offset = 0, item_offset = 0, verbose = F)
 {
   data <- read.csv(fname, 
                    header = F, 
@@ -99,13 +101,13 @@ read_experimental_data <- function(fname, subj_offset = 0, item_offset = 0)
   
   data$response_yes <- ifelse(grepl("P'ye",data$Response) , T, 
                               ifelse(grepl("Q'ya",data$Response) , F, NA))
-  print( with(data, table(Response, response_yes)) )
+  if(verbose){print( with(data, table(Response, response_yes)) )}
   data %<>% dplyr::select(-Response)
   data
 }
 
 
-exclude_bad_subjects <- function(data_to_clean, accuracy_threshold = 0.25, rt_below = 200, rt_upper = 4999) {
+exclude_bad_subjects <- function(data_to_clean, accuracy_threshold = 0.25, rt_below = 200, rt_upper = 4999, verbose = F) {
   avg_by_subj <- data_to_clean %>%
     group_by(subject, experiment, condition, 
              grammatical, verb_num, attractor_num) %>%
@@ -129,8 +131,11 @@ exclude_bad_subjects <- function(data_to_clean, accuracy_threshold = 0.25, rt_be
     data_clean %<>% subset(natturk == "nat_turk")
   }
   
-  print( with(data_clean, table(exp_condition, response_yes)) )
-  print( sprintf("number of bad subjects: %f", length(bad_subjects)))
+  if(verbose){
+    print( with(data_clean, table(exp_condition, response_yes)) )
+    print( sprintf("number of bad subjects: %f", length(bad_subjects)))
+  }
+  
   data_clean
   
 }
@@ -370,7 +375,13 @@ exp1.avgs.filler <- exp1.clean %>%
 
 ```{r exp1-text-inputs}
 # I want accuracy, not the response yes
-exp1.avgs.filler %<>% mutate(p_hat = if_else(grammatical == "ungrammatical", 1 - p_hat, p_hat))
+exp1.avgs.filler %<>% 
+  mutate(old.lwr = lwr, old.upr = upr) %>% 
+  mutate(
+  p_hat = if_else(grammatical == "ungrammatical", 1 - p_hat, p_hat),
+  lwr = if_else(grammatical == "ungrammatical", 1 - old.upr, old.lwr),
+  upr = if_else(grammatical == "ungrammatical", 1 - old.lwr, old.upr))  %>% 
+  select(-old.lwr, -old.upr)
 
 
 exp1.nsubj <- exp1$subject %>% unique() %>% length() 
@@ -392,60 +403,150 @@ exp1.minage <- min(asi(exp1.clean$age))
 
 # FILLER AVERAGES
 
-### YOU ARE HERE.
-FGM2 <- exp2.f.avgs[resp.grammatical == "grammatical" & resp.experiment == "Experiment 2"]$resp.M %>% round(2)
-FUM2 <- exp2.f.avgs[resp.grammatical == "ungrammatical" & resp.experiment == "Experiment 2"]$resp.M %>% round(2)
-FGSE2 <- exp2.f.avgs[resp.grammatical == "grammatical" & resp.experiment == "Experiment 2"]$resp.SE %>% round(2)
-FUSE2 <- exp2.f.avgs[resp.grammatical == "ungrammatical" & resp.experiment == "Experiment 2"]$resp.SE %>% round(2)
+exp1.avgs.filler %<>% mutate(text = paste0("M = ", round(p_hat,2), ", CI = [", round(lwr,2) , ",", round(upr,2) ,"]"))
 
+exp1.avgs %<>% mutate(text = paste0("M = ", round(p_hat,2), ", CI = [", round(lwr,2) , ",", round(upr,2) ,"]"))
 
-
-# EXP AVERAGES
-# SOURCE - GRAM - ATTNUM - mean or se
-GPM2 <- round(exp2.avgs[resp.experiment == "Experiment 2" &  resp.grammatical == "grammatical" & resp.attractor_num == "plural"]$resp.M,2)
-
-GPSE2 <- round(exp2.avgs[resp.experiment == "Experiment 2" &  resp.grammatical == "grammatical" & resp.attractor_num == "plural"]$resp.SE,2)
-
-GSM2 <- round(exp2.avgs[resp.experiment == "Experiment 2" &  resp.grammatical == "grammatical" & resp.attractor_num == "singular"]$resp.M,2)
-
-GSSE2 <- round(exp2.avgs[resp.experiment == "Experiment 2" &  resp.grammatical == "grammatical" & resp.attractor_num == "singular"]$resp.SE,2)
-
-UPM2 <- round(exp2.avgs[resp.experiment == "Experiment 2" &  resp.grammatical == "ungrammatical" & resp.attractor_num == "plural"]$resp.M,2)
-
-UPSE2 <- round(exp2.avgs[resp.experiment == "Experiment 2" &  resp.grammatical == "ungrammatical" & resp.attractor_num == "plural"]$resp.SE,2)
-
-USM2 <- round(exp2.avgs[resp.experiment == "Experiment 2" &  resp.grammatical == "ungrammatical" & resp.attractor_num == "singular"]$resp.M,2)
-
-USSE2 <- round(exp2.avgs[resp.experiment == "Experiment 2" &  resp.grammatical == "ungrammatical" & resp.attractor_num == "singular"]$resp.SE,2)
 ```
 
 
 ## Participants
 
-We recruited 118 undergraduate students to participate in the experiment in exchange for course credit. All participants were native Turkish speakers, with an average age of 20 (range: 18 – 32). The experiment was carried out following the principles of the Declaration of Helsinki and the regulations concerning research ethics at Bogazici University. All participants provided informed consent before their participation and their identities were completely anonymised.
+We recruited `r exp1.nsubj` undergraduate students to participate in the experiment in exchange for course credit. All participants were native Turkish speakers, with an average age of `r exp1.meanage` (range: `r exp1.minage` – `r exp1.maxage`). The experiment was carried out following the principles of the Declaration of Helsinki and the regulations concerning research ethics at Bogazici University. All participants provided informed consent before their participation and their identities were completely anonymised.
 
 ## Materials
 
-We used 40 sets of sentences like (5), in which we manipulated (i) the number of the attractor noun and (ii) the number agreement on the verb. Plural number and plural agreement were both marked with the suffix -ler/-lar, while the singular number and singular agreement were marked by its absence. We used the experimental items from
+We used 40 sets of sentences like (\ref{exp}), in which we manipulated (i) the number of the attractor and (ii) the number agreement on the verb. Both plural markings were marked with the suffix -ler/-lar, while the singular number and singular agreement were marked by its absence. 
 
-Lago et al. (2019) as a starting point for all items. We substituted ambiguous nouns for unambiguous alternatives, and in some cases, modified other parts of the sentence for plausibility reasons.
+```{=latex}
+\begin{exe}
+\ex \label{exp}
+\begin{xlist}
+\ex[]{\label{ss}
+\gll Tut-tuğ-u aşçı mutfak-ta sürekli zıpla-dı.\\
+hire-NMLZ-POSS cook[NOM] kitchen-LOC non.stop jump-PST\\
+\glt `The cook they hired$_{sg}$ jumped$_{sg}$ in the kitchen non-stop.'}
+\ex[*]{\label{sp}
+\gll Tut-tuğ-u aşçı mutfak-ta sürekli zıpla-dı-lar.\\
+hire-NMLZ-POSS cook[NOM] kitchen-LOC non.stop jump-PST-PL\\
+\glt `The cook they hired$_{sg}$ jumped$_{pl}$ in the kitchen non-stop.'}
+\ex[]{\label{ps}
+\gll Tut-tuk-lar-ı aşçı mutfak-ta sürekli zıpla-dı.\\
+hire-NMLZ-PL-POSS cook[NOM] kitchen-LOC non.stop jump-PST\\
+\glt `The cook they hired$_{pl}$ jumped$_{sg}$ in the kitchen non-stop.'}
+\ex[*]{\label{pp}
+\gll Tut-tuk-lar-ı aşçı mutfak-ta sürekli zıpla-dı-lar.\\
+hire-NMLZ-PL-POSS cook[NOM] kitchen-LOC non.stop jump-PST-PL\\
+\glt `The cook they hired$_{pl}$ jumped$_{pl}$ in the kitchen non-stop.'}
+\end{xlist}
+\end{exe}
+```
 
-All sentences started with a complex subject NP like milyonerlerin terzisi “the millionaires’ tailor,” in which the genitive possessor functioned as the attractor, and the head noun carried an unambiguous possessive case marker. Because the plural marking on nominals is not optional and the head noun was singular, absent of -lar, in all conditions, sentences with plural verb agreement were ungrammatical. More- over, the semantic relationship between the possessor and the head noun was kept as it is in Lago et al.’s (2019) original study and genitive-possessive structures can be paraphrased using ’s or of in English.
-
-One example set of experimental items is in (5). The subject phrase is marked with square brackets, and the dependency between the subject head and the matrix verb is signaled using bold-face.
+All sentences were adapted by previous studies in Turkish agreement attraction [@LagoEtAl2019;@TurkLogacev2020]. Sentences started with a complex subject NP like 'tuttukları aşçı' 'the cook they hired,' in which the nominalized relative clause functioned as the attractor, and the head noun were bare. Because the plural marking on nominals is not optional and the head noun was singular, absent of -lar, in all conditions, sentences with plural verb agreement were ungrammatical. To inhibit participants from forming a task-related strategy in which they deemed the sentence ungrammatical upon seeing a plural verb, half of our fillers included plural grammatical verbs, while the other half included singular ungrammatical verbs.
 
 ## Procedures
 
 The experiment was run online, using the web-based platform Ibex Farm [@Drummond2013]. Each experimental session took approximately 25 minutes to complete. Participants provided demographic information and gave informed consent to participate in the experiment. They then proceeded to read the instructions and were given nine practice trials before the experiment began.
 
-Each trial began with a blank screen for 600 ms, followed by a word-by-word RSVP presentation of the sentence in the center of the screen, followed by a prompt to indicate their acceptability judgment. Sentences were presented word-by-word in the center of the screen in 30 pt font size, at a rate of 400 ms per word. Participants saw a blank screen for 100 ms between each word, and to see the next item, they needed to press the space key. Participants were asked to press the key P to indicate that a sentence is acceptable and Q to indicate that the sentence is unacceptable. They were instructed to provide judgments as quickly as possible. During the experiment, a warning message in red font appeared if they did not respond within 5,000 ms.
+Each trial began with a blank screen for 600 ms, followed by a word-by-word RSVP presentation of the sentence in the center of the screen, followed by a prompt to indicate their acceptability judgment. Sentences were presented word-by-word in the center of the screen in 30 pt font size, at a rate of 400 ms per word. Participants saw a blank screen for 100 ms between each word, and to see the next item, they needed to press the space key. Participants were asked to press the key P to indicate that a sentence is acceptable and Q to indicate that the sentence is unacceptable. They were instructed to provide judgments as quickly as possible. During the practice, but not during the experiment, a warning message in red font appeared if they did not respond within 5,000 ms.
 
-Participants saw 40 experimental and 40 filler sentences. Experimental sentences were distributed among four different lists according to a Latin-square design. Every participant saw one version of the experiment with a specific list and one item per condition
+Participants saw 40 experimental and 40 filler sentences. Experimental sentences were distributed among four different lists according to a Latin-square design. Every participant saw one version of the experiment with a specific list and one item per condition.
 
 
 ## Analysis and Results
 
+```{r exp1-plot}
+
+exp1.gram.label <- c(
+    grammatical = "Grammatical\n(Singular Verb)",
+    ungrammatical = "Ungrammatical\n(Plural Verb)"
+)
+
+# responses 
+
+exp1.avgs %>%
+    ggplot(aes(grammatical, p_hat, 
+            linetype = attractor_num, 
+            group = attractor_num)) + 
+    geom_point() + geom_line() + 
+    geom_errorbar(aes(ymin = lwr, ymax = upr), width = 0.1) + 
+    theme(strip.background = element_rect(fill="white")) +
+    xlab("Grammaticality") + 
+    ylab("Percentage 'acceptable'") + 
+    scale_y_continuous(labels=scales::percent) + 
+    scale_linetype_discrete(name = "Attractor Number", 
+                            labels = c("Plural", "Singular")) + 
+    scale_x_discrete(labels = exp1.gram.label) +
+    theme_minimal(base_family = "Times") + 
+    theme(legend.position = 'bottom') 
+
+```
+
+
 ```{r exp1-models}
+options(mc.cores = parallel::detectCores())
+theme_set(theme_bw(base_family = "Times"))
+
+
+exp1.dfModel <- exp1.clean %>% subset(match != "filler")
+
+
+exp1.dfModel %<>%
+  mutate(
+    grammatical     = factor(grammatical,
+                         levels = c("grammatical","ungrammatical"),
+                         labels = c("Grammatical","Ungrammatical")),
+    attractor_num   = factor(attractor_num,  # or attractor_num if that’s your column
+                         levels = c("singular","plural"),
+                         labels = c("Singular","Plural"))
+  )
+
+# Sum-code ±0.5 and give readable column names
+C2 <- contr.sum(2) / 2
+
+Cg <- C2; colnames(Cg) <- "Ungram_minus_Gram"      # β > 0 ⇒ Ungram > Gram (in log-odds of YES)
+Ca <- C2; colnames(Ca) <- "Plural_minus_Singular"  # β > 0 ⇒ Plural > Singular (log-odds of YES)
+
+contrasts(exp1.dfModel$grammatical) <- Cg
+contrasts(exp1.dfModel$attractor_num)   <- Ca
+
+make_priors <- function(inter_mean = 0.4, inter_sd = 0.25,
+                             exp_rate = 2, lkj_eta = 2) {
+  c(
+    set_prior("normal(0.85, 0.7)", class = "Intercept"),
+    set_prior("normal(-1.0, 0.5)", class = "b",
+              coef = "grammaticalUngram_minus_Gram"),
+    set_prior("normal(0.30, 0.40)", class = "b",
+              coef = "attractor_numPlural_minus_Singular"),
+    set_prior(sprintf("normal(%g, %g)", inter_mean, inter_sd),
+              class = "b",
+              coef = "grammaticalUngram_minus_Gram:attractor_numPlural_minus_Singular"),
+    set_prior(sprintf("exponential(%g)", exp_rate), class = "sd"),
+    set_prior(sprintf("lkj(%g)", lkj_eta), class = "cor")
+  )
+}
+
+
+# Default: mean 0.4, sd 0.25 (the “interaction” model)
+#exp2.priors_interaction_exp <- make_exp2_priors()
+
+# Near-zero interaction model
+#exp2.priors_no_interaction_exp <- make_exp2_priors(inter_mean = 0, inter_sd = 0.10)
+
+# Strong positive interaction (e.g. mean 0.8)
+#exp2.priors_strong_interaction <- make_exp2_priors(inter_mean = 0.8, inter_sd = 0.25)
+
+m.exp1.int <- brm(
+  response_yes ~ grammatical * attractor_num +
+    (1 + grammatical * attractor_num | subject) +
+    (1 + grammatical * attractor_num | item),
+  data   = exp1.dfModel,
+  family = bernoulli(link = "logit"),
+  prior  = make_priors(),
+  sample_prior = "yes",           
+  chains = 4, iter = 4000, warmup = 1000, seed = 1
+)
+
 
 ```
 
@@ -528,3 +629,22 @@ The same procedure with Experiment 1 was used.
 - Conclusion:
   - Turkish attraction effects arise from abstract feature retrieval not surface level shallow form-matching.  
   - The evaluation of abstract features are modulated by distributional learning within the experiment. 
+
+
+<!-- # Abbreviations {.unnumbered} -->
+
+<!-- \printglossaries -->
+
+```{r message=FALSE, warning=FALSE, echo=FALSE, output=FALSE}
+# system("makeglossaries paper")
+```
+
+# References {.unnumbered}
+
+\newcommand{\doi}[1]{\href{http://dx.doi.org/#1}{http://dx.doi.org/#1}}
+\begingroup
+\raggedright
+\singlespacing
+::: {#refs}
+:::
+\endgroup

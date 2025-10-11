@@ -108,6 +108,12 @@
 
 
 \usepackage{gb4e}
+\noautomath
+% \usepackage[inline]{glossaries}
+\usepackage{leipzig}
+% \makeglossaries
+\usepackage{typgloss}
+\usepackage{setspace}
 \makeatletter
 \@ifpackageloaded{caption}{}{\usepackage{caption}}
 \AtBeginDocument{%
@@ -439,9 +445,9 @@ Processing}\label{experiment-1-testing-form-driven-processing}
 
 \subsection{Participants}\label{participants}
 
-We recruited 118 undergraduate students to participate in the experiment
+We recruited 80 undergraduate students to participate in the experiment
 in exchange for course credit. All participants were native Turkish
-speakers, with an average age of 20 (range: 18 -- 32). The experiment
+speakers, with an average age of 21 (range: 18 -- 31). The experiment
 was carried out following the principles of the Declaration of Helsinki
 and the regulations concerning research ethics at Bogazici University.
 All participants provided informed consent before their participation
@@ -449,30 +455,44 @@ and their identities were completely anonymised.
 
 \subsection{Materials}\label{materials}
 
-We used 40 sets of sentences like (5), in which we manipulated (i) the
-number of the attractor noun and (ii) the number agreement on the verb.
-Plural number and plural agreement were both marked with the suffix
--ler/-lar, while the singular number and singular agreement were marked
-by its absence. We used the experimental items from
+We used 40 sets of sentences like (\ref{exp}), in which we manipulated
+(i) the number of the attractor and (ii) the number agreement on the
+verb. Both plural markings were marked with the suffix -ler/-lar, while
+the singular number and singular agreement were marked by its absence.
 
-Lago et al.~(2019) as a starting point for all items. We substituted
-ambiguous nouns for unambiguous alternatives, and in some cases,
-modified other parts of the sentence for plausibility reasons.
+\begin{exe}
+\ex \label{exp}
+\begin{xlist}
+\ex[]{\label{ss}
+\gll Tut-tuğ-u aşçı mutfak-ta sürekli zıpla-dı.\\
+hire-NMLZ-POSS cook[NOM] kitchen-LOC non.stop jump-PST\\
+\glt `The cook they hired$_{sg}$ jumped$_{sg}$ in the kitchen non-stop.'}
+\ex[*]{\label{sp}
+\gll Tut-tuğ-u aşçı mutfak-ta sürekli zıpla-dı-lar.\\
+hire-NMLZ-POSS cook[NOM] kitchen-LOC non.stop jump-PST-PL\\
+\glt `The cook they hired$_{sg}$ jumped$_{pl}$ in the kitchen non-stop.'}
+\ex[]{\label{ps}
+\gll Tut-tuk-lar-ı aşçı mutfak-ta sürekli zıpla-dı.\\
+hire-NMLZ-PL-POSS cook[NOM] kitchen-LOC non.stop jump-PST\\
+\glt `The cook they hired$_{pl}$ jumped$_{sg}$ in the kitchen non-stop.'}
+\ex[*]{\label{pp}
+\gll Tut-tuk-lar-ı aşçı mutfak-ta sürekli zıpla-dı-lar.\\
+hire-NMLZ-PL-POSS cook[NOM] kitchen-LOC non.stop jump-PST-PL\\
+\glt `The cook they hired$_{pl}$ jumped$_{pl}$ in the kitchen non-stop.'}
+\end{xlist}
+\end{exe}
 
-All sentences started with a complex subject NP like milyonerlerin
-terzisi ``the millionaires' tailor,'' in which the genitive possessor
-functioned as the attractor, and the head noun carried an unambiguous
-possessive case marker. Because the plural marking on nominals is not
+All sentences were adapted by previous studies in Turkish agreement
+attraction \citep{LagoEtAl2019, TurkLogacev2020}. Sentences started with
+a complex subject NP like `tuttukları aşçı' `the cook they hired,' in
+which the nominalized relative clause functioned as the attractor, and
+the head noun were bare. Because the plural marking on nominals is not
 optional and the head noun was singular, absent of -lar, in all
-conditions, sentences with plural verb agreement were ungrammatical.
-More- over, the semantic relationship between the possessor and the head
-noun was kept as it is in Lago et al.'s (2019) original study and
-genitive-possessive structures can be paraphrased using 's or of in
-English.
-
-One example set of experimental items is in (5). The subject phrase is
-marked with square brackets, and the dependency between the subject head
-and the matrix verb is signaled using bold-face.
+conditions, sentences with plural verb agreement were ungrammatical. To
+inhibit participants from forming a task-related strategy in which they
+deemed the sentence ungrammatical upon seeing a plural verb, half of our
+fillers included plural grammatical verbs, while the other half included
+singular ungrammatical verbs.
 
 \subsection{Procedures}\label{procedures}
 
@@ -492,15 +512,18 @@ screen for 100 ms between each word, and to see the next item, they
 needed to press the space key. Participants were asked to press the key
 P to indicate that a sentence is acceptable and Q to indicate that the
 sentence is unacceptable. They were instructed to provide judgments as
-quickly as possible. During the experiment, a warning message in red
-font appeared if they did not respond within 5,000 ms.
+quickly as possible. During the practice, but not during the experiment,
+a warning message in red font appeared if they did not respond within
+5,000 ms.
 
 Participants saw 40 experimental and 40 filler sentences. Experimental
 sentences were distributed among four different lists according to a
 Latin-square design. Every participant saw one version of the experiment
-with a specific list and one item per condition
+with a specific list and one item per condition.
 
 \subsection{Analysis and Results}\label{analysis-and-results}
+
+\pandocbounded{\includegraphics[keepaspectratio]{paper_files/figure-pdf/exp1-plot-1.pdf}}
 
 \begin{itemize}
 \tightlist
@@ -670,8 +693,20 @@ The same procedure with Experiment 1 was used.
   \end{itemize}
 \end{itemize}
 
+\section*{References}\label{references}
+\addcontentsline{toc}{section}{References}
 
+\newcommand{\doi}[1]{\href{http://dx.doi.org/#1}{http://dx.doi.org/#1}}
+\begingroup
+\raggedright
+\singlespacing
+
+\renewcommand{\bibsection}{}
 \bibliography{bibliography.bib}
+
+\endgroup
+
+
 
 
 
