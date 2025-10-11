@@ -1,0 +1,760 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
+
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.8.25">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+<meta name="author" content="Utku Turk">
+<meta name="dcterms.date" content="2025-10-11">
+<meta name="keywords" content="keyword1, keyword2">
+
+<title>Sensitivity to within-experiment statistics: A case from Turkish agreement attraction</title>
+<style>
+code{white-space: pre-wrap;}
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: min(4vw, 1.5em);}
+div.column{flex: auto; overflow-x: auto;}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
+  vertical-align: middle;
+}
+/* CSS for citations */
+div.csl-bib-body { }
+div.csl-entry {
+  clear: both;
+  margin-bottom: 0em;
+}
+.hanging-indent div.csl-entry {
+  margin-left:2em;
+  text-indent:-2em;
+}
+div.csl-left-margin {
+  min-width:2em;
+  float:left;
+}
+div.csl-right-inline {
+  margin-left:2em;
+  padding-left:1em;
+}
+div.csl-indent {
+  margin-left: 2em;
+}</style>
+
+
+<script src="paper_files/libs/clipboard/clipboard.min.js"></script>
+<script src="paper_files/libs/quarto-html/quarto.js" type="module"></script>
+<script src="paper_files/libs/quarto-html/tabsets/tabsets.js" type="module"></script>
+<script src="paper_files/libs/quarto-html/axe/axe-check.js" type="module"></script>
+<script src="paper_files/libs/quarto-html/popper.min.js"></script>
+<script src="paper_files/libs/quarto-html/tippy.umd.min.js"></script>
+<script src="paper_files/libs/quarto-html/anchor.min.js"></script>
+<link href="paper_files/libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="paper_files/libs/quarto-html/quarto-syntax-highlighting-7b89279ff1a6dce999919e0e67d4d9ec.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="paper_files/libs/bootstrap/bootstrap.min.js"></script>
+<link href="paper_files/libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="paper_files/libs/bootstrap/bootstrap-0b17c56a03607e46c3ce72eef359749e.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+
+  <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
+  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
+
+<script type="text/javascript">
+const typesetMath = (el) => {
+  if (window.MathJax) {
+    // MathJax Typeset
+    window.MathJax.typeset([el]);
+  } else if (window.katex) {
+    // KaTeX Render
+    var mathElements = el.getElementsByClassName("math");
+    var macros = [];
+    for (var i = 0; i < mathElements.length; i++) {
+      var texText = mathElements[i].firstChild;
+      if (mathElements[i].tagName == "SPAN" && texText && texText.data) {
+        window.katex.render(texText.data, mathElements[i], {
+          displayMode: mathElements[i].classList.contains('display'),
+          throwOnError: false,
+          macros: macros,
+          fleqn: false
+        });
+      }
+    }
+  }
+}
+window.Quarto = {
+  typesetMath
+};
+</script>
+
+</head>
+
+<body class="quarto-light">
+
+<div id="quarto-content" class="page-columns page-rows-contents page-layout-article">
+<div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+<div class="quarto-alternate-formats"><h2>Other Formats</h2><ul><li><a href="paper.pdf"><i class="bi bi-file-pdf"></i>PDF (elsevier)</a></li></ul></div></div>
+<main class="content" id="quarto-document-content">
+
+<header id="title-block-header" class="quarto-title-block default">
+<div class="quarto-title">
+<h1 class="title">Sensitivity to within-experiment statistics: A case from Turkish agreement attraction</h1>
+<p class="subtitle lead">Within-experiment statistics in agreement attraction</p>
+</div>
+
+
+<div class="quarto-title-meta-author">
+  <div class="quarto-title-meta-heading">Author</div>
+  <div class="quarto-title-meta-heading">Affiliation</div>
+  
+    <div class="quarto-title-meta-contents">
+    <p class="author">Utku Turk <a href="mailto:utkuturk@umd.edu" class="quarto-title-author-email"><i class="bi bi-envelope"></i></a> </p>
+  </div>
+  <div class="quarto-title-meta-contents">
+        <p class="affiliation">
+            University of Maryland, College Park
+          </p>
+      </div>
+  </div>
+
+<div class="quarto-title-meta">
+
+      
+    <div>
+    <div class="quarto-title-meta-heading">Published</div>
+    <div class="quarto-title-meta-contents">
+      <p class="date">October 11, 2025</p>
+    </div>
+  </div>
+  
+    
+  </div>
+  
+<div>
+  <div class="abstract">
+    <div class="block-title">Abstract</div>
+    <p>Surface level does not affect it, but within-experiment statistics effect the findings.</p>
+  </div>
+</div>
+
+<div>
+  <div class="keywords">
+    <div class="block-title">Keywords</div>
+    <p>keyword1, keyword2</p>
+  </div>
+</div>
+
+</header>
+
+
+<section id="introduction" class="level1">
+<h1>Introduction</h1>
+<p>Speakers often rely on additional sources of information when processing sentences, including plausability, frequency, distributional expectations about forms and tasks, as well as the overall composition of an experimental session (e.g., the ratio of fillers to critical items). Recent work has demonstrated that such task or item-specific factors can substantially modulate reading and judgment behavior <span class="citation" data-cites="LauraMalsbug24 ArehalliWittenberg2021 HammerlyEtAl2019 LogacevVasishth2016">(<a href="#ref-LauraMalsbug24" role="doc-biblioref">Laurinavichyute and von der Malsburg 2024</a>; <a href="#ref-ArehalliWittenberg2021" role="doc-biblioref">Arehalli and Wittenberg 2021</a>; <a href="#ref-HammerlyEtAl2019" role="doc-biblioref">Hammerly, Staub, and Dillon 2019</a>; <a href="#ref-LogacevVasishth2016" role="doc-biblioref">Logačev and Vasishth 2016</a>)</span>. One line of research has used the agreement-attraction phenomenon to probe the heuristics that influence sentence processing. Agreement attraction refers to cases in which a verb erroneously agrees with a nearby noun rather than the true subject, giving rise to so-called grammaticality illusions in both production and comprehension <span class="citation" data-cites="BockMiller:1991 PearlmutterGarnseyBock:1999">(<a href="#ref-BockMiller:1991" role="doc-biblioref">Bock and Miller 1991</a>; <a href="#ref-PearlmutterGarnseyBock:1999" role="doc-biblioref">Pearlmutter, Garnsey, and Bock 1999</a>)</span>.</p>
+<p>Agreement errors in sentences like (<span class="math inline">\(\ref{og}\)</span>) have been treated either as a failure of feature reconcilation or a failure of memory encoding. The former set of accounts explain these errors as a by-product of how number feature of a phrase is calculated in real-time <span class="citation" data-cites="BockMiller:1991 EberhardEtAl2005 HammerlyEtAl2019">(<a href="#ref-BockMiller:1991" role="doc-biblioref">Bock and Miller 1991</a>; <a href="#ref-EberhardEtAl2005" role="doc-biblioref">Eberhard, Cutting, and Bock 2005</a>; <a href="#ref-HammerlyEtAl2019" role="doc-biblioref">Hammerly, Staub, and Dillon 2019</a>)</span>. For example, <span class="citation" data-cites="EberhardEtAl2005">Eberhard, Cutting, and Bock (<a href="#ref-EberhardEtAl2005" role="doc-biblioref">2005</a>)</span> argue that depending on conceptual number, morphophonological number marking, or syntactic dependencies within a phrase, speakers assign a probabilistic number value to phrases. The errors arise when additional plurality features from different sources end up contributing to the final number representation of a phrase. On the other hand, the latter set of accounts claim that the initial representation is not erroneous, but speakers are sometimes unable to correctly retrieve the controller <span class="citation" data-cites="WagersEtAl:2009 Dillon2013a">(<a href="#ref-WagersEtAl:2009" role="doc-biblioref">Wagers, Lau, and Phillips 2009</a>; <a href="#ref-Dillon2013a" role="doc-biblioref">Dillon et al. 2013</a>)</span>. For example, <span class="citation" data-cites="WagersEtAl:2009">Wagers, Lau, and Phillips (<a href="#ref-WagersEtAl:2009" role="doc-biblioref">2009</a>)</span> argue that the parser normally check the agreement relation by retrieving the relevant chunk in memory using the retrieval cues provided by the agreement probe. In sentences like (1), speakers occasionally retrieve the incorrect element due to the fact that neither nouns fully match the relevant cues.</p>
+<p>However, both group of accounts generally are underspecified in terms of how meta-linguistic information should be integrated to the inter-sentential dependency mechanisms. Recently, a growing literature have been testing how different types of additional sources that are independent of the linguistic information affects these errors. Recent experiments show that even small changes in task expectations can alter attraction patterns. For example, <span class="citation" data-cites="LauraMalsbug24">Laurinavichyute and von der Malsburg (<a href="#ref-LauraMalsbug24" role="doc-biblioref">2024</a>)</span> found that varying the practice structure and task demands (reading vs.&nbsp;judgment) affected reading times at the verb in sentences as in (<span class="math inline">\(\ref{malsburg}\)</span>). In a series of high-powered self-paced reading tasks, they found that when participants answered a comprehension question after each trial, reading times at the verb ‘admires’ did not differ between (<span class="math inline">\(\ref{malsburg-singer}\)</span>) and (<span class="math inline">\(\ref{malsburg-singers}\)</span>). However, when participants were asked to judge grammaticality instead, they spent more time reading the verb ‘admires’ in (<span class="math inline">\(\ref{malsburg-singers}\)</span>), suggesting that processing mechanisms can change depending on the expected task.</p>
+<p>A related set of findings came from <span class="citation" data-cites="HammerlyEtAl2019">Hammerly, Staub, and Dillon (<a href="#ref-HammerlyEtAl2019" role="doc-biblioref">2019</a>)</span>. They challenge long-standing assumption that the agreement errors only surfaced in ungrammatical sentences such as (<span class="math inline">\(\ref{og}\)</span>), but not in grammatical sentences as in (<span class="math inline">\(\ref{og-g}\)</span>). It has been repeatedly shown that a plural noun increased participants’ likelihood to erroneously judge ungrammatical sentences as grammatical; however, participants rarely misidentified grammatical sentences as ungrammatical even when there is an attractor. <span class="citation" data-cites="HammerlyEtAl2019">Hammerly, Staub, and Dillon (<a href="#ref-HammerlyEtAl2019" role="doc-biblioref">2019</a>)</span> showed that similar effect surfaced in grammatical sentences when participants’ a priori expectations about the experiment is altered. They manipulated the instructions and the number of ungrammatical in an experiment so that participants expected to see more ungrammatical sentences than grammatical sentences. With reduced bias towards grammaticality, they found that the presence of a plural nearby noun affected how speakers completed ungrammatical sentences (<span class="math inline">\(\ref{og}\)</span>) and grammatical sentences (<span class="math inline">\(\ref{og-g}\)</span>) <span class="citation" data-cites="Turk2022">(see <a href="#ref-Turk2022" role="doc-biblioref"><strong>Turk2022?</strong></a> for acceptability)</span>.</p>
+<p>Another set of meta-linguistic information that comes from form-driven task strategies. In some languages, surface-form similarity to the agreement controller can exacerbate attraction [BUNCH OF PAPERS] or even drive illusions on its own [CHROMY]. <span class="citation" data-cites="HartsuikerEtAl2003">Hartsuiker et al. (<a href="#ref-HartsuikerEtAl2003" role="doc-biblioref">2003</a>)</span>, for example, used the the accusative marked determiners’ form similarity to the nominative marked articles in German, that can be the determiner of an agreement controller, and compared them to distinctively marked dative marked determiners. They showed that participants made agreement errors more often when the preambles contained two NPs that are not marked distinctively (<span class="math inline">\(\ref{ger-amb}\)</span>) compared to cases where the attractor is distinguishable solely using the form (<span class="math inline">\(\ref{ger-dist}\)</span>). More importantly, this effect only surfaced when the head and the distractors are both nouns with feminine gender, and not masculine or neuter gender, which do not show the surface level similarity in plurals.</p>
+<p>The most striking evidence comes from work by <span class="citation" data-cites="Slioussar2018">Slioussar (<a href="#ref-Slioussar2018" role="doc-biblioref">2018</a>)</span>, who showed that surface form can sometimes override abstract features in Russian. Exploiting the syncretism between singular genitives and nominative plurals, a pattern absent in plural genitives, she found that participants made more production and comprehension errors and showed faster reading times in sentences like (<span class="math inline">\(\ref{rus-gen-sg}\)</span>) than in (<span class="math inline">\(\ref{rus-gen-pl}\)</span>). This finding is fairly surprising given that a noun that is unambigously singular and only <em>seems</em> plural due to form similarity can induce more attraction errors, than grammatically plural nouns. She argued that, rather than accessing abstract case features, speakers and comprehenders sometimes relied on surface-level cues that were easier to retrieve.</p>
+<p>Together, these studies converge on the idea that speakers are sensitive not only to the immediate syntactic cues in a sentence, but also to broader distributional regularities that shape how those cues are interpreted. Some of these regularities reflect long-term experience with the language, such as recurring patterns of form syncretism and probability of being a controller, while others arise within the course of a single experiment, as participants adjust to the statistical composition of the materials, the frequency of ungrammatical items, or the mix of structure types they encounter. These findings raise the possibility that agreement attraction is not a fixed structural reflex, but rather a dynamic outcome of how the processing system weighs and re-weights cues based on both linguistic and contextual experience. If so, the strength and even the presence of attraction effects should depend on how strongly surface form and feature structure are correlated in the input, and on what participants learn about those correlations in real time.</p>
+<p>Building on these observations, we utilize Turkish as a testing ground to examine how surface-form overlap influences agreement processing and whether exposure to different kinds of distractors modulates attraction.</p>
+<ul>
+<li>Previous attraction findings in Turkish</li>
+<li>Prior work has reported typical attraction effects with genitive-marked nominal attractors, showing higher acceptance of ungrammatical plural-verb sentences.</li>
+<li>However, no work has directly tested whether verbal plural morphology can induce similar illusions, or how mixing different attractor types within an experiment affects the magnitude of attraction.</li>
+</ul>
+<p>Turkish provides an especially informative case because both nominal and verbal plural markers are realized with the same morpheme, –lAr, yet only nominal plurals bear the syntactic features required for agreement. This allows us to ask whether participants rely on surface-form similarity or on abstract feature representations when evaluating agreement.</p>
+<ul>
+<li>Morphological properties</li>
+<li>Turkish marks number on both nouns and verbs using the identical plural morpheme –lAr.</li>
+<li>Only nominal plurals introduce number features that can agree with the verb; verbal –lAr expresses verbal agreement but is not a potential controller.</li>
+<li>Because of this homophony, Turkish allows form-overlap and feature-mismatch to be disentangled experimentally.</li>
+</ul>
+<p>In our first experiment, we test whether plural marking on a verbal distractor—which is morphologically identical but syntactically irrelevant—can elicit attraction. In the second experiment, we combine these verbal distractor conditions with standard nominal attractor conditions to assess how their co-occurrence affects participants’ judgments. If attraction effects reflect flexible, context-sensitive processing, the inclusion of verbal distractors should dilute or eliminate the illusion typically observed with nominal attractors.</p>
+<p>Together, these experiments extend previous findings on agreement attraction and task sensitivity in two key ways. First, they show that surface-level overlap—even when morphologically identical—does not by itself produce agreement attraction, indicating that participants rely on abstract morphosyntactic features rather than phonological forms. Second, they reveal that participants are not only influenced by the global structure of an experiment (such as the proportion of fillers or grammatical items) but also by the presence of other condition types within the same task. In other words, attraction effects are attenuated when competing, non-attracting conditions are included, suggesting that agreement processing is dynamically tuned to the statistical context of the experiment itself.</p>
+<section id="experimental-logic-and-predictions" class="level2">
+<h2 class="anchored" data-anchor-id="experimental-logic-and-predictions">Experimental logic and predictions</h2>
+<ul>
+<li><p>Goal 1: test whether purely form-based overlap (verbal –lAr) elicits attraction.</p></li>
+<li><p>Prediction: if attraction is driven by form, verbal plural distractors should yield higher “acceptable” rates for ungrammatical plurals.</p></li>
+<li><p>Alternative: if attraction depends on abstract features, no effect of verbal –lAr should appear.</p></li>
+<li><p>Goal 2: test whether the co-occurrence of different attractor types modulates attraction.</p></li>
+<li><p>Prediction: if participants adapt to the distribution of conditions, adding verbal distractors (which share the plural form but lack agreement features) should attenuate or eliminate the nominal-attractor illusion.</p></li>
+<li><p>Summary: These experiments jointly test whether agreement attraction in Turkish reflects shallow form matching or feature-based computation that is sensitive to the statistical context of the task.</p></li>
+</ul>
+</section>
+</section>
+<section id="experiment-1-testing-form-driven-processing" class="level1">
+<h1>Experiment 1: Testing Form-Driven Processing</h1>
+<section id="participants" class="level2">
+<h2 class="anchored" data-anchor-id="participants">Participants</h2>
+<p>We recruited 80 undergraduate students to participate in the experiment in exchange for course credit. All participants were native Turkish speakers, with an average age of 21 (range: 18 – 31). The experiment was carried out following the principles of the Declaration of Helsinki and the regulations concerning research ethics at Bogazici University. All participants provided informed consent before their participation and their identities were completely anonymised.</p>
+</section>
+<section id="materials" class="level2">
+<h2 class="anchored" data-anchor-id="materials">Materials</h2>
+<p>We used 40 sets of sentences like (<span class="math inline">\(\ref{exp}\)</span>), in which we manipulated (i) the number of the attractor and (ii) the number agreement on the verb. Both plural markings were marked with the suffix -ler/-lar, while the singular number and singular agreement were marked by its absence.</p>
+<p>All sentences were adapted by previous studies in Turkish agreement attraction <span class="citation" data-cites="LagoEtAl2019 TurkLogacev2020">(<a href="#ref-LagoEtAl2019" role="doc-biblioref">Lago et al. 2019</a>; <a href="#ref-TurkLogacev2020" role="doc-biblioref">Türk and Logačev 2020</a>)</span>. Sentences started with a complex subject NP like ‘tuttukları aşçı’ ‘the cook they hired,’ in which the nominalized relative clause functioned as the attractor, and the head noun were bare. Because the plural marking on nominals is not optional and the head noun was singular, absent of -lar, in all conditions, sentences with plural verb agreement were ungrammatical. To inhibit participants from forming a task-related strategy in which they deemed the sentence ungrammatical upon seeing a plural verb, half of our fillers included plural grammatical verbs, while the other half included singular ungrammatical verbs.</p>
+</section>
+<section id="procedures" class="level2">
+<h2 class="anchored" data-anchor-id="procedures">Procedures</h2>
+<p>The experiment was run online, using the web-based platform Ibex Farm <span class="citation" data-cites="Drummond2013">(<a href="#ref-Drummond2013" role="doc-biblioref">Drummond 2013</a>)</span>. Each experimental session took approximately 25 minutes to complete. Participants provided demographic information and gave informed consent to participate in the experiment. They then proceeded to read the instructions and were given nine practice trials before the experiment began.</p>
+<p>Each trial began with a blank screen for 600 ms, followed by a word-by-word RSVP presentation of the sentence in the center of the screen, followed by a prompt to indicate their acceptability judgment. Sentences were presented word-by-word in the center of the screen in 30 pt font size, at a rate of 400 ms per word. Participants saw a blank screen for 100 ms between each word, and to see the next item, they needed to press the space key. Participants were asked to press the key P to indicate that a sentence is acceptable and Q to indicate that the sentence is unacceptable. They were instructed to provide judgments as quickly as possible. During the practice, but not during the experiment, a warning message in red font appeared if they did not respond within 5,000 ms.</p>
+<p>Participants saw 40 experimental and 40 filler sentences. Experimental sentences were distributed among four different lists according to a Latin-square design. Every participant saw one version of the experiment with a specific list and one item per condition.</p>
+</section>
+<section id="analysis-and-results" class="level2">
+<h2 class="anchored" data-anchor-id="analysis-and-results">Analysis and Results</h2>
+<div class="cell">
+<div class="cell-output-display">
+<div>
+<figure class="figure">
+<p><img src="paper_files/figure-html/exp1-plot-1.png" class="img-fluid figure-img" width="672"></p>
+</figure>
+</div>
+</div>
+</div>
+<ul>
+<li>Goal: determine if surface plural forms (verbal -lAr) elicit illusionary agreement.</li>
+<li>Participants: 80 Turkish speakers (Boğaziçi undergraduates).</li>
+<li>Design: 2 × 2 (Grammaticality × Attractor Number).</li>
+<li>Materials: relative-clause verbs as attractors; same surface morphology as nominal plurals.</li>
+<li>Procedure: speeded acceptability judgments, 1500 ms deadline.</li>
+<li>Analysis: Bayesian probit GLM (brms); random intercepts/slopes by subject/item.</li>
+<li>Results:
+<ul>
+<li>High filler accuracy (&gt; .9).</li>
+<li>No difference in ungrammatical sentences between plural vs singular attractors.</li>
+<li>Posterior coefficients near 0; 95 % CIs within ROPE.</li>
+</ul></li>
+<li>Discussion:
+<ul>
+<li>No evidence for form-driven guessing.</li>
+<li>Participants rely on abstract number features, not phonological similarity.</li>
+</ul></li>
+</ul>
+</section>
+</section>
+<section id="experiment-2-testing-within-experiment-statistical-sensitivity" class="level1">
+<h1>Experiment 2: Testing Within-Experiment Statistical Sensitivity</h1>
+<section id="participants-1" class="level2">
+<h2 class="anchored" data-anchor-id="participants-1">Participants</h2>
+<p>We recruited 118 undergraduate students to participate in the experiment in exchange for course credit. All participants were native Turkish speakers, with an average age of 20 (range: 18 – 32). The experiment was carried out following the principles of the Declaration of Helsinki and the regulations concerning research ethics at Bogazici University. All participants provided informed consent before their participation and their identities were completely anonymised.</p>
+</section>
+<section id="materials-1" class="level2">
+<h2 class="anchored" data-anchor-id="materials-1">Materials</h2>
+<p>The same materials were used with Exp1. We added items from TurkLogacev2024 as an additional condition.</p>
+</section>
+<section id="procedures-1" class="level2">
+<h2 class="anchored" data-anchor-id="procedures-1">Procedures</h2>
+<p>The same procedure with Experiment 1 was used.</p>
+</section>
+<section id="analysis-and-results-1" class="level2">
+<h2 class="anchored" data-anchor-id="analysis-and-results-1">Analysis and Results</h2>
+<ul>
+<li>Goal: test whether attraction changes when both attractor types occur in one experiment.</li>
+<li>Participants: 95 Turkish speakers.</li>
+<li>Design: 2 × 2 × 2 (Grammaticality × Attractor Number × Attractor Type [nominal vs verbal]).</li>
+<li>Procedure &amp; analysis: same as Experiment 1.</li>
+<li>Results:
+<ul>
+<li>Attraction replicated for nominal attractors (Δ ≈ 0.07).</li>
+<li>Verbal attractors again showed null effect.</li>
+<li>Global decline in yes-responses relative to earlier studies → participants became more conservative.</li>
+</ul></li>
+<li>Discussion:
+<ul>
+<li>Exposure to verbal conditions reduced attraction magnitude overall.</li>
+<li>Indicates participants adapt to statistical properties of the task.</li>
+<li>Aligns with learning-based cue-weighting accounts (Haskell et al.&nbsp;2010).</li>
+</ul></li>
+</ul>
+</section>
+</section>
+<section id="general-discussion" class="level1">
+<h1>General Discussion</h1>
+<ul>
+<li>Synthesis:
+<ul>
+<li>No evidence for surface-form matching; effects are feature-based.</li>
+<li>Attraction magnitude changes with condition distribution → adaptive tuning.</li>
+</ul></li>
+<li>Interpretation:
+<ul>
+<li>Supports an adaptive parser sensitive to within-experiment statistics.</li>
+<li>Challenges “shallow” or “good-enough” accounts that attribute attraction to phonological overlap.</li>
+</ul></li>
+<li>Broader implication:
+<ul>
+<li>Agreement processing is flexible and probabilistic; illusions arise from learned cue validity.</li>
+</ul></li>
+<li>Limitations:
+<ul>
+<li>Syntactic depth asymmetry (verbal attractors more embedded).</li>
+<li>Need future designs equating structure (e.g., embedded-object attractors).</li>
+</ul></li>
+<li>Conclusion:
+<ul>
+<li>Turkish attraction effects arise from abstract feature retrieval not surface level shallow form-matching.<br>
+</li>
+<li>The evaluation of abstract features are modulated by distributional learning within the experiment.</li>
+</ul></li>
+</ul>
+<!-- # Abbreviations {.unnumbered} -->
+<!-- \printglossaries -->
+</section>
+<section id="references" class="level1 unnumbered">
+<h1 class="unnumbered">References</h1>
+<div id="refs" class="references csl-bib-body hanging-indent" data-entry-spacing="0" role="list">
+<div id="ref-ArehalliWittenberg2021" class="csl-entry" role="listitem">
+Arehalli, Suhas, and Eva Wittenberg. 2021. <span>“Experimental Filler Design Influences Error Correction Rates in a Word Restoration Paradigm.”</span> <em>Linguistics Vanguard</em> 7 (1): 20200052. <a href="https://doi.org/doi:10.1515/lingvan-2020-0052">https://doi.org/doi:10.1515/lingvan-2020-0052</a>.
+</div>
+<div id="ref-BockMiller:1991" class="csl-entry" role="listitem">
+Bock, Kathryn, and Carol A Miller. 1991. <span>“Broken Agreement.”</span> <em>Cognitive Psychology</em> 23 (1): 45–93. <a href="https://doi.org/10.1016/0010-0285(91)90003-7">https://doi.org/10.1016/0010-0285(91)90003-7</a>.
+</div>
+<div id="ref-Dillon2013a" class="csl-entry" role="listitem">
+Dillon, Brian, Alan Mishler, Shayne Sloggett, and Colin Phillips. 2013. <span>“Contrasting Intrusion Profiles for Agreement and Anaphora: <span>E</span>xperimental and Modeling Evidence.”</span> <em>Journal of Memory and Language</em> 69 (2): 85–103. <a href="https://doi.org/10.1016/j.jml.2013.04.003">https://doi.org/10.1016/j.jml.2013.04.003</a>.
+</div>
+<div id="ref-Drummond2013" class="csl-entry" role="listitem">
+Drummond, Alex. 2013. <span>“<span><em>Ibex Farm</em></span>.”</span>
+</div>
+<div id="ref-EberhardEtAl2005" class="csl-entry" role="listitem">
+Eberhard, Kathleen M., J. Cooper Cutting, and Kathryn Bock. 2005. <span>“<span>M</span>aking Syntax of Sense: <span>N</span>umber Agreement in Sentence Production.”</span> <em>Psychological Review</em> 112 (3): 531–59. <a href="https://doi.org/10.1037/0033-295X.112.3.531">https://doi.org/10.1037/0033-295X.112.3.531</a>.
+</div>
+<div id="ref-HammerlyEtAl2019" class="csl-entry" role="listitem">
+Hammerly, Christopher, Adrian Staub, and Brian Dillon. 2019. <span>“The Grammaticality Asymmetry in Agreement Attraction Reflects Response Bias: <span>E</span>xperimental and Modeling Evidence.”</span> <em>Cognitive Psychology</em> 110: 70–104. <a href="https://doi.org/10.1016/j.cogpsych.2019.01.001">https://doi.org/10.1016/j.cogpsych.2019.01.001</a>.
+</div>
+<div id="ref-HartsuikerEtAl2003" class="csl-entry" role="listitem">
+Hartsuiker, Robert J, Herbert J Schriefers, Kathryn Bock, and Gerdien M Kikstra. 2003. <span>“Morphophonological Influences on the Construction of Subject–Verb Agreement.”</span> <em>Memory &amp; Cognition</em> 31 (8): 1316–26. <a href="https://doi.org/10.3758/bf03195814">https://doi.org/10.3758/bf03195814</a>.
+</div>
+<div id="ref-LagoEtAl2019" class="csl-entry" role="listitem">
+Lago, Sol, Martina Gračanin–Yuksek, Duygu Fatma Şafak, Orhan Demir, Bilal Kırkıcı, and Claudia Felser. 2019. <span>“Straight from the Horse’s Mouth: <span>A</span>greement Attraction Effects with <span>T</span>urkish Possessors.”</span> Journal Article. <em>Linguistic Approaches to Bilingualism</em> 9 (3): 398–426. <a href="https://doi.org/10.1075/lab.17019.lag">https://doi.org/10.1075/lab.17019.lag</a>.
+</div>
+<div id="ref-LauraMalsbug24" class="csl-entry" role="listitem">
+Laurinavichyute, Anna, and Titus von der Malsburg. 2024. <span>“Agreement Attraction in Grammatical Sentences and the Role of the Task.”</span> <em>Journal of Memory and Language</em> 137: 104525. https://doi.org/<a href="https://doi.org/10.1016/j.jml.2024.104525">https://doi.org/10.1016/j.jml.2024.104525</a>.
+</div>
+<div id="ref-LogacevVasishth2016" class="csl-entry" role="listitem">
+Logačev, Pavel, and Shravan Vasishth. 2016. <span>“A Multiple-Channel Model of Task-Dependent Ambiguity Resolution in Sentence Comprehension.”</span> <em>Cognitive Science</em> 40 (2): 266–98.
+</div>
+<div id="ref-PearlmutterGarnseyBock:1999" class="csl-entry" role="listitem">
+Pearlmutter, Neal J., Susan M. Garnsey, and Kathryn Bock. 1999. <span>“Agreement Processes in Sentence Comprehension.”</span> <em>Journal of Memory and Language</em> 41 (3): 427–56. <a href="https://doi.org/10.1006/jmla.1999.2653">https://doi.org/10.1006/jmla.1999.2653</a>.
+</div>
+<div id="ref-Slioussar2018" class="csl-entry" role="listitem">
+Slioussar, Natalia. 2018. <span>“Forms and Features: The Role of Syncretism in Number Agreement Attraction.”</span> <em>Journal of Memory and Language</em> 101: 51–63. <a href="https://doi.org/10.1016/j.jml.2018.03.006">https://doi.org/10.1016/j.jml.2018.03.006</a>.
+</div>
+<div id="ref-TurkLogacev2020" class="csl-entry" role="listitem">
+Türk, Utku, and Pavel Logačev. 2020. <span>“The Role of Shallow Processing in Agreement Attraction.”</span> Amherst, MA. <a href="https://doi.org/10.17605/osf.io/X9PV7">https://doi.org/10.17605/osf.io/X9PV7</a>.
+</div>
+<div id="ref-WagersEtAl:2009" class="csl-entry" role="listitem">
+Wagers, Matthew W., Ellen F. Lau, and Colin Phillips. 2009. <span>“Agreement Attraction in Comprehension: <span>R</span>epresentations and Processes.”</span> <em>Journal of Memory and Language</em> 61 (2): 206–37. <a href="https://doi.org/10.1016/j.jml.2009.04.002">https://doi.org/10.1016/j.jml.2009.04.002</a>.
+</div>
+</div>
+</section>
+
+</main>
+<!-- /main column -->
+<script id="quarto-html-after-body" type="application/javascript">
+  window.document.addEventListener("DOMContentLoaded", function (event) {
+    const icon = "";
+    const anchorJS = new window.AnchorJS();
+    anchorJS.options = {
+      placement: 'right',
+      icon: icon
+    };
+    anchorJS.add('.anchored');
+    const isCodeAnnotation = (el) => {
+      for (const clz of el.classList) {
+        if (clz.startsWith('code-annotation-')) {                     
+          return true;
+        }
+      }
+      return false;
+    }
+    const onCopySuccess = function(e) {
+      // button target
+      const button = e.trigger;
+      // don't keep focus
+      button.blur();
+      // flash "checked"
+      button.classList.add('code-copy-button-checked');
+      var currentTitle = button.getAttribute("title");
+      button.setAttribute("title", "Copied!");
+      let tooltip;
+      if (window.bootstrap) {
+        button.setAttribute("data-bs-toggle", "tooltip");
+        button.setAttribute("data-bs-placement", "left");
+        button.setAttribute("data-bs-title", "Copied!");
+        tooltip = new bootstrap.Tooltip(button, 
+          { trigger: "manual", 
+            customClass: "code-copy-button-tooltip",
+            offset: [0, -8]});
+        tooltip.show();    
+      }
+      setTimeout(function() {
+        if (tooltip) {
+          tooltip.hide();
+          button.removeAttribute("data-bs-title");
+          button.removeAttribute("data-bs-toggle");
+          button.removeAttribute("data-bs-placement");
+        }
+        button.setAttribute("title", currentTitle);
+        button.classList.remove('code-copy-button-checked');
+      }, 1000);
+      // clear code selection
+      e.clearSelection();
+    }
+    const getTextToCopy = function(trigger) {
+      const outerScaffold = trigger.parentElement.cloneNode(true);
+      const codeEl = outerScaffold.querySelector('code');
+      for (const childEl of codeEl.children) {
+        if (isCodeAnnotation(childEl)) {
+          childEl.remove();
+        }
+      }
+      return codeEl.innerText;
+    }
+    const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
+      text: getTextToCopy
+    });
+    clipboard.on('success', onCopySuccess);
+    if (window.document.getElementById('quarto-embedded-source-code-modal')) {
+      const clipboardModal = new window.ClipboardJS('.code-copy-button[data-in-quarto-modal]', {
+        text: getTextToCopy,
+        container: window.document.getElementById('quarto-embedded-source-code-modal')
+      });
+      clipboardModal.on('success', onCopySuccess);
+    }
+      var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
+      var mailtoRegex = new RegExp(/^mailto:/);
+        var filterRegex = new RegExp('/' + window.location.host + '/');
+      var isInternal = (href) => {
+          return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
+      }
+      // Inspect non-navigation links and adorn them if external
+     var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool):not(.about-link)');
+      for (var i=0; i<links.length; i++) {
+        const link = links[i];
+        if (!isInternal(link.href)) {
+          // undo the damage that might have been done by quarto-nav.js in the case of
+          // links that we want to consider external
+          if (link.dataset.originalHref !== undefined) {
+            link.href = link.dataset.originalHref;
+          }
+        }
+      }
+    function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
+      const config = {
+        allowHTML: true,
+        maxWidth: 500,
+        delay: 100,
+        arrow: false,
+        appendTo: function(el) {
+            return el.parentElement;
+        },
+        interactive: true,
+        interactiveBorder: 10,
+        theme: 'quarto',
+        placement: 'bottom-start',
+      };
+      if (contentFn) {
+        config.content = contentFn;
+      }
+      if (onTriggerFn) {
+        config.onTrigger = onTriggerFn;
+      }
+      if (onUntriggerFn) {
+        config.onUntrigger = onUntriggerFn;
+      }
+      window.tippy(el, config); 
+    }
+    const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+    for (var i=0; i<noterefs.length; i++) {
+      const ref = noterefs[i];
+      tippyHover(ref, function() {
+        // use id or data attribute instead here
+        let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+        try { href = new URL(href).hash; } catch {}
+        const id = href.replace(/^#\/?/, "");
+        const note = window.document.getElementById(id);
+        if (note) {
+          return note.innerHTML;
+        } else {
+          return "";
+        }
+      });
+    }
+    const xrefs = window.document.querySelectorAll('a.quarto-xref');
+    const processXRef = (id, note) => {
+      // Strip column container classes
+      const stripColumnClz = (el) => {
+        el.classList.remove("page-full", "page-columns");
+        if (el.children) {
+          for (const child of el.children) {
+            stripColumnClz(child);
+          }
+        }
+      }
+      stripColumnClz(note)
+      if (id === null || id.startsWith('sec-')) {
+        // Special case sections, only their first couple elements
+        const container = document.createElement("div");
+        if (note.children && note.children.length > 2) {
+          container.appendChild(note.children[0].cloneNode(true));
+          for (let i = 1; i < note.children.length; i++) {
+            const child = note.children[i];
+            if (child.tagName === "P" && child.innerText === "") {
+              continue;
+            } else {
+              container.appendChild(child.cloneNode(true));
+              break;
+            }
+          }
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(container);
+          }
+          return container.innerHTML
+        } else {
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(note);
+          }
+          return note.innerHTML;
+        }
+      } else {
+        // Remove any anchor links if they are present
+        const anchorLink = note.querySelector('a.anchorjs-link');
+        if (anchorLink) {
+          anchorLink.remove();
+        }
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(note);
+        }
+        if (note.classList.contains("callout")) {
+          return note.outerHTML;
+        } else {
+          return note.innerHTML;
+        }
+      }
+    }
+    for (var i=0; i<xrefs.length; i++) {
+      const xref = xrefs[i];
+      tippyHover(xref, undefined, function(instance) {
+        instance.disable();
+        let url = xref.getAttribute('href');
+        let hash = undefined; 
+        if (url.startsWith('#')) {
+          hash = url;
+        } else {
+          try { hash = new URL(url).hash; } catch {}
+        }
+        if (hash) {
+          const id = hash.replace(/^#\/?/, "");
+          const note = window.document.getElementById(id);
+          if (note !== null) {
+            try {
+              const html = processXRef(id, note.cloneNode(true));
+              instance.setContent(html);
+            } finally {
+              instance.enable();
+              instance.show();
+            }
+          } else {
+            // See if we can fetch this
+            fetch(url.split('#')[0])
+            .then(res => res.text())
+            .then(html => {
+              const parser = new DOMParser();
+              const htmlDoc = parser.parseFromString(html, "text/html");
+              const note = htmlDoc.getElementById(id);
+              if (note !== null) {
+                const html = processXRef(id, note);
+                instance.setContent(html);
+              } 
+            }).finally(() => {
+              instance.enable();
+              instance.show();
+            });
+          }
+        } else {
+          // See if we can fetch a full url (with no hash to target)
+          // This is a special case and we should probably do some content thinning / targeting
+          fetch(url)
+          .then(res => res.text())
+          .then(html => {
+            const parser = new DOMParser();
+            const htmlDoc = parser.parseFromString(html, "text/html");
+            const note = htmlDoc.querySelector('main.content');
+            if (note !== null) {
+              // This should only happen for chapter cross references
+              // (since there is no id in the URL)
+              // remove the first header
+              if (note.children.length > 0 && note.children[0].tagName === "HEADER") {
+                note.children[0].remove();
+              }
+              const html = processXRef(null, note);
+              instance.setContent(html);
+            } 
+          }).finally(() => {
+            instance.enable();
+            instance.show();
+          });
+        }
+      }, function(instance) {
+      });
+    }
+        let selectedAnnoteEl;
+        const selectorForAnnotation = ( cell, annotation) => {
+          let cellAttr = 'data-code-cell="' + cell + '"';
+          let lineAttr = 'data-code-annotation="' +  annotation + '"';
+          const selector = 'span[' + cellAttr + '][' + lineAttr + ']';
+          return selector;
+        }
+        const selectCodeLines = (annoteEl) => {
+          const doc = window.document;
+          const targetCell = annoteEl.getAttribute("data-target-cell");
+          const targetAnnotation = annoteEl.getAttribute("data-target-annotation");
+          const annoteSpan = window.document.querySelector(selectorForAnnotation(targetCell, targetAnnotation));
+          const lines = annoteSpan.getAttribute("data-code-lines").split(",");
+          const lineIds = lines.map((line) => {
+            return targetCell + "-" + line;
+          })
+          let top = null;
+          let height = null;
+          let parent = null;
+          if (lineIds.length > 0) {
+              //compute the position of the single el (top and bottom and make a div)
+              const el = window.document.getElementById(lineIds[0]);
+              top = el.offsetTop;
+              height = el.offsetHeight;
+              parent = el.parentElement.parentElement;
+            if (lineIds.length > 1) {
+              const lastEl = window.document.getElementById(lineIds[lineIds.length - 1]);
+              const bottom = lastEl.offsetTop + lastEl.offsetHeight;
+              height = bottom - top;
+            }
+            if (top !== null && height !== null && parent !== null) {
+              // cook up a div (if necessary) and position it 
+              let div = window.document.getElementById("code-annotation-line-highlight");
+              if (div === null) {
+                div = window.document.createElement("div");
+                div.setAttribute("id", "code-annotation-line-highlight");
+                div.style.position = 'absolute';
+                parent.appendChild(div);
+              }
+              div.style.top = top - 2 + "px";
+              div.style.height = height + 4 + "px";
+              div.style.left = 0;
+              let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
+              if (gutterDiv === null) {
+                gutterDiv = window.document.createElement("div");
+                gutterDiv.setAttribute("id", "code-annotation-line-highlight-gutter");
+                gutterDiv.style.position = 'absolute';
+                const codeCell = window.document.getElementById(targetCell);
+                const gutter = codeCell.querySelector('.code-annotation-gutter');
+                gutter.appendChild(gutterDiv);
+              }
+              gutterDiv.style.top = top - 2 + "px";
+              gutterDiv.style.height = height + 4 + "px";
+            }
+            selectedAnnoteEl = annoteEl;
+          }
+        };
+        const unselectCodeLines = () => {
+          const elementsIds = ["code-annotation-line-highlight", "code-annotation-line-highlight-gutter"];
+          elementsIds.forEach((elId) => {
+            const div = window.document.getElementById(elId);
+            if (div) {
+              div.remove();
+            }
+          });
+          selectedAnnoteEl = undefined;
+        };
+          // Handle positioning of the toggle
+      window.addEventListener(
+        "resize",
+        throttle(() => {
+          elRect = undefined;
+          if (selectedAnnoteEl) {
+            selectCodeLines(selectedAnnoteEl);
+          }
+        }, 10)
+      );
+      function throttle(fn, ms) {
+      let throttle = false;
+      let timer;
+        return (...args) => {
+          if(!throttle) { // first call gets through
+              fn.apply(this, args);
+              throttle = true;
+          } else { // all the others get throttled
+              if(timer) clearTimeout(timer); // cancel #2
+              timer = setTimeout(() => {
+                fn.apply(this, args);
+                timer = throttle = false;
+              }, ms);
+          }
+        };
+      }
+        // Attach click handler to the DT
+        const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
+        for (const annoteDlNode of annoteDls) {
+          annoteDlNode.addEventListener('click', (event) => {
+            const clickedEl = event.target;
+            if (clickedEl !== selectedAnnoteEl) {
+              unselectCodeLines();
+              const activeEl = window.document.querySelector('dt[data-target-cell].code-annotation-active');
+              if (activeEl) {
+                activeEl.classList.remove('code-annotation-active');
+              }
+              selectCodeLines(clickedEl);
+              clickedEl.classList.add('code-annotation-active');
+            } else {
+              // Unselect the line
+              unselectCodeLines();
+              clickedEl.classList.remove('code-annotation-active');
+            }
+          });
+        }
+    const findCites = (el) => {
+      const parentEl = el.parentElement;
+      if (parentEl) {
+        const cites = parentEl.dataset.cites;
+        if (cites) {
+          return {
+            el,
+            cites: cites.split(' ')
+          };
+        } else {
+          return findCites(el.parentElement)
+        }
+      } else {
+        return undefined;
+      }
+    };
+    var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+    for (var i=0; i<bibliorefs.length; i++) {
+      const ref = bibliorefs[i];
+      const citeInfo = findCites(ref);
+      if (citeInfo) {
+        tippyHover(citeInfo.el, function() {
+          var popup = window.document.createElement('div');
+          citeInfo.cites.forEach(function(cite) {
+            var citeDiv = window.document.createElement('div');
+            citeDiv.classList.add('hanging-indent');
+            citeDiv.classList.add('csl-entry');
+            var biblioDiv = window.document.getElementById('ref-' + cite);
+            if (biblioDiv) {
+              citeDiv.innerHTML = biblioDiv.innerHTML;
+            }
+            popup.appendChild(citeDiv);
+          });
+          return popup.innerHTML;
+        });
+      }
+    }
+  });
+  </script>
+</div> <!-- /content -->
+
+
+
+
+</body></html>
