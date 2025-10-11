@@ -55,6 +55,7 @@ library(gdata)
 library(magrittr)
 library(DescTools)
 select <- dplyr::select
+library(lingglosses)
 ```
 
 
@@ -155,6 +156,9 @@ asc <- function(x) {as.character(x)}
 ```
 
 
+
+
+
 # Introduction 
 
 Speakers often rely on additional sources of information when processing sentences, including plausability, frequency, distributional expectations about forms and tasks, as well as the overall composition of an experimental session (e.g., the ratio of fillers to critical items).  Recent work has demonstrated that such task or item-specific factors can substantially modulate reading and judgment behavior [@LauraMalsbug24; @ArehalliWittenberg2021; @HammerlyEtAl2019; @LogacevVasishth2016].  One line of research has used the agreement-attraction phenomenon to probe the heuristics that influence sentence processing.  Agreement attraction refers to cases in which a verb erroneously agrees with a nearby noun rather than the true subject, giving rise to so-called grammaticality illusions in both production and comprehension [@BockMiller:1991; @PearlmutterGarnseyBock:1999].
@@ -164,6 +168,12 @@ Speakers often rely on additional sources of information when processing sentenc
 \ex[*]{\label{og}The key to the cabinets are rusty.} 
 \end{exe}
 ```
+
+::: {.content-visible when-format="html"}
+```{r, echo=FALSE, results='asis'}
+gloss_example("The key to the cabinets are rusty.")
+```
+:::
 
 Agreement errors in sentences like (\ref{og}) have been treated either as a failure of feature reconcilation or a failure of memory encoding.  The former set of accounts explain these errors as a by-product of how number feature of a phrase is calculated in real-time [@BockMiller:1991; @EberhardEtAl2005; @HammerlyEtAl2019].  For example, @EberhardEtAl2005 argue that depending on conceptual number, morphophonological number marking, or syntactic dependencies within a phrase, speakers assign a probabilistic number value to phrases.  The errors arise when additional plurality features from different sources end up contributing to the final number representation of a phrase.  On the other hand, the latter set of accounts claim that the initial representation is not erroneous, but speakers are sometimes unable to correctly retrieve the controller [@WagersEtAl:2009; @Dillon2013a].  For example, @WagersEtAl:2009 argue that the parser normally check the agreement relation by retrieving the relevant chunk in memory using the retrieval cues provided by the agreement probe.  In sentences like (1), speakers occasionally retrieve the incorrect element due to the fact that neither nouns fully match the relevant cues.
 
@@ -188,6 +198,13 @@ A related set of findings came from @HammerlyEtAl2019.  They challenge long-stan
 \end{exe}
 ```
 
+
+::: {.content-visible when-format="html"}
+```{r, echo=FALSE, results='asis'}
+gloss_example("The key to the cabinets is rusty.")
+```
+:::
+
 Another set of meta-linguistic information that comes from form-driven task strategies.  In some languages, surface-form similarity to the agreement controller can exacerbate attraction [BUNCH OF PAPERS] or even drive illusions on its own [CHROMY].  @HartsuikerEtAl2003, for example, used the the accusative marked determiners' form similarity to the nominative marked articles in German, that can be the determiner of an agreement controller, and compared them to distinctively marked dative marked determiners. They showed that participants made agreement errors more often when the preambles contained two NPs that are not marked distinctively (\ref{ger-amb}) compared to cases where the attractor is distinguishable solely using the form (\ref{ger-dist}).  More importantly, this effect only surfaced when the head and the distractors are both nouns with feminine gender, and not masculine or neuter gender, which do not show the surface level similarity in plurals.
 
 ```{=latex}
@@ -206,6 +223,24 @@ the.F.NOM.SG position on the.F.DAT.PL demonstration-PL\\
 \end{exe}
 ```
 
+
+
+::: {.content-visible when-format="html"}
+```{r, echo=FALSE, results='asis'}
+gloss_example(
+  "Die Stellungnahme gegen die Demonstration-en",
+  "the.F.NOM.SG position against the.F.ACC.PL demonstration-PL",
+  "‘The position against the demonstrations’"
+)
+gloss_example(
+  "Die Stellungnahme zu den Demonstration-en",
+  "the.F.NOM.SG position on the.F.DAT.PL demonstration-PL",
+  "‘The position on the demonstrations’"
+)
+```
+:::
+
+
 The most striking evidence comes from work by @Slioussar2018, who showed that surface form can sometimes override abstract features in Russian.  Exploiting the syncretism between singular genitives and nominative plurals, a pattern absent in plural genitives, she found that participants made more production and comprehension errors and showed faster reading times in sentences like (\ref{rus-gen-sg}) than in (\ref{rus-gen-pl}).  This finding is fairly surprising given that a noun that is unambigously singular and only *seems* plural due to form similarity can induce more attraction errors, than grammatically plural nouns.  She argued that, rather than accessing abstract case features, speakers and comprehenders sometimes relied on surface-level cues that were easier to retrieve.
 
 ```{=latex}
@@ -223,6 +258,25 @@ box.F.SG.NOM for paint.GEN.PL$_{\neq NOM.PL}$ be.PST.F.SG/*be.PST.F.PL \\
 \end{xlist}
 \end{exe}
 ```
+
+
+::: {.content-visible when-format="html"}
+```{r, echo=FALSE, results='asis'}
+
+gloss_example(
+  "Korobka dlya kraski byla/*byli ...",
+  "box.F.SG.NOM for paint.GEN.SG=NOM.PL be.PST.F.SG/*be.PST.F.PL",
+  "‘A box for the paint(s) was/*were …’"
+)
+gloss_example(
+  "Korobka dlya krasok byla/*byli ...",
+  "box.F.SG.NOM for paint.GEN.PL≠NOM.PL be.PST.F.SG/*be.PST.F.PL",
+  "‘A box for the paint(s) was/*were …’"
+)
+```
+:::
+
+
 Together, these studies converge on the idea that speakers are sensitive not only to the immediate syntactic cues in a sentence, but also to broader distributional regularities that shape how those cues are interpreted.  Some of these regularities reflect long-term experience with the language, such as recurring patterns of form syncretism and probability of being a controller, while others arise within the course of a single experiment, as participants adjust to the statistical composition of the materials, the frequency of ungrammatical items, or the mix of structure types they encounter.  These findings raise the possibility that agreement attraction is not a fixed structural reflex, but rather a dynamic outcome of how the processing system weighs and re-weights cues based on both linguistic and contextual experience.  If so, the strength and even the presence of attraction effects should depend on how strongly surface form and feature structure are correlated in the input, and on what participants learn about those correlations in real time.
 
 Building on these observations, we utilize Turkish as a testing ground to examine how surface-form overlap influences agreement processing and whether exposure to different kinds of distractors modulates attraction. 
