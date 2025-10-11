@@ -34,6 +34,8 @@ format:
       formatting: preprint
       # model: 5p # Don't set a model with preprint
       cite-style: authoryear
+  html:
+    embed-resources: true
 filters:
   - wordcount
 execute:
