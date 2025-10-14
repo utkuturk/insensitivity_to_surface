@@ -3,13 +3,13 @@ set -euo pipefail
 
 # Paths
 QMD="paper.qmd"
-PDF="paper.pd"
+PDF="paper.pdf"
 HTML_SRC="paper.html"
 HTML_DST="../index.html"
 PDF_DST="../paper.pdf"
 
 echo "Rendering HTML from ${QMD}..."
-quarto render "${QMD}" --to html
+quarto render "${QMD}" --to html --to elsevier-pdf
 
 echo "Copying ${HTML_SRC} -> ${HTML_DST}..."
 cp "${HTML_SRC}" "${HTML_DST}"
