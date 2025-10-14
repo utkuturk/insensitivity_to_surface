@@ -264,8 +264,6 @@ One domain in which these influences are observed is the research on agreement a
 ```
 
 
-
-
 Even though modulation from a pure phonological similarity was not found, several experiments have manipulated morphological case similarity between controllers and attractors, reasoning that syncretism or surface ambiguity could enhance competition during retrieval or interfere in production [PAPERS].  For example, @HartsuikerEtAl2003 used the overlap between accusative and nominative forms of feminine determiners in German and compared these ambiguous forms to distinctively marked dative forms.  Participants produced more agreement errors when the preambles contained two noun phrases whose determiners were not distinctively marked, as in (\ref{ger-amb}), compared to cases where the attractor could be distinguished by form alone, as in (\ref{ger-dist}).  Crucially, this additive effect was limited to feminine nouns, the only gender showing nominative–accusative syncretism in plural forms while other nouns showed the base effect of plural.
 
 ```{=latex}
@@ -334,10 +332,19 @@ In Experiment 1, we tested the form hypothesis directly by comparing ungrammatic
 
 ## Primer on Attraction Accounts and Phonological Modulation
 
+Agreement errors in sentences like (\ref{og}) have been treated either as a failure of feature reconcilation or a failure of memory encoding.  
 
-Two main accounts have been proposed to explain agreement attraction effects: the Marking and Morphing model and the cue-based retrieval model. Both frameworks aim to capture why a plural attractor can interfere with the computation of agreement, but they differ in where the interference arises and in how they represent linguistic features.
+The former set of accounts explain these errors as a by-product of how number feature of a phrase is calculated in real-time [@BockMiller:1991; @EberhardEtAl2005; @HammerlyEtAl2019].  For example, @EberhardEtAl2005, in their Marking and Morphing account, argue that speakers and comprehenders does not necessarily create binary singular or plural representation, instead they consider various number related information in a phrase and create a continuous value.  This related information include (i) the inherent conceptual number of the head of phrase, namely collectiveness or distributiveness of a noun, (ii) grammatical number markings on all nouns within a phrase weighted by their syntactic distance, and (iii) idiosyncretic (scissors) or grammatical (books) presence of a plural marking.   The errors probabilistically arise when additional plurality features from different sources contribute to the final number representation of a phrase.  Because this account ties attraction to various sources including the presence of a plural morpheme, it could in principle accommodate effects of surface-form similarity.  However, this surface form similarity effects should be limited to the cases where it can be associated with a plural number marking, and should not arise with pure phonological similarities.
 
-Under Marking and Morphing (Bock and Eberhard, 1993; Eberhard et al., 2005), attraction results from spreading activation among number features during agreement encoding. The plural feature of a nearby noun can transiently activate the plural feature on the subject node, making a singular subject temporarily appear plural. The strength of this spreading activation decreases with syntactic distance, predicting stronger interference from local attractors. Because this account ties attraction to the activation of morphological features, it could in principle accommodate effects of surface-form similarity. Morphological or phonological overlap between elements might increase activation strength or delay decay, thereby amplifying interference. However, the model does not include a mechanism for distinguishing between morphophonological and abstract feature overlap, and it provides no role for case information or other morphosyntactic cues beyond number. It also has difficulty explaining attraction from attractors that lie outside the subject phrase. !!!! NOT TRUE !!!! 
+On the other hand, the latter set of accounts claim that the initial representation is not erroneous, but speakers are sometimes unable to correctly retrieve the controller [@WagersEtAl:2009; @Dillon2013a].  For example, @WagersEtAl:2009 argue that the parser normally check the agreement relation by retrieving the relevant chunk in memory using the retrieval cues provided by the agreement probe.  In sentences like (\ref{og}), speakers occasionally retrieve the incorrect element due to the fact that neither nouns fully match the relevant cues.
+
+- give more details to cue based
+- maybe talk about noisy channel?
+- write an if phrase. our experiments also tests ....
+
+
+
+Morphological or phonological overlap between elements might increase activation strength or delay decay, thereby amplifying interference. However, the model does not include a mechanism for distinguishing between morphophonological and abstract feature overlap, and it provides no role for case information or other morphosyntactic cues beyond number. It also has difficulty explaining attraction from attractors that lie outside the subject phrase. !!!! NOT TRUE !!!! 
 
 In contrast, cue-based retrieval accounts (e.g., Wagers et al., 2009; Dillon et al., 2013) locate attraction at the stage of memory retrieval, when the parser or production system attempts to recover the controller of agreement. Retrieval is guided by a set of cues such as number, case, and syntactic position. Interference arises when a non-controller partially matches these cues and is incorrectly retrieved. In this framework, surface-form overlap affects processing only if it contributes to cue overlap. For example, plural morphology or phonological endings could influence retrieval if the system treats them as diagnostic of plural number. Because the model allows cues to be weighted differently depending on their reliability, it naturally accounts for cross-linguistic variability in the role of case marking and other morphosyntactic features.
 
@@ -816,8 +823,8 @@ On the other hand, accuracy in grammatical conditions was modulated by the numbe
 
 ```{r exp1-condition-means}
 #| fig-cap: "Mean proportion of 'acceptable' responses by grammaticality and attractor number. Error bars show 95% Clopper–Pearson confidence intervals. "
-#| fig-width: 6
-#| fig-height: 4
+#| fig-width: 3
+#| fig-height: 3.5
 
 exp1.gram.label <- c(
     grammatical = "Grammatical\n(Singular Verb)",
@@ -855,8 +862,8 @@ Posterior estimates are summarized in Figure 2. The model revealed a positive ef
 
 ```{r exp1-fixed-effects}
 #| fig-cap: "Posterior means and 95% credible intervals for fixed effects in the two Bayesian models. The x-axis shows the posterior mean (log-odds scale). The blue intervals correspond to the model in which a positive interaction was assumed, and the orange intervals to the model in which it was not. "
-#| fig-width: 6
-#| fig-height: 3
+#| fig-width: 4
+#| fig-height: 1.5
 
 fixef_whiskers <- function(fit, label) {
     posterior_summary(fit, pars = "^b_") %>%
@@ -900,7 +907,7 @@ ggplot(df_plot, aes(x = est, y = term_clean)) +
         y = NULL,
         color = "Interaction",
     ) +
-    theme_minimal(base_size = 12, base_family = "Times") +
+    theme_minimal(base_size = 10, base_family = "Times") +
     theme(panel.grid.minor = element_blank())
 
 ```
@@ -1301,7 +1308,7 @@ However, similar increase in acceptability was not found with relative clause at
 ```{r exp2-condition-means}
 #| fig-cap: "Mean proportion of 'acceptable' responses by grammaticality, attractor number and attractor type. Error bars show 95% Clopper–Pearson confidence intervals. "
 #| fig-width: 6
-#| fig-height: 4
+#| fig-height: 3
 #|
 exp2.gram.label <- c(
     "grammatical"   = "Grammatical\n(Singular Verb)",
@@ -1335,7 +1342,10 @@ all.avgs %>%
     theme(
         legend.position = "bottom",
         strip.background = element_rect(fill = "white"),
-        strip.text = element_text(size = 12)
+        strip.text = element_text(size = 9), 
+        axis.text.y = element_text(size = 9),
+        axis.text.x = element_text(size = 9),
+        axis.title.x = element_text(size = 9),
     )
 ```
 
@@ -1355,8 +1365,8 @@ we present the illusion estimate as a function of experiment. Attraction:Current
 
 ```{r exp2-fixed-effects}
 #| fig-cap: "Posterior means and 95% credible intervals for fixed effects in the two Bayesian models. The x-axis shows the posterior mean (log-odds scale). The blue intervals correspond to the model in which a positive interaction was assumed, and the orange intervals to the model in which it was not. "
-#| fig-width: 6
-#| fig-height: 2
+#| fig-width: 4
+#| fig-height: 1.5
 
 # Extract posterior draws
 draws <- as_draws_df(m.exp2.all)
@@ -1413,9 +1423,9 @@ geom_errorbarh(aes(xmin = l95, xmax = u95), height = 0.15, linewidth = 0.7) +
     ylab(NULL) +
     theme_minimal(base_family = "Times") +
     theme(
-        axis.text.y = element_text(size = 12),
-        axis.text.x = element_text(size = 11),
-        axis.title.x = element_text(size = 12),
+        axis.text.y = element_text(size = 8),
+        axis.text.x = element_text(size = 8),
+        axis.title.x = element_text(size = 8),
         panel.grid.minor = element_blank(),
         panel.grid.major.y = element_blank()
     )

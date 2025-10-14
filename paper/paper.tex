@@ -414,28 +414,56 @@ of morphemes in specific languages following \citet{KeshevDillon2024}.
 \subsection{Primer on Attraction Accounts and Phonological
 Modulation}\label{primer-on-attraction-accounts-and-phonological-modulation}
 
-Two main accounts have been proposed to explain agreement attraction
-effects: the Marking and Morphing model and the cue-based retrieval
-model. Both frameworks aim to capture why a plural attractor can
-interfere with the computation of agreement, but they differ in where
-the interference arises and in how they represent linguistic features.
+Agreement errors in sentences like (\ref{og}) have been treated either
+as a failure of feature reconcilation or a failure of memory encoding.
 
-Under Marking and Morphing (Bock and Eberhard, 1993; Eberhard et al.,
-2005), attraction results from spreading activation among number
-features during agreement encoding. The plural feature of a nearby noun
-can transiently activate the plural feature on the subject node, making
-a singular subject temporarily appear plural. The strength of this
-spreading activation decreases with syntactic distance, predicting
-stronger interference from local attractors. Because this account ties
-attraction to the activation of morphological features, it could in
-principle accommodate effects of surface-form similarity. Morphological
-or phonological overlap between elements might increase activation
-strength or delay decay, thereby amplifying interference. However, the
-model does not include a mechanism for distinguishing between
-morphophonological and abstract feature overlap, and it provides no role
-for case information or other morphosyntactic cues beyond number. It
-also has difficulty explaining attraction from attractors that lie
-outside the subject phrase. !!!! NOT TRUE !!!!
+The former set of accounts explain these errors as a by-product of how
+number feature of a phrase is calculated in real-time
+\citep{BockMiller:1991, EberhardEtAl2005, HammerlyEtAl2019}. For
+example, \citet{EberhardEtAl2005}, in their Marking and Morphing
+account, argue that speakers and comprehenders does not necessarily
+create binary singular or plural representation, instead they consider
+various number related information in a phrase and create a continuous
+value. This related information include (i) the inherent conceptual
+number of the head of phrase, namely collectiveness or distributiveness
+of a noun, (ii) grammatical number markings on all nouns within a phrase
+weighted by their syntactic distance, and (iii) idiosyncretic (scissors)
+or grammatical (books) presence of a plural marking. The errors
+probabilistically arise when additional plurality features from
+different sources contribute to the final number representation of a
+phrase. Because this account ties attraction to various sources
+including the presence of a plural morpheme, it could in principle
+accommodate effects of surface-form similarity. However, this surface
+form similarity effects should be limited to the cases where it can be
+associated with a plural number marking, and should not arise with pure
+phonological similarities.
+
+On the other hand, the latter set of accounts claim that the initial
+representation is not erroneous, but speakers are sometimes unable to
+correctly retrieve the controller \citep{WagersEtAl:2009, Dillon2013a}.
+For example, \citet{WagersEtAl:2009} argue that the parser normally
+check the agreement relation by retrieving the relevant chunk in memory
+using the retrieval cues provided by the agreement probe. In sentences
+like (\ref{og}), speakers occasionally retrieve the incorrect element
+due to the fact that neither nouns fully match the relevant cues.
+
+\begin{itemize}
+\tightlist
+\item
+  give more details to cue based
+\item
+  maybe talk about noisy channel?
+\item
+  write an if phrase. our experiments also tests \ldots.
+\end{itemize}
+
+Morphological or phonological overlap between elements might increase
+activation strength or delay decay, thereby amplifying interference.
+However, the model does not include a mechanism for distinguishing
+between morphophonological and abstract feature overlap, and it provides
+no role for case information or other morphosyntactic cues beyond
+number. It also has difficulty explaining attraction from attractors
+that lie outside the subject phrase. !!!! NOT TRUE !!!!
 
 In contrast, cue-based retrieval accounts (e.g., Wagers et al., 2009;
 Dillon et al., 2013) locate attraction at the stage of memory retrieval,
