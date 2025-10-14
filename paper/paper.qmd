@@ -190,7 +190,7 @@ get_value <- function(df, col, ...) {
     vals
 }
 
-exclude_bad_subjects_8 <- function(data_to_clean, accuracy_threshold = 0.25, rt_below = 200, rt_upper = 4999) {
+exclude_bad_subjects_8 <- function(data_to_clean, accuracy_threshold = 0.25, rt_below = 200, rt_upper = 4999, verbose = F) {
     avg_by_subj <- data_to_clean %>%
         group_by(
             subject, experiment, condition,
@@ -220,9 +220,11 @@ exclude_bad_subjects_8 <- function(data_to_clean, accuracy_threshold = 0.25, rt_
     if ("natturk" %in% colnames(data_clean)) {
         data_clean %<>% subset(natturk == "nat_turk")
     }
-
-    print(with(data_clean, table(exp_condition, response_yes)))
-    print(sprintf("number of bad subjects: %f", length(bad_subjects_gen) + length(bad_subjects_rc)))
+    if (verbose) {
+        print(with(data_clean, table(exp_condition, response_yes)))
+        print(sprintf("number of bad subjects: %f", length(bad_subjects_gen) + length(bad_subjects_rc)))
+    }
+    
     data_clean
 }
 
