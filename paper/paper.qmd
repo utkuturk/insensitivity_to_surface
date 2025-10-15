@@ -49,7 +49,9 @@ execute:
 ---
 
 
-```{r setup}
+```{r}
+#| label: setup
+
 set.seed(01110011)
 library(tidyverse)
 library(brms)
@@ -62,7 +64,9 @@ library(lingglosses)
 ```
 
 
-```{r functions}
+```{r}
+#| label: functions
+
 read_experimental_data <- function(fname, subj_offset = 0, item_offset = 0, verbose = F) {
     data <- read.csv(fname,
         header = F,
@@ -334,21 +338,20 @@ In Experiment 1, we tested the form hypothesis directly by comparing ungrammatic
 
 Agreement errors in sentences like (\ref{og}) have been treated either as a failure of feature reconcilation or a failure of memory encoding.  
 
-The former set of accounts explain these errors as a by-product of how number feature of a phrase is calculated in real-time [@BockMiller:1991; @EberhardEtAl2005; @HammerlyEtAl2019].  For example, @EberhardEtAl2005, in their Marking and Morphing account, argue that speakers and comprehenders does not necessarily create binary singular or plural representation, instead they consider various number related information in a phrase and create a continuous value.  This related information include (i) the inherent conceptual number of the head of phrase, namely collectiveness or distributiveness of a noun, (ii) grammatical number markings on all nouns within a phrase weighted by their syntactic distance, and (iii) idiosyncretic (scissors) or grammatical (books) presence of a plural marking.   The errors probabilistically arise when additional plurality features from different sources contribute to the final number representation of a phrase.  Because this account ties attraction to various sources including the presence of a plural morpheme, it could in principle accommodate effects of surface-form similarity.  However, this surface form similarity effects should be limited to the cases where it can be associated with a plural number marking, and should not arise with pure phonological similarities.
+The former set of accounts explain these errors as a by-product of how number feature of a phrase is calculated in real-time [@BockMiller:1991; @EberhardEtAl2005; @HammerlyEtAl2019].  For example, @EberhardEtAl2005, in their Marking and Morphing account, argue that speakers and comprehenders does not necessarily create binary singular or plural representation, instead they consider various number related information in a phrase and create a continuous value.  This related information include (i) the inherent conceptual number of the head of phrase, namely collectiveness or distributiveness of a noun, (ii) grammatical number markings on all nouns within a phrase weighted by their syntactic distance, and (iii) idiosyncretic (scissors) or grammatical (books) presence of a plural marking.  The errors probabilistically arise when additional plurality features from different sources contribute to the final number representation of a phrase.  Because this account ties attraction to various sources including the presence of a plural morpheme, it could in principle accommodate effects of surface-form similarity.  However, this surface form similarity effects should be limited to the cases where it can be associated with a plural number marking, and should not arise with pure phonological similarities.
 
-On the other hand, the latter set of accounts claim that the initial representation is not erroneous, but speakers are sometimes unable to correctly retrieve the controller [@WagersEtAl:2009; @Dillon2013a].  For example, @WagersEtAl:2009 argue that the parser normally check the agreement relation by retrieving the relevant chunk in memory using the retrieval cues provided by the agreement probe.  In sentences like (\ref{og}), speakers occasionally retrieve the incorrect element due to the fact that neither nouns fully match the relevant cues.
+On the other hand, the latter set of accounts claim that the initial representation is not erroneous, but speakers are sometimes unable to correctly retrieve the controller [@WagersEtAl:2009; @Dillon2013a; @RyskinEtAl2021].  For example, @WagersEtAl:2009, in their memory account, assumes a cue-based retrieval model in which the verb cues a search for
+a memory chunk matching relevant cues for subjecthood and number.  In the ungrammatical attraction sentences as in (\ref{og}), each of chunks for ‘courts’ and ‘player’ matches a subset of relevant cues.  In these partial match scenarios, erroneously retrieval of the attractor may lead comprehenders to judge the sentence grammatical.  In this framework, surface-form overlap affects processing only if it contributes to cue overlap.  For example, plural morphology or phonological endings could influence retrieval if the system treats them as diagnostic of plural number.  Because the model allows cues to be weighted differently depending on their reliability, it trivially accounts for cross-linguistic variability in the role of case marking and other morphosyntactic features.
 
-- give more details to cue based
-- maybe talk about noisy channel?
-- write an if phrase. our experiments also tests ....
+<!-- - There is an another subset of accounts. 
+- While it is not immediately clear to how to categorize these accounts, their main assumption is that participants sometimes engage in reanalysis of the previous input due to memory related considerations. For example, @RyskinEtAl2021 says that when the attractor is plural, it is more likely that head is also plural.  In ungrammatical sentences, participants go through a rational reanalysis and re-imagine the head noun as if it is plural marked.
+- On the other hand, DempseyEtAl2022 argues that participants do not engage in full processing of the sentences and they process the initial NP as a mixed bundle of features. When the task demands a decision on the grammaticality, thus the exact location of the plural marking, participants sometimes misremember where the morpheme was and mis bind it to the attractor.  -->
+
+The two main set of explanations, therefore, make different predictions for the influence of surface similarity.  Feature reconcilation accounts predict form-based attraction if overlapping phonology also results in overlapping morphological representations, whereas cue-based retrieval predicts form effects only when they are encoded as retrieval cues, i.e. relevant for predictions.  Indeed, @LagoEtAl2019 previously argued that Turkish genitive case marking is associated with subjecthood in Turkish, due to they marking subjects in embedded clause, and thus derives attraction effects in Turkish.  A similar account from Dillon and colleagues pushed for sensitivity to looking like a controller [@BhatiaDillon2022; @BleotuDillon2024].  However, both of these accounts argue for distributional or within-item possibility of being a controller, instead of surface level similarity.  Turkish verbal -lAr presents a clear dissociation between form-association with subjecthood and being a controller.  As we previously noted, they can surface as a subject, they do look like a controller, but they cannot control the agreement and they are not possible controllers.  In this aspect, Turkish verbal -lAr is similar to Russian genitive cases.  If verbal -lAr, like Russian genitive case, induce attraction errors, current models of attraction need to be revised to include phonological similarity beyond being a possible controller.
 
 
 
-Morphological or phonological overlap between elements might increase activation strength or delay decay, thereby amplifying interference. However, the model does not include a mechanism for distinguishing between morphophonological and abstract feature overlap, and it provides no role for case information or other morphosyntactic cues beyond number. It also has difficulty explaining attraction from attractors that lie outside the subject phrase. !!!! NOT TRUE !!!! 
-
-In contrast, cue-based retrieval accounts (e.g., Wagers et al., 2009; Dillon et al., 2013) locate attraction at the stage of memory retrieval, when the parser or production system attempts to recover the controller of agreement. Retrieval is guided by a set of cues such as number, case, and syntactic position. Interference arises when a non-controller partially matches these cues and is incorrectly retrieved. In this framework, surface-form overlap affects processing only if it contributes to cue overlap. For example, plural morphology or phonological endings could influence retrieval if the system treats them as diagnostic of plural number. Because the model allows cues to be weighted differently depending on their reliability, it naturally accounts for cross-linguistic variability in the role of case marking and other morphosyntactic features.
-
-The two frameworks therefore make different predictions for the influence of surface similarity. Marking and Morphing could predict form-based attraction if overlapping phonological or morphological representations share activation nodes, whereas cue-based retrieval predicts form effects only when they are encoded as retrieval cues. Empirical results from languages with rich morphology support the latter view. Studies in English have shown limited effects of pseudoplurals and orthographic similarity, and cross-linguistic work in languages such as German, Russian, and Turkish indicates that agreement attraction depends on morphosyntactic feature overlap rather than on phonological form. In particular, Turkish provides a critical test case: the nominal and verbal plural morphemes are identical in form but differ in feature content, yet only nominal plural markers trigger attraction. This pattern is consistent with a feature-based account and suggests that surface-form similarity alone does not drive agreement attraction.
+<!-- Studies in English have shown limited effects of pseudoplurals and orthographic similarity, and cross-linguistic work in languages such as German, Russian, and Turkish indicates that agreement attraction depends on morphosyntactic feature overlap rather than on phonological form. In particular, Turkish provides a critical test case: the nominal and verbal plural morphemes are identical in form but differ in feature content, yet only nominal plural markers trigger attraction. This pattern is consistent with a feature-based account and suggests that surface-form similarity alone does not drive agreement attraction. -->
 
 
 <!-- Together, these studies converge on the idea that speakers are sensitive not only to the immediate syntactic cues in a sentence, but also to broader distributional regularities that shape how those cues are interpreted.  Some of these regularities reflect long-term experience with the language, such as recurring patterns of form syncretism and probability of being a controller, while others arise within the course of a single experiment, as participants adjust to the statistical composition of the materials, the frequency of ungrammatical items, or the mix of structure types they encounter.  These findings raise the possibility that agreement attraction is not a fixed structural reflex, but rather a dynamic outcome of how the processing system weighs and re-weights cues based on both linguistic and contextual experience.  If so, the strength and even the presence of attraction effects should depend on how strongly surface form and feature structure are correlated in the input, and on what participants learn about those correlations in real time. -->
@@ -356,7 +359,8 @@ The two frameworks therefore make different predictions for the influence of sur
 
 # Experiment 1: Testing Form-Driven Processing
 
-```{r exp1-data-prep}
+```{r}
+#| label: exp1-data-prep
 
 exp1 <- read_experimental_data("../data/results.txt", subj_offset = 2000, item_offset = 2000)
 
@@ -431,7 +435,8 @@ exp1.clean$subject %<>% as.character()
 
 ```
 
-```{r exp1-avgs}
+```{r}
+#| label: exp1-avgs
 
 exp1.avgs <- exp1.clean %>%
   filter(match != "filler") %>%
@@ -478,7 +483,9 @@ exp1.avgs.filler <- exp1.clean %>%
 
 ```
 
-```{r exp1-text-inputs}
+```{r}
+#| label: exp1-text-inputs
+
 # I want accuracy, not the response yes
 exp1.avgs.filler %<>%
   mutate(old.lwr = lwr, old.upr = upr) %>%
@@ -562,7 +569,9 @@ Participants saw 40 experimental and 40 filler sentences. Experimental sentences
 
 
 
-```{r exp1-models}
+```{r}
+#| label: exp1-models
+
 options(mc.cores = parallel::detectCores())
 theme_set(theme_bw(base_family = "Times"))
 
@@ -708,7 +717,10 @@ m.exp1.int <- brm(
 
 
 
-```{r model-output}
+```{r}
+#| label: model-output
+
+
 library(posterior)
 library(glue)
 
@@ -752,7 +764,10 @@ txt_p <- list(
 ```
 
 
-```{r nested-models}
+```{r}
+#| label: nested-models
+
+
 grammaticals <- exp1.dfModel %>% filter(grammatical == "Grammatical")
 
 ungrammaticals <- exp1.dfModel %>% filter(grammatical == "Ungrammatical")
@@ -821,7 +836,8 @@ Figure 1 presents the overall means and credible intervals for 'yes' responses a
 On the other hand, accuracy in grammatical conditions was modulated by the number of the attractor in an unexpected way. Participants rated grammatical sentences with singular attractors as grammatical less often (`r get_value(exp1.avgs, text, grammatical == "grammatical", attractor_num == "singular")`) compared to their counterpars with plural attractors (`r get_value(exp1.avgs, text, grammatical == "grammatical", attractor_num == "plural")`).
 
 
-```{r exp1-condition-means}
+```{r}
+#| label: exp1-condition-means
 #| fig-cap: "Mean proportion of 'acceptable' responses by grammaticality and attractor number. Error bars show 95% Clopper–Pearson confidence intervals. "
 #| fig-width: 3
 #| fig-height: 3.5
@@ -860,7 +876,8 @@ These descriptive trends were confirmed by our Bayesian mixed-effects models imp
 Posterior estimates are summarized in Figure 2. The model revealed a positive effect of grammaticality ($\beta$ = `r txt$gram`, P($\beta$ > `r txt_p$gram`)), but no reliable main effect of attractor number ($\beta$ = `r txt$attr`, P($\beta$ > `r txt_p$attr`)). On the other hand, there was a small but positive interaction ($\beta$ = `r txt$inter`, P($\beta$ > `r txt_p$inter`)). To clarify the effects' presence in grammaticals only, we fitted two more models that is fitted to the subset of the data. While the model fitted to grammatical conditions only showed an effect of attractor number ($\beta$ = `r txt_g$attr_g`, P($\beta$ > `r txt_g_p$attr_g`)), the model fitted to ungrammatical conditions did not provide evidence for the effect of number manipulation ($\beta$ = `r txt_g$attr_u`, P($\beta$ > `r txt_g_p$attr_g`)). These results suggest that the presence of a plural attractor did not increase the acceptability of ungrammatical sentences, nor was this relationship modulated by grammaticality.
 
 
-```{r exp1-fixed-effects}
+```{r}
+#| label: exp1-fixed-effects
 #| fig-cap: "Posterior means and 95% credible intervals for fixed effects in the two Bayesian models. The x-axis shows the posterior mean (log-odds scale). The blue intervals correspond to the model in which a positive interaction was assumed, and the orange intervals to the model in which it was not. "
 #| fig-width: 4
 #| fig-height: 1.5
@@ -962,7 +979,9 @@ A related set of findings came from @HammerlyEtAl2019.  They challenge long-stan
 
 
 
-```{r exp2-data-prep}
+```{r}
+#| label: exp2-data-prep
+
 exp2 <- read_experimental_data("../data/results_8cond.txt", subj_offset = 2500, item_offset = 2500)
 
 exp2 %<>% mutate(exp_condition = case_when(
@@ -1045,7 +1064,9 @@ exp2.clean$subject %<>% as.character()
 
 ```
 
-```{r exp2-avgs}
+```{r}
+#| label: exp2-avgs
+
 
 exp2.avgs <- exp2.clean %>%
     filter(match != "filler") %>%
@@ -1092,12 +1113,16 @@ exp2.avgs.filler <- exp2.clean %>%
 
 ```
 
-```{r process-turklogacev2024, output=F}
+```{r}
+#| label: process-turklogacev2024
+#| output: FALSE
 source("turklogacev24.R")
 ```
 
 
-```{r exp2-text-inputs}
+```{r}
+#| label: exp2-text-inputs
+
 # I want accuracy, not the response yes
 exp2.avgs.filler %<>%
     mutate(old.lwr = lwr, old.upr = upr) %>%
@@ -1163,7 +1188,9 @@ The same procedure with Experiment 1 was used.
 
 
 
-```{r exp2-models}
+```{r}
+#| label: exp2-models
+
 options(mc.cores = parallel::detectCores())
 theme_set(theme_bw(base_family = "Times"))
 
@@ -1265,7 +1292,9 @@ m.exp2.all <- brm(
 
 
 
-```{r model-output-2}
+```{r}
+#| label: model-output-2
+
 library(posterior)
 library(glue)
 
@@ -1305,7 +1334,8 @@ Figure 3 presents the overall means and credible intervals for 'yes' responses a
 
 However, similar increase in acceptability was not found with relative clause attractors (M = `r get_value(all.avgs, p_hat, grammatical == "ungrammatical", attractor_num == "singular", att_type == "rc")` and `r get_value(all.avgs, p_hat, grammatical == "ungrammatical", attractor_num == "plural", att_type == "rc")`, CI = [`r get_value(all.avgs, lwr, grammatical == "ungrammatical", attractor_num == "singular", att_type == "rc")`, `r get_value(all.avgs, upr, grammatical == "ungrammatical", attractor_num == "singular", att_type == "rc")`] and [`r get_value(all.avgs, lwr, grammatical == "ungrammatical", attractor_num == "plural", att_type == "rc")`, `r get_value(all.avgs, upr, grammatical == "ungrammatical", attractor_num == "plural", att_type == "rc")`] for singular and plural attractors, respectively). Participants rated grammatical sentences similarly independent of the attractor number or attractor type.
 
-```{r exp2-condition-means}
+```{r}
+#| label: exp2-condition-means
 #| fig-cap: "Mean proportion of 'acceptable' responses by grammaticality, attractor number and attractor type. Error bars show 95% Clopper–Pearson confidence intervals. "
 #| fig-width: 6
 #| fig-height: 3
@@ -1363,7 +1393,8 @@ we present the illusion estimate as a function of experiment. Attraction:Current
 <!-- Posterior estimates are summarized in Figure 4. The model revealed a positive effect of grammaticality ($\beta$ = `r txt$gram`, P($\beta$ > `r txt_p$gram`)), but no reliable main effect of attractor number ($\beta$ = `r txt$attr`, P($\beta$ > `r txt_p$attr`)). On the other hand, there was a small but positive interaction ($\beta$ = `r txt$inter`, P($\beta$ > `r txt_p$inter`)). To clarify the effects' presence in grammaticals only, we fitted two more models that is fitted to the subset of the data. While the model fitted to grammatical conditions only showed an effect of attractor number ($\beta$ = `r txt_g$attr_g`, P($\beta$ > `r txt_g_p$attr_g`)), the model fitted to ungrammatical conditions did not provide evidence for the effect of number manipulation ($\beta$ = `r txt_g$attr_u`, P($\beta$ > `r txt_g_p$attr_g`)). These results suggest that the presence of a plural attractor did not increase the acceptability of ungrammatical sentences, nor was this relationship modulated by grammaticality. -->
 
 
-```{r exp2-fixed-effects}
+```{r}
+#| label: exp2-fixed-effects
 #| fig-cap: "Posterior means and 95% credible intervals for fixed effects in the two Bayesian models. The x-axis shows the posterior mean (log-odds scale). The blue intervals correspond to the model in which a positive interaction was assumed, and the orange intervals to the model in which it was not. "
 #| fig-width: 4
 #| fig-height: 1.5
