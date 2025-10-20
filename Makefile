@@ -34,8 +34,8 @@ HTML_DST    := $(PUBLISH_DIR)/index.html
 REPO_ROOT := $(shell git -C "$(ROOT)" rev-parse --show-toplevel 2>/dev/null || echo "$(ROOT)")
 
 # Overleaf branch/worktree settings
-OVERLEAF_BRANCH ?= overleaf
-OVERLEAF_REMOTE ?= origin
+OVERLEAF_REMOTE := overleaf
+OVERLEAF_BRANCH := master
 OVERLEAF_WORKTREE := $(ROOT).overleaf_worktree
 
 .DEFAULT_GOAL := all
@@ -69,8 +69,17 @@ publish: html pdf
 	@echo "Publish complete."
 
 # --------- Overleaf branch via worktree (only minimal artifacts) ---------
-RSYNC := rsync -av --delete --delete-excluded
 
+
+# will always push to overleaf github.
+# first add overleaf git as a remote
+# git remote add overleaf <overleaf_git_link>
+# Always push to Overleaf remote, branch master
+
+OVERLEAF_SYNC_LOCAL := overleaf-sync# local branch name just for the worktree
+
+# rsync rules: only the paper artifacts at branch root; keep figures under paper_files/figure-pdf/
+RSYNC := rsync -av --delete --delete-excluded
 OVERLEAF_INCLUDE := \
   --include='paper.tex' \
   --include='paper_files/figure-pdf/***' \
@@ -83,35 +92,35 @@ OVERLEAF_INCLUDE := \
 
 .PHONY: overleaf_branch
 overleaf_branch: pdf
-	@echo "Preparing Overleaf branch '$(OVERLEAF_BRANCH)' via worktree..."
-	# pre-clean any stale worktree
+	@echo "Preparing Overleaf publish (fast-forward, artifacts only)..."
+# 1) ensure we have up-to-date overleaf/master locally (SAFE: doesn't touch your files)
+	@git -C "$(REPO_ROOT)" fetch "$(OVERLEAF_REMOTE)" --prune
+
+# 2) pre-clean any stale worktree
 	@git -C "$(REPO_ROOT)" worktree remove -f "$(OVERLEAF_WORKTREE)" 2>/dev/null || true
 	@rm -rf "$(OVERLEAF_WORKTREE)" 2>/dev/null || true
 	@git -C "$(REPO_ROOT)" worktree prune 2>/dev/null || true
 
-	# create (or attach) the worktree for the branch
-	@if git -C "$(REPO_ROOT)" show-ref --verify --quiet refs/heads/$(OVERLEAF_BRANCH); then \
-	  git -C "$(REPO_ROOT)" worktree add -B "$(OVERLEAF_BRANCH)" "$(OVERLEAF_WORKTREE)" "$(OVERLEAF_BRANCH)"; \
-	else \
-	  git -C "$(REPO_ROOT)" worktree add -b "$(OVERLEAF_BRANCH)" "$(OVERLEAF_WORKTREE)"; \
-	fi
+# 3) create worktree at the remote head, on a local branch 'overleaf-sync'
+#    (does NOT touch your main branch; isolates all changes)
+	@git -C "$(REPO_ROOT)" worktree add -B "$(OVERLEAF_SYNC_LOCAL)" "$(OVERLEAF_WORKTREE)" "$(OVERLEAF_REMOTE)/$(OVERLEAF_BRANCH)"
 
-	@echo "Cleaning worktree contents (keeping .git)..."
+	@echo "Cleaning worktree (keeping .git)..."
 	@cd "$(OVERLEAF_WORKTREE)" && \
 	  find . -mindepth 1 -maxdepth 1 ! -name .git -exec rm -rf {} +
 
-	@echo "Syncing Overleaf artifacts into worktree (root)..."
+	@echo "Syncing paper artifacts to worktree root..."
 	@mkdir -p "$(OVERLEAF_WORKTREE)/paper_files/figure-pdf"
 	@$(RSYNC) $(OVERLEAF_INCLUDE) \
 	  "$(BASE_DIR)"/ "$(OVERLEAF_WORKTREE)/"
 
-	@echo "Committing & pushing Overleaf branch..."
+	@echo "Committing and pushing to Overleaf (fast-forward)..."
 	@cd "$(OVERLEAF_WORKTREE)" && \
 	  git add -A && \
 	  (git commit -m "Update Overleaf artifacts" || true) && \
-	  git push -u "$(OVERLEAF_REMOTE)" "$(OVERLEAF_BRANCH)"
+	  git push -u "$(OVERLEAF_REMOTE)" "$(OVERLEAF_SYNC_LOCAL):$(OVERLEAF_BRANCH)"
 
-	@echo "Cleaning up Overleaf worktree..."
+	@echo "Cleaning up worktree..."
 	@git -C "$(REPO_ROOT)" worktree remove -f "$(OVERLEAF_WORKTREE)" 2>/dev/null || true
 	@rm -rf "$(OVERLEAF_WORKTREE)" 2>/dev/null || true
 	@git -C "$(REPO_ROOT)" worktree prune 2>/dev/null || true
