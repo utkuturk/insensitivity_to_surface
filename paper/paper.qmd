@@ -228,7 +228,7 @@ exclude_bad_subjects_8 <- function(data_to_clean, accuracy_threshold = 0.25, rt_
         print(with(data_clean, table(exp_condition, response_yes)))
         print(sprintf("number of bad subjects: %f", length(bad_subjects_gen) + length(bad_subjects_rc)))
     }
-    
+
     data_clean
 }
 
@@ -256,7 +256,7 @@ One domain in which these influences are observed is the research on agreement a
 
 
 ```{=latex}
-\begin{exe} 
+\begin{exe}
 \ex[*]{\label{og} The player on the courts are tired from a long-game.}
 \ex \label{ex:bockeberhard93}
 \begin{xlist}
@@ -311,11 +311,45 @@ material[NOM.SG] for {roof[GEN.PL($\neq$NOM.PL)]} were defective\\
 \end{exe}
 ```
 
-However, a more intriguing aspect of the study by @Slioussar2018 is her results with respective to attractors marked with genitive singular.  Another interesting characterics of Russian is such that a subset of *singular* genitive nouns share the same form with their plural nominal counterpart.  In addition to plural nouns not increasing grammatical judgments to ungrammatical sentences and not creating a reading advantage, the verbs of singular attractors were read faster and resulted in more 'yes' responses to grammaticality judgments.  
+However, a more intriguing aspect of the study by @Slioussar2018 is her results with respective to attractors marked with genitive singular.  Another interesting characterics of Russian is such that a subset of *singular* genitive nouns share the same form with their plural nominal counterpart.  In addition to plural nouns not increasing grammatical judgments to ungrammatical sentences and not creating a reading advantage, the verbs of singular attractors were read faster and resulted in more 'yes' responses to grammaticality judgments.  In this aspect, the findings of @Slioussar2018 differs from previous syncretism findings and targets the initial question raised by @BockEberhard1993: whether the pure phonological similarity, without any contribution from an abstract plural feature, can drive the agreement attraction effects.
 
-In this aspect, the findings of @Slioussar2018 targets the initial question raised by @BockEberhard1993: whether the pure phonological similarity can drive the agreement attraction effects.  Given the contention of initial findings of @BockEberhard1993 with Russian data and the theoretical importance of the empirical generalization, we tested whether we could find attraction effects with another type morphologically rich language, Turkish.  Turkish, an almost-strict agglutinative language, presents another typological aspects of morphological marking.  English, a predominantly analytic language that uses separate words, such as prepositions, particles, and auxiliary verbs, to express grammatical meaning rather than relying on inflections or affixes attached to words did not show an effect of pure phonological overlap.  Meanwhile, Russian, a fusional language in which a single affixal morpheme can express multiple grammatical meanings, exhibited the effect of phonological overlap.  Turkish represents another group of languages in which there is close to 1-to-1 mapping between gramatical meanings and affixal morphemes. 
+@Slioussar2018 assumed cue-based retrieval model in which attraction effects originates from erroneous retrievals of an agreement controller.  Under this approach, phrases are encoded in a content-addressable memory as bundles of features called *chunks* which include information like, number, gender, morphophonological case, and syntactic information [@SmithVasishth2020;@LV05].  Participants predict the number of the verb based on the noun phrases they process while reading the previous noun phrases.  In grammatical sentences with singular verb agreement, the number prediction and the verb number match, which causes no processing difficulty.  In contrast, when participants fail to find the predicted number morphology on the verb, a memory-retrieval process is initiated.  This process activates the search for a chunk matching relevant cues for agreement controller.  @Slioussar2018 argued that the search for a controller can be mediated through possible forms of nouns with relevant features like, \textsc{nom} case or \textsc{pl} number.
+
+In ungrammatical sentences like (\ref{RusAccPl}), while neither of the available noun phrases matches this specification in ungrammatical agreement attraction sentences, each of the NPs headed by *link* and *websites*  matches a subset of cues, mainly +subjecthood and +pl.  Importantly, in (\ref{RusGenSg}) as well, a partial match is also possible. Even though the NP headed by *roof* is not plural, due to phonological overlap, @Slioussar2018 argues, the relevant future set, i.e. +PL, is activated.  While this partial match scenarios mostly results in participants finding the sentence ungrammatical, they may retrieve the attractors, *websites* or *roof*, on some trials.
+
+Similar, but more phonologically conservative, accounts have been discussed within other syncretism related research.  For example, @LagoEtAl2019 argued that participants can retrieve a noun as the controller if the noun is marked with a case marking that may sometimes control agreement in a language even if that is not the case for the specific sentence.  They used Turkish genitive case, which can control the agreement in embedded sentences but not in matrix sentences.  They showed that participants use the overt case marking as a cue, rather than the abstract function of the noun.  A similar account from Dillon and colleagues pushed for sensitivity for looking like a controller in languages like Romanian and Hindi [@BhatiaDillon2022; @BleotuDillon2024].  For instance, Romanian attractors only induced attraction effects when they match the form of the subject and determiner string-wise.
+
+However, it is not clear how much phonology plays a role in determining the distributional facts of being a controller.  As it stands, their proposals are compatible with the stronger version of the hypothesis which is put forwards by the @Slioussar2018.  However, another possibility is that the models that is proposed by the syncretism literature is contingent on the faithful representations of the morphologicalcase and not the surface-level strings.  The complica
+
+
+argue for distributional or within-item possibility of being a controller, instead of surface level similarity.
+
+
+Turkish verbal -lAr presents a clear dissociation between form-association with subjecthood and being a controller.  As we previously noted, they can surface as a subject, they do look like a controller, but they cannot control the agreement and they are not possible controllers.  In this aspect, Turkish verbal -lAr is similar to Russian genitive cases.  If verbal -lAr, like Russian genitive case, induce attraction errors, current models of attraction need to be revised to include phonological similarity beyond being a possible controller.
+
+
+
+- Similar accounts have been proposed.
+- For example, LagoEtAl proposed for Turkish that a case's association subjecthood matters.
+- Similarly, Dillon and colleagues also proposed that looking like a controller is an important factor for attraction.
+- However, it is not really clear what they mean actually.
+- To clarify what they mean and importance of empirical generalization, we test this thing in Turkish.
+- Turkish RC allows us to dissociate looking like a distractor or association with subjecthood with actually being
+- Interestingly, Turkish also fills a morphological gap. It is agglutinative, not fusional or analytic.
+
+
+
+
+
+Given the contention of initial findings of @BockEberhard1993 with Russian data and the theoretical importance of the empirical generalization, we tested whether we could find attraction effects with another type morphologically rich language, Turkish.  Turkish, an almost-strict agglutinative language, presents another typological aspects of morphological marking.  English, a predominantly analytic language that uses separate words, such as prepositions, particles, and auxiliary verbs, to express grammatical meaning rather than relying on inflections or affixes attached to words did not show an effect of pure phonological overlap.  Meanwhile, Russian, a fusional language in which a single affixal morpheme can express multiple grammatical meanings, exhibited the effect of phonological overlap.  Turkish represents another group of languages in which there is close to 1-to-1 mapping between gramatical meanings and affixal morphemes.
+
+
+
+
+
 
 In this paper, we test whether pure phonological overlap can derive agreement attraction effects in two high-powered speeded acceptability judgment experiments.  To this end we use Turkish, a language where verbal and nominal plural marking share the same surface form, the suffix –lAr.  We use reduced relative clause (RRC) structures, in which the verb with the plural marking alone can appear as the attractor (\ref{rrc-intro}).  Importantly, Turkish –lAr syncretism here is not feature-ambiguous (as in cases of syncretism); it is a form-only overlap that does not share possible argument status with the subject.  Even when the RRC can surface without its head as the subject, they cannot control the agreement (\ref{rrc-subject}).
+
 
 ```{=latex}
 \begin{exe}
@@ -331,30 +365,20 @@ go-NMLZ-PL-POSS run-PST-(*PL)\\
 ```
 
 
-In Experiment 1, we tested the form hypothesis directly by comparing ungrammatical sentences with verbal-plural vs. verbal-singular attractors.  Experiment 2 replicated this design but included additional nominal-attractor items from a previous Turkish attraction study [@TurkLogacev2024], allowing us to test whether the distribution of item types and the presence of genuine attraction-inducing elements modulates the outcome.  Across both experiments, we found no evidence that verbal –lAr induces attraction, even when canonical nominal attractors are present in the same session.  This pattern aligns with prior findings in general attraction literature and Turkish agreement attraction, namely surface-form overlap alone does not drive agreement illusions.  Rather, attraction appears to depend on abstract feature overlap between potential controllers and agreement probes.  In this lights, findings of @Slioussar2018 becomes even more surprising given that singular attractors that are homophonous with plurals were able to induce attraction effects.  One way to reconcile these findings is to refer to types of morphological encoding or the functional utility of morphemes in specific languages following @DillonKeshev2024. 
+In Experiment 1, we tested the form hypothesis directly by comparing ungrammatical sentences with verbal-plural vs. verbal-singular attractors.  Experiment 2 replicated this design but included additional nominal-attractor items from a previous Turkish attraction study [@TurkLogacev2024], allowing us to test whether the distribution of item types and the presence of genuine attraction-inducing elements modulates the outcome.  Across both experiments, we found no evidence that verbal –lAr induces attraction, even when canonical nominal attractors are present in the same session.  This pattern aligns with prior findings in general attraction literature and Turkish agreement attraction, namely surface-form overlap alone does not drive agreement illusions.  Rather, attraction appears to depend on abstract feature overlap between potential controllers and agreement probes.  In this lights, findings of @Slioussar2018 becomes even more surprising given that singular attractors that are homophonous with plurals were able to induce attraction effects.  One way to reconcile these findings is to refer to types of morphological encoding or the functional utility of morphemes in specific languages following @DillonKeshev2024.
 
 
-## Primer on Attraction Accounts and Phonological Modulation
+<!-- ## Primer on Attraction Accounts and Phonological Modulation -->
 
-Agreement errors in sentences like (\ref{og}) have been treated either as a failure of feature reconcilation or a failure of memory encoding.  
+<!-- Agreement errors in sentences like (\ref{og}) have been treated either as a failure of feature reconcilation or a failure of memory encoding.   -->
 
-The former set of accounts explain these errors as a by-product of how number feature of a phrase is calculated in real-time [@BockMiller:1991; @EberhardEtAl2005; @HammerlyEtAl2019].  For example, @EberhardEtAl2005, in their Marking and Morphing account, argue that speakers and comprehenders does not necessarily create binary singular or plural representation, instead they consider various number related information in a phrase and create a continuous value.  This related information include (i) the inherent conceptual number of the head of phrase, namely collectiveness or distributiveness of a noun, (ii) grammatical number markings on all nouns within a phrase weighted by their syntactic distance, and (iii) idiosyncretic (scissors) or grammatical (books) presence of a plural marking.  The errors probabilistically arise when additional plurality features from different sources contribute to the final number representation of a phrase.  Because this account ties attraction to various sources including the presence of a plural morpheme, it could in principle accommodate effects of surface-form similarity.  However, this surface form similarity effects should be limited to the cases where it can be associated with a plural number marking, and should not arise with pure phonological similarities.
+<!-- The former set of accounts explain these errors as a by-product of how number feature of a phrase is calculated in real-time [@BockMiller:1991; @EberhardEtAl2005; @HammerlyEtAl2019].  For example, @EberhardEtAl2005, in their Marking and Morphing account, argue that speakers and comprehenders does not necessarily create binary singular or plural representation, instead they consider various number related information in a phrase and create a continuous value.  This related information include (i) the inherent conceptual number of the head of phrase, namely collectiveness or distributiveness of a noun, (ii) grammatical number markings on all nouns within a phrase weighted by their syntactic distance, and (iii) idiosyncretic (scissors) or grammatical (books) presence of a plural marking.  The errors probabilistically arise when additional plurality features from different sources contribute to the final number representation of a phrase.  Because this account ties attraction to various sources including the presence of a plural morpheme, it could in principle accommodate effects of surface-form similarity.  However, this surface form similarity effects should be limited to the cases where it can be associated with a plural number marking, and should not arise with pure phonological similarities. -->
 
-On the other hand, the latter set of accounts claim that the initial representation is not erroneous, but speakers are sometimes unable to correctly retrieve the controller [@WagersEtAl:2009; @Dillon2013a; @RyskinEtAl2021].  For example, @WagersEtAl:2009, in their memory account, assumes a cue-based retrieval model in which the verb cues a search for
-a memory chunk matching relevant cues for subjecthood and number.  In the ungrammatical attraction sentences as in (\ref{og}), each of chunks for ‘courts’ and ‘player’ matches a subset of relevant cues.  In these partial match scenarios, erroneously retrieval of the attractor may lead comprehenders to judge the sentence grammatical.  In this framework, surface-form overlap affects processing only if it contributes to cue overlap.  For example, plural morphology or phonological endings could influence retrieval if the system treats them as diagnostic of plural number.  Because the model allows cues to be weighted differently depending on their reliability, it trivially accounts for cross-linguistic variability in the role of case marking and other morphosyntactic features.
+<!-- On the other hand, the latter set of accounts claim that the initial representation is not erroneous, but speakers are sometimes unable to correctly retrieve the controller [@WagersEtAl:2009; @Dillon2013a; @RyskinEtAl2021].  For example, @WagersEtAl:2009, in their memory account, assumes a cue-based retrieval model in which the verb cues a search for a memory chunk matching relevant cues for subjecthood and number.  In the ungrammatical attraction sentences as in (\ref{og}), each of chunks for ‘courts’ and ‘player’ matches a subset of relevant cues.  In these partial match scenarios, erroneously retrieval of the attractor may lead comprehenders to judge the sentence grammatical.  In this framework, surface-form overlap affects processing only if it contributes to cue overlap.  For example, plural morphology or phonological endings could influence retrieval if the system treats them as diagnostic of plural number.  Because the model allows cues to be weighted differently depending on their reliability, it trivially accounts for cross-linguistic variability in the role of case marking and other morphosyntactic features. -->
 
-<!-- - There is an another subset of accounts. 
-- While it is not immediately clear to how to categorize these accounts, their main assumption is that participants sometimes engage in reanalysis of the previous input due to memory related considerations. For example, @RyskinEtAl2021 says that when the attractor is plural, it is more likely that head is also plural.  In ungrammatical sentences, participants go through a rational reanalysis and re-imagine the head noun as if it is plural marked.
-- On the other hand, DempseyEtAl2022 argues that participants do not engage in full processing of the sentences and they process the initial NP as a mixed bundle of features. When the task demands a decision on the grammaticality, thus the exact location of the plural marking, participants sometimes misremember where the morpheme was and mis bind it to the attractor.  -->
-
-The two main set of explanations, therefore, make different predictions for the influence of surface similarity.  Feature reconcilation accounts predict form-based attraction if overlapping phonology also results in overlapping morphological representations, whereas cue-based retrieval predicts form effects only when they are encoded as retrieval cues, i.e. relevant for predictions.  Indeed, @LagoEtAl2019 previously argued that Turkish genitive case marking is associated with subjecthood in Turkish, due to they marking subjects in embedded clause, and thus derives attraction effects in Turkish.  A similar account from Dillon and colleagues pushed for sensitivity to looking like a controller [@BhatiaDillon2022; @BleotuDillon2024].  However, both of these accounts argue for distributional or within-item possibility of being a controller, instead of surface level similarity.  Turkish verbal -lAr presents a clear dissociation between form-association with subjecthood and being a controller.  As we previously noted, they can surface as a subject, they do look like a controller, but they cannot control the agreement and they are not possible controllers.  In this aspect, Turkish verbal -lAr is similar to Russian genitive cases.  If verbal -lAr, like Russian genitive case, induce attraction errors, current models of attraction need to be revised to include phonological similarity beyond being a possible controller.
+<!-- The two main set of explanations, therefore, make different predictions for the influence of surface similarity.  Feature reconcilation accounts predict form-based attraction if overlapping phonology also results in overlapping morphological representations, whereas cue-based retrieval predicts form effects only when they are encoded as retrieval cues, i.e. relevant for predictions.  -->
 
 
-
-<!-- Studies in English have shown limited effects of pseudoplurals and orthographic similarity, and cross-linguistic work in languages such as German, Russian, and Turkish indicates that agreement attraction depends on morphosyntactic feature overlap rather than on phonological form. In particular, Turkish provides a critical test case: the nominal and verbal plural morphemes are identical in form but differ in feature content, yet only nominal plural markers trigger attraction. This pattern is consistent with a feature-based account and suggests that surface-form similarity alone does not drive agreement attraction. -->
-
-
-<!-- Together, these studies converge on the idea that speakers are sensitive not only to the immediate syntactic cues in a sentence, but also to broader distributional regularities that shape how those cues are interpreted.  Some of these regularities reflect long-term experience with the language, such as recurring patterns of form syncretism and probability of being a controller, while others arise within the course of a single experiment, as participants adjust to the statistical composition of the materials, the frequency of ungrammatical items, or the mix of structure types they encounter.  These findings raise the possibility that agreement attraction is not a fixed structural reflex, but rather a dynamic outcome of how the processing system weighs and re-weights cues based on both linguistic and contextual experience.  If so, the strength and even the presence of attraction effects should depend on how strongly surface form and feature structure are correlated in the input, and on what participants learn about those correlations in real time. -->
 
 
 # Experiment 1: Testing Form-Driven Processing
@@ -1151,7 +1175,6 @@ The same procedure with Experiment 1 was used.
 ## Analysis and Results
 
 
-
 ```{r}
 #| label: exp2-models
 
@@ -1286,10 +1309,197 @@ txt2 <- lapply(post_int2, trip)
 txt_p2 <- lapply(coef_names2, \(nm) fmt(p_gt0(m.exp2.all, nm), 2))
 
 
+
+# Extract posterior draws
+draws <- as_draws_df(m.exp2.all)
+
+get_col <- function(draws, name) {
+    if (!name %in% names(draws)) {
+        stop(sprintf("Column '%s' not found. Available: %s", name, paste(head(names(draws), 10), collapse = ", ")))
+    }
+    draws[[name]]
+}
+
+# Coefficient names
+b_ga_name <- "b_grammaticalGram_minus_Ungram:attractor_numPlural_minus_Singular"
+b_gat_rc_name <- "b_grammaticalGram_minus_Ungram:attractor_numPlural_minus_Singular:att_typeRC_vs_Gens"
+b_gat_gen_name <- "b_grammaticalGram_minus_Ungram:attractor_numPlural_minus_Singular:att_typeGenCurrent_vs_GenTL24"
+
+b_ga <- get_col(draws, b_ga_name)
+b_gat_rc <- get_col(draws, b_gat_rc_name)
+b_gat_gen <- get_col(draws, b_gat_gen_name)
+
+# Compute effects per att_type level (Helmert-coded)
+# Levels: RC_vs_Gens (+ for RC, - for both Gens); GenCurrent_vs_GenTL24 (+ for GenCurrent, - for GenTL24)
+# RC: +0.5 on RC_vs_Gens, 0 on GenCurrent_vs_GenTL24
+# Gen-Current: -0.25 on RC_vs_Gens, +0.5 on GenCurrent_vs_GenTL24
+# Gen-TL24: -0.25 on RC_vs_Gens, -0.5 on GenCurrent_vs_GenTL24
+
+eff_rc <- b_ga + 0.5 * b_gat_rc + 0.0 * b_gat_gen
+eff_gencurrent <- b_ga - 0.25 * b_gat_rc + 0.5 * b_gat_gen
+eff_gentl24 <- b_ga - 0.25 * b_gat_rc - 0.5 * b_gat_gen
+prob_gt0 <- function(x) mean(x > 0)
+
+
+# Summarize
+predicted <- tibble(
+    Condition = factor(c("RC", "Gen-Current", "Gen-TL24"),
+        levels = c("RC", "Gen-Current", "Gen-TL24")
+    ),
+    mean = c(mean(eff_rc), mean(eff_gencurrent), mean(eff_gentl24)),
+    l95 = c(quantile(eff_rc, 0.025), quantile(eff_gencurrent, 0.025), quantile(eff_gentl24, 0.025)),
+    u95 = c(quantile(eff_rc, 0.975), quantile(eff_gencurrent, 0.975), quantile(eff_gentl24, 0.975)),
+    P_gt0 = c(prob_gt0(eff_rc), prob_gt0(eff_gencurrent), prob_gt0(eff_gentl24)),
+    P_lt0 = c(1 - prob_gt0(eff_rc), 1 - prob_gt0(eff_gencurrent), 1 - prob_gt0(eff_gentl24))
+)
+
+predicted <- predicted %>%
+    mutate(
+        # format p values: "<0.01", ">0.99", or rounded
+        p_formatted = case_when(
+            P_lt0 < 0.01 ~ "<0.01",
+            P_lt0 > 0.99 ~ ">0.99",
+            TRUE ~ paste0("=", sprintf("%.2f", round(P_lt0, 2)))
+        ),
+
+        # compose text string
+        text = paste0(
+            "M = ", round(mean, 2),
+            ", CI = [", round(l95, 2), ", ", round(u95, 2), "]",
+            ", P(<0) ", p_formatted
+        )
+    )
+
+
+h <- hypothesis(
+    m.exp2.all,
+    c(
+        # RC
+        "(1*grammaticalGram_minus_Ungram:attractor_numPlural_minus_Singular
+      + (1/3)*grammaticalGram_minus_Ungram:attractor_numPlural_minus_Singular:att_typeRC_vs_Gens
+      + 0*grammaticalGram_minus_Ungram:attractor_numPlural_minus_Singular:att_typeGenCurrent_vs_GenTL24) < 0",
+        # Gen-Current
+        "(1*grammaticalGram_minus_Ungram:attractor_numPlural_minus_Singular
+      + (-1/6)*grammaticalGram_minus_Ungram:attractor_numPlural_minus_Singular:att_typeRC_vs_Gens
+      + (1/3)*grammaticalGram_minus_Ungram:attractor_numPlural_minus_Singular:att_typeGenCurrent_vs_GenTL24) < 0",
+        # Gen-TL24
+        "(1*grammaticalGram_minus_Ungram:attractor_numPlural_minus_Singular
+      + (-1/6)*grammaticalGram_minus_Ungram:attractor_numPlural_minus_Singular:att_typeRC_vs_Gens
+      + (-1/3)*grammaticalGram_minus_Ungram:attractor_numPlural_minus_Singular:att_typeGenCurrent_vs_GenTL24) < 0",
+        # GenCurrent − GenTL24 difference
+        "((2/3)*grammaticalGram_minus_Ungram:attractor_numPlural_minus_Singular:att_typeGenCurrent_vs_GenTL24) < 0"
+    )
+)
+
+exp2_atts <- as_tibble(h$hypothesis) %>%
+    transmute(
+        contrast = c("RC", "Gen-Current", "Gen-TL24", "GenCurrent − GenTL24"),
+        mean = Estimate, l95 = CI.Lower, u95 = CI.Upper,
+        prob_lt0 = Post.Prob,
+        text = paste0(
+            "M = ", round(mean, 2),
+            ", CI = [", round(l95, 2), ", ", round(u95, 2), "]",
+            ", P(<0) = ",
+            ifelse(is.na(prob_lt0), "NA",
+                ifelse(prob_lt0 < 0.01, "<0.01",
+                    ifelse(prob_lt0 > 0.99, ">0.99", round(prob_lt0, 2))
+                )
+            )
+        )
+    )
+
+predicted <- exp2_atts %>%
+    filter(contrast %in% c("RC", "Gen-Current", "Gen-TL24")) %>%
+    transmute(
+        Condition = recode(
+            contrast,
+            "RC" = "Attraction: Verbal\n(Current)",
+            "Gen-Current" = "Attraction: Nominal\n(Current)",
+            "Gen-TL24" = "Attraction: Nominal\n(Türk & Logačev 2024)"
+        ),
+        mean, l95, u95
+    )
+
+## 2) Pull the overall acceptability difference (Gen-Current vs Gen-TL24) from the model
+fix <- posterior_summary(m.exp2.all, pars = "^b_") %>%
+    as_tibble(rownames = "term")
+
+# main effect of att_type GenCurrent_vs_GenTL24
+genpair_row <- fix %>%
+    filter(str_detect(term, "^b_att_type.*GenCurrent_vs_GenTL24$")) %>%
+    slice(1)
+
+coef_name <- genpair_row$term
+# If this is empty, run: rownames(fixef(m.exp2.all)) and copy the exact name.
+
+# 2) Compute P(<0) from draws
+dr <- as_draws_df(m.exp2.all)
+stopifnot(coef_name %in% names(dr))
+prob_lt0 <- mean(dr[[coef_name]] < 0)
+
+# 3) Build overall_df with prob and text
+overall_df <- tibble(
+    Condition = "Overall Acceptability:\nGen-Current − Gen-TL24",
+    mean = genpair_row$Estimate,
+    l95 = genpair_row$Q2.5,
+    u95 = genpair_row$Q97.5,
+)
+
+## 3) Gen vs Gen difference in *attraction* from your exp2_atts (row 4)
+diff_attr_df <- exp2_atts %>%
+    filter(contrast == "GenCurrent − GenTL24") %>%
+    transmute(
+        Condition = "Attraction Difference:\nGen-Current − Gen-TL24",
+        mean, l95, u95
+    )
+
+predicted_between <- bind_rows(diff_attr_df, overall_df, predicted)
+
+overall_df <- overall_df %>%
+    mutate(prob_lt0 = prob_lt0) %>%
+    mutate(
+        text = paste0(
+            "M = ", round(mean, 2),
+            ", CI = [", round(l95, 2), ", ", round(u95, 2), "]",
+            ", P(<0) = ",
+            ifelse(is.na(prob_lt0), "NA",
+                ifelse(prob_lt0 < 0.01, "<0.01",
+                    ifelse(prob_lt0 > 0.99, ">0.99", round(prob_lt0, 2))
+                )
+            )
+        )
+    )
+
+predicted_between <- predicted_between %>%
+    mutate(
+        Condition = factor(
+            Condition,
+            levels = rev(c(
+                "Attraction: Verbal\n(Current)", # A in RC
+                "Attraction: Nominal\n(Current)", # A in Gen-Current
+                "Attraction: Nominal\n(Türk & Logačev 2024)", # A in TL24
+                "Attraction Difference:\nGen-Current − Gen-TL24", # Diff between Gens
+                "Overall Acceptability:\nGen-Current − Gen-TL24" # Overall acceptability
+            ))
+        )
+    )
+
+p_between <- ggplot(predicted_between, aes(y = Condition, x = mean)) +
+    geom_vline(xintercept = 0, linetype = "dashed", color = "gray60") +
+    geom_point(size = 3) +
+    geom_errorbarh(aes(xmin = l95, xmax = u95), height = 0.15, linewidth = 0.7) +
+    xlab(expression(paste("Effect Size (", beta, ")"))) +
+    ylab(NULL) +
+    theme_minimal(base_family = "Times") +
+    theme(
+        axis.text.y = element_text(size = 8),
+        axis.text.x = element_text(size = 8),
+        axis.title.x = element_text(size = 8),
+        panel.grid.minor = element_blank(),
+        panel.grid.major.y = element_blank()
+    )
+
 ```
-
-
-
 
 
 Participants showed high accuracy in both grammatical (`r get_value(exp2.avgs.filler, text, grammatical == "grammatical")`) and ungrammatical filler sentences (`r get_value(exp2.avgs.filler, text, grammatical == "ungrammatical")`), indicating that they understood the task and performed it reliably.
@@ -1336,118 +1546,40 @@ all.avgs %>%
     theme(
         legend.position = "bottom",
         strip.background = element_rect(fill = "white"),
-        strip.text = element_text(size = 9), 
+        strip.text = element_text(size = 9),
         axis.text.y = element_text(size = 9),
         axis.text.x = element_text(size = 9),
         axis.title.x = element_text(size = 9),
     )
 ```
 
-Our models also showed similar results, assuming a Bernoulli logit link. The model was fitted to the binary *yes/no* responses and included fixed effects for Grammaticality, Attractor Number, and Attractor Type and their interaction, along with random intercepts and slopes for both subjects and items. Since our main question was whether within-experiment statistics affect the grammaticality magnitudes, we fitted another model with genitive marked nominals from data from our experiment and @TurkLogacev2024.
+Our models also showed similar results, assuming a Bernoulli logit link. Our main research question was whether verbal attractors induced attraction effects. We also wanted to check whether within-experiment statistics affected the attraction magnitudes, i.e. the effect of presence of verbal attractors on nominal attractors. To that end, we included genitive marked nominals from data from our experiment and @TurkLogacev2024. The model was fitted to the binary *yes/no* responses and included fixed effects for Grammaticality, Attractor Number, and Attractor Type and their interaction, along with random intercepts and slopes for both subjects and items.
 
-
-Talk about the important points. not all of them. attraction effect existed. and it also manipulated as a three way which tells us that participant only did in a single type.
-
-as for our second model,
-we present the illusion estimate as a function of experiment. Attraction:Current, Attraction:TL24
-
-
-
-
-<!-- Posterior estimates are summarized in Figure 4. The model revealed a positive effect of grammaticality ($\beta$ = `r txt$gram`, P($\beta$ > `r txt_p$gram`)), but no reliable main effect of attractor number ($\beta$ = `r txt$attr`, P($\beta$ > `r txt_p$attr`)). On the other hand, there was a small but positive interaction ($\beta$ = `r txt$inter`, P($\beta$ > `r txt_p$inter`)). To clarify the effects' presence in grammaticals only, we fitted two more models that is fitted to the subset of the data. While the model fitted to grammatical conditions only showed an effect of attractor number ($\beta$ = `r txt_g$attr_g`, P($\beta$ > `r txt_g_p$attr_g`)), the model fitted to ungrammatical conditions did not provide evidence for the effect of number manipulation ($\beta$ = `r txt_g$attr_u`, P($\beta$ > `r txt_g_p$attr_g`)). These results suggest that the presence of a plural attractor did not increase the acceptability of ungrammatical sentences, nor was this relationship modulated by grammaticality. -->
+We present posterior summaries of estimated regression effects from our model in Figure 4.  We found a robust attraction in both nominal attractor cases, with strongly negative effects for our nominal items (`r get_value(exp2_atts, text, contrast == "Gen-Current")`) and items from @TurkLogacev2024 (`r get_value(exp2_atts, text, contrast == "Gen-TL24")`).  More importantly, our model found no evidence for an attraction in verbal attractor conditions (`r get_value(exp2_atts, text, contrast == "RC")`), verifying our observations in the descriptive statistics.  The evidence for a difference in magnitude of attraction between the two genitive types was not found (`r get_value(exp2_atts, text, contrast == "GenCurrent − GenTL24")`), suggesting the within-experimental distribution did not affect attraction magnitudes.  Finally, we found strong evidence for a decreased overall acceptability for nominal items in our experiment (`r get_value(overall_df, text)`), suggesting the within-experimental distribution did affect overall acceptability, but not attraction.
 
 
 ```{r}
 #| label: exp2-fixed-effects
-#| fig-cap: "Posterior means and 95% credible intervals for fixed effects in the two Bayesian models. The x-axis shows the posterior mean (log-odds scale). The blue intervals correspond to the model in which a positive interaction was assumed, and the orange intervals to the model in which it was not. "
+#| fig-cap: "Posterior summaries of attraction-related effects. Points indicate posterior means, and horizontal bars show 95% credible intervals on the log-odds (β) scale. Attraction was estimated as the interaction between grammaticality and attractor number within each attractor type. Negative values indicate stronger attraction (a reduced ungrammaticality penalty in plural-attractor conditions). Dashed line denotes zero (no effect)."
 #| fig-width: 4
-#| fig-height: 1.5
+#| fig-height: 2
 
-# Extract posterior draws
-draws <- as_draws_df(m.exp2.all)
-
-get_col <- function(draws, name) {
-    if (!name %in% names(draws)) {
-        stop(sprintf("Column '%s' not found. Available: %s", name, paste(head(names(draws), 10), collapse = ", ")))
-    }
-    draws[[name]]
-}
-
-# Coefficient names
-b_ga_name <- "b_grammaticalGram_minus_Ungram:attractor_numPlural_minus_Singular"
-b_gat_rc_name <- "b_grammaticalGram_minus_Ungram:attractor_numPlural_minus_Singular:att_typeRC_vs_Gens"
-b_gat_gen_name <- "b_grammaticalGram_minus_Ungram:attractor_numPlural_minus_Singular:att_typeGenCurrent_vs_GenTL24"
-
-b_ga <- get_col(draws, b_ga_name)
-b_gat_rc <- get_col(draws, b_gat_rc_name)
-b_gat_gen <- get_col(draws, b_gat_gen_name)
-
-# Compute effects per att_type level (Helmert-coded)
-# Levels: RC_vs_Gens (+ for RC, - for both Gens); GenCurrent_vs_GenTL24 (+ for GenCurrent, - for GenTL24)
-# RC: +0.5 on RC_vs_Gens, 0 on GenCurrent_vs_GenTL24
-# Gen-Current: -0.25 on RC_vs_Gens, +0.5 on GenCurrent_vs_GenTL24
-# Gen-TL24: -0.25 on RC_vs_Gens, -0.5 on GenCurrent_vs_GenTL24
-
-eff_rc <- b_ga + 0.5 * b_gat_rc + 0.0 * b_gat_gen
-eff_gencurrent <- b_ga - 0.25 * b_gat_rc + 0.5 * b_gat_gen
-eff_gentl24 <- b_ga - 0.25 * b_gat_rc - 0.5 * b_gat_gen
-
-# Summarize
-summ_exp2_all <- tibble(
-    Condition = factor(c("RC", "Gen-Current", "Gen-TL24"),
-        levels = c("RC", "Gen-Current", "Gen-TL24")
-    ),
-    mean = c(mean(eff_rc), mean(eff_gencurrent), mean(eff_gentl24)),
-    l95 = c(quantile(eff_rc, 0.025), quantile(eff_gencurrent, 0.025), quantile(eff_gentl24, 0.025)),
-    u95 = c(quantile(eff_rc, 0.975), quantile(eff_gencurrent, 0.975), quantile(eff_gentl24, 0.975))
-)
-
-# --- Whisker Plot ---
-cond_labels <- c(
-    "RC"          = "Attraction:Verbal\n(Current)",
-    "Gen-Current" = "Attraction:Nominal\n(Current)",
-    "Gen-TL24"    = "Attraction: Nominal\n(Türk & Logačev 2024)"
-)
-
-ggplot(summ_exp2_all, aes(y = Condition, x = mean)) +
-    geom_vline(xintercept = 0, linetype = "dashed", color = "gray60") +
-    geom_point(size = 3) +
-geom_errorbarh(aes(xmin = l95, xmax = u95), height = 0.15, linewidth = 0.7) +
-    scale_y_discrete(labels = cond_labels) +
-    xlab(expression(paste("Attraction Effect (", beta, ")"))) +
-    ylab(NULL) +
-    theme_minimal(base_family = "Times") +
-    theme(
-        axis.text.y = element_text(size = 8),
-        axis.text.x = element_text(size = 8),
-        axis.title.x = element_text(size = 8),
-        panel.grid.minor = element_blank(),
-        panel.grid.major.y = element_blank()
-    )
+p_between
 ```
 
 
 ## Discussion
 
 
+Experiment 2 tested whether the reason we did not find attraction effects in Experiment 1 was due to the lack of attraction-inducing conditions.  Our results showed that attraction effects in verbal attractor condition, purely phonological overlap, did not surface even when there are robust attraction-inducing trials.  Participants reliably rejected ungrammatical sentences with verbal attractors regardless of attractor number.
+
+Our results and between experiment comparison showed that within-experiment statistics, i.e. exposure to verbal attraction conditions attraction items, did not substantially reduced the magnitude of the attraction effects.  However, the overall acceptability in our nominal attractor elements were reduced compared to the trials from @TurkLogacev2024.  This is inline with previous findings that shows participants' judgments within the experiment are modulated by the distribution of trials.  Interestingly, previous studies achieved this with instructions or filler elements [@HammerlyEtAl2019; @ArehalliWittenberg2021].  We show that the experimental conditions and the presence of an effect within a subset of conditions also plays a role in modulating overall acceptability.
 
 
 
-
-- Goal: test whether attraction changes when both attractor types occur in one experiment.
-- Participants: 95 Turkish speakers.
-- Design: 2 × 2 × 2 (Grammaticality × Attractor Number × Attractor Type [nominal vs verbal]).
-- Procedure & analysis: same as Experiment 1.
-- Results:
-  - Attraction replicated for nominal attractors (Δ ≈ 0.07).
-  - Verbal attractors again showed null effect.
-  - Global decline in yes-responses relative to earlier studies → participants became more conservative.
-- Discussion:
-  - Exposure to verbal conditions reduced attraction magnitude overall.
-  - Indicates participants adapt to statistical properties of the task.
-  - Aligns with learning-based cue-weighting accounts (Haskell et al. 2010).
 
 # General Discussion
+
 - Synthesis:
   - No evidence for surface-form matching; effects are feature-based.
   - Attraction magnitude changes with condition distribution → adaptive tuning.
