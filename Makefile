@@ -9,35 +9,34 @@
 #   OPEN=true make open
 
 SHELL := /bin/bash
-
-# Directory of this Makefile (trailing slash)
 ROOT      := $(dir $(abspath $(lastword $(MAKEFILE_LIST))))
-
-# The Quarto project lives under paper/
 BASE_DIR  := $(ROOT)paper/
-
 QUARTO    := quarto
 CP        := cp -f
-RSYNC     := rsync -av --delete
-
-# Core files
-QMD       := $(BASE_DIR)paper.qmd
-HTML      := $(BASE_DIR)paper.html
-PDF       := $(BASE_DIR)paper.pdf
-TEX       := $(BASE_DIR)paper.tex   # produced with keep-tex
-
-# Publish destination is the repo root (index.html at top-level)
-PUBLISH_DIR := $(ROOT)
-HTML_DST    := $(PUBLISH_DIR)/index.html
-
-# Git repo root
-REPO_ROOT := $(shell git -C "$(ROOT)" rev-parse --show-toplevel 2>/dev/null || echo "$(ROOT)")
-
-# Overleaf branch/worktree settings
 OVERLEAF_REMOTE := overleaf
 OVERLEAF_BRANCH := master
 OVERLEAF_WORKTREE := $(ROOT).overleaf_worktree
-
+OVERLEAF_SYNC_LOCAL := overleaf-sync
+RSYNC := rsync -av
+OVERLEAF_INCLUDE := \
+  --exclude='.git' \
+  --include='paper.tex' \
+  --include='paper_files/***' \
+  --include='figs/***' \
+  --include='images/***' \
+  --include='*.sty' \
+  --include='*.cls' \
+  --include='*.bst' \
+  --include='*.bib' \
+  --include='*.tex' \
+  --exclude='*'
+QMD       := $(BASE_DIR)paper.qmd
+HTML      := $(BASE_DIR)paper.html
+PDF       := $(BASE_DIR)paper.pdf
+TEX       := $(BASE_DIR)paper.tex
+PUBLISH_DIR := $(ROOT)
+HTML_DST    := $(PUBLISH_DIR)/index.html
+REPO_ROOT := $(shell git -C "$(ROOT)" rev-parse --show-toplevel 2>/dev/null || echo "$(ROOT)")
 .DEFAULT_GOAL := all
 
 # --------- Build targets ---------
@@ -53,7 +52,6 @@ $(HTML): $(QMD)
 $(PDF): $(QMD)
 	$(QUARTO) render "$(QMD)" --to elsevier-pdf -M keep-tex=true
 
-# --------- Publish to main branch (html->index.html at repo root, pdf stays in paper/) ---------
 .PHONY: publish
 publish: html pdf
 	@echo "Copying $(HTML) -> $(HTML_DST)"
@@ -68,65 +66,53 @@ publish: html pdf
 	fi
 	@echo "Publish complete."
 
-# --------- Overleaf branch via worktree (only minimal artifacts) ---------
+# --------- Overleaf branch via worktree ---------
 
 
 # will always push to overleaf github.
 # first add overleaf git as a remote
 # git remote add overleaf <overleaf_git_link>
-# Always push to Overleaf remote, branch master
-
-OVERLEAF_SYNC_LOCAL := overleaf-sync# local branch name just for the worktree
-
-# rsync rules: only the paper artifacts at branch root; keep figures under paper_files/figure-pdf/
-RSYNC := rsync -av --delete --delete-excluded
-OVERLEAF_INCLUDE := \
-  --include='paper.tex' \
-  --include='paper_files/figure-pdf/***' \
-  --include='*.sty' \
-  --include='*.cls' \
-  --include='*.bst' \
-  --include='*.bib' \
-  --include='*.tex' \
-  --exclude='*'
+# then git fetch overleaf master:refs/remotes/overleaf/master
+# or main
+# Always pushes to Overleaf remote, branch master
 
 .PHONY: overleaf_branch
 overleaf_branch: pdf
-	@echo "Preparing Overleaf publish (fast-forward, artifacts only)..."
-# 1) ensure we have up-to-date overleaf/master locally (SAFE: doesn't touch your files)
-	@git -C "$(REPO_ROOT)" fetch "$(OVERLEAF_REMOTE)" --prune
+	@echo "Publishing to Overleaf (artifacts only)..."
 
-# 2) pre-clean any stale worktree
+	@if ! git -C "$(REPO_ROOT)" rev-parse --verify --quiet "refs/remotes/$(OVERLEAF_REMOTE)/$(OVERLEAF_BRANCH)"; then \
+	  echo "Missing ref $(OVERLEAF_REMOTE)/$(OVERLEAF_BRANCH). Run:"; \
+	  echo "  git fetch $(OVERLEAF_REMOTE) $(OVERLEAF_BRANCH):refs/remotes/$(OVERLEAF_REMOTE)/$(OVERLEAF_BRANCH)"; \
+	  exit 1; \
+	fi
+
 	@git -C "$(REPO_ROOT)" worktree remove -f "$(OVERLEAF_WORKTREE)" 2>/dev/null || true
 	@rm -rf "$(OVERLEAF_WORKTREE)" 2>/dev/null || true
 	@git -C "$(REPO_ROOT)" worktree prune 2>/dev/null || true
 
-# 3) create worktree at the remote head, on a local branch 'overleaf-sync'
-#    (does NOT touch your main branch; isolates all changes)
 	@git -C "$(REPO_ROOT)" worktree add -B "$(OVERLEAF_SYNC_LOCAL)" "$(OVERLEAF_WORKTREE)" "$(OVERLEAF_REMOTE)/$(OVERLEAF_BRANCH)"
 
 	@echo "Cleaning worktree (keeping .git)..."
 	@cd "$(OVERLEAF_WORKTREE)" && \
 	  find . -mindepth 1 -maxdepth 1 ! -name .git -exec rm -rf {} +
 
-	@echo "Syncing paper artifacts to worktree root..."
+	@echo "Syncing paper artifacts to Overleaf worktree..."
 	@mkdir -p "$(OVERLEAF_WORKTREE)/paper_files/figure-pdf"
 	@$(RSYNC) $(OVERLEAF_INCLUDE) \
 	  "$(BASE_DIR)"/ "$(OVERLEAF_WORKTREE)/"
 
-	@echo "Committing and pushing to Overleaf (fast-forward)..."
 	@cd "$(OVERLEAF_WORKTREE)" && \
 	  git add -A && \
 	  (git commit -m "Update Overleaf artifacts" || true) && \
 	  git push -u "$(OVERLEAF_REMOTE)" "$(OVERLEAF_SYNC_LOCAL):$(OVERLEAF_BRANCH)"
 
-	@echo "Cleaning up worktree..."
+	@echo "Cleaning up Overleaf worktree..."
 	@git -C "$(REPO_ROOT)" worktree remove -f "$(OVERLEAF_WORKTREE)" 2>/dev/null || true
 	@rm -rf "$(OVERLEAF_WORKTREE)" 2>/dev/null || true
 	@git -C "$(REPO_ROOT)" worktree prune 2>/dev/null || true
-	@echo "Overleaf branch updated."
 
-# --------- Convenience ---------
+	@echo "Overleaf updated."
+
 .PHONY: open
 open: pdf
 	@if [ "$(OPEN)" = "true" ]; then \
@@ -136,7 +122,6 @@ open: pdf
 	  echo "Set OPEN=true to auto-open the PDF."; \
 	fi
 
-# --------- Clean LaTeX/knitr scratch files ---------
 .PHONY: clean
 clean:
 	@echo "Cleaning aux/latex scratch files..."
