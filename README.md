@@ -1,5 +1,7 @@
 # shalllow_processing_paper
 
+code and texts are available in [paper.qmd](./paper/paper.qmd)
+
 ```
 📊 Word Count by Section:
 • Introduction        : 1563 words (cumulative:  1563)
