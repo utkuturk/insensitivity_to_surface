@@ -36,6 +36,7 @@ PDF       := $(BASE_DIR)paper.pdf
 TEX       := $(BASE_DIR)paper.tex
 PUBLISH_DIR := $(ROOT)
 HTML_DST    := $(PUBLISH_DIR)/index.html
+PDF_DST    := $(PUBLISH_DIR)/paper.pdf
 REPO_ROOT := $(shell git -C "$(ROOT)" rev-parse --show-toplevel 2>/dev/null || echo "$(ROOT)")
 .DEFAULT_GOAL := all
 
@@ -56,11 +57,12 @@ $(PDF): $(QMD)
 publish: html pdf
 	@echo "Copying $(HTML) -> $(HTML_DST)"
 	$(CP) "$(HTML)" "$(HTML_DST)"
+	$(CP) "$(PDF)" "$(PDF_DST)"
 	@echo "Committing & pushing changes on main..."
-	@if git -C "$(REPO_ROOT)" diff --quiet -- "$(HTML_DST)" "$(PDF)"; then \
+	@if git -C "$(REPO_ROOT)" diff --quiet -- "$(HTML_DST)" "$(PDF_DST)"; then \
 	  echo "No changes to commit."; \
 	else \
-	  git -C "$(REPO_ROOT)" add -- "$(HTML_DST)" "$(PDF)"; \
+	  git -C "$(REPO_ROOT)" add -- "$(HTML_DST)" "$(PDF_DST)"; \
 	  git -C "$(REPO_ROOT)" commit -m "Publish HTML/PDF (auto)"; \
 	  git -C "$(REPO_ROOT)" push; \
 	fi
