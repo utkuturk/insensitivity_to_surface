@@ -1,5 +1,8 @@
 # shalllow_processing_paper
 
+code and texts are available in [paper.qmd](./paper/paper.qmd)
+
+```
 📊 Word Count by Section:
 • Introduction        : 1563 words (cumulative:  1563)
 • Experiment 1: T...  :    0 words (cumulative:  1563)
@@ -10,3 +13,4 @@
   • Discussion        :  535 words (cumulative:  3299)
 • Experiment 2: T...  :    0 words (cumulative:  3299)
 • General Discussion  :  489 words (cumulative:  3788)
+```
