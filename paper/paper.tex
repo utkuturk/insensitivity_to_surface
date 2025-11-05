@@ -178,7 +178,8 @@
 \hypersetup{
   pdftitle={(In)sensitivity to surface-level heuristics: A case from Turkish verbal attractors},
   pdfauthor={Utku Turk},
-  pdfkeywords={form-sensitivity, memory, agreement attraction},
+  pdfkeywords={form-sensitivity, memory, agreement
+attraction, linguistic illusions, sentence processing},
   colorlinks=true,
   linkcolor={blue},
   filecolor={Maroon},
@@ -206,27 +207,34 @@ Park},postcode={20742},postcodesep={}}
 
         
 \begin{abstract}
-We ask whether surface-form overlap alone can elicit agreement
-attraction or whether attraction requires morphosyntactic features that
-(possibly) license controllerhood. Turkish provides a test case because
-the plural morpheme \emph{-lAr} appears on both nouns and verbs, but
-only nominal \emph{-lAr} can control verbal agreement. In two speeded
-acceptability experiments with Turkish, we show that the association
-with being a possible controller is needed for surface-level heuristics
-to kick in. In Experiment 1 (N = 80) we used reduced relative clauses
-whose verb bore \emph{-lAr} as potential verbal attractors and compared
-ungrammatical sentences with plural vs.~singular verbal attractors.
-Ungrammatical sentences with a plural-marked verbal attractor were not
-judged more acceptable than those with a singular verbal attractor. In
-Experiment 2 (N = 95) we replicated the verbal manipulation and added
-genitive-marked nominal attractors; nominal plural attractors produced
-robust attraction, but verbal plural attractors did not. The
-within-experiment distribution influenced baseline acceptability, yet it
-did not create attraction for verbal attractors. The results indicate
-that surface similarity alone is insufficient. Attraction depends on
-abstract feature overlap with elements that can serve as agreement
-controllers, not on the presence of a homophonous plural morpheme on a
-non-controller.
+Linguistic illusion literature has stimulated ongoing debate on what
+type of information can be used to access memory representations. Prior
+work tests whether structural, semantic, or discourse cues guide
+subject-verb dependencies; it remains unclear whether native speakers
+rely on phonological information as a retrieval cues for memory access
+during dependency resolution, such as person agreement. Traditionally,
+accidental phonological resemblance to having a plural ending as in /s/
+sound in \emph{course} was found to not induce erroneous plural
+agreement, meanwhile, phonological resemblance that correlates with
+controllerhood amplifies attraction given an already present plural
+morpheme. In apparent contradiction to this generalization, Slioussar
+(2018) proposed that memory search for a subject in Russian sentences
+can be mediated through an accidental phonological resemblance. Given
+the theoretical importance of this proposal and the lack of comparable
+effects in other languages, we test whether phonological overlap can
+elicit erroneous agreement in Turkish, where the plural morpheme -lAr
+surfaces on both nouns and verbs. Turkish provides a critical test: both
+verbal elements and nominal elements can surface as subjects, but only
+nominal plural -lAr controls verbal agreement. Two speeded acceptability
+studies show no attraction from plural-marked verbs (Exp. 1 N = 80; Exp.
+2 N = 95) but robust attraction from genitive plural nouns. We report a
+first-of-its-kind dissociation under minimal manipulation: verbal
+attractors that can be subjects yet cannot control agreement do not
+induce attraction, whereas genitive plural nouns that can be subjects
+and control in other environments do. To our knowledge this pattern has
+not been shown in any other language, and it constrains cue-based
+retrieval by tying attraction to abstract controller features rather
+than surface phonology.
 \end{abstract}
 
 
@@ -234,66 +242,132 @@ non-controller.
 
 
 \begin{keyword}
-    form-sensitivity \sep memory \sep 
-    agreement attraction
+    form-sensitivity \sep memory \sep agreement
+attraction \sep linguistic illusions \sep 
+    sentence processing
 \end{keyword}
 \end{frontmatter}
     
 
 \section{Introduction}\label{introduction}
 
-Sentence processing is shaped not only by grammatical constraints but
-also by plausibility, frequency, task-specific factors, and phonological
-processes. Recent work shows that such influences can substantially
-modulate reading and judgment behavior
+Human sentence processing draws on abstract grammatical features and on
+heuristics that exploit surface regularities, such as plausibility
+\citep{SpeerClifton1998}, frequency \citep{LauEtAl2007}, and
+task-specific factors
 \citep{LauraMalsbug24, ArehalliWittenberg2021, HammerlyEtAl2019, LogacevVasishth2016}.
-Form-based overlap between elements in a sentence can also influence how
-sentences are processed. A substantial body of work has shown that the
-parser and the production system are sensitive not only to syntactic or
-semantic relations but also to the surface form of words. These effects
-have been taken to suggest that, under certain circumstances, speakers
-and comprehenders rely on shallow or heuristic cues to complete
-dependencies. \citet{AchesonMacDonald2011}, for example, found that
-participants showed slower reading times when the subjects of the two
-embedded clauses share phonological similarity
-(\emph{baker}-\emph{banker} in \ref{baker}
-vs.~\emph{runner}-\emph{banker} in \ref{runner}). Moreover, participants
-were less accurate in answering comprehension questions with
-phonological overlap present. Related work in short-term memory and word
-recognition shows similar effects---items that overlap phonologically or
-morphologically are more confusable and more easily retrieved
-\citep{CopelandRadvansky2001, RastleDavis2008}.
+We focus on one such heuristic, surface-form overlap, where phonological
+similarity between the sentence constituents modulates performance
+\citep{AchesonMacDonald2011, KushEtAl2015, CopelandRadvansky2001, RastleDavis2008}.
+Prior work shows reliable slowdowns and comprehension accuracy costs
+under surface-form overlap, but it is unresolved whether this heuristic
+penetrates dependency resolution itself, including subject-verb
+agreement, pronoun resolution, or the licensing of negative polarity
+items, beyond general effects on reading ease and memory. The few
+studies that bear directly on subject-verb agreement exhibit
+contradictory findings \citep{BockEberhard1993, Slioussar2018}.
+
+A central question for understanding human cognition is what information
+is encoded and later available to memory during comprehension, and how
+faithful these encodings are to the input. A general cue-based retrieval
+approaches hold that constituents are stored with detailed abstract
+features and later accessed by matching retrieval cues; it remains open
+whether phonological codes persist to serve as such cues during
+dependency building \citep{LV05}. On the other hand, Good-Enough and
+noisy accounts allow that detailed analyses are not always maintained
+when heuristics suffice, raising the possibility that surface
+regularities affect judgments \citep{FerreiraEtAl2002}. Clarifying
+whether surface-form overlap modulates dependency resolution therefore
+identifies what human cognition counts as diagnostic information for
+retrieving dependency controllers and how faithful the stored
+representations are.
+
+Agreement provides a precise diagnostic because its computations are
+known to be sensitive to feature overlap. Classic findings in the
+computation of agreement show that people make systematic errors in
+establishing a number agreement relation between a verb and its
+agreement controller, when another NP with a different number (the
+attractor) interferes. As a result, speakers may produce sentences like
+(\ref{og}) or misclassify them as acceptable
+\citep{BockMiller:1991, PearlmutterGarnseyBock:1999}.
 
 \begin{exe}
-\ex \label{baker} The baker that the banker sought bought the house.
-\ex \label{runner} The baker that the banker sought bought the house..
+\ex[*]{\label{og} The player on the courts are tired from a long-game.}
 \end{exe}
 
-\begin{itemize}
-\tightlist
-\item
-  Here I should put Kush actually debunked this.
-\end{itemize}
+Despite much research on what quantitatively modulates agreement errors,
+the role of phonology remains unclear. Pseudoplurals attractors such as
+\emph{course} do not increase agreement errors in production, arguing
+against a purely phonological route \citep{BockEberhard1993}. Overlaps
+that align with abstract features or subject-likeness do increase
+errors, as in case syncretism in German production
+\citep{HartsuikerEtAl2003}, genitive subject-likeness in Turkish
+comprehension \citep{LagoEtAl2019}, and structural resemblance in
+Romanian comprehension \citep{BleotuDillon2024}. These effects arise
+when the attractor bears the relevant plural marking and shares
+morphological features with a possible subject, not when they are
+singular but phonologically similar to a plural subject, supporting
+accounts that downplay surface-form similarity. By contrast, Russian
+results have been interpreted as evidence that phonological overlap
+between a singular genitive attractor and a plural nominative form
+affects agreement judgments, reading, and production
+\citep{Slioussar2018}.
+
+An alternative interpretation notes that genitive-marked nouns in
+Russian can participate in other agreement relations, making them
+plausible agreement controllers in some configurations. This raises the
+possibility that the observed effects reflect a version of
+subject-likeness rather than phonology per se. Together, these
+considerations motivate a targeted test that dissociates the possibility
+of controllerhood from surface-form overlap.
+
+To this end, we utilize the surface-form overlap between the verbal and
+nominal morphological reflexes of agreement in Turkish, a language that
+shows attraction when attractors carry controller-relevant features
+\citep{TurkLogacev2024, Ulusoy2023, Turk2022, LagoEtAl2019}. Unlike
+previously tested languages, Turkish uses the same surface suffix, -lAr,
+for plural marking on nouns and for plural agreement on finite verbs.
+Typologically, Turkish is agglutinative with a near one-to-one mapping
+between grammatical meanings and affixes, in contrast to English, a more
+analytic language where pure phonological overlap has not yielded
+attraction, and to Russian, a fusional language where overlap effects
+have been reported. Crucially, strings bearing verbal -lAr can occur in
+subject position, yet they never control finite clause agreement; only
+nominal plurals do. These properties allow a direct test of whether form
+overlap alone modulates agreement errors, or whether modulation requires
+an element that can in principle serve as an agreement controller.
+
+We report two high-powered speeded acceptability experiments in Turkish.
+Experiment 1 manipulates the number on an embedded verb that appears
+near the matrix clause, comparing embedded plural -lAr to embedded
+singular. Experiment 2 retains this manipulation and adds items with
+nominal plural attractors drawn from prior Turkish work, creating a
+within-session benchmark for canonical attraction. Across both
+experiments, embedded verbal -lAr did not increase acceptance of plural
+matrix agreement. Nominal plural attractors produced the expected
+attraction. These results indicate that surface-form overlap alone does
+not function as a retrieval cue for agreement in Turkish. Dependency
+resolution appears to rely on abstract features and structural
+relations, with phonology influencing processing primarily outside of
+retrieval.
+
+\subsection{Background}\label{background}
 
 One domain in which these influences are observed is the research on
-agreement attraction as in (\ref{og}), a phenomenon in which a verb
-erroneously agrees with a nearby noun rather than its grammatical
-subject, producing so-called grammaticality illusions
-\citep{BockMiller:1991, PearlmutterGarnseyBock:1999}. This effect have
-been robustly attested in many languages with various methodologies
-{[}to name a few{]}. \citet{BockEberhard1993} tested whether attractors
-that only sound plural, pseudoplurals such as \emph{course}
-\ref{pseudo}, increase agreement errors compared to true plural nouns
-(\ref{true-pl}). They reasoned that if participants rely on phonological
-cues rather than abstract features, words ending with plural-like sounds
-(/s/ or /z/) should behave like true plurals. Participants completed
-sentence preambles such as (\ref{ex:bockeberhard93}), where the head
-noun (\emph{player}) was singular but the attractor varied in form. They
+agreement attraction as . This effect have been robustly attested in
+many languages with various methodologies {[}to name a few{]}.
+\citet{BockEberhard1993} tested whether attractors that only sound
+plural, pseudoplurals such as \emph{course} \ref{pseudo}, increase
+agreement errors compared to true plural nouns (\ref{true-pl}). They
+reasoned that if participants rely on phonological cues rather than
+abstract features, words ending with plural-like sounds (/s/ or /z/)
+should behave like true plurals. Participants completed sentence
+preambles such as (\ref{ex:bockeberhard93}), where the head noun
+(\emph{player}) was singular but the attractor varied in form. They
 found that pseudoplural attractors did not increase plural agreement
 rates.
 
 \begin{exe}
-\ex[*]{\label{og} The player on the courts are tired from a long-game.}
 \ex \label{ex:bockeberhard93}
 \begin{xlist}
     \ex \label{pseudo} {Pseudoplural Attractor} \\ The {player} on the {course} \ldots{}
