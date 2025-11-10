@@ -44,6 +44,10 @@ format:
     toc: true
 filters:
   - wordcount
+#   - interlinear
+wordcount:
+  count-code-blocks: false
+  count-inline-code: false
 execute:
   echo: false
   message: false
@@ -245,6 +249,9 @@ A central question for understanding human cognition is what information is enco
 
 Agreement provides a precise diagnostic because its computations are known to be sensitive to feature overlap. Classic findings in the computation of agreement show that people make systematic errors in establishing a number agreement relation between a verb and its agreement controller, when another NP with a different number (the attractor) interferes. As a result, speakers may produce sentences like (\ref{og}) or misclassify them as acceptable [@BockMiller:1991; @PearlmutterGarnseyBock:1999]. 
 
+<!-- ::: {#ex-og .ex}
+\* The player on the courts are tired from a long-game.
+::: -->
 
 ```{=latex}
 \begin{exe}
@@ -263,22 +270,22 @@ We report two high-powered speeded acceptability experiments in Turkish. Experim
 
 ## Background
 
-One domain in which these influences are observed is the research on agreement attraction as .  This effect have been robustly attested in many languages with various methodologies [to name a few].  @BockEberhard1993 tested whether attractors that only sound plural, pseudoplurals such as *course* \ref{pseudo}, increase agreement errors compared to true plural nouns (\ref{true-pl}).  They reasoned that if participants rely on phonological cues rather than abstract features, words ending with plural-like sounds (/s/ or /z/) should behave like true plurals. Participants completed sentence preambles such as (\ref{ex:bockeberhard93}), where the head noun (*player*) was singular but the attractor varied in form. They found that pseudoplural attractors did not increase plural agreement rates.
+One domain in which researchers investigated how memory representations interacts with real time sentence processing is the agreement phenomenon.  It is reported that native speakers from 296 of out 378 languages surveyed exhibit systematic agreement between the verb and another constituent(s), such as subject, object, or both [@WALS].  However, this agreement process is not always error-free.  In their seminal work, @BockMiller:1991 demonstrated that participants systematically produce erroneous verb forms (*are*) when there is a nearby noun, an attractor, that has a mismatching number as in (\ref{true-pl}) compared to their counterpart with singular attractor as in (\ref{true-sg}). The effect of the number mismatching attractor, agreement attraction, was also found to be robust in comprehension [@NicolEtAl1997; @PearlmutterGarnseyBock:1999] of such sentences in various languages, including Arabic [@TuckerEtAl:2015], Armenian [@AvetisyanEtAl:2020], Hindi [@BhatiaDillon2022], Spanish [@LagoEtAl2015], Russian [@Slioussar2018], and Turkish [@LagoEtAl2019;@TurkLogacev2024;@Ulusoy2023].  
 
 
 ```{=latex}
 \begin{exe}
-\ex \label{ex:bockeberhard93}
+\ex \label{initial}
 \begin{xlist}
-    \ex \label{pseudo} {Pseudoplural Attractor} \\ The {player} on the {course} \ldots{}
     \ex \label{true-sg} {Singular Attractor} \\ The {player} on the {court} \ldots{}
     \ex \label{true-pl} {Plural Attractor} \\ The {player} on the {courts} \ldots{}
 \end{xlist}
 \end{exe}
 ```
 
+Studies mainly investigated the interaction between the agremenet process and various syntactic and semantic factors.  These factors include hierarchical distance [@HatsuikerEtAl2001; @NicolEtAl1997; @Kaan2002], linear distance [@Pearlmutter2000; @BockCutting1992], semantic interactions of nouns involved [@Eberhard1999; @ViglioccoEtAl95; @HumphreysBock2005], and syntactic category of the phrase containing the attractor [@BockMiller:1991; @BockCutting1992]. A widely accepted accounts of such effects was able to capture these effects by blaming different part of the comprehension and production process.  For example, cue-based accounts such as @LV05 or @WagersEtAl:2009 argued that participants have a faithful representation of the constituents they process, however, illusion arises occasionally when they are misled by the memory mechanisms they use to identify the controller.  Other accounts such as Marking and Morphing [@EberhardEtAl2005], Good-Enough processing [@FerreiraEtAl2002], or Rational Inference account [@RyskinEtAl2021] argued that the errors mainly arise due to speakers' representation after encountering linguistic constituents are ill-formed.  
 
-Even though modulation from a pure phonological similarity was not found, several experiments have manipulated morphological case similarity between controllers and attractors, reasoning that syncretism or surface ambiguity could enhance competition during retrieval or interfere in production [PAPERS].  For example, @HartsuikerEtAl2003 used the overlap between accusative and nominative forms of feminine determiners in German and compared these ambiguous forms to distinctively marked dative forms.  Participants produced more agreement errors when the preambles contained two noun phrases whose determiners were not distinctively marked, as in (\ref{ger-amb}), compared to cases where the attractor could be distinguished by form alone, as in (\ref{ger-dist}).  Crucially, this additive effect was limited to feminine nouns, the only gender showing nominative–accusative syncretism in plural forms while other nouns showed the base effect of plural.
+One interesting prediction of retrieval accounts is that as the identification of the controller gets harder, the retrievel process should be more prone to erroneous representations.  This prediction was tested in various languages by manipulating the overt case marking of controllers or attractors, reasoning that surface ambiguity could enhance competition during retrieval or interfere in production [PAPERS].  For example, @HartsuikerEtAl2003 used the overlap between accusative and nominative forms of feminine determiners in German and compared these ambiguous forms to distinctively marked dative forms.  Participants produced more agreement errors when the preambles contained two noun phrases whose determiners were not distinctively marked, as in (\ref{ger-amb}), compared to cases where the attractor could be distinguished by form alone, as in (\ref{ger-dist}).  Crucially, this additive effect was limited to feminine nouns, the only gender showing nominative–accusative syncretism in plural forms while other nouns showed the base effect of plural.
 
 ```{=latex}
 \begin{exe}
@@ -296,20 +303,28 @@ the.F.NOM.SG position on the.F.DAT.PL demonstration-PL\\
 \end{exe}
 ```
 
-Similar effects of surface similarity are also found in comprehension studies. @Slioussar2018, for example, showed that phonological overlap affects the reading pattern and accuracy of participants in Russian agreement. A group of accusative marked nouns in Russian surfaces ambiguously with their nominative counterparts when they are plural (\ref{RusAccSg}-\ref{RusAccPl}).  Meanwhile, it is possible to assign a different case to the attractors using a different preposition as in (\ref{RusGenSg}-\ref{RusGenPl}). Crucially, in her experiment the genitive marked plural nouns were not ambiguous with their nominative counterparts. @Slioussar2018 showed that participants not only exhibited faster reading times at the verb in (\ref{RusAccPl}) compared to (\ref{RusAccSg}), but also judged sentences with a plural attractor as grammatical more often.  These effects of plural attractor were only present in cases with ambiguous case marking.
+However, results from other studies with overt case marking in other languages presents an unclear picture. For instance, @FrankEtAl2010 used French and compared the unambiguously accusative marked attractors to NPs with no overt case marking. They showed that when unambiguous marking increased the attraction effects substantially, contrary to the predictions of cue based retrieval. Similarly, @AvetisyanEtAl:2020 also demonstrated that unambiguous case marking in Armenian did not affect neither reading times nor attraction errors. 
+
+
+In addition to studies that uses case-manipulation, other studies tested pure phonological similarity that also does not provide clear evidence for the prediction of the retrieval accounts.  @BockEberhard1993 tested whether attractors that only sound plural, pseudoplurals such as *course* \ref{pseudo}, increase agreement errors compared to true plural nouns (\ref{true-pl}).  They reasoned that if participants rely on phonological cues rather than abstract features, words ending with plural-like sounds (/s/ or /z/) should behave like true plurals. Participants completed sentence preambles such as (\ref{ex:bockeberhard93}), where the head noun (*player*) was singular but the attractor varied in form. They found that pseudoplural attractors did not induce agreement errors.
+
+
+```{=latex}
+\begin{exe}
+\ex \label{pseudo} {Pseudoplural Attractor} \\ The {player} on the {course} \ldots{}
+\end{exe}
+```
+
+
+
+
+On the other hand, in a series of three studies @Slioussar2018 argued that surface-form overlap affects the reading pattern and accuracy of participants in Russian agreement.  A group of genitive singular nouns in Russian surfaces in the same form with their nominative plural counterparts  (\ref{RusGenSg}).  Crucially, in her experiments the genitive plural nouns were not ambiguous with their nominative counterparts.  @Slioussar2018 showed that participants not only exhibited faster reading times at the plural verb after reading a singular genitive noun (\ref{RusGenSg}) compared to a plural genitive noun (\ref{RusGenPl}), but also judged sentences with a singular attractor as grammatical more often.  These effects of plural attractor were only present in cases with ambiguous case marking. In this aspect, the findings of @Slioussar2018 differs from previous findings and shows that the pure phonological similarity, without any contribution from an abstract plural feature, can drive the agreement attraction effects alone.
 
 
 ```{=latex}
 \begin{exe}
 \ex
 \begin{xlist}
-\ex \label{RusAccSg}
-\gll ssylka na sajt byli dany.\\
-link[NOM.SG] to {website[ACC.SG($\neq$NOM.PL)]} were given\\
-\ex \label{RusAccPl}
-\gll ssylka na sayty byli dany.\\
-link[NOM.SG] to {website[ACC.PL($=$NOM.PL)]} were given\\
-\glt `The link to the website(s) were given.'
 \ex \label{RusGenSg}
 \gll material dlja kry\c{s}i byli brakovannymi.\\
 material[NOM.SG] for {roof[GEN.SG($=$NOM.PL)]} were defective\\
@@ -321,9 +336,7 @@ material[NOM.SG] for {roof[GEN.PL($\neq$NOM.PL)]} were defective\\
 \end{exe}
 ```
 
-However, a more intriguing aspect of the study by @Slioussar2018 is her results with respective to attractors marked with genitive singular.  Another interesting characterics of Russian is such that a subset of *singular* genitive nouns share the same form with their plural nominal counterpart.  In addition to plural nouns not increasing grammatical judgments to ungrammatical sentences and not creating a reading advantage, the verbs of singular attractors were read faster and resulted in more 'yes' responses to grammaticality judgments.  In this aspect, the findings of @Slioussar2018 differs from previous syncretism findings and targets the initial question raised by @BockEberhard1993: whether the pure phonological similarity, without any contribution from an abstract plural feature, can drive the agreement attraction effects.
-
-@Slioussar2018 assumed cue-based retrieval model in which attraction effects originates from erroneous retrievals of an agreement controller.  Under this approach, phrases are encoded in a content-addressable memory as bundles of features called *chunks* which include information like, number, gender, morphophonological case, and syntactic information [@SmithVasishth2020;@LV05].  Participants predict the number of the verb based on the noun phrases they process while reading the previous noun phrases.  In grammatical sentences with singular verb agreement, the number prediction and the verb number match, which causes no processing difficulty.  In contrast, when participants fail to find the predicted number morphology on the verb, a memory-retrieval process is initiated.  This process activates the search for a chunk matching relevant cues for agreement controller.  @Slioussar2018 argued that the search for a controller can be mediated through possible forms of nouns with relevant features like, \textsc{nom} case, \textsc{pl} number, as well as structural cues.
+@Slioussar2018 took these results to be an evidence for a cue-based retrieval model in which attraction effects originates from erroneous retrievals of an agreement controller.  Under this approach, phrases are encoded in a content-addressable memory as bundles of features called *chunks* which include information like, number, gender, morphophonological case, and syntactic information [@SmithVasishth2020;@LV05].  Participants predict the number of the verb based on the noun phrases they process while reading the previous noun phrases.  In grammatical sentences with singular verb agreement, the number prediction and the verb number match, which causes no processing difficulty.  In contrast, when participants fail to find the predicted number morphology on the verb, a memory-retrieval process is initiated.  This process activates the search for a chunk matching relevant cues for agreement controller.  @Slioussar2018 argued that the search for a controller can be mediated through possible forms of nouns with relevant features like, \textsc{nom} case, \textsc{pl} number, as well as structural cues.
 
 In ungrammatical sentences like (\ref{RusAccPl}), while neither of the available noun phrases fully matches this specification in ungrammatical agreement attraction sentences, each of the NPs headed by *link* and *websites* matches a subset of cues.  Importantly, in (\ref{RusGenSg}) as well, a partial match is also possible. Even though the NP headed by *roof* is not plural, due to phonological overlap, @Slioussar2018 argues, a subset of features relevant for agreement, i.e. +NOM and +PL, is erroneously activated.  While this partial match scenarios mostly results in participants finding the sentence ungrammatical, they may occasionally retrieve the attractors, *websites* or *roof*, as controllers on some trials.
 
