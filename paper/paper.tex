@@ -1,4 +1,5 @@
 % Options for packages loaded elsewhere
+% Options for packages loaded elsewhere
 \PassOptionsToPackage{unicode}{hyperref}
 \PassOptionsToPackage{hyphens}{url}
 \PassOptionsToPackage{dvipsnames,svgnames,x11names}{xcolor}
@@ -6,21 +7,22 @@
 \documentclass[
   authoryear,
   3p]{elsarticle}
-
+\usepackage{xcolor}
 \usepackage{amsmath,amssymb}
+\setcounter{secnumdepth}{5}
 \usepackage{iftex}
 \ifPDFTeX
   \usepackage[T1]{fontenc}
   \usepackage[utf8]{inputenc}
   \usepackage{textcomp} % provide euro and other symbols
 \else % if luatex or xetex
-  \usepackage{unicode-math}
+  \usepackage{unicode-math} % this also loads fontspec
   \defaultfontfeatures{Scale=MatchLowercase}
   \defaultfontfeatures[\rmfamily]{Ligatures=TeX,Scale=1}
 \fi
 \usepackage{lmodern}
-\ifPDFTeX\else  
-    % xetex/luatex font selection
+\ifPDFTeX\else
+  % xetex/luatex font selection
 \fi
 % Use upquote if available, for straight quotes in verbatim environments
 \IfFileExists{upquote.sty}{\usepackage{upquote}}{}
@@ -38,9 +40,6 @@
 }{% if KOMA class
   \KOMAoptions{parskip=half}}
 \makeatother
-\usepackage{xcolor}
-\setlength{\emergencystretch}{3em} % prevent overfull lines
-\setcounter{secnumdepth}{5}
 % Make \paragraph and \subparagraph free-standing
 \makeatletter
 \ifx\paragraph\undefined\else
@@ -66,8 +65,7 @@
 \makeatother
 
 
-\providecommand{\tightlist}{%
-  \setlength{\itemsep}{0pt}\setlength{\parskip}{0pt}}\usepackage{longtable,booktabs,array}
+\usepackage{longtable,booktabs,array}
 \usepackage{calc} % for calculating minipage widths
 % Correct order of tables after \paragraph or \subparagraph
 \usepackage{etoolbox}
@@ -92,6 +90,22 @@
 % Set default figure placement to htbp
 \def\fps@figure{htbp}
 \makeatother
+
+
+
+
+
+\setlength{\emergencystretch}{3em} % prevent overfull lines
+
+\providecommand{\tightlist}{%
+  \setlength{\itemsep}{0pt}\setlength{\parskip}{0pt}}
+
+
+
+ 
+\usepackage[]{natbib}
+\bibliographystyle{elsarticle-harv}
+
 
 \usepackage{gb4e}
 \noautomath
@@ -158,13 +172,9 @@
 \@ifpackageloaded{subcaption}{}{\usepackage{subcaption}}
 \makeatother
 \journal{Cognition}
-
-\usepackage[]{natbib}
-\bibliographystyle{elsarticle-harv}
 \usepackage{bookmark}
-
 \IfFileExists{xurl.sty}{\usepackage{xurl}}{} % add URL line breaks if available
-\urlstyle{same} % disable monospaced font for URLs
+\urlstyle{same}
 \hypersetup{
   pdftitle={(In)sensitivity to surface-level heuristics: A case from Turkish verbal attractors},
   pdfauthor={Utku Turk},
@@ -681,17 +691,17 @@ model in Figure~\ref{fig-exp2-fixed-effects}. Our model showed a robust
 attraction in both nominal attractor cases, with strongly negative
 effects for our nominal items (M = -1.45, CI = {[}-2.12, -0.81{]},
 P(\textless0) = \textgreater0.99) and items from \citet{TurkLogacev2024}
-(M = -1.17, CI = {[}-1.64, -0.69{]}, P(\textless0) = \textgreater0.99).
+(M = -1.16, CI = {[}-1.63, -0.67{]}, P(\textless0) = \textgreater0.99).
 More importantly, our model found no evidence for an attraction in
-verbal attractor conditions (M = 0.07, CI = {[}-0.74, 0.87{]},
+verbal attractor conditions (M = 0.07, CI = {[}-0.71, 0.87{]},
 P(\textless0) = 0.44), verifying our observations in the descriptive
 statistics. We did not find an evidence for a difference in magnitude of
 attraction between the two nominal-type attractors was not found (M =
--0.29, CI = {[}-1.09, 0.5{]}, P(\textless0) = 0.73), suggesting the
+-0.29, CI = {[}-1.09, 0.51{]}, P(\textless0) = 0.72), suggesting the
 presence of an additional conditions did not affect attraction
 magnitudes. Finally, we found strong evidence for a decreased overall
 acceptability for nominal items in our experiment (M = -1.09, CI =
-{[}-1.75, -0.42{]}, P(\textless0) = \textgreater0.99), suggesting the
+{[}-1.77, -0.42{]}, P(\textless0) = \textgreater0.99), suggesting the
 within-experimental distribution did affect overall acceptability, but
 not attraction.
 
@@ -745,7 +755,7 @@ might itself have shaped the pattern of responses. The presence of
 robust nominal attraction trials could have led participants to adjust
 their expectations about agreement violations or to adopt task
 strategies that obscure any weaker effect of verbal plural markers
-\citep{HammerlyEtAl2022, Turk2022}. To assess whether the absence of
+\citep{HammerlyEtAl2019, Turk2022}. To assess whether the absence of
 verbal attraction in Experiment 1 reflects a genuine lack of
 interference from verbal -lAr rather than an artifact of the item
 distribution, Experiment 2 replicated the verbal attractor conditions
@@ -812,21 +822,21 @@ and random intercepts and slopes for both subjects and items.
 
 Posterior estimates are summarized in
 Figure~\ref{fig-exp1-fixed-effects}. The model revealed a positive
-effect of grammaticality (\(\beta\) = 5.92 {[}5.40, 6.46{]}, P(\(\beta\)
+effect of grammaticality (\(\beta\) = 5.92 {[}5.41, 6.46{]}, P(\(\beta\)
 \textgreater{} 1.00)), but no reliable main effect of attractor number
-(\(\beta\) = 0.16 {[}-0.19, 0.51{]}, P(\(\beta\) \textgreater{} 0.81)).
+(\(\beta\) = 0.15 {[}-0.19, 0.51{]}, P(\(\beta\) \textgreater{} 0.81)).
 On the other hand, there was a small but positive interaction (\(\beta\)
-= 0.66 {[}-0.03, 1.37{]}, P(\(\beta\) \textgreater{} 0.97)). To clarify
+= 0.66 {[}-0.02, 1.38{]}, P(\(\beta\) \textgreater{} 0.97)). To clarify
 the effects' presence in grammaticals only, we fitted two more models
 that is fitted to the subset of the data. While the model fitted to
 grammatical conditions only showed an effect of attractor number
-(\(\beta\) = 0.51 {[}0.06, 0.98{]}, P(\(\beta\) \textgreater{} 0.99)),
-the model fitted to ungrammatical conditions did not provide evidence
-for the effect of number manipulation (\(\beta\) = -0.04 {[}-0.45,
-0.37{]}, P(\(\beta\) \textgreater{} 0.99)). These results suggest that
-the presence of a plural attractor did not increase the acceptability of
-ungrammatical sentences, nor was this relationship modulated by
-grammaticality.
+(\(\beta\) = 0.51 {[}0.06, 1.00{]}, P(\(\beta\) \textgreater{} 0.99)),
+the model fitted to ungrammatical conditions, attraction relevant
+conditions, did not provide evidence for the effect of number
+manipulation (\(\beta\) = -0.05 {[}-0.45, 0.37{]}, P(\(\beta\)
+\textgreater{} 0.99)). These results suggest that the presence of a
+plural attractor did not increase the acceptability of ungrammatical
+sentences, nor was this relationship modulated by grammaticality.
 
 \begin{figure}
 
@@ -846,7 +856,15 @@ intervals to the model in which it was not.}
 
 \subsection{Discussion}\label{discussion-1}
 
-Experiment 1 tested whether
+Experiment 2 replicated the verbal attractor conditions from Experiment
+1 in isolation and again revealed no evidence for agreement attraction
+driven by verbal plural markers. Ungrammatical sentences with plural
+marked main verbs were rejected at similar rates regardless of whether
+the reduced clause verb bore plural \emph{-lAr} or not, and there were
+no reliable effects of attractor number or interactions involving
+attractor number. This confirms that the absence of a verbal attraction
+effect in Experiment 1 was not due to the presence of nominal attractor
+items or to within experiment item statistics.
 
 Unexpectedly, grammatical sentences with singular attractors were judged
 less acceptable than those with plural attractors. This effect is
@@ -854,82 +872,71 @@ unlikely to reflect agreement attraction, since it arises in the
 opposite direction. One possibility is that it results from an
 interaction between plausibility and referential availability. The
 plural morpheme can license a more general interpretation by allowing an
-arbitrary or unspecific reference, whereas the singular reduced relative
-clause more strongly invites a specific referent, which may be less
-accessible in the context of the task. In other words, plural morphology
-may facilitate an \emph{arbitrary PRO} interpretation of the embedded
-clause, in which the understood subject of the relative clause is not
-controlled by any overt antecedent and has a generic or impersonal
-reference. A similar effect can be seen in English sentences like `Just
-to sit there should be forbidden.' Here, the subject of the infinitival
-clause has arbitrary reference. We do not pursue this explanation
-further, as it falls outside the scope of the present paper.
+unspecific reference, whereas the singular reduced relative clause more
+strongly invites a specific referent, which may be less accessible in
+the context of the task. We do not pursue this explanation further, as
+it falls outside the scope of the present paper.
 
 \section{General Discussion}\label{general-discussion}
 
-In two high-powered speeded acceptability judgment experiments, we
-tested whether pure phonological overlap between agreement morphemes can
-elicit agreement attraction. Our goal was to evaluate previous accounts
-that attribute attraction to accidental or non-accidental syncretism
-between forms that can serve as agreement controllers. Turkish provides
-a useful test case because the plural suffix -lAr appears both on verbs
-and on nouns, but only nominal -lAr can control agreement. If
-phonological overlap alone can activate controller-relevant cues, then
-plural-marked verbs embedded in reduced relative clauses should induce
-attraction effects even though they cannot syntactically control
+We investigated whether surface-overlap advantage seen in reading times
+and comprehension questions can bleed into dependency resolution. A
+recent work by \citet{Slioussar2018} argued that an accidental
+surface-overlap with a nominative plural form may result in activation
+of relevant cues even though the syntactic analysis of such a noun is
+clearly genitive singular. However, modulation of agremeent-relevant
+cues seems to be gatekeeped by being a possible controller in other
+relevant work in syncretism.
+
+Using two speeded acceptability judgment experiments, we disentangled
+the statistical property of being a controller from a surface overlap.
+Turkish provides a useful test case because the plural \emph{-lAr}
+appears both on verbs and on nouns, but only noun phrases can control
+agreement. If phonological overlap alone can activate
+controller-relevant cues, then plural-marked verbs in reduced relative
+clauses should induce attraction effects even though they never control
 agreement.
 
 Across both experiments, we found that Turkish attraction is determined
 by being a potential controller rather than merely resembling one.
-Participants did not produce or endorse attraction errors in sentences
-containing verbal attractors, and this absence of attraction persisted
-even when the same participants showed robust attraction with nominal
-attractors in the same session.
+Participants did not accepted ungrammatical sentences with containing
+plural verbal attractors more often than their singular counterparts.
+This absence of attraction persisted with or without a robust attraction
+with nominal attractors in the same session.
 
 These results indicate that attraction depends on abstract feature
 overlap with potential controllers, not on surface-form similarity. This
 pattern converges with prior results in English and Turkish that failed
 to find attraction for pseudoplural or phonologically plural forms
-\citep{BockEberhard1993, HaskellMacDonald2003, NicolEtAl:2016}, and
-stands in contrast to findings from Russian \citep{Slioussar2018}.
+\citep{BockEberhard1993, HaskellMacDonald2003, NicolEtAl:2016}, but
+appears to stand in contrast to findings from Russian
+\citep{Slioussar2018}.
 
-In \citet{Slioussar2018}, genitive-marked singular nouns that were
-homophonous with nominative plurals elicited greater attraction effects
-than their genitive-plural counterparts. This is striking because the
-relevant nouns lacked a plural feature that could percolate or serve as
-a retrieval cue. The effect was therefore interpreted as evidence that
-comprehenders can use phonological form to activate abstract agreement
-features. However, it is important to note that the evidence for
-phonological attraction in Russian rests on a small empirical base. The
-production and comprehension experiments in \citep{Slioussar2018}
-included only 32 participants each, and the attraction effects were
-derived from a small number of error trials (13 in production and 18 in
-comprehension). Given the low number of critical observations, such
-effects are vulnerable to sampling variability and may not generalize
-beyond that dataset.
+While the most obvious difference is syntactic---our non-attracting
+elements were verbs, whereas the attracting elements in Russian were
+nouns \citep{Slioussar2018}---this distinction alone is insufficient, as
+prior work shows that even pseudoplural nouns fail to attract
+\citep{BockEberhard1993, HaskellMacDonald2003, NicolEtAl:2016}. We
+propose instead that the parser `gates' its search based on an element's
+abstract potential to be a controller. The Russian genitive noun,
+despite its surface form, is recognized as an element that can control
+agreement in other constructions (e.g., in relative clauses), thus
+passing this abstract gate. Our Turkish verbal attractors, by contrast,
+lack this potential entirely; they can never be controllers. They
+therefore fail this gating, and no attraction is observed, despite the
+perfect phonological overlap.
 
-The high-powered Turkish results challenge that interpretation. Despite
-identical surface overlap between verbal and nominal plural morphology,
-phonological similarity alone did not yield attraction. This
-cross-linguistic contrast suggests that form-based activation of
-agreement features is not a universal property of the parsing system
-but, at best, depends on language-specific mappings between morphology
-and syntactic function \citep{DillonKeshev2024}.
-
-A more plausible account is that attraction is modulated by the
-availability of morphosyntactic features that can signal controllerhood.
-Syncretism contributes to attraction only when one of the syncretic
-forms can legitimately control agreement or share features with the
-target. In other words, it is not form overlap per se, but feature
-ambiguity that matters. This interpretation aligns with cross-linguistic
-findings showing that attraction is strongest when the attractor bears
-case or number morphology that is sometimes associated with subjects or
-agreement controllers
-\citep{LagoEtAl2019, BhatiaDillon2022, BleotuDillon2024, HartsuikerEtAl2003}.
-Earlier formulations of these models left open whether `looking like' a
-controller or `being able to be' a controller was critical. The present
-results favor the latter: only morphologically licensed controllers
-engage in attraction.
+This interpretation aligns with cross-linguistic findings showing that
+attraction is strongest when the attractor bears case or number
+morphology that is sometimes associated with subjects or agreement
+controllers {[}\citet{LagoEtAl2019}; \citet{BhatiaDillon2022};
+\citet{BleotuDillon2024}; {]}. In other words, it is not form overlap
+per se, but feature ambiguity or a statistical association with
+controllerhood that matters. Earlier formulations of these models left
+open whether `looking like' a controller or `being able to be' a
+controller was critical. The present high-powered results from Turkish
+favor the latter: only morphologically licensed controllers, or those
+with a genuine abstract potential to be one, engage in attraction.
 
 \section*{References}\label{references}
 \addcontentsline{toc}{section}{References}
