@@ -75,8 +75,8 @@ tl24.avgs <- tl24.clean %>%
     filter(match != "filler") %>%
     group_by(grammatical, attractor_num, att_type) %>%
     summarise(
-        successes = sum(response_yes == 1, na.rm = TRUE),
-        N = sum(!is.na(response_yes)),
+        successes = sum(ResponseCorrect == TRUE, na.rm = TRUE),
+        N = sum(!is.na(ResponseCorrect)),
         .groups = "drop"
     ) %>%
     mutate(ci_mat = purrr::pmap(

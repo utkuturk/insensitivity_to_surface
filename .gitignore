@@ -1,3 +1,5 @@
 *.rds
 
 /.luarc.json
+.Rproj.user
+*.Rproj
