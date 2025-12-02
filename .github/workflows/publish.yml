@@ -1,0 +1,35 @@
+on:
+  push:
+    branches:
+      - main  # Or master
+
+name: Render and Deploy Quarto Website
+
+jobs:
+  build-deploy:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write  # Needed to push to gh-pages
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@v4
+
+      - name: Set up Quarto
+        uses: quarto-dev/quarto-actions/setup@v2
+        # You can specify a version:
+        # with:
+        #   version: 1.4.550
+
+      - name: Render Quarto Website
+        uses: quarto-dev/quarto-actions/render@v2
+        # Use this if your qmd files are not in the root
+        # with:
+        #   path: source-directory
+
+      - name: Publish to GitHub Pages
+        uses: quarto-dev/quarto-actions/publish@v2
+        with:
+          # The directory to publish (defaults to _site)
+          # target-dir: _site
+          # The token to use
+          token: ${{ secrets.GITHUB_TOKEN }}
