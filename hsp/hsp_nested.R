@@ -10,7 +10,7 @@ source("002_functions.R")
 
 # 1. LOAD AND FILTER DATA
 exp2 <- read_experimental_data(
-    "./data/results_8cond.txt",
+    "../data/results_8cond.txt",
     subj_offset = 2500,
     item_offset = 2500
 )
@@ -186,7 +186,7 @@ m.nested <- brm(
     iter = 4000,
     warmup = 2000,
     seed = 1,
-    file = "m.nested"
+    file = "../models/m.nested"
 )
 
 # 4. PLOT COEFFICIENTS
@@ -257,4 +257,4 @@ p_nested_coef <- coeffs %>%
         axis.text.x = element_text(size = 10)
     )
 
-ggsave("hsp_nested_plot.png", p_nested_coef, width = 6, height = 4)
+ggsave("../figures/hsp_nested_plot.png", p_nested_coef, width = 6, height = 4)

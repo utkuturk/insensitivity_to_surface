@@ -13,7 +13,7 @@ library(dplyr)
 
 # 1. LOAD AND FILTER DATA
 exp2 <- read_experimental_data(
-    "./data/results.txt",
+    "../data/results.txt",
     subj_offset = 2500,
     item_offset = 2500
 )
@@ -225,7 +225,7 @@ p_desc <- exp2.avgs %>%
         axis.title = element_text(size = 14)
     )
 
-ggsave("hsp_another_desc_plot.png", p_desc, width = 6, height = 4)
+ggsave("../figures/hsp_another_desc_plot.png", p_desc, width = 6, height = 4)
 
 
 # 3. FIT BRMS MODEL
@@ -251,7 +251,7 @@ m.exp2 <- brm(
     iter = 4000,
     warmup = 2000,
     seed = 1,
-    file = "m.hsp_another"
+    file = "../models/m.hsp_another"
 )
 
 # 4. PLOT MODEL COEFFICIENTS
@@ -278,8 +278,8 @@ coeffs <- bind_rows(
 
 
 makeppp <- function(p) {
-    label = ifelse(p==0, "<0.001", paste0("=", round(p, 2)))
-    label = ifelse(p==1, ">0.99", paste0("=", round(p, 2)))
+    label = ifelse(p == 0, "<0.001", paste0("=", round(p, 2)))
+    label = ifelse(p == 1, ">0.99", paste0("=", round(p, 2)))
     label
 }
 
@@ -306,6 +306,6 @@ p_model <- coeffs %>%
         axis.text.x = element_text(size = 10)
     )
 
-ggsave("hsp_another_model_plot.png", p_model, width = 4, height = 2)
+ggsave("../figures/hsp_another_model_plot.png", p_model, width = 4, height = 2)
 
 print("Analysis Complete. Plots saved.")

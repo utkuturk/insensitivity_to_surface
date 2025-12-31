@@ -1,63 +1,63 @@
----
-title: "(In)sensitivity to surface-level heuristics: A case from Turkish verbal attractors"
-# subtitle: "Within-experiment statistics in agreement attraction"
-author:
-  - name: Utku Turk
-    email: utkuturk@umd.edu
-    affiliations:
-        - id: umd
-          name: University of Maryland, College Park
-          department: Linguistics
-          address: Marie Mount Hall
-          city: College Park
-          state: MD
-          postal-code: 20742
-    acknowledgements: "This project heavily benefitted from discussions with Pavel Logacev. I am also thankful first and foremost Ellen Lau, along with Colin Phillips and Brian Dillon for their comments on the manuscript."
-    attributes:
-        corresponding: true
-    # note: This is the first author footnote.
-abstract: |
-  Linguistic illusion literature debates what information accesses memory representations. Prior work tests whether structural, semantic, or discourse cues guide subject-verb dependencies; however, it remains unclear whether native speakers rely on surface level heuristics, such as phonological information during dependency resolution. Traditionally, accidental phonological resemblance to plural ending (e.g., the /s/ in *cruise*) does not induce erroneous agreement in English, whereas resemblance correlating with controllerhood amplifies attraction across varies languages. Contradicting this generalization, Slioussar (2018) proposed that accidental phonological resemblance can mediate memory search for Russian subjects. Given the theoretical importance of this proposal and the lack of comparable effects in other languages such as Czech, we propose re-interpret previous findings under the light of a recently growing literature of association with being a possible controller. We test whether phonological overlap or association with controllerhood elicits erroneous agreement in Turkish. Turkish provides a critical test: both verbal and nominal elements can surface as subjects and the plural morpheme *-lAr* marks number in both of them, but only nominal plural *-lAr* controls verbal agreement. Two speeded acceptability studies show no attraction from plural-marked verbs (N = 80; N = 95) but robust attraction from genitive plural nouns. We report a first-of-its-kind dissociation under minimal manipulation: verbal attractors that can surface as subjects yet cannot control agreement do not induce attraction, whereas genitive plural nouns—which can be subjects and control in other environments—do. This pattern constrains retrieval processes by tying attraction to abstract controller features rather than surface phonology.
-keywords:
-  - form-sensitivity
-  - memory
-  - agreement attraction
-  - linguistic illusions
-  - sentence processing
-date: last-modified
-bibliography: bibliography.bib
-format:
-  elsevier-pdf:
-    pdf-engine: xelatex
-    include-in-header:
-      - preamble.tex
-    keep-tex: true
-    # latex-clean: false
-    # latex-min-runs: 3
-    journal:
-      name: Cognition
-    #   formatting: preprint
-      model: 3p # Don't set a model with preprint
-      cite-style: authoryear
-  html:
-    embed-resources: true
-    keep-md: true
-    toc: true
-filters:
-  - wordcount
-wordcount:
-  count-code-blocks: false
-  count-inline-code: false
-execute:
-  echo: false
-  message: false
-  warning: false
-editor_options: 
-  chunk_output_type: console
----
-
-
-```{r}
+#
+#
+#
+#
+#
+#
+#
+#
+#
+#
+#
+#
+#
+#
+#
+#
+#
+#
+#
+#
+#
+#
+#
+#
+#
+#
+#
+#
+#
+#
+#
+#
+#
+#
+#
+#
+#
+#
+#
+#
+#
+#
+#
+#
+#
+#
+#
+#
+#
+#
+#
+#
+#
+#
+#
+#
+#
+#
+#
+#
 #| label: setup
 
 set.seed(01110011)
@@ -69,10 +69,10 @@ library(magrittr)
 library(DescTools)
 select <- dplyr::select
 library(lingglosses)
-```
-
-
-```{r}
+#
+#
+#
+#
 #| label: functions
 
 read_experimental_data <- function(fname, subj_offset = 0, item_offset = 0, verbose = F) {
@@ -240,89 +240,89 @@ exclude_bad_subjects_8 <- function(data_to_clean, accuracy_threshold = 0.25, rt_
     data_clean
 }
 
-```
-
-
-# Introduction
-
-Human sentence processing draws both on abstract grammatical features and heuristics that exploit surface regularities, such as plausibility [@SpeerClifton1998], frequency [@LauEtAl2007], and task-specific factors [@LauraMalsbug24;@ArehalliWittenberg2021;@HammerlyEtAl2019;@LogacevVasishth2016]. We focus on one such heuristic: over-reliance on surface form, evidenced when phonological similarity between sentence constituents is observed to modulate performance [@AchesonMacDonald2011;@KushEtAl2015;@CopelandRadvansky2001;@RastleDavis2008]. Prior work shows reliable slowdowns and comprehension accuracy costs due to surface-form overlap. However, it is unresolved whether this heuristic penetrates dependency resolution itself--including subject-verb agreement, pronoun resolution, or the licensing of negative polarity items--beyond general effects on reading ease and memory. The few studies that bear directly on subject-verb agreement exhibit contradictory findings [@BockEberhard1993;@Slioussar2018;@LacinaChromy2022].
-
-A central question for understanding human cognition is what information is encoded and later available in memory during comprehension, and how faithful these encodings are to the input. 'Good-Enough' and noisy channel accounts argue that detailed analyses are not always maintained when heuristics suffice, creating the opportunity for surface regularities to affect judgments [@FerreiraEtAl2002]. More specifically, general cue-based retrieval approaches hold that constituents are stored with detailed abstract features and later accessed by matching retrieval cues, and that erroneous parses can occur when features conflict or interfere. However, it remains open whether phonological codes are used as such cues during syntactic dependency building [@LV05]. Determining whether surface-form overlap modulates dependency resolution provides a window into what human cognition counts as diagnostic information for retrieving dependency controllers and how faithful the stored representations are.
-
-Agreement is an ideal case study because its computations are known to be sensitive to feature overlap. Classic findings demonstrate systematic errors in establishing number agreement between a verb and its agreement controller when an NP with a different number (the attractor) interferes. Speakers produce sentences like (\ref{og}) or misclassify them as acceptable [@BockMiller:1991;@PearlmutterGarnseyBock:1999].
-
-```{=latex}
-\begin{exe}
-\ex[*]{\label{og} The player on the courts are tired from a long-game.}
-\end{exe}
-```
-
-Despite much research on what factors modulate agreement errors, the role of phonology remains unclear. Pseudoplural attractors whose final phone matches the plural suffix and string-ambiguous with other nouns (e.g. *cruise* vs. *crews*) do not increase agreement errors in production [@BockEberhard1993]. Phonological overlap effects have been observed in other cases, but many of them involve additional shared morphological features [@HartsuikerEtAl2003;@LagoEtAl2019;@BleotuDillon2024;@LacinaChromy2022], although not all [@Slioussar2018]. This raises the possibility that surface form affects the formation of agreement dependencies not directly through the use of number form as a retrieval cue, but indirectly, when the surface form is one that is more likely to be realized on agreement controllers.
-
-We test this hypothesis by utilizing the surface-form overlap between the verbal and nominal morphological reflexes of agreement in Turkish. Turkish uses the same surface suffix, *-lAr*, for plural marking on nouns and for plural agreement on finite verbs. Crucially, strings bearing verbal *-lAr* can occur in subject position, yet they never control finite clause agreement; only nominal plurals do. These properties allow us to test whether form overlap is sufficient to drive attraction, or if the attractor must also be a possible controller (true of nouns but not verbs). Across two high-powered speeded acceptability experiments in Turkish we find that plural marking on an embedded verbal attractor does not increase acceptance of plural agreement on the matrix verb; such effects are only observed when the plural marker appears on a non-subject noun attractor. These results indicate that surface-form overlap alone does not function as a retrieval cue for agreement in Turkish. Dependency resolution relies on abstract features and structural relations, with phonology influencing processing primarily outside of retrieval.
-
-
-## Background
-
-Agreement has been a central domain of investigation for language processing research on memory. Though ubiquitous (296 of out 378 languages surveyed exhibit agreement, see Siewierska -@WALS for the discussion), this process is not always reliable. In their seminal work, @BockMiller:1991 showed that participants produce reliably more erroneous non-controller-matching plural verb forms in English with an embedded plural 'attractor'---for example, producing a plural continuation more often after (\ref{true-pl}) than (\ref{true-sg}). The effect of the number mismatch, agreement attraction, has also been found to be robust in comprehension [@NicolEtAl1997;@PearlmutterGarnseyBock:1999] of such sentences in various languages, including Arabic [@TuckerEtAl:2015], Armenian [@AvetisyanEtAl:2020], Bulgarian [@IvanovaEtAl2024], Hindi [@BhatiaDillon2022], Spanish [@LagoEtAl2015], Russian [@Slioussar2018], and Turkish [@LagoEtAl2019;@TurkLogacev2024;@Ulusoy2023].
-
-
-```{=latex}
-\begin{exe}
-\ex \label{initial}
-\begin{xlist}
-    \ex \label{true-sg} {Singular Attractor} \\ The {ship} on the {crew} \ldots{}
-    \ex \label{true-pl} {Plural Attractor} \\ The {ship} on the {crews} \ldots{}
-\end{xlist}
-\end{exe}
-```
-
-Many studies have investigated the various syntactic and semantic factors which make agreement errors more likely, which include hierarchical distance [@HatsuikerEtAl2001;@NicolEtAl1997;@Kaan2002], linear distance (Bock and Cutting -@BockCutting1992; but see Pearlmutter -@Pearlmutter2000 and Kwon and Strut -@KwonStrut2019), semantic interactions of nouns involved [@Eberhard1999;@ViglioccoEtAl95;@HumphreysBock2005], and syntactic category of the phrase containing the attractor [@BockMiller:1991;@BockCutting1992]. One widely accepted set of accounts that explained these errors are called retrieval based theories [@LV05;@WagersEtAl:2009;@Yadav]. In these accounts, comprehenders maintain faithful linguistic representations; errors arise because the memory mechanisms used to identify the agreement controller mislead them. Under this approach, phrases are encoded in content-addressable memory as *chunks*---bundles of features including number, gender, and syntactic properties [@SmithVasishth2020]. Comprehenders predict the number of the verb based on the noun phrases they process while reading the previous noun phrases. In grammatical sentences with singular verb agreement, the number prediction and the verb number match, which causes no processing difficulty. In contrast, when participants fail to find the predicted number morphology on the verb, a memory-retrieval process is initiated. This process activates the search for a chunk matching relevant cues for agreement controller.
-
-What is the characteristics of cues which are found useful to be encoded? One line of work manipulated overt case marking on attractors to test whether morphophonological case is used for dependency resolution. For example, @HartsuikerEtAl2003 used the syncretic homophony between nominative/accusative and singular/plural forms of feminine determiners in German, comparing these ambiguous forms to distinctly marked dative forms. Participants produced more agreement errors when the preambles contained two noun phrases whose determiners were ambiguously marked (*die*), compared to cases where the attractor case could be distinguished by form alone (*den*). Furthermore, this additive effect was limited to feminine nouns, the only gender showing nominative--accusative syncretism in plural forms, while nouns of other grammatical genders showed the base effect of plural.
-
-However, results from other case-marking languages are mixed. In French, @FrankEtAl2010 found that unambiguous accusative marking increased attraction, contrary to the prediction that reduced ambiguity limits interference. @AvetisyanEtAl:2020 observed that unambiguous case in Armenian modulated neither reading times nor error rates. Conversely, @LacinaEtAl2025 found that attraction in Czech and Slovak surfaced only when case morphology was ambiguous. These findings suggest that distinct case morphology is insufficient to predict interference, implicating language-specific distributions or heuristic processing.
-
-A second line of work tests phonological overlap that does not itself change the syntactic analysis. @BockEberhard1993 tested whether attractors that only sound plural, pseudoplural singular attractors such as *cruise*, increase agreement errors compared to true plural nouns, such as *crews* in (\ref{true-pl}). They reasoned that if participants rely on phonological cues rather than abstract features, words ending with plural-like sounds (/s/ or /z/) should behave like true plurals. In their preamble completion study, they found that pseudoplural attractors did not induce agreement errors, which argues against a purely phonology-driven account of attraction in English.
-
-In contrast, @Slioussar2018 reported a contribution of surface-form overlap to agreement in Russian. In Russian, a subset of genitive singular nouns is homophonous with nominative plural forms, while genitive plural forms are not ambiguous in this way. In a series of production and comprehension experiments, @Slioussar2018 showed that sentences with a singular genitive attractor whose form overlaps with nominative plural yielded more plural completions, faster reading times at the plural verb and higher rates of acceptability compared to the sentences with unambiguous genitive plural attractors. @Slioussar2018 took these results to be an evidence for a retrieval process in which the search for a controller is mediated through phonological form and relevant features like +NOM and +PL can be activated. However, the same surface-form overlap did not give rise to attraction effects in Czech, another Slavic language @LacinaChromy2022. These mixed findings in case-syncretism literature, English pseudoplural, and a failure to replicate in another Slavic language cast a shadow on phonological modulation explanation.
-
-An alternative account posits that instead of phonological feature activation, errors arise from statistical heuristics: participants probabilistically associate certain surface forms---such as genitive NPs or overt determiners---with being an agreement controller. For example, @LagoEtAl2019 argue that Turkish speakers retrieve genitive-marked attractors as controllers because genitive case controls agreement in embedded clauses, even though it cannot in matrix clauses. Thus, a phonological---not functional---syncretism between the nominal modifier and the embedded subject drives attraction. Similarly, Dillon and colleagues argue for sensitivity to 'looking like a controller' in languages like Romanian and Hindi [@BhatiaDillon2022;BleotuDillon2024]. For instance, @BleotuDillon2024 found that Romanian attractors induced errors only when they surfaced with a determiner (as opposed to bare forms). Since only nouns with determiners can control agreement in Romanian, they argue that participants associate the presence of a determiner with controllerhood. Likewise, in English, @SchlueterEtAl2018 show that the coordinator 'and' causes attraction even without semantic plurality because it is statistically associated with the plural feature. These explanations suggest that the cue-chunk match is not strictly categorical, but influenced by surface-level statistical associations [@EngelmannEtAl2019].
-
-A similar account extends to Russian. While genitive-marked nouns can serve as subjects in negative inversion constructions, they do not control verbal agreement in these contexts. Crucially, however, they remain active controllers within the noun phrase, triggering number or gender marking on modifiers (e.g., surfacing as feminine *ni odnoy* with a feminine head, contrasting with masculine *ni odnogo* in \ref{russian}) [@Babby2001;@ParteeBorschev2004]. In contrast, Czech does not allow genitive subjects, and thus not license these controller properties in subject positions.
-
-```{=latex}
-\begin{exe}
-\ex \label{russian}
-    \gll ..., tam ne rabotaet ni odnogo in\v{z}enera.\\
-    ..., there NEG works not one.M.SG.GEN engineer.M.SG.GEN\\
-    \glt `..., there hasn't been a single engineer working there.'
-\end{exe}
-```
-
-
-Motivated by these alternative accounts and conflicting findings [@BockEberhard1993;@LacinaChromy2022] along with the theoretical importance of such proposal, we test the phonological modulation hypothesis in two high-powered experiments: whether a syntactically ineligible controller, but still a possible subject, can induce attraction solely through morphophonological overlap matching the agreement suffix in form and semantics. To this end we capitalize on the shared surface form of verbal and nominal plural marking (*-lAr*) in Turkish to target this question. We use reduced relative clauses (RRCs) where the plural-marked verb appears as the attractor (\ref{rrc-intro}). Crucially, this *-lAr* syncretism is not feature-ambiguous; it is a form-only overlap lacking the possibility of being a potential controller. Even when a headless RRC alone surfaces as a subject, it cannot control agreement (\ref{rrc-subject}).
-
-```{=latex}
-\begin{exe}
-\ex \label{rrc-intro}
-\gll Gör-dük-ler-i çocuk koş-tu-(*lar).\\
-go-NMLZ-PL-POSS kid[NOM] run-PST-(*PL)\\
-\glt `The kid that (they) saw ran.'
-\ex \label{rrc-subject}
-\gll Gör-dük-ler-i koş-tu-(*lar).\\
-go-NMLZ-PL-POSS run-PST-(*PL)\\
-\glt `(The kid) that (they) saw ran.'
-\end{exe}
-```
-
-In Experiment 1, we tested the form hypothesis by comparing sentences with verbal attractors to sentences with canonical nominal attractors in Turkish. Experiment 2 then tested the form hypothesis more directly by only using verbal attractors. We expected that if surface-overlap can modulate relevant memory representations for dependency resolutions, we would see similar attraction results with nominal and verbal attractors. However, if participants are tracking an higher order cue that is relevant for being a possible controller, then the verbal attractors, due to their inability to control agreement, would not introduce agreement attraction effects even though their high morpho-phonological similarity.
-
-Across both experiments, we found no evidence that verbal *-lAr* induces attraction, even when canonical nominal attractors are present in the same session. This pattern aligns with prior findings in general attraction literature and Turkish agreement attraction, namely surface-form overlap alone does not derive agreement illusions. Rather, attraction appears to depend on abstract feature overlap between potential controllers and agreement probes, and possibly statistical associations between the strings and their controllers. In this light, findings of @Slioussar2018 are best analyzed as a possible increased association between genitive marking and possible subjecthood and being an agreement controller, which is not possible in Czech, and thus no attraction [@LacinaChromy2022]. By doing so, we hope to clarify how cue-mechanisms are employed and the role of phonological overlap in sentence processing.
-
-# Experiment 1: Testing Surface-Form Overlap
-
-```{r}
+#
+#
+#
+#
+#
+#
+#
+#
+#
+#
+#
+#
+#
+#
+#
+#
+#
+#
+#
+#
+#
+#
+#
+#
+#
+#
+#
+#
+#
+#
+#
+#
+#
+#
+#
+#
+#
+#
+#
+#
+#
+#
+#
+#
+#
+#
+#
+#
+#
+#
+#
+#
+#
+#
+#
+#
+#
+#
+#
+#
+#
+#
+#
+#
+#
+#
+#
+#
+#
+#
+#
+#
+#
+#
+#
+#
+#
+#
+#
+#
+#
+#
+#
 #| label: exp2-data-prep
 
 exp2 <- read_experimental_data("../data/results_8cond.txt", subj_offset = 2500, item_offset = 2500)
@@ -405,9 +405,9 @@ exp2.clean$att_type %<>% dplyr::recode(gen = "gen", rc = "rc")
 exp2.clean$item %<>% as.factor()
 exp2.clean$subject %<>% as.character()
 
-```
-
-```{r}
+#
+#
+#
 #| label: exp2-avgs
 
 
@@ -454,15 +454,15 @@ exp2.avgs.filler <- exp2.clean %>%
     select(grammatical, attractor_num, att_type, successes, N, p_hat, lwr, upr)
 
 
-```
-
-```{r}
+#
+#
+#
 #| label: process-turklogacev2024
 #| output: FALSE
 source("../analysis/turklogacev24.R")
-```
-
-```{r}
+#
+#
+#
 #| label: exp2-text-inputs
 
 # I want accuracy, not the response yes
@@ -510,86 +510,86 @@ all.avgs <- bind_rows(tl24.avgs, exp2.avgs) %>%
     )
 
 
-```
-
-## Participants
-
-We recruited `r exp2.nsubj` undergraduate students to participate in the experiment in exchange for course credit. All participants were native Turkish speakers, with an average age of `r exp2.meanage` (range: `r exp2.minage` – `r exp2.maxage`). 
-
-## Materials
-
-We used 40 sets of sentences like Table \ref{tab:stimuli_design}, in which we manipulated (i) the number of the attractor, (ii) the type of the attractor, and (iii) the number agreement on the verb. Both plural markings were marked with the suffix *-lAr*, while the singular number and singular agreement were marked by its absence.
-
-```{=latex}
-\begin{table}[ht]
-\centering
-\caption{Experimental conditions. The Attractor was manipulated for number and type. The Verb was manipulated to match or mismatch the head noun (always singular), creating Grammatical and Ungrammatical conditions.}
-\label{tab:stimuli_design}
-
-% Using \small to fit page width without scaling
-\small 
-\begin{tabular}{@{}ll l ll@{}}
-\toprule
-& & & \multicolumn{2}{c}{\textbf{Grammaticality (Verb Suffix)}} \\ \cmidrule(l){4-5} 
-\textbf{Attr. Type} & \textbf{Attr. Num} & \textbf{Attractor} & \textbf{Grammatical} & \textbf{Ungrammatical (*)} \\ \midrule
-
-% Verbal Section
-% --- VERBAL SECTION ---
-\multirow{4}{*}{\textbf{Verbal}} 
-  & \multirow{2}{*}{SG} & Tut-tuğ-u & zıpla-dı & *zıpla-dı-lar \\
-  & & \scriptsize \textit{hire-\textsc{nmlz-poss}} & \scriptsize \textit{jump-\textsc{pst}} & \scriptsize \textit{jump-\textsc{pst-pl}} \\ \cmidrule(l){2-5}
-  
-  & \multirow{2}{*}{PL} & Tut-tuk-lar-ı & zıpla-dı & *zıpla-dı-lar \\
-  & & \scriptsize \textit{hire-\textsc{nmlz-pl-poss}} & \scriptsize \textit{jump-\textsc{pst}} & \scriptsize \textit{jump-\textsc{pst-pl}} \\ \midrule
-
-% --- NOMINAL SECTION ---
-\multirow{4}{*}{\textbf{Nominal}} 
-  & \multirow{2}{*}{SG} & Milyoner-in & zıpla-dı & *zıpla-dı-lar \\
-  & & \scriptsize \textit{millionaire-\textsc{gen}} & \scriptsize \textit{jump-\textsc{pst}} & \scriptsize \textit{jump-\textsc{pst-pl}} \\ \cmidrule(l){2-5}
-
-  & \multirow{2}{*}{PL} & Milyoner-ler-in & zıpla-dı & *zıpla-dı-lar \\
-  & & \scriptsize \textit{millionaire-\textsc{pl-gen}} & \scriptsize \textit{jump-\textsc{pst}} & \scriptsize \textit{jump-\textsc{pst-pl}} \\ \bottomrule
-\end{tabular}
-
-\vspace{1em} % Space between table and examples
-
-\begin{exe}
-    % \exsep controls space between examples if needed
-    % \setlength{\exsep}{1ex} 
-    
-    \ex \textit{Verbal Attractor Conditions}
-    % 1. Tighten space between Label (Line 1) and Sentence (Line 2)
-    \vspace{-1.5ex} 
-    \gll \textbf{{[}Attractor{]}} aşçı mutfak-ta sürekli \textbf{{[}Verb{]}}\\
-         hire-\textsc{nmlz-(pl)-poss} cook kitchen-\textsc{loc} non.stop jump-\textsc{pst-(pl)}\\
-    % 2. Tighten space between Gloss (Line 3) and Translation (Line 4)
-    \vspace{-2ex} 
-    \glt `The \textbf{[$_{Attr.}$~hired$_{pl}$/hired$_{sg}$]} cook \textbf{[$_{Verb}$~jumped$_{pl}$/jumped$_{sg}$]} in the kitchen non-stop.'\vspace{1ex} 
-
-    \ex \textit{Nominal Attractor Conditions}
-    \vspace{-1.5ex}
-    \gll \textbf{{[}Attractor{]}} aşçı-sı mutfak-ta sürekli \textbf{{[}Verb{]}}\\
-         millionaire-\textsc{(pl)-gen} cook-\textsc{poss} kitchen-\textsc{loc} non.stop jump-\textsc{pst-(pl)}\\
-    \vspace{-2ex} 
-    \glt `The \textbf{[$_{Attr.}$~millionaires'/millionaire's]} cook \textbf{[$_{Verb}$~jumped$_{pl}$/jumped$_{sg}$]} in the kitchen non-stop.'
-\end{exe}
-
-\end{table}
-```
-
-Verbal attractor conditions featured complex subject NPs containing a bare head noun and a reduced relative clause acting as the attractor (e.g., 'tuttukları aşçı', 'the hired cook'). Because nominal plural marking is mandatory and the head noun was always singular, plural verb agreement rendered these sentences ungrammatical. Nominal attractor conditions, featuring nominal attractors such as 'milyonerlerin aşçısı' ('the millionaires' cook') were taken from @TurkLogacev2024. To prevent participants from associating plural verbs with ungrammaticality, fillers were balanced between grammatical sentences with plural verbs and ungrammatical sentences with singular verbs.
-
-## Procedures
-
-The experiment was conducted online via Ibex Farm [@Drummond2013], lasting approximately 25 minutes. After providing informed consent and demographic details, participants read instructions and completed nine practice trials.
-
-Each trial began with a 600 ms blank screen, followed by a centered, word-by-word RSVP presentation (30 pt font, 400 ms duration, 100 ms inter-stimulus interval). Upon the prompt, participants judged sentence acceptability as quickly as possible by pressing 'P' (acceptable) or 'Q' (unacceptable). A red warning message appeared during practice trials—but not experimental trials--if responses exceeded 5,000 ms. Participants pressed the space bar to advance to the next item.
-
-The study included 40 experimental and 40 filler sentences. Experimental items were distributed across four lists using a Latin-square design, ensuring each participant viewed only one list containing one version of each item.
-
-## Analysis and Results
-
-```{r}
+#
+#
+#
+#
+#
+#
+#
+#
+#
+#
+#
+#
+#
+#
+#
+#
+#
+#
+#
+#
+#
+#
+#
+#
+#
+#
+#
+#
+#
+#
+#
+#
+#
+#
+#
+#
+#
+#
+#
+#
+#
+#
+#
+#
+#
+#
+#
+#
+#
+#
+#
+#
+#
+#
+#
+#
+#
+#
+#
+#
+#
+#
+#
+#
+#
+#
+#
+#
+#
+#
+#
+#
+#
+#
+#
+#
+#
+#
+#
+#
 #| label: exp2-models
 
 options(mc.cores = parallel::detectCores())
@@ -702,9 +702,9 @@ m.exp2.all <- brm(
     seed = 1
 )
 
-```
-
-```{r}
+#
+#
+#
 #| label: model-output-2
 
 library(posterior)
@@ -938,16 +938,16 @@ p_between <- ggplot(predicted_between, aes(y = Condition, x = mean)) +
         panel.grid.major.y = element_blank()
     )
 
-```
-
-
-Participants showed high accuracy in both grammatical (`r get_value(exp2.avgs.filler, text, grammatical == "grammatical")`) and ungrammatical filler sentences (`r get_value(exp2.avgs.filler, text, grammatical == "ungrammatical")`), indicating that they understood the task and performed it reliably.
-
-@fig-exp2-condition-means presents the overall means and credible intervals for 'yes' responses across experimental conditions, as well as the previous data from @TurkLogacev2024, which is quite similar to the magnitude of @LagoEtAl2019. As shown, in our study, participant gave more 'yes' responses to ungrammatical sentences with plural genitive-marked nominal attractors (`r get_value(all.avgs, text, grammatical == "ungrammatical", attractor_num == "plural", att_type == "gen")`) compared to their singular counterparts (`r get_value(all.avgs, text, grammatical == "ungrammatical", attractor_num == "plural", att_type == "gen")`).
-
-However, similar increase in acceptability was not found with relative clause attractors (M = `r get_value(all.avgs, p_hat, grammatical == "ungrammatical", attractor_num == "singular", att_type == "rc")` and `r get_value(all.avgs, p_hat, grammatical == "ungrammatical", attractor_num == "plural", att_type == "rc")`, CI = [`r get_value(all.avgs, lwr, grammatical == "ungrammatical", attractor_num == "singular", att_type == "rc")`, `r get_value(all.avgs, upr, grammatical == "ungrammatical", attractor_num == "singular", att_type == "rc")`] and [`r get_value(all.avgs, lwr, grammatical == "ungrammatical", attractor_num == "plural", att_type == "rc")`, `r get_value(all.avgs, upr, grammatical == "ungrammatical", attractor_num == "plural", att_type == "rc")`] for singular and plural attractors, respectively). Participants rated grammatical sentences similarly independent of the attractor number or attractor type.
-
-```{r}
+#
+#
+#
+#
+#
+#
+#
+#
+#
+#
 #| label: fig-exp2-condition-means
 #| fig-cap: "Mean proportion of 'acceptable' responses by grammaticality, attractor number and attractor type. Error bars show 95% Clopper–Pearson confidence intervals. "
 #| fig-width: 6
@@ -1014,33 +1014,33 @@ ggsave(
   bg = "white"     # Prevents transparent background
 )
 
-```
-
-Our models also showed similar results, assuming a Bernoulli logit link. Our main research question was whether verbal attractors induced attraction effects. We also wanted to verify the cannonical attraction effects in Turkish with nominal attractors.  To that end, we included genitive marked nominals from data from our experiment and @TurkLogacev2024. The model was fitted to the binary *yes/no* responses and assumed uninformative priors. Grammaticality and Attractor Number was sum coded (grammatical = 0.5, ungrammatical = −0.5; plural = 0.5, singular = −0.5). Attractor Type (Nominal-Current, Nominal-TL24, Verbal) was represented by two orthogonal Helmert contrasts: an initial contrast comparing verbal attractors to the average of the two nominal conditions (Nominal-Current = −1/6, Nominal-TL24 = −1/6, Verbal = 1/3) and another contrast comparing the two nominal conditions (Nominal-Current = 1/3, Nominal-TL24 = −1/3, Verbal = 0). All fixed effects and their interaction were included, along with random intercepts and slopes for both subjects and items. 
-
-We present posterior summaries of estimated regression effects from our model in @fig-exp2-fixed-effects.  Our model showed a robust attraction in both nominal attractor cases, with strongly negative effects for our nominal items (`r get_value(exp2_atts, text, contrast == "Gen-Current")`) and items from @TurkLogacev2024 (`r get_value(exp2_atts, text, contrast == "Gen-TL24")`).  More importantly, our model found no evidence for an attraction in verbal attractor conditions (`r get_value(exp2_atts, text, contrast == "RC")`), verifying our observations in the descriptive statistics.  We did not find an evidence for a difference in magnitude of attraction between the two nominal-type attractors was not found (`r get_value(exp2_atts, text, contrast == "GenCurrent − GenTL24")`), suggesting the presence of an additional conditions did not affect attraction magnitudes.  Finally, we found strong evidence for a decreased overall acceptability for nominal items in our experiment (`r get_value(overall_df, text)`), suggesting the within-experimental distribution did affect overall acceptability, but not attraction.
-
-```{r}
+#
+#
+#
+#
+#
+#
+#
 #| label: fig-exp2-fixed-effects
 #| fig-cap: "Posterior summaries of attraction-related effects. Points indicate posterior means, and horizontal bars show 95% credible intervals on the log-odds (β) scale. Attraction was estimated as the interaction between grammaticality and attractor number within each attractor type. Negative values indicate stronger attraction (a reduced ungrammaticality penalty in plural-attractor conditions). Dashed line denotes zero (no effect)."
 #| fig-width: 6
 #| fig-height: 2
 
 p_between
-```
-
-## Discussion
-
-
-Experiment 1 found no evidence that phonological overlap between nominal and verbal plural morphemes in Turkish induces attraction. Participants reliably rejected ungrammatical sentences with plural-marked verbal attractors, contrasting with the canonical attraction effects observed for nominal attractors. This indicates that the verbal plural marker *-lAr* does not generate interference comparable to nominal plurals.
-
-Our results and between-experiment comparisons indicate that within-experiment statistics---specifically, exposure to verbal attraction items---did not substantially reduce attraction magnitude. However, overall acceptability for nominal attractor sentences was lower than in @TurkLogacev2024. This aligns with prior work showing that trial distributions modulate judgments. While previous studies drove this effect via instructions or fillers [@HammerlyEtAl2019;@ArehalliWittenberg2021], we demonstrate that experimental conditions and the presence of an effect in a condition subset also modulate overall acceptability, but surprisingly not the attraction.
-
-A potential concern is that our mixed design---combining canonical nominal attractors with verbal ones---influenced response patterns. The presence of robust nominal attraction may have altered participant strategies, potentially masking weaker verbal effects [@HammerlyEtAl2019;@Turk2022]. To determine if the absence of verbal attraction in Experiment 1 was genuine rather than a distributional artifact, Experiment 2 removed all nominal attractors. This design tests whether the null effect persists when verbal morphology is the sole potential source of interference.
-
-# Experiment 2: Isolating Verbal Attractors
-
-```{r}
+#
+#
+#
+#
+#
+#
+#
+#
+#
+#
+#
+#
+#
+#
 #| label: exp1-data-prep
 
 exp1 <- read_experimental_data("../data/results.txt", subj_offset = 2000, item_offset = 2000)
@@ -1114,9 +1114,9 @@ exp1.clean$attractor_num %<>% dplyr::recode(pl="plural", sg="singular")
 exp1.clean$item %<>% as.factor()
 exp1.clean$subject %<>% as.character()
 
-```
-
-```{r}
+#
+#
+#
 #| label: exp1-avgs
 
 exp1.avgs <- exp1.clean %>%
@@ -1162,9 +1162,9 @@ exp1.avgs.filler <- exp1.clean %>%
   select(grammatical, attractor_num, match, successes, N, p_hat, lwr, upr)
 
 
-```
-
-```{r}
+#
+#
+#
 #| label: exp1-text-inputs
 
 # I want accuracy, not the response yes
@@ -1200,15 +1200,15 @@ exp1.avgs.filler %<>% mutate(text = paste0("M = ", round(p_hat,2), ", CI = [", r
 
 exp1.avgs %<>% mutate(text = paste0("M = ", round(p_hat,2), ", CI = [", round(lwr,2) , ",", round(upr,2) ,"]"))
 
-```
-
-## Participants, Materials, and Procedure
-
-`r exp1.nsubj` new undergraduate students who are native Turkish speakers (M = `r exp1.meanage`, range: `r exp1.minage` – `r exp1.maxage`) were recruited. We utilized the same verbal attractor items and fillers from Experiment 1, removing all nominal attractor trials. The experimental procedure was identical to Experiment 1.
-
-## Analysis and Results
-
-```{r}
+#
+#
+#
+#
+#
+#
+#
+#
+#
 #| label: exp1-models
 
 options(mc.cores = parallel::detectCores())
@@ -1293,9 +1293,9 @@ m.exp1 <- brm(
 
 
 
-```
-
-```{r}
+#
+#
+#
 #| label: model-output
 
 
@@ -1327,9 +1327,9 @@ txt_p <- list(
     inter = fmt(p_gt0(m.exp1, coef_names$inter), 2)
 )
 
-```
-
-```{r}
+#
+#
+#
 #| label: nested-models
 
 
@@ -1392,15 +1392,15 @@ txt_g_p <- list(
 
 
 
-```
-
-Participants showed high accuracy in both grammatical (`r get_value(exp1.avgs.filler, text, grammatical == "grammatical")`) and ungrammatical filler sentences (`r get_value(exp1.avgs.filler, text, grammatical == "ungrammatical")`), indicating that they understood the task and performed it reliably.
-
-@fig-exp1-condition-means presents the overall means and credible intervals for 'yes' responses across experimental conditions. As shown, ungrammatical sentences with plural attractors were rated as acceptable as their counterparts with singular attractors (M = `r get_value(exp1.avgs, p_hat, grammatical == "ungrammatical", attractor_num == "singular")` and `r get_value(exp1.avgs, p_hat, grammatical == "ungrammatical", attractor_num == "plural")`, CI = [`r get_value(exp1.avgs, lwr, grammatical == "ungrammatical", attractor_num == "singular")`, `r get_value(exp1.avgs, upr, grammatical == "ungrammatical", attractor_num == "singular")`] and [`r get_value(exp1.avgs, lwr, grammatical == "ungrammatical", attractor_num == "plural")`, `r get_value(exp1.avgs, upr, grammatical == "ungrammatical", attractor_num == "plural")`] for singular and plural attractors, respectively).
-
-On the other hand, accuracy in grammatical conditions was modulated by the number of the attractor in an unexpected way. Participants rated grammatical sentences with singular attractors as grammatical less often (`r get_value(exp1.avgs, text, grammatical == "grammatical", attractor_num == "singular")`) compared to their counterpars with plural attractors (`r get_value(exp1.avgs, text, grammatical == "grammatical", attractor_num == "plural")`).
-
-```{r}
+#
+#
+#
+#
+#
+#
+#
+#
+#
 #| label: fig-exp1-condition-means
 #| fig-cap: "Mean proportion of 'acceptable' responses by grammaticality and attractor number. Error bars show 95% Clopper–Pearson confidence intervals. "
 #| fig-width: 6
@@ -1457,13 +1457,13 @@ ggsave(
   bg = "white"     # Prevents transparent background
 )
 
-```
-
-These descriptive trends were confirmed by our Bayesian mixed-effects models implemented in brms,  assuming a Bernoulli logit link. The model was fitted to the binary *yes/no* responses and included fixed effects for Grammaticality and Attractor Number and their interaction, and random intercepts and slopes for both subjects and items.
-
-Posterior estimates are summarized in @fig-exp1-fixed-effects. The model revealed a positive effect of grammaticality ($\beta$ = `r txt$gram`, P($\beta$ > `r txt_p$gram`)), but no reliable main effect of attractor number ($\beta$ = `r txt$attr`, P($\beta$ > `r txt_p$attr`)). On the other hand, there was a small but positive interaction ($\beta$ = `r txt$inter`, P($\beta$ > `r txt_p$inter`)). To clarify the effects' presence in grammaticals only, we fitted two more models that is fitted to the subset of the data. While the model fitted to grammatical conditions only showed an effect of attractor number ($\beta$ = `r txt_g$attr_g`, P($\beta$ > `r txt_g_p$attr_g`)), the model fitted to ungrammatical conditions, attraction relevant conditions, did not provide evidence for the effect of number manipulation ($\beta$ = `r txt_g$attr_u`, P($\beta$ > `r txt_g_p$attr_g`)). These results suggest that the presence of a plural attractor did not increase the acceptability of ungrammatical sentences, nor was this relationship modulated by grammaticality.
-
-```{r}
+#
+#
+#
+#
+#
+#
+#
 #| label: fig-exp1-fixed-effects
 #| fig-cap: "Posterior means and 95% credible intervals for fixed effects in the two Bayesian models. The x-axis shows the posterior mean (log-odds scale). The blue intervals correspond to the model in which a positive interaction was assumed, and the orange intervals to the model in which it was not. "
 #| fig-width: 6
@@ -1514,44 +1514,47 @@ ggplot(df_plot, aes(x = est, y = term_clean)) +
     theme_minimal(base_size = 10, base_family = "Times") +
     theme(panel.grid.minor = element_blank())
 
-```
-
-## Discussion
-
-Experiment 2 replicated the verbal attractor conditions from Experiment 1 in isolation and again revealed no evidence for agreement attraction driven by verbal plural markers. Ungrammatical sentences with plural marked main verbs were rejected at similar rates regardless of whether the reduced clause verb bore plural *-lAr* or not, and there were no reliable effects of attractor number or interactions involving attractor number. This confirms that the absence of a verbal attraction effect in Experiment 1 was not due to the presence of nominal attractor items or to within experiment item statistics. 
-
-Unexpectedly, grammatical sentences with singular attractors were judged less acceptable than those with plural attractors. This effect is unlikely to reflect agreement attraction, since it arises in the opposite direction. One possibility is that it results from an interaction between plausibility and referential availability. The plural morpheme can license a more general interpretation by allowing an unspecific reference, whereas the singular reduced relative clause more strongly invites a specific referent, which may be less accessible in the context of the task. We do not pursue this explanation further, as it falls outside the scope of the present paper.
-
-# General Discussion
-
-We investigated whether surface-overlap advantage seen in reading times and comprehension questions can bleed into dependency resolution. Recent work by @Slioussar2018 argued that an accidental surface-overlap with a nominative plural form may result in activation of relevant cues even though the syntactic analysis of such a noun is clearly genitive singular. However, modulation of agremeent-relevant cues seems to be gated by being a possible controller in other relevant work in syncretism, and similar manipulations in English and Czech were unable to find a phonological modulation.
-
-Using two speeded acceptability judgment experiments, we disentangled the statistical property of being a controller from a surface overlap. Turkish provides a useful test case because the plural *-lAr* appears both on verbs and on nouns, but only noun phrases can control agreement. If phonological overlap alone can activate controller-relevant cues, then plural-marked verbs in reduced relative clauses should induce attraction effects even though they never control agreement.
-
-Across both experiments, we found that Turkish attraction is determined by being a potential controller rather than merely resembling one. Participants did not accepted ungrammatical sentences with containing plural verbal attractors more often than their singular counterparts. This absence of attraction persisted with or without a robust attraction with nominal attractors in the same session.
-
-These results indicate that attraction depends on abstract feature overlap with potential controllers, not on surface-form similarity. This pattern converges with prior results in English and Czech that failed to find attraction for pseudoplural or phonologically plural forms [@BockEberhard1993;@HaskellMacDonald2003;@NicolEtAl:2016;@LacinaChromy2022], but appears to stand in contrast to findings from Russian [@Slioussar2018].
-
-While the most obvious difference is syntactic---our non-attracting elements were verbs, whereas the attracting elements in Russian were nouns [@Slioussar2018]---this distinction alone is insufficient, as
-prior work shows that even pseudoplural nouns in English and the same surface-overlap in Czech fail to attract [@BockEberhard1993;@LacinaChromy2022]. We propose instead that the parser 'gates' its search based on an element's abstract potential to be a controller. The Russian genitive noun, despite its surface form, is recognized as an element that can control agreement in other constructions, thus passing this abstract gate. Our Turkish verbal attractors or Czech genitive nouns, by contrast, lack this potential entirely; they can never be controllers. They therefore fail this gating, and no attraction is observed, despite the perfect phonological overlap.
-
-This interpretation aligns with cross-linguistic findings showing that attraction is strongest when the attractor bears case or number morphology that can be associated with subjects or agreement controllers [@LagoEtAl2019;@BhatiaDillon2022;@BleotuDillon2024]. In other words, it is not form overlap per se, but feature ambiguity or a statistical association with controllerhood that matters. Earlier formulations of these models left open whether 'looking like' a controller or 'being able to be' a controller was critical. The present high-powered results from Turkish favor the latter: only morphologically licensed controllers, or those with a genuine abstract potential to be one, engage in attraction.
-
-## Acknowledgment {-}
-
-This project heavily benefited from discussions with Pavel Logacev. I am also thankful first and foremost Ellen Lau, along with Colin Phillips, Brian Dillon, and Radim Lacina for their comments on the manuscript.
-
-## Data availability {-}
-
-Materials, code and data available at: PSYARXIV LINK.
-
-
-# References {.unnumbered}
-
-\newcommand{\doi}[1]{\href{http://dx.doi.org/#1}{http://dx.doi.org/#1}}
-\begingroup
-\raggedright
-\singlespacing
-::: {#refs}
-:::
-\endgroup
+#
+#
+#
+#
+#
+#
+#
+#
+#
+#
+#
+#
+#
+#
+#
+#
+#
+#
+#
+#
+#
+#
+#
+#
+#
+#
+#
+#
+#
+#
+#
+#
+#
+#
+#
+#
+#
+#
+#
+#
+#
+#
+#
+#

@@ -13,7 +13,7 @@ library(dplyr)
 
 # 1. LOAD AND FILTER DATA
 exp2 <- read_experimental_data(
-    "./data/results_8cond.txt",
+    "../data/results_8cond.txt",
     subj_offset = 2500,
     item_offset = 2500
 )
@@ -267,7 +267,7 @@ p_desc <- exp2.avgs %>%
     )
 
 # p_desc now contains the plot with the correct y-axis ranges for each facet.
-ggsave("hsp_desc_plot.png", p_desc, width = 6, height = 3)
+ggsave("../figures/hsp_desc_plot.png", p_desc, width = 6, height = 3)
 
 
 # 3. FIT BRMS MODEL
@@ -296,7 +296,7 @@ m.exp2 <- brm(
     iter = 4000,
     warmup = 2000,
     seed = 1,
-    file = "m.hsp.simple"
+    file = "../models/m.hsp.simple"
 )
 
 # 4. PLOT MODEL COEFFICIENTS
@@ -354,7 +354,7 @@ p_model <- coeffs %>%
         axis.text.x = element_text(size = 10)
     )
 
-ggsave("hsp_model_plot.png", p_model, width = 6, height = 4)
+ggsave("../figures/hsp_model_plot.png", p_model, width = 6, height = 4)
 
 print("Analysis Complete. Plots saved.")
 
@@ -375,7 +375,7 @@ m_nom <- brm(
     iter = 4000,
     warmup = 2000,
     seed = 1,
-    file = "m.nom"
+    file = "../models/m.nom"
 )
 
 
@@ -396,7 +396,7 @@ m_verb <- brm(
     iter = 4000,
     warmup = 2000,
     seed = 1,
-    file = "m.verb"
+    file = "../models/m.verb"
 )
 
 
@@ -473,7 +473,7 @@ p_model <- coefs %>%
     )
 p_model
 ggsave(
-    "fig-exp2-nested.pdf",
+    "../figures/fig-exp2-nested.pdf",
     p_model,
     width = 6,
     height = 2.5,
