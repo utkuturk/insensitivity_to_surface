@@ -1,0 +1,998 @@
+Introduction
+Imagine someone driving through a busy street to find a parking
+spot. As they maneuver through the different roads, they keep checking
+out for signs of a parking spot nearby. Suddenly, a loud noise auto­
+matically catches their attention. Consequently, their foot is quickly
+shifted from the gas pedal to the brake to be able to stop if the situation
+demands so. As illustrated in this example, humans shape, influence, and
+interact with the environment through their own actions (Kunde, Weller
+& Pfister, 2018). In doing so, a set of diverse cognitive operations, such
+as selective attention and working memory (WM), help us to successfully
+adapt to the various demands of everyday situations.
+In particular, the person in the example was exerting two types of
+attentional selection: on the one hand, they were looking for the parking
+signal voluntarily, differentiating the diverse signals, focusing on the
+color, shape, etc., to complete the desired action with maximum effi­
+ciency. This is commonly referred to as endogenous/voluntary attention
+(Jonides, 1981; Corbetta, Patel & Shulman, 2008), and it is assumed to
+be exerted in a top-down/goal-directed fashion (Chica, Bartolomeo, &
+
+Lupiáñez, 2013). On the other hand, in parallel, just like the loud noise,
+any salient stimuli in the environment will likely capture their attention
+as well. This form of automatic and involuntary selective attention is
+usually described as exogenous attention (Jonides, 1981; Posner &
+Cohen, 1984), and it is characterized by its bottom-up/stimulus-driven
+nature. Importantly, to achieve their goal of finding a parking spot,
+the person in the example will additionally have to maintain certain
+information about the environment available, like remembering the
+directions she saw in a traffic sign. This is afforded by WM, commonly
+defined as the ability to store, and manipulate information in an online
+fashion independently of sensory stimulation (Baddeley, 1992; Souza &
+Oberauer, 2016; Nobre & Stokes, 2020).
+This example represents how the convergence of these cognitive
+operations is critical in executing everyday actions, as well as many
+other complex tasks. However, relative to research dedicated to exter­
+nally directed attention for perception, research on internally directed
+attention to WM contents remains less well understood (Awh, Jonides &
+Reuter-Lorenz, 1998; Awh & Jonides, 2001) and has largely focused on
+visual memories (Downing, 2000; de Fockert et al., 2001). Specifically,
+
+* Corresponding authors.
+E-mail addresses: aguedafgt@ugr.es (Á. Fuentes-Guerra), fabianobotta@ugr.es (F. Botta), jlupiane@ugr.es (J. Lupiáñez), pedro_talavera@ugr.es (P. Talavera),
+emartina@ugr.es (E. Martín-Arévalo), cgonzalez@ugr.es (C. González-García).
+1
+Equal contribution
+https://doi.org/10.1016/j.jml.2024.104571
+Received 11 January 2024; Received in revised form 12 September 2024; Accepted 12 September 2024
+Available online 18 September 2024
+0749-596X/© 2024 The Author(s). Published by Elsevier Inc. This is an open access article under the CC BY-NC-ND license (http://creativecommons.org/licenses/bync-nd/4.0/).
+
+Á. Fuentes-Guerra et al.
+
+Journal of Memory and Language 140 (2025) 104571
+
+several studies have evaluated the mechanisms underlying internal
+attention (Kiyonaga & Egner, 2013; Myers, Stokes & Nobre, 2017; Nobre
+& Stokes, 2020; Zokaei et al., 2019; van Ede, 2020; van Ede & Nobre,
+2023; Huynh Cong & Kerzel, 2021), which refers to the selection and
+modulation of internally generated information, such as the contents of
+WM, long-term memory, task sets, or response selection (Chun, Golomb
+& Turk-Browne, 2011). Essentially, these studies have primarily
+assessed the effects of endogenous attention on visual WM contents
+(Landman et al., 2003; Griffin & Nobre, 2003; Gazzaley & Nobre, 2012;
+Rerko, Souza & Oberauer, 2014; Souza, Rerko & Oberauer, 2014, 2015;
+Gunseli, van Moorselaar, Meeter, & Olivers, 2015; Gunseli et al., 2019).
+In this line, these and other studies have provided important evidence
+that retro-cues (i.e., cues presented between the offset of a memory array
+and the onset of a probe) can select and prioritize visual WM contents
+(Souza & Oberauer, 2016; Shepherdson, Oberauer & Souza, 2018;
+Rerko, Souza & Oberauer, 2014), even with bottom-up (although pre­
+dictive) retro-cues (Berryhill et al. 2012). In parallel, recent research in
+the area of novel stimulus–response (S-R) associations has revealed that
+endogenous attention can also affect how more complex memoranda,
+such as planned actions, are represented in WM (González-García et al.,
+2020; Formica, González-García & Brass, 2020; Formica et al., 2022;
+Formica et al., 2023).
+Conversely, exogenous attention studies have traditionally neglected
+the role of WM representations, focusing primarily on the perceptual
+spatial domain by implementing variations of the Posner (1980) clas­
+sical cue-target orienting paradigm (see Chica et al., 2014, for a review).
+Although it could be the case that WM contents are irrelevant to the
+mechanisms of exogenous attention, recent evidence suggests otherwise.
+For instance, it has been shown that some attentional costs (i.e., slower
+reaction times (RTs) and/or lower accurate responses for uncued vs.
+cued target locations) might be at least in part due to a disruption of
+episodic cue-target integration processes (Spadaro, He, & Milliken,
+2012) or by the encoding of the cue (Chen & Wyble, 2018; see also
+Lupiáñez, Martín-Arévalo, and Chica, 2013). Moreover, some other
+studies have shown that repetition of non-spatial attributes such as color
+and shape can lead to attentional costs as well (Hu & Samuel, 2010; Hu,
+Samuel, & Chan, 2011). More directly, several experiments point to a
+systematic difference in the effects of endogenous and exogenous
+attention on visuospatial WM contents (Botta et al., 2010; Botta &
+Lupiáñez, 2014). In this regard, recent evidence suggests that symbolic
+(central) non-predictive retro-cues can select visual WM contents (van
+Ede, Board, and Nobre, 2020).
+However, although this emerging evidence of exogenous attention
+effects on WM contents has recently gained significance, it has largely
+focused on visual memories of simple stimuli such as squares, circles,
+bars, etc. (Hu & Samuel, 2010; Hu et al., 2011; Berryhill et al., 2012; van
+Ede et al., 2020; Chao, Hsiao, & Huang, 2022). Nevertheless, real life
+environments are more complex than that, and an infinite number of
+stimuli of different nature catch our attention involuntarily on an
+everyday basis. In this context, attention, memory and perception tend
+to be intertwined with the main aim of executing behaviors (Hommel,
+2019; Frings et al. 2020). In this context, studying whether fully exog­
+enous (non-predictive and peripheral) cues can select WM representa­
+tions that go beyond visual memories, such as S-R associations, is
+essential and it would allow to better conceptualize exogenous attention
+as a broader phenomenon, not just related to perceptual information.
+Although untested, the hypothesis that exogenous cues should be
+able to select complex WM contents such as S-R associations fits well
+with recent theoretical frameworks of action control. The Binding and
+Retrieval in Action Control framework (BRAC) put forward by Frings
+and collaborators (2020) proposes that stimulus features, response,
+environment, and its subsequent effects are integrated into a “mental
+representation” in which all the elements related to that specific event
+are included (Frings et al., 2020). Such mental representation is referred
+to as an event file, as coined by Hommel, Müsseler, Aschersleben, and
+Prinz (2001); Hommel (2019) in his Theory of Event Coding (TEC).
+
+Importantly, it is assumed that the latter repetition of any of these ele­
+ments triggers the retrieval of the previous event-file as a whole,
+comprising codes of the same features, which can impact current per­
+formance (Frings et al., 2020). Thus, if we consider the BRAC and TEC
+frameworks, when encoding some content in a retro-cueing paradigm,
+the event file of a trial will contain all information pertaining that event
+(e.g., stimulus, response, the encoding location, the laterality of the
+response, task demands, etc.). If a spatial retro-cue, even if nonpredictive, later flashes on the location where the event was encoded,
+then the entire event file should be retrieved.
+Consequently, here, we aimed to address whether a purely exoge­
+nous/automatic retro-cue could effectively select S-R representations
+held in WM. We hypothesized that in an exogenous retro-cueing task
+pertaining S-R associations, exogenous cueing would be able to retro­
+spectively select content in WM, and this would be reflected as a facil­
+itatory effect: faster and/or higher accurate responses in cued object vs.
+uncued object trials. In the first two experiments, we tested this hy­
+pothesis along a series of preregistered manipulations of the cue-target
+onset asynchrony (CTOA), given its central role in the classical exoge­
+nous cueing effects on perception (Gabay & Henik, 2010; Chica et al.,
+2013; Martín-Arévalo, Botta, De Haro & Lupiáñez, 2021). In a third
+experiment, we explored whether exogenous attention interacts simi­
+larly with different elements of the event file or whether it prioritizes
+spatial components. In all experiments, and, in line with our hypotheses,
+we observed facilitation in cued object vs. uncued object trials, sug­
+gesting that non-predictive/peripheral cues can automatically select
+novel S-R associations held in WM.
+Experiment 1A
+Data availability
+Raw data, experimental files and analyses’ scripts for this experiment
+can be found at (https://osf.io/r8fks/?view_only=ca3358b6251b49d3
+bc4aa558d4429175). The hypotheses and analysis plan were preregis­
+tered prior to data collection and can be found at https://aspredicted.
+org/blind.php?x=Z29_Y5K. Specifically, we hypothesized that exoge­
+nous retro-cues would select and prioritize not only space, but also its
+associated WM contents. This would be evidenced by faster and/or
+higher accurate responses in cued object vs. uncued object trials.
+Methods
+Participants
+Twenty-three naïve volunteers participated in this experiment (4
+males, mean age of 21.1 years, SD=2.96). Sample size was determined apriori by a sequential Bayes Factor approach (see preregistration).2
+Participants were recruited through the experiments’ website of the
+Centro de Investigación Mente, Cerebro y Comportamiento (CIMCYC).
+The prerequisites for participation in the present study were to be be­
+tween 18 and 35 years old, normal, or corrected to normal vision, and to
+give written consent. Moreover, participants were monetarily compen­
+sated (5€ per half an hour) after completing their partaking. The
+experiment was conducted in accordance with the ethical guidelines laid
+down by the Department of Experimental Psychology, University of
+Granada, in conformity with the ethical standards of the 1964 Decla­
+ration of Helsinki (last update: Brazil, 2013). The experiment was part of
+a larger research project approved by the University of Granada Ethical
+Committee (1816/CEIH/2020).
+
+2
+Note that the final sample size deviated from the preregistered one due to
+practical issues with the participants’ recruitment method. Nevertheless, 20
+participants were enough (BF10 = 22.783).
+
+2
+
+Á. Fuentes-Guerra et al.
+
+Journal of Memory and Language 140 (2025) 104571
+
+Apparatus, stimuli, and procedure
+We conducted the experiment on a computer with an Intel Core i73770 CPU @ 3.40 GHz x8 processor, connected to a 24 in. Benq
+XL2411T monitor with a 1920x1080 (16:9) pixel resolution and 350 cd/
+m2 of brightness. Participants sat at a viewing distance of approximately
+65 cm. The presentation of stimuli and data acquisition were controlled
+with PsychoPy 2021.2.3 throughout the whole experiment.
+The experimental display consisted in the presentation of two
+placeholders, one on each side of the fixation point, which was pre­
+sented right in the middle of the screen (position [relative to the center]
+of x = 0, y = 0). Each placeholder box had a size of 200 x 200 pixels, and
+the border of the box comprised an extra 10 pixels. The left box was in
+the position (x = -250 pixels, y = 75) and the right one in (x = 250, y =
+75). Inside of each placeholder an image of 200 x 200 pixels appeared at
+the beginning of each trial. These images of animate (non-human ani­
+mals) and inanimate (vehicles and instruments) items were compiled
+from different available databases (Brady et al., 2013, 2008; Brodeur
+et al., 2014; Griffin, Holub, & Perona, 2022; Konkle et al., 2010),
+creating a pool of 1550 unique pictures (770 animate items, 780 inan­
+imate). To increase perceptual distinctiveness and facilitate recognition,
+the background was removed from all images, items were centered in
+the canvas, and images were converted to black and white. Additionally,
+we created peripheral cues by increasing the outline of one of two
+placeholder boxes from 10 to 30 pixels.
+The experiment consisted of a choice-reaction task embedded in an
+exogenous cueing paradigm, with a 500–700 CTOA, which has already
+shown reliable exogenous cueing effects (Martín-Arévalo et al., 2013,
+2016, 2021). The sequence of events in each trial is illustrated in Fig. 1.
+Each trial began with the presentation of the encoding display, con­
+taining the fixation point, two placeholders, and two novel images, for a
+duration of 1000 ms. Participants were instructed to create two S-R
+
+associations in which they had to associate each stimulus with a certain
+bimanual response depending on its location on the screen. Specifically,
+participants were instructed at the beginning of the experimental session
+to associate stimuli to the left of the fixation point to bimanual index
+finger responses, and stimuli to the right to bimanual middle finger re­
+sponses. The location-response contingency was constant during the
+experiment but counterbalanced across participants. Bimanual index
+and middle responses were used to fully orthogonalize the location of
+the stimulus on the screen with the associated response hand. Impor­
+tantly, in each trial, the stimuli pair was completely novel, with stimuli
+that would never repeat again throughout the experiment. Next, an in­
+terval, composed by the two empty placeholders and the fixation point,
+appeared for 500 ms (see Souza & Oberauer, 2016). Immediately after,
+the peripheral non-predictive cue was presented for 50 ms in one of the
+two possible locations with equal probability (50 %). This cue was
+completely non-predictive of which of the two stimuli would be later
+probed nor of the location of the target. After the peripheral cue had
+disappeared, a fixation display was presented for a jittered duration of
+450–650 ms. Then, a target image was displayed for 1200 ms in the
+center of the screen without placeholder (x = 0, y = 75). Participants
+were instructed to provide the associated response learned at the
+encoding stage of the trial. Specifically, they had to simultaneously press
+the “S” and “L” keys on the keyboard with both middle fingers if the
+target was associated with middle fingers’ responses, and “D” and “K”
+with both index fingers simultaneously if index fingers responses were
+required. For the response to be considered correct, both key presses (“S”
+and “L”; “D” and “K”) were required; if only one of them was pressed or if
+it was a mixture of the two, the response was considered incorrect. RTs
+from both fingers were collected, although only the fastest one was
+selected for the analysis. In 15 % of trials, a completely new picture,
+different from the two displayed in the encoding screen, and never seen
+
+Fig. 1. Sequence of events in a given trial. Note. ISI: inter-stimulus interval. ITI: inter-trial interval. CTOA: cue-target onset asynchrony.
+3
+
+Á. Fuentes-Guerra et al.
+
+Journal of Memory and Language 140 (2025) 104571
+
+before, was shown as the target. In those cases, which we labeled “catch
+trials”, participants were instructed to press the spacebar with their
+thumbs. These trials were included to prevent participants from adopt­
+ing strategies to reduce the WM load (e.g., encoding just the left item and
+then treating the target as a go-no go task). The inter-trial interval, in
+which the screen remained empty, lasted 1000–1500 ms.
+Participants completed two runs of 161 trials each (137 regular, 24
+catch). Therefore, the full experiment was composed of a total of 322
+trials. In the middle of each run and between runs, participants could
+take a break. Prior to the main task, participants performed a practice
+phase with a similar task that did not include cues. This practice phase
+consisted of one block of 16 trials (14 regular, 2 catch), which partici­
+pants repeated until they achieved an accuracy of at least 85 %. The
+images used in the practice phase were not used during the main task.
+The total duration of the experiment was around 40 min.
+
+Table 1
+Descriptive statistics of Reaction Times (RTs) and Accuracy Scores for Experi­
+ment 1A and 1B.
+
+Experiment
+1A
+Experiment
+1B
+
+Cued
+Object
+Uncued
+Object
+Cued
+Object
+Uncued
+Object
+
+Reaction Times (RTs)
+
+Accuracy Scores
+
+Mean
+
+Standard
+Deviation
+(SD)
+
+Mean
+
+Standard
+Deviation
+(SD)
+
+712
+ms
+730
+ms
+714
+ms
+749
+ms
+
+81 ms
+
+.87
+
+.07
+
+80 ms
+
+.87
+
+.1
+
+106 ms
+
+.86
+
+.09
+
+110 ms
+
+.83
+
+.08
+
+intercept of participant and trial revealed that object cueing was not
+statistically significant when considering accuracy scores [X^2(1,N=23)
+= 0.133, p = .720] (See Table 1.).
+
+Design
+The experiment consisted of one within-participant factor with two
+levels. Two dependent variables were measured: RTs and accuracy, and
+one independent variable was manipulated throughout the experiment,
+object cueing (manipulated within trials), with two levels: cued object
+(the target was the object associated with the location where the cue
+appeared) and uncued object (the target was the object associated with
+the uncued location).
+
+Discussion
+This first experiment provided initial evidence that purely exogenous
+non-predictive/peripheral retro-cues can automatically select S-R asso­
+ciations held in WM. This was shown by faster responses in nonpredictive cued trials compared to uncued object trials. In line with
+the TEC (Hommel, 2019), these results suggest that in our task, the event
+file would encompass all the elements of the trial. Critically, when the
+non-predictive cue is presented in one of the locations, the corre­
+sponding event file would be updated with that information, thus acti­
+vating the whole event file with all the content in WM.
+
+Statistical analyses
+To test our hypothesis, we performed a Generalized Linear Mixed
+Model (GLMM) (see e.g., Lo & Andrews, 2015). The GLMM included the
+factor object cueing as a fixed effect. The best structure for the random
+component was obtained by comparing all possible models appearing
+from the combination of the intercepts and slopes of object cueing, in the
+random factors of participants and trial. The model with the smallest
+Akaike Information Criteria (AIC) and Bayesian Information Criteria
+(BIC) was chosen as the most suited model for our data. Within this
+model, we performed the preregistered analysis of deviance on RTs since
+it is the most sensible variable for studying exogenous cueing effects in
+perception across the vast majority of studies (see e.g., Martín-Arévalo,
+Chica, & Lupiáñez, 2013; Martín-Arévalo et al., 2016; 2021). Before
+performing the analysis of deviance, trial rejection was conducted for
+each participant by selecting only correct trials and by filtering out catch
+trials. Lastly, p values in post-hoc comparisons were corrected with the
+Holm-Bonferroni method. Importantly, the model selection process was
+conducted independently of subsequent hypothesis testing. All data
+processing and analyses were carried out with RStudio 2022.02.3 and
+JASP 0.14.0.0. B. We also performed an additional equivalent explor­
+atory analysis of accuracy scores since the effect of exogenous attention
+is not so pronounced on accuracy scores, although it is usually consid­
+ered in WM literature (see e.g., Souza & Oberauer, 2016; Shepherdson,
+Oberauer & Souza, 2018; Rerko, Souza & Oberauer, 2014).
+
+Experiment 1B
+In Experiment 1B, we aimed at replicating and validating these re­
+sults under a shorter CTOA (250–350 ms) to test whether, akin to the
+perceptual domain, the exogenous cueing effects on WM contents would
+be boosted (Chica et al., 2013; Martín-Arévalo et al., 2013).
+Data availability
+Raw data, experimental files and analyses’ scripts for this experiment
+can be found at (https://osf.io/r8fks/?view_only=ca3358b6251b49d3
+bc4aa558d4429175). This experiment was not preregistered.
+Methods
+The method was like Exp.1A except in the following:
+Participants
+A total new sample of twenty-one naïve volunteers participated in
+this experiment (1 male, mean age of 20.7, SD=6.22). Sample size was
+determined by a sequential Bayes Factor approach as in the previous
+experiment.
+
+Results
+After comparing the 11 computed models, the best-suited model for
+our data, which included the random intercept and slope of object
+cueing in the random factors of participants and trial (AIC=72345;
+BIC=72404) was selected, and an analysis of deviance was performed
+within this GLMM. This analysis revealed a statistically significant dif­
+ference between cued and uncued object trials on RTs [X^2(1, N=23) =
+6.69, p = .01], with faster responses for cued (M=712 ms; SD=81 ms)
+than uncued object trials (M=730 ms; SD=80 ms) (See Table 1. and
+Fig. 2; cueing effect (uncued-cued object trials) = 18 ms; see Fig. 5, left
+panel). In fact, the Bayesian scores obtained from the BIC index, pro­
+vided strong evidence for this model (BF10 = 2.13e + 5).
+Additionally, the selected glmm model for accuracy scores
+(AIC=4781.8; BIC=4822.4, p < .001) which included the random
+
+Apparatus, stimuli, and procedure
+The task only varied in the implemented CTOA (250–350 ms instead
+of 500–700 ms).
+Results
+After comparing the 11 computed models, the best-suited model for
+our data, which included the random intercept and slope of object
+cueing in the random factors of participants and trial (AIC=64121;
+BIC=64179) was selected, and an analysis of deviance was performed
+within this GLMM. This analysis revealed a statistically significant
+4
+
+Á. Fuentes-Guerra et al.
+
+Journal of Memory and Language 140 (2025) 104571
+
+Fig. 2. Effects of object cueing on Reaction Times (RTs) in Experiment 1A and 1B. Note. The maximum and minimum Reaction Times’ (RTs) values are represented
+in the whiskers of the box plots. The Interquartile range (IQR) is displayed in the boxes by portraying the lower quartile, median and upper quartile. The half-violin
+plots represent the distribution of RTs across conditions.
+
+difference between cued and uncued object trials on RTs [X^2(1,N=21)
+= 25.47, p < .01], with faster responses for cued trials (M=714 ms;
+SD=106 ms) compared to uncued object trials (M=749 ms; SD=110 ms)
+(See Table 1. and Fig. 2 and Fig. 5 (left panel); cueing effect (uncuedcued trials) = 35 ms). Just like in Experiment 1A, the Bayesian scores
+obtained from the BIC index, provided strong evidence for this model
+(BF10 = 1.84e + 4).
+Moreover, selected glmm on accuracy scores (AIC=4855.4;
+BIC=4888.8, p = .04) which included the random intercept of subject
+revealed that the effect of object cueing was statistically significant [X^2
+(1,N=21) = 15.29, p < 0.001] (See Table 1.), with higher accuracy
+scores in cued (M=.86; SD=.09) vs. uncued object trials (M=.83;
+SD=.08).
+Lastly, in order to test our assumption of stronger exogenous cueing
+effects with a shorter CTOA, we computed two exploratory repeated
+measures ANOVAs combining the datasets from Experiment 1A and 1B.
+In these analyses, object cueing was set as a within-participant factor
+and experiment as a between-participant factor. The dependent vari­
+ables were RTs and accuracy scores. Regarding RTs, the interaction
+between object cueing and experiment didn’t reach significance [F
+(2,44) = 3.86, p = .056], but there was a numerically higher difference
+between cued and uncued trials in Experiment 1B than in Experiment 1A
+(35 ms vs. 18 ms, respectively). Furthermore, this analysis revealed a
+significant interaction between object cueing and experiment in accu­
+racy scores [F(2,44) = 6.00, p = .019], with higher differences between
+cued and uncued object trials in Experiment 1B than in Experiment 1A
+(.03 vs..01, respectively).
+
+learned to generalize the rule under which they had to encode the
+stimuli; that is, the location and the corresponding response. Conse­
+quently, the exogenous cue may just activate the motor rather than the
+S-R association. Additionally, the weighting mechanisms assigned to the
+different elements of the event file remained unexplored in these two
+previous studies. According to the updated version of the TEC
+(Memelink and Hommel, 2013; Hommel 2019), task demands affect the
+processing of event files during the retrieval stage.
+Hence, in our final experiment, we assessed whether exogenous retrocues interacted with all components of the event file (i.e., an object with
+a specific color, at a specific location, to be responded to with a specific
+response, etc.) equally or there were rather differences in the weights
+associated with each component, while ensuring that stimuli were being
+encoded and retrieved together with the response, namely, the S-R as­
+sociation. Here, we manipulated task demands by asking participants to
+respond based on location (as in previous experiments) or based on
+another additional element, namely, color. We expected exogenous
+prioritization of WM content independently of the task to be performed.
+Still, the effect should be more pronounced when the location was a
+relevant dimension of the task compared to other dimensions (like
+color), showing a more nuanced effect when not relevant. This hy­
+pothesis was based on the long empirical trajectory that associates
+exogenous attention with the spatial domain (Posner, 1980; Lupiáñez
+et al., 1997, 2013; Martín-Arévalo et al., 2013, 2016, 2021; Hu &
+Samuel, 2010; Hu et al., 2011). This experiment used the same CTOA
+(250–350 ms) as in Experiment 1B, given that results were stronger with
+this setting.
+
+Discussion
+
+Experiment 2
+
+This second complementary experiment replicated the previous
+pattern of results under a shorter CTOA, providing further evidence that
+exogenous cues can select automatically complex WM contents. This
+experiment further revealed higher cueing effect as the CTOA is
+reduced, in line with classical exogenous experiments in perception
+where a facilitatory effect (i.e., faster RTs and/or higher accuracy for
+cued vs. uncued trials) tends to be found at shorter CTOA (Chica et al.,
+2013; Lupiáñez et al., 2013; Martín-Arévalo et al., 2013).
+After carrying out the first two complementary studies, a few new
+questions emerged. First, it could be argued that participants may have
+
+In Experiment 2, we aimed at testing whether the presentation of a
+spatial non-predictive retro-cue would activate and prioritize a repre­
+sentation held in WM which was initially encoded according to a nonspatial feature (color). We expected to find faster RTs and/or more ac­
+curate responses for cued object trials compared to uncued object trials
+both when the binding was created based on the location, and similarly,
+when it was created according to a non-spatial feature such as the color,
+although with more pronounced effects for the former.
+
+5
+
+Á. Fuentes-Guerra et al.
+
+Journal of Memory and Language 140 (2025) 104571
+
+Data availability
+
+were carried out with RStudio 2022.02.3 and JASP 0.14.0.0. B.
+
+This study was preregistered (https://aspredicted.org/LV3_TL8) and
+raw data, experimental files and analyses’ scripts can be found at
+https://osf.io/r8fks/?
+view_only=ca3358b6251b49d3bc4aa558d4429175.
+
+Exploratory analyses
+Similar to Experiment 1, we also performed additional exploratory
+analyses regarding accuracy scores, and a hierarchical drift diffusion
+model (HDDM; Wiecki et al., 2013).
+
+Methods
+
+Results
+After comparing the 42 computed models, the best suited model for
+our data was selected. This model included the random slope and
+intercept of the interaction between object cueing and task in the
+random factor participant and trial (AIC=73348.17; BIC=73514.19; p
+< 0.001). Consequently, an analysis of deviance was performed within
+this GLMM. Critically, this analysis revealed a significant main effect of
+object cueing [X^2(1,N=21) = 19.18,p < .001] with faster responses in
+cued (M=715 ms; SD=108 ms) compared to uncued object trials
+(M=752 ms; SD=106 ms; cueing effect: uncued-cued trials = 36 ms; see
+Fig. 5, left panel). In contrast, neither the main effect of task [X^2(1,
+N=21) = 2.78,p = .096] nor the interaction between task and object
+cueing were statistically significant [X^2(1,N=21) = 0.1499,p = .699]
+(See Fig. 4).
+Additionally, the selected glmm on accuracy scores, which included
+the random intercept of participant and the random slope of task in the
+factor participant with the interaction between object cueing and task as
+fixed effects (AIC=5678.3; BIC=5732.8), revealed that both object
+cueing [X^(1,21) = 19.18, p < .001] and task [X^2(1,21) = 9.04, p < .05]
+were statistically significant, with higher accuracy scores in cued
+(M=.86; SD=.07) than uncued object trials (M=.83; SD=.09), and
+higher accuracy scores in location (M=.87; SD=.06) than color task
+(M=.81; SD=.11). Further, the interaction between these factors was
+also statistically significant [X^2(1,21) = 4.50, p = .03]. Post-hoc com­
+parisons revealed a significant difference between cued and uncued
+object trials only in the color task [X^2(1,21) = 4.43, p < .001] and a
+statistically significant difference between the color task and the loca­
+tion task only in uncued object trials [X^2(1,21) = -3.24, p = .02] (See
+Fig. 6).
+
+The method was similar to Exp.1B except in the following:
+Participants
+A new sample of twenty-one naïve volunteers participated in this
+experiment (5 males, mean age of 22.4 years, SD=3.84). Sample size
+was determined by a sequential Bayes Factor approach (see
+preregistration).3
+Design and Procedure
+In this experiment, each participant performed two different sessions
+(of 30 min each one). They were carried out on different days, with the
+order of the sessions counterbalanced between participants. Each ses­
+sion was composed of two runs of 92 trials each (80 regular, 12 catch),
+giving a total of 184 trials per full session. Just like in the previous
+experiment, participants underwent a 16 trials practice phase (14 reg­
+ular, 2 catch) before performing the experiment, which participants
+repeated until they achieved an accuracy of at least 85 %. Participants
+were allowed to rest in between runs.
+In one of the sessions, participants executed a choice-reaction task
+very similar to the one in the previous experiments, but with an addi­
+tional feature (i.e., color). In this experiment, the two lateralized stimuli
+appeared either in an orange or green background (randomly assigned
+and changed from trial to trial). Still, participants were instructed to
+perform an S-R association based on the location of the stimuli, just like
+in the previous experiments, and to ignore the color of the stimuli which
+was effectively irrelevant. In contrast, during the other session, the same
+task display was presented, but the instructions were altered. The S-R
+associations, in this case, were defined according to the color of the
+stimuli, not the location. Participants had to associate an image with a
+specific background color (orange or green) to a certain response
+(middle or index fingers; counterbalanced across participants), regard­
+less of its position (See Fig. 3). Consequently, the design was a 2 withinparticipants factor with 2 levels: object cueing (target is the cued object
+vs. uncued object, which changed trial-by-trial) x task (location relevant
+vs. color relevant, which was manipulated between sessions).
+
+Hierarchical Drift Diffusion Model
+To disentangle the possible mechanisms underlying this difference
+between tasks with the exact same cue, we carried out an exploratory
+HDDM analysis of our data. HDDM treats two-alternative decisionmaking as a process of evidence accumulation towards one of two
+decisional boundaries over time (Ratcliff & Rouder, 1998). It has the
+advantage of considering the available data in its entirety, thus
+retrieving parameters to fit both correct trials and errors RTs distribu­
+tions. Crucially, such parameters can be mapped onto psychologically
+meaningful processes, making it possible to infer which cognitive op­
+erations are affected by the experimental manipulations. In its simplest
+formulation, the decision process can be described by 4 parameters: the
+drift rate (v), reflecting the pace and efficiency of evidence accumula­
+tion; the non-decision time (t0), encompassing all cognitive processes not
+directly associated with the decision itself, such as perceptual and motor
+operations; the decision threshold (a), referring to the amount of evidence
+required to reach a specific decision; and the starting point (z), indicating
+whether there is a systematic bias towards one of the two options. The
+HDDM is considered hierarchical insofar as it first uses data from all the
+participants to estimate group-level mean parameters, and then it uses
+these group-level priors to constrain the estimation of the participantspecific parameters. Consequently, it allows for more stable results,
+even with fewer data per participant with respect to the traditionally
+used algorithms (Lerche et al., 2017). Based on previous studies with
+similar tasks (see e.g. Formica et al., 2024), we first established a cut-off
+so that RTs below 200 were discarded. Moreover, the analysis was
+performed only on regular (non-catch) trials. Finally, when estimating
+the models, we used the HDDM command “p_outlier” to specify a
+
+Statistical analyses
+Preregistered analysis
+To test our hypothesis, we performed a GLMM with the factor object
+cueing and task as fixed effects. The best structure for the random
+component was obtained by comparing all possible models appearing
+from the combination of the intercepts and slopes of object cueing, in the
+random factors of participants, trial, and session order. The model with
+the smallest AIC and BIC was chosen as the most suited model for the
+random component of the model. Afterwards, the fixed component was
+obtained by comparing p values between the different models which
+were achieved by altering the possible interactions between the inde­
+pendent variables. Within the selected model, we performed an analysis
+of deviance on RTs. Before performing the analysis of deviance, trial
+rejection was conducted for each participant by selecting only correct
+trials and by filtering out catch trials. All data processing and analyses
+3
+Note that the final sample size deviated from the preregistered one due to
+practical issues with the participants’ recruitment method. Nevertheless, 20
+participants were enough (BF10 = 12.227).
+
+6
+
+Á. Fuentes-Guerra et al.
+
+Journal of Memory and Language 140 (2025) 104571
+
+Fig. 3. Sequence of events in a given trial. Note. ITI: inter-trial interval. CTOA: cue-target onset asynchrony.
+
+that relies on drift rate to model congruency effects (Ulrich et al., 2015;
+White et al., 2018). In addition, Shepherdson and colleagues (2018)
+showed an increase in drift rate and a reduction in non-decision time
+when retro-cues benefit memory performance. Thus, if object cueing
+and/or task impact drift rate, it would imply a decrease in the quality of
+the evidence entering the decision process. In contrast, a modulation of
+t0 would reflect a slowing in the non-decision phase that could
+encompass perceptual, retrieval, and motor processes associated with
+the decision (Formica et al., 2023).
+We thus compared two models that differed on whether the
+threshold parameter would also differ across tasks. Importantly, r-hats
+values for both models were below 1.05 which is interpreted as adequate
+convergence within each model (Makowski et al., 2019).
+Model fitting was assessed based on the Deviance Information Cri­
+terion (DIC), where lower values indicate better fit of the model to the
+empirical data. In this case, the evidence for a difference in DIC between
+two models was not strong (considering the traditional minimal differ­
+ence of 5, see e.g. Cain & Zhang, 2019). Hence, we decided to go for the
+simpler model (see Table 2.) and therefore, here we report the results of
+such model.
+After evaluating model fit, the best model was the one where both
+object cueing and task were mapped onto drift rate and non-decision
+time. Regarding drift rate, we found a main effect of object cueing (b
+= -0.22, 95 % HDI=[-0.35, − 0.1], pd = 100 %) and task (b = -0.21, 95 %
+HDI=[0.08, 0.34], pd = 100 %), suggesting that evidence accumulation
+was faster in cued, compared to uncued object trials, and in the location,
+compared to the color task. Interestingly, we also observed an object
+cueing x task interaction in drift rate (b = -0.22, 95 % HDI=[-0.35,
+− 0.1], pd = 100 %). This interaction revealed that participants accu­
+mulated evidence faster in cued, compared to uncued object trials, when
+performing the color task but not in the location task (See Fig. 7).
+
+Fig. 4. Effects of object cueing and task on RTs. Note. The maximum and
+minimum Reaction Times’ values are represented in the whiskers of the box
+plots. The Interquartile range (IQR) is displayed in the boxes by portraying the
+lower quartile, median and upper quartile. The half-violin plots represent the
+distribution of RTs across conditions.
+
+mixture model that assumes outliers come from a uniform distribution,
+with a fixed probability of 0.05 (therefore, 5 % of trials would be
+considered outliers). Estimating model parameter distributions within
+the HDDM toolbox relies on a Markov-chain Monte Carlo sampling
+procedure (Gamerman & Lopes, 2006). We used a chain with 10,000
+samples; the first 1000 samples were discarded as burn-in, allowing the
+sampling procedure to settle around a value after an initial more
+exploratory sampling. To reduce autocorrelation in the retained sam­
+ples, we additionally discarded every second sample.
+We hypothesized our two independent variables (object cueing and
+task) to impact both the rate of evidence accumulation (v) and/or the
+non-decision time (t0). This rationale is partly based on recent literature
+7
+
+Á. Fuentes-Guerra et al.
+
+Journal of Memory and Language 140 (2025) 104571
+
+Fig. 5. Cueing effects on RTs on the full experimental set.Note. The maximum and minimum Reaction Times’ values are represented in the whiskers of the box plots.
+The Interquartile range (IQR) is displayed in the boxes by portraying the lower quartile, median and upper quartile. The mean is represented as a black dot.
+
+Fig. 6. Effects of object cueing and task on Accuracy Scores. Note. The maximum and minimum Accuracy Scores’ values are represented in the whiskers of the box
+plots. The Interquartile range (IQR) is displayed in the boxes by portraying the lower quartile, median and upper quartile. The half-violin plots represent the dis­
+tribution of Accuracy Scores across conditions.
+Table 2
+Model fitting between the two proposed drift diffusion models.
+Model #
+
+Object Cueing
+
+Task
+
+DIC
+
+1
+2
+
+v, t0
+v, t0
+
+v, t0, a
+v, t0
+
+1656.96
+1654.77
+
+Note. v: drift rate; t0: non-decision time; a: decision threshold; DIC: Deviance
+Information Criterion
+
+When looking at non-decision time, we again found evidence for a
+main effect of object cueing (b = 0.03, 95 % HDI=[0.02, 0.04], pd =
+100 %). In contrast, the effect of task was not significant (b = 0.0006, 95
+% HDI=[-0.01,0.01], pd = 56.3 %), suggesting faster encoding of sen­
+sory information and/or execution of motor responses in cued compared
+to uncued object trials, regardless of the task. Importantly, the interac­
+tion between these two factors was significant (b = 0.04, 95 % HDI=
+[0.02, 0.05], pd = 100 %), revealing a greater difference between cued
+and uncued object trials during the location task, compared to the color
+one (See Fig. 8).
+
+Fig. 7. Drift rate of the object cueing factor in the two tasks.
+
+predictive, peripheral retro-cue was able to automatically select and
+prioritize complex representations held in WM, as shown by both in RTs
+and accuracy scores. Moreover, in RTs, it also provided evidence that
+this effect was maintained even when the task demands were altered and
+the S-R association in retrieving was ensured. These results fit well with
+
+Discussion
+The second experiment showed once again that an exogenous non8
+
+Á. Fuentes-Guerra et al.
+
+Journal of Memory and Language 140 (2025) 104571
+
+Nobre, 2003, 2012; Myers, Stokes & Nobre, 2017). Recent studies (e.g.,
+van Ede et al., 2020) have reported converging evidence that not only
+endogenous but also symbolic, central, non-predictive retro-cues can
+select simple visual WM contents. Here, we extend previous findings by
+showing that 1) purely exogenous/automatic lateralized cues can induce
+similar facilitatory effects; 2) these effects go beyond visual WM and can
+operate on complex and ecological stimuli that require the execution of
+S-R associations. This result is especially important given that the ma­
+jority of studies that are starting to conceptualize the automatic selec­
+tion of WM contents through exogenous cues employ simple stimuli with
+low ecological validity (see Hu & Samuel, 2010; Hu et al., 2011; Ber­
+ryhill et al., 2012; van Ede et al., 2020; Chao, Hsiao, & Huang, 2022),
+especially compared to real-world meaningful stimuli (Brady, Strömer,
+& Alvarez, 2016; Brady & Störmer, 2020; Asp, Stömer, & Brady, 2021;
+Chung, Brady, & Strömer, 2023). Hence, our results provide more
+applied, further insight into conceptualizing the interaction between
+pure exogenous attention and WM. A critical aspect here is that − as
+neutral cues were not included − we cannot entirely rule out a potential
+cost from uncued trials rather than a benefit from cued trials in our re­
+sults. Future studies should properly disentangle between these two
+possibilities.
+We departed from Hommel’s (2019) conceptualization of event files
+to understand the mechanisms under which exogenous attention can
+automatically select space and its associated WM content. This idea of
+feature binding in attentional selection is also shared by Manohar and
+collaborators (2019) under a more biological perspective. These authors
+propose that persistent neuronal activation serves as the focus of
+attention that encodes recent activity patterns into synapses. Addition­
+ally, rapid plasticity in flexibly-coding neurons allows features to be
+bound together into objects, with an emergent property being that the
+last item is maintained actively. Moreover, recent previously attended
+items are preserved instead in synaptic traces, therefore, they are in a
+non-privileged state but, importantly, can be reactivated by partial in­
+formation (Manohar et al., 2019). In this regard, the Experiment 2
+suggested that not all the same features of the event file have the same
+weight, and that some might be more easily accessible by spatial retrocues than others (Memelink & Hommel, 2013). This idea is in line with
+Chao, Hsiao, and Huang (2022), where task demands are thought to
+modulate the binding processes. Particularly, they showed that
+depending on the task context (i.e., a target detection task, a target
+location task, or a target discrimination task) the binding between the
+different features of the target could be modulated. In fact, only when
+discrimination was required, there was clear evidence for the binding of
+the form and other features of the target. In our case, the different eventfile features (i.e., location or color) tested in this experiment could be
+used to select the associated WM representations. However, it should be
+mentioned that in the color task, even though participants had to ignore
+the location, the placeholders were lateralized and therefore, location
+was never fully irrelevant, which can be critical when interpreting these
+results. This is also in agreement with Hu and collaborators (2010;
+2011), who highlight location as a key characteristic when considering
+exogenous effects. In addition to task demands, CTOA manipulations
+can also modulate exogenous effects, as it has been proven in exogenous
+attention classical studies in perception (see Chica et al., 2014), where a
+specific CTOA depending on the type of task (i.e., detection, discrimi­
+nation, etc.) can reduce or increment the exogenous cueing effect.
+Coherently, in our task (a choice-reaction/discrimination retro-cue
+task), even though the cue matched something previously encoded into
+working memory, the decrement in CTOA potentiated the exogenous
+effect, increasing the differences in RTs and accuracy scores in cued
+compared to uncued object trials. Another critical factor in our outcomes
+could be the level of execution of the S-R associations, since there is
+evidence that visual WM representations directly coupled to an action
+plan render this stimulus more salient (Trentin, Slagter & Olivers, 2023).
+In fact, these authors propose that visual WM is a fundamentally actionoriented cognitive operation, and their results support the notion that
+
+Fig. 8. Non-decision time of the object cueing factor in the two tasks.
+
+the conceptualization of event files (Hommel, 2019): the exogenous
+retro-cue was able to interact with WM through space but also with other
+non-spatial dimensions, such as color (Hu & Samuel, 2010). Addition­
+ally, in accuracy scores, this experiment provided evidence for a sig­
+nificant difference in task, with higher accuracy scores on the location
+task compared to the color task, which supports previous findings that
+stress the weight of the location dimension when studying exogenous
+attention in perception (see Posner, 1980; Lupiáñez et al., 1997, 2013;
+Martín-Arévalo et al., 2013, 2016, 2021; Hu & Samuel, 2010; Hu et al.,
+2011). However, the accuracy difference between cued and uncued
+object trials was only significant in the color task. On top of that, the
+difference between the two tasks was only significant in uncued object
+trials. These exploratory findings highlight the importance of consid­
+ering task demands when evaluating exogenous effects on WM contents
+and stress the fact that there are certain discrepancies in the different
+dependent variables (RTs and accuracy scores). Consequently, more
+sensitive complementary analyses like HDDM appear to show that the
+cost attached to uncued object trials in the location task loads mainly in
+non-decision time, while in the color task, it seems to be related to drift
+rate. These results, in addition to evidence with mainly accuracy scores,
+raise the intriguing possibility that, on the one hand, a ceiling effect
+might be present on accuracy scores in the location task and on the
+other, that the mechanisms through which exogenous attention interacts
+with WM contents depend on the relevant characteristics through which
+these contents have been encoded. Nevertheless, it is still difficult to
+determine whether the different results are due to the relevance (the
+spatial dimension was less relevant in the color task compared to the
+location task) or to the specific feature by which the binding was coded
+(color-R mapping vs. location-R mapping). Future studies will shed light
+on this matter.
+General Discussion
+This research had a two-fold aim: first, it intended to test whether
+pure exogenous attention as in perception can select and prioritize
+complex WM contents by evaluating its implications in action control.
+Additionally, it also aimed at assessing whether this effect is present
+throughout different task settings with complex stimuli and demands.
+This was achieved by implementing an exogenous retro-cueing paradigm
+that capitalized on S-R associations held in WM, across two different
+tasks.
+In two experimental series, over three different experiments, we
+observed a general facilitatory effect: faster RTs and/or more accurate
+responses in retrieving from WM the content of cued compared to
+uncued objects (see Souza & Oberauer, 2016; Shepherdson, Oberauer &
+Souza, 2018; Rerko, Souza & Oberauer, 2014). These results constitute
+initial evidence that pure exogenous attention interacts with S-R asso­
+ciations held in WM, which aligns with previous literature (Gazzaley &
+9
+
+Journal of Memory and Language 140 (2025) 104571
+
+Á. Fuentes-Guerra et al.
+
+attention is better conceived as an emergent property of the coupling of
+motor to sensory representation. In this regard, for example, van Ede
+and collaborators’ (2020) asked participants to move the mouse and
+reproduce a certain orientation. Hence, future studies should address
+whether the level of implication of the motor response could be a
+modulator of pure exogenous effects on WM. Lastly, one potential lim­
+itation is that our results could be explained just by stimulus activation
+rather than S-R associations or due to long-term memories. Neverthe­
+less, there are several reasons that lead us to believe that the response
+component must be activated as well (i.e., the S-R association) and held
+active in WM, which align well with the BRAC (Frings et al., 2020) and
+the TEC (Hommel, 2019) theories: responses were orthogonalized to the
+location in all three experiments, the association between space and
+color was completely random in Experiment 2, the colors appeared in
+any of the two locations from trial-to-trial, and including catch trials
+force the active maintenance of both representations in WM with its
+corresponding location, color, and response trial-to-trial. In any case, all
+these aspects should be considered in future studies.
+Furthermore, Experiment 2 also revealed certain differences between
+the color and location tasks in RT and accuracy scores. Here, we used
+HDDM to provide deeper insight into the possible mechanisms under­
+lying these differences. This analysis hinted at the possibility of a dif­
+ference in the mechanisms through which exogenous non-predictive
+cues interact with the rest of the elements of the event file. Considering
+the drift rate, in the color task, evidence accumulated faster for the cued
+as compared to uncued object trials, whereas no differences were found
+in the location task. The fact that drift rate was affected by the exoge­
+nous non-predictive retro-cue is in line with the matched filter hypoth­
+esis (Hayden & Gallant, 2013; Myers et al., 2015, Muhle-Karbe, Myers &
+Stokes, 2021), which predicts that differences between cued and uncued
+trials are primarily driven by a greater efficiency in extracting relevant
+information for later decisions in cued trials. This hypothesis holds that
+such benefit is afforded by selective attention shifts the tuning properties
+of sensory and association neurons so that they more closely approxi­
+mate the relevant stimulus. Regarding non-decision time, there was a
+benefit associated with cued object trials, primarily in the location task.
+This alteration in non-decision time in the location task could be
+explained by a retrieval head start hypothesis (Souza & Oberauer,
+2016). Essentially, according to this hypothesis, cues could act primarily
+to reduce the time taken to access the relevant representation in memory
+upon probe presentation, and in addition protect cued representations
+from visual interference (Shepherdson, 2018).
+Thus, although retro-cues affected both drift rate and non-decision
+time (but differently as a function of the task set), our results raise the
+possibility that the mechanisms through which exogenous attention
+selects and prioritizes complex WM contents depend, at least in part, on
+the hierarchical relevance of the dimensions that have been encoded.
+This is also coherent with task-set modulations over the exogenous
+cueing effect when using classical paradigms in perception (MartínArévalo et al., 2021). Altogether, this idea that attentional modulations
+in WM are complex and possibly mediated by several processes and/or
+mechanisms follows van Ede and Nobre’s (2023) proposal in which they
+argue that internal selective attention can be driven by multiple sources,
+can act on various representational targets, and can be mediated by
+multiple stages and mechanisms to yield various consequences, high­
+lighting the complexity and richness of this interaction. Furthermore,
+these results also fall in line with recent studies evaluating S-R bindings
+under different task sets (i.e., detection, localization, or discrimination
+tasks), which provide evidence that binding effects are task-dependent
+(Schöpper et al., 2020; Schöpper & Frings, 2022; 2023). Hence, future
+studies should consider task demands as well as more fine-grained ap­
+proaches such as HDDM in combination with neural signals or ocular
+patterns. Both ocular patterns and brain oscillations have proven to be
+informative in uncovering processes like covert spatial attention (see
+Liu, Nobre & van Ede, 2022). In essence, by evaluating ocular move­
+ments and/or neural oscillations, we could possibly disentangle the
+
+mechanisms underlying exogenous attentional orientation (Balestrieri,
+Michel, & Busch, 2022) and the selection and prioritization of WM
+contents (Beste, Münchau & Frings, 2023).
+Conclusion
+The present study provides initial evidence that pure exogenous
+attention can select and prioritize complex WM contents including S-R
+associations. Moreover, it also shows that, besides space, exogenous
+attention can interact with other dimensions of the S-R held in WM.
+Importantly, our results suggest that exogenous attention might operate
+on different dimensions of WM content through different mechanisms.
+In sum, the obtained evidence challenges the classical conceptualiza­
+tions of exogenous attention by opening the door to a more fine-grained
+approach which posits that regardless of its automaticity, exogenous
+attention might interact with complex WM contents in a more sophis­
+ticated manner as it was initially thought. Essentially, the base of this
+interaction might rely on the necessity of a flexible behavioral adapta­
+tion to the changing demands of the environment.
+CRediT authorship contribution statement
+Á. Fuentes-Guerra: Conceptualization, Methodology, Software,
+Validation, Formal analysis, Investigation, Data Curation, Writing –
+original draft, Writing – review & editing, Visualization, Project
+administration. F. Botta: Writing – review & editing, Validation, Su­
+pervision, Conceptualization. J. Lupiáñez: Writing – review & editing,
+Validation, Supervision, Conceptualization. P. Talavera: Investigation.
+E. Martín-Arévalo: Writing – review & editing, Validation, Supervision,
+Resources, Methodology, Funding acquisition, Conceptualization. C.
+González-García: Writing – review & editing, Validation, Supervision,
+Software,
+Resources,
+Methodology,
+Funding
+acquisition,
+Conceptualization.
+Declaration of competing interest
+The authors declare that they have no known competing financial
+interests or personal relationships that could have appeared to influence
+the work reported in this paper.
+Data availability
+All the preregistrations, task design script, raw data and the scripts
+for the statistical analyses are uploaded into an open repository which is
+linked in the main text.
+Acknowledgments
+This work was supported by the Spanish Ministry of Economy, In­
+dustry and Competitiveness [research project PID2020-116342GA-I00
+to CGG and EMA, funded by MCIN/ AEI /10.13039/501100011033].
+This work is part of the doctoral thesis of AFGT, under the supervision of
+CGG and EMA.
+References

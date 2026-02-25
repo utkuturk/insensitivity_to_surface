@@ -1,0 +1,854 @@
+
+```{r}
+#| label: exp1-data-prep
+
+exp1 <- read_experimental_data("../../utility/data/results_8cond.txt", subj_offset = 2500, item_offset = 2500)
+
+exp1 %<>% mutate(exp_condition = case_when(
+    exp_condition == "filler" & item_num <= 120 ~ "filler_ung",
+    exp_condition == "filler" & item_num >= 121 ~ "filler_g",
+    exp_condition == "practice" ~ "practice",
+    exp_condition == "condition_gen_b" ~ "condition_gen_b",
+    exp_condition == "condition_gen_a" ~ "condition_gen_a",
+    exp_condition == "condition_gen_c" ~ "condition_gen_c",
+    exp_condition == "condition_gen_d" ~ "condition_gen_d",
+    exp_condition == "condition_rc_b" ~ "condition_rc_b",
+    exp_condition == "condition_rc_a" ~ "condition_rc_a",
+    exp_condition == "condition_rc_c" ~ "condition_rc_c",
+    exp_condition == "condition_rc_d" ~ "condition_rc_d"
+))
+
+
+exp1.conditions <- data.frame(
+    exp_condition = c("practice", "condition_gen_a", "condition_gen_b", "condition_gen_c", "condition_gen_d", "condition_rc_a", "condition_rc_b", "condition_rc_c", "condition_rc_d", "filler_ung", "filler_g"),
+    experiment = c("practice", "AgrAttr", "AgrAttr", "AgrAttr", "AgrAttr", "AgrAttr", "AgrAttr", "AgrAttr", "AgrAttr", "filler", "filler"),
+    condition = c("practice", "gen_a", "gen_b", "gen_c", "gen_d", "rc_a", "rc_b", "rc_c", "rc_d", "filler_ung", "filler_g"),
+    grammatical = c("practice", "ungram", "gram", "ungram", "gram", "ungram", "gram", "ungram", "gram", "ungram", "gram"),
+    verb_num = c("practice", "pl", "sg", "pl", "sg", "pl", "sg", "pl", "sg", "sg", "pl"),
+    attractor_num = c("practice", "pl", "pl", "sg", "sg", "pl", "pl", "sg", "sg", "filler", "filler"),
+    match = c("practice", "mismatch", "mismatch", "match", "match", "mismatch", "mismatch", "match", "match", "filler", "filler"),
+    att_type = c("practice", rep("gen", 4), rep("rc", 4), "filler", "filler"),
+    stringsAsFactors = T
+)
+
+exp1 %<>% left_join(exp1.conditions, by = "exp_condition")
+
+exp1.no.practice <- exp1 %>% subset(exp_condition != "practice")
+
+# accuracy: 0.25
+# rt_below: 200
+# rt_upper: 4999
+exp1.clean <- exclude_bad_subjects_8(
+    exp1,
+    accuracy_threshold = 0.25,
+    rt_below = 200,
+    rt_upper = 4999
+)
+
+exp1.clean %<>% no_null_no_practice(.)
+
+stopifnot(exp1.clean %>% subset(is.na(response_yes)) %>% nrow() == 0)
+
+# DIFF DATA =====
+exp1.diff <- dplyr::anti_join(exp1, exp1.clean) %>%
+    filter(exp_condition != "practice")
+
+exp1.clean$isGram <- ifelse(exp1.clean$grammatical == "ungram", F, T)
+exp1.clean$p_acc <- with(exp1.clean, response_yes & isGram)
+exp1.clean %<>% mutate(ResponseCorrect = (response_yes == (grammatical == "gram")))
+
+# Merge
+
+exp1.clean %<>% ungroup() %>%
+    dplyr::select(
+        source = experiment,
+        grammatical,
+        attractor_num,
+        att_type,
+        match,
+        age,
+        # condition,
+        subject,
+        trial_no,
+        item,
+        response_yes,
+        RT,
+        ResponseCorrect
+    )
+exp1.clean$experiment <- "Experiment 1"
+exp1.clean$grammatical %<>% dplyr::recode(gram = "grammatical", ungram = "ungrammatical")
+exp1.clean$attractor_num %<>% dplyr::recode(pl = "plural", sg = "singular")
+exp1.clean$att_type %<>% dplyr::recode(gen = "gen", rc = "rc")
+exp1.clean$item %<>% as.factor()
+exp1.clean$subject %<>% as.character()
+
+```
+
+```{r}
+#| label: exp1-avgs
+
+
+exp1.avgs <- exp1.clean %>%
+    filter(match != "filler") %>%
+    group_by(grammatical, attractor_num, att_type) %>%
+    summarise(
+        successes = sum(response_yes, na.rm = TRUE),
+        N = sum(!is.na(response_yes)),
+        .groups = "drop"
+    ) %>%
+    mutate(ci_mat = purrr::pmap(
+        list(successes, N),
+        ~ DescTools::BinomCI(x = ..1, n = ..2, conf.level = 0.95, method = "clopper-pearson")
+    )) %>%
+    mutate(ci_mat = purrr::map(ci_mat, ~ as_tibble(.))) %>%
+    unnest(ci_mat) %>%
+    mutate(
+        p_hat = successes / N,
+        lwr   = lwr.ci,
+        upr   = upr.ci
+    ) %>%
+    select(grammatical, attractor_num, att_type, successes, N, p_hat, lwr, upr)
+
+exp1.avgs.filler <- exp1.clean %>%
+    filter(match == "filler") %>%
+    group_by(grammatical, attractor_num, att_type) %>%
+    summarise(
+        successes = sum(ResponseCorrect == TRUE, na.rm = TRUE),
+        N = sum(!is.na(ResponseCorrect)),
+        .groups = "drop"
+    ) %>%
+    mutate(ci_mat = purrr::pmap(
+        list(successes, N),
+        ~ DescTools::BinomCI(x = ..1, n = ..2, conf.level = 0.95, method = "clopper-pearson")
+    )) %>%
+    mutate(ci_mat = purrr::map(ci_mat, ~ as_tibble(.))) %>%
+    unnest(ci_mat) %>%
+    mutate(
+        p_hat = successes / N,
+        lwr   = lwr.ci,
+        upr   = upr.ci
+    ) %>%
+    select(grammatical, attractor_num, att_type, successes, N, p_hat, lwr, upr)
+
+
+```
+
+```{r}
+#| label: process-turklogacev2024
+#| output: FALSE
+source("../../utility/hsp/turklogacev24.R")
+```
+
+```{r}
+#| label: exp1-text-inputs
+
+# I want accuracy, not the response yes
+exp1.avgs.filler %<>%
+    mutate(old.lwr = lwr, old.upr = upr) %>%
+    mutate(
+        p_hat = if_else(grammatical == "ungrammatical", 1 - p_hat, p_hat),
+        lwr = if_else(grammatical == "ungrammatical", 1 - old.upr, old.lwr),
+        upr = if_else(grammatical == "ungrammatical", 1 - old.lwr, old.upr)
+    ) %>%
+    select(-old.lwr, -old.upr)
+
+
+exp1.acc.threshold <- 0.25
+
+exp1.subj_screen <- exp1 %>%
+    group_by(subject, experiment, condition, grammatical, verb_num, attractor_num, att_type) %>%
+    summarise(
+        p_yes = mean(response_yes, na.rm = TRUE),
+        .groups = "drop"
+    ) %>%
+    mutate(expcond = paste(experiment, condition, sep = "_")) %>%
+    dplyr::select(
+        -experiment,
+        -condition,
+        -grammatical,
+        -verb_num,
+        -attractor_num,
+        -att_type
+    ) %>%
+    tidyr::pivot_wider(
+        names_from = expcond,
+        values_from = p_yes
+    ) %>%
+    mutate(
+        delta_gen_dc = AgrAttr_gen_d - AgrAttr_gen_c,
+        delta_rc_dc = AgrAttr_rc_d - AgrAttr_rc_c
+    )
+
+exp1.bad_subjects_gen <- exp1.subj_screen %>%
+    filter(delta_gen_dc <= exp1.acc.threshold) %>%
+    pull(subject) %>%
+    unique()
+
+exp1.bad_subjects_rc <- exp1.subj_screen %>%
+    filter(delta_rc_dc <= exp1.acc.threshold) %>%
+    pull(subject) %>%
+    unique()
+
+exp1.bad_subjects_both <- intersect(exp1.bad_subjects_gen, exp1.bad_subjects_rc)
+exp1.bad_subjects_any <- union(exp1.bad_subjects_gen, exp1.bad_subjects_rc)
+
+exp1.n_bad_gen <- length(exp1.bad_subjects_gen)
+exp1.n_bad_rc <- length(exp1.bad_subjects_rc)
+exp1.n_bad_both <- length(exp1.bad_subjects_both)
+exp1.n_bad_any <- length(exp1.bad_subjects_any)
+
+exp1.nsubj.raw <- n_distinct(exp1$subject)
+exp1.nsubj <- exp1.nsubj.raw
+exp1.nsubj.analysis <- n_distinct(exp1.clean$subject)
+exp1.p_subj_excluded <- round(100 * exp1.n_bad_any / exp1.nsubj.raw, 2)
+
+exp1.nsubj.nontr <- exp1 %>%
+    subset(natturk == "nat_non_turk") %>%
+    .$subject %>%
+    unique() %>%
+    length()
+
+exp1.after_subj <- exp1 %>%
+    filter(!subject %in% exp1.bad_subjects_any)
+exp1.n_rows_removed_subject <- nrow(exp1) - nrow(exp1.after_subj)
+exp1.after_subj_nonpractice <- exp1.after_subj %>%
+    filter(exp_condition != "practice")
+exp1.n_rows_removed_subject_nonpractice <- nrow(exp1.no.practice) - nrow(exp1.after_subj_nonpractice)
+
+exp1.n_rt_fast <- exp1.after_subj_nonpractice %>% filter(RT <= 200) %>% nrow()
+exp1.n_rt_slow <- exp1.after_subj_nonpractice %>% filter(RT >= 4999) %>% nrow()
+exp1.n_removed_rt <- exp1.n_rt_fast + exp1.n_rt_slow
+exp1.p_removed_rt <- round(100 * exp1.n_removed_rt / nrow(exp1.after_subj_nonpractice), 2)
+
+exp1.after_subj_rt_nonpractice <- exp1.after_subj_nonpractice %>%
+    filter(RT < 4999 & RT > 200)
+
+exp1.n_trials.analysis <- nrow(exp1.clean)
+exp1.n_trials.raw <- nrow(exp1.no.practice)
+exp1.n_trials.removed_total <- exp1.n_trials.raw - exp1.n_trials.analysis
+exp1.p_trials.removed_total <- round(100 * exp1.n_trials.removed_total / exp1.n_trials.raw, 2)
+exp1.n_missing_trials <- exp1.after_subj_rt_nonpractice %>% filter(is.na(response_yes)) %>% nrow()
+
+exp1.deletion <- round(100 * ((nrow(exp1.no.practice) - nrow(exp1.clean)) / nrow(exp1.no.practice)), 2)
+
+exp1.meanage <- mean(asi(exp1.clean$age)) %>% round()
+exp1.maxage <- max(asi(exp1.clean$age))
+exp1.minage <- min(asi(exp1.clean$age))
+
+# FILLER AVERAGES
+
+exp1.avgs.filler %<>% mutate(text = paste0("M = ", round(p_hat, 2), ", CI = [", round(lwr, 2), ",", round(upr, 2), "]"))
+
+exp1.avgs %<>% mutate(text = paste0("M = ", round(p_hat, 2), ", CI = [", round(lwr, 2), ",", round(upr, 2), "]"))
+
+
+# Bind and set the desired x-axis order: rc → gen (current) → gen-tl (T&L 2024)
+tl24.avgs$att_type <- "gen-tl"
+all.avgs <- bind_rows(tl24.avgs, exp1.avgs) %>%
+    dplyr::mutate(
+        att_type = factor(att_type, levels = c("rc", "gen", "gen-tl"))
+    )
+
+
+```
+
+## Participants
+
+We recruited `r exp1.nsubj.raw` undergraduate students to participate in the experiment in exchange for course credit. All participants self-identified as native Turkish speakers, with an average age of `r exp1.meanage` years (range: `r exp1.minage`-`r exp1.maxage`).
+
+Subject-level screening used two discrimination checks. We excluded participants whose accuracy was below `r 100*exp1.acc.threshold`% in either Nominal or Relative Clause conditions with singular attractor and singular-marked verb. `r exp1.n_bad_gen` participant were below threshold in Nominal conditions, and `r exp1.n_bad_rc` participant(s) were below threshold in Relative Clause conditions, resulting in `r exp1.n_bad_any` unique participant(s) excluded at subject level (`r exp1.p_subj_excluded`% of the recruited sample). This subject-level filtering removed `r exp1.n_rows_removed_subject_nonpractice` rows before trial-level trimming.
+
+At the trial level, response-time trimming removed `r exp1.n_removed_rt` trials (`r exp1.n_rt_fast` with RT <= 200 ms; `r exp1.n_rt_slow` with RT >= 4999 ms; `r exp1.p_removed_rt`% of trials). After RT trimming, there were no missing responses. In total, `r exp1.p_trials.removed_total`% of collected trials were excluded, and the final dataset contained `r exp1.nsubj.analysis` participants and `r exp1.n_trials.analysis` observations.
+
+## Materials
+
+We used 40 sets of sentences like Table \ref{tab:stimuli_design}, in which we manipulated (i) the number of the attractor, (ii) the type of the attractor, and (iii) the number agreement on the verb. Both plural markings were marked with the suffix *-lAr*, while the singular number and singular agreement were marked by its absence.
+
+
+```{=latex}
+\begin{table}[ht]
+\centering
+\caption{Experimental conditions. The Attractor was manipulated for number and type. The Verb was manipulated to match or mismatch the head noun (always singular), creating Grammatical and Ungrammatical conditions.}
+\label{tab:stimuli_design}
+
+% Using \small to fit page width without scaling
+\small 
+\begin{tabular}{@{}ll l ll@{}}
+\toprule
+& & & \multicolumn{2}{c}{\textbf{Grammaticality (Verb Suffix)}} \\ \cmidrule(l){4-5} 
+\textbf{Attr. Type} & \textbf{Attr. Num} & \textbf{Attractor} & \textbf{Grammatical} & \textbf{Ungrammatical (*)} \\ \midrule
+
+% Verbal Section
+% --- VERBAL SECTION ---
+\multirow{4}{*}{\textbf{Verbal}} 
+  & \multirow{2}{*}{SG} & Tut-tuğ-u & zıpla-dı & *zıpla-dı-lar \\
+  & & \scriptsize \textit{hire-\textsc{nmlz-poss}} & \scriptsize \textit{jump-\textsc{pst}} & \scriptsize \textit{jump-\textsc{pst-pl}} \\ \cmidrule(l){2-5}
+  
+  & \multirow{2}{*}{PL} & Tut-tuk-lar-ı & zıpla-dı & *zıpla-dı-lar \\
+  & & \scriptsize \textit{hire-\textsc{nmlz-pl-poss}} & \scriptsize \textit{jump-\textsc{pst}} & \scriptsize \textit{jump-\textsc{pst-pl}} \\ \midrule
+
+% --- NOMINAL SECTION ---
+\multirow{4}{*}{\textbf{Nominal}} 
+  & \multirow{2}{*}{SG} & Milyoner-in & zıpla-dı & *zıpla-dı-lar \\
+  & & \scriptsize \textit{millionaire-\textsc{gen}} & \scriptsize \textit{jump-\textsc{pst}} & \scriptsize \textit{jump-\textsc{pst-pl}} \\ \cmidrule(l){2-5}
+
+  & \multirow{2}{*}{PL} & Milyoner-ler-in & zıpla-dı & *zıpla-dı-lar \\
+  & & \scriptsize \textit{millionaire-\textsc{pl-gen}} & \scriptsize \textit{jump-\textsc{pst}} & \scriptsize \textit{jump-\textsc{pst-pl}} \\ \bottomrule
+\end{tabular}
+
+\vspace{1em} % Space between table and examples
+
+\begin{exe}
+    % \exsep controls space between examples if needed
+    % \setlength{\exsep}{1ex} 
+    
+    \ex \textit{Verbal Attractor Conditions}
+    % 1. Tighten space between Label (Line 1) and Sentence (Line 2)
+    \vspace{-1.5ex} 
+    \gll \textbf{{[}Attractor{]}} aşçı mutfak-ta sürekli \textbf{{[}Verb{]}}\\
+         hire-\textsc{nmlz-(pl)-poss} cook kitchen-\textsc{loc} non.stop jump-\textsc{pst-(pl)}\\
+    % 2. Tighten space between Gloss (Line 3) and Translation (Line 4)
+    \vspace{-2ex} 
+    \glt `The \textbf{[$_{Attr.}$~hired$_{pl}$/hired$_{sg}$]} cook \textbf{[$_{Verb}$~jumped$_{pl}$/jumped$_{sg}$]} in the kitchen non-stop.'\vspace{1ex} 
+
+    \ex \textit{Nominal Attractor Conditions}
+    \vspace{-1.5ex}
+    \gll \textbf{{[}Attractor{]}} aşçı-sı mutfak-ta sürekli \textbf{{[}Verb{]}}\\
+         millionaire-\textsc{(pl)-gen} cook-\textsc{poss} kitchen-\textsc{loc} non.stop jump-\textsc{pst-(pl)}\\
+    \vspace{-2ex} 
+    \glt `The \textbf{[$_{Attr.}$~millionaires'/millionaire's]} cook \textbf{[$_{Verb}$~jumped$_{pl}$/jumped$_{sg}$]} in the kitchen non-stop.'
+\end{exe}
+
+\end{table}
+```
+
+Verbal attractor conditions featured complex subject NPs containing a bare head noun and a reduced relative clause acting as the attractor (e.g., 'tuttukları aşçı', 'the hired cook'). Because nominal plural marking is mandatory and the head noun was always singular, plural verb agreement rendered these sentences ungrammatical. Nominal attractor conditions, featuring nominal attractors such as 'milyonerlerin aşçısı' ('the millionaires' cook') were taken from @TurkLogacev2024. To prevent participants from associating plural verbs with ungrammaticality, fillers were balanced between grammatical sentences with plural verbs and ungrammatical sentences with singular verbs.
+
+## Procedures
+
+The experiment was conducted online via Ibex Farm [@Drummond2013], lasting approximately 25 minutes. After providing informed consent and demographic details, participants read instructions and completed nine practice trials.
+
+Each trial began with a 600 ms blank screen, followed by a centered, word-by-word RSVP presentation (30 pt font, 400 ms duration, 100 ms inter-stimulus interval). Upon the prompt, participants judged sentence acceptability as quickly as possible by pressing 'P' (acceptable) or 'Q' (unacceptable). A red warning message appeared during practice trials—but not experimental trials--if responses exceeded 5,000 ms. Participants pressed the space bar to advance to the next item.
+
+The study included 40 experimental and 40 filler sentences. Experimental items were distributed across four lists using a Latin-square design, ensuring each participant viewed only one list containing one version of each item.
+
+## Analysis and Results
+
+```{r}
+#| label: exp1-models
+
+options(mc.cores = parallel::detectCores())
+theme_set(theme_bw(base_family = "Times"))
+
+
+exp1.dfModel <- exp1.clean %>% subset(match != "filler")
+
+exp1.dfModel %<>% mutate(exp = "current") %>% droplevels()
+tl24.gen <- tl24.clean %>%
+    subset(match != "filler") %>%
+    mutate(att_type = "gen-tl") %>%
+    droplevels()
+
+exp1.all <- bind_rows(exp1.dfModel, tl24.gen)
+
+
+exp1.all %<>%
+    mutate(
+        grammatical = factor(grammatical,
+            levels = c("grammatical", "ungrammatical"),
+            labels = c("Grammatical", "Ungrammatical")
+        ),
+        attractor_num = factor(attractor_num, # or attractor_num if that’s your column
+            levels = c("singular", "plural"),
+            labels = c("Singular", "Plural")
+        ),
+        att_type = factor(att_type, # or attractor_num if that’s your column
+            levels = c("gen", "gen-tl", "rc"),
+            labels = c("Gen-Current", "Gen-TL24", "RC")
+        ),
+    )
+
+# Sum-code ±0.5 and give readable column names
+C2 <- contr.sum(2) / 2
+
+Cg <- C2
+colnames(Cg) <- "Gram_minus_Ungram" # β > 0 ⇒ Ungram > Gram (in log-odds of YES)
+Ca <- C2
+colnames(Ca) <- "Plural_minus_Singular" # β > 0 ⇒ Plural > Singular (log-odds of YES)
+C3 <- matrix(
+    c(
+        # RC vs both Gens
+        -1, -1, 2, # contrast 1
+        # Gen-Current vs Gen-TL24
+        1, -1, 0 # contrast 2
+    ),
+    ncol = 2
+)
+
+# Normalize to mean-centered (sum to 0, length-scaled)
+C3 <- apply(C3, 2, function(x) x / sum(abs(x)) * 2 / 3)
+
+colnames(C3) <- c("RC_vs_Gens", "GenCurrent_vs_GenTL24")
+rownames(C3) <- c("Gen-Current", "Gen-TL24", "RC")
+
+# C3
+contrasts(exp1.all$att_type) <- C3
+
+
+contrasts(exp1.all$grammatical) <- Cg
+contrasts(exp1.all$attractor_num) <- -Ca
+
+
+make_priors_generic <- function(
+    f_mean = 0, f_sd = 1,
+    intercept_mean = 0.85, intercept_sd = 0.70,
+    exp_rate = 1, lkj_eta = 2) {
+    c(
+        # Intercept
+        set_prior(sprintf("normal(%g, %g)", intercept_mean, intercept_sd), class = "Intercept"),
+        set_prior(sprintf("normal(%g, %g)", f_mean, f_sd), class = "b"),
+        # Random-effect scales and correlations
+        set_prior(sprintf("exponential(%g)", exp_rate), class = "sd"),
+        set_prior(sprintf("lkj(%g)", lkj_eta), class = "cor")
+    )
+}
+
+priors_uninformative <- make_priors_generic(
+    f_mean = 0, f_sd = 1,
+    exp_rate = 1,
+    lkj_eta = 2
+)
+
+m.exp1.all <- brm(
+    bf(response_yes ~ grammatical * attractor_num * att_type +
+        (1 + grammatical * attractor_num * att_type | subject) +
+        (1 + grammatical * attractor_num * att_type | item), decomp = "QR"),
+    data = exp1.all,
+    family = bernoulli(link = "logit"),
+    prior = priors_uninformative,
+    sample_prior = "yes",
+    save_pars = save_pars(all = TRUE),
+    threads = threading(4),
+    chains = 4, iter = 12000, warmup = 2000,
+    init = 0, file = "../../utility/models/m.exp1.all.yes",
+    seed = 1
+)
+
+```
+
+```{r}
+#| label: model-output-2
+
+coef_names2 <- list(
+    # main effects
+    gram = "b_grammaticalGram_minus_Ungram",
+    attr = "b_attractor_numPlural_minus_Singular",
+    type_rc_gen = "b_att_typeRC_vs_Gens",
+    type_genpair = "b_att_typeGenCurrent_vs_GenTL24",
+
+    # two-way interactions
+    gram_attr = "b_grammaticalGram_minus_Ungram:attractor_numPlural_minus_Singular",
+    gram_type_rc = "b_grammaticalGram_minus_Ungram:att_typeRC_vs_Gens",
+    gram_type_gen = "b_grammaticalGram_minus_Ungram:att_typeGenCurrent_vs_GenTL24",
+    attr_type_rc = "b_attractor_numPlural_minus_Singular:att_typeRC_vs_Gens",
+    attr_type_gen = "b_attractor_numPlural_minus_Singular:att_typeGenCurrent_vs_GenTL24",
+
+    # three-way interactions
+    way3_rc = "b_grammaticalGram_minus_Ungram:attractor_numPlural_minus_Singular:att_typeRC_vs_Gens",
+    way3_gen = "b_grammaticalGram_minus_Ungram:attractor_numPlural_minus_Singular:att_typeGenCurrent_vs_GenTL24"
+)
+
+post_int2 <- lapply(coef_names2, \(nm) summ_brms(m.exp1.all, nm))
+txt2 <- lapply(post_int2, trip)
+txt_p2 <- lapply(coef_names2, \(nm) fmt(p_gt0(m.exp1.all, nm), 2))
+
+
+
+# Extract posterior draws
+draws <- as_draws_df(m.exp1.all)
+
+
+# Coefficient names
+b_ga_name <- "b_grammaticalGram_minus_Ungram:attractor_numPlural_minus_Singular"
+b_gat_rc_name <- "b_grammaticalGram_minus_Ungram:attractor_numPlural_minus_Singular:att_typeRC_vs_Gens"
+b_gat_gen_name <- "b_grammaticalGram_minus_Ungram:attractor_numPlural_minus_Singular:att_typeGenCurrent_vs_GenTL24"
+
+b_ga <- get_col(draws, b_ga_name)
+b_gat_rc <- get_col(draws, b_gat_rc_name)
+b_gat_gen <- get_col(draws, b_gat_gen_name)
+
+# Compute effects per att_type level (Helmert-coded)
+# Levels: RC_vs_Gens (+ for RC, - for both Gens); GenCurrent_vs_GenTL24 (+ for GenCurrent, - for GenTL24)
+# RC: +0.5 on RC_vs_Gens, 0 on GenCurrent_vs_GenTL24
+# Gen-Current: -0.25 on RC_vs_Gens, +0.5 on GenCurrent_vs_GenTL24
+# Gen-TL24: -0.25 on RC_vs_Gens, -0.5 on GenCurrent_vs_GenTL24
+
+eff_rc <- b_ga + (1/3)  * b_gat_rc + 0      * b_gat_gen
+eff_gencurrent <- b_ga + (-1/6) * b_gat_rc + (1/3)  * b_gat_gen
+eff_gentl24 <- b_ga + (-1/6) * b_gat_rc + (-1/3) * b_gat_gen
+prob_gt0 <- function(x) mean(x > 0)
+
+
+# Summarize
+predicted <- tibble(
+    Condition = factor(c("RC", "Gen-Current", "Gen-TL24"),
+        levels = c("RC", "Gen-Current", "Gen-TL24")
+    ),
+    mean = c(mean(eff_rc), mean(eff_gencurrent), mean(eff_gentl24)),
+    l95 = c(quantile(eff_rc, 0.025), quantile(eff_gencurrent, 0.025), quantile(eff_gentl24, 0.025)),
+    u95 = c(quantile(eff_rc, 0.975), quantile(eff_gencurrent, 0.975), quantile(eff_gentl24, 0.975)),
+    P_gt0 = c(prob_gt0(eff_rc), prob_gt0(eff_gencurrent), prob_gt0(eff_gentl24)),
+    P_lt0 = c(1 - prob_gt0(eff_rc), 1 - prob_gt0(eff_gencurrent), 1 - prob_gt0(eff_gentl24))
+)
+
+predicted <- predicted %>%
+    mutate(
+        # format p values: "<0.01", ">0.99", or rounded
+        p_formatted = case_when(
+            P_lt0 < 0.01 ~ "<0.01",
+            P_lt0 > 0.99 ~ ">0.99",
+            TRUE ~ paste0("=", sprintf("%.2f", round(P_lt0, 2)))
+        ),
+
+        # compose text string
+        text = paste0(
+            "M = ", round(mean, 2),
+            ", CI = [", round(l95, 2), ", ", round(u95, 2), "]",
+            ", P(<0) ", p_formatted
+        )
+    )
+
+
+h <- hypothesis(
+    m.exp1.all,
+    c(
+        # RC
+        "(1*grammaticalGram_minus_Ungram:attractor_numPlural_minus_Singular
+      + (1/3)*grammaticalGram_minus_Ungram:attractor_numPlural_minus_Singular:att_typeRC_vs_Gens
+      + 0*grammaticalGram_minus_Ungram:attractor_numPlural_minus_Singular:att_typeGenCurrent_vs_GenTL24) < 0",
+        # Gen-Current
+        "(1*grammaticalGram_minus_Ungram:attractor_numPlural_minus_Singular
+      + (-1/6)*grammaticalGram_minus_Ungram:attractor_numPlural_minus_Singular:att_typeRC_vs_Gens
+      + (1/3)*grammaticalGram_minus_Ungram:attractor_numPlural_minus_Singular:att_typeGenCurrent_vs_GenTL24) < 0",
+        # Gen-TL24
+        "(1*grammaticalGram_minus_Ungram:attractor_numPlural_minus_Singular
+      + (-1/6)*grammaticalGram_minus_Ungram:attractor_numPlural_minus_Singular:att_typeRC_vs_Gens
+      + (-1/3)*grammaticalGram_minus_Ungram:attractor_numPlural_minus_Singular:att_typeGenCurrent_vs_GenTL24) < 0",
+        # GenCurrent - GenTL24 difference
+        "((2/3)*grammaticalGram_minus_Ungram:attractor_numPlural_minus_Singular:att_typeGenCurrent_vs_GenTL24) < 0"
+    )
+)
+
+exp1_atts <- as_tibble(h$hypothesis) %>%
+    transmute(
+        contrast = c("RC", "Gen-Current", "Gen-TL24", "GenCurrent - GenTL24"),
+        mean = Estimate, l95 = CI.Lower, u95 = CI.Upper,
+        prob_lt0 = Post.Prob,
+        text = paste0(
+            "M = ", round(mean, 2),
+            ", CI = [", round(l95, 2), ", ", round(u95, 2), "]",
+            ", P(<0) = ",
+            ifelse(is.na(prob_lt0), "NA",
+                ifelse(prob_lt0 < 0.01, "<0.01",
+                    ifelse(prob_lt0 > 0.99, ">0.99", round(prob_lt0, 2))
+                )
+            )
+        )
+    )
+
+predicted <- exp1_atts %>%
+    filter(contrast %in% c("RC", "Gen-Current", "Gen-TL24")) %>%
+    transmute(
+        Condition = recode(
+            contrast,
+            "RC" = "Attraction: Verbal\n(Current)",
+            "Gen-Current" = "Attraction: Nominal\n(Current)",
+            "Gen-TL24" = "Attraction: Nominal\n(Turk & Logacev 2024)"
+        ),
+        mean, l95, u95
+    )
+
+## 2) Pull the overall acceptability difference (Gen-Current vs Gen-TL24) from the model
+fix <- posterior_summary(m.exp1.all, pars = "^b_") %>%
+    as_tibble(rownames = "term")
+
+# main effect of att_type GenCurrent_vs_GenTL24
+genpair_row <- fix %>%
+    filter(str_detect(term, "^b_att_type.*GenCurrent_vs_GenTL24$")) %>%
+    slice(1)
+
+coef_name <- genpair_row$term
+# If this is empty, run: rownames(fixef(m.exp1.all)) and copy the exact name.
+
+# 2) Compute P(<0) from draws
+dr <- as_draws_df(m.exp1.all)
+stopifnot(coef_name %in% names(dr))
+prob_lt0 <- mean(dr[[coef_name]] < 0)
+
+# 3) Build overall_df with prob and text
+overall_df <- tibble(
+    Condition = "Overall Acceptability:\nGen-Current - Gen-TL24",
+    mean = genpair_row$Estimate,
+    l95 = genpair_row$Q2.5,
+    u95 = genpair_row$Q97.5,
+)
+
+## 3) Gen vs Gen difference in *attraction* from your exp1_atts (row 4)
+diff_attr_df <- exp1_atts %>%
+    filter(contrast == "GenCurrent - GenTL24") %>%
+    transmute(
+        Condition = "Attraction Difference:\nGen-Current - Gen-TL24",
+        mean, l95, u95
+    )
+
+predicted_between <- bind_rows(diff_attr_df, overall_df, predicted)
+
+overall_df <- overall_df %>%
+    mutate(prob_lt0 = prob_lt0) %>%
+    mutate(
+        text = paste0(
+            "M = ", round(mean, 2),
+            ", CI = [", round(l95, 2), ", ", round(u95, 2), "]",
+            ", P(<0) = ",
+            ifelse(is.na(prob_lt0), "NA",
+                ifelse(prob_lt0 < 0.01, "<0.01",
+                    ifelse(prob_lt0 > 0.99, ">0.99", round(prob_lt0, 2))
+                )
+            )
+        )
+    )
+
+predicted_between <- predicted_between %>%
+    mutate(
+        Condition = factor(
+            Condition,
+            levels = rev(c(
+                "Attraction: Verbal\n(Current)", # A in RC
+                "Attraction: Nominal\n(Current)", # A in Gen-Current
+                "Attraction: Nominal\n(Turk & Logacev 2024)", # A in TL24
+                "Attraction Difference:\nGen-Current - Gen-TL24", # Diff between Gens
+                "Overall Acceptability:\nGen-Current - Gen-TL24" # Overall acceptability
+            ))
+        )
+    )
+
+p_between <- ggplot(predicted_between, aes(y = Condition, x = mean)) +
+    geom_vline(xintercept = 0, linetype = "dashed", color = "gray60") +
+    geom_point(size = 3) +
+    geom_errorbarh(aes(xmin = l95, xmax = u95), height = 0.15, linewidth = 0.7) +
+    xlab(expression(paste("Effect Size (", beta, ")"))) +
+    ylab(NULL) +
+    theme_minimal(base_family = "Times") +
+    theme(
+        axis.text.y = element_text(size = 8),
+        axis.text.x = element_text(size = 8),
+        axis.title.x = element_text(size = 8),
+        panel.grid.minor = element_blank(),
+        panel.grid.major.y = element_blank()
+    )
+
+```
+
+
+Participants showed high accuracy in both grammatical (`r get_value(exp1.avgs.filler, text, grammatical == "grammatical")`) and ungrammatical filler sentences (`r get_value(exp1.avgs.filler, text, grammatical == "ungrammatical")`), indicating that they understood the task and performed it reliably.
+
+@fig-exp1-condition-means presents the overall means and credible intervals for 'yes' responses across experimental conditions, as well as the previous data from @TurkLogacev2024, which is quite similar to the magnitude of @LagoEtAl2019. As shown, in our study, participant gave more 'yes' responses to ungrammatical sentences with plural genitive-marked nominal attractors (`r get_value(all.avgs, text, grammatical == "ungrammatical", attractor_num == "plural", att_type == "gen")`) compared to their singular counterparts (`r get_value(all.avgs, text, grammatical == "ungrammatical", attractor_num == "plural", att_type == "gen")`).
+
+However, similar increase in acceptability was not found with relative clause attractors (M = `r get_value(all.avgs, p_hat, grammatical == "ungrammatical", attractor_num == "singular", att_type == "rc")` and `r get_value(all.avgs, p_hat, grammatical == "ungrammatical", attractor_num == "plural", att_type == "rc")`, CI = [`r get_value(all.avgs, lwr, grammatical == "ungrammatical", attractor_num == "singular", att_type == "rc")`, `r get_value(all.avgs, upr, grammatical == "ungrammatical", attractor_num == "singular", att_type == "rc")`] and [`r get_value(all.avgs, lwr, grammatical == "ungrammatical", attractor_num == "plural", att_type == "rc")`, `r get_value(all.avgs, upr, grammatical == "ungrammatical", attractor_num == "plural", att_type == "rc")`] for singular and plural attractors, respectively). Participants rated grammatical sentences similarly independent of the attractor number or attractor type.
+
+```{r}
+#| label: fig-exp1-condition-means
+#| fig-cap: "Mean proportion of 'acceptable' responses by grammaticality, attractor number and attractor type. Error bars show 95% Clopper–Pearson confidence intervals. "
+#| fig-width: 6
+#| fig-height: 3
+
+exp1.gram.label <- c(
+    "grammatical"   = "Grammatical\n(Singular Verb)",
+    "ungrammatical" = "Ungrammatical\n(Plural Verb)"
+)
+exp1.att_type.label <- c(
+    "rc"     = "Verbal\n(Current Paper)",
+    "gen"    = "Nominal\n(Current Paper)",
+    "gen-tl" = "Nominal\n(TL2024)"
+)
+
+exp1.avgs %<>% droplevels()
+# Plot
+# 1. Create the dummy data frame with the correct facet levels and desired limits (in proportion).
+facet_limits <- data.frame(
+    grammatical = c(
+        "grammatical",
+        "grammatical",
+        "ungrammatical",
+        "ungrammatical"
+    ),
+    p_hat = c(0.75, 1.0, 0.0, 0.25)
+)
+# Plot: X = Attractor Type (ordered & labeled), facet = Grammaticality
+all.avgs %>%
+    ggplot(aes(
+        x = att_type, y = p_hat,
+        linetype = attractor_num, group = attractor_num
+    )) +
+    geom_point(position = position_dodge(0.3)) +
+    geom_blank(data = facet_limits, aes(y = p_hat), inherit.aes = FALSE) +
+    # geom_line() +
+    geom_errorbar(aes(ymin = lwr, ymax = upr), width = 0, position = position_dodge(0.3)) +
+    facet_wrap(~grammatical, labeller = as_labeller(exp1.gram.label), scale = "free_y") +
+    scale_x_discrete(labels = exp1.att_type.label, drop = FALSE) +
+    xlab("Attractor Type") +
+    ylab("Percentage 'acceptable'") +
+    scale_y_continuous(labels = scales::percent) +
+    scale_linetype_discrete(
+        name = "Attractor Number",
+        labels = c("Singular", "Plural")
+    ) +
+    theme_minimal(base_family = "Times") +
+    theme(
+        legend.position = "bottom",
+        strip.background = element_rect(fill = "white"),
+        strip.text = element_text(size = 9),
+        axis.text.y = element_text(size = 9),
+        axis.text.x = element_text(size = 9),
+        axis.title.x = element_text(size = 9),
+    )
+
+ggsave(
+  filename = "../../utility/figures/fig-exp1-condition-means.pdf",
+  plot = last_plot(),
+  width = 6, 
+  height = 3, 
+  units = "in", 
+  dpi = 600,
+  bg = "white"
+)
+
+```
+
+Our model-based analysis targeted the same question as the descriptive results: whether verbal attractors induce attraction. We fitted a Bayesian mixed-effects logistic regression to binary *yes/no* responses, combining the present dataset with the nominal-attractor dataset from @TurkLogacev2024. We used uninformative (weakly informative) priors for fixed effects (Normal(0, 1)) and standard regularizing priors for remaining parameters. The `Normal(0.85, 0.70)` prior is on the intercept parameter (log-odds scale), not directly on the observed data. Its central 95% prior interval is approximately [-0.52, 2.22], corresponding to a baseline *yes* probability of about [0.37, 0.90]. Full model specifications and priors are reported in Table @tbl-exp1-model-spec, and the exact contrast coding is reported in Table @tbl-exp1-contrast-coding.
+
+| Specification | Value | Sampling detail | Value |
+|---|---|---|---|
+| Family (link) | Bernoulli (logit) | Chains | 4 |
+| Intercept prior | Normal(0.85, 0.70) | Iterations | 12000 (2000 warmup) |
+| Fixed-effect priors | Normal(0, 1) | Threads | 4 |
+| Random-effect SD prior | Exponential(1) | `sample_prior` | "yes" |
+| Random-effect correlation prior | LKJ(2) | Init / seed | 0 / 1 |
+
+: Bayesian model specifications for Experiment 1. {#tbl-exp1-model-spec}
+
+
+| Factor | Level | Grammaticality (G) | Attractor Number (A) | Type Contrast 1 (T1) | Type Contrast 2 (T2) |
+|---|---|---:|---:|---:|---:|
+| Grammaticality | Grammatical | 0.5 | NA | NA | NA |
+| Grammaticality | Ungrammatical | -0.5 | NA | NA | NA |
+| Attractor Number | Plural | NA | 0.5 | NA | NA |
+| Attractor Number | Singular | NA | -0.5 | NA | NA |
+| Attractor Type | RC | NA | NA | 0.333 | 0.000 |
+| Attractor Type | Gen-Current | NA | NA | -0.167 | 0.333 |
+| Attractor Type | Gen-TL24 | NA | NA | -0.167 | -0.333 |
+
+: Contrast coding used in the Experiment 1 Bayesian model (T1 = RC vs average of nominal types; T2 = Gen-Current vs Gen-TL24). {#tbl-exp1-contrast-coding}
+
+We present posterior summaries of estimated regression effects from our model in @fig-exp1-fixed-effects.  Our model showed a robust attraction in both nominal attractor cases, with strongly negative effects for our nominal items (`r get_value(exp1_atts, text, contrast == "Gen-Current")`) and items from @TurkLogacev2024 (`r get_value(exp1_atts, text, contrast == "Gen-TL24")`).  More importantly, our model found no evidence for an attraction in verbal attractor conditions (`r get_value(exp1_atts, text, contrast == "RC")`), verifying our observations in the descriptive statistics.  We did not find an evidence for a difference in magnitude of attraction between the two nominal-type attractors was not found (`r get_value(exp1_atts, text, contrast == "GenCurrent - GenTL24")`), suggesting the presence of an additional conditions did not affect attraction magnitudes.  Finally, we found strong evidence for a decreased overall acceptability for nominal items in our experiment (`r get_value(overall_df, text)`), suggesting the within-experimental distribution did affect overall acceptability, but not attraction.
+
+```{r}
+#| label: fig-exp1-fixed-effects
+#| fig-cap: "Posterior summaries of attraction-related effects. Points indicate posterior means, and horizontal bars show 95% credible intervals on the log-odds (β) scale. Attraction was estimated as the interaction between grammaticality and attractor number within each attractor type. Negative values indicate stronger attraction (a reduced ungrammaticality penalty in plural-attractor conditions). Dashed line denotes zero (no effect)."
+#| fig-width: 6
+#| fig-height: 2
+
+p_between
+```
+
+### Bayes Factor Analysis for Null Effects
+
+To provide formal evidence for the absence of attraction with verbal attractors, we computed Bayes Factors using the Savage-Dickey density ratio method [@Wagenmakers2010]. This approach quantifies the evidence for the null hypothesis (no effect) relative to the alternative.
+
+```{r}
+#| label: exp1-bayes-factor
+#| eval: false
+
+# For verbal attractors (RC), we need to test the cell-specific attraction effect
+# The attraction effect for RC is computed from the posterior draws
+# We use the hypothesis() approach to get the effect and test it
+
+# Compute BF for the three-way interaction involving RC
+# This tests whether RC differs from other conditions in attraction
+bf_three_way <- bayestestR::bayesfactor_parameters(
+    m.exp1.all,
+    null = 0,
+    effects = "fixed"
+)
+
+# Extract BF for the three-way interaction with RC
+bf_3way_df <- bf_three_way %>%
+    as.data.frame() %>%
+    filter(grepl("Gram_minus_Ungram:attractor_numPlural_minus_Singular:att_typeRC_vs_Gens", Parameter))
+
+bf_3way_value <- bf_3way_df$BF[1]
+bf01_3way <- 1 / bf_3way_value  # Convert to BF01
+
+# Also test the main attraction effect averaged across conditions
+bf_2way_df <- bf_three_way %>%
+    as.data.frame() %>%
+    filter(grepl("^grammaticalGram_minus_Ungram:attractor_numPlural_minus_Singular$", Parameter))
+
+bf_2way_value <- bf_2way_df$BF[1]
+bf01_2way <- 1 / bf_2way_value
+
+# Format for reporting
+format_bf <- function(bf) {
+    ifelse(bf > 100, ">100", 
+           ifelse(bf < 0.01, "<0.01", sprintf("%.2f", bf)))
+}
+
+bf01_3way_txt <- format_bf(bf01_3way)
+bf01_2way_txt <- format_bf(bf01_2way)
+
+# Interpretation
+interpret_bf <- function(bf) {
+    case_when(
+        bf > 100 ~ "extreme evidence for null",
+        bf > 30 ~ "very strong evidence for null",
+        bf > 10 ~ "strong evidence for null",
+        bf > 3 ~ "moderate evidence for null",
+        bf > 1 ~ "anecdotal evidence for null",
+        bf > 1/3 ~ "anecdotal evidence against null",
+        bf > 1/10 ~ "moderate evidence against null",
+        TRUE ~ "strong evidence against null"
+    )
+}
+
+bf_3way_interp <- interpret_bf(bf01_3way)
+
+```
+
+Bayes-factor computation for this section is temporarily deferred. We will report BF~01~ estimates for the verbal-vs-nominal attraction contrast in a later revision.
+
+## Discussion
+
+
+Experiment 1 found no evidence that phonological overlap between nominal and verbal plural morphemes in Turkish induces attraction. Participants reliably rejected ungrammatical sentences with plural-marked verbal attractors, contrasting with the canonical attraction effects observed for nominal attractors. This indicates that the verbal plural marker *-lAr* does not generate interference comparable to nominal plurals.
+
+Our results and between-experiment comparisons indicate that within-experiment statistics---specifically, exposure to verbal attraction items---did not substantially reduce attraction magnitude. However, overall acceptability for nominal attractor sentences was lower than in @TurkLogacev2024. This aligns with prior work showing that trial distributions modulate judgments. While previous studies drove this effect via instructions or fillers [@HammerlyEtAl2019;@ArehalliWittenberg2021], we demonstrate that experimental conditions and the presence of an effect in a condition subset also modulate overall acceptability, but surprisingly not the attraction.
+
+A potential concern is that our mixed design---combining canonical nominal attractors with verbal ones---influenced response patterns. The presence of robust nominal attraction may have altered participant strategies, potentially masking weaker verbal effects [@HammerlyEtAl2019;@Turk2022]. To determine if the absence of verbal attraction in Experiment 1 was genuine rather than a distributional artifact, Experiment 2 removed all nominal attractors. This design tests whether the null effect persists when verbal morphology is the sole potential source of interference.
+
+### Null-effect inference plan for Experiment 1
+
+Because the critical claim in Experiment 1 is a null effect for verbal attractors, we will make the reporting workflow explicit after model reruns. The goal is to show not only that a point-null is plausible, but also that any remaining non-zero effect is too small to support an attraction account.
+
+We will add the following transparency details:
+
+1. **Procedure details.** We will report trial counts per condition, randomization/counterbalancing scheme, exclusion criteria with retained proportions, and whether any trial-level filtering changed the condition balance.
+2. **Contrast definitions.** We will report the exact coding used in the model: Grammaticality and Attractor Number sum-coded at +/-0.5, and Attractor Type represented with two orthogonal Helmert contrasts (`RC_vs_Gens`, `GenCurrent_vs_GenTL24`).
+3. **Model specification.** We will provide the fitted formula, priors, sampling settings, convergence checks (R-hat, ESS, divergences), and posterior predictive checks.
+4. **Target estimand.** We will define verbal attraction as the model-implied Grammaticality x Attractor Number interaction within the verbal condition, computed from posterior draws (the `eff_rc` quantity in the current analysis script).
+5. **Null-effect evidence bundle.** We will report posterior mean and 95% CrI for verbal attraction, BF~01~ for the same estimand, posterior mass in a prespecified ROPE around zero, and a prior-sensitivity check (narrow, medium, wide priors).
+
+To keep this section concrete, we will use a short reporting template once reruns are complete:
+
+For verbal attractors, the attraction estimand was `beta = [M]`, 95% CrI `[L, U]`, with posterior probability `P(beta < 0) = [p]`. A Savage-Dickey test on the same estimand yielded `BF~01~ = [x]`, indicating [strength] evidence for the null. Under prior-sensitivity analyses ([prior set 1], [prior set 2], [prior set 3]), BF~01~ remained in the [range] range. The posterior mass inside the ROPE `[a, b]` was `[r]%`, supporting the interpretation that any residual verbal-attractor effect is practically negligible.
+
+This fuller reporting makes the Experiment 1 null claim transparent and sets up Experiment 2 as a planned test of robustness under a cleaner design.

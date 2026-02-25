@@ -1,0 +1,62 @@
+---
+title: "(In)sensitivity to surface-level heuristics: A case from Turkish verbal attractors"
+author:
+  - name: Utku Turk
+    email: utkuturk@umd.edu
+    affiliations:
+      - name: University of Maryland, College Park
+        department: Linguistics
+abstract: |
+  Linguistic illusion literature debates what information accesses memory representations. Prior work tests whether structural, semantic, or discourse cues guide subject-verb dependencies; however, it remains unclear whether native speakers rely on surface level heuristics, such as phonological information during dependency resolution. Traditionally, accidental phonological resemblance to plural ending (e.g., the /s/ in *cruise*) does not induce erroneous agreement in English, whereas resemblance correlating with controllerhood amplifies attraction across varies languages. Contradicting this generalization, Slioussar (2018) proposed that accidental phonological resemblance can mediate memory search for Russian subjects. Given the theoretical importance of this proposal and the lack of comparable effects in other languages such as Czech, we propose re-interpret previous findings under the light of a recently growing literature of association with being a possible controller. We test whether phonological overlap or association with controllerhood elicits erroneous agreement in Turkish. Turkish provides a critical test: both verbal and nominal elements can surface as subjects and the plural morpheme *-lAr* marks number in both of them, but only nominal plural *-lAr* controls verbal agreement. Two speeded acceptability studies show no attraction from plural-marked verbs (N = 80; N = 95) but robust attraction from genitive plural nouns. We report a first-of-its-kind dissociation under minimal manipulation: verbal attractors that can surface as subjects yet cannot control agreement do not induce attraction, whereas genitive plural nouns—which can be subjects and control in other environments—do. This pattern constrains retrieval processes by tying attraction to abstract controller features rather than surface phonology.
+keywords:
+  - form-sensitivity
+  - memory
+  - agreement attraction
+  - linguistic illusions
+  - sentence processing
+date: last-modified
+bibliography: ../bib/bibliography.bib
+format:
+  pdf:
+    pdf-engine: xelatex
+    latex-max-runs: 3
+    documentclass: article
+    papersize: letter
+    fontsize: 10pt
+    linestretch: 1
+    geometry:
+      - margin=1in
+    include-in-header:
+      - preamble.tex
+    keep-tex: true
+    number-sections: true
+    cite-method: natbib
+    biblio-style: apalike
+    mainfont: "Charis SIL"
+execute:
+  echo: false
+  message: false
+  warning: false
+editor_options: 
+  chunk_output_type: console
+---
+
+
+
+```{r child='../sections/00_structure.qmd'}
+```
+
+
+
+## Acknowledgment {.unnumbered}
+
+This project heavily benefited from discussions with Pavel Logacev. I am also thankful first and foremost Ellen Lau, along with Colin Phillips, Brian Dillon, and Radim Lacina for their comments on the manuscript.
+
+## Data availability {.unnumbered}
+
+Materials, code and data available at: PSYARXIV LINK.
+
+# References {.unnumbered}
+
+::: {#refs}
+:::

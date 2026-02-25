@@ -1,0 +1,1030 @@
+Introduction
+Visual working memory (VWM) is the ability of individuals to
+temporarily maintain and manipulate visual information and is the
+foundation for advanced cognitive processes (Baddeley & Hitch, 1974).
+Researchers have demonstrated that individuals can adjust the priority
+of information processing depending on ongoing task demands (Myers
+et al., 2017). However, the nature of interactions between information
+of varying priorities in VWM remains debated.
+Some earlier studies have suggested a resource-based model, where
+more cognitive resources are devoted to prioritized memory items
+(PMIs) than to unprioritized memory items (UMIs) (Bays & Husain,
+2008; Ma et al., 2014). For example, the items associated with higher
+reward (Hitch et al., 2018; Hu et al., 2016) or with higher probability to
+recall (Hollingworth & Maxcey-Richard, 2013; W. Zhang & Luck, 2008)
+could be maintained as PMIs, resulting in better recall performance. In
+contrast, recent researchers have proposed a state-based model, positing
+PMIs and UMIs are maintained in distinct states: PMIs are directly
+
+related to the ongoing task and require real-time processing, and their
+representations are always active, while UMIs are not necessary for the
+ongoing task and are kept in a more passive storage state (Cowan, 2001;
+Olivers et al., 2011). Compared with the resource-based model, the
+state-based model prefers fewer interactions between items of varying
+priorities and dissociated neural basis underlying them. This indepen­
+dent storage view has been strengthened by an earlier behavioral study,
+which required participants to remember two rows of numbers and
+perform an arithmetic operation on specific numbers in one row (PMIs
+in the active row) but just to store numbers in the other row (UMIs in the
+passive row) during the interval, and reported all numbers at the end
+(Oberauer, 2002). They found that only the recall for UMIs became
+poorer with increased delay duration and interference. Additionally,
+reaction times during arithmetic operations were affected only by the
+load of PMIs but not UMIs. Some other studies established recall-order
+prioritization, designating first-recalled items as PMIs and laterrecalled items as UMIs (Z. Li et al., 2021; Nee & Jonides, 2011). For
+example, the recent study employed a double retro-cue design, requiring
+
+* Corresponding author at: Department of Psychology and Behavioral Sciences, Zhejiang University, Hangzhou 310028, Zhejiang, China.
+E-mail address: yingcai@zju.edu.cn (Y. Cai).
+https://doi.org/10.1016/j.jml.2025.104702
+Received 27 January 2025; Received in revised form 30 September 2025; Accepted 1 October 2025
+Available online 8 October 2025
+0749-596X/© 2025 Elsevier Inc. All rights are reserved, including those for text and data mining, AI training, and similar technologies.
+
+J. Ni et al.
+
+Journal of Memory and Language 146 (2026) 104702
+
+participants to make change detection judgments sequentially on two
+memorized items(Z. Li et al., 2021). They demonstrated that increasing
+the memory load of the first-recalled PMIs did not affect the perfor­
+mance of the later-recalled UMIs, and vice versa.
+Moreover, this independent storage view has been supported by
+neuroimaging studies, where the prioritization was also identified by the
+recall order. Some researchers have noted that the PMI and UMI can be
+stored in different brain areas. For example, a functional magnetic
+resonance imaging (fMRI) study revealed stronger activations in the
+posterior parietal cortex and inferior temporal cortex during PMI
+retrieval, whereas the lateral prefrontal cortex was more active during
+UMI retrieval (Nee & Jonides, 2011); Another study investigated their
+neural representations and reported that PMIs can be decoded from a
+wide range of areas, including visual, parietal, and prefrontal regions,
+whereas UMIs can be decoded from only limited areas, such as the
+intraparietal sulcus and the frontal eye field (Christophel et al., 2018).
+However, some other researchers have suggested that the PMI and UMI
+can be stored in the same area but in different formats (Lewis-Peacock
+et al., 2012; Van Loon et al., 2018; Wan et al., 2020; Yu et al., 2020; Yu &
+Shim, 2017; J. Zhang et al., 2022). For example, studies have shown that
+in the occipital region, the neural representation of the PMI can be
+continuously decoded during maintenance, whereas the UMI represen­
+tation rapidly returns to baseline levels (Lewis-Peacock et al., 2012; Yu
+& Shim, 2017). Moreover, recent research has shown that the PMI and
+UMI reveal opposite neural representational patterns in posterior areas
+during VWM maintenance (Van Loon et al., 2018; Wan et al., 2020; Yu
+et al., 2020). Additionally, recent electroencephalography (EEG) studies
+have shown that the amplitude of contralateral delay activity (CDA),
+which is thought to reflect the storage capacity, is related to the number
+of PMIs but not UMIs (J. Zhang et al., 2022).
+However, there is accumulating evidence against the independent
+storage view, suggesting that information with varying priorities in­
+teracts during VWM. For example, a recent study using a more sensitive
+orientation delayed estimation task revealed that the recall of both PMIs
+and UMIs was influenced by each other (Bae & Luck, 2017). The authors
+found that PMIs and UMIs repelled each other when the angular dif­
+ference between PMIs and UMIs was small while attracted each other
+when the angular difference became larger. Researchers have suggested
+that lateral inhibition occurs between PMIs and UMIs. Moreover, Bae’s
+study noted that the recall of PMIs was less influenced by UMIs, and
+posited a potential explanation that sustained attention to PMIs reduced
+their susceptibility to UMI interference. However, in this study, PMIs
+and UMIs were presented in the same location, which could introduce
+perceptual-level interference (Shepherdson et al., 2022) and confound
+the VWM-level interaction conclusions. Meanwhile, the total memory
+load was under the memory capacity (around 4 items) and left the in­
+fluence of memory load unclear. In addition, another study challenged
+these findings by revealing that only the neural representations of UMIs
+recovered to the original levels after a distracting stimulus was pre­
+sented. Researchers have argued that the inactivity of a UMI’s neural
+representation makes it less susceptible to interference (Mallett & LewisPeacock, 2019). Moreover, a series of recent neuroimaging studies also
+have revealed that during PMI recall, the memory representations of
+UMIs are reactivated (Muhle-Karbe et al., 2021; Pietrelli et al., 2022; Yu
+et al., 2020), providing another perspective for understanding the un­
+derlying mechanism of their interactions. In sum, this evidence suggests
+that studies supporting the independent storage view may be due to
+their insensitive experimental designs or mistakenly linking dissociated
+neural activities to absent behavioral interference. Meanwhile, although
+preliminary behavioral results indicated asymmetrical interaction be­
+tween PMIs and UMIs, key questions like modulating factors and un­
+derlying mechanisms remain unelucidated.
+In the current study, we operationalized the state of memory items
+based on their recall priorities: PMIs were the first-recalled items and
+would be processed in an active state for the upcoming response, while
+UMIs were the later-recalled items and would be stored in a relatively
+
+passive state. In Experiment 1, participants performed a delayed recall
+task for colors under different loads of PMIs and UMIs. We assessed the
+interaction effects by comparing recall changes of the PMIs and UMIs
+when the memory load of the other state increased. Next, we confirmed
+that the interaction pattern was consistent across different sequence
+orders (Experiments 2 and 3) and stimulus types (Experiments 4 and 5).
+Finally, we verified that the sustained attention allocated to PMIs during
+maintenance (Experiment 6) and the prioritized retrieval of PMIs
+(Experiment 7) were responsible for the observed interaction patterns
+between PMIs and UMIs. In these two experiments, although the ma­
+nipulations introduced temporal state changes, we made the definitions
+consistent given the core information flow were kept same and it would
+be crucial to preserve the continuity across the study.
+Experiment 1
+Experiment 1 aimed to examine whether the PMIs and UMIs inter­
+acted during VWM by testing whether the memory load of the PMIs
+affected UMI recall and vice versa. The participants completed a delayed
+recall task for colors, where they were required to recall two sequen­
+tially presented color arrays. First, we tried to replicate that recall per­
+formance of PMIs and UMIs decreased as their own load increased (i.e.,
+the self-state load effect, Lewis-Peacock et al., 2012; Z. Li et al., 2021);
+More importantly, we tested whether recall performance of the PMI and
+UMI would deteriorate when the load of items in the other state
+increased (i.e., another-state load effect). Furthermore, we examined if
+the another-state load effect was different in PMIs and UMIs.
+Participants
+To determine the sample size, we entered the effect size of the
+interaction effect between priority status and item load on recall per­
+formance in a previous study (ηp2 = 0.545; Experiment 3 in Li et al.,
+2021) into MorePower software (Campbell & Thompson, 2012), and a
+sample size of 8 participants would provide power greater than 90 % for
+detecting interaction of priority status and item load (α = 0.05). Based
+on the results in power analysis and number of participants in previous
+study with a similar design (Li et al., 2021, n = 30 in Experiment 3;
+Myers et al., 2018, n = 24 in Experiment 1), we further increased the
+sample size to 24 in the experiment to ensure the reliability of our
+experiment.
+Twenty-seven undergraduate and graduate students from Zhejiang
+University participated in Experiment 1 (11 males; age: M = 19.13
+years, SD = 1.62). All of the participants were right-handed, had normal
+or corrected-to-normal vision, and had no color blindness or color
+weakness. We excluded participants whose recall errors exceeded 3
+standard deviations from the group mean, and 24 participants were
+included. A unique set of participants was recruited for each experiment.
+This study was approved by the Institutional Review Board at Zhejiang
+University (2021–025), and participants provided informed consent
+prior to the experiment and received monetary compensation (30 RMB/
+hour) for the experiment.
+Stimuli and procedure
+The participants completed a delayed recall task for colors (Fig. 1; Li
+et al., 2021; W. Zhang & Luck, 2008). In each trial, a 500 ms white
+fixation (length = 0.75◦ , width = 0.05◦ ) appeared in the center of the
+screen, and then the first color array was presented. The color array
+consisted of 1, 2, or 3 colored dots (radius = 0.5◦ ). Three hundred and
+sixty color values were sampled around a color circle in the CIE L*a*b
+space, with the center at [50, 20, 20] and a radius of 60. In each trial, six
+colors were randomly selected from these 360◦ color values, with a
+minimum difference of 20◦ . Two sets of six positions from an invisible
+ring centered at the screen (radius = 6◦ ; first set: 60◦ , 180◦ , 300◦ ; second
+set: 120◦ , 240◦ , 360◦ ) were selected. On the basis of the number of items
+2
+
+J. Ni et al.
+
+Journal of Memory and Language 146 (2026) 104702
+
+Fig. 1. In the delayed estimation task for colors in the Experiment 1, participants were required to remember two subsequently-presented color arrays. The memory
+load in the first and second color arrays was 1, 2, or 3. In the first probe display, participants always recalled the color at the targeted location in the second color
+array; then they recalled another targeted color in the first color array. The figure showed an example where the memory loads in both the first and second color
+arrays were 3.
+
+Fig. 2. A. Recall errors for PMIs and UMIs under different memory load conditions of Experiment 1. B. The self-state load effects on PMI and UMI recall. C. The
+another-state load effects on PMI and UMI recall. In the left figures in panel B and C, black asterisks represent two-way interaction effects and gray asterisks represent
+one-way ANOVA effects; In the right figures in panel B, the PMI label along the x axis indicates the influence of PMI load on PMI recall, and the UMI label indicates
+the influence of UMI load on UMI recall; In the right figures in panel C, the PMI label along the x axis indicates the influence of UMI load on PMI recall, and the UMI
+label indicates the influence of PMI load on UMI recall. Each point in the right figures of panel B and C represents the fitting slope value for each participant. Black
+asterisks indicate significance in paired t-tests and gray asterisks indicate significance in one-sample t-tests (compared to zero). Error bars represent standard errors
+(SE). ***p < 0.001; **p < 0.01; *p < 0.05.
+3
+
+J. Ni et al.
+
+Journal of Memory and Language 146 (2026) 104702
+
+in each color array, we then determined the colors and their presented
+positions from the candidate colors and positions. Colors and positions
+in the same trial were not repeated. Each color array lasted for 500 ms,
+followed by an interval of 1500 ms where a fixation was centered on the
+screen. Next, two probe displays were presented sequentially with an
+interval of 800 ms, requiring participants to recall the colors of the cued
+positions in the second and first color arrays. The probe display included
+a color wheel, which was 0.5◦ thick, had a radius of 3◦ and was centered
+on the screen. The participants were instructed to recall the targeted
+color by moving the mouse and clicking the specific color along the color
+wheel within a maximum response time of 8 s. The color distribution on
+the wheel was randomized in each trial to prevent participants from
+preparing their responses in advance.
+The experiment included three memory loads for the PMI and UMI
+(1, 2, or 3 items), and there were 40 trials per condition. All of the trials
+were evenly and randomly divided into 10 blocks. At the beginning of
+each block, a random four-digit number was presented, and the partic­
+ipants were asked to verbally repeat it during the task to prevent po­
+tential verbalization strategies (Shaffer & Shiffrin, 1972). The entire
+experiment lasted for approximately 70 min. Before the formal experi­
+ment began, each participant completed 36 practice trials to ensure that
+they were familiar with the procedure.
+The experimental program was written using MATLAB scripts in
+combination with Psychtoolbox-3. All stimuli were presented on a 19inch LCD monitor (60 Hz refresh rate, 1920 × 1080 pixels) using
+MATLAB R2020a software. The participants viewed the screen from a
+distance of 80 cm, and the background color of the screen was set to
+black (RGB = [0, 0, 0]) throughout the experiment to avoid potential
+visual distractions.
+
+Results
+Three-way repeated-measures ANOVA revealed no three-way inter­
+action (F(4,92) = 1.846, p = 0.110, ηp2 = 0.078, BF = 0.994), but sig­
+nificant two-way interactions between the priority state and self-state
+load (F(2,46) = 15.354, p < 0.001, ηp2 = 0.400, BF > 1000), as well as
+between the priority state and another-state load (F(2,46) = 20.570, p <
+0.001, ηp2 = 0.472, BF > 1000). To examine the interaction between the
+priority state and self-state load, further one-way repeated measures
+ANOVAs and post hoc test results indicated that as the self-state load
+increased, the recall errors for both PMIs and UMIs worsened (one-way
+ANOVAs: Fs > 89.043, ps < 0.001, ηp2s > 0.795, BFs > 1000; post hoc
+tests: ts > 7.680 ps < 0.001, Cohen’s ds > 0.756, BFs > 1000; Fig. 2B,
+left). Meanwhile, paired t tests on fitting slopes revealed that the degree
+of UMI influenced by the self-state load was significantly greater than
+that of PMI (t(23) = 4.811, p < 0.001, Cohen’s d = 0.982, BF = 351.956;
+both slopes were greater than 0: ts > 10.152, ps < 0.001, Cohen’s ds >
+2.072, BFs > 1000; Fig. 2B, right). These results indicated that our
+sequential recall task effectively modulated the priority state.
+More importantly, to clarify the interaction between the priority
+state and another-state load, one-way repeated-measures ANOVA
+revealed that there were significant differences in recall errors for both
+the PMI and UMI as the another-state load increased (Fs > 3.230, ps <
+0.049, ηp2s > 0.123, BFs > 1.244), and the post hoc test results revealed
+that the PMI recall errors significantly worsened under larger UMI loads
+(UMI load 1 vs. 2: t(23) = 0.356, p = 1.000, Cohen’s d = 0.062, BF =
+0.227; UMI load 2 vs. 3, t (23) = 2.815, p = 0.029, Cohen’s d = 0.296, BF
+= 4.913), whereas the UMI recall errors significantly worsened under
+higher PMI loads (PMI load 1 vs. 2: t(23) = 8.092, p < 0.001, Cohen’s d
+= 0.760, BF ≥ 1000; PMI load 2 vs. 3: t(23) = 2.217, p = 0.110, Cohen’s
+d = 0.204, BF = 1.659; Fig. 2C, left). Consistently, paired t tests on slopes
+also revealed that the degree to which UMI was influenced by PMI was
+significantly greater than the degree to which PMI was influenced by
+UMI (t(23) = 4.967, p < 0.001, Cohen’s d = 1.014, BF = 499.002; both
+fitted slopes were greater than 0: ts > 2.477, ps < 0.021, Cohen’s ds >
+0.506, BF > 2.613; Fig. 2C, right). These results demonstrated an
+asymmetrical interaction pattern between PMIs and UMIs. Moreover,
+additional paired t tests on the slopes revealed that for both the PMI and
+UMI recalls, the degrees of self-state load effects were significantly
+stronger than those of the another-state load effects (ts > 5.679, ps <
+0.001, Cohen’s ds > 1.159; BF > 1000), confirming that PMIs and UMIs
+were stored in different formats, with the distinction being qualitative
+rather than quantitative.
+
+Data analysis
+The recall error was estimated by the angular difference on the color
+wheel between the selected color and the target color (in degrees). The
+errors in the first and second recalls indicated the performance of the
+PMI and UMI, respectively (Fig. 2A).
+To examine whether the recall performance for the PMI and UMI was
+influenced by the memory load of the same and different priority states,
+we conducted a 2 (recall priority: UMI vs. PMI) × 3 (self-state load: 1 vs.
+2 vs. 3 items) × 3 (another-state load: 1 vs. 2 vs. 3 items) three-way
+repeated-measures ANOVA. If the three-way interaction was signifi­
+cant, we would examine the interaction effects between the self-state
+load and another-state load on PMI and UMI recall separately via twoway repeated-measures ANOVA. If the three-way interaction was not
+significant, we would specifically examine the interactions between
+recall priority and self-state load, as well as interactions between recall
+priority and another-state load. In the case of significant two-way in­
+teractions, we further conducted simple effect analyses and post hoc
+tests. All post hoc tests in this study were corrected via Bonferroni ad­
+justments. Moreover, we performed parallel Bayesian analyses via
+standard priors, as implemented in JASP Version 0.16.3. All of the sta­
+tistical analyses were performed in MATLAB and JASP software.
+Previous studies have reported that recall errors for PMIs are lower
+than those for UMIs (Bae & Luck, 2017; Z. Li et al., 2021; Oberauer,
+2005; Peters et al., 2012). To rule out the possibility that recall baselines
+influenced interaction patterns between PMIs and UMIs, we assessed the
+overall magnitude of their interaction effects using linear regression
+analysis. To achieve this, at the individual level, we conducted linear
+regression analyses with PMI and UMI recall errors as dependent vari­
+ables and self-state load and another-state load as independent vari­
+ables. The slope values of the linear fits indicated the degree to which
+the PMIs and UMIs were affected by the self-state load or another-state
+load. Next, we tested the significance of the slopes via one-sample t tests
+and compared the degree to which the PMI and UMI were affected by the
+self-state load and another-state load using paired t tests.
+
+Summary of Experiment 1
+Experiment 1 replicated previous findings that recall errors for both
+PMIs and UMIs are influenced by self-state load (Lewis-Peacock et al.,
+2012; Z. Li et al., 2021). More importantly, we found that the recall
+errors for both the PMIs and UMIs deteriorated when the another-state
+load increased, indicating considerable interactions between items
+with varying priorities in VWM. Additionally, we found that these
+interactive effects were asymmetric, with UMI recall being more
+affected by PMI than the opposite. In the following experiments, we
+focused on the interaction patterns between PMIs and UMIs during
+VWM.
+Experiments 2 and 3
+Experiments 2 and 3 further examined whether the presentation
+order of PMIs and UMIs influenced the interaction between them. In
+Experiment 2, we reversed the presentation order of the PMIs and UMIs;
+in Experiment 3, we randomized the presentation order by introducing a
+post encoding cue. The other settings were the same as those in Exper­
+iment 1. If the interaction pattern was not influenced by the presentation
+order, we would observe similar results in Experiments 2 and 3.
+4
+
+J. Ni et al.
+
+Journal of Memory and Language 146 (2026) 104702
+
+Experiment 2
+
+measures ANOVA revealed that both the PMI and UMI recall errors
+changed significantly across the another-state loads (Fs > 8.259, ps <
+0.001, ηp2s > 0.264, BFs > 34.58; Fig. 3C, left). Post hoc tests revealed
+that as the another-state load increased, PMI recall errors significantly
+increased only between the lowest two UMI load levels (UMI load 1 vs.
+2: t(23) = 4.240, p = 0.003, Cohen’s d = 0.295, BF = 38.271; UMI load 2
+vs. 3: t(23) = 0.941, p = 1.000, Cohen’s d = 0.066, BF = 0.264), whereas
+UMI recall errors significantly increased as the PMI load gradually
+increased (ts > 6.776, ps < 0.001, Cohen’s ds > 0.732, BFs > 1000).
+Moreover, a paired t test of the slopes indicated that the degree of the
+another-state load effect on the UMI was greater than that on the PMI (t
+(23) = 6.847, p < 0.001, Cohen’s d = 1.398, BF > 1000; both slopes were
+greater than 0, ts > 3.339, ps < 0.003, Cohen’s ds > 0.682, BFs > 14.120;
+Fig. 3C, right). These results replicated the asymmetrical interaction
+pattern and indicated a larger influence of PMIs on UMIs.
+
+Participants and procedure
+The sample size of participants and selection criteria were consistent
+with those in Experiment 1; Experiment 2 included 24 participants (10
+males; age: M = 22.17 years, SD = 3.07). The stimulus materials and
+task procedures used in Experiment 2 were similar to those used in
+Experiment 1. In Experiment 2, the only difference was that the recall
+order of two color arrays was reversed, requiring participants to first
+recall one targeted color from the first array and then another from the
+second array (Fig. 3A).
+Data analysis
+The data analysis was identical to that in Experiment 1 while we only
+focused on the another-load effect (a.k.a. the interaction effect between
+priority state and another-state load). The recall error in the first recall
+reflects the performance of the PMI, and the recall error in the second
+recall reflects the performance of the UMI.
+
+Experiment 3
+Participants and procedure
+The sample size of participants and selection criteria were consistent
+with those in Experiment 1; Experiment 3 included 24 participants (9
+males; age: M = 20.58 years, SD = 2.28). The stimulus materials and task
+procedures used in Experiment 3 were similar to those used in Experi­
+ment 1. The only difference was that the recall order was determined by
+a numerical cue presented after the second color array, with “1″ indi­
+cating that participants first recalled colors from the first color array and
+then from the second array, whereas ”2″ indicating the opposite recall
+order. The numerical cue was presented for 200 ms, and the
+
+Results
+Consistent with the results of Experiment 1, the three-way interac­
+tion effect between the priority state, self-state load and another-state
+load was not significant (F(4,92) = 1.304, p = 0.274, ηp2 = 0.054, BF
+= 0.274). However, all two-way interactions were significant (Fs >
+3.086, ps < 0.020, ηp2s > 0.118, BFs > 1.662). Focusing on the inter­
+action between priority state and another-state load, one-way repeated-
+
+Fig. 3. A. The delayed estimation task for colors in Experiment 2. In all trials, participants were required to recall one targeted color in the first array, and then recall
+another targeted color in the second array. B. Recall errors for PMIs and UMIs under different memory load conditions. C. Another-state load effects on PMI and UMI
+recall. In panel C, the left figures show changes in PMI and UMI recall errors under different another-state memory load conditions. Black asterisks represent sig­
+nificant interaction effect and gray asterisks represent significant one-way ANOVAs. The right figures show the fitted slopes of the another-state memory load effects
+on PMI and UMI recall. Black asterisks represent significant paired t-tests, and gray asterisks represent significant single-sample t-tests. Error bars represent standard
+errors (SE). ***p < 0.001; **p < 0.01; *p < 0.05.
+5
+
+J. Ni et al.
+
+Journal of Memory and Language 146 (2026) 104702
+
+probabilities of the two recall orders were equal (Fig. 4A).
+
+p < 0.001, Cohen’s d = 1.082, BF ≥ 1000; both slopes were greater than
+0, ts > 4.188, ps < 0.001, Cohen’s ds > 0.855, BF > 87.911; Fig. 4C,
+right).
+Additionally, there was no significant three-way interaction between
+priority states, another-state loads, and presentation orders (F(4,138) =
+2.126, p = 0.081, ηp2 = 0.058, BF = 0.260), suggesting comparable
+interaction effects across three experiments with varying presentation
+orders of PMIs and UMIs.
+
+Data analysis
+The data analysis was identical to that in Experiment 2. Furthermore,
+we performed an analysis to further assess the asymmetric interaction
+effects across Experiments 1 to 3. Based on the three-way repeatedmeasures ANOVAs, we add a between-subject factor presentation order
+of PMIs and UMIs (Experiment 1-backward recall vs. Experiment2forward recall vs. Experiment 3- random recall order) into this analysis.
+
+Summary of Experiments 2 and 3
+Both Experiments 2 and 3 replicated the main findings of Experiment
+1: the interactive effects between the PMI and UMI memory were sig­
+nificant, and the UMI was more significantly affected by the PMI than
+was the opposite. These results suggested that the representation order
+of the PMI and UMI did not affect the pattern of their interactions. The
+different interactive effects between PMI and UMI under low and high
+memory loads in Experiments 2 and 3 are discussed further in the gen­
+eral discussion section.
+
+Results
+Similar three-way ANOVA results with Experiment 1 were observed:
+There was no three-way interaction effect (F(4,92) = 1.994, p = 0.102,
+ηp2 = 0.080, BF = 1.371), but all two-way interactions were significant
+(Fs > 17.505, ps < 0.001, ηp2s > 0.432, BFs > 1000). Focusing on the
+interaction effect between priority state and another-state load, further
+one-way repeated-measures ANOVA revealed that both the PMI and
+UMI recall errors changed across the another-state loads (Fs > 9.982, ps
+< 0.001, ηp2s > 0.303, BFs > 99; Fig. 4C, left). Post hoc tests revealed
+that as the another-state load increased, PMI recall errors increased only
+between lower UMI loads (UMI load 1 vs. 2: t(23) = 3.130, p = 0.014,
+Cohen’s d = 0.363, BF = 9.180; UMI load 2 vs. 3: t(23) = 1.139, p =
+0.799, Cohen’s d = 0.123, BF = 0.383), whereas UMI recall errors
+significantly increased as the another-state load gradually increased (ts
+> 2.739, ps < 0.035, Cohen’s ds > 0.320, BFs > 4.251). Moreover, a
+paired t test of the slopes revealed that UMI recall errors were more
+significantly influenced by the PMI load than vice versa (t(23) = 5.300,
+
+Experiments 4 and 5
+To investigate whether the interaction pattern between different
+types of priority information is consistent across different stimulus
+types, Experiments 4 and 5 employed delayed estimation tasks for ori­
+entations and locations, and we expected similar PMI and UMI inter­
+action patterns.
+
+Fig. 4. A. The delayed estimation task for colors in Experiment 3. A post-encoding number cue indicates the recall order in each trial. The number “1″ indicates that
+participants recall the first color array and then the second array, and it will be presented in half of the randomized trials. B. Recall errors for PMIs and UMIs under
+different memory load conditions. C. Another-state load effects on PMI and UMI recall. In panel C, the left figures show changes in PMI and UMI recall errors under
+different another-state memory load conditions. Black asterisks represent significant interaction effect and gray asterisks represent significant one-way ANOVAs. The
+right figures show the fitted slopes of the another-state memory load effects on PMI and UMI recall. Black asterisks represent significant paired t-tests, and gray
+asterisks represent significant single-sample t-tests. Error bars represent standard errors (SE). ***p < 0.001; **p < 0.01; *p < 0.05.
+6
+
+J. Ni et al.
+
+Journal of Memory and Language 146 (2026) 104702
+
+Experiment 4
+
+interaction effect between the priority state and the another-state load (F
+(2,46) = 22.431, p < 0.001, ηp2 = 0.494, BF > 1000), with no three-way
+interaction or other two-way interactions (Fs < 1.267, ps > 0.289, ηp2s
+< 0.052, BFs < 0.246). Accordingly, the following one-way repeated
+measures ANOVAs and post hoc tests revealed that both the PMI and
+UMI recall errors increased as the another-state load gradually increased
+(one-way ANOVAs: Fs > 20.071, ps < 0.001, ηp2s > 0.466, BFs > 1000;
+post hoc tests: ps < 0.035, Cohen’s ds > 0.227, BFs ≥ 4.290; Fig. 5C,
+left). Additionally, a paired t test of the slopes revealed that the UMI was
+more strongly affected by the PMI than vice versa (t(23) = 5.971, p <
+0.001, Cohen’s d = 1.219, BF ≥ 1000; both slopes were greater than 0: ts
+> 5.590, ps < 0.001, Cohen’s ds > 1.141, BFs > 1000; Fig. 5C, right).
+
+Participants and procedure
+The sample size of participants and selection criteria were consistent
+with those used in Experiment 1. Experiment 4 included 24 participants
+(12 males; age: M = 21.92 years, SD = 2.69). Participants completed a
+delayed recall task for orientations. In each trial, six orientations were
+randomly selected from 0◦ to 180◦ , with a minimum difference of 10◦ .
+The orientations were presented as white lines (1.5◦ in length, 0.1◦ in
+width). The positions where the orientations were presented were the
+same as those in Experiment 3. In the two test phases, participants were
+required to recall the orientation at the cued positions. On the probe
+display, a randomly oriented white line was presented at the center of
+the screen, and participants adjusted its orientation using the mouse and
+then confirmed the response by clicking the left button. The initial angle
+of the white line was randomized in each trial to prevent advance
+preparation (Fig. 5A).
+
+Experiment 5
+Participants and procedure
+The sample size of participants and selection criteria were consistent
+with those used in Experiment 1. Experiment 5 included 24 participants
+(7 males, M = 22.08 years, SD = 2.21).
+Participants completed a delayed estimation task for locations. The
+only difference from Experiment 3 was that participants had to recall the
+previously presented locations during the test phase on the basis of the
+colored cues. To achieve this, the colors and positions of the stimuli were
+adjusted accordingly. In all of the trials, the colors of the two memory
+arrays were fixed and selected from the same color wheel: 60◦ , 180◦ , and
+300◦ for one array and 120◦ , 240◦ , and 360◦ for the other; then, the
+positions were randomly selected from the same invisible circle, with a
+minimum difference of 20◦ . During the test phases, colored cues were
+
+Data analysis
+The recall errors for orientations were defined as the different angles
+(in degrees) between the selected values and the targeted values. The
+data analysis procedure was the same as that in Experiment 3.
+Results
+The orientation task revealed a similar interaction pattern as the
+three experiments above. Three-way ANOVA revealed significant
+
+Fig. 5. A. The delayed estimation task for orientations in Experiment 4. After two orientation arrays, a number indicates the order of recalls: “1″ indicates par­
+ticipants recall the targeted orientation from the first array first, and ”2″ indicates the opposite condition; B. Recall errors for PMIs and UMIs under different memory
+load conditions. C. Another-state load effects on PMI and UMI recall. In panel C, the left figures show changes in PMI and UMI recall errors under different anotherstate memory load conditions. Black asterisks represent significant interaction effect and gray asterisks represent significant one-way ANOVAs. The right figures show
+the fitted slopes of the another-state memory load effects on PMI and UMI recall. Black asterisks represent significant paired t-tests, and gray asterisks represent
+significant single-sample t-tests. Error bars represent standard errors (SE). ***p < 0.001; **p < 0.01; *p < 0.05.
+7
+
+J. Ni et al.
+
+Journal of Memory and Language 146 (2026) 104702
+
+presented in the center of the screen (radius = 0.5◦ ), and a white
+response wheel was displayed (radius = 3◦ , width = 0.5◦ ). The partici­
+pants recalled the position of the cued colors by moving the mouse
+around the response wheel, with a white dot indicating the mouse’s
+corresponding position (radius = 0.5◦ ). The participants confirmed their
+selection by clicking the left mouse button. The initial position of the
+white dot was randomly set in each trial to prevent advance preparation
+(Fig. 6A).
+
+repeated measures ANOVAs to test the interaction effects between the
+priority state and another-state load. The results revealed that when the
+self-state load was 1, although the main effects of the priority state and
+the another-state load were significant (Fs > 16.496, ps < 0.001, ηp2s >
+0.418, BFs > 100), there was no interaction effect between them (F
+(2,46) = 0.957, p = 0.392, ηp2 = 0.040, BF = 0.297; Fig. 6C, left). Oneway repeated measures ANOVAs revealed that both the PMI and UMI
+recall errors changed as the another-state load increased (Fs > 7.491, ps
+< 0.002, ηp2s > 0.246, BFs > 35.366). Post hoc tests revealed that PMI
+recall errors tended to increase with increasing UMI load but were not
+statistically significant (load 1 vs. load 2: t(23) = 2.514, p = 0.058,
+Cohen’s d = 0.486, BF = 2.793; load 2 vs. load 3: t(23) = 1.786, p =
+0.262, Cohen’s d = 0.485, BF = 0.845), and UMI recall errors followed a
+similar pattern (load 1 vs. load 2: t(23) = 2.246, p = 0.104, Cohen’s d =
+0.487, BF = 1.743; load 2 vs. load 3: t(23) = 3.124, p = 0.014, Cohen’s d
+= 0.638, BF = 9.060). Consistently, paired t tests revealed no difference
+between the influences of the PMI on the UMI and those of the UMI on
+the PMI (t(23) = 1.893, p = 0.071, Cohen’s d = 0.387, BF = 0.990; both
+slopes greater than 0: ts > 2.922, ps < 0.008, Cohen’s ds > 0.597, BFs ≥
+6.058).
+In contrast, when the self-state load was 2 or 3, the interaction pat­
+terns between the PMI and UMI were consistent with those of previous
+experiments, showing significant interaction effects between the prior­
+ity state and the other-state load (Fs > 5.907, ps < 0.005; ηp2s > 0.204;
+BFs > 15.486). Simple effects analysis and post hoc tests revealed that
+both PMI and UMI recall errors significantly increased as the anotherstate load gradually increased (one-way ANOVA: Fs > 17.610, ps <
+0.001, ηp2s > 0.434, BFs > 1000; post hoc t test: ts > 2.639, ps < 0.044,
+Cohen’s d > 0.492; BFs ≥ 3.514; except for PMI recall errors, the PMI
+load was 2, UMI load 2 vs. load 3: t(23) = 2.161, p = 0.124, Cohen’s d =
+0.525, BF = 1.512). Additionally, a paired t test of the slopes revealed
+that the UMI was significantly more affected by the PMI than the
+opposite way was (ts > 3.204, ps < 0.004, Cohen’s ds > 0.654, BFs ≥
+
+Data analysis
+The recall errors for locations were defined as the different angles (in
+degrees) between the selected values and the targeted values. The data
+analysis procedure was the same as that in Experiment 3. Furthermore,
+we performed a four-way repeated-measures ANOVA to compare the
+another-state load effects across Experiments 3 to 5. To achieve this,
+based on the three-way repeated-measures ANOVAs in each experiment,
+we added a between-subject factor stimuli type (Experiment 3: color
+recall vs. Experiment 4: orientation recall vs. Experiment 5: location
+recall). Given the non-uniform error scales (color/location errors ranged
+0–180◦ due to unique dot values, while orientation errors ranged 0–90◦
+due to circular angle representation), color/location errors were divided
+by two to ensure cross-experimental consistency and mitigate statistical
+biases.
+Results
+The location task also replicated the main findings of the three ex­
+periments above, although there was a slight difference. Three-way
+repeated-measures ANOVA revealed a significant interaction effect be­
+tween the priority state, self-state load and another-state load (F(4,92)
+= 3.915, p = 0.006, ηp2 = 0.145, BF = 17.435). Since we focused on the
+another-state load effect, at each self-load level, we conducted two-way
+
+Fig. 6. A. The delayed estimation task for locations in Experiment 5. The procedure is similar with that in Experiment 4. B. Recall errors for PMIs and UMIs under
+different memory load conditions. C. Another-state load effects on PMI and UMI recall. In panel C, the left figures show changes in PMI and UMI recall errors under
+different another-state memory load conditions. Black asterisks represent significant interaction effect and gray asterisks represent significant one-way ANOVAs. The
+right figures show the fitted slopes of the another-state memory load effects on PMI and UMI recall. Black asterisks represent significant paired t-tests, and gray
+asterisks represent significant single-sample t-tests. Error bars represent standard errors (SE). ***p < 0.001; **p < 0.01; *p < 0.05.
+8
+
+J. Ni et al.
+
+Journal of Memory and Language 146 (2026) 104702
+
+10.673; all slopes greater than 0: ts > 5.265, ps < 0.001, Cohen’s ds >
+1.075, BFs ≥ 971.071; Fig. 6C, right).
+Finally, there was no significant three-way interaction between pri­
+ority states, another-state loads, and stimuli types (F(4,138) = 0.682, p
+= 0.606, ηp2 = 0.019, BF = 0.032), suggesting comparable interaction
+effects across the experiments with varying stimuli types.
+
+the A or D key, with a maximum response time of 2 s. The keys were
+counterbalanced across participants. Moreover, the memory loads of
+PMIs and UMIs could be 1 or 2. Thus, in the Experiment 6, we included 8
+conditions, and each condition included 40 trials. All trials were evenly
+and randomly distributed into 10 blocks. The experiment lasted for
+approximately 80 min.
+
+Summary of Experiments 4 and 5
+
+Data analysis
+
+Experiments 4 and 5 verified that the asymmetry interaction pattern
+between PMIs and UMIs is consistent across different stimulus types.
+Notably, this pattern was similar across memory loads in color and
+orientation recalls but became more pronounced under higher loads in
+location recall. We explore potential reasons for these differences in the
+discussion section.
+
+The accuracy rate in arithmetic judgments validated the attentionswitching manipulation (mean accuracy = 70.90 %, SD = 7.37 %, one
+sample t-test versus chance level is significant, t(17) = 12.023, p <
+0.001, Cohen’s d = 2.834; BF ≥ 1000). The color recall error reflects the
+VWM performance. First, we performed similar three-factor repeated
+measures ANOVAs and statistical procedures in the attention-stay and
+attention-switch conditions separately. We still focused on the interac­
+tion between priority states and another-state load, and paired t-tests
+were conducted in each priority state if it was significant (since only two
+memory loads were included in this experiment). If different interaction
+patterns between the PMI and UMI were observed in the two attention
+conditions, we would then conduct a four-way repeated-measures
+ANOVA [2 (attention condition: attention stay vs. attention switch) × 2
+(priority state: UMI vs. PMI) × 2 (self-state load: 1 vs. 2) × 2 (anotherstate load: 1 vs. 2)] to further confirm whether the differences were
+significant. Moreover, we performed a similar linear fit analysis of recall
+errors and further conducted a two-way ANOVA [2 (attention condition:
+attention stay vs. attention switch) × 2 (another-load effect: PMI
+affected by UMI vs. UMI affected by PMI)] to examine whether the
+interaction effects differed significantly between attention conditions.
+
+Experiments 6 and 7
+Through the above experiments, we have provided strong evidence
+of the asymmetric interaction effects between PMIs and UMIs during
+VWM. However, the underlying cognitive mechanisms remain unclear.
+One view proposed that the asymmetry interactions occurred since more
+attentional resources were allocated to PMIs during the delay phase,
+reducing its susceptibility to interference (Bae & Luck, 2017). Another
+view suggested that the reactivation of UMI representations during PMI
+retrieval affects UMI recall, leading to a unidirectional influence (MuhleKarbe et al., 2021). We tested these two hypotheses in Experiment 6 and
+Experiment 7 separately. The experimental designs leveraged that in
+Experiment 1, which showed the strongest interaction between priority
+status and another-state load.
+
+Results
+
+Experiment 6
+
+We replicated the results of Experiment 1 under the attention stay
+condition. The three-way ANOVA revealed significant two-way in­
+teractions between the priority state and another-state load, as well as
+between another-state load and self-state load (Fs > 6.243, ps < 0.023,
+ηp2s > 0.269, BFs > 2.602), but no three-way interaction or two-way
+interaction between the priority state and self-state load (Fs < 2.943,
+ps > 0.104, ηp2s < 0.104, BFs < 1.392). Then, further paired t tests
+revealed that UMI recall error significantly increased when the PMI load
+increased (t(17) = 5.032, p < 0.001, Cohen’s d = 1.186; BF = 275.714),
+but no difference was detected in the opposite condition (t(17) = 1.088,
+p = 0.292, Cohen’s d = 0.257, BF = 0.407; Fig. 7C, left). Consistently,
+paired t tests on the slopes revealed that the another-load effect on UMI
+was significantly greater than that on PMI (t(17) = 3.839, p = 0.001,
+Cohen’s d = 0.905, BF = 29.533; the UMI slope was greater than 0:t(17)
+= 4.695, p < 0.001, Cohen’s d = 1.107, BF = 147.313; and the PMI slope
+was not different from 0: t(17) = 1.032, p = 0.317, Cohen’s d = 0.243,
+BF = 0.387; Fig. 7C, right). In contrast, as expected, under the attention
+switch condition, there were no three-way interaction or two-way in­
+teractions (Fs < 2.087, ps > 0.167, ηp2s < 0.108, BFs < 0.729; Fig. 7C,
+left), but significant main effects of self-state load and another-state load
+(Fs > 15.900, ps < 0.001, ηp2s > 0.483, BFs > 21.418). Paired t tests
+revealed that both the PMI and UMI recall errors increased when the
+another-state memory load increased (ts > 2.937, ps < 0.009, Cohen’s
+ds > 0.692, BFs > 5.662; Fig. 7C, right). Similarly, paired t tests on the
+slopes revealed no difference in the degrees of the another-state loads on
+the PMIs and UMIs (t(17) = 0.017, p = 0.987, Cohen’s d = 0.004, BF =
+0.243; the slopes were all greater than 0: ts > 3.297, ps < 0.004, Cohen’s
+ds > 0.777, BFs > 10.819; Fig. 7C, right).
+More importantly, the four-way repeated-measures ANOVA revealed
+significant three-way interactions between attention condition, priority
+state and another-state load, as well as attention condition, another-state
+load and self-state load (Fs > 4.779, ps < 0.043, ηp2s > 0.219, BFs >
+1.677, no other interactions were significant: Fs < 4.008, ps > 0.062,
+ηp2s > 0.191, BFs < 1.109). Additionally, a two-way ANOVA of the
+
+In Experiment 6, participated need to complete a math distracting
+task during the maintenance. This attention-shift manipulation tempo­
+rally withdraws both PMIs and UMIs out of attention and introduces
+similar passive states. If the sustained attention to PMIs drives the
+asymmetric interactions, comparing with the attention-stay condition
+without distractors, we would expect an increased influence of UMIs on
+PMIs under the attention-shift condition and thus a less asymmetrical
+interaction, we kept the terms of PMIs and UMIs across experimental
+conditions since the recall priorities did not change and the comparisons
+between conditions would be clearer.
+Participants
+To determine the sample size, we entered the effect size of the
+interaction effect between priority status and the another-state load in
+Experiment 1 (ηp2 = 0.421) into MorePower software, and a sample size
+of 18 participants would provide power greater than 90 % to replicate
+the interaction effect (α = 0.05). The inclusion and screening criteria for
+participants were consistent with those of the previous experiments.
+Eighteen participants were included in Experiment 6 (5 males; age: M =
+22.56 years, SD = 4.23).
+Procedure
+The procedure was similar to that in Experiment 1 except that we
+included two attention conditions (Fig. 7A). In half of the trials,
+consistent with the regular experimental procedure in Experiment 1,
+during the 2 s delay after the second color array, the participants only
+needed to look at the fixation at the center of the screen (“attention
+stay”). In the other half of the trials, the participants were required to
+complete a single-digit addition or subtraction task during this delay
+period (“attention switch”). In these attention switch trials, the partic­
+ipants judged whether the presented equation was correct by pressing
+9
+
+J. Ni et al.
+
+Journal of Memory and Language 146 (2026) 104702
+
+(caption on next page)
+
+10
+
+J. Ni et al.
+
+Journal of Memory and Language 146 (2026) 104702
+
+Fig. 7. A. The procedure of Experiment 6. In Experiment 6, participants only needed to look at the fixation during the delay phase under the attention stay condition,
+while they are required to complete an arithmetic judgment task during the delay phase under the attention switch condition. Two types of trials were equally and
+randomly presented during the task. The loads of PMIs and UMIs are 1 or 2. B. Recall errors for PMIs and UMIs under different memory load conditions. C. Anotherstate load effects on PMI and UMI recall. In panel C, the left figures show changes in PMI and UMI recall errors under different another-state memory load conditions.
+Black asterisks represent significant interaction effect and gray asterisks represent significant one-way ANOVAs. The right figures show the fitted slopes of the
+another-state memory load effects on PMI and UMI recall. Black asterisks represent significant paired t-tests, and gray asterisks represent significant single-sample ttests. Error bars represent standard errors (SE). ***p < 0.001; **p < 0.01; *p < 0.05.
+
+slopes revealed a significant interaction between the attention condition
+and the another-load effect (F(1,17) = 5.765, p = 0.028, ηp2 = 0.253, BF
+= 5.472; Fig. 7C, right). Further paired t tests revealed that, compared
+with the attention stay condition, the another-load effect on the PMI
+specifically increased under the attention switch condition (t(17) =
+4.084, p < 0.001, Cohen’s d = 0.963, BF = 46.780; the another-load
+effect on the UMI did not change: t(17) = 0.203, p = 0.842, Cohen’s
+d = 0.048; BF = 0.248). These results confirmed that the asymmetry
+interaction effects were a result of sustained attention to the PMI and
+that the PMI was less affected by UMI.
+
+Results
+Similarly, we replicated the results of Experiment 1 in the doublerecall trials. A three-factor repeated-measures ANOVA revealed that
+two-way interactions between priority state and another-state load (F
+(1,17) = 12.848, p = 0.002, ηp2 = 0.430, BF = 12.516), as well as those
+between priority state and self-state load, were significant (F(1,17) =
+8.595, p = 0.009, ηp2 = 0.336, BF = 1.424; other interaction effects: Fs <
+0.107, ps > 0.748, ηp2s < 0.006, BFs < 0.332). Further paired t tests
+revealed that the UMI recall error significantly increased with increasing
+PMI load (t(21) = 4.532, p < 0.001, Cohen’s d = 1.068; BF = 129.626),
+whereas the PMI recall error did not change when the UMI load
+increased (t(17) = 1.859, p = 0.080, Cohen’s d = 0.438, BF = 0.538;
+Fig. 8C, left). Similarly, paired t tests on the slopes revealed that the
+another-load effect on UMI was significantly greater than that on PMI (t
+(17) = 3.644, p = 0.002, Cohen’s d = 0.859, BF = 20.496; on UMI: t(17)
+= 4.821, p < 0.001, Cohen’s d = 1.136, BF = 186.412; on PMI: t(17) =
+1.555, p = 0.138, Cohen’s d = 0.366, BF = 0.672; Fig. 8C, right). In
+contrast, in the single-recall condition, except for a significant two-way
+interaction between priority state and self-state load (F(1,17) = 6.849, p
+= 0.018, ηp2 = 0.287, BF = 1.344), the other interaction effects were not
+significant (Fs < 2.017, ps > 0.174, ηp2s < 0.106, BFs < 1.849). Further
+paired t tests revealed that neither the PMI nor the UMI recall errors
+changed when the another-state load increased (ts < 1.577, ps > 0.133,
+Cohen’s d < 0.356, BFs < 0.691; Fig. 8C, left). Similarly, the comparison
+of slopes revealed that there were no significant another-load effects on
+the PMI or UMI (ts < 1.630, ps > 0.121, Cohen’s ds < 0.384, BFs <
+0.738; difference: t(17) = 0.136, p = 0.894, Cohen’s d = 0.032, BF =
+0.245; Fig. 8C, right).
+Moreover, the four-way repeated-measures ANOVA revealed signif­
+icant three-way interactions between the recall condition, priority state
+and another-state load, as well as between the recall condition, priority
+state and self-state load (Fs > 6.112, ps < 0.024, ηp2s > 0.264, BFs >
+3.240; other interaction effects: Fs < 0.981, ps > 0.336, ηp2s < 0.055,
+BFs < 0.510). Moreover, two-way ANOVA of the slopes revealed a sig­
+nificant interaction effect (F(1,17) = 5.790, p = 0.028, ηp2 = 0.254, BF =
+24.087). Further paired t tests revealed that the another-load effect on
+UMI specifically decreased in the double-recall condition compared with
+that in the single-recall condition (t(17) = 3.189, p = 0.005, Cohen’s d =
+0.752, BF = 8.879; no changes in the another-load effect on PMI were
+detected: t(17) = 0.272, p = 0.789, Cohen’s d = 0.064, BF = 0.251;
+Fig. 8C, right). These results suggested that the priority retrieval of the
+prioritized set contributes to the greater influence of the PMI on the UMI
+than that of the UMI on the PMI.
+
+Experiment 7
+In Experiment 7, participated completed an additional single-recall
+condition where only PMIs or UMIs were recalled. If the prioritized
+retrieval of PMIs contributed to the asymmetrical interaction, we would
+expect that the influence of the PMI on the UMI specifically decrease
+when PMI recall was not needed. As a result, the asymmetry interaction
+effects reduced.
+Participants
+The sample size of participants and selection criteria were consistent
+with those used in Experiment 6. Eighteen participants were included in
+Experiment 7 (4 males, age: M = 21.61 years, SD = 2.20).
+Procedure
+The procedure was similar to that of Experiment 1 except that we
+included two recall conditions. In both conditions, participants encoded
+two memory arrays with the instructions that the second memory array
+was always first-recalled (PMIs) and the first memory array would be
+later-recalled (UMIs). Then, after the delay following the second mem­
+ory array display, different types of recall trials were randomly pre­
+sented: In the double recall condition, consistent with previous
+experiments, participants recalled the PMI and UMI sequentially
+(“double recall: PMI & UMI”). In the single recall condition, participants
+needed to recall only the PMI or UMI (“single recall: PMI” or “single
+recall: UMI” in 50 % chance). In the single recall PMI trials, the par­
+ticipants recalled the targeted colors from the second memory array
+when the probe display appeared, and no responses were required in the
+following waiting display, where a white dot (radius = 0.5◦ ) was pre­
+sented for 2 s; In the single recall UMI trials, the same white dot waiting
+display was first presented for 2 s, and then the participants needed to
+recall the targeted colors from the first memory array when the
+following probe display appeared (Fig. 8A). Notably, the 2 s interval was
+based on the mean recall RT of PMIs in Experiment 1 to minimize the
+potential influence of different delay durations (the actual RTs for PMIs
+in two conditions were comparable to, and not significantly different
+from, 2 s, ps > 0.05); and the waiting display omitted the response wheel
+to prevent potential spontaneous retrieval processes.
+
+Summary of Experiments 6 and 7
+The results of Experiment 6 indicated that the smaller influence of
+UMI on PMI was due to the protective effect of sustained attention on
+PMI during the delay phase, which reduced its susceptibility to UMI.
+Moreover, the results of Experiment 7 indicated that the greater influ­
+ence of the PMI on the UMI was due to the prioritized retrieval of the
+PMI, which increased the interference from the PMI unidirectionally.
+Together, both the sustained attention to PMIs and the prioritized
+retrieval of PMIs were responsible for the asymmetric interaction effects
+between the PMI and UMI during VWM.
+Notably, Experiment 6 revealed comparable recall performance be­
+tween PMIs and UMIs following the distractor task, alongside
+
+Data analysis
+The data analysis in Experiment 7 was similar to that of Experiment
+6, and we examined whether the interaction patterns differed between
+the double-recall and single-recall conditions.
+11
+
+J. Ni et al.
+
+Journal of Memory and Language 146 (2026) 104702
+
+(caption on next page)
+
+12
+
+J. Ni et al.
+
+Journal of Memory and Language 146 (2026) 104702
+
+Fig. 8. A. The procedure of Experiment 7. In Experiment 7, participants sequentially recall colors from two memory arrays under the double recall condition,
+whereas participants only recall one memory array under the single recall condition. Three types of trials are equally and randomly presented during the task, and the
+PMIs and UMIs are 1 or 2. B. Recall errors for PMIs and UMIs under different memory load conditions. C. Another-state load effects on PMI and UMI recall. In panel C,
+the left figures show changes in PMI and UMI recall errors under different another-state memory load conditions. Black asterisks represent significant interaction
+effect and gray asterisks represent significant one-way ANOVAs. The right figures show the fitted slopes of the another-state memory load effects on PMI and UMI
+recall. Black asterisks represent significant paired t-tests, and gray asterisks represent significant single-sample t-tests. Error bars represent standard errors (SE). ***p
+< 0.001; **p < 0.01; *p < 0.05.
+
+comparable another-load effects of PMIs and UMIs — a pattern seem­
+ingly inconsistent with Experiment 7′s demonstration that PMI retrieval
+evoked extra interference on UMIs. We reconcile these outcomes
+through differential pre-recall states of PMIs: In Experiment 6, the
+arithmetic task disrupted sustained attention to PMIs, inducing tempo­
+rally pre-recall passive states and resulting in a passive-state retrieval for
+PMIs. In contrast, in Experiment 7, PMIs sustained in active states before
+retrieval, leading to an active-state retrieval. This dissociation demon­
+strates that, although PMI retrievals occur in both experiments, only
+active-state retrieval of PMIs interferes with UMIs and drives the
+asymmetric interaction pattern. Aligning with this interpretation,
+studies have demonstrated that only PMIs could be reactivated by visual
+impulses (Wolff et al., 2015) and neural modulations (Rose et al., 2016)
+during the maintenance before recall, indicating that pre-recall storage
+states lead to different retrieval processes. Critically, recent evidence
+supported the interference effect of active-state retrieval: neural reac­
+tivations of UMIs during PMI recall were observed (Muhle-Karbe et al.,
+2021), and PMI reactivations after visual impulses correlated with
+impaired UMI recall (Yang et al., 2025). Nevertheless, the consequences
+of retrieval from (temporally) passive states remain underexplored and
+warrant further investigation.
+
+Furthermore, our study revealed that the interaction pattern was
+asymmetrical, with a greater influence of PMIs on UMIs. This asym­
+metric interaction pattern has been also noted by an earlier study (Bae &
+Luck, 2017), and our study advanced their findings from the perspective
+of larger another-state load effects, and extended the asymmetrical
+interaction to the memory load exceeding memory capacity. More
+critically, we demonstrated that shifting attention specifically increased
+the influence of UMIs on PMIs, directly verifying the attention allocation
+hypothesis. This result was also consistent with previous findings that
+items allocated more attention would experience less interference. For
+example, one study reported that neither the performance of the PMI nor
+the VWM-related EEG indices (such as CDA) changed with UMI loads
+(Heuer & Schubö, 2016). However, these findings were challenged by
+other studies. For example, another study reported that a task-irrelevant
+stimulus during maintenance had a larger negative impact on the PMI
+than the UMI (Allen & Ueno, 2018; Hu et al., 2016). We proposed that
+these inconsistencies could be explained when we distinguished taskirrelevant interference on PMIs and UMIs from the mutual influence
+between PMIs and UMIs, which deserves more attention in future
+studies.
+Besides, we confirmed that prioritized PMI retrieval was also
+responsible for the asymmetric interactions, which additionally
+increased the impacts of the PMI on the UMI. Since the priority of items
+was determined by response orders in most studies, the prioritized
+retrieval of PMIs may unidirectionally affect UMIs. Our study verified
+this hypothesis by demonstrating that the influence of PMIs on UMIs
+specifically decreased in trials where PMIs were not recalled. While
+other components of the testing window, such as test duration or probe
+interference, may also contribute to the worsened performance for UMI,
+the specific pattern of results observed in our study suggests that the
+prioritized retrieval of PMIs plays a critical role in the asymmetric
+interaction effects. Consistently, recent neuroimaging evidence has
+revealed neural representations of UMIs during PMI recall, confirming
+the “reactivation” of UMIs (Muhle-Karbe et al., 2021). Moreover, the
+latest study revealed that, visual impulses evoked neural reactivations of
+VWM, and larger reactivations were correlated with worse recall for
+both PMIs and UMIs (Yang et al., 2025). These researchers proposed that
+the neural reactivations weakened the neural dynamic representations,
+which have been proven to be beneficial for VWM, impairing the VWM
+performance (Liu et al., 2020). Moreover, our findings were consistent
+with studies that reported output interference in previous studies. For
+example, WM studies demonstrated large primacy effects in the serial
+recall for verbal stimuli (Cowan et al., 2002; Cowan & Elliott, 2023), and
+another study reported similar effects in long-term memory recall tasks
+(Bartsch & Oberauer, 2023). Notably, although both retrieval interfer­
+ence and attention allocation bias contribute to the asymmetrical
+interaction between PMIs and UMIs, they operate in separated ways.
+Finally, although the overall interactions between PMIs and UMIs
+were consistent across presentation orders and stimuli, there were some
+distinctions. Regarding different presentation orders, when PMIs were
+first encoded, PMIs were more affected by UMIs when UMI loads were
+high, whereas UMIs were more affected by PMIs when PMI loads were
+low. In contrast, when PMIs were encoded later or the encoded orders
+were randomized, PMIs were more affected when UMI loads were low,
+whereas UMIs were affected regardless of PMI loads. These in­
+consistencies may be explained by memory strategies. Specifically,
+when PMIs were presented first, the memory state of both PMIs and
+UMIs underwent at least one priority shift (since UMIs must be in the
+
+General discussion
+Our study revealed asymmetrical interactions between PMIs and
+UMIs during VWM and clarified its underlying cognitive mechanism.
+That is, the degree to which PMIs affected UMIs during VWM was
+greater than the opposite, and this pattern was consistent across pre­
+sentation orders and stimulus types. Moreover, the sustained attention
+allocation to PMIs during maintenance and the prioritized PMI retrieval
+were responsible for the observed asymmetric interactions, with the
+former increased the influence of UMIs on PMIs and the latter decreased
+the influence of PMIs on UMIs.
+First, we found that UMI recall deteriorated when the PMI load
+increased and vice versa, providing direct evidence for the interactions
+between information with varying priorities during VWM. These find­
+ings are consistent with previous studies (Bae & Luck, 2017). Compared
+with Bae’s study, on the one hand, PMIs and UMIs in the current study
+did not overlap in terms of location, ruling out the potential explanation
+that the observed interaction effects were caused only by the shared
+locations at the perceptual level; on the other hand, we examined the
+interactions between the PMIs and UMIs by testing the another-load
+effects instead of by measuring the recall biases, which provided a
+novel perspective to understand the interaction from sharing general
+VWM resources in addition to the lateral inhibition. However, when a
+similar design but a change detection task was used, another study failed
+to detect such interactions (Z. Li et al., 2021). We proposed that the most
+likely reason could be the delayed estimation task in the current study
+was more sensitive in detecting small performance changes. In addition,
+another recent study noted that PMI loads affect UMI performance only
+if the interval duration is too short (<1 s) to consolidate memory(Z. Li
+et al., 2024). However, this view was not supported by our results and
+we still observed mutual influences when memory consolidation was
+completed (with a long interval of 1.5 s). Importantly, our results cannot
+be adequately accounted by a pure resource-based model since larger
+self-load effects were observed than another-state load effects, indi­
+cating more intensive resource competition within-state than betweenstates, and could be better predicted by the state-based model.
+13
+
+J. Ni et al.
+
+Journal of Memory and Language 146 (2026) 104702
+
+focus of attention during their initial encoding). In this case, when the
+PMI load is low or the UMI load is high, individuals may tend to store
+them in the same active state to minimize the cost of state switching,
+leading to greater interactions; In the latter two conditions, individuals
+always encoded the first array as UMIs. Thus, as long as the load of the
+first array was small, individuals would be more likely to store all items
+in the same active state, resulting in stronger interactions. Regarding
+different stimuli, our study revealed that the asymmetric interactions in
+color and orientation recall tasks were consistent across memory loads
+but became more pronounced under high loads in the location task. We
+proposed two possibilities for this difference. First, it may reflect the
+dissociated processing between nonspatial and spatial WM. For
+example, compared with nonspatial WM, spatial WM processing could
+be more automatic (Postle et al., 2000; Ungerleider & Haxby, 1994).
+Second, it may just reflect the lower task difficulty in spatial WM (Cai
+et al., 2018; Wheeler & Treisman, 2002). In both conditions, we would
+predict only obvious asymmetrical interactions in high loads in spatial
+WM. Collectively, our results suggested a highly flexible storage process
+during VWM. We propose a specific account wherein items are tended to
+be stored in different states under high memory loads – a strategic
+adaption where the benefits of separated storage (e.g. reduced withinstate interference) outweigh the costs of state-switching (e.g. dynamic
+changes of states). However, this account needs to be tested further in
+future studies.
+There were several limitations in this study. For example, owing to
+the limited number of trials, we used recall error as an integrated index
+of VWM performance. Future studies could use model fittings to further
+elucidate the specific cognitive components of their interactions (e.g.,
+recall precision and recall probability of targets) (Schneegans & Bays,
+2016). In addition, future neuroimaging studies are needed to reveal the
+neural basis of the dynamics of such asymmetrical interactions.
+Furthermore, our study only focused on the condition where prioriti­
+zation was identified by the recall order, future studies can further
+explore whether our conclusions could extend to prioritizations identi­
+fied by other manipulations such as rewards, and so on.
+
+the work reported in this paper.
+Data availability
+I have shared the link to my data
+References

@@ -1,0 +1,1726 @@
+Introduction
+Fillers, or filled pauses, are a common disfluency type that exists
+across languages in language-specific forms (Clark & Fox Tree, 2002).
+English-speaking adults produce the fillers “uh” and “um” roughly once
+per 100 words, though these statistics vary according to environmental
+and speaker characteristics (Bortfeld et al., 2001). Importantly, fillers
+are more likely to be produced ahead of low-frequency or otherwise
+difficult-to-retrieve words (Beattie & Butterworth, 1979; de Jong, 2016),
+and they are a reliable signal to upcoming delays in the speech stream
+(Clark & Fox Tree, 2002). Adult listeners are able to harness these sta­
+tistics to make predictions for “what comes next” in a disfluent utter­
+ance, although the mechanism underlying this process remains under
+debate and the downstream consequences for learning are poorly un­
+derstood. According to the listener-oriented view, fillers are intention­
+ally produced as a cue to upcoming difficulty (Clark and Fox Tree,
+2002). Alternatively, the disfluency-novelty link may stem purely from
+production demands (the speaker-oriented view, Corley & Stewart,
+2008). The process underlying disfluency processing has critical impli­
+cations for learning, as disfluencies and the assumptions people have
+about them may make people less likely to trust and learn from a dis­
+fluent speaker (White et al., 2020). In the present study, we rely on the
+
+predictive processing hypothesis to examine adults’ expectations
+following fillers and the consequences of fillers for novel word learning.
+Processing fillers
+There is robust evidence that listeners assign meaning to fillers and
+use them to process language more efficiently (e.g., Arnold et al., 2007;
+Arnold et al., 2004; Arnold et al., 2003; Corley et al., 2007; Kidd et al.,
+2011; Collard et al., 2008; Morin-Lessard & Byers-Heinlein, 2019;
+Owens & Graham, 2016; Watanabe et al., 2008; Karimi et al, 2019). In
+one example of filler perception research, Arnold and colleagues (2007)
+used eye tracking and gating tasks to assess listeners’ predictions
+following fillers. Participants looked at a screen with novel and familiar
+stimuli on either side and heard fluent or disfluent instructions to “click
+on the/thee uh” object. In the eye-tracking task, participants heard the
+full sentence and researchers analysed looks to target following the
+fluent or disfluent determiner. They found a bias toward the novel object
+upon hearing the disfluent determiner, but no such bias for fluent de­
+terminers. On the gating task, participants only heard a portion of the
+sentence: either “click on,” “click on the/thee uh,” or “click on the/thee
+uh red.” None of the sentence fragments contained the target object, and
+participants were asked to guess which object the speaker was referring
+
+* Corresponding author.
+E-mail addresses: libersky@wisc.edu (E. Libersky), kaushanskaya@wisc.edu (M. Kaushanskaya).
+https://doi.org/10.1016/j.jml.2025.104704
+Received 17 February 2025; Received in revised form 29 September 2025; Accepted 3 October 2025
+Available online 13 October 2025
+0749-596X/© 2025 Elsevier Inc. All rights are reserved, including those for text and data mining, AI training, and similar technologies.
+
+E. Libersky and M. Kaushanskaya
+
+Journal of Memory and Language 146 (2026) 104704
+
+to. They found that participants were more likely to choose the unfa­
+miliar object on disfluent trials and the familiar object on fluent trials,
+consistent with the hypothesis that participants use disfluency as a cue
+to upcoming novelty. Disfluent prosody (i.e., “click on” was longer and
+higher pitch in the disfluent vs. fluent condition) was not sufficient to
+guide predictions, rather, participants needed to hear the filler in order
+to make reliable predictions.
+Neurolinguistic work has also indicated effects of fillers on listeners,
+in that fillers make unpredictable words less surprising to listeners.
+Corley and colleagues (2007) measured adults’ Event-Related Potentials
+(ERPs) during a listening task. One important ERP component in lan­
+guage processing is the N400, in which voltages change as a result of the
+demands associated with integrating semantic information. Corley and
+colleagues told participants to listen to prerecorded snippets of
+conversational speech for understanding, as they would in normal
+conversation. Some of the stimuli ended predictably (e.g., “That drink’s
+too hot; I’ve just burnt my tongue”), whereas others ended unpredict­
+ably (e.g., “That drink’s too hot; I’ve just burnt my nails”). When the
+stimuli were fluent, they found an N400 effect in the unpredictable
+condition, indicating that the referent did, indeed, surprise listeners.
+However, when the unpredictable word was preceded by a filler (e.g.,
+“That drink’s too hot; I’ve just burnt my er nails”), this effect was
+tempered.
+Listeners’ expectations for disfluent speech appear malleable, and
+expectations can be manipulated through speaker information (e.g.,
+Arnold et al., 2007; Bosker et al., 2014; Bosker et al., 2019; Thacker
+et al., 2018; Barr & Seyfeddinipur, 2010; Orena & White, 2015). For
+example, Arnold and colleagues (2007) replicated their eye-tracking
+task with additional speaker information, which provided cover stor­
+ies for why the speaker might be disfluent in reference to easily acces­
+sible referents. In one replication, participants were told that the speaker
+had object agnosia, a condition that results in difficulty retrieving even
+highly familiar words. In this manipulation, participants did not use
+fillers predictively, suggesting that, in light of an alternative explanation
+for disfluency, participants were able to limit their use of disfluency as a
+cue to upcoming novelty. In another study, Bosker and colleagues
+(2014) examined the impact of nonnative accent on listener predictions
+following fillers. They used a similar paradigm to Arnold and colleagues,
+except that their on-screen images were either high- or low-frequency
+familiar objects. Like Arnold and colleagues, they found that partici­
+pants adjusted their expectations for post-disfluency referents as a
+function of speaker information: participants used disfluencies to
+anticipate low-frequency referents in the native accent condition only.
+Taken together, these findings indicate that listeners are highly sensitive
+to the factors that influence disfluency and can adapt their predictions
+according to available context.
+
+boost memory in a variety of contexts.
+Investigating the impact of disfluency on learning specifically,
+Toftness and colleagues (2018) measured the consequences of dis­
+fluency on college students’ learning by manipulating instructor dis­
+fluency in pre-recorded mock lectures. In a between-subjects
+manipulation, students watched lectures that were identical except in
+delivery. Here, disfluency was conceptualized broadly, with the
+instructor demonstrating a general lack of confidence and producing
+numerous unfilled pauses. Regardless of testing schedule, performance
+on the multiple-choice test was similar across conditions. Though it is
+impossible to isolate the consequences of disfluent pauses for students’
+performance from the other qualities of the disfluent instructor, Toftness
+and colleagues (2018) provided early evidence for the role (or lack
+thereof) of disfluency in learning.
+The impact of disfluency on word learning remains unclear. To our
+knowledge White and colleagues (2020) conducted the first study in this
+area and Libersky and colleagues (2023) were the first to investigate this
+question in adults. White and colleagues (2020) emphasized the impact
+of disfluency on speaker credibility. In their first experiment, pre­
+schoolers were introduced to fluent and disfluent puppets. The puppets
+then labelled competing objects with the same novel label, and children
+were asked to endorse one of the word-object pairs. Children were more
+likely to endorse the pairing made by the fluent speaker. In their second
+experiment, they tested the impact of disfluency on retention of novel
+labels and found no effect. In a series of three experiments, Libersky and
+colleagues (2023) taught monolingual and bilingual adults novel words
+in a paired-associate learning task. Participants saw an illustration of a
+single novel fish on a screen and heard its name in a fluent or a disfluent
+sentence (e.g., “Thee [uh] gagek lives in warm streams in sunny areas”).
+After all novel fish were presented, participants advanced immediately
+to a three-alternative forced choice recognition task. Monolinguals
+performed similarly across conditions in all three experiments. Bi­
+linguals performed similarly across conditions when only novel fish
+were presented but demonstrated better performance in the fluent
+condition when the task was padded with trials featuring familiar fish,
+indicating that learners with relatively less English-language experience
+may benefit from fluency in certain contexts. An important limitation of
+this prior study was that the design only allowed for measuring the effect
+of disfluency on retention, rather than the cascading consequences of
+disfluency at both processing and learning. That is, the impact of dis­
+fluency on processing was inferred rather than observed. In the present
+study, we address this gap by measuring the impact of disfluency on
+processing and learning of novel words in the same individuals. Thus, we
+first confirm whether or not learners used disfluency predictively during
+processing and then ask whether disfluency has consequences for
+learning.
+
+Fillers, memory, and learning
+
+Prediction error and word learning
+
+Although the research on filler processing is extensive, literature
+describing the impact of fillers on memory and learning is limited. In one
+of the first studies of the impact of fillers on memory, Corley and col­
+leagues (2007) measured memory for familiar target words embedded in
+fluent and disfluent sentences. Adults remembered words presented
+alongside disfluencies better than those presented in fluent sentences.
+Other researchers have tested memory for familiar words following a
+similar procedure, with mixed results. Diacheck and Brown-Schmidt
+(2022) reported a memory boost for words presented in a disfluent
+condition, whereas Bosker and colleagues (2014) reported no differ­
+ences in recall. While these studies have focused on memory for specific
+items, there is some evidence that disfluency may impact memory for
+gist. Fraundorf and Watson (2011) had participants listen to and then
+recall brief passages. The passages included 14 plot points, some of
+which were presented disfluently. When asked to retell the passages
+immediately after hearing them, participants demonstrated better recall
+for disfluent plot points, reinforcing the possibility that disfluency may
+
+Within the present study, we consider the impact of disfluency on
+word learning through the prism of prediction error, considering the
+possibility that predictive processing of fillers has cascading conse­
+quences for word learning. The predictive processing hypothesis posits
+that, in all areas of cognition, humans are constantly making and
+updating predictions as they interact with the world around them (e.g.,
+Clark, 2013; Schrimpf et al., 2021). Within the realm of language pro­
+cessing, listeners rely on syntactic (Yano, 2018; Kamide et al., 2003),
+semantic (Gambi et al., 2021; Kamide et al., 2003), and talker infor­
+mation (Van Berkum et al., 2008; Borovsky & Creel, 2014) to anticipate
+upcoming information. The literature on filler processing fits neatly into
+this framework, as listeners harness fillers to anticipate upcoming ref­
+erents, whether through statistical learning or through extracting
+pragmatic information (Kidd et al., 2011; Clark & Fox Tree, 2002).
+When given additional talker information (Arnold et al., 2007; Bosker
+et al., 2014) or when listening to a speaker who produces disfluencies in
+an atypical manner (Lowder et al., 2019), listeners update their
+2
+
+E. Libersky and M. Kaushanskaya
+
+Journal of Memory and Language 146 (2026) 104704
+
+predictions and stop utilizing fillers as a cue to novelty.
+Beyond its role in language processing, prior work has indicated a
+strong role for prediction in word learning. Some studies tie correct
+predictions (i.e., efficient processing) to language growth (Fernald &
+Marchman, 2012), but there is also a rich literature linking prediction
+error and learning. Within the prediction error framework, better
+learning happens when the learner is surprised (Metcalfe, 2017), or, in a
+more extreme view, learning only happens when a prediction error oc­
+curs (Fitz & Chang, 2019). To test the prediction error mechanism in
+word learning, Gambi and colleagues (2021) taught participants novel
+words in high- or low-constraint contexts. These led to stronger or
+weaker predictions of familiarity, respectively. Adults tested after a
+5-minute delay learned best when strong predictions were disconfirmed,
+but children did not show this effect. In another study with children,
+Reuter and colleagues (2019) found that the children who learned best
+were the ones who used a predict and redirect strategy at learning—i.e.,
+they looked to the familiar object based on sentence structure then
+redirected to the novel object upon hearing the novel label. Taken
+together, these findings suggest that the ability to recover and learn from
+prediction errors develops over time, but, when developed, is a powerful
+learning mechanism.
+Counterintuitively, within the context of fillers, a prediction error
+effect would improve word retention under fluent conditions. Fillers
+serve as a cue to novelty, and numerous processing studies have indi­
+cated that listeners are able to harness this cue (Arnold et al., 2007;
+Bosker et al., 2014). Consequently, listeners may expect a novel referent
+following a filler and expect a familiar referent in the absence of a filler.
+In a word learning task where both fluent and disfluent sentence con­
+texts are present, learners are likely to make prediction errors in situa­
+tions where they hear a fluent trial containing a novel word and predict a
+familiar rather than a novel referent. It is on these trials that we would
+expect listeners to be surprised when a novel referent is named within a
+fluent sentence. Fluency would, thus, only impact learning when it
+cooccurs with a prediction error.
+We also investigate the time course of word learning by testing adults
+either immediately or after a delay. Though memory traces decay
+rapidly (Baddeley, 1975; Barrouillet et al., 2004; Barrouillet et al., 2007)
+it is not always the case that word retention is worse after a delay. Some
+learning contexts that are more difficult in the moment may yield slower
+rates of decay—i.e., they serve as a desirable difficulty (Schmidt & Bjork,
+1992). In the present study, we compare immediate performance with
+performance after a six-minute delay and a 24-hour delay. The sixminute delay is consistent with the word learning paradigm used by
+Gambi and colleagues (2021) that we adapted for the present study, as
+well as that used by other researchers who work within the desirable
+difficulties framework (e.g., Knabe et al., 2023) and has yielded effects
+consistent with desirable difficulties when compared with performance
+at immediate delay. The 24-hour delay was intended to make the delay
+condition more demanding and to allow for novel words to be consoli­
+dated into the lexicon (Davis et al., 2009; Gaskell & Dumay, 2003).
+
+under the fluent condition may decay more slowly than memory
+for words learned in the disfluent condition or even improve after
+a delay.
+The specific aim and design of each of the five experiments is sum­
+marized in Table 1.
+Data Availability.
+All data and scripts associated this paper are available on the Open
+Science Framework (OSF) at https://osf.io/yj7pa/. Unless otherwise
+noted, model syntax and summaries are found in the “frequentist_anal­
+yses.rmd” file.
+Experiment 1
+Participants
+A total of 118 adults (66 immediate condition, 52 delay condition)
+were included in the final sample. Our recruitment target was set to 70
+participants (minimum of 50 after exclusions) per immediate and delay
+condition and preregistered (see OSF Registrations tab, https://osf.
+io/yj7pa/). This target was derived from Gambi and colleagues
+(2021), as we adapted their paradigm and included a similar number of
+parameters in our models. All participants gave informed consent
+through a protocol approved by the UW-Madison Minimal Risk Research
+IRB (protocol ID: 2013–0984, Effects of Bilingualism on Learning and
+Memory). Our inclusionary criteria were preregistered and required that
+participants were between ages 18–40 (inclusive), resided in the United
+States, had no hearing impairments, were monolingual speakers of En­
+glish (i.e., self-rated speaking proficiency less than “adequate” in any
+languages besides English, as reported on the Language Experience and
+Proficiency Questionnaire, LEAP-Q; Marian et al., 2007), and, for par­
+ticipants in the delayed test condition, passed an attention check. The
+Table 1
+Summary of experiments.
+Exp.
+
+Participants
+
+Aim
+
+Item
+distribution
+
+Items
+randomly
+assigned to
+condition?
+
+Length
+of
+delay
+
+1
+
+66
+immediate
+52 delay
+
+Initial
+experiment
+
+No
+
+Six
+minutes
+
+2
+
+75
+immediate
+52 delay
+
+Address
+possibility of
+item effects
+in Exp. 1
+
+Yes
+
+Six
+minutes
+
+3
+
+68
+immediate
+60 delay
+
+Extend delay
+(vs. Exp. 2)
+
+Yes
+
+24 h
+
+4
+
+62
+immediate
+58 delay
+
+Remove inexperiment
+association
+between
+disfluency
+and novelty
+
+Yes
+
+Six
+minutes
+
+5
+
+68
+immediate
+63 delay
+
+Extend delay
+(vs. Exp. 4)
+
+Six disfluent
+and novel
+Two fluent
+and novel
+Four fluent
+and familiar
+Six disfluent
+and novel
+Two fluent
+and novel
+Four fluent
+and familiar
+Six disfluent
+and novel
+Two fluent
+and novel
+Four fluent
+and familiar
+Four
+disfluent and
+novel
+Four fluent
+and novel
+Four fluent
+and familiar
+Four
+disfluent and
+novel
+Four fluent
+and novel
+Four fluent
+and familiar
+
+Yes
+
+24 h
+
+Current study
+In the present study, we investigated the impact of fillers on language
+processing and word retention over different time scales (immediate,
+six-minute delay, 24-hour delay) across five experiments. We had two
+predictions:
+(1) If participants are able to harness the statistics of fillers, they will
+be more likely to predict a novel referent when a speaker is dis­
+fluent than when a speaker is fluent.
+(2) If fillers impact word retention via prediction error, recognition
+of novel words will be better under fluent learning conditions,
+assuming that disfluencies trigger prediction of novelty, and,
+thus, the fluent context yields prediction errors. If prediction
+error serves as a desirable difficulty, memory for words learned
+3
+
+E. Libersky and M. Kaushanskaya
+
+Journal of Memory and Language 146 (2026) 104704
+
+attention check was included for participants in the delayed test con­
+dition only in order to ensure that they were seated at their computer
+watching the video that played during the delay. An additional four
+participants were tested in the immediate test condition but were
+excluded for reporting high proficiency in a language other than English
+(a self-rated speaking proficiency of “adequate” or better, as reported on
+the LEAP-Q; Marian et al., 2007). An additional 30 participants were
+tested in the delayed test condition but excluded for reporting high
+proficiency in a language other than English (n = 6), failing the attention
+checks (n = 23), or both (n = 1). All participants were recruited via
+Prolific (Prolific, 2014) prolific.co and tested remotely. See Table 2 for
+participant characteristics.
+
+uh/thee um,” and “[object]” in order to hear the full sentence. When
+selecting an object, participants were instructed to “guess the final word
+of [the] sentence.” Participants completed two training trials followed
+by twelve exposure trials (six novel-disfluent, two novel-fluent, and four
+familiar-fluent, described below). The procedure is described in Fig. 1.
+The two training trials were both fluent; one ended with a novel
+stimulus and one ended with a familiar stimulus. Participants were told
+at the end of each training trial if their final selection was accurate. Of
+the twelve exposure trials, eight ended in a novel label for the novel
+image and four were filler trials and ended in a familiar label that
+referred to the familiar object. The twelve trials were presented in a
+random order. Novel words were all English-like, two-syllable words
+selected from Gupta and colleagues (2004). They were associated with
+novel objects selected from the Novel Object and Unusual Name (NOUN)
+Database (Horst and Hout, 2016). Familiar objects and their labels were
+all selected from the Bank of Standardized Stimuli (BOSS; Brodeur et al.,
+2010), with the requirement that they had a two-syllable modal name.
+Because familiar and novel objects appeared on the computer screen
+side by side during exposure, we matched novel and familiar images on
+visual complexity (proxied by JPG file size; Bates et al., 2003) using
+Match (van Casteren & Davis, 2007).
+All filler trials, on which the familiar object was referenced, were
+presented in a fluent sentence frame, i.e., “Click on the [object].” In
+contrast, novel objects were preceded by a disfluency (“thee uh” or “thee
+um”) on six trials and presented in a fluent sentence frame on two trials.
+We verified that novel stimuli in the fluent and disfluent conditions did
+not meaningfully differ (see the Discussion for more on limitations of the
+design). These ratios were adapted from Gambi and colleagues (2021)
+and reflected the predictive nature of disfluencies in spontaneous
+speech. As in spontaneous speech, disfluencies were a cue to upcoming
+novelty. The most natural-sounding disfluencies were selected from a
+larger pool of recordings based on consensus from lab members. Re­
+cordings were spliced in Audacity (Audacity-Team, 2018) and normal­
+ized to 70 dB in Praat (version 6.1.16; Boersma & Weenink, 2020). All
+participants learned the same six objects in the disfluent condition, and
+item effects were modelled in our analyses.
+
+Procedure
+Participants were tested remotely, via Gorilla Experiment Builder
+(Anwyl-Irvine et al., 2020). Following consent, participants completed a
+sound check (James, 2019) to ensure that auto-play was enabled for
+auditory stimuli. To assess language experience and ability, participants
+completed the LEAP-Q (Marian et al., 2007), and English language
+proficiency was assessed using a speeded version of the Lexical Test for
+Advanced Learners of English (LexTALE; Lemhöfer & Broersma, 2012;
+Poort & Rodd, 2019). The LEAP-Q is a self-report measure of de­
+mographics and language background, in which participants self-rate
+their proficiency across their languages and describe when and how
+they acquired the languages. The LEAP-Q has been shown to have good
+internal validity and to align well to other (non-self-report) measures of
+language proficiency (Marian et al., 2007). The LexTALE is a lexical
+decision task designed to assess English-language knowledge quickly in
+L2 English speakers and has also been used to assess L1 proficiency
+(Dijkgraaf et al., 2017; Poort & Rodd, 2017). Participant characteristics,
+including language background, are described in Table 2. Participants
+completed study tasks in the following order: Consent, sound check,
+LEAP-Q, experimental task, and LexTALE.
+Materials
+
+Test trials
+Participants were tested on the eight novel objects in a field of four
+recognition task. Participants heard the name of the novel object, from a
+new female speaker of American English. The recordings at test were
+from Gupta and colleagues’ (2004) database and thus assessed partici­
+pants’ ability to generalize learning to a novel speaker. On each trial, the
+target object was shown alongside three alternatives, and participants
+clicked on the image that the speaker was referring to. The alternatives
+were all novel words that participants had learned a label for, meaning
+that familiar stimuli were not included at test. Participants were tested
+on their recognition of each novel word three times, with position on the
+screen and foils varying across trials. Test trials were pseudorandomized
+such that the entire list was tested once before any words were tested a
+second time, and each object was used as a foil six times. Feedback was
+not provided at test. Words were tested multiple times to increase the
+number of observations at test and to minimize the possibility that
+participants were merely guessing the correct answer. Post-hoc analyses
+indicated that performance improved with each subsequent testing
+block, but testing cycle did not interact with any of the effects of interest.
+Moreover, the pattern of results was the same when we reran our ana­
+lyses on the first testing block only. Thus, we report the planned analyses
+that included all three testing blocks.
+The assignment to testing schedule (immediate vs. delayed) varied
+between subjects and was randomized. Approximately half of the par­
+ticipants advanced to the test trials immediately after the exposure
+phase whereas the other half had a short break between exposure and
+test trials. Participants in the delay condition watched a short cartoon
+that had no spoken language (Mole as a Gardener; Miler, 1969) and then
+responded to two comprehension questions. The comprehension
+
+Exposure trials
+The design of the exposure phase was adapted from Gambi and
+colleagues (2021) and was the same for all participants. Participants saw
+two objects on the computer screen, one familiar and one novel, and
+heard a female native speaker of American English tell them to “Click on
+| the | [object]” or “Click on | thee uh/um | [object].” The sentences
+were broken up into three parts and presentation was self-paced, such
+that participants had to select an object following “click on,” “the/thee
+Table 2
+Experiment 1 participant characteristics.
+Sample size (Count)
+Gender (Count)a
+Female
+Male
+Nonbinary / Prefer to Self ID
+Ageb
+Years Educationc
+LexTALE Score
+
+Immediate test
+
+Delayed test
+
+66
+−
+29
+34
+3
+27.2 (5.91)
+15.1 (2.16)
+86.7 (10.4)
+
+52
+−
+24
+26
+1
+26.8 (6.11)
+15.6 (2.61)
+88.5 (7.47)
+
+p
+​
+
+.73
+​
+​
+​
+
+.72
+.26
+.27
+
+Note: Values indicate mean (sd) unless otherwise indicated.
+a
+One participant in the delayed test condition did not report gender.
+b
+One participant in the delayed test condition did not report age. Screener
+responses indicated that they were between 18 and 40 years old.
+c
+Two participants in the immediate test condition and one participant in the
+delayed test condition did not report years education. In instances where par­
+ticipants reported fewer than 12 years of schooling but also reported that they
+had finished high school, years of education was transformed as follows: high
+school = 12 years, some college = 14 years, college or some graduate school =
+16 years (as the length of graduate school is variable), and masters = 14 years.
+4
+
+E. Libersky and M. Kaushanskaya
+
+Journal of Memory and Language 146 (2026) 104704
+
+Fig. 1. Graphical depiction of experimental protocol.
+
+questions referenced important details from the video and were multiple
+choice. These questions were included to verify that participants were
+watching the video during the delay, rather than doing another activity
+that might influence their test performance. Including the instructions,
+video, and multiple-choice questions, the delay lasted six minutes.
+Participants in the delay condition were excluded from the study if they
+responded to either question incorrectly.
+
+accuracy on condition, coded as − .5 for fluent and.5 for disfluent. Par­
+ticipants (correctly) selected the novel object at similar rates across
+disfluent, M = 0.86, SD = 0.35, and fluent, M = 0.79, SD = 0.41, con­
+ditions, B = 0.74, SE = 0.51, X2(df = 1) = 2.15, p = .143.
+Upon hearing the determiner (the second selection point), partici­
+pants selected the familiar object in filler trials at above chance levels, M
+= 0.61, SD = 0.49; p < .001. To predict selections on novel trials, we
+regressed accuracy on condition (fluent and disfluent, coded as − .5
+and.5). Upon hearing the determiner, participants were more likely to
+select the novel object in the disfluent condition, M = 0.51, SD = 0.50,
+than in the fluent condition, M = 0.39, SD = 0.49, B = 0.54, SE = 0.18,
+X2(df = 1) = 9.03, p = .003.
+
+Results
+Data analysis
+We analysed participants’ object selections on learning trials
+following the fluent or disfluent determiner (intermediate-selections;
+the second selection point) and following the full sentence (final-selec­
+tions), as a function of fluency. We analysed their accuracy on retention
+trials as a function of fluency, delay (immediate vs. six-minute delay),
+and prediction accuracy (whether upon hearing the determiner they
+incorrectly selected the familiar object or correctly selected the novel
+object).
+Item-level data were used in all analyses. Logistic mixed effects
+models were used to analyse data in R (R Core Team, 2020) with the
+LME4 package (Bates et al., 2015). Data were cleaned based on reaction
+times (RTs); observations were excluded if RTs were below 150 ms,
+above 5000 ms, or beyond 2.5SDs from the individual participants mean
+RT. Based on these criteria, 313 observations were excluded from the
+exposure data, across all selection points (out of 4956), and 177 obser­
+vations were excluded from the recognition data (out of 2832). Maximal
+random effects structures were retained except when the maximal model
+had convergence or singularity issues (Barr et al., 2013), and the
+buildmer package (Voeten, 2023) was used to identify the maximum
+feasible random effects structure as necessary. Full model specifications
+(including estimates for random effects) are available on OSF.
+
+Retention
+Overall, participants learned novel words to above chance levels (M
+= 0.44, SD = 0.50, p < .001; chance = 0.25). To predict recognition task
+accuracy, we regressed accuracy at testing on condition (fluent vs. dis­
+fluent), delay (immediate vs. delay, coded as − .5 and.5), prediction
+accuracy (prediction error vs. correct prediction, coded as − .5 and.5),
+and all interactions. We observed a significant condition by delay
+interaction, B = − 0.42, SE = 0.20, X2(df = 1) = 3.89, p = .048. Simple
+effects indicated that participants in the immediate test group performed
+better on disfluent items, B = 0.11, SE = 0.28, X2(df = 1) = 0.07, p =
+.787, while participants in the delay test group performed better on
+fluent items, B = − 0.31, SE = 0.29, X2(df = 1) = 0.07, p = .787. No other
+variables were significant predictors of accuracy. Post-hoc analyses in
+which we removed items that participants failed to map (i.e., items
+where participants made an incorrect final selection at exposure) indi­
+cated a significant group by condition interaction, B = -0.66, SE = 0.27,
+X2(df = 1) = 4.70, p = .030. Again, simple effects indicated that par­
+ticipants in the immediate test group performed better on disfluent
+items, B = 0.22, SE = 0.34, X2(df = 1) = 0.019, p = .890, while par­
+ticipants in the delay test group performed better on fluent items, B =
+− 0.44, SE = 0.35, X2(df = 1) = 0.019, p = .890. No other variables were
+significant predictors of accuracy.
+
+Prediction of target at exposure
+At exposure, participants’ final selections (selections upon hearing
+the full object name) on filler familiar trials were highly accurate, M =
+0.98, SD = 0.13. To predict selections on novel trials, we regressed
+5
+
+E. Libersky and M. Kaushanskaya
+
+Journal of Memory and Language 146 (2026) 104704
+
+Discussion
+
+Table 3
+Experiment 2 participant characteristics.
+
+We found that adult listeners were more likely to predict upcoming
+novelty upon hearing a filler than upon hearing a fluent determiner,
+consistent with prior findings (Arnold et al., 2007; Bosker et al., 2014;
+Kidd et al., 2011). While analyses indicated different retention patterns
+for disfluent and fluent items, and no impact of prediction error, we
+hesitate to overinterpret these findings due to design limitations.
+Specifically, our findings may reflect item effects. To assuage con­
+cerns that the results of Experiment 1 were muddied by memorability of
+the specific items across the fluent and the disfluent conditions, we ran
+additional analyses comparing the novel items assigned to the fluent vs.
+disfluent condition on several factors that could impact learning
+including characteristics of the novel word (mean biphone probability of
+the novel word), the novel object (visual complexity, familiarity,
+nameability, colour saliency, texture saliency), and the familiar object
+with which the novel object was paired (word frequency). These ana­
+lyses yielded no significant differences between conditions, although we
+acknowledge that these analyses are likely underpowered (see OSF for
+these analyses). Moreover, because the same items were always assigned
+to the same condition, the potential for item effects was high despite
+careful matching of item characteristics across the conditions. To
+address this design limitation, we conducted a second experiment in
+which items were randomly assigned to condition on a participant-byparticipant basis.
+
+Sample size (Count)
+Gender (Count)
+Female
+Male
+Nonbinary / Prefer to Self ID
+Agea
+Years Educationb
+LexTALE Score
+
+Immediate test
+
+Delayed test
+
+75
+−
+41
+32
+2
+30.8 (5.44)
+14.9 (2.01)
+88.1 (10.1)
+
+52
+−
+27
+24
+1
+30.9 (5.16)
+15.4 (2.47)
+88.8 (8.81)
+
+p
+​
+
+.91
+​
+​
+​
+
+.88
+.27
+.67
+
+Note: Values indicate mean (sd) unless otherwise indicated.
+a
+One participant in the delayed test condition did not report age. Screener
+responses indicated that they were between 18 and 40 years old.
+b
+One participant in the immediate test condition did not report years edu­
+cation. In instances where participants reported fewer than 12 years of schooling
+but also reported that they had finished high school, years of education was
+transformed as follows: high school = 12 years, some college = 14 years, college
+or some graduate school = 16 years (as the length of graduate school is variable),
+and masters = 14 years.
+
+trials to condition. Sentence frames were randomized such that any
+novel item could be presented in either the disfluent or fluent condition.
+Test trials
+As in Experiment 1, recognition for each item was tested three times.
+Each item was tested once before they were cycled through a second and
+then third time.
+
+Experiment 2
+To address the possibility of item effects in Experiment 1, we con­
+ducted a follow-up in which novel items were randomly assigned to the
+disfluent or fluent condition. The design of the experiment was other­
+wise the same, and participants met the same inclusionary criteria as in
+Experiment 1.
+
+Results
+Data analysis
+Our analytical approach was the same as in Experiment 1. Based on
+RT criteria, 190 observations were excluded from the exposure data,
+across all selection points (out of 4572), and 256 observations were
+excluded from the recognition data (out of 3048). Full model specifi­
+cations (including estimates for random effects) are available OSF.
+
+Participants
+A total of 127 adults (75 immediate condition, 52 delay condition)
+were included in the final sample. As in Experiment 1, our recruitment
+target was set to 70 participants (minimum of 50 after exclusions); some
+people who reported technical issues opening the task were sent new
+links, resulting in 75 participants in the immediate condition. All par­
+ticipants gave informed consent through a protocol approved by the
+UW-Madison Minimal Risk Research IRB (protocol ID: 2013–0984, Ef­
+fects of Bilingualism on Learning and Memory). Our inclusionary
+criteria were the same as in Experiment 1. An additional two partici­
+pants were tested in the immediate test condition but excluded for
+reporting high proficiency in a language other than English (n = 1) or
+age outside of the targeted range (n = 1). An additional 42 participants
+were tested in the delayed test condition but were excluded for reporting
+high proficiency in a language other than English (n = 5), reporting a
+history of hearing impairment (n = 1), failing the attention check (n =
+34), failing the attention check and reporting high proficiency in a
+second language (n = 1), or failing the attention check and reporting a
+history of hearing impairment (n = 1). All participants were recruited
+via Prolific (Prolific, 2014) and tested remotely. See Table 3 for partic­
+ipant characteristics.
+
+Prediction of target at exposure
+At exposure, participants’ final selections (selections upon hearing
+the full object name) on filler familiar trials were highly accurate, M =
+0.99, SD = 0.09. To predict selections on novel trials, we regressed ac­
+curacy on condition, fluent and disfluent, coded as − .5 and.5. Partici­
+pants (correctly) selected the novel object across disfluent, M = 0.89, SD
+= 0.31, and fluent, M = 0.83, SD = 0.38, conditions, but they were more
+likely to select the correct object in the disfluent condition, B = 0.73, SE
+= 0.24, X2(df = 1) = 9.10, p = .003.
+Upon hearing the determiner, participants selected the familiar ob­
+ject in filler trials at above chance levels, M = 0.76, SD = 0.43; p < .001.
+To predict selections on novel trials, we regressed accuracy on condition
+(fluent and disfluent, coded as − .5 and.5). Upon hearing the determiner,
+participants were more likely to select the novel object in the disfluent
+condition, M = 0.61, SD = 0.49, than in the fluent condition, M = 0.50,
+SD = 0.50, B = 1.03, SE = 0.16, X2(df = 1) = 39.44, p < .001.
+Retention
+Overall, participants learned novel words to above chance levels (M
+= 0.43, SD = 0.49, p < .001; chance = 0.25). To predict recognition task
+accuracy, we regressed accuracy at testing on condition (fluent vs. dis­
+fluent), delay (immediate vs. delay, coded as − .5 and.5), prediction
+accuracy (prediction error vs. correct prediction, coded as − .5 and.5),
+and all interactions. Condition, delay, prediction error and their in­
+teractions were not significant predictors of accuracy. Post-hoc analyses
+indicated a similar pattern of results after we removed items that par­
+ticipants failed to map (i.e., items where participants made an incorrect
+final selection at exposure; analyses included on OSF with other data and
+scripts).
+
+Procedure
+As in Experiment 1.
+Materials
+Exposure trials
+The same experimental protocol and stimuli developed for Experi­
+ment 1 were used in Experiment 2, but we randomized the assignment of
+6
+
+E. Libersky and M. Kaushanskaya
+
+Journal of Memory and Language 146 (2026) 104704
+
+Discussion
+
+Table 4
+Experiment 3 participant characteristics.
+
+In Experiment 2, we randomly assigned items to fluent and disfluent
+conditions, whereas in Experiment 1 the items were not randomly
+assigned. The impact of disfluency on processing was consistent across
+experiments: in both experiments, participants used disfluency to
+anticipate the novel object. However, the impact of disfluency on
+retention was different. In Experiment 1, we observed better retention in
+the disfluent condition at immediate testing, and better retention in the
+fluent condition in the delayed condition, although neither effect was
+strong enough to yield simple effects. Here, we observed similar reten­
+tion across conditions, for participants in both the immediate and
+delayed test conditions. In both experiments, the effect of prediction
+error on retention was not significant. In interpreting these results, we
+considered the possibility that the absence of robust disfluency effects in
+Experiments 1 and 2 was due to the relatively brief delay of six minutes.
+In Experiment 3, we ran a partial replication of Experiments 1 and 2, in
+which we increased the length of the testing delay from six-minutes to
+24-hours.
+
+Sample size (Count)
+Gender (Count)
+Female
+Male
+Age
+Years Educationa
+LexTALE Score
+
+Immediate test
+
+Delayed test
+
+68
+−
+35
+33
+31.3 (5.33)
+14.7 (2.57)
+87.9 (10.4)
+
+60
+−
+31
+29
+31.2 (5.67)
+15.4 (2.85)
+87.4 (9.18)
+
+p
+​
+
+1
+​
+​
+
+0.911
+0.139
+0.796
+
+Note: Values indicate mean (sd) unless otherwise indicated.
+a
+Three participants in the immediate test condition did not report years ed­
+ucation. In instances where participants reported fewer than 12 years of
+schooling but also reported that they had finished high school, years of educa­
+tion was transformed as follows: high school = 12 years, some college = 14
+years, college or some graduate school = 16 years (as the length of graduate
+school is variable), and masters = 14 years.
+
+or disfluent condition.
+
+Experiment 3
+
+Results
+
+Although six-minutes should be sufficient to clear working memory
+based on prior work (Angwin et al., 2019; Knabe et al., 2023), it did not
+yield detectable differences in retention in Experiments 1 and 2. In
+Experiment 3, we tested the impact of disfluency on word retention over
+time by increasing the delay between teaching and testing to 24-hours.
+Critically, this delay should allow time for participants to consolidate
+novel words into their lexicons.
+
+Data analysis
+Our analytical approach was the same as in Experiment 1. Based on
+RT criteria, 212 observations were excluded from the exposure data,
+across all selection points (out of 4608), and 184 observations were
+excluded from the recognition data (out of 3072). Full model specifi­
+cations (including estimates for random effects) are available on OSF.
+Prediction of target at exposure
+At exposure, participants’ final selections (selections upon hearing
+the full object name) on familiar filler trials were highly accurate, M =
+0.99, SD = 0.11. To predict selections on novel trials, we regressed ac­
+curacy on condition, fluent and disfluent, coded as − .5 and.5. Partici­
+pants were more likely to select the novel object in the disfluent
+condition, M = 0.88, SD = 0.32, than in the fluent, M = 0.83, SD = 0.38,
+conditions, B = 0.56, SE = 0.23, X2(df = 1) = 5.70, p = .0.17.
+Upon hearing the determiner, participants selected the familiar ob­
+ject in filler trials at above chance levels, M = 0.65, SD = 0.48; p < .001.
+To predict selections on novel trials, we regressed accuracy on condition
+(fluent and disfluent, coded as − .5 and.5). Upon hearing the determiner,
+participants were more likely to select the novel object in the disfluent
+condition, M = 0.57, SD = 0.50, than in the fluent condition, M = 0.35,
+SD = 0.48, B = 0.98, SE = 0.20, X2(df = 1) = 25.18, p < .001.
+
+Participants
+A total of 128 adults (68 immediate condition, 60 delay condition)
+were included in the final sample. As before, our recruitment target was
+set to 70 participants (minimum of 50 after exclusions). All participants
+gave informed consent through a protocol approved by UW-Madison
+Minimal Risk Research IRB (protocol ID: 2013–0984, Effects of Bilin­
+gualism on Learning and Memory). Our inclusionary criteria were the
+same as in previous experiments. Two additional participants in the
+immediate test condition and three additional participants in the delay
+condition were tested but excluded for reporting high proficiency in a
+language other than English. An additional 18 participants were tested
+in the delayed test condition but did not return on day two. All partic­
+ipants were recruited via Prolific (Prolific, 2014) and tested remotely.
+See Table 4 for participant characteristics.
+
+Retention
+Overall, participants learned novel words to above chance levels (M
+= 0.40, SD = 0.49, p < .001; chance = 0.25). To predict recognition task
+accuracy, we regressed accuracy at testing on condition (fluent vs. dis­
+fluent), delay (immediate vs. delay, coded as − .5 and.5), prediction
+accuracy (prediction error vs. correct prediction, coded as − .5 and.5),
+and all interactions. Delay was the only significant predictor of accu­
+racy, with participants in the 24hr delay condition performing worse
+than participants in the immediate test condition, B = − 0.47, SE = 0.14,
+X2(df = 1) = 12.22, p < .001. Post-hoc analyses indicated a similar
+pattern of results after we removed items that participants failed to map
+(i.e., items where participants made an incorrect final selection at
+exposure; analyses included on OSF with other data and scripts).
+
+Procedure
+The procedure for the immediate test group was the same as in Ex­
+periments 1 and 2, but the procedure for the delay group was modified
+to include a longer delay. On day one, participants were recruited via
+Prolific (Prolific, 2014) and made aware that the experiment would be
+completed over two days. After consenting to participate, participants
+completed the exposure phase only. On day two, participants were
+tested for retention of the novel items before completing the LEAP-Q and
+LexTALE. Participants were recruited during a two-hour window on day
+one, and the task was reopened for a four-hour window on day two. The
+middle of the day-two window was exactly 24-hours after the middle of
+the day one window. On day two, participants were messaged when the
+experiment reopened and before it closed. Participants were allowed to
+participate after the day two window had closed if they messaged on the
+same day.
+
+Discussion
+In Experiment 3, we increased the delay between teaching and
+testing from six-minutes to 24-hours while otherwise replicating
+Experiment 2. Again, we found that participants used disfluency to
+anticipate the novel object. However, the delay—not the fluency con­
+dition and not prediction error—was the only manipulation to impact
+
+Materials
+As in Experiment 2, novel items were randomly assigned to the fluent
+7
+
+E. Libersky and M. Kaushanskaya
+
+Journal of Memory and Language 146 (2026) 104704
+
+retention. Across the three experiments, the effect of disfluencies and
+prediction error on retention was largely null, but one common design
+feature across the experiments may have influenced this pattern. Spe­
+cifically, the limited number of items in the fluent condition (n = 2) may
+have contributed to the null results of disfluency and prediction error on
+retention, since it is well known that low power increases the risk of
+spurious findings (Ioannidis, 2005; Wacholder et al., 2004).To address
+this limitation, we conducted a follow-up experiment in which both the
+fluent and disfluent conditions featured four items.
+
+Table 5
+Experiment 4 participant characteristics.
+Sample size (Count)
+Gender (Count)
+Female
+Male
+Nonbinary / Prefer to Self ID
+Age
+Years Educationa
+LexTALE Score
+
+Experiment 4
+
+Immediate test
+
+Delayed test
+
+62
+−
+33
+24
+5
+28.8 (5.29)
+14.9 (2.57)
+87.2 (10.7)
+
+58
+−
+19
+39
+0
+31.0 (5.12)
+15.1 (2.59)
+87.1 (11.9)
+
+p
+​
+
+0.002
+​
+​
+​
+
+0.02
+0.75
+0.96
+
+Note: Values indicate mean (sd) unless otherwise indicated.
+a
+In instances where participants reported fewer than 12 years of schooling but
+also reported that they had finished high school, years of education was trans­
+formed as follows: high school = 12 years, some college = 14 years, college or
+some graduate school = 16 years (as the length of graduate school is variable),
+and masters = 14 years.
+
+To address the possibility the findings in Experiments 1–3 were due a
+small number of items in the novel-fluent condition, we conducted
+another partial replication. In Experiment 4, we increased the number of
+novel-fluent trials and randomly assigned novel items to the fluent and
+disfluent conditions on a participant-by-participant basis. This approach
+yielded a larger sample of fluent items on which to base our conclusions
+and minimized the possibility of item effects. The trade-off is that the
+within-experiment association between disfluency and novelty is
+weakened relative to Experiments 1–3. Consequently, any effect of dis­
+fluency would be reflective of participants day-to-day experiences rather
+than within-experiment experiences with disfluency.
+
+Retention
+Overall, participants learned novel words to above chance levels (M
+= 0.40, SD = 0.49, p < .001; chance = 0.25). To predict recognition task
+accuracy, we regressed accuracy at testing on condition (fluent vs. dis­
+fluent), delay (immediate vs. delay, coded as − .5 and.5), prediction
+accuracy (prediction error vs. correct prediction, coded as − .5 and.5),
+and all interactions. Condition predicted accuracy, with participants
+performing better in the fluent condition, B = -0.22, SE = 0.09, X2(df =
+1) = 5.65, p = .017. We also observed a significant three-way interaction
+among the three predictor variables – condition, delay, and prediction
+accuracy, B = − 1.09, SE = 0.48, X2(df = 1) = 5.26, p = .021. To interpret
+this interaction, we recentered the group and condition variables and
+obtained the simple effects. Participants in the immediate test group
+benefitted from prediction error only in the fluent condition, whereas
+participants in the delay test condition benefitted from prediction error
+only in the disfluent condition; see Fig. S2 for visualization and OSF for
+simple effects. Post-hoc analyses after we removed items that partici­
+pants failed to map (i.e., items where participants made an incorrect
+final selection at exposure), also yielded a significant three-way inter­
+action and a marginal condition effect, B = − 0.20, SE = 0.11, X2(df = 1)
+= 3.60, p = .058; analyses included on OSF with other data and scripts.
+Because the immediate and delay groups differed on age and gender, we
+reran both models with age and gender as covariates. The model with all
+observations yielded a significant effect of condition but the three-way
+interaction became marginal; the model fitted on the filtered data set
+yielded a significant effect of condition and a significant three-way
+interaction. Because the pattern of findings was similar across ana­
+lyses, we report the models without covariates, but the analyses con­
+taining covariates are available on OSF.
+
+Participants
+A total of 121 adults (62 immediate condition, 58 delay condition)
+were included in the final sample. As before, our recruitment target was
+set to 70 participants (minimum of 50 after exclusions). All participants
+gave informed consent through a protocol approved by the UW-Madison
+Minimal Risk Research IRB (protocol ID: 2013–0984, Effects of Bilin­
+gualism on Learning and Memory). Our inclusionary criteria were the
+same as in prior experiments. One additional participant was tested in
+the immediate test condition but excluded for reporting high proficiency
+in a language other than English. An additional 33 participants were
+tested in the delayed test condition but were excluded for reporting high
+proficiency in a language other than English (n = 3) or failing the
+attention checks (n = 30). All participants were recruited via Prolific
+(Prolific, 2014) and tested remotely. See Table 5 for participant
+characteristics.
+Results
+Data analysis
+Our analytical approach was the same as in Experiment 1. Based on
+RT criteria, 174 observations were excluded from the exposure data,
+across all selection points (out of 4320), and 184 observations were
+excluded from the recognition data (out of 2880). Full model specifi­
+cations (including estimates for random effects) are available OSF.
+
+Discussion
+In Experiment 4, we addressed another limitation of the prior ex­
+periments: the small number of items within the fluent novel condition.
+In Experiments 1–3, we chose to have six items in the disfluent-novel
+condition and two items in the fluent-novel condition based on a
+study by Gambi and colleagues (2021). In this way, Experiments 1–3
+presented disfluencies in an ecologically valid manner, since in spon­
+taneous speech disfluencies are more likely to precede discourse-novel
+information (Beattie & Butterworth, 1979; de Jong, 2016). Therefore,
+in Experiments 1–3, the effect of disfluency (if observed) would have
+been a reflection of both the statistics learned within the experiments
+and the cumulative experience with disfluent language. Another issue
+with Experiments 1–3 was the limited number of items in the fluentnovel condition, which could have made the effect of disfluency on
+word retention unstable. In Experiment 4, we presented participants
+with 4 items in both the fluent and the disfluent condition, increasing
+power, and at the same time, eliminating the within-experiment
+
+Prediction of target at exposure
+At exposure, participants’ final selections (selections upon hearing
+the full object name) on fluent filler trials were highly accurate, M =
+0.99, SD = 0.11. To predict selections on novel trials, we regressed ac­
+curacy on condition, fluent and disfluent, coded as − .5 and.5. Partici­
+pants (correctly) selected the novel object at similar rates across
+disfluent, M = 0.88, SD = 0.32, and fluent, M = 0.86, SD = 0.35, con­
+ditions, B = 0.22, SE = 0.23, X2(df = 1) = 0.93, p = .33.
+Upon hearing the determiner, participants selected the familiar ob­
+ject in filler trials at above chance levels, M = 0.58, SD = 0.49; p < .001.
+To predict selections on novel trials, we regressed accuracy on condition
+(fluent and disfluent, coded as − .5 and.5). Upon hearing the determiner,
+participants were more likely to select the novel object in the disfluent
+condition, M = 0.53, SD = 0.50, than in the fluent condition, M = 0.39,
+SD = 0.49, B = 0.65, SE = 0.20, X2(df = 1) = 11.12, p < .001.
+8
+
+E. Libersky and M. Kaushanskaya
+
+Journal of Memory and Language 146 (2026) 104704
+
+statistical distribution that would cue participants to the disfluency as
+signalling novelty. Critically, in Experiment 4, we once again replicated
+the effect of disfluency on processing, despite boosting the number of
+fluent-novel items in the task. This suggests that participants were
+making their predictions based on their cumulative experience with
+disfluency rather than the relationship between disfluency and novelty
+within the experiment itself. That said, the effect of disfluency on
+retention was starkly different from those observed in Experiments 1–3.
+Here, we found that participants performed better in the fluent condi­
+tion, consistent with the literature on prediction error in word learning.
+We also observed an interaction among condition, test delay, and pre­
+diction error, such that the two-way interaction was different for the
+immediate and delay groups. The immediate group benefitted from
+prediction error in the fluent condition whereas the delay group
+benefitted from prediction error in disfluent condition. In interpreting
+this interaction, we exercise caution as the effect was weak, but it may
+suggest a desirable difficulty wherein conditions that are challenging
+during learning yield slower decay over time. To test whether this effect
+would remain with a longer delay, we ran a final experiment that
+replicated Experiment 4 while extending the delay from six-minutes to
+24-hours.
+
+Table 6
+Experiment 5 participant characteristics.
+Sample size (Count)
+Gender (Count)
+Female
+Male
+Nonbinary / Prefer to Self ID
+Agea
+Years Educationb
+LexTALE Score
+
+Immediate test
+
+Delayed test
+
+68
+−
+32
+32
+4
+30.5 (5.80)
+15.3 (2.99)
+90.2 (8.48)
+
+63
+−
+26
+35
+2
+30.3 (5.23)
+15.6 (2.22)
+91.1 (7.51)
+​
+
+p
+.54
+​
+​
+​
+
+0.826
+0.448
+0.499
+
+Note: Values indicate mean (sd) unless otherwise indicated.
+a
+One participant in the delayed test condition did not report age. Screener
+responses indicated that they were between 18 and 40 years old.
+b
+One participant in the immediate test condition did not report years edu­
+cation. In instances where participants reported fewer than 12 years of schooling
+but also reported that they had finished high school, years of education was
+transformed as follows: high school = 12 years, some college = 14 years, college
+or some graduate school = 16 years (as the length of graduate school is variable),
+and masters = 14 years.
+
+novel-disfluent, four were novel-fluent, and four were familiar-fluent.
+
+Experiment 5
+
+Results
+
+In Experiment 5, we tested the impact of disfluency on word learning
+over time by including a 24-hour delay between teaching and testing. As
+in Experiment 4, novel items were equally likely to occur in the fluent or
+disfluent learning conditions.
+
+Data analysis
+Our analytical approach was the same as in Experiment 1. Based on
+RT criteria, 230 observations were excluded from the exposure data,
+across all selection points (out of 4716), and 212 observations were
+excluded from the recognition data (out of 3144). Full model specifi­
+cations (including estimates for random effects) are available on OSF.
+
+Participants
+A total of 131 adults (68 immediate condition, 63 delay condition)
+were included in the final sample. As in Experiment 1, our recruitment
+target was set to 70 participants (minimum of 50 after exclusions). All
+participants gave informed consent through a protocol approved by the
+UW-Madison Minimal Risk Research IRB (protocol ID: 2013–0984, Ef­
+fects of Bilingualism on Learning and Memory). Our inclusionary
+criteria were the same as in Experiment 1. An additional three partici­
+pants were tested in the immediate test condition but excluded for
+reporting high proficiency in a language other than English. An addi­
+tional 21 participants were tested in the delayed test condition but did
+not return on day two (n = 18) or were excluded for reporting high
+proficiency in a language other than English (n = 1). All participants
+were recruited via Prolific (Prolific, 2014) and tested remotely. See
+Table 6 for participant characteristics.
+
+Prediction of target at exposure
+At exposure, participants’ final selections (selections upon hearing
+the full object name) on fluent filler trials were highly accurate, M =
+0.99, SD = 0.08. To predict selections on novel trials, we regressed ac­
+curacy on condition, fluent and disfluent, coded as − .5 and.5. Partici­
+pants (correctly) selected the novel object at similar rates across
+disfluent, M = 0.87, SD = 0.33, and fluent, M = 0.88, SD = 0.33, con­
+ditions, B = − 0.08, SE = 0.23, X2(df = 1) = 0.12, p = .732.
+Upon hearing the determiner, participants selected the familiar ob­
+ject in filler trials at above chance levels, M = 0.63, SD = 0.48, p < .001.
+To predict selections on novel trials, we regressed accuracy on condition
+(fluent and disfluent, coded as − .5 and.5). Random slopes were removed
+due to convergence and singularity issues. Upon hearing the determiner,
+participants were more likely to select the novel object in the disfluent
+condition, M = 0.57, SD = 0.50, than in the fluent condition, M = 0.36,
+SD = 0.48, B = 1.05, SE = 0.21, X2(df = 1) = 24.31, p < .001.
+
+Procedure
+The procedure for the immediate test group was the same as in prior
+experiments, and the procedure for the delay group was the same as in
+Experiment 3, which also included a 24-hour delay. On day one, par­
+ticipants were recruited via Prolific (Prolific, 2014) and made aware that
+the experiment would be completed over two days. After consenting to
+participate, participants completed the exposure phase only. On day
+two, participants were tested for retention of the novel items before
+completing the LEAP-Q and LexTALE. Participants were recruited dur­
+ing a two-hour window on day one, and the task was reopened for a fourhour window on day two. The middle of the day-two window was
+exactly 24-hours after the middle of the day-one window. On day two,
+participants were messaged when the experiment reopened and before it
+closed. Participants were allowed to participate after the day two win­
+dow had closed if they messaged on the same day.
+
+Retention
+Overall, participants learned novel words to above chance levels (M
+= 0.40, SD = 0.49, p < .001; chance = 0.25). To predict recognition task
+accuracy, we regressed accuracy at testing on condition (fluent vs. dis­
+fluent), delay (immediate vs. delay, coded as − .5 and.5), prediction
+accuracy (prediction error vs. correct prediction, coded as − .5 and.5),
+and all interactions. Delay was a significant predictor of word retention,
+B = -0.46, SE = 0.14, X2(df = 1) = 10.55, p = .001. Participants in the
+immediate test condition performed better than participants in the 24hour delay test condition. Prediction accuracy was also a significant
+predictor, B = -0.23, SE = 0.10, X2(df = 1) = 6.26p = .012: items where
+participants made a prediction error were recognized more accurately at
+test, independent of condition or delay. No other predictors were sig­
+nificant. Post-hoc analyses indicated a similar pattern of results after we
+removed items that participants failed to map (i.e., items where par­
+ticipants made an incorrect final selection at exposure; analyses
+included on OSF with other data and scripts).
+
+Materials
+As in Experiment 4, of the twelve target trials at exposure, four were
+9
+
+E. Libersky and M. Kaushanskaya
+
+Journal of Memory and Language 146 (2026) 104704
+
+Discussion
+
+dataset excluding items that participants failed to map at exposure. In
+the full dataset, Bayes inclusion factors for condition ranged from 0.009
+in Experiment 2 to 0.153 in Experiment 5. In the filtered dataset, Bayes
+inclusion factors ranged from 0.008 (Experiment 4) to 0.966 (Experi­
+ment 1). Thus, all inclusion factors fell below 1, indicating that the data
+were more likely to occur under the null hypothesis (i.e., models without
+condition). These results reinforce the conclusion from our frequentist
+models, that disfluency does not impact word retention. See OSF for full
+statistical output (“combined_bayes_followup.rmd”).
+
+In our final experiment, participants received an equal number of
+novel-disfluent, novel-fluent, and familiar-fluent trials at exposure. We
+again found that participants used disfluency to anticipate upcoming
+novelty, but this did not impact retention. As in Experiment 3, the delay
+between teaching and testing impacted word retention, but the facili­
+tative effect of fluency observed in Experiment 4 was not replicated in
+Experiment 5. Unlike in Experiment 4, where prediction error exerted a
+subtle effect on retention in tandem with condition and delay (i.e.,
+participants in the immediate condition benefitted from prediction error
+on fluent items and participants in the delay condition benefitted from
+prediction error on disfluent items), in Experiment 5, prediction error
+influenced retention more broadly, with prediction errors yielding bet­
+ter retention independent of condition and delay.
+
+General Discussion
+The impact of fillers on word learning has received relatively little
+attention in comparison to the impact of fillers on online processing, and
+this study is one of the first to investigate the effects of fillers on learning.
+Critically, there is a growing body of literature on the importance of
+predictive processing, and the role of prediction error in word learning.
+In the current work, we linked the occurrence of fillers to predictive
+processing and examined whether prediction errors stemming from a
+mismatch between disfluency and novelty (i.e., disfluency leads lis­
+teners to predict novelty) would impact learning. We found that adult
+listeners were more likely to predict upcoming novelty upon hearing a
+filler than upon hearing a fluent determiner, consistent with prior
+findings (Arnold et al., 2007; Kidd et al., 2011; Bosker et al., 2014).
+Moreover, this effect persisted across five experiments, and was
+observed even in Experiments 4 and 5, where an increase in the number
+of items in the fluent-novel object condition resulted in a weaker asso­
+ciation between disfluency and novelty than in Experiments 1––3.
+Critically, although the impact of disfluency on processing was consis­
+tently observed across all experiments, the impact of disfluency on
+learning was inconsistent and largely null. Effects of prediction error
+were also week and unstable: prediction error was involved in a threeway interaction in Experiment 4 and yielded a benefit for word reten­
+tion in Experiment 5 but otherwise had no impact on retention. Effects of
+delayed testing suggest that a longer delay posed more difficulty for
+recall than a shorter delay, in line with theories emphasizing decay
+(Baddeley, 1975; Barrouillet et al., 2004, 2007).
+
+Post hoc analysis of disfluency on word retention
+Across experiments, the impact of disfluency on retention was
+largely null. Results are summarized in Table 7. To strengthen our
+conclusions and to alleviate concerns that the negligible effect of dis­
+fluency reflected low statistical power, we ran two sets of post hoc an­
+alyses recommended by reviewers. First, we pooled data across
+experiments (excluding Experiment 1, as items were not randomly
+assigned to condition) and ran the same retention models reported for
+individual experiments. As before, we regressed accuracy at testing on
+condition (fluent vs. disfluent), delay (immediate vs. delay, coded as − .5
+and.5), prediction error (correct prediction vs. prediction error) and all
+interactions. Across 10,241 observations and 504 participants, there was
+no effect of condition, B = 0.01, SE = 0.05, X2(df = 1) = 0.008, p = .977.
+A similar pattern of results was observed when we removed items that
+participants failed to map: across 8968 observations and 502 partici­
+pants, there was no effect of condition (B = − 0.019, SE = 0.06, X2(df =
+1) = 0.274, p = .601. Analyses are available on OSF.
+We also reanalysed our retention data via Bayesian multilevel anal­
+ysis. While frequentist analyses serve to “fail to reject the null hypoth­
+esis,” Bayesian analyses enable us to estimate the amount of evidence for
+null and alternative models. Bayesian mixed effects models were used to
+analyse data in R (R Core Team, 2020) with the brms package (Bürkner,
+2017). We derived Bayes inclusion factors for the condition effect. In­
+clusion factors above 1 indicate that data are more likely to occur under
+the alternative hypothesis (i.e., models with the predictor) and inclusion
+factors below 1 indicate that data are more likely under the null hy­
+pothesis. Again, we included the full dataset as well as the filtered
+
+Processing
+During the processing task, we found that adults were more likely to
+select the novel object following a disfluent “thee uh/um” than after a
+fluent “the.” However, even at the final selection point, after partici­
+pants had heard the novel word, selection of the novel object was not at
+
+Table 7
+Results summary for all experiments (for effects of interest).
+Experiment
+1
+
+2
+
+3
+
+4
+
+5
+
+Performance at
+Exposure
+Final item
+selection
+
+−
+
+−
+
+−
+
+−
+
+−
+
+Null
+
+More likely to select novel
+item in disfluent vs. fluent
+condition
+
+Null
+
+Null
+
+Item selection
+after filler
+
+More likely to select
+novel item in disfluent
+vs. fluent condition
+−
+
+More likely to select
+novel item in
+disfluent vs. fluent
+condition
+As in Exp. 1
+
+As in Exp. 1
+
+As in Exp. 1
+
+As in Exp. 1
+
+−
+
+−
+
+−
+
+−
+
+Condition by delay
+interaction (refer to text
+for explanation)
+
+Null
+
+Better performance by
+participants in immediate
+vs. delay condition
+
+Condition by delay
+interaction (refer to text
+for explanation)
+
+Null
+
+Better performance by
+participants in immediate
+vs. delay condition
+
+Better performance in fluent vs.
+disfluent condition; Three-way
+interaction (refer to text for
+interpretation)
+Marginally better performance in
+fluent vs. disfluent condition; Threeway interaction (refer to text for
+interpretation)
+
+Better performance by
+participants in immediate vs.
+delay condition; Benefit of
+prediction error
+Better performance by
+participants in immediate vs.
+delay condition; Benefit of
+prediction error
+
+Performance at
+Retention
+All items
+
+Items mapped
+correctly at
+exposure
+
+10
+
+E. Libersky and M. Kaushanskaya
+
+Journal of Memory and Language 146 (2026) 104704
+
+ceiling. This seems to reflect a bias to choose the familiar object, as
+participants were more likely to choose the familiar object even at the
+first selection point (when all they had heard was “click on”). Thus, we
+conclude that the presence of a filler makes adults significantly more
+likely to predict a novel referent, although a familiar object bias persists.
+Our findings—in tandem with recent web-based disfluency research by
+Karimi and colleagues (2019) and Diachek and Brown-Schmidt
+(2022)—demonstrate that effects of disfluency are observable even
+under remote testing conditions that are relatively less sensitive than the
+in-lab eye-tracking and EEG methodologies used in earlier studies.
+Because the sentences are segmented, the task is somewhat less natu­
+ralistic than tasks that present sentences in full. Here, participants are
+forced to make a selection at two points in the sentence, which may not
+reflect the type of prediction making that adults do when listening to a
+sentence without interruptions. That said, because the self-paced nature
+of our task limits the typically present disfluent prosody that accom­
+panies fillers (Soderstrom & Morgan, 2007) and the length of the
+segment with the determiner was identical across conditions (i.e., par­
+ticipants were not simply responding to a delay), the present study also
+strongly points to filler form as the nexus of this effect—although further
+research will be necessary to confirm this hypothesis.
+
+on perception of speakers is alleviated, processing effects might cascade
+to learning. Another point is that testing word retention via recognition
+may not be the most sensitive approach to understanding the impact of
+fluency on learning; future work could assess free recall of novel words
+or competition with known words (i.e., consolidation) in order to build a
+fuller picture of disfluent word learning.
+Furthermore, learning studies are necessarily less well powered than
+processing studies. In one-shot learning tasks like ours, participants can
+only be taught so many items before retention dips below chance.
+Compounding this, assuming any effect of disfluency on learning has a
+smaller effect size than the effect of disfluency on processing, the
+number of necessary items to observe an effect is actually higher than the
+items needed to observe an effect on processing. In practice, studies of
+disfluency on processing have had a greater number of items (Arnold
+et al., 2007; Morin-Lessard & Byers-Heinlein, 2019) than studies of
+disfluency on learning (Libersky et al., 2023; White et al., 2020).
+Because underpowered studies may yield spurious findings (Ioannidis,
+2005; Wacholder et al., 2004), it is not entirely surprising that the effect
+of disfluency on learning does not replicate, either across studies or
+within a single set of studies like ours. Westfall and colleagues (2014)
+provide some guidance on power in situations where the number of
+items is limited by what participants can feasibly respond to (i.e., more
+participants are required), but the number of participants required for
+studies with a limited number of items is not feasible in many cases. For
+example, Brysbaert and Stevens (2018; within the context of reaction
+time experiments) recommend 1,600 observations per condition
+through some combination of participants and items (e.g., 40 partici­
+pants each respond to 40 items per condition). Applying this guideline to
+a learning task in which participants can only feasibly learn ten words
+per condition, 160 participants would be required per condition. That
+said, post hoc frequentist analyses pooling data across Experiments 2–5
+(yielding 10,241 observations in the full dataset and 8968 observations
+in the dataset filtered of incorrect mappings) indicated a null effect of
+condition (fluent vs. disfluent) on retention, as did post hoc Bayesian
+analyses of each experiment. However, the omnibus analyses only
+partially address concerns about power. Although the number of par­
+ticipants is increased, the number of stimuli remains a limiting factor.
+Per Westfall and colleagues (2014), a counterbalanced design with 60
+participants and 8 stimuli has 0.80 power to detect a minimum effect
+size of 0.79; increasing the number of participants to 500 while retaining
+the same number of items only lowers the minimum effect size to 0.76.
+This is a common problem in word learning research, as presenting too
+many items would result in below-chance retention. Therefore, although
+post-hoc findings substantiate our original results, they were unplanned
+and conducted at the recommendation of reviewers and do not address
+limits on the number of items presented.
+Previously, researchers have investigated the role of disfluency on
+memory for gist information or events (e.g., what happened in a story,
+Fraundorf & Watson, 2011; which familiar words appeared in a list,
+Corley et al., 2007; what was taught in a lecture, Toftness et al., 2018)
+and have typically shown either a disfluency advantage or no effect. This
+contrasts with the direction of the effect observed here, perhaps due to
+the role of speaker credibility in learning or the nature of novel word
+learning. Prior work has indicated that listeners associate disfluencies
+with lack of topic knowledge (Brennan & Williams, 1995), and people
+prefer to learn from fluent instructors (Toftness et al., 2018; White et al.,
+2020). Consequently, learners may deprioritize items that are preceded
+by disfluency (with the caveat that work on disfluency and credibility
+has used between- rather than within-speaker manipulations). More­
+over, word learning is a unique memory task in that it involves encoding
+a unique, precise phonological sequence and mapping it to a referent.
+Prior work has indicated that memory for gist (e.g., what happened in a
+story) is better retained than memory for items (Zeng et al., 2021); in the
+case of item memory, familiar items (i.e., homophones, Storkel &
+Maekawa, 2005, or words made up of familiar sounds or characters,
+Reder et al., 2016) are learned better than unfamiliar items. Given the
+
+Learning
+Although the findings regarding processing were consistent across
+experiments, the impact of disfluency and prediction error on word
+retention was weak or null. In Experiment 1, we found that participants
+in the immediate and delay groups were impacted by fluency differently,
+with participants tested immediately demonstrating better performance
+on fluent items and participants tested after a delay showing better
+performance on disfluent items. In Experiment 4, participants performed
+better in the fluent condition independent of which group they were in;
+but we also observed a complex three-way interaction, where the impact
+of fluency and prediction error differed across immediate (benefit of
+prediction error on fluent items) and delayed (benefit of prediction error
+on disfluent items) test conditions. In Experiment 5, we found that
+learners benefitted from prediction error independent of fluency con­
+dition or group. Given the inconsistency of these findings and the null
+effect of disfluency on word retention in our post-hoc analyses, we are
+inclined to view these results as a failure to replicate rather than
+meaningful differences that can be interpreted.
+Why might effects of disfluency on learning fail to replicate while
+effects on processing are so consistent? For one, processing effects seem
+to be much more robust. Numerous studies have found that adults and
+children use disfluencies to anticipate upcoming referents, and this has
+held across a variety of paradigms (e.g., visual world eye tracking tasks:
+Arnold et al., 2007, EEG tasks: Corley et al., 2007, remote behavioural
+tasks: Karimi et al., 2019; Diachek and Brown-Schmidt, 2022). In
+contrast, the impact of disfluency on learning and memory remains
+poorly understood and inconsistent. Some studies have found a dis­
+fluency advantage (Corley et al., 2007; Diachek & Brown-Schmidt,
+2022; Fraundorf & Watson, 2011), others have found a fluency advan­
+tage (Libersky et al., 2023), and others have found no difference (Bosker
+et al., 2014; Toftness et al., 2018). Notably, Libersky and colleagues
+(2023) found a fluency advantage for bilinguals only, whereas mono­
+linguals showed similar performance across conditions. This suggests
+that the impact of disfluency may depend on prior language experience
+(i.e., learners with sufficient exposure to the target language learn
+similarly well from disfluent and fluent input, although what constitutes
+sufficient exposure remains to be explored). Additionally, there are
+competing processes at play when learning from disfluent speakers.
+Although disfluency may orient learners to upcoming novelty, disfluent
+speakers are considered less credible (Toftness et al., 2018). Future work
+might unpack how much speaker knowledge is necessary for learners to
+view a disfluent speaker as a qualified instructor and enable learners to
+effectively use disfluency as a cue to novelty; if the impact of disfluency
+11
+
+E. Libersky and M. Kaushanskaya
+
+Journal of Memory and Language 146 (2026) 104704
+
+relative difficulty of novel word learning (vs. prior tasks used in dis­
+fluency research), it is possible that adults treat disfluency differently
+during novel word learning vs. other processing and memory tasks,
+leading to a different pattern of results.
+Regarding retention over time, performance in the 24-hour delay
+was worse than performance measured immediately. Reduced perfor­
+mance after a delay over 12 h has been shown in many word learning
+studies (e.g., Kaushanskaya, 2012; Schneider et al., 2002). However,
+brief delays have also been shown to impact word retention (Angwin
+et al., 2019; Knabe et al., 2023) as they should capture the initial transfer
+of items from short- to long-term memory (Tehan & Tolan, 2007). Yet, in
+our study, we did not observe reduced performance after the six-minute
+delay. Instead, we observed an interaction between condition and delay
+in one experiment (Experiment 1) and only after filtering out the items
+that participants failed to map at exposure. The 24-hour delay is qual­
+itatively different from the six-minute delay in that it involves sleep, and
+new words are consolidated into the lexicon during sleep (Davis et al.,
+2009; Gaskell & Dumay, 2003). Although we did not specifically query if
+and how long participants slept in the 24-hour window between ses­
+sions, and this would need to be addressed in any follow up studies.
+Future work could explore the consequences of disfluency for consoli­
+dation of novel words and integration into the lexicon via longer delays
+(e.g., one-week) between exposure and testing (see Gaskell & Dumay,
+2003), although our preliminary findings suggest a minimal impact of
+disfluency on long-term retention.
+
+Acknowledgements
+This work was supported by a National Institutes of Health (NIH)
+grants (R01 DC016015 and R01 DC020447) to M. K., an Oros Bascom
+Professorship to M. K., an NIH grant (F31 DC021386) to E.L., an Emma
+Allen Award from the University of Wisconsin-Madison to E.L., a Gorilla
+Grant from Cauldron Science to E. L., and a center grant (U54
+HD090256) to the Waisman Center. We thank our participants and
+member of the Language Acquisition and Bilingualism Lab for making
+this research possible. We also thank Audra Sterling and Haley Vlach for
+providing literature suggestions and giving feedback on the manuscript,
+and Daniel Bolt for statistical consulting.
+Appendix A. Supplementary data
+Supplementary data to this article can be found online at https://doi.
+org/10.1016/j.jml.2025.104704.
+Data availability
+All data and scripts associated this paper are available on the Open
+Science Framework (OSF) at https://osf.io/yj7pa/.

@@ -1,0 +1,1888 @@
+Peterson & Wissman, 2020; see also Smallwood et al., 2007).
+To measure mind-wandering, researchers employ various assessment
+methods (see Kane et al., 2021). One common approach involves the use
+of thought probes where participants are asked to report their conscious
+experiences during an ongoing task (e.g., Weinstein, 2018). These
+thought probes are typically interspersed within a subset of primary task
+trials and researchers can adjust the frequency and interval between
+probes (Robison et al., 2019). Again, higher rates of self-reported mindwandering in response to these thought probes are often associated with
+poorer performance on the primary task (McVay & Kane, 2009; Miller &
+Castel, 2024; Unsworth & McMillan, 2014). Thus, mind-wandering is
+generally detrimental to cognitive performance.
+Prior research has applied thought probes and other techniques to
+measure mind-wandering during the learning of verbal materials (see
+
+☆
+This article is part of a special issue entitled: ‘Individual differences in memory’ published in Journal of Memory and Language.☆☆ The research reported here
+was supported by the Institute of Education Sciences, U.S. Department of Education, through Grant R305T240035 to Arizona State University. The opinions
+expressed are those of the authors and do not represent the views of the Institute or the U.S. Department of Education. The authors certify that they have no af­
+filiations with or involvement in any organization or entity with any financial or non-financial interest in the subject matter or materials discussed in this manuscript.
+The experiments reported in this article were not formally preregistered, but the stimuli and data have been made available on the Open Science Framework here.
+* Corresponding author at: Department of Psychology, University of California, Riverside, CA.
+E-mail address: dillonm@ucr.edu (D.H. Murphy).
+
+https://doi.org/10.1016/j.jml.2024.104604
+Received 1 April 2024; Received in revised form 13 December 2024; Accepted 16 December 2024
+Available online 27 December 2024
+0749-596X/© 2024 Elsevier Inc. All rights are reserved, including those for text and data mining, AI training, and similar technologies.
+
+D.H. Murphy and G.A. Brewer
+
+Journal of Memory and Language 141 (2025) 104604
+
+Blondé et al., 2022 for a review). For example, Smallwood et al. (2003)
+measured mind-wandering via thought probes where participants were
+asked to report exactly what was passing through their mind upon
+hearing a buzzer sound, classifying their thoughts as task-related
+thought, task-related interference, and task-unrelated thought. Simi­
+larly, Peterson and Wissman (2020) had one categorical thought probe
+after each list of studied words. Furthermore, Xu and Metcalfe (2016)
+periodically asked participants throughout their study sessions whether
+they were focused on the task or if their minds were wandering.
+Importantly, in these studies using verbal memory paradigms, a negative
+association is consistently shown between mind-wandering and memory
+performance (the number of words a participant can recall). Despite
+these insights, Blondé et al. (2022) indicate that most of the previous
+research on mind-wandering and memory has focused primarily on
+average recall performance, leaving room for further exploration into
+the complexities of recall dynamics and how mind-wandering influences
+both encoding and retrieval processes in more nuanced ways. Addi­
+tionally, this prior work has some limitations such as small sample sizes,
+a lack of focus on individual differences, and primarily examining state
+mind-wandering rather than differentiating between state and trait
+mind-wandering.
+State and trait are terms commonly used in psychology to describe
+different aspects of an individual’s moment-to-moment fluctuations
+versus stable characteristics, respectively. Specifically, state refers to a
+temporary or transient mental or emotional condition—states can be
+influenced by various factors such as the environment, mood, specific
+circumstances, or immediate experiences. For example, feeling anxious
+before an important presentation or being happy after receiving good
+news are both examples of states. Trait, on the other hand, refers to a
+stable and enduring characteristic that remains relatively constant over
+time and across situations. For instance, someone who is consistently
+optimistic or introverted across various contexts is exhibiting traits. The
+distinction between states and traits can be conceptualized within
+classical test theory, and psychometric advancements have been made in
+estimating momentary intraindividual variability in an individual’s
+trait-based behaviors (Steyer et al., 1999, 2015).
+In the context of mind-wandering and learning, “state mind-wan­
+dering” refers to the frequency with which a participant experiences the
+temporary and momentary occurrences of the mind drifting away from
+encoding the to-be-remembered information. Thought probes during the
+study phase can capture real-time mind-wandering (e.g., Feng et al.,
+2013), allowing for an examination of how the state of mind of a learner
+during encoding relates to memory performance. On the other hand, to
+quantitatively measure trait levels of mind-wandering, Mrazek et al.
+(2013) developed the Mind-Wandering Questionnaire (MWQ). This fivequestion scale assesses an individual’s tendency to mind-wander in daily
+life, offering a standardized method for investigating trait-level mindwandering.
+Prior work has investigated the relationship between state and trait
+mind wandering. For example, Seli et al. (2016) assessed whether in­
+dividual propensities for trait mind wandering (measured via selfreports) correspond to state-level occurrences recorded using thought
+probes. Results revealed that individuals’ self-reported habitual mindwandering tendencies (trait) often reflect their immediate mindwandering behavior (state). Similarly, Da Silva et al. (2020) investi­
+gated the relationship between state and trait levels of mind wandering
+during a tracing task. They demonstrated that people who generally
+mind-wander more frequently tended to experience more diverse
+thoughts and perform differently, but these trait differences did not
+predict perceptual decoupling (the degree of disengagement from the
+external environment) or mental navigation (the movement of thoughts
+across time and space) during the task. Thus, while general mindwandering tendencies (trait) can influence momentary experiences
+(state), different dimensions of mind-wandering may have distinct cor­
+relates and effects on cognitive performance. While certainly associated,
+prior work has shown that trait and state measures of other
+
+psychological constructs show convergent and discriminant validity and
+we expect similar findings with trait and state estimates of mind wan­
+dering (Zuckerman, 1983).
+Although similar, state and trait mind-wandering are separate con­
+structs, each influencing cognitive processes in distinct ways. For
+example, someone with a low propensity for mind-wandering may
+experience episodes of mind-wandering under certain conditions such as
+high stress or fatigue. Conversely, an individual characterized as a high
+trait mind-wanderer may not always be mind-wandering, especially in
+contexts that capture their interest or require focused attention. Addi­
+tionally, the mechanisms through which state and trait mind-wandering
+affect learning could differ. Specifically, trait mind-wandering might
+influence memory via a general tendency towards less effective encod­
+ing strategies or poorer maintenance of goal-directed activity. On the
+other hand, state mind-wandering might impact memory through more
+immediate mechanisms such as momentary lapses in attention that lead
+to gaps in encoding (which would be reflected in retrieval patterns such
+as lag-conditional response probabilities). Thus, even though a higher
+frequency of mind-wandering instances is associated with the trait, the
+specific impact of each instance (state mind-wandering) and how this
+accumulates or interacts with an individual’s baseline propensity can
+provide deeper insights into the relationship between mind-wandering
+and memory.
+Another reason mind-wandering may be detrimental to episodic
+memory processes is a reduction in the consistency and intensity of
+attention, each representing separable components that reflect distinct
+aspects of cognitive engagement and regulation (Unsworth & Miller,
+2021). Consistency involves how regularly attention is maintained across
+repeated trials of a task, reflecting the ability to avoid attentional lapses.
+On the other hand, intensity represents the amount of attentional effort
+directed toward a specific task. Better learners not only deploy greater
+attentional effort but also maintain this focus consistently throughout
+encoding, thereby avoiding frequent shifts in attention during the
+learning process (Miller & Unsworth, 2020, 2021; Unsworth & Miller,
+2021). These components of attention are associated with state mindwandering (Robison & Brewer, 2022), likely impacting overall mem­
+ory performance and potentially retrieval dynamics as well.
+Individuals prone to mind-wandering (trait) may exhibit poorer
+attentional consistency, experiencing more frequent lapses in attention
+during encoding. Additionally, when the mind wanders during encoding
+(state), the temporary reduction in the intensity of attention likely im­
+pairs subsequent memory performance. Specifically, when the mind is
+wandering, attention is diverted to task-unrelated thoughts rather than
+engaging in encoding strategies such as generating mental images of the
+items of creating sentences to link the words together in a meaningful
+way. Thus, trait mind-wanderers may be “inconsistent” with their
+attention, leading to more frequent states of mind-wandering and poorer
+memory performance due to a reduction in the intensity of attention.
+This cost of mind-wandering may particularly impair a learner’s ability
+to bind temporal-contextual information that can later be used as a cue
+to benefit retrieval.
+Most prior work on mind-wandering and learning has focused pri­
+marily on overall memory performance—demonstrating worse recall
+when participants mind-wandered—without delving into the dynamics
+of how items are retrieved (Blondé et al., 2022). A key aspect of memory
+retrieval is the use of internal context such as temporal, semantic, and
+source elements that guide the sequence of retrieval (Polyn et al., 2009).
+One specific measure that captures this process is the lag-recency effect
+which refers to the tendency to recall items that were encoded in close
+temporal proximity together. Specifically, the lag-recency effect illus­
+trates how temporal context can serve as a cue during recall, often
+leading to the retrieval of items in the order they were presented (e.g.,
+Sederberg et al., 2010). There are important individual differences in the
+lag-recency effect such as learners with lower working memory capacity
+struggling to use the products of retrieval to aid their search (Spillers &
+Unsworth, 2011), and these differences may be partly attributable to the
+2
+
+D.H. Murphy and G.A. Brewer
+
+Journal of Memory and Language 141 (2025) 104604
+
+tendency of individuals with lower cognitive abilities to engage in mindwandering more frequently. Examining the lag-recency effect in the
+context of mind-wandering can provide deeper insights into how state
+and trait mind-wandering influence memory processes. State mindwandering may disrupt the encoding of temporal-contextual cues,
+thereby weakening the lag-recency effect. In contrast, trait mindwandering might have a more pervasive impact on overall cognitive
+strategies and memory organization, potentially leading to different
+retrieval patterns.
+Prior work has suggested that conditions involving incidental
+encoding or very long lists, which can be boring, reduce the contiguity
+effect (Hong et al., 2023; Mundorf et al., 2021). This is closely related to
+the idea that mind-wandering impairs attention to context cues (i.e.,
+attentional lapses can disrupt the encoding of temporal-contextual in­
+formation) thereby diminishing the lag-recency effect. Thus, variations
+in levels of attention at encoding may influence the effectiveness of
+temporal-contextual cues in guiding memory retrieval. When a learner’s
+mind wanders, their attention may shift away from the sequential pre­
+sentation of items, disrupting the encoding process. Consequently, the
+temporal context of a given item may not be adequately encoded or
+integrated into memory and learners may struggle to establish the
+necessary associations between adjacent items, weakening the forwardordered recall pattern typical of the lag-recency effect.
+While the order in which an item was presented often plays a crucial
+role in its successful recall, numerous other predictable patterns have
+been observed. Notably, in free recall paradigms, learners tend to
+initiate their output with either the first or last item from a list
+(measured by the probability of first recall, PFR; Howard & Kahana,
+1999; Kahana et al., 2002). This tendency to initiate recall with the first
+or last item is particularly pronounced in immediate free recall tests
+where the last item presented is more likely to be recalled first.
+Conversely, during delayed free recall, when rehearsal opportunities are
+interrupted after the final word’s presentation, the first studied word
+tends to be the first recalled. In the current study, we aim to better our
+understanding of how involuntary shifts in attention as well as the
+predisposition towards mind-wandering affect retrieval initiation and
+other memory retrieval dynamics.
+
+the memory task, participants were asked to rate how often their minds
+wandered during the task on a scale of 0 (never) to 100 (very
+frequently)—we refer to this as retrospective mind-wandering. Finally,
+participants completed the Mind-Wandering Questionnaire (Mrazek
+et al., 2013) to assess trait-level mind-wandering tendencies. Since
+mind-wandering typically disrupts memory, we expected participants
+with a greater propensity to mind-wander to demonstrate impaired
+overall episodic memory performance and display different retrieval
+transition tendencies and recall initiation patterns.
+Method
+Participants. After exclusions, participants were 205 undergraduate
+students (Mage = 19.81, SDage = 3.25; 117 female, 86 male, 1 other, 1
+chose not to report) recruited from the Arizona State University (ASU)
+Human Subjects Pool. In each experiment, participants were tested on­
+line, received course credit for their participation, and were excluded
+from analysis if they admitted to cheating (e.g., writing down answers)
+in a post-task questionnaire (they were told they would still receive
+credit if they cheated). This exclusion process resulted in seven exclu­
+sions. Participants were also excluded if they did not attest to giving
+their best effort on the task. This exclusion criterion resulted in no ex­
+clusions. In the present experiments, we aimed for a sample size of 200
+participants which approaches the threshold for stable estimates of
+correlations as indicated by Schönbrodt and Perugini (2013), ensuring
+reliable and accurate measurement of our variables.
+Materials. The words on each list were randomly selected from a
+pool of 689 unrelated words (e.g., button, chart, twig) that were be­
+tween 4 and 7 letters (M = 4.85, SD = .98). On the log-transformed
+Hyperspace Analogue to Language frequency scale (with lower values
+indicating lower frequency in the English language and higher values
+indicating higher frequency), words ranged from 4.73 to 14.35 (M =
+9.48, SD = 1.57). In terms of concreteness (with lower values indicating
+lower concreteness and higher values indicating higher concreteness),
+words ranged from 1.19 to 5.00 (M = 4.16, SD = .84). Frequency and
+concreteness ratings were generated using the English Lexicon Project
+website (Balota et al., 2007). Words are available on OSF.
+Procedure. At the beginning of the task, participants were asked to
+1) be prepared to complete the study in a single, 60-minute session (i.e.,
+no prolonged breaks), (2) complete this study in an environment with
+minimal distraction (i.e., put away extra devices, close unneeded tabs,
+and turn off any music or TV in the background), (3) complete the study
+on a laptop or desktop computer (i.e., do NOT use a mobile phone or a
+tablet), and (4) if in the presence of other people, try to move somewhere
+more secluded. Participants were then told: “Please give your full effort
+on this task! PLEASE do not use any external aides and thus use ONLY
+YOUR OWN memory to complete the study.” Next, participants were
+told: “This task will be very difficult. We do not expect you to remember
+everything; you will likely only be able to remember some of the in­
+formation. Please do not cheat by taking pictures of the screen, writing
+things down, or using any other aid to complete this task.” Finally, we
+again asked participants that they do not cheat on this task by using any
+memory aids and that they give their full effort on this task. They then
+had to attest whether they would not cheat and whether they would give
+their best effort.
+Participants were then presented with lists of 10 unrelated words to
+remember for a later test. Participants studied each word for 2 s and after
+the presentation of all words, participants completed a 30-second
+distraction task requiring them to rearrange the digits of several threedigit numbers in descending order (e.g., 123 would be rearranged to
+321). Participants were given 3 s to view each of the 10 three-digit
+numbers and subsequently rearrange the digits. Following the dis­
+tractor task, participants were asked to recall all the words they could
+remember from the just-studied list. Participants were given 1 min to
+recall the words and were asked to try to continue to recall words
+throughout the entire minute. Participants recalled words by typing
+
+The current study
+In the current study, we explored the potential relations between
+mind-wandering tendencies and episodic memory performance in a
+multi-trial delayed free recall paradigm. Specifically, we investigated
+the impact of both state and trait mind-wandering on recall accuracy,
+the lag-recency effect, and the probability of first recall. We were
+particularly interested in understanding whether the occurrence of
+mind-wandering, both in the moment (state) and as a more stable
+characteristic (trait), could differentially influence the temporal binding
+of information during encoding and the subsequent memory retrieval
+dynamics. We employed mind-wandering probes throughout a word list
+learning task as well as a separate mind-wandering questionnaire (at the
+end of the task) to measure state and trait mind-wandering, respectively.
+We hypothesized that individuals more prone to mind-wandering would
+exhibit lower levels of average recall, a diminished ability to effectively
+utilize temporal-contextual cues, and differ in their recall initiation
+strategies.
+Experiment 1
+In Experiment 1, participants were presented with 30 lists, each
+containing 10 words shown for 2 s each. Participants then completed a
+30-second distractor task before a 1-minute free recall test. Once per list,
+at pseudo-random serial positions, participants responded to mindwandering probes. These probes were used to compute the proportion
+of the time that participants were mind-wandering (state mindwandering). As an additional mind-wandering measure, at the end of
+3
+
+D.H. Murphy and G.A. Brewer
+
+Journal of Memory and Language 141 (2025) 104604
+
+them into an on-screen text box—recalled words remained on the
+screen. Responses were scored using a similarity-based algorithm that
+calculates the percentage match between participants’ responses and the
+correct answers. To account for typographical errors, we applied a le­
+niency criterion, setting the threshold for correctness at 75 % similarity.
+For example, a response such as ‘aple’ for ‘apple’ would meet the 75 %
+threshold and be counted as correct, while ‘apl’ would not. Full details
+are available on OSF. This was repeated for a total of 30 study-test
+cycles.
+Once per list (occurring at pseudo-random serial positions), partici­
+pants were asked about their level of attentiveness. Specifically, par­
+ticipants were asked to characterize their current conscious experience;
+participants indicated whether they were either a) totally focused on the
+current task (i.e., paying attention to the word pairs and trying to learn
+them), b) thinking about their performance on the task or how long it is
+taking (i.e., whether they will remember the information but also
+wondering whether the task will end soon), c) distracted by information
+present in the room (e.g., sights and sounds), d) zoning out/mindwandering (i.e., their attention has shifted away from the task to selfgenerated thoughts unrelated to the task), or e) “Other” (taken from
+Unsworth & McMillan, 2014). Responses to the mind-wandering probes
+were self-paced.
+At the end of the last list, participants were asked: “Please rate how
+often your mind wandered during this task (when your thoughts wander
+away from what you are doing and go somewhere else on their own) on a
+scale of 0 to 100 (0 = never, 100 = very frequently)”—these ratings
+formed the retrospective mind-wandering rate. Finally, participants
+completed the Mind-Wandering Questionnaire developed by Mrazek
+et al. (2013). Specifically, using a scale from 0 to 100 (0 = never, 100 =
+very frequently), participants responded to the following questions: 1) I
+have difficulty maintaining focus on simple or repetitive work, 2) While
+reading, I find I have not been thinking about the text and must therefore
+read it again, 3) I do things without paying full attention, 4) I find myself
+listening with one ear, thinking about something else at the same time,
+and 5) I mind-wander during lectures of presentations. Responses on this
+questionnaire were used to measure trait mind-wandering, which was
+computed as the average rating across the five questions.
+Data Availability. The materials, data, and information needed to
+reproduce the analyses are available on OSF.
+Reliabilities. To examine the reliability of participants’ mindwandering rates, we compared the mind-wandering rate for even and
+odd lists for each participant [Cronbach’s α = .95]. Reliability cannot be
+computed for retrospective mind-wandering because there was only one
+response for each participant. To examine the reliability of the trait
+mind-wandering questionnaire, we compared participants’ responses to
+each of the five questions [Cronbach’s α = .81]. Finally, we examined
+the reliability of participants’ recall across the 30 lists [Cronbach’s α =
+.96].
+
+Next, we investigated the relationship between mind-wandering and
+recall performance (see Fig. 1, bottom panel). Pearson correlations
+revealed that recall was negatively related to the mind-wandering rate
+during the task [r = -.49, p < .001], retrospective mind-wandering
+ratings, [r = -.45, p < .001], and trait mind-wandering [r = -.29, p <
+.001]. Given that all measures of mind-wandering were related (nega­
+tively) to recall, we also examined whether each measure of mindwandering uniquely predicts memory. A General Linear Model with
+mind-wandering rate during the task (state mind-wandering), retro­
+spective mind-wandering ratings, and trait mind-wandering scores
+predicting average memory performance (R2 = .28) revealed that mindwandering rate [β = -.35, t(201) = -4.67, p < .001] and retrospective
+mind-wandering [β = -.21, t(201) = -2.55, p = .012] both uniquely
+predicted memory performance but trait mind-wandering did not [β =
+-.07, t(201) = -.96, p = .338].
+We next examined how mind-wandering rate and recall changed as
+the task endured (see Fig. 2). A mixed multi-level model with list-level
+recall accuracy (the proportion of items recalled on a given list)
+modeled as a function of list (continuous variable nested within indi­
+vidual participants) revealed that recall decreased as the task endured [t
+(5944) = -18.22, p < .001]. A similar model with mind-wandering on
+each list revealed that mind-wandering increased as the task endured [t
+(5836) = 28.66, p < .001].
+In addition to overall memory performance, we wanted to analyze
+the lag-recency effect to gain a deeper understanding of how mindwandering influences the temporal dynamics of memory retrieval and
+the use of contextual cues during recall. Lag conditional-response
+probabilities (lag-CRPs) can be used to quantitatively measure the lagrecency effect (see Kahana, 1996). Specifically, lag-CRPs provide a
+means of assessing how individuals transition between recalling items
+during memory retrieval. Since items presented in close temporal
+proximity share more contextual features, the retrieval of one item can
+act as a cue to retrieve nearby items, thus increasing the likelihood of
+recalling items with shorter temporal lags (Sederberg et al., 2010;
+Spillers & Unsworth, 2011). As a result, participants tend to demonstrate
+increased CRPs for adjacent items compared to items that are more
+distantly separated in the encoding sequence.
+The CRP for a recall transition is calculated by dividing the sum of
+the number of times a specific lag transition occurred by the total
+number of times that transition could have been made. Lag refers to the
+ordinal space between serial positions, such as the lag between serial
+positions 8 and 9 being 1. For instance, if an individual recalls an item
+presented in serial position 8, the CRP for a lag of 1 would represent the
+probability that the item in serial position 8 is recalled immediately after
+the item in serial position 7 or 9, rather than items further away like 6 or
+10 (illustrating a lag of 2). Lag-CRPs not only provide valuable insights
+into participants’ recall patterns, but they also show a positive rela­
+tionship with elevated task performance (Sederberg et al., 2010; Spillers
+& Unsworth, 2011). This suggests that the effective use of temporalcontextual cues, derived from just-recalled words, facilitates the
+retrieval of additional words during memory recall, leading to enhanced
+performance in memory tasks.
+The probability of recalling an item from serial position x followed
+by an item from serial position y for lags 1–5 (the most relevant for
+visualization) split into quartiles based on mind-wandering rate/state
+
+Results
+To examine mind-wandering rates, we first coded participants’ re­
+sponses to the mind-wandering probes as either mind-wandering
+(distracted by information present in the room (sights and sounds)
+and zoning out/mind-wandering) or not mind-wandering (totally
+focused on the current task and thinking about their performance on the
+task or how long it is taking); “Other” responses were not considered
+mind-wandering or not mind-wandering. We then computed the pro­
+portion of the time participants indicated that they were mindwandering. An examination of the Pearson correlations between our
+measures of mind-wandering (see Fig. 1, top panel) revealed that the
+mind-wandering rate during the task (state mind-wandering) was
+related to retrospective mind-wandering ratings [r = .60, p < .001] as
+well as trait mind-wandering [r = .35, p < .001]; additionally, retro­
+spective mind-wandering ratings were related to trait mind-wandering
+[r = .51, p < .001].
+4
+
+D.H. Murphy and G.A. Brewer
+
+Journal of Memory and Language 141 (2025) 104604
+
+Fig. 1. Densities, correlations, and regression lines with standard error between our measures of mind-wandering as well as recall and our measures of mindwandering in Experiment 1.
+
+mind-wandering for each participant (predictors are nested within each
+participant) predicting CRPs—all mind-wandering measures were
+treated as continuous variables.1 For simplicity, the results are reported
+in Table 1. As per Cohen et al. (2013), when there is a continuous var­
+iable interaction, researchers can use plots with quartiles for interpre­
+tation. Here, in terms of the critical three-way interactions, we only
+observed a significant three-way interaction between lag, direction, and
+mind-wandering when considering trait mind-wandering. Thus, the lagrecency effect appears to be particularly hindered in trait mindwanderers such that their ability to recall adjacent items in the for­
+ward direction was impaired.2
+We were also interested in how mind-wandering impacts the lagrecency effect as the task endures and mind-wandering becomes more
+prevalent (as shown in Fig. 2b). As such, we conducted a within-subject
+comparison of early- and late-list CRPs (see Fig. 4). The results of a
+mixed multi-level model with timing (first 10 lists, last 10 lists), direc­
+tion (forward, backward), lag (1–9), mind-wandering rate/state mindwandering, retrospective mind-wandering, and trait mind-wandering
+for each participant predicting CRPs are shown in Table 2—we note
+that as you increase the number of factors in an interaction, the model
+becomes exponentially more complex the complexity of this analysis
+
+1
+We note that lag-CRPs are not statistically independent across lags, which
+may violate the independence assumptions of both ANOVA and mixed-effects
+models. For example, if a participant consistently makes transitions with a
+lag of +1, their lag-CRP for +1 will be 1.0, and the lag-CRPs for all other lags
+will necessarily be 0. This dependency between lag-CRPs can complicate sta­
+tistical interpretations as higher values for one lag inherently reduce the values
+for others. While this limitation does not invalidate the use of these models, it
+serves as a caveat to the analyses and should be considered when interpreting
+the results.
+2
+Given that lag-CRPs can be influenced by total recall, as a supplemental
+analysis, we employed a permutation method to control for the influence of
+overall recall differences on the shape of the lag-CRP (see Hong et al., 2023).
+The resulting temporal bias curves reflected similar patterns as the lag-CRP
+curves. This analysis is available as an online supplement on OSF.
+
+Fig. 2. Recall performance (a) and mind-wandering rates (b) on each list in
+Experiment 1. Error bars reflect the standard error of the mean. The dashed line
+represents the linear trend.
+
+mind-wandering, retrospective mind-wandering ratings, and trait mindwandering scores are shown in Fig. 3. We conducted a mixed multi-level
+model with direction (forward, backward), lag (1–9), mind-wandering
+rate/state mind-wandering, retrospective mind-wandering, and trait
+5
+
+D.H. Murphy and G.A. Brewer
+
+Journal of Memory and Language 141 (2025) 104604
+
+Fig. 3. Conditional-response probability (CRP) functions for forward and backward transitions as a function of lag split into quartiles based on mind-wandering rate/
+state mind-wandering (a), retrospective mind-wandering ratings (b), and trait mind-wandering scores (c) in Experiment 1. Error bars reflect the standard error of
+the mean.
+Table 1
+The results of a mixed multi-level model with direction, lag, mind-wandering rate/state mind-wandering, retrospective mind-wandering, and trait mind-wandering for
+each participant predicting CRPs in Experiment 1.
+Fixed Effects Parameter Estimates
+Effect
+
+Estimate
+
+SE
+
+95 % CI: Lower
+
+95 % CI: Upper
+
+df
+
+t
+
+p
+
+(Intercept)
+Direction
+Lag
+Mind-Wandering Rate
+State MW
+Trait MW
+Direction * Lag
+Direction * Mind-Wandering Rate
+Lag * Mind-Wandering Rate
+Direction * State MW
+Lag * State MW
+Direction * Trait MW
+Lag * Trait MW
+Direction * Lag * Mind-Wandering Rate
+Direction * Lag * State MW
+Direction * Lag * Trait MW
+
+0.11
+0
+− 0.02
+− 0.01
+0
+0
+− 0.03
+0.01
+0
+0
+0
+0
+0
+0
+0
+0
+
+0
+0
+0
+0.01
+0
+0
+0
+0.02
+0
+0
+0
+0
+0
+0.01
+0
+0
+
+0.11
+− 0.01
+− 0.02
+− 0.03
+0
+0
+− 0.04
+− 0.02
+0
+0
+0
+0
+0
+− 0.01
+0
+0
+
+0.12
+0.01
+− 0.02
+0.01
+0
+0
+− 0.03
+0.05
+0.01
+0
+0
+0
+0
+0.02
+0
+0
+
+3674
+3674
+3674
+3674
+3674
+3674
+3674
+3674
+3674
+3674
+3674
+3674
+3674
+3674
+3674
+3674
+
+56.1
+− 0.42
+–22.29
+− 0.8
+1.02
+− 1.18
+− 21.84
+0.7
+0.66
+− 1.42
+1.79
+0.63
+− 1.14
+0.12
+− 0.6
+3.07
+
+<.001***
+0.674
+<.001***
+0.426
+0.309
+0.24
+<.001***
+0.482
+0.509
+0.156
+0.074
+0.53
+0.253
+0.907
+0.548
+0.002**
+
+Note: * = p < .05, ** = p < .01, *** = p < .001.
+
+makes it difficult to estimate reliably. However, the visual interpretation
+of Fig. 4 suggests that the lag-recency effect decreases on later lists
+(when mind-wandering tends to increase) for learners reporting higher
+levels of mind-wandering rates (state mind-wanderers) and retrospec­
+tive mind-wanderers, and trait mind-wanderers show an overall
+impairment that appears stable throughout the task.
+We also examined memory as a function of participants’ reported
+experience. Specifically, recall on lists where participants did not report
+mind-wandering (M = .45, SD = .15) was greater than recall on lists
+where participants reported mind-wandering (M = .34, SD = .16), [t
+(181) = 10.58, p < .001, d = .78]. We also analyzed CRPs as a function of
+participants’ reported experience (see Fig. 5). The results of a mixed
+multi-level model with whether participants reported mind-wandering,
+direction (forward, backward), and lag (1–9) for each participant
+
+predicting CRPs are shown in Table 3. Critically, there was a three-way
+interaction between direction, lag, and whether participants were mindwandering such that participants were more likely to transition adja­
+cently in the backward direction when they mind-wandering.
+Finally, we also examined the probability of first recall (PFR) which
+refers to the probability that items from a given serial position will be
+recalled first. Again, the PFR captures how participants initiate recall
+and in the present analysis, refers to the proportion of the time the word
+from a given serial position was the first word recalled (see Fig. 6). A
+repeated-measures ANOVA with 10 levels (serial position) and mindwandering rate/state mind-wandering, retrospective mind-wandering,
+and trait mind-wandering as covariates (continuous variables)
+revealed an effect of serial position [F(9, 1809) = 72.00, p < .001, η2p =
+.26] such that the first word presented was most likely to be the first
+6
+
+D.H. Murphy and G.A. Brewer
+
+Journal of Memory and Language 141 (2025) 104604
+
+Fig. 4. Conditional-response probability (CRP) functions for the first 10 lists (left column) and last 10 lists (right column) for forward and backward transitions as a
+function of lag split into quartiles based on mind-wandering rate/state mind-wandering (a), retrospective mind-wandering ratings (b), and trait mind-wandering
+scores (c) in Experiment 1. Error bars reflect the standard error of the mean.
+
+word recalled. Additionally, serial position interacted with mindwandering rate/state mind-wandering [F(9, 1809) = 3.92, p < .001,
+η2p = .02] and marginally interacted with retrospective mind-wandering
+[F(9, 1809) = 1.85, p = .055, η2p = .01] such that individuals experi­
+encing more state mind-wandering were less likely to initiate recall
+according to serial position. However, serial position did not interact
+with trait mind-wandering [F(9, 1809) = .40, p = .935, η2p < .01] such
+that trait mind-wandering did not impact the recall initiation process.
+
+Together, our findings suggest that being off task during encoding
+detrimentally impacts memory, as expected. However, having a pre­
+disposition to mind-wandering does not necessarily imply that the
+learner has a lower memory ability per se. Rather, trait mind-wandering
+reflects a higher likelihood of experiencing more frequent episodes of
+state mind-wandering, which in turn reduces the chances of effective
+encoding. This is supported by our results showing a correlation be­
+tween trait and state mind-wandering. It is important to note that even
+individuals who do not identify as trait mind-wanderers can still expe­
+rience state mind-wandering episodes during a task, and it is these ep­
+isodes that ultimately impair memory performance.
+The lag-recency effect, or the tendency to recall items in sequence,
+was particularly diminished among those considered trait mindwanderers. However, as seen in Fig. 4, the diminished lag-recency ef­
+fect appears to be relatively stable throughout the task for trait mindwanderers while participants reporting more mind-wandering (state
+mind-wanderers) or retroactively identifying as state mind-wanderers
+seemed to demonstrate a decreased lag-recency effect later in the
+memory task when average mind-wandering rates were increasing.
+Thus, mind-wandering may alter the way items are encoded and
+
+Discussion
+The results of Experiment 1 provided valuable insights into how
+mind-wandering impacts the dynamics of memory processes. Our
+measures of mind-wandering (state, retrospective state, and trait) were
+all positively correlated and as the task progressed, mind-wandering
+increased and there was a corresponding decrease in recall. As ex­
+pected, recall was adversely affected by the rate of mind-wandering
+during the task/state mind-wandering, retrospective mind-wandering
+ratings, and, to a lesser extent, trait mind-wandering (trait mindwandering was not a unique predictor of memory outcomes).
+7
+
+D.H. Murphy and G.A. Brewer
+
+Journal of Memory and Language 141 (2025) 104604
+
+Table 2
+The results of a mixed multi-level model with timing, direction, lag, mind-wandering rate/state mind-wandering, retrospective mind-wandering, and trait mindwandering for each participant predicting CRPs in Experiment 1.
+Fixed Effects Parameter Estimates
+Effect
+
+Estimate
+
+SE
+
+95 % CI: Lower
+
+95 % CI: Upper
+
+df
+
+t
+
+p
+
+(Intercept)
+Timing
+Direction1
+Lag
+Mind-Wandering Rate
+State MW
+Trait MW
+Timing * Direction1
+Timing * Lag
+Direction1 * Lag
+Timing * Mind-Wandering Rate
+Direction1 * Mind-Wandering Rate
+Lag * Mind-Wandering Rate
+Timing * State MW
+Direction1 * State MW
+Lag * State MW
+Timing * Trait MW
+Direction1 * Trait MW
+Lag * Trait MW
+Timing * Direction1 * Lag
+Timing * Direction1 * Mind-Wandering Rate
+Timing * Lag * Mind-Wandering Rate
+Direction1 * Lag * Mind-Wandering Rate
+Timing * Direction1 * State MW
+Timing * Lag * State MW
+Direction1 * Lag * State MW
+Timing * Direction1 * Trait MW
+Timing * Lag * Trait MW
+Direction1 * Lag * Trait MW
+Timing * Direction1 * Lag * Mind-Wandering Rate
+Timing * Direction1 * Lag * State MW
+Timing * Direction1 * Lag * Trait MW
+
+0.11
+− 0.02
+0.01
+− 0.02
+− 0.02
+0
+0
+0.03
+0
+− 0.03
+− 0.02
+0.02
+0
+0
+0
+0
+0
+0
+0
+0
+− 0.01
+0.01
+0.01
+0
+0
+0
+0
+0
+0
+0.01
+0
+0
+
+0
+0
+0
+0
+0.01
+0
+0
+0.01
+0
+0
+0.02
+0.02
+0
+0
+0
+0
+0
+0
+0
+0
+0.03
+0.01
+0.01
+0
+0
+0
+0
+0
+0
+0.01
+0
+0
+
+0.1
+− 0.03
+0
+− 0.02
+− 0.04
+0
+0
+0.01
+0
+− 0.03
+− 0.06
+− 0.02
+0
+0
+0
+0
+0
+0
+0
+− 0.01
+− 0.08
+− 0.01
+− 0.01
+0
+0
+0
+0
+0
+0
+− 0.01
+0
+0
+
+0.11
+− 0.01
+0.01
+− 0.02
+0
+0
+0
+0.04
+0
+− 0.03
+0.01
+0.05
+0.01
+0
+0
+0
+0
+0
+0
+0
+0.06
+0.02
+0.02
+0
+0
+0
+0
+0
+0
+0.04
+0
+0
+
+7348
+7348
+7348
+7348
+7348
+7348
+7348
+7348
+7348
+7348
+7348
+7348
+7348
+7348
+7348
+7348
+7348
+7348
+7348
+7348
+7348
+7348
+7348
+7348
+7348
+7348
+7348
+7348
+7348
+7348
+7348
+7348
+
+59.24
+− 5.18
+2.14
+− 27.63
+− 2.44
+0.29
+− 0.1
+3.52
+− 1.51
+− 21.11
+− 1.32
+0.97
+0.59
+0.12
+− 0.96
+0.98
+0.39
+− 0.33
+0.18
+− 0.74
+− 0.21
+0.85
+0.88
+− 0.03
+0.91
+− 0.05
+− 0.06
+− 1.12
+2.13
+0.99
+− 0.84
+2.26
+
+<.001***
+<.001***
+0.033*
+<.001***
+0.015*
+0.772
+0.919
+<.001***
+0.131
+<.001***
+0.186
+0.33
+0.555
+0.903
+0.336
+0.329
+0.697
+0.744
+0.86
+0.462
+0.832
+0.396
+0.376
+0.973
+0.362
+0.958
+0.949
+0.264
+0.033*
+0.323
+0.4
+0.024*
+
+Note: * = p < .05, ** = p < .01, *** = p < .001.
+
+impacts both the encoding and retrieval process but a predisposition
+towards mind-wandering does not impact how participants initiate the
+retrieval process.
+Experiment 2
+In Experiment 1, it is possible that the mind-wandering probes
+embedded in the list learning task impacted the encoding process (i.e.,
+reactivity; see Double & Birney, 2019; Double et al., 2018; Murphy et al.,
+2023 for an example of metacognitive reactivity). For example, it is
+possible that the mind-wandering probes alert learners to their off-task
+thoughts while studying, and this immediate feedback could prompt
+them to refocus and intensify their efforts to stay “on task,” potentially
+impacting encoding operations and subsequent memory performance.
+As such, in Experiment 2, we removed the mind-wandering probes
+during the study phase so that encoding was not disrupted. Thus, we
+examined retrospective evaluations of mind-wandering and trait mindwandering without potentially biasing the encoding process. Similar
+to Experiment 1, we expected participants with a higher propensity to
+mind-wander, either as a retrospective judgment of their state (during
+the specific task) or trait (in general) level, to exhibit poorer total recall,
+a reduced lag-recency effect, and a lower likelihood of initiating
+retrieval according to serial position.
+
+Fig. 5. Conditional-response probability (CRP) functions for lists where par­
+ticipants reported mind-wandering versus lists where they did not report mindwandering in Experiment 1. Error bars reflect the standard error of the mean.
+
+subsequently retrieved, and trait mind-wanderers may be less able to
+bind accompanying temporal-contextual cues of adjacent items in gen­
+eral. However, we note that the occurrence of mind-wandering on a
+given list did not significantly affect the lag-recency effect, and recall
+was higher on lists where mind-wandering was not reported.
+Finally, while the first presented word was most likely to be recalled
+first regardless of mind-wandering status, learners who reported more
+state mind-wandering and identified as retrospective mind-wanderers
+showed a lesser tendency to initiate recall based on serial position. In
+contrast, trait mind-wandering did not impact this recall initiation
+pattern. This suggests that mind-wandering during a memory task
+
+Method
+Participants. After exclusions, participants were 204 undergraduate
+students (Mage = 18.79, SDage = 1.43; 124 female, 78 male, 2 other)
+recruited from the ASU Human Subjects Pool. One participant was
+excluded for cheating and no participants were excluded for not
+attesting that they would give their full effort.
+8
+
+D.H. Murphy and G.A. Brewer
+
+Journal of Memory and Language 141 (2025) 104604
+
+Table 3
+The results of a mixed multi-level model with whether participants reported mind-wandering, direction, and lag for each participant predicting CRPs in Experiment 1.
+Fixed Effects Parameter Estimates
+Effect
+
+Estimate
+
+SE
+
+95 % CI: Lower
+
+95 % CI: Upper
+
+df
+
+t
+
+p
+
+Mind-Wandering?
+Direction
+Lag
+Mind-Wandering? * Direction
+Mind-Wandering? * Lag
+Direction * Lag
+Mind-Wandering? * Direction * Lag
+
+− 0.01
+0.01
+− 0.02
+0.03
+0
+− 0.03
+0.01
+
+0
+0
+0
+0.01
+0
+0
+0
+
+− 0.02
+0
+− 0.02
+0.01
+0
+− 0.03
+0
+
+− 0.01
+0.01
+− 0.02
+0.04
+0
+− 0.03
+0.01
+
+6922
+6922
+6922
+6922
+6922
+6922
+6922
+
+− 3.87
+2.07
+− 26.02
+3.65
+− 0.34
+− 20.58
+2.17
+
+<.001***
+0.039*
+<.001***
+<.001***
+0.734
+<.001***
+0.03*
+
+Fig. 6. The probability of first recall (PFR) functions as a function of serial position split into quartiles based on mind-wandering rate (a), retrospective mindwandering ratings (b), and trait mind-wandering scores (c) in Experiment 1. Error bars reflect the standard error of the mean.
+
+Materials and Procedure. The materials and procedure in Experi­
+ment 2 were nearly identical to Experiment 1. However, in Experiment
+2, we removed the mind-wandering probes during the study phase so
+that encoding was not disrupted. Specifically, participants studied all 10
+words on each list with no interruptions.
+Reliabilities. To examine the reliability of the trait mind-wandering
+
+questionnaire, we compared participants’ responses to each of the five
+questions [Cronbach’s α = .81]. We also examined the reliability of
+participants’ recall across the 30 lists [Cronbach’s α = .96].
+
+Fig. 7. Densities, correlations, and regression lines with standard error between recall and our measures of mind-wandering in Experiment 2.
+9
+
+D.H. Murphy and G.A. Brewer
+
+Journal of Memory and Language 141 (2025) 104604
+
+Results
+
+are shown in Table 5. Although the four-way interactions did not reach
+significance, visual inspection of Fig. 9 suggests that the lag-recency
+effect may decrease on later lists for high retrospective mindwanderers, but trait mind-wanderers’ impairment appears to be
+similar on early and later lists.
+Finally, we examined the PFR via a repeated-measures ANOVA with
+10 levels (serial position) with retrospective and trait mind-wandering
+as covariates (continuous variables). Results revealed an effect of se­
+rial position [F(9, 1809) = 41.21, p < .001, η2p = .17] such that the first
+word presented was most likely to be the first word recalled. However,
+serial position did not interact with retrospective mind-wandering [F(9,
+1809) = .86, p = .560, η2p < .01] or trait mind-wandering [F(9, 1809) =
+1.70, p = .083, η2p = .01] such that both retrospective judgments of state
+mind-wandering and trait mind-wandering did not impact the recall
+initiation process (see Fig. 10), contrasting Experiment 1 where retro­
+spective state mind-wanderers showed a diminished PFR for the first
+studied item.
+
+We first examined the relationship between retrospective mindwandering ratings and trait mind-wandering (see Fig. 7). Pearson cor­
+relations revealed that retrospective mind-wandering ratings were
+related to trait mind-wandering [r = .61, p < .001]. Next, we investi­
+gated the relationship between mind-wandering and recall performance
+(see Fig. 7). Pearson correlations revealed that recall was negatively
+related to retrospective mind-wandering ratings [r = -.33, p < .001] and
+trait mind-wandering [r = -.20, p < .001]. A General Linear Model with
+retrospective mind-wandering ratings and trait mind-wandering scores
+predicting average memory performance (R2 = .11) revealed that
+retrospective mind-wandering [β = -.34, t(201) = -4.02, p < .001]
+uniquely predicted memory performance but trait mind-wandering did
+not [β = -.00, t(201) = -.05, p = .959]. Similar to Experiment 1, we also
+examined how recall changed as the task endured. A mixed multi-level
+model with list-level recall accuracy modeled as a function of list
+(continuous variable nested within individual participants) revealed
+that recall decreased as the task endured [t(5915) = -9.44, p < .001].
+CRPs split into quartiles based on retrospective mind-wandering
+ratings and trait mind-wandering scores are shown in Fig. 8. The re­
+sults of a mixed multi-level model with direction (forward, backward),
+lag (1–9), retrospective mind-wandering, and trait mind-wandering for
+each participant predicting CRPs are shown in Table 4. Here, neither
+three-way interaction between lag, direction, and mind-wandering was
+significant. Thus, in contrast to Experiment 1, the lag-recency effect was
+not hindered in trait mind-wanderers (though we note that the patterns
+were similar to Experiment 1).
+To examine early- and late-list CRPs (see Fig. 9), we conducted a
+mixed multi-level model with timing (first 10 lists, last 10 lists), direc­
+tion (forward, backward), lag (1–9), retrospective mind-wandering, and
+trait mind-wandering for each participant predicting CRPs. The results
+
+Discussion
+The outcomes of Experiment 2 further illustrated mind-wandering’s
+nuanced impact on memory processes, drawing some parallels with and
+also diverging from the findings of Experiment 1. As observed in
+Experiment 1, recall performance declined throughout the task and was
+inversely related to both retrospective mind-wandering ratings and trait
+mind-wandering (and our measures of mind-wandering were again
+related). Crucially, state mind-wandering emerged as a unique predictor
+of memory performance while trait mind-wandering did not, indicating
+that momentary lapses in attention have a more immediate effect on
+memory than a general predisposition to mind wander.
+Unlike in Experiment 1, trait mind-wanderers did not exhibit a
+compromised lag-recency effect. However, trends again seemed to
+indicate that the lag-recency effect weakened on later lists for in­
+dividuals with higher rates of retrospective mind-wandering whereas
+the patterns of trait mind-wanderers appeared relatively consistent
+across early and later lists, though this was not statistically significant.
+Finally, the tendency to recall the first-presented word as the first word
+in the recall sequence was unaffected by the level of retrospective mindwandering or trait mind-wandering, also in contrast to Experiment 1.
+Given that the only difference between Experiments 1 and 2 was the
+presence of mind-wandering probes (a more sensitive measure of state
+mind-wandering compared with retrospective mind-wandering ratings),
+these probes might have influenced the encoding process. Thus, we
+conducted a cross-experiment comparison to determine whether the
+presence of though probes impacted the encoding and retrieval process.
+Cross experiment comparison
+To examine whether the presence of thought probes impacted overall
+recall performance, we conducted an independent samples t-test. Results
+revealed that recall in Experiment 1 with thought probes (M = .42, SD =
+.16) was similar to recall in Experiment 2 without thought probes (M =
+.44, SD = .16), [t(407) = 1.24, p = .215, d = .12]. In terms of CRPs, we
+conducted a mixed multi-level model with experiment (Experiment 1 vs
+Experiment 2), direction (forward, backward), and lag (1–9) for each
+participant predicting CRPs. However, there were no interactions with
+Experiment [all ps > .133], suggesting that the presence of probes did
+not impact the lag-recency effect. In terms of the PFR, we conducted a 2
+(Experiment 1 vs Experiment 2) × 10 (serial position) ANOVA. Results
+revealed an effect of serial position [F(9, 3663) = 827.67, p < .001, η2p =
+.67] such that the first word presented was most likely to be the first
+word recalled but serial position did not interact with Experiment [F(9,
+3663) = .78, p = .632, η2p < .01]. Thus, the presence of thought probes
+does not seem to affect overall memory performance or the dynamics of
+recall.
+Next, given some of the disparate findings across experiments, we
+
+Fig. 8. Conditional-response probability (CRP) functions for forward and
+backward transitions as a function of lag split into quartiles based on retro­
+spective mind-wandering ratings (b) and trait mind-wandering scores (c) in
+Experiment 2. Error bars reflect the standard error of the mean.
+10
+
+D.H. Murphy and G.A. Brewer
+
+Journal of Memory and Language 141 (2025) 104604
+
+Table 4
+The results of a mixed multi-level model with direction, lag, retrospective mind-wandering, and trait mind-wandering for each participant predicting CRPs in
+Experiment 2.
+Fixed Effects Parameter Estimates
+Effect
+
+Estimate
+
+SE
+
+95 % CI: Lower
+
+95 % CI: Upper
+
+df
+
+t
+
+p
+
+(Intercept)
+Direction
+Lag
+State MW
+Trait MW
+Direction * Lag
+Direction * State MW
+Lag * State MW
+Direction * Trait MW
+Lag * Trait MW
+Direction * Lag * State MW
+Direction * Lag * Trait MW
+
+0.12
+0
+− 0.02
+0
+0
+− 0.03
+0
+0
+0
+0
+0
+0
+
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+
+0.11
+− 0.01
+− 0.02
+0
+0
+− 0.03
+0
+0
+0
+0
+0
+0
+
+0.12
+0
+− 0.02
+0
+0
+− 0.03
+0
+0
+0
+0
+0
+0
+
+3660
+3660
+3660
+3660
+3660
+3660
+3660
+3660
+3660
+3660
+3660
+3660
+
+59.1
+− 1.15
+–22.68
+− 1.91
+0.61
+− 20.47
+0.68
+− 1.34
+0.19
+1
+0.17
+1.41
+
+<.001***
+0.252
+<.001***
+0.057
+0.543
+<.001***
+0.498
+0.181
+0.848
+0.318
+0.866
+0.158
+
+Note: * = p < .05, ** = p < .01, *** = p < .001.
+
+Fig. 9. Conditional-response probability (CRP) functions for the first 10 lists (left) and last 10 lists (right) for forward and backward transitions as a function of lag
+split into quartiles based on retrospective mind-wandering ratings (b) and trait mind-wandering scores (c) in Experiment 2. Error bars reflect the standard error of
+the mean.
+
+of serial position [F(9, 3654) = 111.92, p < .001, η2p = .22] such that the
+first word presented was most likely to be the first word recalled.
+Additionally, serial position interacted with retrospective mindwandering [F(9, 3654) = 3.08, p = .001, η2p = .01] such that in­
+dividuals reporting experiencing more state mind-wandering were less
+likely to initiate recall according to serial position. However, serial po­
+sition did not interact with trait mind-wandering [F(9, 3654) = .62, p =
+.783, η2p < .01] such that trait mind-wandering did not impact the recall
+initiation process. The full details of these cross-experiment analyses are
+available on OSF.
+
+combined the data from Experiments 1 and 2 to further examine the
+effect of mind-wandering on lag-CRPs. Specifically, as an exploratory
+analysis, we conducted a mixed multi-level model with direction (for­
+ward, backward), lag (1–9), retrospective mind-wandering, and trait
+mind-wandering for each participant predicting CRPs. Results revealed
+that the three-way interaction between direction, lag, and trait mindwandering was significant [p < .001] but the three-way interaction
+between direction, lag, and retrospective mind-wandering was not sig­
+nificant [p = .660]. Thus, despite the differences between findings on
+lag-CRP across Experiments 1 and 2, a model combining these data still
+illustrates the effect.
+Finally, we combined the data from Experiments 1 and 2 to further
+examine the effect of mind-wandering on the PFR. A repeated-measures
+ANOVA with 10 levels (serial position) with retrospective and trait
+mind-wandering as covariates (continuous variables) revealed an effect
+
+General discussion
+Mind-wandering, characterized by the diversion of attention from a
+primary task to unrelated thoughts without the individual’s conscious
+11
+
+D.H. Murphy and G.A. Brewer
+
+Journal of Memory and Language 141 (2025) 104604
+
+Table 5
+The results of a mixed multi-level model with timing, direction, lag, retrospective mind-wandering, and trait mind-wandering for each participant predicting CRPs in
+Experiment 2.
+Fixed Effects Parameter Estimates
+Effect
+
+Estimate
+
+SE
+
+95 % CI: Lower
+
+95 % CI: Upper
+
+df
+
+t
+
+p
+
+(Intercept)
+Timing
+Direction
+Lag
+State MW
+Trait MW
+Timing * Direction
+Timing * Lag
+Direction * Lag
+Timing * State MW
+Direction * State MW
+Lag * State MW
+Timing * Trait MW
+Direction * Trait MW
+Lag * Trait MW
+Timing * Direction * Lag
+Timing * Direction * State MW
+Timing * Lag * State MW
+Direction * Lag * State MW
+Timing * Direction * Trait MW
+Timing * Lag * Trait MW
+Direction * Lag * Trait MW
+Timing * Direction * Lag * State MW
+Timing * Direction * Lag * Trait MW
+
+0.11
+− 0.01
+0.01
+− 0.02
+0
+0
+0.03
+0
+− 0.03
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+
+0
+0
+0
+0
+0
+0
+0.01
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+
+0.11
+− 0.02
+0
+− 0.02
+0
+0
+0.01
+− 0.01
+− 0.03
+0
+0
+0
+0
+0
+0
+− 0.01
+0
+0
+0
+0
+0
+0
+0
+0
+
+0.11
+− 0.01
+0.01
+− 0.02
+0
+0
+0.04
+0
+− 0.02
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+
+7320
+7320
+7320
+7320
+7320
+7320
+7320
+7320
+7320
+7320
+7320
+7320
+7320
+7320
+7320
+7320
+7320
+7320
+7320
+7320
+7320
+7320
+7320
+7320
+
+61.78
+− 3.87
+1.44
+− 27.3
+− 3.61
+1.33
+3.79
+− 1.83
+− 18.31
+− 1.23
+1.78
+− 0.86
+0.53
+− 0.86
+1.03
+− 1.09
+0.45
+0.36
+0.75
+− 0.74
+− 0.21
+1.65
+1.27
+− 0.87
+
+<.001***
+<.001***
+0.151
+<.001***
+<.001***
+0.183
+<.001***
+0.067
+<.001***
+0.219
+0.074
+0.393
+0.597
+0.389
+0.303
+0.275
+0.651
+0.722
+0.453
+0.462
+0.838
+0.1
+0.204
+0.385
+
+Note: * = p < .05, ** = p < .01, *** = p < .001.
+
+influences episodic memory encoding and retrieval dynamics. Partici­
+pants were presented with 30 lists of words to remember for recall tests,
+and through our analysis, we sought to gain insights into how the state of
+mind during encoding and the general propensity to mind wander
+impact the learning process. We hypothesized that individuals with a
+tendency towards mind-wandering would exhibit reduced efficiency in
+leveraging temporal-contextual cues, resulting in compromised overall
+recall performance (and potentially other retrieval dynamics as well,
+such as the probability of first recall).
+In terms of our measures of mind-wandering, trait mind-wandering
+(as computed by the Mind-Wandering Questionnaire; Mrazek et al.,
+2013) predicted state mind-wandering such that an individual with a
+higher propensity to mind-wander was more likely to mind-wandering
+during the memory task. Moreover, all measures of mind-wandering
+were negatively related to memory performance such that mindwandering hurt memory performance and we also found that recall
+was higher on lists for which participants did not report mindwandering compared to lists where they reported experiencing mindwandering. Additionally, we observed that mind-wandering increased
+as the task endured, and consequently, recall decreased on later lists.
+However, our analyses revealed that only state mind-wandering (not
+trait mind-wandering) uniquely predicted recall performance. This
+suggests that off-task thoughts during encoding can impact memory
+processes, but trait mind-wandering is not necessarily accompanied by a
+poor memory.
+We also found some evidence that trait mind-wanderers were less
+likely to use a given item’s accompanying temporal-contextual cues to
+recall additional items, known as the lag-regency effect (see Kahana,
+1996). Additionally, trends indicated that the lag-recency effect di­
+minishes on later lists (a time when mind-wandering is likely to rise) for
+participants who report elevated state mind-wandering rates and
+retrospectively reported mind-wandering. However, individuals with a
+trait predisposition to mind-wander generally displayed a consistent
+impairment in this effect across the task (i.e., the lag-recency effect is
+diminished for these individuals even on early lists).
+Previous work has shown that the best learners are people who
+allocate greater attentional intensity to the to-be-remembered infor­
+mation and are also better able to prevent lapses of attention (Miller &
+
+Fig. 10. The probability of first recall (PFR) functions as a function of serial
+position split into quartiles based on retrospective mind-wandering ratings (b)
+and trait mind-wandering scores (c) in Experiment 1. Error bars reflect the
+standard error of the mean.
+
+realization, exhibits both state and trait dimensions, such that some
+individuals are more inclined to experience mind-wandering. In the
+present study, we examined how mind-wandering, both as a momentary
+occurrence and a consistent individual differences characteristic,
+12
+
+D.H. Murphy and G.A. Brewer
+
+Journal of Memory and Language 141 (2025) 104604
+
+within a memory experiment may not reactively impact memorial pro­
+cesses, consistent with some prior work showing no differences in
+cognitive tasks as a function of the presence of thought probes (e.g.,
+Arnicane et al., 2021; Wiemers & Redick, 2019).
+Another potential reason for slight differences between Experiments
+1 and 2 is that state measures, such as thought probes, offer a more
+sensitive means of detecting actual mind-wandering during learning
+tasks compared to retrospective judgments. State measures tend to
+correlate more strongly with other state measures of the same construct
+on a given occasion than with trait measures of the construct (and the
+same applies to traits versus traits), indicating that both state and trait
+tests demonstrate convergent and divergent validity (Zuckerman, 1983).
+Thought probes, inserted at various points during the learning process,
+prompt immediate reflection on the current focus of attention, capturing
+mind-wandering episodes as they occur. This somewhat more real-time
+assessment minimizes memory biases and the inaccuracies inherent in
+post-task reflections where participants may forget, overlook, or
+misjudge periods of inattention—retrospective judgments rely on the
+individual’s ability to accurately recall and assess their attentional state
+after the fact, a process susceptible to reconstruction errors and sub­
+jective interpretations of what constitutes mind-wandering. Conse­
+quently, thought probes provide a more direct and moment-to-moment
+account of mind-wandering, making them a superior tool for under­
+standing how attention fluctuates during learning. Thus, the removal of
+these probes in Experiment 2 may have impacted our ability to recover
+some of the effects of transient periods of task-irrelevant thought.
+In sum, the present study has replicated and extended prior work
+regarding the relationship between mind-wandering and episodic
+memory, elucidating both the detrimental and nuanced aspects of how
+different facets of individual differences in mind-wandering—state,
+retrospective judgment, and trait—impact episodic memory encoding
+and retrieval dynamics. This distinction underscores the complexity of
+mind-wandering phenomena and their variable impacts on learning and
+retrieval processes. By distinguishing how state and trait mind wan­
+dering differentially impact encoding and retrieval processes, re­
+searchers can better tailor interventions and strategies to mitigate the
+negative effects of mind wandering. For instance, state mind-wandering
+could be addressed by modifying task environments to enhance
+engagement and reduce boredom or fatigue while trait mind-wandering
+might require more comprehensive approaches such as training in
+mindfulness or attention management techniques. As we advance our
+understanding of these processes, this work not only contributes to the
+theoretical knowledge in cognitive psychology but also suggests prac­
+tical implications for enhancing educational strategies and interventions
+aimed at improving memory performance in learning environments.
+
+Unsworth, 2020, 2021; Unsworth & Miller, 2021). Theoretically, mindwandering disrupts the intensity of attention by diverting attention and
+cognitive resources away from the task at hand, leading to inconsistent
+attention and diminished attentional intensity, which adversely affects
+cognitive engagement and regulation (e.g., Robison et al., 2022). As a
+result, disruptions in the intensity of attention due to mind-wandering
+may have weakened the lag-recency effect by impairing participants’
+ability to consistently regulate attention and maintain intense focus
+during encoding, thereby affecting the efficient temporal binding of
+items and reducing the likelihood of recalling items in close succession
+or at the beginning and end of lists. Together, prior work and the present
+results suggest that mind-wandering leads to a binding deficit, whether
+between items or between items and context, reflecting a potentially
+task-general impairment. We propose that this deficit arises because
+binding is inherently an attention-driven process, requiring both the
+intensity and consistency of attention for optimal effectiveness.
+Surprisingly, our analysis of how participants initiated the recall
+process (i.e., probability of first recall, PFR; Howard & Kahana, 1999;
+Kahana et al., 2002) indicated that state mind-wandering can affect how
+individuals initiate recall, particularly reducing the tendency to start
+recall with the initially presented word. This suggests that momentary
+distractions or shifts in attention can disrupt the initial encoding of
+items, subsequently altering the preferential retrieval of information
+that was presented at the start of the list. However, increased trait mindwandering was not accompanied by a reduction in PFR for the first
+studied item, highlighting that the effect of mind-wandering on retrieval
+dynamics is likely driven by lapses of attention during encoding for a
+given list, rather than the general propensity to mind-wander.
+Mind-wandering’s impact on attentional intensity could have led to a
+scattered or unfocused start to recall. This may result in a less strategic
+retrieval approach, potentially affecting the tendency to initiate recall
+with items from specific serial positions, such as the first or last items
+presented, which are typically favored in undisturbed memory recall
+processes (e.g., Kahana et al., 2002). Additionally, given the important
+role of internally maintained context in driving the selection of items for
+recall (see Polyn et al., 2009), mind-wandering could disrupt the initial
+focus or ’spotlight’ on relevant contextual cues, leading to less efficient
+recall initiation. This might result in a reduced likelihood of starting
+recall sequences with items that were encoded in strong associative
+contexts—either temporal or semantic—and also affect the recall of
+subsequent items and overall recall performance.
+We note that there were some important differences between Ex­
+periments 1 and 2. In Experiment 1, where thought probes were used,
+there was some evidence suggesting a compromised lag-recency effect
+among individuals with high trait mind-wandering. This indicated po­
+tential difficulties in leveraging temporal-contextual cues for memory
+retrieval. Conversely, Experiment 2, which omitted thought probes, did
+not show a significant hindrance in the lag-recency effect for trait mindwanderers but the pattern of the effect was in the same direction as in
+Experiment 1 and the cross-experiment comparison still illustrated the
+effect. Similarly, Experiment 2 showed that the word most likely to be
+recalled first was not influenced by state or trait mind-wandering but
+state mind-wandering impacted PFR in Experiment 1 as well as in the
+cross-experiment analysis.
+It is possible that the presence of thought probes in this list learning
+task reactively impacted performance. Experiment 1, which employed
+thought probes during the task, aimed to capture in-the-moment in­
+stances of mind-wandering whereas Experiment 2 omitted these probes
+to examine if their absence would influence encoding processes differ­
+ently. However, a cross-experiment comparison revealed that overall
+recall did not significantly differ between the two experiments, sug­
+gesting that the immediate disruption caused by thought probes might
+not have a substantial impact on overall memory outcomes. Addition­
+ally, the presence of probes in Experiment 1 versus their absence in
+Experiment 2 did not yield statistically significant differences in CRPs or
+the PFR. Together, this suggests that the presence of thought probes
+
+Declaration of generative AI and AI-assisted technologies in the
+writing process
+During the preparation of this work, the authors used chatGPT to edit
+the manuscript for clarity and concision. After using this tool/service,
+the authors reviewed and edited the content as needed and take full
+responsibility for the content of the publication.
+CRediT authorship contribution statement
+Dillon H. Murphy: Writing – review & editing, Writing – original
+draft, Software, Project administration, Methodology, Investigation,
+Funding acquisition, Formal analysis, Data curation. Gene A. Brewer:
+Writing – review & editing, Supervision, Resources, Project adminis­
+tration,
+Methodology,
+Investigation,
+Funding
+acquisition,
+Conceptualization.
+Declaration of competing interest
+The authors declare that they have no known competing financial
+13
+
+D.H. Murphy and G.A. Brewer
+
+Journal of Memory and Language 141 (2025) 104604
+
+interests or personal relationships that could have appeared to influence
+the work reported in this paper.
+
+Murphy, D. H., Halamish, V., Rhodes, M. G., & Castel, A. D. (2023). How evaluating
+memorability can lead to unintended consequences. Metacognition and Learning, 18,
+375–403.
+Peterson, D. J., & Wissman, K. (2020). Using tests to reduce mind-wandering during
+learning review. Memory, 28, 582–587.
+Polyn, S. M., Norman, K. A., & Kahana, M. J. (2009). A context maintenance and retrieval
+model of organizational processes in free recall. Psychological Review, 116, 129–156.
+Robison, M. K., & Brewer, G. A. (2022). Individual differences in working memory
+capacity, attention control, fluid intelligence, and pupillary measures of arousal.
+Journal of Experimental Psychology: Learning, Memory, and Cognition, 48(9), 1296.
+Robison, M. K., Miller, A. L., & Unsworth, N. (2019). Examining the effects of probe
+frequency, response options, and framing within the thought-probe method. Behavior
+Research Methods, 51, 398–408.
+Robison, M. K., Trost, J. M., Schor, D., Gibson, B. S., & Healey, M. K. (2022). Pupillary
+correlates of individual differences in long-term memory. Psychonomic Bulletin &
+Review, 29, 1355–1366.
+Schönbrodt, F. D., & Perugini, M. (2013). At what sample size do correlations stabilize?
+Journal of Research in Personality, 47, 609–612.
+Sederberg, P. B., Miller, J. F., Howard, M. W., & Kahana, M. J. (2010). The temporal
+contiguity effect predicts episodic memory performance. Memory & Cognition, 38,
+689–699.
+Seli, P., Carriere, J. S., Wammes, J. D., Risko, E. F., Schacter, D. L., & Smilek, D. (2018a).
+On the clock: Evidence for the rapid and strategic modulation of mind wandering.
+Psychological Science, 29, 1247–1256.
+Seli, P., Kane, M. J., Smallwood, J., Schacter, D. L., Maillet, D., Schooler, J. W., &
+Smilek, D. (2018b). Mind-wandering as a natural kind: A family-resemblances view.
+Trends in Cognitive Sciences, 22, 479–490.
+Seli, P., Risko, E. F., & Smilek, D. (2016). Assessing the associations among trait and state
+levels of deliberate and spontaneous mind wandering. Consciousness and Cognition,
+41, 50–56.
+Smallwood, J. (2010). Why the global availability of mind wandering necessitates
+resource competition: Reply to McVay and Kane (2010). Psychological Bulletin, 136,
+202–207.
+Smallwood, J., Fishman, D. J., & Schooler, J. W. (2007). Counting the cost of an absent
+mind: Mind wandering as an underrecognized influence on educational
+performance. Psychonomic Bulletin & Review, 14, 230–236.
+Smallwood, J., Obonsawin, M., & Heim, D. (2003). Task unrelated thought: The role of
+distributed processing. Consciousness and Cognition, 12, 169–189.
+Smallwood, J., & Schooler, J. W. (2006). The restless mind. Psychological Bulletin, 132,
+946–958.
+Smallwood, J., & Schooler, J. W. (2015). The science of mind wandering: Empirically
+navigating the stream of consciousness. Annual Review of Psychology, 66, 487–518.
+Spillers, G. J., & Unsworth, N. (2011). Variation in working memory capacity and
+temporal-contextual retrieval from episodic memory. Journal of Experimental
+Psychology: Learning, Memory, and Cognition, 37, 1532–1539.
+Steyer, R., Mayer, A., Geiser, C., & Cole, D. A. (2015). A theory of states and
+traits—Revised. Annual review of clinical psychology, 11, 71–98.
+Steyer, R., Schmitt, M., & Eid, M. (1999). Latent state–trait theory and research in
+personality and individual differences. European Journal of Personality, 13(5),
+389–408.
+Unsworth, N., & McMillan, B. D. (2014). Similarities and differences between mindwandering and external distraction: A latent variable analysis of lapses of attention
+and their relation to cognitive abilities. Acta Psychologica, 150, 14–25.
+Unsworth, N., & Miller, A. L. (2021). Individual differences in the intensity and
+consistency of attention. Current Directions in Psychological Science, 30, 391–400.
+Weinstein, Y. (2018). Mind-wandering, how do I measure thee with probes? Let me count
+the ways. Behavior Research Methods, 50, 642–661.
+Welhaf, M. S., Astacio, M. A., & Banks, J. B. (2024). Further unpacking individual
+differences in mind wandering: The role of emotional valence and awareness.
+Consciousness and Cognition, 122, Article 103697.
+Whitehead, P. S., Mahmoud, Y., Seli, P., & Egner, T. (2021). Mind wandering at
+encoding, but not at retrieval, disrupts one-shot stimulus-control learning. Attention,
+Perception, & Psychophysics, 83, 2968–2982.
+Wiemers, E. A., & Redick, T. S. (2019). The influence of thought probes on performance:
+Does the mind wander more if you ask it? Psychonomic Bulletin & Review, 26,
+367–373.
+Xu, J., & Metcalfe, J. (2016). Studying in the region of proximal learning reduces mind
+wandering. Memory & Cognition, 44, 681–695.
+Zuckerman, M. (1983). The distinction between trait and state scales is not arbitrary:
+Comment on Allen and Potkay’s “On the arbitrary distinction between traits and
+states.”. Journal of Personality and Social Psychology, 44, 1083–1086.
+
+Data availability
+The materials, data, and information needed to reproduce the ana­
+lyses are available on OSF.

@@ -1,0 +1,1087 @@
+Introduction
+Working memory refers to the cognitive function of maintaining
+task-relevant information in a readily accessible state and manipulating
+it according to current task demands (Baddeley, 1992). Its capacity is
+highly limited and varies between people in important ways. For
+example, deficiencies in working memory functioning have been asso­
+ciated with various disorders such as learning disabilities (Swanson &
+Siegel, 2011), attention-deficit/hyperactivity disorder (Kasper et al.,
+2012), and schizophrenia (Park & Holzman, 1992). Interestingly, indi­
+vidual differences in working memory performance – more specifically,
+visual working memory performance – have also been shown to correlate
+with measures of fluid intelligence, the ability to reason, solve novel
+problems, and adapt to new environments (Cattell, 1963; Horn, 1968;
+Conway et al., 2002). Fluid intelligence is related to, but separable from,
+crystallized intelligence, which reflects learned abilities, such as vocabu­
+lary or general knowledge. Fluid and crystallized intelligence are usually
+measured with a battery of diverse cognitive tests including tasks of
+processing speed, attentional control, problem solving, and vocabulary
+
+knowledge. The measure of general intelligence (– the factor g –) emerges
+from the positive correlation among these tests, and is traditionally
+thought of as reflecting a domain-general, core cognitive ability un­
+derlying all of these tasks (Spearman, 1904; Jensen, 1998; Kovacs &
+Conway, 2019; van der Maas et al., 2006) that can predict academic
+achievement (Rohde & Thompson, 2007) and career success (Schmidt &
+Hunter, 1998).
+While a wealth of previous studies has demonstrated a strong rela­
+tionship between visual working memory and fluid intelligence, many of
+them have relied on simple, abstract stimuli to assess working memory
+capacity, which may not fully reflect how visual working memory
+operates in more ecologically valid contexts where we remember not
+just abstract shapes, but meaningful objects that we can interact with
+and have knowledge about. Thus, in this study, we investigate whether
+individual differences in visual working memory for such meaningful
+objects also correlate with fluid intelligence levels. This is an important
+question because fluid intelligence is often linked to (and measured as)
+abstract visual reasoning that does not interact with semantic knowl­
+edge. Thus, it is unclear whether this abstract reasoning system
+
+This article is part of a special issue entitled: ‘Individual differences in memory’ published in Journal of Memory and Language.
+* Corresponding author.
+E-mail address: yong.hoon.chung.gr@dartmouth.edu (Y.H. Chung).
+
+☆
+
+https://doi.org/10.1016/j.jml.2025.104648
+Received 1 April 2024; Received in revised form 23 April 2025; Accepted 25 April 2025
+Available online 17 May 2025
+0749-596X/© 2025 The Author(s). Published by Elsevier Inc. This is an open access article under the CC BY-NC license (http://creativecommons.org/licenses/bync/4.0/).
+
+Y.H. Chung et al.
+
+Journal of Memory and Language 143 (2025) 104648
+
+underlying fluid intelligence would predict performance in a visual
+working memory task that relies, at least in part, on prior conceptual and
+semantic knowledge.
+
+2001). However, in many ways, tasks using simple features or arbitrary
+shapes are highly abstracted versions of how we interact with visual
+information in the real world, where we see and memorize meaningful
+objects: cups, tables, and people – stimuli that are not only much more
+visually complex but also more meaningful and familiar to us. This
+discrepancy creates a disconnect between how visual working memory
+capacity is often measured in lab settings and the ways in which we use
+this system in everyday vision. In fact, it has been suggested that using
+simple artificial shapes might have resulted in chronically under­
+estimating individuals’ working memory capacity (Brady et al., 2016;
+Brady & Störmer, 2022), as using simple and abstract stimuli overlooks
+our visual system’s ability to rapidly process and store conceptually rich
+information (Potter, 1993). Consistent with this, recent studies found
+that when participants are asked to maintain images of real-world ob­
+jects over short periods of time, working memory performance is higher
+relative to when maintaining simple low-level features, despite these
+objects being visually more complex (e.g., Brady et al., 2016; Brady &
+Störmer, 2022; Brady & Störmer, 2023; Thibeault et al., 2024; Torres
+et al., 2024; for a review see Chung et al., 2024). The critical factor
+underlying this working memory benefit appears to be that real-world
+objects connect to pre-existing knowledge, as other work has shown
+that increasing the visual complexity of objects alone actually results in
+lower visual working memory performance (e.g., polygons or letters of
+an unfamiliar language; Alvarez & Cavanagh, 2004; Luria et al., 2010).
+Indeed, stimuli that are recognized as meaningful result in better
+memory performance than stimuli that are not recognized as meaningful
+even when these stimuli are roughly matched visually (Brady & Störmer,
+2022). One study by Asp et al. (2021) showed that ambiguous stimuli
+(Mooney images) were better remembered when they were recognized
+as a human face compared to when they were only perceived as random
+visual patterns, despite being physically identical. Thus, meaningful
+stimuli recruit additional visual working memory capacity, presumably
+because they allow the extraction and maintenance of more relevant
+visual and semantic features (i.e., once the image is recognized as a face,
+detailed visual features are meaningful as they can be interpreted in
+terms of age, gender, and emotion, and not just abstract black and white
+patterns).
+Overall, these findings suggest that our ability to actively maintain
+visual information is strongly dependent on the type of information that
+is being remembered, and that establishing links between the to-beremembered objects and pre-existing conceptual knowledge may play
+an important role in visual working memory processes. However, how
+such perceptual-conceptual links in visual working memory relate to
+measures of fluid intelligence that are usually assessed with highly ab­
+stract visual reasoning tasks, remains an open question.
+
+The relationship between visual working memory and fluid
+intelligence
+To investigate the relationship between working memory and fluid
+intelligence, researchers have often used various span tasks that not only
+require participants to maintain information for short periods of time,
+but also to manipulate and process information in complex ways. For
+example, participants are asked to remember a set of alphabet letters
+while at the same time engaging in secondary tasks such as arithmetic
+calculations (e.g., Unsworth & Engle, 2005; Conway et al., 2002; Engle
+et al., 1999). Other studies have shown that fluid intelligence is also
+correlated with performances in visual working memory tasks where
+participants are asked to solely maintain visual information for a short
+period of time, without additional complex manipulations (e.g., Fukuda
+et al., 2010; Unsworth et al., 2014). This has led researchers to propose
+that the mere capacity to store abstract visual information for short
+periods of time also correlates with fluid intelligence. The function of
+visual working memory is often described as maintaining visual conti­
+nuity across eye movements in a visual scene, where perceptual dis­
+ruptions – due to the saccade – require the visual system to perpetuate
+inputs from one eye movement to the next (e.g., Cronin & Irwin, 2018;
+Hollingworth et al., 2008). Thus, visual working memory is thought to
+be deeply related to the eye movement system (van der Stigchel &
+Hollingworth, 2018) and to be intricately connected to lower-level
+perceptual processes (Scimeca et al., 2018; Adam et al., 2022). It is
+traditionally studied using change-detection tasks, where participants
+are asked to maintain an array of visual items over a short delay period
+to then indicate which items they just saw in a test display (e.g., Luck &
+Vogel, 1997). Using this task, several studies have found strong corre­
+lations between performance on these relatively simple and low-level
+visual working memory tasks and abstract reasoning skills, such as the
+Raven’s matrices test, a standard measure of fluid intelligence (e.g.,
+Cowan et al., 2005; Unsworth et al., 2014; Fukuda et al., 2010; Uns­
+worth et al., 2015). While the exact nature of this relationship is still
+under investigation, studies have suggested that working memory ca­
+pacity may serve as an explanatory construct for abstract reasoning that
+can account for a significant portion of variance in individuals’ intelli­
+gence abilities (e.g., Oberauer et al., 2005; Kyllonen & Christal, 1990),
+with some studies demonstrating a causal relationship between the two
+(e.g., Hagemann et al., 2023).
+Critical for the present work, to date, previous studies have mostly
+used simple and abstract stimuli when measuring visual working
+memory, such as colored squares or oriented lines. Thus, it is unknown
+whether these correlations depend – at least to some extent – on the
+visual materials being abstract, just like in the Raven’s matrices test, or
+whether maintaining concrete and semantically meaningful stimuli in
+working memory would also relate to fluid intelligence measures. This is
+an important and timely question given the recently emerging evidence
+that visual working memory capacity differs depending on what type of
+information people are remembering and is increased for meaningful
+and familiar objects (for a recent review, see Chung, Brady & Störmer,
+2024).
+
+The current study
+Based on the recent evidence showing that meaningful stimuli, such
+as real-world objects, are better maintained in visual working memory
+than simple and meaningless shapes, we here ask: Does the previously
+observed relationship between visual working memory capacity and
+fluid intelligence extend to working memory tasks that use more com­
+plex and meaningful real-world objects? On the one hand, it could be
+that visual working memory tasks that use meaningful and abstract
+stimuli share processes that relate to measures of fluid intelligence, in
+which case a correlation should be present regardless of stimulus type.
+On the other hand, given that visual working memory capacity for realworld objects is tied to conceptual knowledge and semantic meaning
+(Asp et al., 2021; Brady et al., 2024; Chung et al., 2024; Wyble et al.,
+2016), it is plausible that no clear relation emerges with measures of
+fluid intelligence, which are thought to assess abstract visual reasoning
+skills in particular – an aspect that is considered to be aligned with the
+abstract nature of previous working memory tasks (e.g., Oberauer et al.,
+2005). Therefore, it remains unclear whether performance in tasks using
+real-world objects would tap into the same limits impacting the
+
+Visual working memory capacity for real-world objects and
+simple features
+The vast majority of studies examining visual working memory
+processes have conventionally used simple and/or abstract stimuli (e.g.,
+Cowan et al., 2005; Fukuda et al., 2010; Unsworth et al., 2014; Uns­
+worth et al., 2015; Duncan et al., 2012), mainly because the usage of
+abstract stimuli can help isolate visual working memory from other
+cognitive processes like chunking or passive forms of memory (Cowan,
+2
+
+Y.H. Chung et al.
+
+Journal of Memory and Language 143 (2025) 104648
+
+relationship between working memory tasks using simple stimuli and
+fluid intelligence tests.
+We here examined how visual working memory performances in
+tasks using real-world objects relate to fluid intelligence scores assessed
+via the Raven’s Advanced Matrices test (Raven et al., 1993), a wellvalidated and highly reliable metric for measuring people’s fluid intel­
+ligence level (Raven, 2000). We hypothesized that if visual working
+memory tasks with real-world objects strongly rely on passive long-term
+storage that is governed by prior knowledge, it may reduce or replace
+some of the abstract working memory processes used for simple features,
+and thereby not correlate robustly with fluid intelligence scores. In
+contrast, if involvement of conceptual knowledge does not reduce active
+working memory processes related to fluid intelligence, individuals’
+working memory performances with complex and meaningful stimuli
+should correlate reliably with fluid intelligence scores. In addition, we
+examined how visual working memory performances correlate with
+measures of crystallized intelligence using scores from the C-Test, a test
+that has been found to reliably capture language proficiency, one
+important aspect of crystallized intelligence (Grothjahn et al., 2002;
+Eckes & Grotjahn, 2006; Harsch & Hartig, 2016). We added the C-Test to
+explore the possibility that working memory performance for real-world
+objects is related to aspects of semantic or verbal knowledge, based on
+the fact that these objects interact with pre-existing conceptual knowl­
+edge. However, given that the memory task itself remains to be of visual
+nature primarily, even if the meaningful and recognizable stimuli con­
+nect to prior knowledge, we did not necessarily expect a strong relation
+between real-world object working memory and the language-based
+crystallized intelligence test. We did predict that working memory
+performance for both colored circles and real-world objects would
+correlate reliably with fluid intelligence scores, and that both tasks
+would strongly correlate with one another. Our results were consistent
+with these predictions, suggesting that visual working memory perfor­
+mances for different types of stimuli share underlying processes related
+to fluid intelligence.
+
+of fluid intelligence and visual working memory that while variable,
+hovered around a similar number on average (e.g., 100 participants in
+Babic et al., 2019; 79 participants in Fukuda et al., 2010; 171 partici­
+pants in Unsworth et al., 2014; 65 and 113 participants in Schubert
+et al., 2023). Post-hoc power analyses based on the effect sizes reported
+in the above-mentioned studies suggest that roughly 60–70 participants
+would be needed to achieve a power of 0.80 for finding a reliable cor­
+relation between visual working memory measures and fluid intelli­
+gence. Thus, as the main goal of our study was to see whether visual
+working memory for real-world objects correlates with fluid intelligence
+scores, and not whether that correlation would differ for real-world
+objects vs. simple features, we deemed 100 participants to be appro­
+priate. We decided to use a slightly larger sample than the one suggested
+by the power analysis given that these previous reports are based on
+working memory tasks with simple stimuli and not real-world objects.
+All experimental procedures were approved by the Committee for the
+Protection of Human Subjects at Dartmouth College.
+Stimuli and procedure.
+This study was a within-subjects design where each participant was
+exposed to all conditions. There were a total of 2 intelligence tests
+(Raven’s Advanced Progressive Matrices and C-Test) and 3 working
+memory tests, with the latter tests split into two parts: part 1 included
+two conditions, the sequential visual working memory task for colored
+circles and the sequential visual working memory task for real-world
+objects; part 2 included the simultaneous visual working memory task
+for colored circles with spatial locations (see below for more details).
+The sequence of the fluid intelligence test, crystallized intelligence test,
+and working memory tests was randomized per each study session. For
+the sequential working memory tests, the block order of color visual
+working memory task and object visual working memory task was
+counterbalanced and was then always followed by the simultaneous
+color visual working memory task with spatial locations (see below).
+Each study session consisted of 1 to 9 participants at once (on
+average about 5) in a designated study room. Participants completed the
+intelligence tests on printed copies and the working memory tasks on
+their individual laptops. During the study session, participants were not
+allowed to converse or exchange answers in the testing room. Two
+standardized 5-minute breaks were given between each test. Prior to the
+study session, participants were asked to complete an online color
+blindness test (colormax.org) and score over 10 out of 12 in order to
+participate in the study. Any participant who did not score over 10 was
+unable to participate. Upon arrival, participants completed a de­
+mographics survey which asked for their age, academic year, gender,
+current GPA, college entrance exam scores, and English language pro­
+ficiency (see Supplementary Materials for details). Participants also
+performed a selective ensemble perception task (Ortego & Störmer,
+2024) as described in the pre-registration, to explore a potential rela­
+tionship between a novel selective feature attention task developed by
+our lab and fluid intelligence. This data is reported in the Supplementary
+Materials.
+
+Methods
+The hypothesis, analysis plan, sample size, and exclusion criteria for
+this study were pre-registered (https://osf.io/8bj6k). All data are
+available online (https://osf.io/djg2b/). Statistical analyses were per­
+formed in R (version 4.0.2) and R Studio (version 1.3.1093).
+Participants
+111 undergraduate students from Dartmouth College were recruited
+to participate in the study in exchange for 1 class credit/hr. Data from six
+participants were excluded due to prior exposure to either form of in­
+telligence test. Data from one participant were excluded due to a laptop
+malfunction during the test session, and data from one additional
+participant were excluded due to failure to properly follow test in­
+structions. No participant was excluded due to their overall d’ of visual
+working memory tasks being lower than zero (chance level) or more
+than 20 % of their trials being rejected (both a priori exclusion criteria
+described in the pre-registration). Individual trials were excluded if
+response times were shorter than 200 ms or longer than 5,000 ms. In
+total, data from 103 participants were used in the main correlation
+analysis between working memory tests and fluid intelligence (Mean
+Age = 19.34, Age Range = [18–24], 69 Female, 34 Male; see Supple­
+mentary Materials for more detail). For the C-Test data analysis, data
+from 13 participants were excluded due to not having English as their
+first language, and data from another 4 participants were excluded due
+to not following the task instructions, resulting in 86 participants for this
+analysis. Although the pre-registration specified 100 participants for the
+main analysis, we intentionally overshot the number of participants in
+recruitment to account for potential exclusions. The number of partici­
+pants was guided by the precedent set in similar previous investigations
+
+Sequential object & color visual working memory task
+The object and color visual working memory task followed the same
+general structure. On each trial, participants were presented with either
+4 real-world objects or 4 colored circles. Stimuli (150 px in width and
+150 px in height) were presented one at a time at the central location of
+the screen for 200 ms each, with a 200 ms inter-stimulus-interval. We
+adopted a sequential presentation of the stimuli to maximize perfor­
+mance differences between these tasks, following recent studies showing
+a larger real-world object benefit for sequential relative to simultaneous
+stimulus presentation, possibly due to deeper processing of each stim­
+ulus (Brady & Störmer, 2022; Chung et al., 2023a). After an 800-ms
+delay, participants were presented with a two-alternative-forced3
+
+Y.H. Chung et al.
+
+Journal of Memory and Language 143 (2025) 104648
+
+choice (2-AFC) test in the center of the screen with two different stim­
+ulus choices: one matching one of the stimuli at encoding (target) and
+one that was a novel foil. We used a 2-AFC task as usually done in our
+lab, based on findings indicating that performance on this task correlates
+well with other working memory performance measures (Schurgin et al.,
+2020) and because it minimizes response biases as well as perceptual
+confusions at test (Williams et al., 2022; Brady et al., 2023). Object
+stimuli were selected from 540 images of real-world objects from Brady
+et al. (2008). Object foils were chosen from the database to be maxi­
+mally dissimilar from the target object determined by convolutional
+neural networks (Brady & Störmer, 2023). This ensured that participants
+could discriminate the target and foil stimulus similarly well across the
+different stimulus sets, so that differences in memory performance
+across stimulus types would not be due to differences in perceptual
+discriminability between the targets and foils (for a longer discussion on
+this, see Brady & Störmer, 2023). For the color memory condition, colors
+were chosen from a CIE L*a*b* color wheel similar to prior works (e.g.,
+Suchow et al., 2013; Schurgin et al., 2020) and were randomly selected
+on each trial with the constraint that the to-be-remembered colors were
+at least 30 degrees apart from each other. Concuring the selection of the
+maximally dissimilar foil in the object condition, the foil color was also
+selected to be maximally dissimilar – 180 degrees away on the color
+wheel – from the target color and at least 30 degrees away from the other
+to-be-remembered colors. Participants indicated which one of the two
+options they had previously seen by pressing the left or right arrow key.
+After each report participants were given visual feedback on their
+answer. Each condition comprised 60 trials, for a total of 120 trials per
+participant, distributed across four blocks of 30 trials each. Block order
+was counterbalanced across participants. Prior to the experiment, par­
+ticipants were given a short instructional video demonstrating the task.
+See Fig. 1A and 1B for an illustration of the task design.
+
+Simultaneous color visual working memory task with spatial locations
+Previous research investigating correlations between simple feature
+working memory (i.e., colored squares) performance and fluid intelli­
+gence scores has frequently used simultaneous presentation during
+memory encoding where all memory items are presented at once (e.g.,
+Babic et al., 2019; Fukuda et al., 2010; but see Schubert et al., 2023 for
+sequential spatial working memory). To allow for more direct compar­
+isons with this previous work and the sequential design described above,
+we included an additional visual working memory task using simulta­
+neous presentation. The procedure was identical to the task above with
+the following exceptions: on each trial 4 colored circles were simulta­
+neously presented at locations evenly distributed around the center of
+the screen for 800 ms. After a 800-ms delay, participants were presented
+with a spatial cue indicating the location of the target item along with a
+2-AFC with the target color and a foil color. Participants were instructed
+to report which of the two colors they previously saw at the bolded
+location by clicking the corresponding response probe. Colors were
+chosen as in the sequential presentation described above. There were 60
+trials in total. Prior to the experiment, participants were given a short
+instructional video demonstrating the task. See Fig. 1C for illustration of
+the task design.
+Fluid intelligence test: raven’s advanced progressive matrices
+Fluid intelligence was measured using the Raven’s Advanced Pro­
+gressive Matrices (Raven et al., 1993), consistent with previous works
+investigating the relationship between fluid intelligence and working
+memory for color (e.g., Fukuda et al., 2010; Babic et al., 2019; Unsworth
+et al., 2014; Unsworth et al., 2015; Schubert et al., 2023). The Raven’s
+test involves abstract reasoning and problem solving, consisting of 36
+problems that get increasingly difficult. Each problem features a three-
+
+Fig. 1. Procedures for the visual working memory tasks. A) Sequential Color Working Memory Task: Four colored circles were presented sequentially (one item at a
+time) in the center of the screen, followed by a short delay and a 2-AFC test in the center of the screen in which participants had to indicate which of two colors they
+saw during encoding. B) Sequential Object Working Memory Task: The same procedure was repeated with real-world objects. C) Simultaneous Color Working
+Memory Task with Spatial Locations: Four colored circles were presented simultaneously at four distinct locations on the screen, followed by a short delay and a 2AFC test with a spatial cue indicating the target location. Participants had to report which color they saw at the cued location. All image sizes are not to scale and are
+for illustration purposes only.
+4
+
+Y.H. Chung et al.
+
+Journal of Memory and Language 143 (2025) 104648
+
+by-three matrix of geometric patterns with a missing piece. The task was
+to determine the logical continuation for each set of three-by-three
+matrices. Participants were instructed to complete as many problems
+as possible within a 30-minute time frame, starting with a five-minute
+practice test to familiarize themselves with the task format. See
+Fig. 2A for an example problem from the practice test.
+
+Crystallized intelligence test
+
+Crystallized intelligence test: C-test
+
+Correlation analysis
+
+The C-Test is a test of general language proficiency. We used a
+version of the C-Test from Keijzer (2007). Participants were given 5 texts
+containing 20 word gaps where parts of the sentences had been omitted.
+The task was to fill in the gaps with the correct word with the correct
+lexical stem. The total duration of the test was 10 min. Prior to the main
+test, participants completed a 2-minute practice C-Test. See Fig. 2B for
+the practice C-Test.
+
+Correlations among various cognitive and intelligence test perfor­
+mances were tested by computing Pearson’s correlation coefficients. We
+then tested significant differences between correlations using Fischer rto-z transformation. Although our pre-registration included estimating
+the reliability of each measure using the Spearman-Brown correction,
+this was not easily available for intelligence test scores as each test
+question gets progressively harder, making it challenging to perform
+split-half analysis.
+
+Participants’ test scores were calculated by tallying the number of
+correct responses out of a total of 100. Scores were coded following these
+guidelines: Correct words, acceptable variants, and words with simple
+spelling errors were coded as correct, while incorrect words, words with
+grammatical errors, and blank responses were coded as incorrect.
+
+Analysis
+
+Results
+
+Sequential object & color working memory tasks
+To assess performance on the sequential visual working memory
+tasks, d’ values were calculated separately for the 2 conditions for each
+participant (objects vs. colors) as a measure of memory strength: (z[hits]
+– z[false alarms])/√2. Due to the calculation of d’, perfect hit rates in
+any condition were adjusted by applying (n – 0.5)/n where n is the
+number of trials (Macmillan & Kaplan, 1985). The hit rates of four
+participants were adjusted accordingly in the object working memory
+task. These d’ values were then compared using a pairwise t-test. To
+measure the reliability of the task performance, we used the SpearmanBrown reliability test, which involved splitting the data into even and
+odd trials, calculating the correlation between these splits, and applying
+the Spearman-Brown formula to estimate the reliability coefficient.
+
+Sequential object & color working memory tasks
+We first compared the visual working memory performances be­
+tween the sequential object working memory task and sequential color
+working memory task. We found that participants performed signifi­
+cantly better in the real-world object working memory task (mean d’ =
+2.10, standard deviation = 0.55) compared to the color working mem­
+ory task (d’ = 1.28, standard deviation = 0.31; t(102) = 16.85, p <
+0.001, Cohen’s dz = 1.72; see Fig. 3), replicating previous results (Brady
+et al., 2016; Brady & Störmer, 2022; Brady & Störmer, 2023; Thibeault
+et al., 2024; Torres et al., 2024). This effect was already robustly found
+in the first few trials of the experiment, demonstrating that the differ­
+ence in performances was not driven by a buildup of long-term inter­
+ference due to stimulus repetition (see Supplementary Materials). The
+Spearman-Brown split-half reliability analysis yielded a coefficient of
+0.62 for the sequential object working memory task and 0.29 for the
+sequential color working memory task, indicating that using real-world
+objects resulted in relatively higher reliability than using colored circles
+when sequentially presented.
+
+Simultaneous color working memory task with spatial locations
+To assess performance on the simultaneous visual working memory
+task with spatial locations, d’ values for a 2AFC task were calculated for
+each participant (see above). These values were then compared with
+sequentially presented color and object working memory performances
+using pairwise t-tests. The Spearman-Brown reliability test was used to
+assess the reliability of the task performance.
+
+Simultaneous color working memory task with spatial locations
+Mean d’ for the simultaneous color working memory task with
+spatial locations and a spatial cue at response was 1.15 with a standard
+deviation of 0.59. We found that performance from the simultaneouspresentation color visual working memory task with spatial locations
+was significantly lower compared to the sequentially presented object
+working memory task (t(102) = 15.29, p < 0.001, Cohen’s dz = 1.66)
+and sequential color working memory task (t(102) = 2.51, p = 0.01,
+Cohen’s dz = 0.27). The Spearman-Brown reliability analysis yielded a
+coefficient of 0.79 (see Fig. 3).
+
+Fluid intelligence test
+Participants’ test scores were calculated by tallying the number of
+correct responses out of a total of 36.
+
+Fluid intelligence and crystallized intelligence task
+Overall, participants performed well in the Raven’s Advanced Pro­
+gressive Matrices test with a mean score of 24.99 and standard deviation
+of 5.04. For the C-Test, the mean score was 70.16 and the standard
+deviation was 11.53. Note that we only included C-Test scores from
+participants who reported English as their first language.
+Visual working memory performances correlate with fluid intelligence
+scores
+
+Fig. 2. Practice examples of the Raven’s Advanced Progressive Matrices Test
+(A) and C-Test (B). A) Participants determined the logical continuation of the
+3X3 matrix by indicating the correct number (1–8). The example Raven’s test is
+from the practice Raven’s test. B) Participants filled in the gaps with the correct
+word. The C-Test example is from Norris (2018).
+
+We found that sequential visual working memory performances for
+both real-world objects and colored circles significantly correlated with
+5
+
+Y.H. Chung et al.
+
+Journal of Memory and Language 143 (2025) 104648
+
+Fig. 3. Results of the sequential visual working memory tasks for colored circles (red) vs. real-world objects (blue) along with the simultaneous color visual working
+memory task with spatial locations (grey). Real-world objects resulted in better working memory performance than colored circles, replicating previous studies. (For
+interpretation of the references to color in this figure legend, the reader is referred to the web version of this article.)
+
+Raven’s task scores (real-world objects: r(101) = 0.38, p < 0.001;
+colored circles: r(101) = 0.25, p = 0.01; see Fig. 4A). While the corre­
+lation coefficient between working memory for real-world objects and
+fluid intelligence scores was numerically higher than the correlation
+between working memory for colors and fluid intelligence scores, a
+comparison using Fisher’s R-to-Z transformation resulted in no signifi­
+cant difference between the two correlations (Z = 1.34, p(two-tailed) =
+0.18). Simultaneous color working memory with spatial locations also
+significantly correlated with Raven’s task score (r(101) = 0.29, p =
+0.003; see Fig. 5D).
+We also examined whether the increase in working memory per­
+formance for real-world objects relative to colors would correlate with
+fluid intelligence scores. To do so, we computed the d’ difference be­
+tween the sequential object and color memory tasks and correlated this
+difference with the intelligence scores. Interestingly, we observed a
+significant positive correlation (r(101) = 0.26, p = 0.007). Thus, in­
+dividuals who showed a stronger object benefit also tended to have
+higher fluid intelligence test scores. No such correlation was found with
+C-Test scores (r(101) = 0.01, p = 0.89).
+The C-Test score did not significantly correlate with sequential
+working memory performance for either real-world objects (r(84) =
+0.08, p = 0.44) or colored circles (r(84) = 0.17, p = 0.12; see Fig. 4B).
+
+Comparison using Fischer R-to-Z transformation resulted in no signifi­
+cant difference between the two correlations (Z = 0.79, p(two-tailed) =
+0.42). There was also no correlation between simultaneous color
+working memory with spatial locations and the C-Test (r(84) = 0.05, p
+= 0.63; see Fig. 5E).
+As expected, all three visual working memory measures were
+significantly correlated with each other (sequential real-world objects
+vs. sequential colored circles: r(101) = 0.46, p < 0.001; sequential realworld objects vs. simultaneous colored circles with spatial locations: r
+(101) = 0.39, p < 0.001; sequential colored circles vs. simultaneous
+colored circles with spatial locations: r(101) = 0.40, p < 0.001; see
+Fig. 5A-C). We also found that Raven’s task scores significantly corre­
+lated with C-Test scores (r(84) = 0.26, p = 0.02; see Fig. 5F). See Table 1
+for a summary of all correlation results and Table 2 for summary sta­
+tistics of measures from all tasks.
+Discussion
+Recent findings have shown that visual working memory perfor­
+mance is reliably increased for meaningful real-world objects compared
+to simple abstract shapes and features (Brady et al., 2016; Brady &
+Störmer, 2022; Thibeault et al., 2024; Torres et al., 2024). Here we
+
+Fig. 4. Relationship between sequential visual working memory tasks for objects and colors and the intelligence tests. Each dot represents one subject. A) Reliable
+correlations were observed between individual scores on the Raven’s task and performances (d’) in both the sequential real-world object (blue) and color (red)
+working memory tasks. B) No reliable correlations were observed between individual scores in the C-Test and performances (d’) in the sequential real-world object
+(blue) and color (red) working memory tasks. Histogram plots illustrate the distribution of scores for both the x and y variables in each graph, representing the score
+distributions of the respective tasks. (For interpretation of the references to color in this figure legend, the reader is referred to the web version of this article.)
+6
+
+Y.H. Chung et al.
+
+Journal of Memory and Language 143 (2025) 104648
+
+Fig. 5. Correlation plots across all other tasks. A) Sequential object working memory vs. sequential color working memory tasks. B) Sequential object working
+memory vs. simultaneous color working memory task with spatial locations. C) Sequential color working memory vs. simultaneous color working memory with
+spatial locations. D) Raven test vs. simultaneous color working memory task with spatial locations. E) C-Test vs. simultaneous color working memory with spatial
+locations. F) C-Test vs. Raven test. All tasks showed significant correlations except between the working memory tasks and the C-Test.
+Table 1
+Summary of correlation analysis results. Values indicate correlation coefficients and asterisks indicate significance.
+
+WM Objects
+(Sequential)
+WM Colors
+(Sequential)
+WM Colors
+(Simultaneous)
+Raven’s Test
+C-Test
+
+WM Objects
+(Sequential)
+
+WM Colors
+(Sequential)
+
+WM Colors
+(Simultaneous)
+
+Raven’s
+Test
+
+C-Test
+
+X
+​
+
+​
+
+​
+
+​
+
+0.46*
+
+X
+​
+
+​
+
+​
+
+0.39*
+
+0.40*
+
+X
+​
+
+​
+
+0.38*
+0.08
+
+0.25*
+0.17
+
+0.29*
+0.05
+
+X
+0.26*
+​
+
+X
+
+Table 2
+Summary statistics of measures from all tasks.
+Object WM (Sequential)
+Color WM (Sequential)
+Color WM (Simultaneous)
+Raven’s Test
+C-Test
+
+Mean
+
+SD
+
+Range
+
+Skewness
+
+Kurtosis
+
+Reliability
+
+2.09
+1.28
+1.15
+
+0.55
+0.31
+0.59
+
+0.88–3.39
+0.61–2.12
+0–3.01
+
+0.32
+0.29
+0.77
+
+2.89
+2.94
+4.01
+
+0.62
+0.29
+0.79
+
+Mean
+
+SD
+
+Range
+
+Skewness
+
+Kurtosis
+
+24.99
+70.16
+
+5.04
+11.53
+
+6–34
+38–94
+
+− 0.64
+− 0.32
+
+3.99
+2.61
+
+examined how such improved visual working memory performance is
+related to fluid intelligence, the ability of abstract reasoning, which is
+well known to be correlated with visual working memory performance
+for simple and abstract stimuli. We hypothesized that if visual working
+memory for real-world objects and colored circles share underlying
+processes that are related to fluid intelligence, then performances on
+both tasks should reliably correlate with fluid intelligence scores.
+Conversely, if visual working memory performance for meaningful
+stimuli relies on different processes, for example those that are related to
+long-term semantic and verbal knowledge, then it may not correlate
+robustly with fluid intelligence and potentially be related to measures of
+
+crystallized intelligence instead. Our results show that individual dif­
+ferences in visual working memory performances for both objects and
+simple stimuli are reliably correlated with measures of fluid intelligence,
+but not crystallized intelligence, regardless of stimulus type. Our find­
+ings validate the previously established relationship between visual
+working memory and fluid intelligence, and extend it to also encompass
+more complex and meaningful stimuli. Overall, these findings suggest
+that core active memory processes that are related to fluid intelligence
+are similarly involved when maintaining simple features and real-world
+objects in visual working memory.
+
+7
+
+Y.H. Chung et al.
+
+Journal of Memory and Language 143 (2025) 104648
+
+Visual working memory performance is correlated with fluid
+intelligence level
+
+rules (Salthouse & Pink, 2008; Wiley et al., 2011; Duncan et al., 2012),
+potentially along with capacity itself (Unsworth et al., 2014). According
+to these accounts, our results suggest that these additional processes that
+are engaged during most working memory tasks are shared between
+remembering real-world objects and colored circles. For instance,
+although maintaining meaningful stimuli in visual working memory
+may activate additional conceptual knowledge relative to when main­
+taining abstract simple stimuli, the task still requires the same process­
+ing steps such as separately encoding the items, binding them to correct
+locations or sequences, protecting them against interference, actively
+maintaining them over a short period of time, and correctly retrieving
+the relevant memoranda at test. This perspective also aligns with pre­
+vious findings that showed the involvement of similar active neural
+engagement during visual working memory maintenance of abstract and
+meaningful stimuli (Brady et al., 2016; Quirk et al., 2020; Asp et al.,
+2021; Thibeault et al., 2024). Thus, whether conceptual knowledge is
+involved or not, both working memory tasks are likely tapping into
+qualitatively similar active maintenance processes.
+Interestingly, although not statistically significant, performance in
+the sequential working memory task for real-world objects showed a
+numerically higher correlation coefficient with fluid intelligence scores
+(r = 0.38) compared to performance in the sequential working memory
+task for colors (r = 0.25). A post-hoc power analysis indicates that more
+than twice as many participants would be required to find a reliable
+difference in correlation strengths based on the current results. From a
+theoretical perspective, it is not entirely clear why object working
+memory performance would correlate more strongly with fluid intelli­
+gence scores. Given the broad construct of fluid intelligence that in­
+cludes multiple cognitive abilities, from abstract thinking to efficient
+problem-solving, one possibility is that people with higher fluid intel­
+ligence scores are also more effective at exploiting the benefits of realworld objects. In other words, people may differ in how they engage
+with the stimuli in the working memory tasks, and people that perform
+better on abstract visual reasoning tasks such as Raven’s matrices test
+are also more effective in connecting object images to pre-existing
+conceptual knowledge. This possibility is further supported by the fact
+that individuals’ differences in performances between working memory
+for real-world objects and colored circles correlated reliably with fluid
+intelligence scores. This finding reflects that the extent to which an in­
+dividual’s working memory capacity is increased for meaningful relative
+to simple visual stimuli is related to their fluid intelligence level. Thus,
+participants with higher fluid intelligence levels appear to derive more
+benefit from meaningful stimuli in enhancing their visual working
+memory performance. Future studies with larger sample sizes could test
+this hypothesis more directly, for example by probing participants’
+strategies and how they encode and process the objects.
+
+Visual working memory has traditionally been studied using abstract
+and simple stimuli, based on the premise that working memory operates
+independently of semantic knowledge or conceptual structures
+(Oberauer et al., 2005). Likewise, fluid intelligence comprises cognitive
+abilities where no prior semantic knowledge is useful, such as abstract
+figural reasoning, rather than concrete figural reasoning (Schulze et al.,
+2005) or language (Woolgar et al., 2018). Consequently, many studies
+investigating the relationship between visual working memory and fluid
+intelligence have used abstract stimuli for working memory tasks
+including arrays of colored circles (e.g., Fukuda et al., 2010; Unsworth
+et al., 2015; Duncan et al., 2012), oriented lines (e.g., Unsworth et al.,
+2015; Unsworth et al., 2014), random dot patterns (e.g., Schubert et al.,
+2023; Dang et al., 2012; Haavisto & Lehto, 2005), or non-meaningful
+shapes (e.g., Unsworth et al., 2014; Fukuda et al., 2010; Babic et al.,
+2019). Thus, to date, it was not clear whether performance in a realworld object working memory task would also correlate with fluid in­
+telligence scores. Given the involvement of concrete semantic knowl­
+edge when using real objects, which could reduce some of the core
+cognitive processes that are active in visual working memory tasks with
+simple features, it was plausible that object memory performance would
+not show a clear relation with fluid intelligence measures. Our results
+clearly show that this was not the case, as we found a reliable correlation
+between object working memory performance and fluid intelligence
+scores, indicating that the cognitive abilities captured by fluid intelli­
+gence tests are critical for actively maintaining real-world objects,
+similar to simple shapes. This result aligns with prior studies in verbal
+working memory that used stimuli like words in conceptual span tasks
+and found a relationship between working memory performance and
+fluid intelligence (e.g., Aizpurua & Koutstaal, 2010; Kane & Miyake,
+2007). Our results extend this by showing that working memory for
+highly visually complex and meaningful stimuli similarly exhibits a
+strong and reliable relationship with fluid intelligence.
+To further understand the implications of our findings, it is important
+to address why working memory performance might be correlated with
+fluid intelligence more generally. While the exact nature of the rela­
+tionship is still under investigation, some previous research has argued
+that the capacity limit of working memory, that is, the maximum
+amount of information a person can actively maintain, is the most
+critical factor underlying its relationship with fluid intelligence because
+the more information one can store, the more information is available to
+be used for abstract reasoning tasks (e.g., Carpenter et al., 1990; Fukuda
+et al., 2010; Schubert et al., 2023). According to this view, our results
+would suggest that there may be shared processes that give rise to visual
+working memory capacities for real-world objects and colored circles,
+despite performance being significantly better for real-world objects.
+That is, the more information about colored circles a person can actively
+maintain, the more information they can also maintain about real-world
+objects. This is also supported by the correlation between the two
+working memory tasks we observe in the present study. However, some
+other research has challenged the view that these capacity limits per se
+underlie the relation (e.g., Engle et al., 1999; Hagemann et al., 2023).
+Specifically, some studies showed that questions on fluid intelligence
+tests that are more cognitively demanding, and thus should require more
+working memory storage to be solved, do not correlate more strongly
+with working memory capacity (Salthouse & Pink, 2008; Burgoyne
+et al., 2019; Wiley et al., 2011; Unsworth & Engle, 2005; but also see
+Frischkorn & Oberauer, 2021; Smolen & Chuderski, 2015). Instead, it
+has been suggested that other aspects of working memory tasks might be
+the crucial factors driving the correlation between working memory
+performance and fluid intelligence. These aspects include attentional
+control processes (Draheim et al., 2022; Shipstead et al., 2016), flexible
+binding of memoranda (Bateman & Birney, 2019), the usage of specific
+encoding strategies (Babic et al., 2019), or the ability to adapt and apply
+
+Reliability of sequential and simultaneous visual working
+memory tasks
+We also find that both sequential and simultaneous presentations of
+stimuli at encoding during the color working memory tasks resulted in
+significant correlations of similar magnitude with fluid intelligence and
+with each other. This is consistent with a recent study by Zhao and Vogel
+(2023) which found that individual differences in visual working
+memory performance are highly correlated between sequential and
+simultaneous presentations, demonstrating that both presentation for­
+mats are adequate in assessing visual working memory capacity and its
+relation to fluid intelligence. Interestingly, we observed that the visual
+working memory task for colored circles with simultaneous presentation
+resulted in the highest reliability score (0.79), followed by sequentially
+presented real-world objects (0.62) and then sequentially presented
+colored circles (0.29). Previous findings showed a greater benefit of
+sequential presentation for meaningful stimuli compared to abstract
+stimuli, as it allows for deeper semantic processing of each stimulus
+(Brady & Störmer, 2022; Chung et al., 2023a). Our data show that when
+8
+
+Y.H. Chung et al.
+
+Journal of Memory and Language 143 (2025) 104648
+
+stimuli are presented sequentially, real-world objects also result in
+higher reliability scores, comparable to the reliability level of simulta­
+neous presentation of colored circles. In contrast, the reliability score for
+the color working memory task with sequential presentation was un­
+expectedly low. This outcome may stem from increased confusion or
+interference when perceptually similar simple features (like colors) are
+presented at the same location. This also aligns with previous findings
+that show the important role of spatial locations as indexing features to
+bind visual information in working memory (e.g., Schneegans & Bays,
+2019; Swan & Wyble, 2014; Chen & Wyble, 2015; Tam & Wyble, 2022;
+Chung, Tam, et al., 2024). While the sequential color working memory
+task resulted in a low reliability score, which in turn makes it chal­
+lenging to interpret correlation results using that specific task, we found
+a similar correlation with the much more reliable simultaneous color
+working memory task with spatial locations. Overall, this points to
+potentially significant considerations when thinking about how working
+memory capacity is measured. Future studies could systematically test
+how different presentation types and stimulus classes interact with the
+reliability of working memory tests.
+
+recognized as meaningful do not exhibit such improvement in perfor­
+mance (e.g., Asp et al., 2021; Chung et al., 2023b; Brady et al., 2016;
+Brown & Wesley, 2013; Alvarez & Cavanagh, 2004; Olson & Jiang,
+2002). Therefore, it is plausible that the visually derived ability to
+recognize various objects, which is critical for the boost in working
+memory for meaningful stimuli, may correlate with crystallized intelli­
+gence test scores in a more visual domain (i.e., object recognition test).
+Thus, future investigations could incorporate crystallized intelligence
+tests that assess visual object recognition and also include images of
+objects in the working memory tasks that vary in recognizability (i.e.,
+how they connect to conceptual knowledge) and familiarity across
+participants.
+Limitation of the current study
+One general caveat to consider in the current data is the potentially
+selective range of participants. For instance, all participants were young
+university students who generally scored highly on standardized tests
+(see Supplementary Materials). Indeed, the average Raven’s test score
+was around 25, which is higher than scores reported in previous studies
+using a similar test to examine its relationship with working memory
+performance. While such a restricted participant range may have
+underestimated the correlations overall, we still found reliable correla­
+tions between the Raven’s scores and all visual working memory mea­
+sures. Importantly, this limitation in population would affect all
+comparisons equally. In addition, intelligence test scores were not
+largely skewed (− 0.64 for the Raven’s test scores and − 0.32 for the CTest scores). Nevertheless, future studies should consider testing a
+broader and more diverse population for improved generalizability of
+the results.
+
+Crystallized intelligence is not reliably correlated with visual
+working memory
+We also tested whether visual working memory performances for
+colored circles and real-world objects are related to crystallized intelli­
+gence scores. While prior studies have found only weak relationships
+between crystallized intelligence and working memory (e.g., Salthouse
+& Pink, 2008; Buehner et al., 2006), especially when using abstract
+stimuli (Haavisto & Lehto, 2005; Dang et al., 2012; Dang et al., 2014), it
+seems plausible that working memory for real-world objects would have
+shown a different pattern, given that recognizing and understanding
+real-world objects relies on pre-existing semantic knowledge. However,
+we found no evidence of a correlation between the C-Test scores and
+working memory performances. It should be noted, however, that the CTest in particular measures crystallized intelligence through language
+proficiency and it is unclear whether the C-Test accurately captures
+individual differences in semantic knowledge used when remembering
+real-world objects. Such verbal tests have been shown to correlate more
+strongly with verbal working memory tasks rather than visuo-spatial
+working memory tasks (Haavisto & Lehto, 2005; Dang et al., 2012;
+Dang et al., 2014). Previous studies have shown that real-world objects
+benefit visual working memory performance even when verbal strate­
+gies are controlled for (e.g., Brady et al., 2016; Chung et al., 2023b;
+Chung, Tam, et al., 2024; Starr et al., 2020). Additionally, a recent study
+showed that simply providing verbal category labels to unrecognizable
+shapes does not effectively enhance visual working memory perfor­
+mance (Chung, Williams, et al., 2024). Thus, while verbal knowledge is
+commonly associated with crystallized intelligence, it remains unclear
+whether it would serve as a critical underlying factor of object working
+memory performance. Furthermore, the current study used real-world
+objects that are frequently encountered in everyday life and thus
+likely do not vary substantially in their recognizability level or semantic
+meaningfulness across individuals. Previous research has demonstrated
+that not all objects are subject to the same amount of benefit in visual
+working memory. For instance, unfamiliar objects that are not
+commonly seen result in worse visual working memory performance
+compared to highly familiar objects (Starr et al., 2020; Li et al., 2020).
+Therefore, it is possible that variation in the familiarity or knowledge
+about the objects in a working memory task would also be related to
+individual differences in learned knowledge, and thus to some degree
+crystallized intelligence.
+Previous studies reporting the meaningfulness benefit in visual
+working memory have argued that the benefit arises from the ability to
+rapidly connect visual inputs to pre-existing conceptual knowledge
+about what these objects are (Chung et al., 2024; Brady et al., 2024;
+Wyble et al., 2016) because perceptually complex stimuli that are not
+
+Summary
+Our findings reveal a reliable correlation between individual differ­
+ences in fluid intelligence and visual working memory performance for
+both abstract simple features and real-world objects. Our results also add
+to the emerging evidence that meaningful and familiar stimuli can
+enhance visual working memory processes. Collectively, these findings
+validate the use of real-world object stimuli to test visual working
+memory and indicate that remembering complex, meaningful stimuli
+and basic simple features share core cognitive processes that are related
+to fluid intelligence.
+CRediT authorship contribution statement
+Yong Hoon Chung: Writing – review & editing, Writing – original
+draft, Visualization, Validation, Supervision, Resources, Project admin­
+istration, Methodology, Investigation, Formal analysis, Data curation,
+Conceptualization. Kaira K. Shlipak: Writing – review & editing,
+Visualization, Validation, Investigation, Formal analysis, Conceptuali­
+zation. Viola S. Störmer: Writing – review & editing, Visualization,
+Validation, Supervision, Resources, Project administration, Methdology,
+Investigation, Formal analysis, Conceptualization.
+Declaration of competing interest
+The authors declare that they have no known competing financial
+interests or personal relationships that could have appeared to influence
+the work reported in this paper.
+Acknowledgement
+Author KKS was supported by Dartmouth Women in Science
+Program.
+9
+
+Y.H. Chung et al.
+
+Journal of Memory and Language 143 (2025) 104648
+
+Appendix A. Supplementary material
+
+Cronin, D. A., & Irwin, D. E. (2018). Visual working memory supports perceptual stability
+across saccadic eye movements. Journal of Experimental Psychology: Human Perception
+and Performance, 44(11), 1739.
+Dang, C. P., Braeken, J., Colom, R., Ferrer, E., & Liu, C. (2014). Why is working memory
+related to intelligence? Different contributions from storage and processing. Memory,
+22(4), 426–441.
+Dang, C. P., Braeken, J., Ferrer, E., & Liu, C. (2012). Unitary or non-unitary nature of
+working memory? Evidence from its relation to general fluid and crystallized
+intelligence. Intelligence, 40(5), 499–508.
+Draheim, C., Pak, R., Draheim, A. A., & Engle, R. W. (2022). The role of attention control
+in complex real-world tasks. Psychonomic Bulletin & Review, 29(4), 1143–1197.
+Duncan, J., Schramm, M., Thompson, R., & Dumontheil, I. (2012). Task rules, working
+memory, and fluid intelligence. Psychonomic Bulletin & review, 19, 864–870.
+Eckes, T., & Grotjahn, R. (2006). A closer look at the construct validity of C-tests.
+Language Testing, 23(3), 290–325.
+Engle, R. W., Tuholski, S. W., Laughlin, J. E., & Conway, A. R. (1999). Working memory,
+short-term memory, and general fluid intelligence: A latent-variable approach.
+Journal of Experimental Psychology: General, 128(3), 309.
+Frischkorn, G. T., & Oberauer, K. (2021). Intelligence test items varying in capacity
+demands cannot be used to test the causality of working memory capacity for fluid
+intelligence. Psychonomic Bulletin & Review, 28(4), 1423–1432.
+Fukuda, K., Vogel, E., Mayr, U., & Awh, E. (2010). Quantity, not quality: The relationship
+between fluid intelligence and working memory capacity. Psychonomic Bulletin &
+Review, 17, 673–679.
+Grothjahn, R., Klein-Braley, C., & Raatz, U. (2002). C-tests: An overview. In J. Coleman,
+R. Grotjahn, & U. Raatz (Eds.), University language testing and the C-test (pp. 93114). Bochum, Germany: AKS-Verlag.
+Haavisto, M. L., & Lehto, J. E. (2005). Fluid/spatial and crystallized intelligence in
+relation to domain-specific working memory: A latent-variable approach. Learning
+and Individual Differences, 15(1), 1–21.
+Hagemann, D., Ihmels, M., Bast, N., Neubauer, A. B., Schankin, A., & Schubert, A. L.
+(2023). Fluid intelligence is (much) more than working memory capacity: An
+experimental analysis. Journal of Intelligence, 11(4), 70.
+Harsch, C., & Hartig, J. (2016). Comparing C-tests and Yes/No vocabulary size tests as
+predictors of receptive language skills. Language Testing, 33(4), 555–575.
+Hollingworth, A., Richard, A. M., & Luck, S. J. (2008). Understanding the function of
+visual short-term memory: Transsaccadic memory, object correspondence, and gaze
+correction. Journal of Experimental Psychology: General, 137(1), 163.
+Horn, J. L. (1968). Organization of abilities and the development of intelligence.
+Psychological Review, 75(3), 242.
+Jensen, A. R. (1998). The g Factor: The Science of Mental Ability.
+Kane, M. J., & Miyake, T. M. (2007). The validity of “conceptual span” as a measure of
+working memory capacity. Memory & Cognition, 35(5), 1136–1150.
+Kasper, L. J., Alderson, R. M., & Hudec, K. L. (2012). Moderators of working memory
+deficits in children with attention-deficit/hyperactivity disorder (ADHD): A metaanalytic review. Clinical Psychology Review, 32(7), 605–617.
+Keijzer, M. 2007. Last in first out? An investigation of the regression hypothesis in Dutch
+emigrants in Anglophone Canada. PhD dissertation, Vrije Universiteit Amsterdam.
+Kovacs, K., & Conway, A. R. (2019). What is IQ? Life beyond “general intelligence”.
+Current Directions in Psychological Science, 28(2), 189–194.
+Kyllonen, P. C., & Christal, R. E. (1990). Reasoning ability is (little more than) workingmemory capacity?! Intelligence, 14(4), 389–433.
+Li, X., Xiong, Z., Theeuwes, J., & Wang, B. (2020). Visual memory benefits from
+prolonged encoding time regardless of stimulus type. Journal of Experimental
+Psychology: Learning, Memory, and Cognition, 46(10), 1998.
+Luck, S. J., & Vogel, E. K. (1997). The capacity of visual working memory for features and
+conjunctions. Nature, 390(6657), 279–281.
+Luria, R., Sessa, P., Gotler, A., Jolicœur, P., & Dell’Acqua, R. (2010). Visual short-term
+memory capacity for simple and complex objects. Journal of cognitive neuroscience, 22
+(3), 496–512.
+Macmillan, N. A., & Kaplan, H. L. (1985). Detection theory analysis of group data:
+Estimating sensitivity from average hit and false-alarm rates. Psychological Bulletin,
+98(1), 185.
+Norris, J. M. (2018). Developing C-tests for estimating proficiency in foreign language
+research. New York, NY: Peter Lang.
+Oberauer, K., Schulze, R., Wilhelm, O., & Süß, H.-M. (2005). Working memory and
+intelligence-their correlation and their relation: Comment on Ackerman, Beier, and
+Boyle (2005). Psychological Bulletin, 131(1), 61–65.
+Olson, I. R., & Jiang, Y. (2002). Is visual short-term memory object based? Rejection of
+the “strong-object” hypothesis. Perception & psychophysics, 64, 1055–1067.
+Ortego, K., & Störmer, V. S. (2024). Similarity in feature space dictates the efficiency of
+attentional selection during ensemble processing. Psychonomic Bulletin & Review.
+Park, S., & Holzman, P. S. (1992). Schizophrenics show spatial working memory deficits.
+Archives of General Psychiatry, 49(12), 975–982.
+Potter, M. C. (1993). Very short-term conceptual memory. Memory & Cognition, 21,
+156–161.
+Quirk, C., Adam, K. C., & Vogel, E. K. (2020). No evidence for an object working memory
+capacity benefit with extended viewing time. Eneuro, 7(5).
+Raven, J. (2000). The Raven’s progressive matrices: Change and stability over culture
+and time. Cognitive Psychology, 41(1), 1–48.
+Raven, J., Raven, J. C., & Court, J. H. (1993). Manual for Raven’s progressive matrices
+and vocabulary scales revised. Oxford: Oxford Psychologists Press.
+Rohde, T. E., & Thompson, L. A. (2007). Predicting academic achievement with cognitive
+ability. Intelligence, 35(1), 83–92.
+Salthouse, T. A., & Pink, J. E. (2008). Why is working memory related to fluid
+intelligence? Psychonomic Bulletin & Review, 15, 364–371.
+
+Supplementary data to this article can be found online at https://doi.
+org/10.1016/j.jml.2025.104648.
+Data availability
+All data are available online (https://osf.io/djg2b/).

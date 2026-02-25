@@ -1,0 +1,993 @@
+Introduction
+The capacity of visual working memory is highly limited, which can
+maintain only three to four objects at a time (Luck & Vogel, 1997;
+Sperling, 1960). An efficient information filtering mechanism is there­
+fore essential for selecting the most relevant information from the
+extensive amount of environmental stimuli, i.e. attention (Ku, 2018;
+McNab & Klingberg, 2008). First, attention facilitates the filtering of
+irrelevant stimuli (Awh et al., 2006; Gazzaley & Nobre, 2012). Second, it
+is widely acknowledged that irrelevant information cannot be encoded
+or stored in working memory (Mack & Rock, 1998; Rensink et al., 1997),
+unless it has been attended to (Gao et al., 2016; Marshall & Bays, 2013;
+Olson et al., 2008). Most studies supporting the selective function of
+attention for working memory categorized information into two types:
+
+task-relevant information, which has been previously attended and
+needs to be recalled subsequently (deBettencourt et al., 2019; Myers
+et al., 2017; Santangelo & Macaluso, 2013; Schmicker et al., 2016); and
+task-irrelevant information, which does not need to be either attended
+or recalled (Tanabe-Ishibashi et al., 2023; Tas et al., 2016). More
+recently, another category of information has been proposed (Chen &
+Wyble, 2015; Fu et al., 2021), known as attended but outdated informa­
+tion, which refers to information that was previously attended to but
+does not need to be recalled subsequently. Such information is quite
+common in our daily life. For instance, when searching for books in a
+library, we must quickly judge whether a book title belongs to the
+category we need. Most titles are irrelevant, prompting us to make a
+swift decision and move on without maintaining them in memory.
+In a recent study, Fu and colleagues compared the memory traces of
+
+* Corresponding author at: Bilingual Cognition and Development Lab, Center for Linguistics and Applied Linguistics, Guangdong University of Foreign Studies,
+Guangzhou 510420, China.
+** Corresponding author at: Key Laboratory of Brain, Cognition and Education Sciences, Ministry of Education, Center for Studies of Psychological Application,
+South China Normal University, Guangzhou 510631, China.
+E-mail addresses: yumengxia21@gdufs.edu.cn (M. Yu), molei@m.scnu.edu.cn (L. Mo).
+https://doi.org/10.1016/j.jml.2025.104668
+Received 18 September 2024; Received in revised form 11 April 2025; Accepted 19 June 2025
+Available online 23 June 2025
+0749-596X/© 2025 Elsevier Inc. All rights are reserved, including those for text and data mining, AI training, and similar technologies.
+
+C. Xiao et al.
+
+Journal of Memory and Language 144 (2025) 104668
+
+attended but outdated information (namely the key feature) and taskirrelevant information in working memory. They found significantly
+weaker working memory traces for attended but outdated information
+than for irrelevant information, unless it was detected rapidly (Fu et al.,
+2021). Specifically, in Experiment 4 of their study, participants first
+memorized the size of the memory item unless its color was yellow (i.e.,
+color served as the key feature). During the maintenance period, par­
+ticipants viewed a search display containing four lines embedded within
+four distinct colored shapes, and searched for a target (tilted line) among
+distractor lines (vertical lines). One colored shape containing distractors
+either matched the memory item’s color (match condition) or did not
+(neutral condition). Results showed slower search times in the match
+(vs. neutral) condition when the stimulus onset asynchronies (SOAs)
+between the memory display and visual search display were ≤ 600 ms;
+this difference disappeared with longer SOAs. This suggested the pres­
+ence of the outdated color feature in working memory, which interfered
+with attention of the target. Combined with other experiments, the re­
+searchers concluded that the brain actively inhibits the attended but
+outdated information to block working memory entry, though the
+physical salience of color may transiently allow such information into
+working memory. However, their observations could not exclude an
+alternative explanation, namely that the attended but outdated feature
+information was first encoded into working memory but was then
+removed or inhibited later. To test this hypothesis, we systematically
+manipulated SOAs between the memory display and the visual search/
+test display to track memory traces of attended but outdated information
+at the early and the late stage of memory retention, particularly for less
+salient features (such as shape).
+Three experiments were conducted in the present study. Experiment
+1 examined the memory trace, as indicated by the memory-driven
+attentional bias, for the salient color feature as irrelevant information
+(Experiment 1a) and as attended but outdated information (Experiment
+1b). Importantly, Experiment 1c examined whether findings from
+Experiment 1b could be generalized to the shape feature. Experiment 2
+generalized the findings from Experiment 1 by adopting another wellaccepted irrelevant-distracting paradigm to probe the working mem­
+ory trace. Experiment 3 employed electroencephalography (EEG) to
+measure alpha modulation which is sensitive to the spatial attention of
+visual information at the item location (Bacigalupo & Luck, 2019; Foster
+et al., 2017) to seek neural evidence for memory traces of attended but
+outdated information. Results from these experiments converged on a
+common insight: attended but outdated information is initially encoded
+into working memory.
+
+automatic attentional bias towards items maintained in working mem­
+ory, driven solely by active working memory representations (Olivers
+et al., 2011; Soto et al., 2008). Importantly, this effect is absent during
+mere passive viewing or when the encoded item is released from
+working memory (Olivers et al., 2006; Olivers et al., 2011).
+Methods
+Participants
+The sample size was determined based on the effect sizes derived
+from previous comparable behavioral experiments that tested 30 par­
+ticipants per experiment (Fu et al., 2021). On this basis, our analysis
+revealed that a sample of 26 participants would be required to detect an
+effect size (dz) of 0.58 for the working memory-driven attentional cap­
+ture effect, and a sample of 20 participants would be required to detect
+an effect size (dz) of 0.67 for the irrelevant-change distracting effect
+with a power of 80 % at an alpha of 0.05. We set the minimum sample
+size as 30 in all experiments except for Experiment 3.
+Thirty young adults for Experiment 1a, thirty-five young adults for
+Experiment 1b and Experiment 1c (to increase statistical power) were
+recruited from South China Normal University and compensated with 30
+Chinese yuan per hour for each experiment (Experiment 1a: 25 females,
+Mage = 20.5 years, SD = 2.2; Experiment 1b: 31 females, Mage = 20.1
+years, SD = 1.4; Experiment 1c: 33 females, Mage = 21.0 years, SD =
+2.1). All participants had normal or corrected-to-normal vision and had
+no color vision defects. Informed consent was obtained from each
+participant before each experiment, and the experimental procedure
+was approved by the Ethics Committee of the Psychology Department at
+South China Normal University (ID: SCNU-PSY-2023–332). For the
+exclusion of participants, see the Supplemental Material.
+Apparatus and stimuli
+All experiments were programmed and conducted using MATLAB
+software (The MathWorks, Natick, MA) with the Psychophysics Toolbox
+extension (Brainard, 1997; Kleiner et al., 2007). The stimuli were dis­
+played on a 23.8-inch LCD monitor (60 Hz, 1920 × 1080 screen reso­
+lution). Participants viewed the display from a distance of
+approximately 50 cm and made responses using a computer keyboard.
+The background color of the screen was medium gray (RGB: 128, 128,
+128). The stimuli in both the memory and search displays included
+colored shapes, with colors randomly selected from red (RGB: 255, 0, 0),
+yellow (RGB: 255, 255, 0), blue (RGB: 0, 0, 255), green (RGB: 0, 128, 0),
+and pink (RGB: 255, 192, 203). The shapes included circles, triangles,
+stars, squares, or hexagons.
+
+Experiment 1
+
+Experimental procedure
+All experiments in Experiment 1 employed a two-factor (SOAs and
+match conditions) within-subject experimental design. The independent
+variables included SOAs consisting of five levels (400, 600, 1000, 1800,
+and 3000 ms), and match conditions consisting of three levels (color
+match, shape match, neutral). The main dependent variables were the
+response times (RTs) and accuracy in the search task.
+The experimental procedure of Experiment 1a is shown in Fig. 1.
+Each trial started with a 500-ms fixation (1.03◦ × 1.03◦ ). After that, a
+memory item (i.e., a randomly selected shape with randomly assigned
+color) was presented at the center of the screen for 100 ms in either large
+(2.89◦ × 2.89◦ ) or small (2.12◦ × 2.12◦ ) sizes with equal probability.
+Participants were required to remember the size of the memory item so
+as to perform the size change-detection task by the end of the trial. The
+memory item was followed by a blank interval which was set to be 300/
+500/900/1700/2900 ms with equal probability. After the blank inter­
+val, there was a search display in which three distractor lines (black
+vertical lines, 0.80◦ × 0.12◦ ) and one target line (black tilted line, 12◦
+either to the left or to the right with equal probability) were embedded
+in four distinct colored shapes (2.51◦ × 2.51◦ ) that were evenly
+distributed over an invisible circle (with a radius of 7.40◦ ). There were
+
+We adopted the definition from Fu et al. (2021) to simplify the name
+of attended but outdated information: key feature, which refers to the
+information that participants have to attend to and use to perform a task
+but do not need to remember and report eventually. In Experiment 1, we
+first replicated Experiments 4a and 4b of Fu et al. (2021) to: (i) examine
+the temporal dynamics of memory traces for color as a key feature
+(Experiment 1b); (ii) examine whether the disappearance of color
+feature memory traces in Experiment 1b was due to forgetting by
+comparing Experiment 1b with memory traces for color as an irrelevant
+feature (Experiment 1a); and (iii) ensure that the methods we used were
+consistent with those of Fu et al. (2021) so that any differences in the
+results of other experiments with Fu et al. (2021) were due to the timing
+settings rather than other methodological differences in stimuli and
+procedure. More importantly, we examined the temporal dynamics of
+memory traces for shape as a key feature (Experiment 1c), which is less
+effective in guiding attention deployment than color features (Wolfe &
+Horowitz, 2004).
+Experiment 1 examined memory traces by evaluating the presence of
+working memory-driven attentional bias effects for key features over
+different memory maintaining intervals. This effect indicates an
+2
+
+C. Xiao et al.
+
+Journal of Memory and Language 144 (2025) 104668
+
+Fig. 1. Task procedure of Experiments 1a, 1b and 1c. In Experiment 1a, participants were required to remember the size of the memory item and complete a changedetection task in the test. After a variable interval of blank screens during the memory retention period, a search display appeared. Participants were instructed to
+search for a tilted line and indicate its direction. In the search display, one of the distractors matched the color, shape or neither feature with the memory item.
+Experiment 1b followed the same procedure as Experiment 1a, with the exception that participants were first asked to determine whether the memory item was
+yellow during the memory display. Participants only needed to memorize the size if the item was not yellow. Experiment 1c was identical to Experiment 1a, except
+that participants were first required to judge whether the memory item was a circle during the memory display. Only if it was not a circle should they memorize its
+size. (For interpretation of the references to color in this figure legend, the reader is referred to the web version of this article.)
+
+two possible configurations for the locations of the four search stimuli
+(angle relative to horizon: 30◦ /120◦ /210◦ /300◦ or 60◦ /150◦ /240◦ /
+330◦ ) with equal probability. The selection of the four search stimuli was
+determined by the three match conditions (color match, shape match,
+neutral). Specifically, one of the three distractor stimuli could either
+match the color, shape or neither feature with the memory item. In all
+conditions, none of the other stimuli in the search display shared any
+color or shape value with the memory item. Participants had to find the
+tilted line as quickly and accurately as possible, indicating whether the
+line tilted to the left or right by pressing the corresponding left or right
+arrow key on the keyboard with their right hands. The visual search
+display did not disappear until participants made a response. Following
+the search display, a blank screen was present for 500 ms. After that,
+participants had to complete the change detection task based on the
+colored shape memorized at the beginning of the trial. The memorized
+shape with the same color as the memory item was present again,
+probing participants to judge whether its size was the same as the
+initially memorized one. Participants made responses with their left
+hands by pressing “J” if the size was the same or “K” if the size was
+changed. There was no time limit for the change detection task. The time
+interval between trials was 1500 ms. The experiment comprised 30 trials
+for each match condition within each SOA, totaling 450 trials across five
+experimental blocks of 90 trials each. Participants first completed 30
+practice trials before the formal experiment. The entire experiment
+lasted approximately 1 h. Participants were informed beforehand that
+the visual search task was irrelevant to the memory task.
+The procedure of Experiment 1b was the same as that in Experiment
+1a, with the exception that participants were asked to judge the color of
+the memory item during the memory display. If the memory item was
+not yellow, participants had to memorize its size and perform the sub­
+sequent size change detection task. If the memory item was yellow,
+participants did not need to remember the memory item, but just report
+whether the test item at the end was yellow. These trials (~20 % of the
+whole trial number) served as catch trials to ensure that participants
+attended to and processed the color of the memory item and were not
+included in the analyses.
+The procedure of Experiment 1c was also similar to that of Experi­
+ment 1a, except that, in the memory display, participants were first
+asked to determine whether the item was a circle. Only if the item was
+not a circle were participants required to memorize its size and perform
+the size change detection task in the memory test as in Experiment 1a
+
+(shape remained the same). For 20 % of the trials, when a circle was
+shown in the memory display, participants only needed to report
+whether the item in the test display was also a circle.
+Data analysis
+To enable direct comparison of results across experiments, catch
+trials in Experiments 1b and 1c, as well as comparable trials (those with
+circle or yellow memory displays) in Experiment 1a, were excluded prior
+to analysis. Details on data trimming are provided in the Supplemental
+Material. Statistical analyses were conducted using repeated measures
+ANOVAs and two-tailed t tests. In all reported ANOVAs, GreenhouseGeisser corrected p values were reported if the sphericity assumption
+was violated. Additionally, Bayes factors were computed for nonsignificant results to assess the strength of evidence in favor of the
+null hypothesis.
+Results
+Performance of the working memory task has been reported in the
+supplemental material (Table S1). Preliminary analyses revealed that
+the accuracy of the search task in all experiments was near ceiling (> 97
+%) (see Table S1 in Supplementary Material for the averaged accuracy
+(%) for each condition). Consequently, we focused on the RTs for the
+search task under different conditions. Previous research has shown that
+if a distractor in a visual search task shares any feature (e.g., color or
+shape) with the item held in visual working memory, it automatically
+attracts participants’ attention, leading to prolonged response times
+(Dowd et al., 2017; Olivers et al., 2011; Soto et al., 2008). Therefore, we
+mainly compared RTs of match conditions with those of the neutral
+condition.
+The RTs for Experiments 1a and 1b are shown in Fig. 2. For Exper­
+iment 1a (color as an irrelevant feature; see Fig. 2a), a 3 × 5 two-way
+repeated-measures ANOVA yielded a significant main effect of SOAs
+(F2.607, 75.608 = 7.476, p < 0.001, ηp2 = 0.205), with decreased RTs
+during longer SOAs (see Table S2). A significant main effect of match
+condition was found (F1.803, 52.295 = 12.686, p < 0.001, ηp2 = 0.304).
+Post hoc contrasts revealed that RTs in the neutral condition were
+significantly faster than those in the color-match condition [mean dif­
+ference (MD) = 32 ms, 95 % confidence interval (CI) [15, 48], t29 =
+3.972, p < 0.001, Cohen’s d = 0.738], but not the shape-match condition
+(MD = 2 ms, 95 % CI [-10, 14], t29 = 0.383, p = 0.704, Cohen’s d =
+3
+
+C. Xiao et al.
+
+Journal of Memory and Language 144 (2025) 104668
+
+Fig. 2. The visual search results of Experiments 1a and 1b. (a) RTs of three match conditions in five different SOA settings of Experiments 1a when color was an
+irrelevant feature (upper part) and 1b when color was a key feature (lower part). (b) The attentional bias effect (the difference of RT in color-match condition and
+neutral condition) of early stage (<1000 ms) and late stage (≥1000 ms) when color served as a key feature (Experiment 1b). Error bars represent SEM. **p < 0.01; n.
+s., not significant.
+
+significant (F2, 68 = 3.331, p = 0.042, ηp2 = 0.089). Post hoc contrasts
+revealed that RTs in the neutral condition were significantly faster than
+those in the color-match condition (MD = 22 ms, 95 % CI [0, 43], t34 =
+2.567; p = 0.037, Cohen’s d = 0.141), and there was no significant
+difference between the neutral condition and shape-match condition
+(MD = 9 ms; 95 % CI [− 12, 30]; t34 = 1.053; p = 0.888; Cohen’s d =
+0.058; BF01 = 6.005). The interaction between SOA and match condition
+was not significant (F4.669, 158.755 = 1.882, p = 0.105, ηp2 = 0.052, BF01
+
+0.071, BF01 = 4.81). The interaction between SOA and match condition
+was not significant (F5.853, 169.731 = 1.021, p = 0.413, ηp2 = 0.034, BF01
+= 51.469). The above results replicated the findings from Experiment 4a
+reported by Fu et al., (2021).
+For Experiment 1b (color as a key feature; see Fig. 2a), a 3 × 5 twoway repeated-measures ANOVA yielded a significant main effect of SOA
+(F2.384, 81.061 = 8.138, p < 0.001, ηp2 = 0.193), with RTs decreasing with
+longer SOA (see Table S2). The main effect of match condition was
+4
+
+C. Xiao et al.
+
+Journal of Memory and Language 144 (2025) 104668
+
+= 5.986). As our study primarily focused on comparing memory-driven
+attentional bias between the early and the late stage of memory reten­
+tion, we categorized the five different SOAs into the short (400 and 600
+ms) and the long (1000, 1800, and 3000 ms) SOA conditions using the
+same criterion as in Fu et al. (2021). A 2 (short SOA vs. long SOA) × 2
+(neutral vs. color-match) repeated measures ANOVA showed the inter­
+action was significant (F1, 34 = 4.846, p = 0.035, ηp2 = 0.125; Fig. 2b).
+Simple effect analysis showed that in the short SOA condition, the search
+time in the neutral condition was significantly faster than that in the
+color-match condition (MD = 37 ms, 95 % CI [9, 66], t34 = 3.589, p =
+0.003, Cohen’s d = 0.259), and there was no significant difference be­
+tween the neutral and the color-match condition in the long SOA con­
+dition (MD = 12 ms, 95 % CI [− 17, 40], t34 = 1.129, p = 0.527, Cohen’s
+d = 0.193, BF01 = 3.023). These results revealed a significant memorydriven attentional bias effect for the color of a stimulus (as the key
+feature) only when the SOA was ≤ 600 ms. These findings align with Fu
+et al. (2021), indicating that memory traces of the key feature color were
+found during the early stage of memory retention but not during the late
+stage.
+For Experiment 1c (shape as the key feature; see Fig. 3a), a 3 × 5 twoway repeated-measures ANOVA also yielded a significant main effect of
+SOAs (F2.659, 90.399 = 13.131, p < 0.001, ηp2 = 0.279), with decreased
+RTs during longer SOAs (see Table S2). A significant main effect of
+match condition was found (F2, 68 = 5.662, p = 0.005, ηp2 = 0.143). Post
+
+hoc contrasts revealed that RTs in the neutral condition were signifi­
+cantly faster than those in the shape-match condition (MD = 25 ms, 95
+% CI [7, 43], t34 = 3.365, p = 0.004, Cohen’s d = 0.135), and the dif­
+ference in response time between the neutral condition and the colormatch condition did not reach significance (MD = 13 ms, 95 % CI [-6,
+31], t34 = 1.703, p = 0.279, Cohen’s d = 0.068, BF01 = 3.702). The
+interaction between SOA and match condition was significant (F8, 272 =
+2.313, p = 0.020, ηp2 = 0.064). Subsequently, as in Experiment 1b, we
+categorized the five SOAs into short (400 and 600 ms) and long SOA
+(1000, 1800, and 3000 ms) conditions and conducted a 2 (short SOA vs.
+long SOA) × 2 (neutral vs. shape-match) repeated measures ANOVA.
+The result showed the interaction between SOA and match condition
+was significant (F1, 34 = 4.275, p = 0.046, ηp2 = 0.112; Fig. 3b). Simple
+effect analysis found that in the short SOA condition, RTs in the neutral
+condition were significantly faster than those in the shape-match con­
+dition (MD = 42 ms, 95 % CI [15, 68], t34 = 4.301, p < 0.001, Cohen’s d
+= 0.230), and no significant difference was found between the neutral
+condition and the shape-match condition in the long SOA condition (MD
+= 14 ms, 95 % CI [− 13, 40], t34 = 1.397, p = 0.167, Cohen’s d = 0.075,
+BF01 = 0.957). These results revealed a significant memory-driven
+attentional bias effect for shape at the early post-stimulus stage when
+it served as the key feature, indicating that this information was initially
+encoded into working memory.
+The results of Experiment 1c showed that the key feature, shape, was
+
+Fig. 3. The visual search results of Experiment 1c. (a) RTs of three match conditions in five different SOA settings of Experiment 1c. (b) The attentional bias effect
+(the difference of RT in shape-match condition and neutral condition) of early stage (<1000 ms) and late stage (≥1000 ms) when shape served as a key feature
+(Experiment 1c).Error bars represent SEM. ***p < 0.001; n.s., not significant.
+5
+
+C. Xiao et al.
+
+Journal of Memory and Language 144 (2025) 104668
+
+initially encoded into working memory but subsequently ceased to
+attract attention for a period of time which is consistent with the result
+of Experiment 1b when color as a key feature. Overall, the results of
+Experiment 1 were consistent with our expectations that the key feature
+was initially encoded into working memory and subsequently removed
+or inhibited.
+
+Methods
+Participants
+Thirty young adults (25 females, Mage = 20.8 years, SD = 2.2) were
+recruited from South China Normal University and compensated with 30
+Chinese yuan per hour. For details on the sample size, informed consent,
+and other information, see Experiment 1. For details on participant
+exclusion, see the Supplemental Material.
+
+Experiment 2
+Experiment 2 employed another classical irrelevant-distracting
+paradigm (Ecker et al., 2013; Gao et al., 2011) to test whether the ob­
+servations from Experiment 1—where the matching key feature and the
+search target were on different objects or locations—could be general­
+ized to other working memory paradigms in which the matching key
+feature was on the test target object. In this paradigm, the memory array
+and test array were presented sequentially, and participants were asked
+to judge whether one feature dimension (i.e., the response feature) in the
+test array had changed compared to the memory array, while ignoring
+other features that might also change. Previous studies have shown that
+if a task-irrelevant feature is automatically selected into working
+memory, its change will impair detection performance for the response
+feature (Ecker et al., 2013; Gao et al., 2011). Here, we chose shape as the
+key feature and color as the memory feature to avoid binding the
+memory item to the key feature.
+
+Apparatus and stimuli
+The apparatus and stimuli were the same as those in Experiment 1.
+Experimental procedure
+Experiment 2 employed a 2 (shape congruency: change, no-change)
+× 5 (SOA: 400, 600, 1000, 1500, and 2500 ms) within-subject design.
+The main dependent variables were RTs and accuracy in the changedetection task.
+The procedure of Experiment 2 (see Fig. 4a) was similar to that of
+Experiment 1c, except for the following changes. A memory display (i.e.,
+a randomly selected colored shape) was presented at the center of the
+screen (2.51◦ × 2.51◦ ) for 100 ms, requiring participants to judge
+whether the memory item’s shape was a circle first. Participants were
+required to memorize its color if it was not a circle. The memory display
+was followed by a subsequent test item that appeared after a blank
+
+Fig. 4. Task procedure and results of Experiment 2. (a) In Experiment 2, participants first judged whether the shape of the memory item was a circle. If it was not a
+circle, they were required to memorize its color and complete a color-change detection task during the test phase. In the no-change condition, the shape of the test
+item remained the same as the memorized item, whereas in change condition, the test item had a shape different from the memorized item. (b) RTs in the change
+detection task of no-change/change conditions in five different SOA settings of Experiments 2. Error bars represent SEM. *p < 0.05, n.s., not significant.
+6
+
+C. Xiao et al.
+
+Journal of Memory and Language 144 (2025) 104668
+
+interval, which was set to 300/500/900/1400/2400 ms with equal
+probability. Participants were asked to determine whether the color of
+the test item had changed compared to the memory item within 2000
+ms. In half of the trials (change condition), the shape of the test item
+differed from the memory item, while in the other half (no-change
+condition), the shape remained the same. Participants responded by
+pressing the “F” or “J” key, with the meaning of the keys (same or
+change) counterbalanced across participants. The experiment consisted
+of four blocks of 100 trials each, totaling 400 trials, with 40 trials for
+each condition across all SOAs. The entire experiment lasted approxi­
+mately 35 min.
+
+Methods
+Participants
+Thirty-two neurologically healthy right-handed adults participated
+in Experiment 3 (23 females; 18–25 years of age; mean ± SD age: 20.91
+± 1.84 years). Ten additional participants completed the EEG experi­
+ment but were excluded based on the following criteria: fewer than 50
+remaining trials in any condition or more than 10 % response errors.
+Informed consent was obtained from each participant before the study in
+accordance with the institutional review board of South China Normal
+University. All participants had normal or corrected-to-normal vision
+with no color vision defects and received payment.
+
+Data analysis
+Catch trials in Experiment 2 (the trials with a circle memory display)
+were removed before any analyses. For details on data trimming, see the
+Supplemental Material. The statistical analysis methods were the same
+as those used in Experiment 1.
+
+Apparatus and stimuli
+The experiment was programmed and conducted using MATLAB
+software (The MathWorks; Natick, MA) with the Psychophysics Toolbox
+extension (Brainard, 1997; Kleiner et al., 2007). Stimuli were presented
+on a 23.8-inch LCD monitor (60 Hz, 1920 × 1080 screen resolution).
+Participants sat at a viewing distance of approximately 60 cm with a
+chin rest, made their responses using a computer keyboard. The display
+background was set to medium gray (RGB: 128, 128, 128). The stimuli
+were identical to those used in Experiment 1.
+
+Results
+Since the accuracy results were near ceiling (> 97 %), we focused on
+the analysis of RT. The results of Experiment 2 (shape as a key feature;
+see Fig. 4b) also yielded a significant main effect of SOA (F3.193, 92.606 =
+19.173, p < 0.001, ηp2 = 0.398), with decreased RTs during longer SOAs
+(see Table S2). The main effect of shape congruency (change/no-change
+conditions) was significant (F1, 29 = 5.150, p = 0.031, ηp2 = 0.151). RTs
+were significantly faster in the no-change than those in the change
+condition (MD = 9 ms, 95 % CI [0, 19]; t29 = 2.109, p = 0.044, Cohen’s
+d = 0.385). The interaction between SOA and shape congruency was not
+significant (F3.706, 107.467 = 1.800, p = 0.139, ηp2 = 0.058, BF01 = 6.366).
+Similarly, we were primarily interested in the memory traces during the
+early versus the late stage. As there is no a-priori criterion for binning
+SOAs for the irrelevant-distracting paradigm, we therefore compared the
+effects between the two conditions (change vs. no-change) at each SOA.
+As shown in Fig. 4b, RT was significantly shorter in the no-change
+condition in comparison to the change condition for the SOA of 400
+ms (MD = 30 ms, 95 % CI [10, 49], t29 = 3.100, p = 0.020, Bonferroni
+corrected for multiple comparisons, Cohen’s d = 0.566), while there was
+no significant difference in any of the other SOAs (all ps > 0.15). By
+adopting the irrelevant-change distracting effect to probe the working
+memory trace, Experiment 2 showed a stronger memory trace of key
+features in the early stage after the memory item disappeared, consistent
+with the findings in Experiment 1. This mirrors the working memorydriven attentional bias effect, indicating that the memory trace of
+attended but outdated information during the early stage of memory
+retention is robust and can be replicated with different paradigms.
+
+Experimental procedure
+Experiment 3 employed a 2 (SOA: 400–600, 1000–1200 ms) × 3
+(match conditions: color match, shape match, neutral) within-subject
+design. The main dependent variables for the behavioral analysis were
+the response times (RTs) and the accuracy in the search task. The main
+dependent variable for the EEG analysis was alpha modulation.
+The procedure of Experiment 3 (see Fig. 5a) was similar to that of
+Experiment 1c. Each trial began with a 500-ms fixation display (0.80◦ ×
+0.80◦ ), followed by a memory display consisting of a randomly selected
+colored shape presented at the center of the screen for 100 ms (1.80◦ ×
+1.80◦ ). Participants were first asked to judge whether the memory item
+was a circle. They were asked to memorize its color if it was not a circle
+and perform the color change detection task at the end (with size and
+shape remaining unchanged). If the memory item was a circle (~20 % of
+trials, serving as catch trials), participants only needed to report whether
+the test item was also a circle. The memory display was followed by a
+blank interval randomly jittered between 300–500 ms (short SOA) or
+900–1100 ms (long SOA) in length with equal probability. After the
+blank interval, a search display appeared. The display contained three
+black vertical distractor lines (0.08◦ × 0.53◦ ) and one target black tilted
+line (12◦ either to the left or to the right with equal probability),
+embedded within four distinct colored shapes (1.80◦ × 1.80◦ ) that were
+evenly distributed over an invisible circle (with a radius of 4◦ ). In each
+trial, one of the distractor stimuli could match the color, shape, or
+neither feature of the memory item, corresponding to the color-match,
+shape-match, and neutral conditions, respectively. None of the other
+stimuli in the search display shared any features (color or shape) with
+the memory item. The target and matched distractor had an equal
+probability (25 %) of appearing in any of the four possible locations (up,
+down, left, right). Two types of stimulus arrays were presented for each
+match condition, each with equal probability: lateral target with midline
+matched distractor (50 %); midline target with lateral matched dis­
+tractor (50 %). Participants were required to find the tilted line as
+quickly and accurately as possible and indicate whether the line tilted to
+the left or right by pressing the corresponding left or right arrow key
+with their right hand. In the visual search task, stimuli were presented
+for 1500 ms, followed by a 500-ms blank screen. Responses to the search
+task were recorded both during the 1500-ms stimulus presentation and
+during the subsequent 500-ms blank screen period if no response was
+made during the stimulus presentation. After the 500-ms blank interval,
+another colored shape appeared as the memory test item. The test item
+had the same shape and size as the memory item, while its color
+remained the same as the memory item in half of the trials and different
+
+Experiment 3
+Experiment 3 aimed to explore neural evidence for memory traces of
+the key feature. We were specifically interested in assessing whether the
+key feature would be processed or actively inhibited. To test this, we
+measured EEG and examined neural indices of the key feature at
+different time points. The experiment was designed to utilize spatial
+(hemispheric) lateralization of alpha power, which is sensitive to the
+spatial attention of visual information at the item location (Bacigalupo &
+Luck, 2019; Foster et al., 2017), as an index of spatial attention triggered
+by the key feature. This required presenting the distractor (key feature)
+laterally while presenting the target vertically to isolate the effect of the
+key feature. We continued to use the dual-task paradigm and presented
+stimuli vertically and horizontally during the search task. Shape was set
+as the key feature, and color was set as the feature to be remembered
+(the relevant feature). To avoid a high proportion of shape-match trials
+that could lead participants to perceive interference from matching
+shapes, we set three match conditions identical to those in Experiment 1.
+7
+
+C. Xiao et al.
+
+Journal of Memory and Language 144 (2025) 104668
+
+Fig. 5. Task procedure and the behavioral results of Experiment 3. (a) In Experiment 3, participants were first asked to judge whether the memory item’s shape was a
+circle. If it was not a circle, they had to memorize its color and later complete a color change detection task during the test phase. During the retention interval,
+participants searched for a tilted line and specified its direction. One of the distractors could match the color, shape or neither feature with the memory item. (b) The
+visual search results [response time (RT)] of three match conditions in two different SOA settings of Experiments 3. Error bars represent SEM. *p < 0.05, **p < 0.01,
+and ***p < 0.001.
+
+in the other half. Participants judged whether its color was the same as
+the memorized one and responded by pressing “J” if the color was the
+same or “K” if the color had changed with their left hand. There was no
+time limit for the change detection task. The interval between trials was
+1500 ms. The experiment employed a 2 (SOAs: short versus long) × 3
+(match conditions: color match, shape match, neutral) within-subject
+design, with 160 trials in each match condition within each SOA. Par­
+ticipants first completed 48 practice trials before the formal experiment.
+There were 20 experimental blocks of 48 trials each, resulting in a total
+of 960 trials. The SOA and match conditions were mixed randomly
+within blocks. The whole experiment lasted approximately 2 h and
+participants were informed beforehand that the visual search task was
+irrelevant to the memory task.
+
+Cap Neo Net) and the signal was recorded using Curry software (Com­
+pumedics, Version 9). The EEG cap was arranged according to the
+extended international 10–20 system for electrode placement. Imped­
+ances of all electrodes were kept below 5 kΩ. The sampling rate was set
+at 1000 Hz. EEG data were recorded in DC mode (i.e., without a highpass filter) with a 400 Hz low pass-filter. The horizontal and vertical
+electrooculograms were recorded along with the EEG recordings. AFz
+served as the ground electrode, whereas a built-in reference electrode
+positioned between Cz and CPz served as the online reference.
+The data were processed in MATLAB (The MathWorks; Natick, MA)
+using EEGLAB toolbox (Delorme & Makeig, 2004) and ERPLAB (LopezCalderon & Luck, 2014) toolbox. Preprocessing involved applying a
+0.1–30 Hz band-pass filter, and re-referencing data offline to the average
+of two mastoids. The VEOG electrode data were excluded before rereferencing if recording failed due to equipment issues or subject
+movement, as the electrode attached to the face could loosen. Then, the
+EEG data were segmented relative to search task onset (from − 500 to
+1100 ms) and baseline corrected by the mean voltage between − 200 to
+0 ms relative to search display onset. We excluded the 20 % catch trials
+in which the memory display contained a circle. Independent compo­
+nent analysis (ICA) was then conducted to detect and remove compo­
+nents from the data that were associated with eye movements and
+blinks. Any epochs with peak-to-peak amplitudes that exceeded ± 65 μV
+
+Behavioral data analysis
+The catch trials in Experiment 3 were removed before any analyses.
+For data trimming, see the Supplemental Material. The statistical anal­
+ysis for behavioral data was the same as that in Experiment 1.
+EEG recording and preprocessing
+EEG was continuously recorded throughout the experiment using
+SynAmps2 amplifiers (Compumedics Neuroscan, Charlotte, NC, USA)
+using Ag/AgCl electrodes mounted in a 64-channel electrode cap (Quik8
+
+C. Xiao et al.
+
+Journal of Memory and Language 144 (2025) 104668
+
+within a 200-ms moving window were marked for rejection with the
+rejection procedure limited to a smaller time window (i.e. − 200 – 800
+ms). Then, epochs that continued to show artifacts after this process
+were subsequently detected and removed by eye. This, combined with
+the exclusion of trials with incorrect response, resulted in an average loss
+of 6.81 % of all not-circle trials (range 1.04 %–12.89 %).
+
+Results
+Behavioral results
+For Experiment 3 (shape as a key feature; color as a relevant feature;
+see Fig. 5b), the results also yielded a significant main effect of SOA (F1,
+2
+31 = 11.031, p = 0.002, ηp = 0.262), with decreased RTs for longer SOAs
+(see Table S2). A significant main effect of match condition was found
+(F1.726, 53.519 = 38.519, p < 0.001, ηp2 = 0.554). Post hoc contrasts
+showed that the difference in response time between the neutral and
+shape-match condition did not reach significance (MD = 0 ms, 95 % CI
+[-7, 7]; t31 = -0.06, p = 0.956, Cohen’s d = -0.010, BF01 = 5.288), and
+RTs in the neutral condition were significantly faster than those in the
+color-match condition (MD = 31 ms, 95 % CI [21, 40]; t31 = 6.553; p <
+0.001, Cohen’s d = 1.177).
+The interaction effect between SOA and match condition was sig­
+nificant (F1.840, 57.041 = 10.193, p < 0.001, ηp2 = 0.247). Follow-up
+simple effects analyses revealed that in the short SOA condition, RTs
+in the neutral condition were significantly faster than those in either the
+shape-match condition (MD = 9 ms, 95 % CI [1, 18], t31 = 2.185, p =
+0.037, Cohen’s d = 0.386) or the color-match condition (MD = 43 ms,
+95 % CI [31, 55], t31 = 7.207, p < 0.001, Cohen’s d = 1.274). While in
+the long SOA condition, RTs in the neutral condition were significantly
+slower than those in the shape-match condition (MD = − 9 ms, 95 % CI
+[-17, − 2], t31 = -2.493, p = 0.018, Cohen’s d = -0.441), but faster than
+those in the color-match condition (MD = 18 ms, 95 % CI [8, 29], t31 =
+3.570, p = 0.001, Cohen’s d = 0.631).
+These results were consistent with the findings from Experiments 1
+and 2, which suggested that the key feature shape may be encoded into
+working memory and attract attention during the visual search task in
+the short SOA condition. Interestingly, in the long SOA condition, RTs
+for the shape-match condition were faster than those for the neutral
+condition, suggesting a possible attentional bias due to memory con­
+tents. This contrasts with Experiment 1c, where no significant difference
+emerged between the shape-match and neutral conditions in the long
+SOA condition. This discrepancy might have resulted from either the
+higher number of trial repetitions or the shorter SOA range (only short
+and long conditions), compared to longer durations (1800 ms and 3000
+ms) used in Experiment 1. Additionally, although participants had suf­
+ficient time to respond, the time-constrained nature of the search task in
+Experiment 3 might have introduced stress-related confounds.
+
+Time-frequency analysis
+Time-frequency analyses were conducted using FieldTrip toolbox
+(Oostenveld et al., 2011). Before time–frequency decomposition, the
+surface Laplacian of the EEG data was estimated (Perrin et al., 1989) to
+increase the spatial resolution. Time-frequency maps were calculated
+using a short-time Fourier transform of Hanning-tapered data. Spectral
+power was analyzed for frequencies between 4 and 30 Hz (in 1-Hz
+steps), employing a 300-ms sliding time window, advanced in steps of
+10 ms. The analysis time range spanned from the onset of the search
+display to 800 ms, as behavioral data indicated that participants had
+essentially completed the search and judgment process by around 800
+ms. The time window before the search was not included in our analysis
+because it is logically impossible for there to be a difference between
+contralateral and ipsilateral responses in this time window since par­
+ticipants were not able to predict where the target or matching distractor
+would appear on any given trial. For each subject, mean power was
+extracted ipsilaterally and contralaterally relative to the lateralized item
+in a given trial (i.e. the matching shape in the matching shape lateral
+trials). This was expressed as a normalized difference [i.e., ((contraipsi)/(contra + ipsi)) × 100] and these contrasts were then averaged
+across the left and right electrodes, following the approach of recent
+studies (Boettcher et al., 2021; Liu et al., 2022). Topographical maps of
+lateralization were obtained using the same procedure for all symmet­
+rical electrode pairs and plotted at the right electrode of each pair, as in
+Boettcher et al. (2021). To extract time courses of alpha band laterali­
+zation, contrasts were averaged across the predefined alpha band (8–13
+Hz). Based on visual inspection of the grand average topographical map
+combined with the results from cluster-based permutation tests on
+time–frequency data with FieldTrip, the power of the posterior elec­
+trodes in this study was the average of the following electrodes: PO7/8,
+P7/8, P5/6.
+EEG Statistics
+Statistical evaluation of the contralateral-versus-ipsilateral contrasts
+in the EEG data was performed using a cluster-corrected nonparametric
+sign-permutation test (Maris & Oostenveld, 2007). This method is
+particularly ideal for assessing the reliability of neural patterns across
+time and frequency, as it effectively addresses the multiple comparisons
+problem by evaluating clusters in the group-level data against a single
+permutation distribution of the largest clusters obtained after permu­
+tation of the participant-specific trial averages. Since the null hypotheses
+of all tests were that no effect existed (i.e., no difference in power
+lateralization), the sign of each participant’s data was randomly flipped
+with a 50 % probability, and this process was repeated 1,000 times. The
+resulting distribution was used to calculate the p value for the null hy­
+pothesis that the mean effect was zero. All tests were two-sided, and this
+procedure was applied to each time point and frequency (when appli­
+cable). To correct for multiple comparisons over time and/or fre­
+quencies, a cluster-based permutation test was used with 1,000
+permutations, applying a cluster-forming threshold and cluster signifi­
+cance threshold of p < 0.05.
+Topographical sensor-level analyses were performed only to confirm
+the plausibility of the results and provide a more detailed visualization
+(van Ede & Maris, 2016). These analyses were not subjected to further
+statistical testing.
+
+EEG results
+Lateralized enhancement of the alpha-band for the matching shape under
+short SOA condition. We tested whether the key feature shape would
+initially enter working memory and then be actively inhibited. To this
+end, we separated short and long SOA trials and looked for neural sig­
+natures of spatial attention during the search display periods. Specif­
+ically, our focus was on lateralized modulations in the alpha band which
+are sensitive to the spatial attention of visual information at the item
+location (Foster et al., 2017; Zhou et al., 2023) and reflect ongoing
+attentional stimulus processing (Bacigalupo & Luck, 2019; Diepen et al.,
+2016). We employed a normalized alpha lateralized index [i.e., ((contraipsi)/(contra + ipsi)) × 100], where negative values (decreased
+contralateral alpha power) reflect enhanced processing of lateralized
+information, while positive values (increased contralateral alpha power)
+indicate suppression of lateralized information.
+Fig. 6a and 6b show the time- and frequency-resolved neural mod­
+ulations relative to the location of the distractor that matched the shape
+of the memory item in posterior (visual) electrode clusters (PO7/8, P7/
+8, P5/6). Under the short SOA condition, a significant early contralateral
+enhancement effect of alpha power for the shape-match item was
+observed during visual search (Fig. 6a, cluster p = 0.002). In contrast,
+there was no evidence for alpha power lateralization under the long SOA
+condition (Fig. 6b; cluster ps ≥ 0.2617).
+9
+
+C. Xiao et al.
+
+Journal of Memory and Language 144 (2025) 104668
+
+Fig. 6. Alpha lateralization results for matching shape lateral trials. a-b Neural lateralization in visual electrodes relative to the location of the distractor that
+matched the shape of the memory item in posterior (visual) electrode clusters (PO7/8, P7/8, P5/6). This is shown separately for trials of (a) Short SOA, (b) Long SOA.
+Outlines indicate significant time–frequency clusters (two-sided cluster-based permutation test, cluster p < 0.05). (c) The time courses of the averaged 8–13 Hz alpha
+power relative to the location of the distractor that matched the shape of the memory item across the posterior electrodes (PO7/8, P7/8, P5/6) for each SOA
+condition. Red horizontal line indicates significant cluster (cluster p < 0.05). Shadings indicate ± 1 SEM calculated across participants (n = 32). (d) Topography
+associated with the alpha (8–13 Hz) laterization relative to the location of the distractor that matched the shape of the memory item for short SOA condition,
+averaged over the indicated time bin in (c) (100–270 ms relative to the search task onset) for which cluster is significant in short SOA condition. Contralateral
+(contra) versus ipsilateral (ipsi) contrast values were projected into the right sensor of each symmetrical electrode, to match the corresponding time–frequency
+contrasts. (For interpretation of the references to color in this figure legend, the reader is referred to the web version of this article.)
+
+To extract time courses of lateralization in the alpha band, we
+averaged the contrasts across the predefined alpha band between 8 and
+13 Hz. A cluster-based permutation test over time revealed that later­
+alization differences were significantly different from zero during this
+interval for the short SOA condition (Fig. 6c, cluster p = 0.008, 100 to
+270 ms relative to search task display onset), while the other clusterbased permutation test for the long SOA condition resulted in no sig­
+nificant clusters (Fig. 6c, cluster ps ≥ 0.1459) throughout the entire time
+window. Topographical analyses confirmed that the observed laterali­
+zation in the alpha band was localized in those posterior (visual) EEG
+electrodes related to vision (Fig. 6d). This lateralization result in the
+alpha band is consistent with time- and frequency-resolved neural
+modulations, both of which suggested that there was attentional sup­
+pression for the matching shape under the short SOA condition, and that
+
+this attentional suppression appeared very early, beginning 100 ms after
+stimulus onset.
+Since the shape and color of stimuli at each position were random­
+ized and balanced across trials, the only difference lay in whether they
+matched the shape or color of the memory item. Therefore, the observed
+alpha enhancement effect can be attributed to the matching shape. This
+indicates that within the short SOA time window, the shape of the
+memory item is actively maintained in working memory. Surprisingly,
+despite significantly faster response times in the shape-match condition
+compared to the neutral condition, no alpha modulation emerged under
+the long SOA condition. This may be attributable to the early-stage
+suppression effect, which renders further attentional processing unnec­
+essary at later stages.
+
+10
+
+C. Xiao et al.
+
+Journal of Memory and Language 144 (2025) 104668
+
+Alpha modulation for the matching shape in the right hemisphere predicting
+the behavioral performance. To test a more direct relation between the
+alpha modulation for the matching shape and the attentional suppres­
+sion of the matching shape, we correlated alpha modulation with
+behavioral memory-driven attentional bias effect in the short SOA
+condition. The memory-driven attentional bias index was calculated by
+subtracting RTs in neutral trials (where targets were presented on the
+midline) from RTs in shape-match trials (where matching shapes were
+presented laterally), because the alpha modulation analysis specifically
+targeted these lateral shape-match trials. The alpha lateralization index
+was computed by averaging spectral power within the 10–13 Hz fre­
+quency range during the 180–210 ms time window, corresponding to
+the peak period of alpha lateralization (see Fig. 6a, and cluster alpha is
+reduced to 0.01 to find the strongest). We did not find a significant
+correlation between the alpha lateralization index and behavioral per­
+formance (Fig. 7a; Pearson r = -0.233, p = 0.200). However, some
+studies showed that spatial visual attention is mainly dominated by the
+right hemisphere (Corballis, 2003; DiNuzzo et al., 2022). Therefore, we
+used electrode clusters in the left and right hemispheres to separately
+correlate with behavioral performance. We observed a significant
+negative correlation between the alpha modulation in the right elec­
+trodes and the behavioral performance (Fig. 7b; Pearson r = -0.384, p =
+0.030), indicating that greater alpha lateralization enhancement was
+associated with smaller memory-driven attentional bias under the short
+SOA condition. No significant correlation was found for the left elec­
+trodes (Fig. 7c; Pearson r = 0.136, p = 0.458). This result indicated that
+the alpha modulation in the right hemisphere, rather than the left
+hemisphere, mainly predicted subsequent memory-driven attentional
+bias, which revealed a direct relation between alpha modulation and the
+attentional bias induced by the matching shape. Furthermore, it implied
+that the lateralized enhancement in the alpha band that we observed
+was indicative of attentional inhibition.
+
+differences also significantly differed from zero for the target location in
+the neutral condition (Fig. 8a, cluster p = 0.006, 420 to 600 ms relative
+to search task display onset), in the shape-match condition (Fig. 8a,
+cluster p = 0.008, 420 to 580 ms relative to search task display onset)
+and in the color-match condition (Fig. 8a, cluster p = 0.006, 490 to 640
+ms relative to search task display onset). And topographical analyses
+confirmed that the observed lateralization in the alpha band was
+localized in those posterior (visual) EEG electrodes (Fig. 8b).
+These time courses were consistent with the behavioral results, as the
+significant clusters’ onset times aligned with the response times. In the
+short SOA condition, the cluster’ onset time for the target in the shapematch condition occurred later than in the neutral condition but earlier
+than in the color-match condition. In the long SOA condition, both the
+shape-match condition and the neutral condition’s clusters’ onset times
+for the target were earlier than the color-match condition’s cluster’
+onset time. This consistency might indicate that the lateralized sup­
+pression of alpha-band activity reflects the state of attentional process­
+ing of the object rather than merely being attracted to it as such
+processing occurs relatively late, becoming evident only after 350 ms
+following stimulus onset. Overall, the time course of alpha lateralization
+to the target was consistent with the behavioral results and might reflect
+attentional processing.
+Discussion
+Since attended but outdated information has been attended to but
+does not need to be remembered, it seems to have a tendency to enter
+working memory due to the attention it has received. How does the
+brain process this type of information? We conducted a series of ex­
+periments to explore the memory trace of this type of information at
+different time points and found that the attended but outdated infor­
+mation was initially encoded into working memory when the stimulus
+was presented for a short time. Specifically, the results showed that the
+memory trace of attended but outdated information in the early stage (i)
+was detectable for both physically salient color features (Experiment 1b)
+and relatively less salient shape features (Experiment 1c, 2 and 3); (ii)
+could be captured across different working memory paradigms (e.g.,
+irrelevant-distracting paradigm; Experiment 2); and (iii) would reflect
+attentional inhibition toward matching stimuli, which was supported by
+neural evidence showing that alpha modulation in the right hemisphere
+could predict behavioral performance (Experiment 3). No significant
+memory traces of attended but outdated information were detected in
+the late stage (all experiments), likely resulting from attentional
+inhibition.
+While our findings are consistent with those of Fu et al. (2021) that
+
+Alpha lateralization for the target. We also analyzed target-related alpha
+lateralization to further examine the role of alpha lateralization in the
+visual search task and the robustness of this metric. As illustrated in
+Fig. 8, significant clusters of lateralization relative to the target location
+were found across all three match conditions in both the short and long
+SOA conditions. In the short SOA condition, lateralization differences
+significantly differed from zero for the target location in the neutral
+condition (Fig. 8a, cluster p = 0.002, 350 to 630 ms relative to search
+task display onset), in the shape-match condition (Fig. 8a, cluster p =
+0.038, 450 to 580 ms relative to search task display onset) and in the
+color-match condition (Fig. 8a, cluster p = 0.004, 490 to 680 ms relative
+to search task display onset). In the long SOA condition, lateralization
+
+Fig. 7. Scatterplot showing the relation between alpha modulation with the behavioral performance. Correlations between alpha modulation in (a) average on the
+right and left hemisphere, (b) right hemisphere and (c) left hemisphere and the attentional bias. Attentional bias is reflected as RT difference between the shapematch and neutral conditions under short SOA condition (both excluded trials with lateral target presentation to match alpha modulation analysis); each dot in­
+dicates each unique subject. Contra vs. Ipsi (%) was measured using a normalized difference [i.e., ((contra-ipsi)/(contra + ipsi)) × 100].
+11
+
+C. Xiao et al.
+
+Journal of Memory and Language 144 (2025) 104668
+
+Fig. 8. Alpha lateralization results for target lateral trials. (a) Time courses of the averaged 8–13 Hz lateralized alpha relative to the location of the target across the
+posterior electrodes (PO7/8, P7/8, P5/6) for the three match conditions in the short SOA (left) and long SOA condition (right). Horizontal lines indicate significant
+clusters (all clusters, p < 0.05). Shadings indicate ± 1 SEM calculated across participants (n = 32). (b) Topographies associated with the alpha (8–13 Hz) laterization
+relative to the location of the target, averaged across time windows of significant clusters in each condition in (a).
+
+the attended but outdated information was indeed suppressed or
+removed at a later stage after stimulus presentation, we identified robust
+memory traces at the early post-stimulus stage. Why is this type of in­
+formation encoded into working memory, even though it does not need
+to be remembered? There are two possible explanations. One possibility
+is that these attended but outdated information is automatically encoded
+into working memory. First, the irrelevant information may be encoded
+into working memory when attended to (Marshall & Bays, 2013; Olson
+et al., 2008). Second, many studies have found that visual working
+memory extracts perceptual information from a scene through an un­
+economical object-based encoding process, regardless of whether the
+information is relevant or irrelevant (Ecker et al., 2013; Gao et al., 2016;
+Pang et al., 2023). While some studies suggest that the attention selec­
+tion mode during the maintenance stage is feature-based (Niklaus et al.,
+2017; Pang et al., 2023; Wang et al., 2017), a reselection mechanism is
+also involved (Fu et al., 2023). Based on these different memory stages
+(encoding and maintenance), this attended but outdated information
+might be automatically encoded into working memory as part of the
+target/attended object and then actively inhibited or removed during
+the maintenance stage as it is no longer needed. A second possibility is
+that our brain actively encodes this information into working memory
+and then inhibits it to prevent interference with subsequent activities.
+There might be a protective mechanism whereby, upon encountering
+the same information again, the brain inhibits refocusing attention on it
+for a short period (as suggested by the neural evidence from Experiment
+3). This mechanism could prevent us from reprocessing or re-evaluating
+the information when it reappears in our everyday environment.
+Another key finding was that alpha lateralization only in the right
+hemisphere was predictive of the memory-driven attentional bias in
+behavior. Enhanced alpha lateralization in the right hemisphere corre­
+lated with reduced memory-driven attentional bias under the short SOA
+
+condition. This hemispheric specificity may reflect functional differ­
+ences between hemispheres during directed attention. Within spatial
+attention domains, extensive evidence demonstrated the right hemi­
+sphere’s dominance for directing attention across the entire visual field,
+while the left hemisphere primarily manages right hemifield attention
+(Mesulam, 1999; Pouget & Driver, 2000). And many studies have shown
+that visual spatial attention is mainly dominated by the right hemi­
+sphere (Corballis, 2003; DiNuzzo et al., 2022), particularly among righthanded individuals (Kinsbourne, 1977). These findings could explain
+the exclusive predictive power of right-hemisphere alpha lateralization
+for task performance. Notably, this does not negate the involvement of
+the left hemisphere in spatial attention. Collectively, our findings pro­
+vided new insights into alpha lateralization research: while traditional
+analyses focus on contralateral versus ipsilateral responses, our data
+suggest functional dominance of cerebral hemispheres that differ in
+specific tasks.
+In our study, we found a robust decrease in alpha lateralization at
+350 ms after the target onset, which aligned with Diepen et al. (2016).
+Moreover, when the previously attended but outdated information
+reappeared, alpha lateralization is enhanced around 100 ms. The
+enhancement of alpha band lateralization negatively correlated with
+behavioral performance. It has been shown that lateralized changes in
+alpha band power is related to the preparatory deployment of visual
+spatial attention, which improves the processing of subsequent targets
+and inhibits the processing of subsequent distractors (Doesburg et al.,
+2016; Schneider et al., 2019; Worden et al., 2000). Alpha band lateral­
+ization is also observed when observers perform search tasks (Forschack
+et al., 2022; Foster et al., 2017; Hakim et al., 2021) or actively inhibit
+distractors (Janssens et al., 2018). Based on the above literature and our
+results, we proposed that alpha lateralization might reflect the pro­
+cessing of the attention stimulus.
+12
+
+C. Xiao et al.
+
+Journal of Memory and Language 144 (2025) 104668
+
+In summary, the present study demonstrated that attended but
+outdated information is initially encoded into working memory, even
+though it does not need to be remembered. Nevertheless, there are
+several limitations and unaddressed issues that are important for future
+research. First, it remains unclear whether attended but outdated in­
+formation is temporarily inhibited or completely removed from memory
+after being encoded, as inhibition may play a role in temporary removal
+(Anderson & Hanslmayr, 2014; Lewis-Peacock et al., 2018). Despite no
+significant memory trace was observed at later stages, our examination
+of SOA was relatively limited, encompassing only five SOA conditions,
+which cannot rule out the possibility of temporary inhibition at certain
+time points. Future studies could explore more time points to investigate
+the detailed temporal dynamics. Second, our experiments explored
+changes in memory traces of attended but outdated information when
+the stimulus presentation time was short, but did not explore them when
+the memory items were presented for a long time. Therefore, it is unclear
+whether the information will also be encoded into working memory
+when the stimulus presentation time is long. This may require further
+exploration using other measures and paradigms. Third, all participants
+in our study were healthy young adults. A recent study found differences
+in the ability of memory selection between adults and children (Fu et al.,
+2024). Additionally, Gotts et al. (2013) discovered that the degree of
+hemispheric lateralization in distinct systems selectively predicted
+behavioral measures of distinct abilities, and the degree of hemispheric
+lateralization changes with age (Cabeza et al., 1997; Holland et al.,
+2001). Therefore, the ability to process such information may differ
+across age groups, and thus these findings might not be directly gener­
+alizable to different ages and populations. Finally, our findings are
+reminiscent of the attribute amnesia effect (e.g., Chen & Wyble, 2015),
+where participants were aware of the key feature but were unable to
+report it, suggesting no memory traces of the attended but outdated
+information. However, our study differed from Chen and Wyble (2015)
+in three aspects: the attentional demands for key features (e.g., whether
+color/shape feature judgment was required), no explicit reporting of key
+features (assessing only implicit influence on search performance), and
+the inclusion of shorter SOAs. Future studies could adapt Chen and
+Wyble’s (2015) paradigm to test whether reduced SOAs allow explicit
+reporting of attended but outdated features.
+
+the work reported in this paper.
+Acknowledgements
+We would like to thank Ce Mo for his valuable suggestions during the
+research process. This work was supported by the National Natural
+Science Foundation of China [Grant Number: 32200879] and The MOE
+Project of Key Research Institute of Humanities and Social Sciences in
+Universities [Grant Number: 22JJD190006].
+Appendix A. Supplementary data
+Supplementary data to this article can be found online at https://doi.
+org/10.1016/j.jml.2025.104668.
+Data availability
+Data and analysis scripts are available via the following link:
+https://osf.io/2759m/?
+view_only=5ba8b916233f4589b6b8cf2a67f15bec.

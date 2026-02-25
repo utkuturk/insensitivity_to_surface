@@ -1,0 +1,1599 @@
+mechanisms in a way that accommodates different units during
+phonological encoding.
+There is considerable evidence of cross-linguistic differences in terms
+of what phonological unit gets selected immediately after lemma se­
+lection. To unify models of phonological encoding and accommodate
+cross-linguistic differences at this stage, O’Seaghdha (2015) refer to the
+first selectable phonological units below the word as proximate units. In
+Indo-European languages (e.g., English), studies of various paradigms
+(e.g., speeded repeated production, form preparation, picture-word,
+
+masked priming, speech errors, see Alderete and O’Séaghdha, 2022
+for review) suggest that the proximate units are segments (i.e., indi­
+vidual consonants and vowels). To simplify the nuanced discussion and
+to be consistent with the study designs in the current work, we focus our
+review on the production of monosyllabic words.
+Segments as the proximate unit in Indo-European languages
+Sevald and Dell (1994) examined how English speakers plan
+phonological units in the production of monosyllabic consonant–vowelconsonant (CVC) words using a speeded repeated production task, in
+which participants repeated four-word sequences as many times as
+possible in eight seconds. The experiments manipulated the repetition
+pattern of the onset C, V, and final C, such that each independently
+followed an AAAA, ABBA, or ABAB pattern (i.e., three different levels of
+repetition frequency, in descending order). The general logic of the
+paradigm is that repetition benefits (faster speech) are expected when a
+phonological unit is reused more frequently, reflecting easier processing
+compared to alternating between different units. On the other hand,
+
+* Corresponding author at: Department of Psychiatry, University of California, 9500 Gilman Drive, La Jolla, San Diego, CA 92093, United States.
+E-mail address: chl441@health.ucsd.edu (C. Li).
+https://doi.org/10.1016/j.jml.2025.104690
+Received 23 March 2024; Received in revised form 12 August 2025; Accepted 13 August 2025
+Available online 16 August 2025
+0749-596X/© 2025 Elsevier Inc. All rights are reserved, including those for text and data mining, AI training, and similar technologies.
+
+C. Li et al.
+
+Journal of Memory and Language 145 (2025) 104690
+
+repetition may also pose a cost due to spreading activation of similar but
+nonidentical planning sequences, which results in selection difficulty
+among these candidates (see the phonological competition model;
+O’Seaghdha, et al., 1992; Peterson, 1991; Peterson et al., 1989). For
+example, repeating the onset /p/ in PICK PUN PICK PUN may benefit
+speech production; however, when producing PUN, the repeated /p/
+cues /i/ because /i/ had just been produced after /p/ in PICK, leading to
+a competition with the intended /u/. This inhibitory effect may
+outweigh the benefits from the repetition of /p/, an effect sometimes
+termed sequentially cued competition. Critically, because it is the repeti­
+tion patterns of segments that determine these benefits and costs, and
+this paradigm identifies functional units that are directly selected for
+and assembled during phonological encoding, we infer that segments
+serve as proximate units in English (see also O’Seaghdha & Marin,
+2000).
+Similarly, results from the form preparation task (also known as the
+implicit priming paradigm) also provides evidence that segments are the
+proximate units in Indo-European languages such as English and Dutch
+(Meyer, 1990, 1991; Roelofs & Meyer, 1998). In this paradigm, partic­
+ipants studied pairs of prompt-target words in blocks, with the target
+words in a block being either homogeneous or heterogeneous with
+respect to the proposed proximate unit. Borrowing examples from the
+English experiment in O’Seaghdha et al. (2010), when the onset segment
+was the proposed proximate unit, the target words in the homogeneous
+block all shared the same onset (night-day; tint-dye; bread-dough; wetdew), whereas the target words in the heterogeneous block had different
+onsets (night-day; snap-pea; grain-rye; pig-sow). Participants were asked
+to memorize prompt-target pairs in study blocks. At test, participants
+were presented with each prompt word and asked to produce the cor­
+responding target. Participants’ reaction times for the target words were
+faster when the onset segments were homogenous rather than hetero­
+geneous, as speakers engaged in form preparation using onset segments.
+This form preparation benefit implies that onset segments are the first
+phonological units selected and buffered in production − - that segments
+are the proximate units in English. Compared to the speeded repeated
+production task, the form preparation task only measures reaction time
+and does not require repeated production of phonological competitor
+pairs, focuses more on planning and elicits less activation of competi­
+tors, and thus generally obtains facilitatory priming from repeating
+segments.
+
+atonal syllable overlap between the prime and the first syllable of a
+disyllabic target led to faster naming times (i.e., ba4 primes ba2 but not
+bai2; bai4 primes bai2 but not ba2), even when orthography or tone did
+not overlap (Chen et al., 2003). Chen et al. (2016) also showed syllabic
+priming effects and suggested that sharing initial consonants elicits
+interference, if anything, perhaps indicative of competition among
+similar coactivated words or syllables. Once again, masked priming
+suggests that proximate units are segments in English and atonal sylla­
+bles in Mandarin.
+The representation and processing of tone in Mandarin Chinese
+In addition to the syllable versus segmental contrast, another key
+difference between Mandarin and the languages that most production
+theories have been developed for is that Mandarin is a tonal language, in
+which tones are lexical and affect meanings. For example, in Mandarin,
+the CV sequence ma can mean “mother”, “hemp”, “horse”, or “to scold”
+depending on which of the four tones it is produced with. Despite the
+prevalence of tone in African (Odden, 1995) and East Asian languages
+(Yip, 1995), its representation in phonological encoding and the
+cognitive mechanisms involved in selecting or integrating tone with
+other phonological elements has not been well-established.
+Earlier linguistic theories diverge on how tone is represented and
+processed in speech production. Halle and Stevens (1971) posited that
+tones are encoded as phonological features of vowels, whereas Leben
+(1978) argued that tones are representationally independent of vowels
+but realized as phonetic features of vowels (i.e., suprasegmental
+features).
+A sizable portion of the existing literature on tone representation has
+relied on analyzing speech errors. One view is that tone functions
+similarly as segments and is as susceptible to selection errors just as
+consonants and vowels are (e.g., Alderete et al., 2019; Wan & Jaeger
+1998; Moser, 1991; Shen, 1993). Some studies have reported various
+movement errors of tone in context (i.e., perseverations, anticipations,
+and exchanges), which are also commonly found with consonants and
+vowels in English (Fromkin, 1971). For example, in Mandarin natural­
+istic conversations, Wan and Jaeger (1998) found that lexical sub­
+stitutions and blends have the same tones twice as often as expected by
+chance. In tone errors, such as the perseveration error in which tui1 jian4
+han2 (推荐函, meaning letter of support) was incorrectly produced as tui1
+jian4 han4 (推荐汗, ungrammatical and meaning recommending some
+sweat), tone slipped while the segmental content remained intact (i.e.,
+Tone 4 from “jian” perseverated and substituted Tone 2 while “han”
+remained as intended). This suggests that tone is sensitive to context like
+segments are.
+Another view is that tone is part of the metrical frame that segments
+slot into right before articulation and is thus relatively immune to se­
+lection errors (e.g., Chen, 1999; Kember et al., 2015; Roelofs, 2015). For
+example, Chen (1999) reported that tone errors were rarer than segment
+errors, and that the majority of tone errors were perseverations, whereas
+segmental errors were primarily anticipations. That is, tones were found
+to be both quantitatively and qualitatively different from segments,
+which is incompatible with the idea of tone engaging in segment-like
+early encoding. Chen proposed that tone is initially represented as
+part of the phonological frame similar to lexical stress in English (i.e.,
+tone is suprasegmental) and later translated into the phonetic configu­
+ration of the vowel during phonetic encoding.
+Investigations using controlled experimental methods shows that
+these patterns of spontaneous speech error collection are not due to
+perceptual biases (Chen, 1999; Alderete & Davies, 2019). One such
+method is a tongue twister task that carefully manipulates the patterns
+of segments and tones. Using a tongue twister paradigm, Kember et al.
+(2015) designed 120 four-character Mandarin sequences that rotated
+pairs of initial segments or tones, or both, across ABAB or ABBA format,
+across positions (e.g., “突苦哭土” (tu1 ku3 ku1 tu3) comprises ABBA
+initial segments and ABAB tones). Participants produced almost three
+
+Syllables as the proximate unit in Mandarin Chinese
+Also using the form preparation task, repeated onset segments did
+not facilitate the production of Chinese words (e.g., Chen et al., 2002).
+Instead, benefits only appeared when the whole syllable repeated, with
+or without tone repetition (e.g., qing1-liang2; qing1-sheng1; qing1ting2; qing1-jiao1, or fei1-ji1; fei2-pang4; fei3-cui4; fei4-yan2), sug­
+gesting that atonal syllables are proximate units in Mandarin Chinese. In
+contrast, syllables are represented as abstract schemas in English (Sevald
+et al, 1995). This cross-language difference in the role of segment versus
+syllable might be due to a number of different linguistic characteristics
+of these languages. For example, the structure of a Chinese syllable is
+simpler (e.g., no consonant clusters like sk-, spl-), the number of Chinese
+syllables is much smaller than in English, syllable boundaries are un­
+ambiguous, and re-syllabification occurs only in English (e.g., read a
+book is re-syllabified as rea-da-book). In particular, according to the
+WEAVER++ model (Levelt et al., 1999), only after all the phonemes are
+retrieved can speakers determine the arrangement of syllables in a word.
+In Mandarin Chinese, the lack of re-syllabification may allow speakers to
+retrieve the syllable as an integral unit at the beginning of phonological
+encoding (also see discussion in Li, Wang & Idsardi, 2015).
+Studies using a masked priming paradigm shows consistent results.
+In word naming, the onset priming effect was robust in English (Forster
+& Davis, 1991) but not in Mandarin (Verdonschot et al., 2013). Instead,
+a syllabic priming effect was found in Mandarin masked priming, where
+2
+
+C. Li et al.
+
+Journal of Memory and Language 145 (2025) 104690
+
+times as many segment errors as tone errors, which validates Chen’s
+(1999) claim that segments are more prone to error than tones, even
+with a task that supposedly affords both elements the same opportu­
+nities for error due to competition between recently used components in
+the same tongue twister sequence (e.g., k vs. t for segments and tone 1
+vs. tone 3 for tones in the above example). (It is fair to note that part of
+this disparity may be because Mandarin possesses a much larger in­
+ventory of consonants and vowels than tones.).
+Evidence from the form preparation paradigm which measures re­
+action time rather than speech errors, described above, also indicates
+that tone is a part of metrical frame in phonological encoding, as well as
+that the smallest phonological unit that benefits Mandarin production
+through repetition is the atonal syllables (rather than tone-bearing syl­
+lables; Chen et al., 2002; O’Seaghdha et al., 2010). Critically, although
+syllable + tone elicited larger form preparation effects than atonal syl­
+lables, tone alone did not lead to form preparation effects (Chen et al.,
+2002). Accordingly, Chen and Chen (2013) proposed a modified Levelttype production model that includes the proximate principle, suggesting
+that atonal syllable representations are the first to be selected at the
+stage of word form encoding in Chinese, and tone serves as a part of the
+metrical frame, similar to stress in Indo-European languages. Tonal
+syllables are formed later through unit-to-frame associations. This
+modified Levelt-type production model is also supported by ERP evi­
+dence in a Cantonese picture-word interference paradigm – interference
+from tonal versus atonal syllables had similar effects in a stimuluslocked analysis, which is more sensitive to early-stage stimulus pro­
+cessing; but the two conditions produced different effects in responselocked analysis, which is more sensitive to later processing closer to
+overt naming (Wong et al., 2023). Using a primed picture naming task, a
+recent ERP study on Mandarin word production also suggested that
+tone-to-syllable integration happens in a later ERP time window (Chen
+& Zhang, 2025).
+Note that these differences between tonal and atonal languages do
+not require that Chinese production arise from a fundamentally different
+architecture. Indeed, Roelofs (2015) accounted for form preparation
+effects in different languages using WEAVER++ simulations, including
+English, Mandarin Chinese, and Japanese with three different proximate
+units, supporting an inclusive model that accommodates cross-language
+difference in phonological encoding. Though the WEAVER++ model
+did not involve the concept of proximate unit, it proposed that phono­
+logical contents (e.g., segments or syllables) and frames (e.g., tones) are
+activated in a parallel fashion, followed by serial content-to-frame as­
+sociation (Levelt et al., 1999). At the phonological encoding stage, the
+cross-language difference was revealed in what phonological content
+was retrieved and what served as the frames, similar to the proximate
+unit principle and was incorporated in Roelofs’s (2015) Mandarin model
+directly. The proximate principle also explained the role of other
+phonological units. For example, in Chinese production, phonemic
+segments are included as non-proximate units that are selected later
+than the proximate unit — the atonal syllable. An attempt to prepare for
+the segment in advance would violate the standard operating procedure
+of phonological encoding in Chinese and may result in aborting the
+procedure and restarting (this does not happen in English, which does
+not have a phonological unit smaller than the proximate unit), some­
+times leading to inhibitory effects when the onset repeats (Chen & Chen,
+2013, Experiment 2) or when the rime repeats (Li, Wang, & Idsardi,
+2015).
+
+syllables when producing multiple monosyllables continuously, which
+may improve the modified Levelt-type production model with the
+proximate principle (Chen & Chen, 2013). Specifically, we adapted
+Sevald and Dell’s (1994) paradigm of speeded repeated production of
+monosyllabic words and asked Mandarin speakers to produce C + V +
+tone sequences with different repetition patterns. Since Mandarin
+proximate units and tone representations (or phonological encoding
+during speech production) have not been studied using production
+times, we first used a design that entertained all possibilities. Experi­
+ment 1 was thus exploratory in nature, exploring possibilities that
+included but were not limited to C, V, and tone functioning as inde­
+pendent units in phonological encoding, CV functioning together as one
+integrated syllabic unit, or tone functioning as a phonological feature of
+V or CV syllable. Although not all possibilities are plausible (e.g., all
+segments in a syllable function together as a whole unit seemed more
+possible than each segment functions separately), we included all
+combinations, given that the experimental design provides the oppor­
+tunity to do so. Experiments 2 and 3 are confirmatory tests of results in
+Experiment 1 that further examines how different phonological units are
+encoded in speech production.
+The first possibility is that tone is represented and processed with
+segments. Due to pitch changes having a larger influence on how a
+vowel is articulated relative to how a consonant is articulated (Lin et al.,
+2013), it is more likely that (if it is represented with segments) tone
+would be attached to vowels rather than to consonants. If tone is rep­
+resented together with vowels, that means there are as many copies of
+vowel representations as there are tones (e.g., /a/1, /a/2, /a/3, /a/4, /i/
+1, /i/2, /i/3, /i/4, etc.). Assuming the pinyin-based analysis that there
+are five monophthongs in Mandarin, that would mean there are 20
+vowel representations in total. To fit this possibility in with the form
+preparation evidence showing that atonal syllables can be initially
+selected, it may be that the atonal syllable is selected as a whole unit at
+first, then non-proximate units were processed, including the onset
+(consonant) and vowel with tone.
+The second possibility is that tone is represented together with the
+whole syllable, so that there are as many copies of syllable representa­
+tions as there are tones (e.g., /ba/1, /ba/2, /ba/3, /ba/4, /bi/1, /bi/2,
+/bi/3, /bi/4). This possibility might be less likely given strong evidence
+of form preparation benefits from repeated syllables alone regardless of
+tone.
+These two possibilities benefit from not needing an additional inte­
+gration process, but they do not seem computationally efficient,
+considering the increase in representational load. They assume that
+speakers of tonal languages potentially have to hold many times more
+representations in their syllabary or library of segments than strictly
+necessary, based on the segmental inventory of the language. That leads
+to the third possibility, that tone is represented independently of sylla­
+bles and segments but needs to be integrated with them instead. This
+possibility necessitates specifying the timing and mechanism through
+which tone is combined with the rest of the phonological units, but it
+achieves computational efficiency by avoiding duplicates of units with
+similar or identical features (other than tone).
+In the context of a speeded repeated production task, tone being
+attached to vowels or syllables would predict that production would be
+slower if more distinct tones are in a sequence, as a result of increased
+competition between vowels or syllables with different tones. A specific
+example is that if tone is attached to vowels, V + tone repeating in AAAA
+should elicit a faster speech rate than other V + tone patterns regardless
+of how the initial C repeats; if tone is attached to the entire CV syllable,
+only the condition where the entire CV syllable with tone repeats should
+yield benefits. In contrast, if tone is represented independently of syl­
+lables or vowels, the repetition pattern or reuse of tone may not neces­
+sarily have an impact on production times (i.e., tone repeating as AAAA
+may elicit similar production speed compared to tone repeating in ABAB
+or ABBA when the syllable sequence stays the same), if speakers have to
+integrate a tone every time they produce a syllable, regardless of the
+
+The present study
+Given that speech error studies have revealed different patterns of
+tone and segment errors, and that form preparation studies only measure
+onset latency, the current work aims to investigate Mandarin phono­
+logical processing using a production time measure. In particular, we
+used a method that further lends insights into the representation and
+online processing of tone, focusing on how tone is integrated with atonal
+3
+
+C. Li et al.
+
+Journal of Memory and Language 145 (2025) 104690
+
+pattern of the sequences.
+
+Table 2
+Example trials of the 27 conditions from phoneme set 1.
+
+Experiment 1: Exploration of consonant, vowel, and tone
+encoding
+In Experiment 1, we adopted a full factorial design to explore how
+Mandarin speakers encode phonological information in speech pro­
+duction. Following Sevald and Dell (1994), we used monosyllabic words
+and asked participants to produce C + V + tone sequences (resembling
+the English C + V + C sequences in Sevald & Dell, 1994) of different
+repetition frequency patterns.
+Method
+Participants
+Fifty-eight undergraduates from the University of California San
+Diego participated in the experiment in exchange for course credit.
+Fourteen participants were excluded from our analyses because they
+either did not produce more than 50 % usable data (exclusion criteria
+explained below in Coding and Data Analysis), or had extensive prior
+knowledge of tonal languages other than Mandarin (including
+Cantonese). All 44 remaining participants indicated that they were
+native Mandarin Chinese speakers with little to no exposure to other
+tonal languages, and that they moved to the US after the age of 15.
+Materials and design
+We used a word sequence repetition task (adapted from Sevald &
+Dell, 1994) to assess the effects of the repetition frequency of each po­
+sition (consonant, vowel, or tone) and their interaction on speech rate.
+Materials in this task were four-syllable sequences. All four-syllable se­
+quences comprised semantically-unrelated monosyllabic words (i.e., all
+sequences were nonwords) with no alternate pronunciation and were
+easy to read, so that semantic processing and orthographic difficulty
+would not affect performance. Additionally, we avoided Tone 3 (due to
+tone sandhi) and polyphones. The study used a within-subjects, 3 (C
+Pattern) x 3 (V Pattern) x 3 (Tone Pattern) factorial design, such that
+each of the three Positions of each monosyllabic word (C, V, and tone;
+generated from three different phoneme sets) repeated independently in
+one of three repetition patterns (AAAA, ABBA, or ABAB). This created 27
+possible combinations for each phoneme set. The experiment used three
+phoneme sets, so that there were 81 trials in the experiment. Each
+phoneme set consisted of two sounds in each position, and three coun­
+terbalancing lists were constructed to randomize which sound in each
+position was arbitrarily assigned as Sound A or Sound B in each repe­
+tition pattern across participants. Table 1 shows the pinyin of the sounds
+in the three phoneme sets. Taking Phoneme Set 1 as an example, if the C
+repeated in a AAAA pattern (b__b__b__b__), V in a ABBA pattern
+(_a__i__i__a_), and tone in a ABAB pattern (__2__1__2__1), the resulting fourword sequence would be “拔逼鼻巴” (ba2 bi1 bi2 ba1). Table 2 includes
+27 example trials from one Phoneme Set.
+
+Table 1
+Sounds in each phoneme set.
+Phoneme Set 2
+
+Phoneme Set 3
+
+C
+
+V
+
+Tone
+
+C
+
+V
+
+Tone
+
+C
+
+V
+
+Tone
+
+b
+d
+
+a
+i
+
+2
+1
+
+n
+t
+
+i
+u
+
+2
+4
+
+l
+p
+
+a
+u
+
+1
+4
+
+Characters
+
+C
+pattern
+
+V
+pattern
+
+Tone
+pattern
+
+CV
+pattern
+
+ba2 ba2 ba2
+ba2
+ba2 ba1 ba1
+ba2
+ba2 ba1 ba2
+ba1
+ba2 bi2 bi2
+ba2
+ba2 bi1 bi1
+ba2
+ba2 bi1 bi2
+ba1
+ba2 bi2 ba2
+bi2
+ba2 bi1 ba1
+bi2
+ba2 bi1 ba2
+bi1
+ba2 da2 da2
+ba2
+ba2 da1 da1
+ba2
+ba2 da1 da2
+ba1
+ba2 di2 di2
+ba2
+ba2 di1 di1
+ba2
+ba2 di1 di2
+ba1
+ba2 di2 da2
+bi2
+ba2 di1 da1
+bi2
+ba2 di1 da2
+bi1
+ba2 da2 ba2
+da2
+ba2 da1 ba1
+da2
+ba2 da1 ba2
+da1
+ba2 di2 bi2
+da2
+ba2 di1 bi1
+da2
+ba2 di1 bi2
+da1
+ba2 di2 ba2
+di2
+ba2 di1 ba1
+di2
+ba2 di1 ba2
+di1
+
+拔拔拔拔
+
+AAAA
+
+AAAA
+
+AAAA
+
+AAAA
+
+拔巴巴拔
+
+AAAA
+
+AAAA
+
+ABBA
+
+AAAA
+
+拔巴拔巴
+
+AAAA
+
+AAAA
+
+ABAB
+
+AAAA
+
+拔鼻鼻拔
+
+AAAA
+
+ABBA
+
+AAAA
+
+ABBA
+
+拔逼逼拔
+
+AAAA
+
+ABBA
+
+ABBA
+
+ABBA
+
+拔逼鼻巴
+
+AAAA
+
+ABBA
+
+ABAB
+
+ABBA
+
+拔鼻拔鼻
+
+AAAA
+
+ABAB
+
+AAAA
+
+ABAB
+
+拔逼巴鼻
+
+AAAA
+
+ABAB
+
+ABBA
+
+ABAB
+
+拔逼拔逼
+
+AAAA
+
+ABAB
+
+ABAB
+
+ABAB
+
+拔达达拔
+
+ABBA
+
+AAAA
+
+AAAA
+
+ABBA
+
+拔搭搭拔
+
+ABBA
+
+AAAA
+
+ABBA
+
+ABBA
+
+拔搭达巴
+
+ABBA
+
+AAAA
+
+ABAB
+
+ABBA
+
+拔笛笛拔
+
+ABBA
+
+ABBA
+
+AAAA
+
+ABBA
+
+拔低低拔
+
+ABBA
+
+ABBA
+
+ABBA
+
+ABBA
+
+拔低笛巴
+
+ABBA
+
+ABBA
+
+ABAB
+
+ABBA
+
+拔笛达鼻
+
+ABBA
+
+ABAB
+
+AAAA
+
+ABCD
+
+拔低搭鼻
+
+ABBA
+
+ABAB
+
+ABBA
+
+ABCD
+
+拔低达逼
+
+ABBA
+
+ABAB
+
+ABAB
+
+ABCD
+
+拔达拔达
+
+ABAB
+
+AAAA
+
+AAAA
+
+ABAB
+
+拔搭巴达
+
+ABAB
+
+AAAA
+
+ABBA
+
+ABAB
+
+拔搭拔搭
+
+ABAB
+
+AAAA
+
+ABAB
+
+ABAB
+
+拔笛鼻达
+
+ABAB
+
+ABBA
+
+AAAA
+
+ABCD
+
+拔低逼达
+
+ABAB
+
+ABBA
+
+ABBA
+
+ABCD
+
+拔低鼻搭
+
+ABAB
+
+ABBA
+
+ABAB
+
+ABCD
+
+拔笛拔笛
+
+ABAB
+
+ABAB
+
+AAAA
+
+ABAB
+
+拔低巴笛
+
+ABAB
+
+ABAB
+
+ABBA
+
+ABAB
+
+拔低拔低
+
+ABAB
+
+ABAB
+
+ABAB
+
+ABAB
+
+experimental task (modeled closely after Sevald & Dell, 1994) and went
+through five practice trials with each participant. The beginning of each
+trial was signaled by a fixation cross (presented for 200 ms) and a highpitched tone. Then, participants saw a four-syllable sequence written in
+Simplified Chinese characters centered on the screen, with the word “准
+备” (prepare) printed underneath for eight seconds. They were instruc­
+ted to silently rehearse the sequence during that period in preparation
+for the upcoming production phase. At the end of the eight seconds,
+participants heard three low-pitched tones and one high-pitched tone as
+a countdown signal for the production phase. The high-pitched tone and
+the disappearance of the word “准备” (prepare) signaled the beginning
+of the eight second long production phase, during which participants
+were instructed to produce the four-word sequence aloud repeatedly as
+quickly and as accurately as possible. At the end of the production phase,
+a high-pitched tone signaled the end of the trial. Participants pressed the
+
+Procedure
+Participants first completed a language history questionnaire, in
+which they indicated whether they identified as native speakers of
+Mandarin Chinese, whether they spoke any other tonal languages, and
+the age at which they moved to the US.
+Then, an experimenter explained the instructions of the
+
+Phoneme Set 1
+
+Pinyin
+
+4
+
+C. Li et al.
+
+Journal of Memory and Language 145 (2025) 104690
+
+spacebar to advance to the next trial whenever they were ready. (Note
+that the removal of the visual stimulus ensures that initial orthographic
+processing is completed before articulation begins, so that the produc­
+tion stage more purely reflects phonological rather than orthographic
+encoding.) The experimenter provided feedback to the participants for
+five practice trials before the participants completed the 81 experi­
+mental trials independently.
+
+Table 3
+Average production times and proportion of excluded trials of the 27 conditions.
+
+Coding and data analysis
+The spoken responses for each trial were audio-recorded and later
+coded into the dependent variable (speech rate) with the aid of Au­
+dacity, an audio processing program. Specifically, we manually counted
+the number of syllables produced within the eight second production
+period, excluding any production that overlapped with the beginning or
+terminal beep signal of each trial. Based on our goal to indirectly infer
+the proximate units of speech using speech rate when a sequence was
+correctly produced, we excluded 523 (14.67 %) trials which included
+speech errors, significant disfluencies (other than breathing, such as the
+inclusion of fillers or any other non-speech sounds or restarting a
+sequence), abnormal reaction times (below 150 ms or above 800 ms in
+response to the beginning signal) or other technical errors, resulting in
+3,041 (85.33 %) analyzable trials. Two counters (native Mandarin
+speakers) were each responsible for counting half of the trials and crosschecking the other half that the other counter initially counted. Of the
+analyzable trials, only 29 trials led to inter-counter disagreements,
+which were all resolved with a third round of counting. The syllable
+counts were then transformed into average production times per syllable
+by dividing 8,000 ms by the syllable count.
+The statistical analyses were conducted using R (R Core Team, 2014)
+and the lme4 package (Bates et al., 2014). In our main analysis,
+following Sevald and Dell (1994), we focused on average production
+times and used a linear mixed-effects model to analyze the effects of C
+pattern, V pattern, tone pattern, and their interactions. We attempted to
+use the maximal random effects structure for the models, and the models
+that converged included random intercepts for participants and items (i.
+e., lmer (AvgTime ~ O * V * Tone +(1|participant)+(1|item)). Each
+item refers to each four-syllable sequence.
+Data and analysis scripts are publicly available at https://osf.
+io/hqde6/.
+
+C
+pattern
+
+V
+pattern
+
+Tone
+pattern
+
+CV
+pattern
+
+Average
+production time
+(ms)
+
+Proportion of
+excluded trials
+
+AAAA
+AAAA
+AAAA
+AAAA
+AAAA
+AAAA
+AAAA
+AAAA
+AAAA
+ABBA
+ABBA
+ABBA
+ABBA
+ABBA
+ABBA
+ABBA
+ABBA
+ABBA
+ABAB
+ABAB
+ABAB
+ABAB
+ABAB
+ABAB
+ABAB
+ABAB
+ABAB
+
+AAAA
+AAAA
+AAAA
+ABBA
+ABBA
+ABBA
+ABAB
+ABAB
+ABAB
+AAAA
+AAAA
+AAAA
+ABBA
+ABBA
+ABBA
+ABAB
+ABAB
+ABAB
+AAAA
+AAAA
+AAAA
+ABBA
+ABBA
+ABBA
+ABAB
+ABAB
+ABAB
+
+AAAA
+ABBA
+ABAB
+AAAA
+ABBA
+ABAB
+AAAA
+ABBA
+ABAB
+AAAA
+ABBA
+ABAB
+AAAA
+ABBA
+ABAB
+AAAA
+ABBA
+ABAB
+AAAA
+ABBA
+ABAB
+AAAA
+ABBA
+ABAB
+AAAA
+ABBA
+ABAB
+
+AAAA
+AAAA
+AAAA
+ABBA
+ABBA
+ABBA
+ABAB
+ABAB
+ABAB
+ABBA
+ABBA
+ABBA
+ABBA
+ABBA
+ABBA
+ABCD
+ABCD
+ABCD
+ABAB
+ABAB
+ABAB
+ABCD
+ABCD
+ABCD
+ABAB
+ABAB
+ABAB
+
+278
+315
+304
+283
+269
+299
+281
+297
+287
+282
+283
+311
+270
+275
+276
+284
+281
+273
+279
+315
+277
+285
+286
+279
+281
+297
+273
+
+4%
+10 %
+7%
+11 %
+11 %
+15 %
+5%
+11 %
+11 %
+34 %
+27 %
+23 %
+18 %
+14 %
+13 %
+19 %
+17 %
+17 %
+11 %
+24 %
+8%
+15 %
+22 %
+15 %
+9%
+11 %
+14 %
+
+Table 4
+Mean production time (ms) and proportion of excluded trials (in parentheses) as
+a function of C, V, and tone repetition pattern.
+Pattern
+
+C
+
+V
+
+Tone
+
+AAAA (identical)
+ABBA (near repetition)
+ABAB (far repetition)
+
+290 (9 %)
+280 (20 %)
+285 (14 %)
+
+292 (16 %)
+270 (15 %)
+283 (12 %)
+
+280 (14 %)
+290 (16 %)
+286 (13 %)
+
+fewer errors in each condition than previous work using the same
+paradigm that focuses on error type analysis, we did not have enough
+power to conduct systematic comparisons between error types that may
+reveal time course of tone vs. segment encoding.
+Our results thus far have shown that speech rates in Mandarin pro­
+duction cannot be reliably predicted by repetition of each of the
+phonological elements alone. In addition, we obtained significant in­
+teractions between C and tone, χ2(4) = 23.64, p < .001; V and tone,
+χ2(4) = 27.12, p < .001; as well as a three-way interaction between C, V,
+and tone, χ2(8) = 23.04, p = .003. As described above, the repetition
+patterns in these three positions trended in different directions,
+rendering these interactions difficult to interpret in terms of repetition
+frequency alone. Moreover, these interactions suggest that perhaps the
+three phonological elements should not be treated as completely inde­
+pendent of each other. Thus, we conducted additional post-hoc analyses
+to explore whether the current data set could help to inform how
+phonological units are encoded in Mandarin production, by analyzing
+what groupings of C, V, and tone could better predict speech rate.1
+
+Results
+Our planned analysis revealed significant main effects of repetition
+pattern for all three positions: C, V, and tone. However, unlike English,
+more frequent repetition did not necessarily lead to faster speech rate.
+Table 3 shows the by-subject mean production times for all 27 condi­
+tions, and Table 4 shows the marginal means for C,V, and tone repetition
+patterns. Most strikingly, when C, V, and tone patterns were all AAAA,
+the speech rate was not the fastest (M = 278 ms; e.g., when both V and
+tone patterns were ABBA and the C pattern was AAAA, M = 269 ms). As
+can be seen, speech rate was the fastest when the C pattern was ABBA
+(280 ms), followed by ABAB (285 ms). Surprisingly, AAAA was the
+slowest (290 ms). The main effect of the C repetition pattern was sta­
+tistically significant, χ2(2) = 12.08, p = .002. Similarly for the V pattern,
+ABBA was the fastest (279 ms), followed by ABAB (283 ms), and finally
+AAAA (292 ms); the main effect of V repetition pattern was statistically
+significant, χ2(2) = 21.07, p < .001. Meanwhile, the tone repetition
+pattern followed a different trend, with AAAA being the fastest (280 ms),
+then ABAB (286 ms), and ABBA (290 ms); the main effect of tone
+repetition pattern was statistically significant, χ2(2) = 12.57, p = .002.
+The proportion of invalid trials of each condition are shown in Ta­
+bles 3 and 4. Although there is some trade-off between speed and ac­
+curacy/disfluency (e.g., the C pattern), the overall pattern of results
+cannot be explained as a speed-accuracy trade-off (e.g., when both C and
+tone patterns were AAAA and the V pattern was ABAB, speed and ac­
+curacy were similar to AAAA). Given that our dataset contained far
+
+Post-hoc analyses
+In light of the surprising findings from our planned analysis,
+particularly that the repetition frequency of the phonological elements
+(when they were treated as independent units) did not reliably predict
+speech rate, we explored the potential dependence between C, V, and
+1
+We also analyzed CV repetition pattern, which was not manipulated when
+we design Experiment 1. See the third post-hoc analysis below.
+
+5
+
+C. Li et al.
+
+Journal of Memory and Language 145 (2025) 104690
+
+tone in three post-hoc analyses.
+First, we explored the possibility of a speech rate advantage when
+there are covarying repetition patterns. That is, perhaps Mandarin
+speech production is more affected by whether different phonological
+units share the same repetition pattern or not, more so than what the
+exact pattern is. At this point, we have not yet established how exactly
+phonological units are encoded in Mandarin speech production, other
+than suggesting that (given the results of the planned analyses) it is
+highly unlikely that C, V, and tone function as independent units. Thus,
+in order to explore if and how Mandarin phonological elements may be
+dependent on each other, we recoded our data by analyzing two of the
+elements at a time (i.e., C and V, V and tone, and C and tone) and
+comparing production times in trials where those two elements either
+shared the same repetition pattern or not. The results showed that
+whether C and V shared the same pattern made no difference to speech
+rate (285.51 ms when C and V shared the same pattern and 285.17 ms
+they did not; 0.35 ms difference, z = -0.09, p = .93), whereas signifi­
+cantly faster speech rates were observed when C and tone shared the
+same pattern (277.73 ms for same and 289.06 for different; 11.33 ms
+difference, z = 3.05, p = .002), and when V and tone shared the same
+pattern (276.93 ms for same and 289.46 ms for different; 12.54 ms
+difference, z = 3.25, p = .001). Because C and V seemed to behave
+similarly in relation to tone, we additionally explored the notion that CV
+may together function as a syllabic unit. We once again recoded the data
+and compared trials in which tone shared the same repetition pattern
+with the syllables (i.e., CV treated as one combined unit) with other
+trials. We found that speech rates were also faster when CV shared the
+same pattern with tone (274.30 ms for same and 286.66 ms for different;
+12.36 ms difference, z = 2.15, p = .03).
+The set of comparisons above points towards two points: One, tone
+seemed to have a privileged status in speech production, which was
+easier when tone was “attached” to another element (i.e., shared the
+same repetition pattern with another element). Two, given that the
+speech advantages we observed above were around the same magnitude
+regardless of whether tone was attached to C or V alone or CV as a unit,
+we suspected that C and V may not be represented independently in
+Mandarin, unlike in English. However, these results remained pre­
+liminary, as they were inferences that were not obtained from direct
+comparisons. Our second post-hoc analysis attempted to address this
+limitation by using a single model. Specifically, we re-classified the trials
+into five categories: trials in which only one tone was involved (tone
+pattern was AAAA), trials in which there were two tones (i.e., tone
+pattern was either ABBA or ABAB) that covaried with (i.e., shared the
+same repetition pattern with) C alone, V alone, both C and V, and neither
+C nor V.
+We compared the production times across the five covariation cat­
+egories, in order to assess whether trials involving two tones were slower
+than those involving only one, and whether covariation between tone
+and other elements produced any speech rate advantage. The results are
+shown in Fig. 1. Our model revealed that there was a statistically sig­
+nificant difference in speech rate among these five categories (χ2(4) =
+41.80, p < .001). Specifically, the effect was solely driven by the slow
+production times in the “neither” condition. Pairwise comparisons
+showed that there was no difference between trials that only contained
+one tone (279 ms; 1023 trials) and trials that contained two tones
+sharing the same repetition pattern as C alone (279 ms; 439 trials), V
+alone (279 ms; 448 trials), or both C and V (272 ms; 226 trials); pairwise
+comparisons ps > .05. Importantly, the trials involving two tones that
+did not share repetition pattern with any other element (302 ms; 905
+trials) were significantly slower than all other conditions: 22.39 ms
+slower than one tone (z = -5.22, p < .001), 22.24 ms slower than sharing
+with C alone (z = -4.98, p < .001), 23.06 ms slower than sharing with V
+alone (z = -4.95, p < .001), and 29.7 ms slower than sharing with both C
+and V (z = -4.89, p < .001).
+These comparisons confirmed that speech production was signifi­
+cantly more difficult when tone did not covary with other elements.
+
+Fig. 1. Average production times for trials with one tone only (e.g., ba2 ba2
+ba2 ba2), two tones that covaried with both C and V (e.g., ba2 di1 di1 ba2), C
+Alone (e.g., ba2 da1 da1 ba2), V Alone (e.g., ba2 bi1 bi1 ba2), and Neither (e.g.,
+ba1 bi2 bi1 ba2)Note. Error bars represent standard errors.
+
+Additionally, based on the lack of additive speech rate advantage when
+tone shared the repetition with both C and V, compared to with C or V
+alone, C and V may form a single proximate unit together in Mandarin.
+Notably, trials involving one tone were not significantly different from
+trials involving two tones, with the exception of the “neither” condition,
+suggesting that it may not be the number of unique phonological units
+but rather the CV-tone pairing that affects Mandarin production. In
+particular, we speculated that perhaps trials the “neither” condition (e.
+g., ba2 bi1 ba1 bi2: AAAA for C, ABAB for V, and ABBA for tone) was
+particularly difficult because it is only in this condition that each CV was
+paired with two different tones in the sequence (e.g., ABAB for CV and
+ABBA for tone), such that speakers had to repeatedly “detach” a tone
+from a CV syllable reattach another tone in preparation for the next time
+it appears in the sequence, slowing production (ba was paired with tone
+2 and then tone 1 within the same production sequence). In all other
+conditions, each CV syllable is only paired with one tone (see Fig. 1). We
+refer to this speculation as the reattachment hypothesis and explored the
+validity of it in the third post-hoc analysis.
+In the third and final post-hoc analysis, we redefined repetition using
+CV syllable as a unit. Notably, in addition to the previous patterns
+(AAAA, ABBA, and ABAB), this way of coding now presents a new
+possibility of the ABCD pattern (e.g., ba_di_da_bi_; previously coded as
+ABBA for C and ABAB for V; see Table 2). More importantly, we also
+classified trials into conditions where “reattaching” is required versus
+not. Reattaching is defined by whether each unique CV syllable is only
+paired with one (i.e., no reattaching) versus two tones in the sequence
+(and thus requiring detaching from one tone and reattaching to another
+repeatedly).
+We assessed the effects of CV repetition pattern, reattaching, and
+their interaction on production times. Fig. 2 shows the results. Consis­
+tent with what we have reported thus far, CV repetition pattern did not
+affect speech rate (χ2(3) = 6.15, p = .10) and there was thus no inter­
+action with reattaching (χ2(2) = 1.83, p = .40). Critically, we observed a
+main effect of reattaching (χ2(1) = 16.37, p < .001), such that speech
+rate was on average 23 ms slower when each CV syllable was required to
+reattach to a different tone within the sequence (301 ms), compared to
+when no reattaching was required (278 ms).
+Discussion
+The planned analyses in Experiment 1 showed that the repetition
+patterns in C, V, and tone trended in different directions, rendering in­
+teractions between these phonological elements. Most strikingly, pro­
+duction was not the fastest when all elements repeat in the AAAA
+6
+
+C. Li et al.
+
+Journal of Memory and Language 145 (2025) 104690
+
+in the experiment in exchange for course credit. Eighteen were excluded
+from our analyses because they either did not produce more than 50 %
+usable data (based on the same exclusion criteria in Experiment 1, noted
+above in Coding and Data Analysis), had extensive prior knowledge of
+tonal languages other than Mandarin, including Cantonese, or had un­
+stable internet connections. All 26 remaining participants indicated that
+they were native Mandarin Chinese speakers with little to no exposure to
+other tonal languages, and that they moved to the US after the age of 15.
+Materials and design
+The primary goal of Experiment 2 was to test the reattachment hy­
+pothesis with a simpler design. That is, we investigated whether speech
+rate was indeed slower when each CV was paired with more than one
+tone in a sequence (i.e., requiring reattaching). We used the same word
+sequence repetition task as Experiment 1, with the logic that slower
+speech rate indicates greater encoding difficulty. We adopted a withinsubjects, 2 (CV Number) x 2 (Tone Number) x 2 (Repetition Pattern)
+factorial design, such that the four-syllable sequences comprised either
+one or two CV units; either one or two tones; and when two CV units or
+two tones were involved, they either followed an ABBA or ABAB pattern.
+Out of the eight conditions, the two conditions that paired one CV with
+two tones were further coded as “requiring reattaching”, while the other
+six were recoded as “no reattaching required”. The materials were
+constructed using the nine phoneme sets in Table 5, counterbalancing
+across participants which sound was assigned as Sound A or Sound B in
+each repetition pattern. In sum, each participant contributed to 72 trials
+(i.e., 8 conditions x 9 Phoneme Sets). Table 6 shows the eight experi­
+mental conditions from Phoneme Set 1. Taking this set as an example,
+“拔巴巴拔” (ba2 ba1 ba1 ba2) and “笛低笛低” (di2 di1 di2 di1) were the
+two conditions that required each CV to detach from a tone and reattach
+to another within the sequence, with the former reattaching less
+frequently than the latter (i.e., reattaching every other word versus
+every word).
+
+Fig. 2. Average Production Times for Trials of Various CV Repetition Patterns
+that Required Reattaching Versus Not Note. Error bars represent stan­
+dard errors.
+
+pattern. These results suggest that the three phonological elements
+should not be treated as completely independent of each other. Sup­
+portively, the post-hoc analyses suggested that participants seemed to
+benefit from the conditions in which tone covaried with other phono­
+logical elements. C and V may function together as a single phonological
+unit in production, whose production difficulty relies on the pairing with
+tone. This hypothesis was supported by two key findings from post-hoc
+analyses: First, the covarying advantage was not additive. Tone co­
+varying with one segment or with the whole atonal syllable yielded the
+same benefits. Because changing one segment also changes the whole
+atonal syllable (e.g., ba vs. da are two different syllables, just as ba vs.
+di), this lack of additivity suggests that the critical point is whether the
+whole CV syllable changes. Second, regardless of the CV repetition
+pattern, production was slowed when a particular CV was paired with
+more than one tone in a sequence. In addition, the CV repetition pattern
+itself did not predict production speed. Therefore, we developed the
+Reattachment Hypothesis, which speculates that Mandarin speakers
+represent CVs (or atonal syllables) as “chunks,” programming each with
+tone upon phonetic encoding, so that producing the same chunk with
+more than one tone in a sequence is difficult. We simplified the design of
+Experiment 1 to directly test the reattachment hypothesis in Experiment
+2.
+
+Procedure
+The procedure was exactly the same as Experiment 1, except that the
+experiment was administered remotely over the internet, via Zoom.
+Instead of having the participants control the pace of the experiment in
+between trials, we constructed a video such that each trial was presented
+one after another without breaks. An experimenter showed the video to
+each participant using the screen share function, and the participant’s
+spoken responses were recorded. The preparation and the production
+durations remained unchanged from Experiment 1 (i.e., eight seconds
+each).
+
+Experiment 2: Investigation of the reattachment hypothesis
+In Experiment 2, we simplified the design by treating C and V as a
+single phonological unit, so that C and V always repeated in the same
+pattern. Adopting a full factorial design with this change (thus fewer
+combination possibilities or conditions), we first repeated the planned
+analyses in Experiment 1 to examine whether the repetition pattern of
+CV and/or tone might predict production speed, and tested the reat­
+tachment hypothesis to see whether participants would benefit from
+tone covarying with CV.
+
+Coding and data analysis
+Similar to Experiment 1, we manually counted the number of sylla­
+bles produced within the eight second production period, excluding any
+production that overlapped with the beginning or terminal beep signal
+of each trial. Based on our goal to indirectly infer the proximate units of
+speech using speech rate when a sequence was correctly produced, we
+excluded 331 (17.68 %) trials using the same exclusion criteria as
+
+Method
+Table 5
+Sounds in each phoneme set.
+
+Participants
+Our pre-registered target sample size (based on a power analysis2
+conducted with data from Experiment 1) was 26 participants. Forty-four
+undergraduates from the University of California San Diego participated
+
+Phoneme Set
+
+CV
+
+Tone
+
+Phoneme Set
+
+CV
+
+Tone
+
+1
+
+ba
+di
+ni
+tu
+la
+pu
+ti
+qu
+ma
+fu
+
+2
+1
+2
+4
+1
+4
+2
+4
+2
+4
+
+6
+
+du
+mi
+ke
+ju
+pa
+zu
+ji
+hu
+
+4
+2
+2
+4
+2
+1
+2
+4
+
+​
+
+​
+​
+
+​
+
+2
+2
+
+The power analysis was conducted through simulation based on the first
+experiment’s data, with the SimR package in Rstudio and using Monte Carlo
+simulations on a range of sample sizes (Green & MacLeod, 2016). Each simu­
+lation was run with a linear mixed effect model structure on the reattachment
+main effect, and results of all analyses showed that 26 participants would be
+enough to reach the 80% power threshold.
+
+3
+4
+5
+
+7
+
+7
+8
+9
+​
+
+C. Li et al.
+
+Journal of Memory and Language 145 (2025) 104690
+
+Table 6
+Example trials of the 8 conditions from phoneme set 1.
+Pinyin
+
+ba2 ba2
+ba2
+ba2
+ba2 di2
+di2
+ba2
+ba2 ba1
+ba1
+ba2
+ba2 di1
+di1
+ba2
+di2 di2
+di2 di2
+di2 ba2
+di2
+ba2
+di2 di1
+di2 di1
+di2 ba1
+di2
+ba1
+
+Characters
+
+Table 8
+Example trials of the 8 Examples (4 conditions) from Phoneme Set 1.
+
+No. of
+CV
+
+No. of
+Tone
+
+CV or tone
+repetition pattern if
+not AAAA
+
+Reattaching
+
+拔拔拔拔
+
+One
+
+One
+
+N/A
+
+No
+
+拔笛笛拔
+
+Two
+
+One
+
+ABBA
+
+No
+
+拔巴巴拔
+
+One
+
+Two
+
+ABBA
+
+Yes
+
+拔低低拔
+
+Two
+
+Two
+
+ABBA
+
+No
+
+笛笛笛笛
+
+One
+
+One
+
+N/A
+
+No
+
+笛拔笛拔
+
+Two
+
+One
+
+ABAB
+
+No
+
+笛低笛低
+
+One
+
+Two
+
+ABAB
+
+Yes
+
+笛巴笛巴
+
+Two
+
+Two
+
+ABAB
+
+No
+
+Experiment 1, resulting in 1541 (82.32 %) analyzable trials. Two
+counters (native Mandarin speakers) were each responsible for counting
+half of the trials and cross-checking the other half that the other counter
+initially counted. Of the analyzable trials, only 25 trials led to intercounter disagreements, which were all resolved with a third round of
+counting. The syllable counts were then transformed into average pro­
+duction times per syllable by dividing 8,000 ms by the syllable count.
+There were two major analyses in this experiment. First, we used a
+linear mixed-effects model to analyze the effects of the number of CV,
+Tone, Repetition Pattern, and their interactions on average production
+times. We used the maximal random effects structure, such that the
+resulting model included all the fixed effects as by-subject random
+slopes and the counterbalancing lists as the by-item random slope. This
+analysis allowed us to (as in Experiment 1) investigate whether the
+number of different phonological units involved and their repetition
+frequency affected speech rate. Second, we used another linear mixedeffects model to analyze the effects of reattaching and its interaction
+with the repetition pattern on speech rate. Again, we used the maximal
+random effects structure, which included reattaching, repetition
+pattern, and their interaction as by-subjects random slopes and the
+counterbalancing lists as the by-item random slope.
+
+Pinyin
+
+Characters
+
+CV repetition
+
+Tone repetition
+
+Reattaching
+
+ba1 di2 ba1 di2
+ba2 di1 ba2 di1
+ba1 di2 ba2 di1
+ba2 di1 ba1 di2
+ba1 di2 di2 ba1
+ba2 di1 di1 ba2
+ba1 di2 di1 ba2
+ba2 di1 di2 ba1
+
+巴笛巴笛
+拔低拔低
+巴笛拔低
+拔低巴笛
+巴笛笛巴
+拔低低拔
+巴笛低拔
+拔低笛巴
+
+ABAB
+
+ABAB
+
+No
+
+ABAB
+
+ABBA
+
+Yes
+
+ABBA
+
+ABBA
+
+No
+
+ABBA
+
+ABAB
+
+Yes
+
+Fig. 3. Average production times for the eight conditions of CVs, tones, and
+repetition patterns in experiment 2 note. Error bars represent standard errors.
+The blue bars indicate conditions that required reattaching, whereas red bars
+indicate conditions that did not require reattaching. (For interpretation of the

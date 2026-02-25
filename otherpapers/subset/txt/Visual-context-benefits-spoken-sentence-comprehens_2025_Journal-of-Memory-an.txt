@@ -1,0 +1,1323 @@
+Introduction
+Every day, we are surrounded by visual stimuli alongside linguisti­
+cally encoded information in spoken or written form. Most, if not all,
+linguistic processes are situated in an environment with a visual
+component: whether engaged in a conversation in a crowded café,
+watching a video with voice-over, or reading a newspaper on the subway
+– these are all prime examples of highly cross-modal experiences
+wherein information is concurrently encoded both visually and
+linguistically.
+Research on language processing across the lifespan has sought to
+identify which aspects of language may change during aging, and
+whether these changes manifest as improvements or declines (Nyberg
+et al., 2012; Reifegerste et al., 2022; Rey-Mermet & Gade, 2018;
+Sánchez-Izquierdo & Fernández-Ballesteros, 2021). Moreover, the
+developmental trajectories of cognitive skills underlying specific lin­
+guistic processes may indeed mediate age-related changes in language
+processing.
+Generally, lexical-retrieval difficulties are considered a hallmark of
+aging (see, e.g., Connor et al., 2004; Verhaegen & Poncelet, 2013), while
+
+the evidence for declines in other language domains, such as syntax, is
+more mixed (Campbell et al., 2016; Hardy et al., 2020; Poulisse et al.,
+2019). Furthermore, it appears that when non-syntactic cues (e.g.,
+plausibility) support the linguistically encoded interpretation of a sen­
+tence, comprehension performance in older and younger adults is
+comparable (Amichetti et al., 2016; Caplan & Waters, 2005; Campbell
+et al., 2016), suggesting that access to information from non-syntactic
+sources may remain relatively stable throughout the lifespan. One pro­
+posed explanation for this stability involves an age-related shift in the
+information sources (or “heuristics”) that older adults rely on during
+sentence comprehension (Beese et al., 2019; Stine-Morrow & Radvan­
+sky, 2017; van Boxtel & Lawyer, 2021). However, there is little research
+examining whether such a ‘syntactic-to-semantic-processing strategy
+shift’ (Beese, et al., 2019) extends to the use of visual information.
+In the remainder of the Introduction, we describe theoretical ac­
+counts of the interaction of utterance and scene during visually situated
+comprehension. We then briefly review research on the processing
+heuristics used during sentence comprehension across the adult lifespan
+and on the role of perceptual and visual information in older adults’
+sentence comprehension, before turning to the present study.
+
+* Corresponding author.
+E-mail address: zona@uni-potsdam.de (C.I. Zona).
+1
+Present address: Carlotta Isabella Zona, Potsdam Embodied Cognition Group, University of Potsdam, Building 14, room 6.22, Karl-Liebknecht-Str. 24-25, 14476,
+Potsdam, Germany.
+https://doi.org/10.1016/j.jml.2024.104576
+Received 14 February 2024; Received in revised form 17 August 2024; Accepted 2 October 2024
+Available online 10 October 2024
+0749-596X/© 2024 Elsevier Inc. All rights are reserved, including those for text and data mining, AI training, and similar technologies.
+
+C.I. Zona and J. Reifegerste
+
+Journal of Memory and Language 140 (2025) 104576
+
+Models of visually situated sentence comprehension
+
+et al., 2012; Eiteljoerge et al., 2019; Tomasello et al., 2007; Wellsby &
+Pexman, 2014), few studies have examined visually situated language in
+aging (see Münster & Knoeferle, 2017).
+
+Research on ‘situated’ language processing has considered language
+as naturally immersed in a visual environment (Knoeferle, 2019). The
+Constituent Comparison Model (CCM; Carpenter & Just, 1975) and the
+“CACTRAS” model (Clark & Chase, 1972; Trabasso et al., 1971) are early
+models of visuo-linguistic integration proposed to account for responsetime patterns of sentence-picture verification (Clark & Chase, 1972;
+Wannemacher, 1974). In this paradigm, participants respond to ques­
+tions such as Is this sentence true for this picture? Typically, congruent (i.
+e., yes) trials are responded to faster than incongruent trials. To explain
+this finding, these early models proposed that both sentences and de­
+pictions are represented as propositional constituents. During sentencepicture verification, visual and linguistic constituents are verified
+against each other (cf. the notion of spatial structure in Jackendoff,
+2002); the detection of incongruence between the two components
+triggers the re-initiation of the verification process, resulting in longer
+response times for incongruent trials (Carpenter & Just, 1975).
+The advent of on-line methodologies enabled researchers to inves­
+tigate the time course of the integration of visual and linguistic infor­
+mation during language processing (Spivey & Huette, 2016). The study
+of attention allocation, for example using the visual-world eye-tracking
+paradigm, has informed our understanding of the timing of linguistic
+processing. This method assumes that linguistic processing immediately
+directs the language user’s attention to visually available entities
+(Cooper, 1974). In turn, visual information has been shown to exhibit a
+pervasive influence on sentence processing, for example, for the reso­
+lution of referential (Sedivy et al., 1999; Spivey et al., 2002; Tanenhaus
+et al., 1995) and thematic-role ambiguities (Knoeferle et al., 2005;
+Knoeferle & Crocker, 2006). For instance, the difficulty associated with
+the processing of temporarily ambiguous instructions (e.g., Put the apple
+on the towel in the box) was shown to be influenced by the visual display –
+for example, whether one or two apples were presented visually
+(Tanenhaus et al., 1995). Importantly, and of relevance for the present
+paper, visual information has also been shown to interact with
+morphological-case processing for (predictive) thematic-role assign­
+ment (e.g., Kamide et al., 2003; Knoeferle et al., 2005; Knoeferle &
+Crocker, 2005, 2006). For instance, Knoeferle et al. (2005) monitored
+eye movements to visual scenes while participants listened to German
+Subject-Verb-Object/Object-Verb-Subject sentences, which are initially
+locally ambiguous regarding their thematic-role assignment (e.g., Die
+Prinzessin malt gleich den Fechter, "The princess.NOM/ACC will soon
+paint the.ACC fencer", i.e., "The princess will soon paint the fencer").
+Crucially, the princess was depicted either as painting a character and as
+being washed by another character. Participants used visual cues (the
+princess as agent of the painting action) to infer the upcoming referent
+(the fencer) at the verb, that is, before encountering the disambiguating
+case marker on the second NP’s determiner.
+The Coordinated Interplay Account (CIA; Knoeferle and Crocker,
+2006) offers a theoretical framework accounting for the mutual influ­
+ence of visual and linguistic information during utterance comprehen­
+sion. This model outlines a cyclic mechanism: Initially, as utterances are
+understood, the currently preferred interpretation of the sentence guides
+visual attention to the relevant entities in the environment. Then, ut­
+terance interpretation and visual entities are verified against each other,
+potentially leading to revisions of the interpretation based on the visual
+input. This interpretation is then used to form further expectations about
+upcoming items. Throughout this cycle, currently relevant information
+(e.g., prior context and visual entities) is stored in working memory
+(WM) and updated as the speech progresses and/or the display changes.
+While most prior work has focused on the time course of visuolinguistic integration, its consequences for thematic-role comprehen­
+sion have been investigated to a considerably lesser extent (Knoeferle
+et al., 2014; but see Kreysa et al., 2018; Zona & Felser, 2023). In addi­
+tion, whereas the interaction between language and visual cues during
+early developmental stages has received extensive attention (Borovsky
+
+Heuristics for sentence comprehension in healthy aging
+Findings regarding the effects of aging on syntactic comprehension
+are somewhat mixed. While some studies have reported age-related
+performance declines in sentence comprehension (e.g., Christianson
+et al., 2006; Poulisse et al., 2019), these may be confined to conditions of
+increased task demands (Beese et al., 2019; Reifegerste & Felser, 2017)
+or to participants with lower WM capacity (Peelle et al., 2010; StineMorrow et al., 2000; Reifegerste et al., 2017). Instead, some studies
+have found no age-related changes in syntactic processing, such as in
+younger and older individuals’ ability to revise interpretations based on
+agreement cues (Samu et al., 2017), or their propensity to develop
+syntactically and semantically coherent sentential representations
+(Davis et al., 2014; Tyler et al., 2010).
+For instance, Alatorre-Cruz et al. (2018) tested 30 younger and 30
+older adults (mean ages = 25.7 and 66.1 years, respectively) with a
+grammaticality-judgement task targeting adjective-noun gender agree­
+ment in Spanish, manipulating the length of the crucial adjective-noun
+dependency to examine the role of WM load. Older participants per­
+formed more slowly than younger participants, but both groups showed
+comparable accuracy rates, regardless of dependency length. In another
+study, Reifegerste et al. (2017, Exp. 2) asked 32 younger and 32 older
+adults (mean ages = 24.4 and 66.8, respectively) to perform grammat­
+icality judgments on written sentences containing agreement errors (e.
+g., *The letter to the friends were sent today). Older participants were less
+accurate than younger adults at noticing these agreement errors and
+showed disproportionate reading slow-downs at the critical word con­
+taining the error; importantly, both of these effects were driven by older
+participants’ WM capacity, with the effects being greatest for older in­
+dividuals with lower WM and comparable performance between
+younger adults and older adults with higher WM. Lastly, Fernandes et al.
+(2024) administered a spoken word-monitoring task in which 40
+younger and 40 older adults (mean ages = 23.1 and 69.6 years,
+respectively) listened to sentences and word strings that provided either
+high constraint (based on both semantics and syntax; I flipped the pan­
+cake with the spatula), low constraint (based only on syntax; I tried to
+quickly find the spatula), or no constraint (words in pseudorandom order;
+*Tried I find to quickly the spatula) for the word-monitoring task. The
+authors reported no age differences in the benefits conferred via syn­
+tactic (vs. no) constraints, indicating that both younger and older adults
+exploited syntactic cues to predict the category of the upcoming word.
+Importantly, older participants tended to outperform the younger group
+in the high-constraint condition, that is, when additional semantic cues
+were available. This latter tendency suggests that the use of semantic
+information during sentence processing is preserved in older adults, in
+line with studies reporting lifespan changes in comprehenders’ reliance
+on cues from different sources for text and sentence comprehension
+(Kemtes & Kemper, 1997; Stine-Morrow et al., 1996).
+Indeed, evidence suggests that older adults may rely on non-syntactic
+cues during comprehension more than younger adults (e.g., Amichetti
+et al., 2016, Exp. 1; Ayasse et al., 2021; Beese et al., 2019; Christianson
+et al., 2006; Poulisse et al., 2019; Rangel Ferrari et al., 2019; Yoon et al.,
+2015). For example, Beese et al. (2019; Exp. 2) compared younger and
+older adults’ propensity to utilize morphosyntactic and semantic con­
+straints during sentence comprehension. Participants were presented
+with written sentences or word lists, both of which consisted of either
+existing words or a mix of words and pseudowords, and then answered
+questions probing serial order position of the words in the sentence/
+word list they had just read (e.g., Did the word X come before the word Y?).
+While older adults showed overall lower accuracy than younger adults
+for words presented in sentences, no age differences in performance
+emerged for word lists. Importantly, younger and older adults did not
+2
+
+C.I. Zona and J. Reifegerste
+
+Journal of Memory and Language 140 (2025) 104576
+
+differ in the extent to which meaningful words (vs. non-words) facili­
+tated task performance, indicating that the ability to use semantic cues
+for the task was preserved in older adults. Lopukhina et al. (2022) found
+that older adults relied on semantic plausibility to a greater extent than
+did younger adults and adolescents during sentence reading, while both
+older and younger adults relied on syntactic attachment preferences to a
+similar extent.
+These findings suggest that the ability to make use of semantic in­
+formation is at least preserved with increasing age, and it may become
+more central to sentence comprehension, perhaps particularly so in the
+face of age-related declines in cognitive capacity. Thus, older adults may
+achieve sentence comprehension by relying increasingly on semantic
+relations between different sentence elements (Taler et al., 2009),
+plausibility (Amichetti et al., 2016), and other aspects of crystallized
+knowledge (e.g., ‘verbal intelligence’; Campbell et al., 2016).
+As for the neurocognitive mechanisms underlying such a hypothe­
+sized shift in heuristic strategies for comprehension, one influential
+proposal posits that older adults have reduced suppression of irrelevant
+information due to age-related declines in the connectivity of the fron­
+toparietal control network (Spreng et al., 2010; Campbell et al. 2012).
+Such network supports enhancement of brain activity associated with
+task-relevant information and the suppression of activity associated with
+task-irrelevant information (Gazzaley et al., 2005). Older adults have
+been found to exhibit preserved enhancement of brain activity associ­
+ated with processing task-relevant information, while suppression of
+activity related to task-irrelevant information was reduced in older
+adults, and especially those exhibiting disproportional WM deficits
+(Gazzaley, Cooney, Rissman & D’Esposito, 2005). During syntactic
+parsing, this may cause age-related difficulties in controlling interfer­
+ence from semantics- and inference-based interpretations that are stored
+in WM but have been disconfirmed by morphosyntactic markers. For
+example, when a noncanonical syntactic structure disconfirms the
+expectation for a canonical structure, older adults may have greater
+difficulties inhibiting the previously preferred canonical interpretation
+than younger adults. This line of research has also highlighted how
+enhanced susceptibility to distracting information need not be a disad­
+vantage, but it can also manifest as a benefit depending on the situation
+(Healey et al., 2008). Indeed, semantic and word-order information is
+often not irrelevant and relying on it can aid successful comprehension
+by contributing to “filling the gaps”, especially in situations that are
+taxing for WM and interference control (IC). As suggested by StineMorrow (2007), age-related shifts in heuristic strategies underlying
+comprehension may be finely tuned to achieve comprehension in the
+face of age-related cognitive declines in WM and IC abilities.
+For example, studies have shown greater advantages from a match­
+ing (vs. mismatching) visual depiction latencies of lexical processing in
+older (vs. younger) adults (Dijkstra et al., 2004; Madden and Dijkstra,
+2010), suggesting that the interference from task-irrelevant perceptual
+features may increase with increasing age, and that this may be helpful
+for task performance (see also Radvansky et al., 2001). Other evidence,
+however, has suggested that visuo-linguistic integration may represent a
+burden on older adults’ cognitive resources. Stine et al. (1990)
+compared free recall of spoken excerpts from television news broadcasts
+presented to 12 younger and 12 older adults (mean ages 18 and 68,
+respectively) either in isolation, alongside the corresponding video
+component, or alongside a written transcript of the excerpt. Of relevance
+here, younger participants’ recall was aided when the spoken informa­
+tion was augmented by video or transcript, indicating that visual in­
+formation facilitated younger adults’ recall of spoken language. In
+contrast, older adults did not benefit from either the video or the written
+transcript. Interestingly, comprehension differences between the age
+groups in the audio-only condition disappeared once participants’ WM
+capacity was considered. This latter result suggests that changes in
+cognitive abilities – rather than aging per se – play a crucial role in the
+comprehension of spoken sentences presented in isolation.
+To summarize, evidence on the integration of visual and linguistic
+
+cues for comprehension across the adult lifespan is scarce; moreover,
+this work has thus far focused on lexical processing, and we are not
+aware of any research that has examined the role of visual information
+for syntactic comprehension in aging. Additionally, previous studies
+have typically operationalized age as a categorical variable, contrasting
+(often relatively small) groups of younger/older adults. The present
+study seeks to address these gaps by investigating changes in syntactic
+comprehension, as well as in the use of visual-scene information, in a
+continuous-age sample (n = 153, age range = 18–70 years).
+The present study
+We investigated whether visual information benefits spoken sen­
+tence comprehension, and whether the size of such a benefit changes
+across the lifespan and/or as a function of varying levels of cognitive
+ability. We employed a 2 × 2 design with Sentence Structure (2 levels:
+subject-object, object-subject) and Visual Scene (2 levels: baseline, vi­
+sual scene) as within-participant factors. Participants listened to 24
+spoken sentences presented either in isolation (baseline) or alongside a
+photo of two characters acting out the action described by the sentence
+(visual scene) and were asked to respond to comprehension questions
+targeting agent identification.
+Subject-object (SO) and object-subject (OS) structures were subjectand object-extracted relative clauses (e.g., SO: Das ist der Koch, der die
+Braut verfolgt “This is the cook who follows the bride”; OS: Das ist der
+Koch, den die Braut verfolgt “This is the cook whom the bride follows”)
+used to model conditions of increased task demands, based on extensive
+evidence indicating greater processing difficulty for and less accurate
+comprehension of noncanonical OS (vs. canonical SO) relative-clause
+structures (including in German; Adelt et al., 2017; Mecklinger et al.,
+1995; Schriefers et al., 1995; Vos et al., 2001), and particularly so at
+older ages (e.g., Kemper & Liu, 2007; Obler et al., 1991; Stine-Morrow
+et al., 2000; Tun et al., 2009; Wingfield et al., 2003). We thus hypoth­
+esized that OS (vs. SO) clause structures would be associated with poorer
+comprehension performance (main effect of Sentence Structure), and
+perhaps particularly so at older ages (Sentence Structure × Age
+interaction).
+The interplay of WM and Interference Control (IC) has been argued
+to contribute to an individual’s ability to maintain task-related goals
+(Duell et al., 2018; Egner & Hirsch, 2005; Long & Prat, 2002; Miller &
+Cohen, 2001; Weldon et al., 2013), including specifically for the
+comprehension of object-extracted relative clauses in older adults (e.g.,
+Goral et al., 2011; Gordon et al., 2002; King & Just, 1991). This is
+because comprehenders of German assume that the first-mentioned
+referent in an utterance will take on the agent (rather than the pa­
+tient) role of an upcoming action (e.g., Schriefers et al., 1995).
+Encountering a relative pronoun in the accusative (den “whom,” vs.
+nominative, der “who”) form, as is the case in object-extracted relative
+clauses, disconfirms this expectation and requires participants to revise
+their preferred interpretation based on the case information. Such dis­
+confirmation engenders more interference as compared to subjectextracted clauses, in which the previously held interpretation is
+endorsed by the case information and no revision takes place. The ability
+to control interference from competing representations is then relevant
+for determining the amount and accuracy of the information that will be
+stored in WM. In turn, individual WM capacity will determine how well
+such interference-control mechanisms need to operate to support the
+comprehension of more complex syntax. To quantify these abilities in
+our sample, we computed a composite score of cognitive ability for each
+participant by averaging across their z-transformed WM scores and IC
+scores, providing an individual proxy of cognitive-ability levels. This
+approach also allowed us to keep as few collinear predictors as possible
+in our statistical models. Greater cognitive abilities are expected to be
+associated with better comprehension performance across the lifespan
+(main effect of Cognitive Score). Moreover, if our sentence-structure
+manipulation increases cognitive task demands, we might expect
+3
+
+C.I. Zona and J. Reifegerste
+
+Journal of Memory and Language 140 (2025) 104576
+
+individuals at the lower end of the cognitive-ability range to be more
+greatly affected by this manipulation than those at the higher end
+(Sentence Structure × Cognitive Score interaction).
+If increasing age yields declines in sentence comprehension, we
+should observe a main effect of Age yielding poorer performance across
+the cognitive-ability range, and potentially an interaction between
+Sentence Structure and Age, indicating that the detrimental effects of
+increasing age on comprehension performance might be more promi­
+nent in response to noncanonical OS structures. Further, if such agerelated declines are modulated by changes in cognitive abilities
+throughout the lifespan, age effects on comprehension might emerge
+only in individuals with relatively lower cognitive abilities (Age ×
+Cognitive Score interaction). This further prediction is in line with
+previous evidence for age-related declines in situations of increased
+demands and/or lower abilities to overcome such demands (e.g., Rei­
+fegerste et al., 2017).
+Turning to the visual scenes, we hypothesized that supporting visual
+information might yield overall improvements in sentence comprehen­
+sion (a main effect of Visual Scene), in line with predictions from the CIA
+and with previous studies that reported a benefit of matching visual
+information for lexical processing in both younger and older adults
+(Dijkstra et al., 2004; Madden & Dijkstra, 2010). Further, the benefits of
+visual information may become more evident for the comprehension of
+OS (vs. SO) structures (Sentence Structure × Visual Scene interaction),
+given the relatively greater syntactic complexity of the former versus the
+latter. For example, Knoeferle and Kreysa (2012) used visual-world eyetracking to investigate how comprehenders use deictic visual informa­
+tion (e.g., a speaker’s gaze directed towards the depiction of an up­
+coming sentence referent) to predict this referent. The authors found
+that visual cues enabled participants to accurately predict the upcoming
+referent in response to both SO and OS clause structures; while a base­
+line condition without deictic information yielded SO-OS differences in
+fixation latencies, this effect was neutralized in the presence of deictic
+cues.
+Turning to the interactive effects of age, based on prior studies that
+reported evidence for a heuristic shift in older adults’ sentence
+comprehension (from reliance on syntax to inference- and context-based
+reasoning), we explored whether this general pattern extends to agerelated increases in reliance on visual-scene information. Thus, we hy­
+pothesized that the facilitatory role of visual information may become
+more pronounced with increasing age (Visual Scene × Age interaction).
+Lastly, we also investigated the role of varying cognitive-ability
+levels in determining potential heuristic shifts, examining the hypoth­
+esis that visual-scene information might support comprehension per­
+formance particularly (or possibly exclusively) in situations of increased
+cognitive demands – that is, in response to noncanonical OS (vs. ca­
+nonical SO) structures (Sentence Structure × Visual Scene interaction),
+and/or in individuals with lower (vs. higher) cognitive abilities (Visual
+Scene × Cognitive Score interaction).
+
+normal vision (including intact colour vision). A computer-based
+adaptation of the German version of the Montreal Cognitive Assess­
+ment (MoCA; Nasreddine et al., 2005; German version: Thomann et al.,
+2018) was administered to limit the inclusion of participants with signs
+of age-related neurological impairment. No participants were excluded
+as a result of this screening, as all participants scored at least 26 out of 30
+points. MoCA scores were not considered in further analyses. Additional
+participant information is reported in Table 1, and the sample’s distri­
+bution over the age range is illustrated in Fig. 1.
+Materials
+The linguistic stimuli comprised spoken sentences recorded by a fe­
+male native speaker of German. The target sentences consisted of cop­
+ular sentences with a defining relative clause (see Table 2). The main
+clause introduced a human male referent, followed by a relative clause
+introducing a human female referent and a transitive verb. All referents
+(both in the main clause and the relative clause) were common nouns
+denoting professions (e.g., der Koch “the cook”) or ranks of nobility (e.g.,
+die Prinzessin “the princess”) that have gender-specific terms in German
+(e.g., der Koch vs. die Köchin “the cook”Masc vs. “the cook”Fem), or
+otherwise stereotypically gendered terms (e.g., die Braut “the bride”),
+and had masculine and feminine gender, respectively. To manipulate
+syntactic structure, half of the relative pronouns were in nominative
+case (der “who”Masc) and half in accusative case (den “whom”Masc),
+thereby forming subject-object-verb (SO) and object-subject-verb (OS)
+relative clauses, respectively. Only masculine nouns were included as
+pronoun antecedents because masculine singular pronouns always allow
+for unambiguous thematic role assignment in German, while feminine
+and neuter relative pronouns as well as plurals can render sentences
+ambiguous due to case syncretism.
+Each presentation list consisted of eight practice items, 24 target
+items, and 60 fillers (n = 92). An additional 56 items that were part of
+another project were intermixed with the other items; these are not
+discussed here. Thus, 148 items were presented in total. To deter par­
+ticipants from relying only on the visual scenes and responding without
+parsing the sentence, half of the visual scenes of filler trials depicted the
+sentence incorrectly. Sentence-picture incongruence in these items was
+realized in terms of the depicted action (n = 8), action direction (n = 12),
+or number/location mismatches (n = 8). All visual scenes depicted only
+the referents mentioned in the sentence. Item order within each list was
+fully randomized for each participant.
+Half of the spoken sentences were presented in isolation, and half
+alongside visual-scene depictions (see Table 2, “Visual Scene”). De­
+pictions consisted of photos of Playmobil© figurines performing actions,
+against a white background. The photos were taken in a well-lit room
+with a Canon EOS 40D digital camera and subsequently edited using the
+open-source software GIMP (GNU Image Manipulation Program) soft­
+ware (version 2.10.20; The GIMP Development Team, 2019). All pic­
+tures were cropped to a 1:1 width-to-height ratio, and their visual
+features were kept as similar as possible across the different conditions
+(e.g., characters’ size and location on the screen, their respective posi­
+tion, brightness, saturation of colour features, etc). Following each
+sentence presentation, participants saw a written probe question (in the
+passive voice) targeting agent identification (see Table 2, “Probe”). Half
+of the questions referred to the male and half to the female character.
+Half of the questions required a yes and half a no response.
+
+Methods
+Participants
+Participants were recruited through multiple channels, including the
+online participant recruitment platform of the University of Potsdam,
+web-based ads across Germany, and by directly contacting participants
+from previous experiments. All participants provided informed consent
+to participate in the study and received 10€/h or university credit as
+compensation.
+The final dataset included 153 participants, 99 women and 54 men,
+ranging between 18 and 70 years of age. All participants were native
+speakers of German and had not learned another language before the
+age of 5. Participants had received formal education in German for an
+average of 16 years (SD: 3, range: 7–25) and reported no perceptual,
+cognitive, or language-related impairments, and normal or corrected-to-
+
+Procedure
+Testing was conducted fully remotely due to the Covid-19 pandemic.
+The experiment was programmed in E-Prime 3.0 (Psychology Software
+Tools Inc., 2016) and conducted remotely through E-Prime Go 1.0
+(Psychology Software Tools Inc., 2020). Prior to the experiment, all
+participants completed a demographic questionnaire, providing infor­
+mation on their gender, date of birth, education (in years), native
+4
+
+C.I. Zona and J. Reifegerste
+
+Journal of Memory and Language 140 (2025) 104576
+
+Table 1
+Participant information by decade (means and SDs). WM and Stroop scores z-transformed and centred around their means. ‘Cognitive Score’ was computed by
+averaging across z-transformed WM and Stroop scores (and thus also represents a z-transformed score).
+Age
+Decade
+
+n
+
+Gender
+
+Age in years
+(SD)
+
+Education in years
+(SD)
+
+Cognitive Score
+(SD)
+
+Z-transformed WM score
+(SD)
+
+Z-transformed Interference control score
+(SD)
+
+18–29
+30–39
+40–49
+50–59
+60–70
+Total
+
+42
+21
+32
+26
+32
+153
+
+33F, 9 M
+16F, 5 M
+21F, 11 M
+14F, 12 M
+15F, 17 M
+99F, 54 M
+
+22 (3.16)
+34 (2.94)
+43 (2.97)
+55 (3.43)
+64 (2.86)
+44 (16.05)
+
+14 (3.10)
+18 (2.60)
+17 (3.26)
+16 (2.78)
+15 (3.03)
+16 (3.35)
+
+0.39 (0.50)
+0.17 (0.74)
+− 0.18 (0.96)
+− 0.19 (0.76)
+− 0.13 (0.75)
+0 (0.78)
+
+0.38 (0.48)
+0.26 (0.82)
+− 0.11 (1.18)
+− 0.20 (1.12)
+− 0.19 (1.03)
+0 (0.98)
+
+0.39 (0.83)
+0.08 (1.00)
+− 0.25 (1.13)
+− 0.18 (0.76)
+− 0.06 (1.05)
+0 (0.99)
+
+Note. Gender: F = female, M = male.
+
+Fig. 1. Number of participants by age and by gender.
+
+language, other languages spoken (specifying age-of-acquisition and
+acquisition context), handedness, vision/hearing deficits, and (past or
+current) language-related/cognitive/neurological impairments.
+Task administration was arranged in two parts. The first part
+included the MoCA, a Stroop task (measuring IC), and a 1-back task
+(measuring WM span), presented to each participant in random order.
+The tasks were presented in black text against a white background in
+Consolas font size 18. The second part comprised the sentencecomprehension task. Participants were allowed to take a break be­
+tween cognitive-task and sentence-comprehension parts. The duration
+of the experiment was approximately 25 min.
+
+by subtracting score in the “word” condition from the score in the
+“color”-condition. Lastly, scores were reversed for clarity, such that
+higher scores correspond to better IC ability.
+N-back task
+The n-back task was presented in three conditions in ascending
+order: 0-back, 1-back, 2-back. In this task, participants saw a series of
+letters and indicated whether each character was identical to a) a pre­
+defined character (e.g., z; 0-back), b) the character presented in the
+previous trial (1-back), or c) the character presented two trials earlier (2back). Participants had 500 ms to respond to each character, after which
+a fixation cross appeared on the screen for 500 ms. The total duration of
+this task was about seven minutes. WM scores were computed by
+dividing mean latency by mean accuracy as described above. Scores
+were then reversed for clarity, such that higher scores represent better
+WM capacities. Due to ceiling and floor effects in the 0-back and 2-back
+conditions, respectively, only trials from the 1-back tasks were used to
+compute WM scores (see Pelegrina et al., 2015).
+
+Cognitive tasks
+Victoria Stroop test
+In this version of the Stroop test, participants saw words that
+appeared in isolation in the center of the screen and were asked to
+indicate (by keystroke) the ink color of each word. Items belonged to one
+of three conditions: a) “x” condition (xxxx); b) “word” condition (e.g.,
+vorn “in front”); c) “color” condition (e.g., gelb “yellow”). Key-color
+mappings were shown on-screen throughout the task. The task was
+untimed, and its total duration was about five minutes. Efficiency scores
+for “word”- and “color”-conditions were computed by dividing each
+participant’s mean response time to correctly answered trials by the
+proportion of accurately answered trials. Then, IC scores were obtained
+
+Sentence-comprehension task
+Each trial in the sentence-comprehension tasks consisted of two steps
+(see Table 2): during the first slide, participants heard a spoken sentence;
+the second slide presented a written binary forced-choice probe question
+that participants were asked to answer through keypress on the
+5
+
+C.I. Zona and J. Reifegerste
+
+Journal of Memory and Language 140 (2025) 104576
+
+Table 2
+Experimental design and example stimuli.
+Condition
+
+First slide
+Sentence
+
+SO, baseline
+
+Das ist der Koch, der die Braut verfolgt
+“This is the cook who follows the bride”
+
+Visual Scene
+
+Second slide
+Probe
+Wird die Braut verfolgt? / Wird der Koch verfolgt?
+“Is the bride being followed?” / “Is the cook being followed?”
+
+SO, scene
+
+OS, baseline
+
+Das ist der Koch, den die Braut verfolgt
+“This is the cook whom the bride follows”
+
+OS, scene
+
+keyboard within 4000 ms (left-hand side: “Yes”; right-hand side: “No”;
+reminders of which key corresponds to which response remained onscreen throughout the task).
+
+Structure, Visual Scene, Cognitive Score, and their interactions as fixed
+factors. Using a composite score for cognitive ability enabled us to
+decrease the number of collinear predictors as compared to the model
+including both WM and IC scores alongside age (see, e.g., Yoo et al.,
+2014).
+In the initial model, the Sentence-Structure factor was sum-coded
+(SO: − 0.5, OS: 0.5) and the Visual-Scene factor was treatment-coded
+(Baseline: 0, Visual Scene: 1). Thus, the intercept represents the
+average efficiency scores in response to Baseline conditions across clause
+types. The random-effects structure included by-item intercepts, by-item
+slopes for the effect of Cognitive Score, by-participant intercepts and
+slope adjustments for Sentence Structure, Visual Scene, Sentence
+Structure by Visual Scene, and Correct Response (i.e., whether the
+comprehension question required a Yes or No response).
+
+Data analysis
+We computed Inverse Efficiency Scores (IES, Townsend & Ashby,
+1978; 1983) by dividing each participant’s response time for each
+correctly answered trial by their mean accuracy in that trial’s condition.
+IES were computed for each trial separately (rather than by condition),
+thus keeping the data in non-aggregated form to avoid loss in statistical
+power (Barr, 2008; Schad et al., 2022). IES account for both latency and
+accuracy of responses within the same performance index (Bruyer &
+Brysbaert, 2011; Vandierendonck, 2018) and are an effective measure of
+overall task efficiency to quantify age-related changes in visuo-motor
+and language tasks (e.g., Reifegerste, 2024; Reifegerste et al., 2020;
+Statsenko et al., 2020). IES were reversed for clarity, such that higher
+scores correspond to better performance (“efficiency scores”
+henceforth).
+All analyses were performed in R 2021.09.0 (RStudio Team, 2021).
+Efficiency scores were analyzed with linear mixed-effects regression
+models. All continuous predictors were centered around their mean. Pvalues were obtained from t-tests (degrees of freedom = difference be­
+tween the number of observations and the number of fixed effects esti­
+mates in the model; Baayen et al., 2008). Following previous research (e.
+g., Connor et al., 2004; Reifegerste et al., 2021; Veríssimo et al., 2022),
+we also tested for non-linear effects of Age. Since no significant
+quadratic or cubic effects of Age emerged, higher-order polynomials
+were not tested for inclusion.
+All regression analyses were carried out with the lme4 R package
+(Bates et al., 2015), and figures based on model estimates were plotted
+using the ggplot2 (Wickham, 2016) and sjPlot packages (Lüdecke, 2018).
+Where relevant, p values were adjusted with the Tukey method for a
+family of several estimates.
+The linear mixed-effects regression model included Age, Sentence
+
+Results
+Descriptive results
+Fig. 2 displays by-participant response times, accuracy, and effi­
+ciency scores by condition for each age decade. Pearson’s productmoment correlation tests revealed that age and IC correlated nega­
+tively, as did age and WM capacity (see Table 3 and Fig. 3a-c). WM and
+IC correlated positively, in line with prior work (e.g., Morey et al.,
+2012). The composite cognitive-ability scores (i.e., the average of the ztransformed n-back and Stroop scores) showed strong positive correla­
+tions with IC and WM, and a negative correlation with age (Table 3,
+Fig. 3d-f).
+Inferential statistics
+Table 4 reports the number of correctly and incorrectly answered
+trials by Sentence Structure in each decade. Table 5 reports the results
+from the linear mixed-effects regression model fit to the data.
+We detected significant effects of all fixed factors except for Age. The
+6
+
+Journal of Memory and Language 140 (2025) 104576
+
+C.I. Zona and J. Reifegerste
+
+Fig. 2. Descriptive plots: Mean agent-identification Accuracy rates (top left), Response Times (top right) and Efficiency Scores (bottom) by condition by age. The
+boxes correspond to first and third quantiles of the distribution. Whiskers represent the location of the largest and lowest observed values (within 1.5 times the
+interquantile range)
+
+effect of Sentence Structure indicated that OS clauses were associated
+with worse performance than the average of both clause types in Base­
+line trials. An effect of Visual Scene revealed that performance was
+higher in response to sentences presented with visual scenes versus in
+isolation. In addition, the effect of Cognitive Score indicated that higher
+cognitive abilities were associated with better comprehension perfor­
+mance in Baseline trials. These main effects were qualified by several
+interactions.
+First, a significant interaction of Sentence Structure × Visual Scene
+indicated that the difficulty associated with the comprehension of
+noncanonical OS clauses (i.e., the main effect of Sentence Structure in
+Baseline trials) was significantly smaller when a visual scene was
+
+Table 3
+Correlations of age, WM score, Stroop score, and cognitive score.
+Variables
+
+Correlation
+Coefficient
+
+P Value
+
+T Value
+
+Age ~ WM
+Age ~ Interference Control
+WM ~ Interference Control
+Cognitive score ~ WM
+Cognitive score ~ Interference
+Control
+Cognitive score ~ Age
+
+− .222
+− .201
+.258
+.793
+.793
+
+.006
+.012
+.001
+<.001
+<.001
+
+− 2.81
+− 2.53
+3.30
+16.10
+16.10
+
+− .266
+
+.001
+
+− 3.42
+
+7
+
+C.I. Zona and J. Reifegerste
+
+Journal of Memory and Language 140 (2025) 104576
+
+Fig. 3. Correlations of individual-level variables. All correlations were significant (ps ≤ .013). Each dot represents one participant. Dots are colored by age, with
+darker dots corresponding to younger age.
+
+presented alongside the utterance. Second, greater Cognitive Scores
+were associated with particularly better performance in response to
+noncanonical OS clauses (vs. the average of both clause structures)
+(Sentence Structure × Cognitive Score interaction), and even more so
+when compared to OS utterances presented in isolation (Sentence
+Structure × Visual Scene × Cognitive Score interaction). Together, these
+
+patterns suggest that visual scenes were particularly helpful for
+comprehension in situations of greater task demands, such as when
+encountering noncanonical (vs. canonical) structures and/or for in­
+dividuals with lower cognitive abilities.
+Lastly, we found a nearly significant three-way interaction between
+Sentence Structure, Cognitive Score, and Age; this marginal effect
+8
+
+C.I. Zona and J. Reifegerste
+
+Journal of Memory and Language 140 (2025) 104576
+
+indicated that increasing age was associated with smaller SO-OS dif­
+ferences (i.e., smaller effects of Sentence Structure) in individuals with
+higher cognitive-ability levels – but only when utterances were pre­
+sented in isolation.
+To follow up on both three-way interactions, Sentence Structure was
+re-coded with treatment contrasts (i.e., SO structures were coded as
+0 and OS structures as 1) and the model was re-fitted to provide slope
+estimates for each level of Sentence Structure separately. The effect of
+Cognitive Score was assessed by changing treatment-coding weights for
+the Visual Scene factor (Tables S1 and S2 in Supplementary Materials).
+
+Table 4
+Number of correctly answered trials by Sentence Structure in each decade.
+Accuracy
+
+Sentence Structure
+
+18–29
+
+30–39
+
+40–49
+
+50–59
+
+60–70
+
+Inaccurate
+Accurate
+Inaccurate
+Accurate
+
+SO
+SO
+OS
+OS
+
+72
+645
+194
+522
+
+38
+323
+113
+238
+
+77
+487
+136
+427
+
+42
+416
+67
+391
+
+75
+486
+127
+429
+
+Table 5
+Coefficients of fixed and random effects of the linear regression fitted to efficiency scores. Sentence Structure was sum-coded with 0.5 weights (SO: − 0.5, OS: 0.5) to
+index the effect of an OS structure compared to the mean of both SO and OS structures. Visual Scene was treatment-coded to compare the presence of a Scene (coded as
+1) to the Baseline (coded as 0). Thus, the intercept represents the mean efficiency score in Baseline conditions across both Sentence-Structure levels and at the mean
+values of Age and Cognitive Score.
+Predictor
+
+Estimate
+
+Std. Error
+
+t value
+
+p value
+
+(Intercept)
+Sentence Structure
+Visual Scene
+Age
+Cognitive Score
+Sentence Structure £ Visual Scene
+Sentence Structure × Age
+Visual Scene × Age
+Sentence Structure £ Cognitive Score
+Visual Scene × Cognitive Score
+Cognitive Score × Age
+Sentence Structure × Visual Scene × Age
+Sentence Structure £ Visual Scene £ Cognitive Score
+Sentence Structure £ Cognitive Score £ Age
+Visual Scene × Cognitive Score × Age
+Sentence Structure × Visual Scene × Cognitive Score × Age
+Random effects
+Name
+Subject
+(Intercept)
+​
+Sentence Structure
+​
+Visual Scene
+​
+Correct Response
+​
+Sentence Structure × Visual Scene
+Item
+(Intercept)
+​
+Cognitive Score
+Residual
+​
+
+3.40
+¡0.21
+0.11
+<0.01
+0.07
+0.09
+<0.01
+<0.01
+0.13
+− 0.03
+<0.01
+<0.01
+¡0.15
+0.01
+<0.01
+<0.01
+Variance
+0.05
+0.14
+0.03
+<0.01
+0.20
+<0.01
+<0.01
+<0.01
+
+0.02
+0.03
+0.02
+<0.01
+0.02
+0.04
+<0.01
+<0.01
+0.04
+0.02
+<0.01
+<0.01
+0.05
+<0.01
+<0.01
+<0.01
+Correlation
+
+150.15
+¡6.29
+6.01
+0.03
+2.96
+2.29
+1.67
+0.87
+3.24
+− 1.22
+0.04
+− 0.29
+¡3.02
+1.95
+0.08
+− 1.06
+
+<.001
+<.001
+<.001
+.978
+.004
+.023
+.096
+.386
+.001
+.225
+.971
+.775
+.003
+.053
+.936
+.290
+
+​
+
+​
+
+​
+
+​
+
+​
+
+​
+
+​
+​
+
+​
+
+SD
+0.22
+0.38
+0.18
+0.01
+0.45
+0.01
+<0.01
+0.11
+
+​
+​
+​
+​
+​
+​
+​
+​
+​
+​
+​
+​
+​
+​
+​
+​
+
+.51
+− .63
+.02
+− .36
+
+− .40
+.08
+− .69
+
+​
+
+− .18
+.58
+​
+
+​
+
+​
+
+​
+
+​
+
+​
+
+​
+
+​
+
+​
+
+.03
+
+​
+
+− .65
+​
+
+​
+
+Fig. 4. Linear regression predicted values for Sentence Structure × Visual Scene × Cognitive Score on efficiency. Dashed and solid lines represent mean efficiency
+(solid: canonical SO sentences, dashed: noncanonical OS sentences) and the shaded bands represent 95 % confidence intervals.
+9
+
+C.I. Zona and J. Reifegerste
+
+Journal of Memory and Language 140 (2025) 104576
+
+ist der Koch, den die Braut verfolgt "This is the cook whom the bride fol­
+lows") presented either in isolation or alongside an image depicting the
+scene, and answered binary questions targeting agent identification (e.
+g., Wird die Braut verfolgt? "Is the bride being followed?"). Our results
+showed that:
+
+In Baseline conditions, we did not find an effect of Cognitive Score on
+comprehension of SO structures (t = 0.13, p = .898), while increasing
+Cognitive Scores were associated with significantly better comprehen­
+sion of OS structures (t = 3.25, p = .001). In Visual-Scene conditions,
+increasing Cognitive Scores were associated with smaller but significant
+performance increases (t = 2.39, p = .018) regardless of Sentence
+Structure (Fig. 4).
+Turning to the Sentence Structure × Cognitive Score × Age inter­
+action (Fig. 5), increasing age showed a marginal tendency to be asso­
+ciated with poorer performance in individuals with higher cognitive
+scores in Baseline SO conditions (t = -1.78, p = .077). Instead, increasing
+age tended to improve performance in individuals with higher cognitive
+scores responding to Baseline OS trials (t = 1.95, p = .095). In younger
+participants (e.g., the lower quartile of the age range, Fig. 5, left),
+increasing cognitive-ability levels led to similar performance increases
+in response to canonical and noncanonical sentences. In the median
+quartile (Fig. 5, center), increasing cognitive-ability levels led to per­
+formance increases only in response to noncanonical sentences. In the
+upper quartile (Fig. 5, right), increasing cognitive-ability levels led to
+performance increases in response to noncanonical sentences and de­
+creases in response to canonical sentences. We discuss these patterns
+below. The Age × Cognitive Score interaction was non-significant in
+either Visual Scene condition, suggesting that the visual cues rendered
+cognitive-ability levels less central to successful performance.
+Finally, we investigated whether the effects of WM and IC on per­
+formance were dissociable from one another. A model was fitted
+including the interactions of 1) Sentence Structure, Visual Scene, and
+WM score, 2) Sentence Structure, Visual Scene, and IC score, 3) Sentence
+Structure, Age, and WM score, and 4) Sentence Structure, Age and IC
+score; see Table S3 in Supplementary Materials. This latter model
+exhibited numerically worse AIC and BIC compared to the model
+including composite Cognitive Scores.
+
+• Visual-scene information benefited comprehension performance,
+especially in response to noncanonical structures. This interaction
+was modulated by cognitive-ability levels, rather than by age.
+• Age-related changes in comprehension performance tended to be
+modulated by individual levels of cognitive ability: increasing age
+was associated with marginally greater benefits from increasing
+cognitive-ability levels in response to noncanonical (but not canon­
+ical) sentences.
+Our results indicated that spoken comprehension performance was
+affected by the structural complexity of the relative clause (effects of
+Sentence Structure), by whether it was accompanied by a visual scene
+(effects of Visual Scene), and by participants’ performance in our
+cognitive tasks tapping WM and IC (effects of Cognitive Score), both
+additively and interactively. We discuss these effects in turn.
+The results as to the effect of Sentence Structure closely align with
+the assumption that noncanonical (vs. canonical) clause structures in­
+crease sentence comprehension demands in German (Adelt et al., 2017;
+Vos et al., 2001), which confirms the suitability of our sentence mate­
+rials to manipulate syntactic complexity. In noncanonical clauses, a
+superficial, frequency-based heuristic strategy – assigning the subject
+role to the first-mentioned referent – supports an interpretation that is at
+odds with an interpretation conveyed by the morphosyntactic markers,
+which instead signal that the first-mentioned referent is in fact the object
+of the relative clause (Ferreira et al., 2009, Karimi & Ferreira, 2016). In
+contrast, canonical clauses do not entail competing representations from
+word-order and morphosyntactic information, and the interpretation
+can be derived with minimal cognitive conflict.
+The findings as to the effect of Visual Scene support our hypothesis
+that the availability of visual information benefits utterance compre­
+hension compared to utterances presented in isolation. This result is in
+line with current models of visuo-linguistic integration positing that the
+contents of the visual display contribute to sentence interpretation
+(Knoeferle & Crocker, 2006). Extending prior work on the time course of
+
+Discussion
+The current study investigated whether visual information benefits
+syntactic comprehension across the adult lifespan and at varying levels
+of cognitive abilities. Participants listened to canonical subject-object
+(SO) and noncanonical object-subject (OS) clauses (e.g., Das ist der
+Koch, der die Braut verfolgt "This is the cook who follows the bride" vs. Das
+
+Fig. 5. Linear regression predicted values for Sentence Structure × Age × Cognitive Score on efficiency. Solid and dashed lines represent mean efficiency (solid:
+canonical SO sentences,dashed: noncanonical OS sentences) and the shaded bands represent 95 % confidence intervals.
+10
+
+C.I. Zona and J. Reifegerste
+
+Journal of Memory and Language 140 (2025) 104576
+
+visuo-linguistic integration, the current results provide novel insights as
+to its consequences, by showing beneficial effects of visual information
+on the recall of thematic-role representations post-sentence. Addition­
+ally, the interaction between Sentence Structure and Visual Scene
+indicated that visual-scene information was particularly beneficial for
+the comprehension of utterances containing noncanonical (vs. canoni­
+cal) clauses. Such effect of visual cues can be explained in terms of the
+visually conveyed thematic roles (contributing to) determining which
+thematic-role configuration (i.e., action direction) is perceived as the
+most likely to be expressed by the sentence. While the first-mentioned
+referent is overwhelmingly assumed to take on the agent (vs. patient)
+role of the action when utterances are presented in isolation, inspecting
+a visual depiction in which the first-mentioned referent is taking on the
+patient role increases the likelihood of the patient-first interpretation,
+and may thus facilitate comprehension by rendering generally dis­
+preferred configurations easier to predict, comprehend, and recall.
+In their eye-tracking study, Knoeferle and Kreysa (2012) found that a
+speaker’s gaze towards an upcoming sentence referent neutralized SOOS differences in fixation latencies; in contrast, in the current study
+the presence of visual information yielded attenuated but still significant
+SO-OS differences. This apparent discrepancy might be attributed to
+differences in the tasks and visual stimuli used in the two studies. First,
+the probe questions administered in the current study presented an
+additional level of complexity as compared to oculomotor behavior
+captured by eye-tracking. Indeed, the use of agent-identification ques­
+tions has been criticized, as inaccurate responses may be caused not only
+by erroneous representations formed during sentence processing, but
+also by failures in the retrieval of accurate representations from memory
+(Bader & Meng, 2023; Meng & Bader, 2021). Our results may thus
+indicate that visual information supported the formation of more ac­
+curate thematic-role representations, the retrieval of such representa­
+tions, or both.
+Second, unlike a speaker’s gaze, the visual information presented in
+the present study was not deictic in nature, but rather conveyed meaning
+semantically. Decoding semantic (vs. deictic) meaning is likely to be less
+automatic, as it does not physically point to its referred meaning, which
+might cause our visual scenes to be more effortful and less immediate to
+integrate with representations conveyed by the utterance. For example,
+Kamide et al. (2003, Exp. 2) tracked participants’ eye movements to­
+wards non-deictic depictions of sentence referents while listening to
+German SO/OS sentences (e.g., The hare will soon eat the cabbage).
+Anticipatory fixations were detected only in response to SO structures.
+This suggests that syntactic prediction preferences may be influenced by
+semantic and deictic visual information to different degrees (see also
+Kreysa et al., 2018). Against this background, the current study provides
+evidence for a durable effect of the interaction of syntactic interpretation
+preferences and (semantic) visual cues on thematic-role comprehension.
+Importantly, both effects discussed so far (main effect of Sentence
+Structure and Sentence Structure × Visual Scene interaction) were
+further modulated by varying levels of cognitive abilities. A Sentence
+Structure × Cognitive Score interaction revealed that greater cognitive
+ability was particularly beneficial for performance with noncanonical
+OS structures, compatible with the idea that canonical sentences
+entailed little to no cognitive conflict, thus rendering individual
+cognitive-ability levels less critical for successful comprehension.
+Furthermore, the Sentence Structure × Cognitive Score interaction was
+only detected when utterances were presented in isolation (Sentence
+Structure × Visual Scene × Cognitive Score).
+This pattern broadly supports previous work highlighting the role of
+measures such as WM and IC for sentence comprehension, particularly
+in the face of increased task demands (for a review, see Lau & Tanaka,
+2021). It moreover underscores that the sentence-structure manipula­
+tion effectively increased cognitive task demands, and that our com­
+posite measure of cognitive ability was able to predict individual
+differences in performance selectively in the more challenging
+condition.
+
+In response to noncanonical OS sentences, participants at the higher
+end of the cognitive-score scale successfully made use of the morpho­
+syntactic markers to achieve comprehension regardless of the visual
+scene. In contrast, participants at the lower end of the cognitive-score
+scale relied more prominently on the visual scenes to achieve compre­
+hension of these more challenging syntactic constructions (Fig. 4).
+Our findings indicate that cognitive skills such as WM and IC can
+exert positive effects on sentence comprehension. These effects were
+particularly pronounced in situations of greater task demand – such as
+when the sentence is relatively more complex or when no other infor­
+mation sources are available to guide sentence interpretation. Further,
+the presence of visual information may alter comprehenders’ preference
+for a thematic-role configuration over another – namely biasing
+comprehension towards the visually conveyed interpretation of the ut­
+terance. As a consequence, the conflict engendered by the personal
+pronoun in accusative (den “whom,” vs. nominative, der “who”) is
+significantly diminished, and thus participants do not need high levels of
+cognitive abilities to resolve such conflict successfully.
+We did not find conclusive effects of Age on comprehension, with
+marginal decreases and increases for SO and OS sentences, respectively.
+This is consistent with previous work showing only relatively small agerelated changes in syntactic comprehension, and with the results from
+Stine et al. (1990), as changes in cognitive abilities, but not age, played a
+central role in the comprehension of utterances in isolation. Given our
+relatively young sample, which spanned until only 70 years of age, it is
+also possible that declines in sentence comprehension may occur only at
+later stages, as has been found for other aspects of language (e.g., vo­
+cabulary size; Salthouse, 2010). Based on the proposal for a shift from
+algorithmically to semantically derived representations with increasing
+age, we had hypothesized that increasing age may be associated with
+greater benefits from the presence of visual cues supporting compre­
+hension. This hypothesis was not supported: We found that the presence
+of visual cues benefited performance across the lifespan to a similar
+extent. On the one hand, this evidence extends the applicability of the
+CIA by demonstrating the validity of its claims in participants from
+across the adult lifespan. On the other hand, we did find effects of
+increasing age that were selective to Baseline trials and modulated by
+varying cognitive-ability levels (Fig. 5): greater cognitive abilities were
+more beneficial for the comprehension of noncanonical sentences in
+older than in younger participants. In contrast, the pattern for canonical
+sentences was somewhat puzzling, as the beneficial effects of increasing
+Cognitive Scores on comprehension were limited to younger partici­
+pants (i.e., lower age quartile) and reversed for older participants (upper
+age quartile). One tentative explanation might be that older participants
+with low cognitive-ability levels overwhelmingly responded to utter­
+ances in isolation based on word order (rather than morphosyntactic
+case markers), leading to the largest observed SO-OS differences. In
+contrast, higher cognitive-ability levels might have allowed older par­
+ticipants to refrain from using heuristic strategies that work well in
+naturalistic settings (e.g., based on word order) – for example, because
+they might have noticed that the frequency with which noncanonical
+sentences appeared in our stimulus set (50%) was far higher compared
+to their probability in spoken German (Zubin, 1979). If so, high-ability
+older participants might have been able to adjust their own interpreta­
+tion preferences (or expectations, or “priors”) towards a noncanonical
+patient-first interpretation, leading to the observed increases in perfor­
+mance when responding to noncanonical sentences and decreases when
+responding to canonical sentences. Some support for these speculations
+comes from Stine-Morrow (2007), who argued that older adults may
+exploit their explicit knowledge strategically to support comprehension
+in the face of specific age-related declines (e.g., the large SO/OS dif­
+ferences which were particularly evident in older versus younger in­
+dividuals with lower cognitive-ability levels), thus suggesting that agerelated shifts in heuristic strategies for comprehension might be selfregulated and based on considerations of effort and attention alloca­
+tion. However, more research is needed to pinpoint the source of this
+11
+
+C.I. Zona and J. Reifegerste
+
+Journal of Memory and Language 140 (2025) 104576
+
+unexpected pattern.
+
+R.
+
+We are thankful to the reviewers and editors for their valuable
+feedback on this and previous versions of our manuscript.
+
+Limitations and future directions
+This study presents a few limitations. For one, collecting data
+remotely is likely to have triggered a sampling bias, as the older par­
+ticipants who signed up for and were able to complete a web-based study
+were likely quite familiar with computer technology. Perhaps because of
+this, our sample was relatively young, limiting the generalizability of
+our conclusions. In addition, the technological equipment of our par­
+ticipants may have varied systematically as a function of age, as older
+participants are likely to possess older and less powerful hardware than
+younger university students.
+Furthermore, the use of efficiency scores for our analysis limits our
+investigations to imbalances in the number of trials available for the
+analysis, which exhibited systematic variability as a function of condi­
+tion and age.
+Moreover, as with most studies on cognitive aging, our crosssectional sample may be subject to cohort effects and similar betweensubject differences that were not assessed and thus not controlled for.
+Future work should address this shortcoming – for example by
+combining cross-sectional and longitudinal sampling – to advance our
+understanding of how individual levels of cognitive abilities modulate
+lifespan changes in comprehension and recall.
+Lastly, while the present study pointed to important roles for
+cognitive abilities in the use of visual information during sentence
+comprehension, future studies might complement the behavioral ap­
+proaches used here with brain-imaging techniques (e.g., (f)MRI). As laid
+out in the Introduction, it has been suggested that (age-related) shifts in
+heuristic-strategy use might be tied to declines in the connectivity of the
+frontoparietal control network (Spreng et al., 2010; Campbell et al.
+2012). If this is the case, we might, for example, expect similar corre­
+lations between the amount of benefit conferred by visual information
+and measures of neural connectivity (e.g., fractional anisotropy, mean
+diffusivity) as we found for measures of cognitive capacity (i.e., cogni­
+tive scores) in the present study, further elucidating the (neuro-)cogni­
+tive mechanisms involved in sentence comprehension.
+
+Appendix A. Supplementary data
+Supplementary data to this article can be found online at https://doi.
+org/10.1016/j.jml.2024.104576.

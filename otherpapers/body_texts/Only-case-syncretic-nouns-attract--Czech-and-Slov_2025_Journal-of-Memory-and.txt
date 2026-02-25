@@ -1,0 +1,2026 @@
+Introduction
+Speakers sometimes make speech errors such as:
+(1)
+
+*The readiness of our conventional forces are at an all-time low.
+(Bock & Miller, 1991)
+
+In (1), the verb be takes the plural present indicative form are even
+though the subject head readiness, with which it ought to agree, is
+singular. The verb appears to erroneously agree with the linearly closer
+noun forces, known as the attractor. Agreement errors in production
+arise when the attractor mismatches the subject in number (Bock,
+Eberhard, Cutting, Meyer, & Schriefers, 2001; Bock & Miller, 1991).
+This has become known as the phenomenon of agreement attraction,
+here exemplified in number agreement between subjects and verbs.
+Number agreement, however, is not the only type of agreement
+subject to attraction. Many languages have gender systems that classify
+nouns, as well as other word classes (Corbett, 1979). Gender is an important and obligatory feature of agreement marking in languages such
+as Czech or Slovak. See examples (2) and (3) which are translations of
+the sentence A small cat was very sad to Czech and Slovak respectively.
+(2)
+
+Mal-á
+kočk-a
+byl-a
+velmi smutn-á.
+small-nom.f.sg cat-nom.f.sg was-f.sg very sad-nom.f.sg
+
+‘A small cat was very sad.’ (Czech)
+(3)
+
+Mal-á
+mačk-a
+bol-a
+vel’mi smutn-á.
+small-nom.f.sg cat-nom.f.sg was-f.sg very sad-nom.f.sg
+‘A small cat was very sad.’ (Slovak)
+
+As can be seen, gender agreement may be manifested not only on
+nouns (kočk-a / mačk-a ‘a cat’) and adjectives (mal-á ‘small’, smutn-á
+‘sad’), but also on verbs (byl-a / bol-a ‘was [fem.sg.]’). Subject-verb
+gender agreement is often present in Slavic languages (Corbett, 1983)
+with different markings for the different genders. Take the following
+contrast from Czech:
+(4)
+
+Dít-ě
+byl-o
+celý den venku s
+kamarády.
+child-nom.sg.n was-3sg.n whole day outside with friends
+‘The child was outside with friends the whole day.’
+
+(5)
+
+Dcer-a
+byl-a
+celý den venku s
+kamarády.
+daughter-nom.sg.f was-3sg.f whole day outside with friends
+
+‘The daughter was outside with friends the whole day.’
+Gender agreement may be susceptible to attraction due to interfering attractors with gender features different from that of the subject.
+
+∗
+
+Correspondence to: Faculty of Arts, Masaryk University, Arne Nováka 1, Brno 60200, Czechia.
+E-mail address: rlacina@mail.muni.cz (R. Lacina).
+1
+Indicates equal contribution.
+
+https://doi.org/10.1016/j.jml.2025.104623
+Received 5 February 2024; Received in revised form 24 January 2025; Accepted 3 February 2025
+Available online 5 March 2025
+0749-596X/© 2025 The Authors. Published by Elsevier Inc. This is an open access article under the CC BY license (http://creativecommons.org/licenses/by/4.0/).
+
+Journal of Memory and Language 143 (2025) 104623
+
+R. Lacina et al.
+
+Gender attraction has been shown in various production elicitation
+tasks in Slovak (Badecker & Kuminiak, 2007) as well as in other languages, such as Dutch (Meyer & Bock, 1999), Spanish (Antón-Méndez,
+Nicol, & Garrett, 2002), or Serbian (Milićević & Milićev, 2022). Overall,
+the literature suggests that the phenomenon is present in some languages and potentially absent in others (cf. Finocchiaro & Cieślicka,
+2004, for Polish).
+However, agreement attraction is not confined to production. Many
+studies have shown that comprehenders exhibit faster reading times
+in ungrammatical sentences when attractors match the verb in the
+required feature. Take the following example from the study of Wagers,
+Lau, and Phillips (2009):
+(6)
+
+*The key to the cabinet unfortunately were rusty from many years
+of disuse.
+
+(7)
+
+*The key to the cabinets unfortunately were rusty from many
+years of disuse.
+
+Slioussar (2018) proposed that attraction from syncretic word forms
+arbitrates in favour of cue-based retrieval models. These models assume
+that during language processing, comprehenders store the encountered
+linguistic material as bundles of features, such as ‘‘NP, noun, in a
+subject position, singular, feminine, nominative’’ (Engelmann, Jäger,
+& Vasishth, 2019; Lewis & Vasishth, 2005; Parker, Shvartsman, &
+Van Dyke, 2017; Yadav, Smith, Reich, & Vasishth, 2023). When a dependency between two constituents must be established, such as during
+subject-verb agreement, comprehenders access the target constituent in
+memory using retrieval cues available at the verb, such as ‘‘require an
+NP, in a subject position, singular, feminine, nominative’’ if the verb is
+marked for number and gender. If another noun in the sentence has at
+least some features matching the retrieval cues in that it is, for example,
+feminine and singular, the retrieval of the target subject noun would be
+slowed down. This is referred to as inhibitory interference.
+If a sentence is ungrammatical, and the subject does not fully match
+the retrieval cues set by the verb, the retrieval of the subject is also
+slowed down. This prediction of the model accounts for the slower
+processing of ungrammatical sentences. Finally, in the agreement attraction configuration, when the sentence is ungrammatical and the
+attractor noun matches some of the retrieval cues set by the verb, the
+cue-based retrieval model predicts a relative speed-up, which matches
+the observed agreement attraction effects (Engelmann et al., 2019). The
+mechanism driving the speed-up is a race process, in which constituents
+in memory compete for retrieval by means of their activation levels.
+Consider example (7) again:
+
+Wagers et al. found faster reading times in the verbal and/or postverbal region (rusty) in sentences such as (7), where the attractor
+matches the verb in number, compared to (6), where it does not.
+For number agreement, this effect has been widely replicated in English (e.g., Cunnings & Sturt, 2018; Jäger, Mertzen, Van Dyke, &
+Vasishth, 2020; Parker & An, 2018 and Tanner, Nicol, & Brehm, 2014)
+and in other languages, such as French (Franck, Colonna, & Rizzi,
+2015; Franck & Wagers, 2020), Spanish (Lago, Shalom, Sigman, Lau,
+& Phillips, 2015), Arabic (Tucker, Idrissi, & Almeida, 2015, 2021),
+Armenian (Avetisyan, Lago, & Vasishth, 2020), German (Lago & Felser,
+2018), Turkish (Lago, Gračanin-Yuksek, Şafak, Demir, Kırkıcı, & Felser,
+2019; Türk & Logačev, 2024, Hindi (Bhatia & Dillon, 2022), Bulgarian (Ivanova-Sullivan, Sekerina, & Lago, 2024), and Russian (Slioussar,
+2018). A meta-analysis shows that number agreement attraction effects
+in the comprehension of ungrammatical sentences are reliable and
+highly replicable (Jäger, Engelmann, & Vasishth, 2017).
+Gender attraction in comprehension has also been documented.
+Gonzalez Alonso, Cunnings, Fujita, Miller, and Rothman (2021) studied noun-adjective gender agreement attraction in Spanish. In two
+eye-tracking experiments, they found evidence of gender attraction
+in their ungrammatical conditions. Paspali and Marinis (2020) found
+evidence for the effect in adjectival predicates and object-clitic relations in Greek, both in timed and untimed acceptability judgement
+experiments. Tucker et al. (2021) reported both gender and number
+agreement attraction across eight self-paced reading experiments on
+Modern Standard Arabic. Interestingly, gender attraction had a larger
+effect size than number attraction.
+In Slavic languages, gender agreement attraction has also been attested in Russian, which is structurally close to the languages examined
+in this paper, Slovak and Czech. In all three languages, there are
+three genders (masculine, feminine, and neuter), and gender is marked
+using endings both in nouns and in some verb forms, such as the past
+participle. Slioussar and Malko (2016) looked at both the production
+and comprehension of sentences with subject-verb gender agreement.
+Attraction errors were found in the production experiment, which was
+modelled on the previous study of Badecker and Kuminiak (2007) on
+Slovak. Interestingly, Slioussar and Malko argued that the gender of the
+head noun is crucial for the presence of agreement attraction effects,
+and that the feminine gender drives the strongest, and the neuter the
+weakest attraction effects. In a follow-up study, Slioussar, Magomedova, and Makarova (2022) focused on the role of case syncretism
+in attraction effects in comprehension. Case syncretism refers to the
+phenomenon of one word form being shared between at least two
+different combinations of number, case, and/or gender (Caha, 2019).
+Across two self-paced reading experiments, Slioussar et al. found that
+gender attraction effects were observed only when the attractor was
+case-syncretic with the nominative. Case syncretism on the subject head
+served as a booster of attraction: While observed with non-syncretic
+subject heads, attraction was stronger with syncretic heads.
+
+(7)
+
+*The key to the cabinets unfortunately were rusty from many
+years of disuse.
+
+Here, both the subject head and the attractor noun match some
+of the retrieval cues set by the verb (‘‘an NP, in a subject position,
+plural’’), yet neither matches them fully. In this scenario, the levels
+of activation of the two nouns are similar, which has been shown to
+result in faster average retrieval times, and referred to as facilitatory
+interference (Logačev & Vasishth, 2016).
+Empirical support for facilitatory interference is robust, while the
+evidence in favour of inhibitory interference for morphosyntactic features is more mixed (Jäger et al., 2017; Laurinavichyute & von der
+Malsburg, 2024; Nicenboim & Vasishth, 2018; Yadav et al., 2023).
+While there are other competing explanations for attraction effects
+(see Dempsey, Christianson, & Tanner, 2022; Eberhard, Cutting, &
+Bock, 2005a; Hammerly, Staub, & Dillon, 2019; Smith, Franck, & Tabor,
+2018, and Keshev, Cartner, Meltzer-Asscher, & Dillon, 2024), the cuebased retrieval model has enjoyed wide popularity as one of the main
+explanatory accounts.
+The cue-based retrieval model predicts equal attraction effects in
+number and gender because it assigns all features the same weights
+(Engelmann et al., 2019; Lewis & Vasishth, 2005; Yadav et al., 2023).
+This model setting can be changed if empirical estimates point to the
+greater importance of gender. Gender might indeed turn out to be more
+prominent for parsing because, in contrast to number, it is lexical.
+Consequently, gender violations might be perceived as more disruptive
+and more in need of repair. Currently, the empirical evidence is rather
+scarce and does not allow us to distinguish between these options.
+Importantly, the mechanism driving attraction proposed by the
+cue-based retrieval model relies on domain-general memory mechanisms and language-specific morphosyntactic features that participate
+in agreement. As long as in any language some features are used
+for agreement, the cue-based retrieval model predicts an agreement
+attraction effect in this language. However, several studies suggest that
+Czech speakers might be resilient to agreement attraction to a large
+extent.
+2
+
+Journal of Memory and Language 143 (2025) 104623
+
+R. Lacina et al.
+
+syncretism, we adopted the ACT-R’s partial match functionality that
+allows for items in memory to receive activation from a retrieval
+cue that they match only in part. For example, if the retrieval cue
+is ‘‘round’’, a circle would be a full match, and an oval—a partial
+match. Here, we entertained two possibilities: The word form syncretic
+between the accusative and nominative could either fully or partially
+match the ‘‘+nominative’’ retrieval cue. To explore a wider range of
+model predictions, we also varied the number of features and retrieval
+cues, and used either two (gender and case) or three (subjecthood,
+gender, and case) features (using a version of the model extended for
+three retrieval cues by Laurinavichyute & von der Malsburg, 2024).
+In the case of two features, gender and case, a slowdown due
+to ungrammaticality is predicted in the matching and mismatching
+non-syncretic conditions (see Fig. 1). In the mismatching syncretic
+condition, the slowdown vanishes under the full match assumption
+and becomes much smaller under the partial match assumption. This
+decreased penalty for ungrammaticality in mismatching conditions
+corresponds to a typical agreement attraction effect in ungrammatical
+sentences.
+This attraction effect disappears if an additional ‘‘+ subject’’ retrieval cue is assumed (see Fig. 2). This corresponds to the intuition
+that attraction effect only arises if syntactic information is for some
+reason ignored. The differences between conditions largely vanish, and
+the ungrammatical conditions are processed uniformly slower under
+both full and partial match assumptions. Interestingly, the attraction
+effect vanishes even if ‘‘+ subject’’ retrieval cue has the same weight as
+other retrieval cues and is not in any way privileged (cf. Yadav, Paape,
+Smith, Dillon, & Vasishth, 2022).
+Another important prediction of the cue-based retrieval model is
+inhibitory interference (i.e., a slow-down) in grammatical conditions
+when the attractor matches many retrieval cues. Note, however, that inhibitory interference is predicted by the classic version of the cue-based
+retrieval model (Lewis & Vasishth, 2005), but not by a modification
+of the model proposed by Wagers et al. (2009), who suggested that
+retrieval from memory only occurs in ungrammatical sentences. We
+will return to this proposal in the General discussion (Section ‘‘General
+discussion’’). Inhibitory interference should be the strongest for the
+gender-matching attractor, weaker for the gender-mismatching syncretic attractor, and the weakest for the mismatching non-syncretic
+attractor. The modelling estimates are provided in Fig. 3.
+To summarise, under all configurations, the cue-based retrieval
+model predicts: (1) that ungrammatical conditions should be processed
+more slowly than grammatical ones, and that the slowdown should
+be the strongest in the matching, smaller in the mismatching nonsyncretic, and the smallest (under some parameter values, non-existent)
+in the mismatching syncretic conditions; (2) that within grammatical
+conditions, matching conditions should be processed slower than both
+the mismatching syncretic and non-syncretic conditions.
+
+Attraction in Czech
+Chromý, Lacina and Dotlačil (2023) conducted four self-paced reading experiments testing for number agreement attraction in several
+syntactic configurations, including both retroactive and proactive interference (i.e., attractor following or preceding the subject head respectively). They found evidence against attraction in three out of
+the four experiments. Only in the experiment that tested a retroactive
+configuration (attractor following the subject head), such as in Example
+(8) with syncretic attractors, did they find some weak evidence in
+favour of a very small attraction effect. Lacina and Chromý (2022)
+showed that in contrast to Russian (Slioussar, 2018), in Czech, attractors syncretic between the singular and plural, exemplified by the form
+ženy (woman-gen.sg=nom.pl=acc.pl), which could be either singular
+(genitive) or plural (nominative/accusative), did not induce number
+attraction.
+(8)
+
+*Složk-a
+pro archivářk-y
+nejspíš bud-ou
+file-nom.sg for archiver-acc.pl=nom.pl probably will-nom.pl
+zahrnovat veškeré nálezy.
+include
+all
+findings
+‘A file for archivers will [plural] probably include all findings.’
+
+A follow-up study by Chromý, Brand, Laurinavichyute and Lacina
+(2023) directly compared Czech and English translation equivalent sentences. While attraction was clearly present in English, with the effect
+size being fully in line with the estimates from previous studies, no such
+effect was detected in the Czech experiment. Lacina (2024) found no
+illusions of grammaticality in an untimed acceptability judgement task.
+At the same time, an illusion of grammaticality was found by Lacina
+and Dotlačil (2024) in a speeded acceptability judgement experiment
+with the case-syncretic stimuli used in Experiment 4 of Chromý, Lacina
+et al. (2023) (see Example (8)). However, the attraction effect was a
+whole magnitude smaller compared to the English data from Wagers
+et al. (2009). Overall, support for number attraction in Czech is limited
+and restricted to case-syncretic configurations.
+Gender agreement attraction in Czech has not yet been studied. The
+surprising absence of number attraction in Czech and, at the same time,
+the presence of gender agreement attraction in production in the closely
+related language of Slovak create tension that needs resolving.
+Importantly, in previous research on Czech, attraction arose only
+when case syncretism was present on the attractor noun. Echoing
+the findings of Badecker and Kuminiak (2007), Slioussar (2018), and
+Slioussar et al. (2022), this suggests that syncretism matters a great deal
+when it comes to attraction, at least in languages with rich inflectional
+morphology. We therefore expect that should any gender attraction
+effects arise in the comprehension of Czech and Slovak, case syncretism
+would play an important role. We further formalise this prediction
+below using a computational implementation of a cue-based retrieval
+model.
+To aid in the comprehension of the following section, we briefly
+introduce the study design. Attraction in Czech and Slovak is tested in
+grammatical and ungrammatical sentences in the form ‘subject head
++ preposition + attractor + verbal auxiliary’, where the verb ought to
+agree in gender with the subject head. The gender of the attractor is
+manipulated, and is either matching, i.e., of the same gender as the
+subject head, mismatching non-syncretic, which means that it is of a
+different gender and that its form is unambiguously accusative, or finally, mismatching syncretic—different gender and syncretic (ambiguous)
+between the accusative and nominative cases.
+
+The current study
+In the current study, we aim to test the predictions of the cuebased retrieval model and examine gender agreement attraction in the
+comprehension of two closely related and mutually intelligible languages, Czech and Slovak (Golubović & Gooskens, 2015; Short, 2018)
+using the self-paced reading procedure. Given the previous results of
+Badecker and Kuminiak (2007) on Slovak production, Slioussar and
+Malko’s (2016) study on Russian production and comprehension, and,
+finally, the research of Chromý, Brand et al. (2023), Chromý, Lacina
+et al. (2023), and Lacina and Chromý (2022) on number agreement
+attraction in Czech comprehension, we manipulate case syncretism of
+the attractor noun to examine whether syncretism plays a role in gender
+attraction.
+On the one hand, gender attraction errors have been documented in
+the production of Slovak (Badecker & Kuminiak, 2007), which ought
+
+Computational modelling
+We evaluated the predictions of the cue-based retrieval model using
+the simplified implementation of ACT-R for R by Engelmann et al.
+(2019) and Yadav et al. (2023). The same modelling settings and
+parameter value ranges as Yadav et al. were used. To represent case
+3
+
+Journal of Memory and Language 143 (2025) 104623
+
+R. Lacina et al.
+
+Fig. 1. Two retrieval cues: Predicted processing times in different conditions assuming two retrieval cues, gender and case. Case syncretism is realised either as a full or a partial
+match between the nominative retrieval cue and attractor’s case marking (accusative syncretic with nominative).
+
+Fig. 2. Three retrieval cues: Predicted processing times in different conditions assuming three retrieval cues, gender, case and subjecthood. Case syncretism is realised either as a
+full or a partial match between the nominative retrieval cue and attractor’s case marking (accusative syncretic with nominative).
+
+to give us reason to expect the effect in comprehension, too. On
+the other hand, some considerations cast doubt on the existence of
+gender attraction in comprehension in Czech and Slovak. First, gender
+attraction in production was only attested in Slovak in experiments
+using a secondary task: Participants had to first memorise three letters, then produce a sentence, and after that, recall the memorised
+letters (p. 71, Badecker & Kuminiak, 2007). Without the secondary
+task, no attraction errors were attested in a pilot study (Kuminiak,
+personal communication). It is possible that self-paced reading without
+
+additional memory load might fail to elicit attraction in the present
+experiment. One might suggest that in a language with explicit case
+marking, the syntactic role of a noun is generally easy to identify, and
+more pressure on working memory is needed to elicit confusion errors.
+And secondly, the evidence from number agreement attraction studies
+on Czech converges on the position that the effects in the language are
+so small that they might be considered negligible. If gender is processed
+similarly to number in Czech, either no or very small attraction effects
+are expected.
+4
+
+Journal of Memory and Language 143 (2025) 104623
+
+R. Lacina et al.
+
+Fig. 3. Predicted gender attraction (in ungrammatical sentences) and inhibitory interference (in grammatical sentences) depending on the model specification. Case syncretism is
+realised either as a full or a partial match between the nominative retrieval cue and attractor’s case marking (syncretic with the nominative).
+
+While the existing empirical evidence might be contradictory, computational modelling (see above) provides precise predictions for gender attraction effects dependent on case syncretism. Importantly, having three grammatical and three ungrammatical conditions allows us
+to test more fine-grained predictions of the model rather than the
+mere presence/absence of the effects and their direction. The relative
+ordering of agreement effects would serve as the main test for the
+model: If the estimated attraction effects match the predictions, the
+cue-based retrieval model would receive strong support.
+
+gender of the subject head. The two verb forms that we used were byl
+(‘was [masc.sg.]’) for the masculine and byla (‘was [fem.sg.]’) for the
+feminine.2 Given that the subject head was masculine in half the items
+and feminine in the other, different verb forms were associated with
+ungrammaticality: Feminine verb forms with masculine subject heads
+were ungrammatical, and vice versa.
+Each experimental sentence consisted of eight words, see Table 1:
+(1) an inanimate masculine subject in the nominative singular case
+syncretic with the accusative; (2) a preposition associated with the
+accusative case; (3) an attractor noun in the accusative case (masculine,
+syncretic feminine or non-syncretic feminine)3 ; (4) an adverb; (5 the
+past-tense auxiliary (masculine or feminine); (6) a passive participle
+(masculine or feminine, same as the auxiliary)4 ; (7) an adjective; (8)
+a plural noun in the instrumental case. All items can be found in the
+Supplementary Materials available on OSF at https://osf.io/h8bfw/.
+Conditions (a), (b), and (c) are grammatical, while (d), (e), and
+(f) are ungrammatical given the gender-mismatching verbal auxiliary.
+Conditions (a) and (d) contain gender-matching attractors, (b) and (e)
+mismatching non-syncretic ones, and, finally, (c) and (f) mismatching
+syncretic attractors. The comprehension question accompanying each
+item was the same irrespective of condition, namely Did the workers load
+the cargo?. Every experimental item was followed by a comprehension
+question.
+In addition to the experimental items, we also constructed 72 fillers,
+whose structure varied widely. Importantly, all of them presented
+fully grammatical sentences in Czech and used the active voice (see
+
+Experiment 1: Czech
+Participants
+Data was collected from 177 native speakers of Czech, who were
+students at Charles University, Prague, Czech Republic, and received
+course credit for their participation. Four participants who did not meet
+the 75% threshold for accuracy on filler items were excluded from the
+analysis. Another participant’s data was excluded due to the technical
+issues this participant experienced. Thus, the final sample consisted of
+172 participants. Their mean age was 23.7 years (SD = 5.19), 148 were
+women, 23 men, and 1 person did not wish to disclose their gender.
+Materials
+The materials for this experiment were created together with the
+materials for Experiment 2 (Slovak) to have translation equivalent
+stimuli in both experiments. We used the sentence preambles from the
+second experiment of Badecker and Kuminiak (2007). These preambles
+were translated into Czech and further manipulated so they could be
+used in the experiment (for example, in some cases the translation
+equivalent word in Czech was of a different gender than in Slovak or
+was not case-syncretic). In total, 36 translation equivalent preambles
+were created for each experiment. These preambles were then completed to create a full sentence (again, translation equivalence was
+abode).
+Two variables were manipulated: (i) attractor type (i.e., its gender
+and syncretism) and (ii) the grammaticality of the past tense verb form.
+The sentence subject was always syncretic between the nominative and
+accusative singular, and was either feminine or masculine. This gender
+of the subject was manipulated between items, with half of the items
+having masculine and the other half feminine subjects. The attractor
+factor had three levels: Attractors either matched or mismatched the
+subject in gender. Gender-mismatching attractors were either syncretic
+with the nominative singular (ambiguous case marking) or not (unambiguous case marking). The grammaticality manipulation had two levels:
+The gender marking of the verb either matched or mismatched the
+
+2
+In Czech, gender is marked for plural subjects too, but the distinction
+between masculine and feminine subjects is only present in writing with the
+same phonological realisation. Plural neuter subjects require a distinct form
+of the verb that is syncretic with that of the feminine singular. However, all
+of these distinctions are only present in the formal written registers of the
+language, while in colloquial Czech, they have been eroded (Cvrček et al.,
+2015).
+3
+Following data collection, we discovered an error in item no. 26 where
+the attractor word in the mismatching syncretic condition was of the wrong
+gender. This meant that this condition in this one item behaved the same
+as the matching condition. In order to deal with this issue, we removed the
+trials with this item in both the grammatical and ungrammatical mismatching
+syncretic conditions in all experiments.
+4
+Some previous studies on Czech and English also used passive sentences
+(Czech and English: Chromý, Brand et al. (2023); Czech: Chromý, Lacina
+et al. (2023), Exp. 2), while other studies used actives (Czech: Chromý, Lacina
+et al., 2023, Expts. 1, 2, 4), and no difference due to passive/active voice was
+detected.
+
+5
+
+Journal of Memory and Language 143 (2025) 104623
+
+R. Lacina et al.
+
+Table 1
+Experimental item example from Experiment 1 (Czech) with masculine subject heads together with glosses according to the Leipzig glossing rules (Comrie, Haspelmath, & Bickel,
+2008).
+Gender match
+
+Syncretic
+
+1
+
+2
+
+3
+
+4
+
+5
+
+6
+
+7
+
+8
+
+a
+
+Match
+
+No
+
+b
+
+Mismatch
+
+No
+
+c
+
+Mismatch
+
+Yes
+
+d
+
+Match
+
+No
+
+e
+
+Mismatch
+
+No
+
+f
+
+Mismatch
+
+Yes
+
+Náklad
+cargo[nom.sg.m]
+Náklad
+cargo[nom.sg.m]
+Náklad
+cargo[nom.sg.m]
+*Náklad
+cargo[nom.sg.m]
+*Náklad
+cargo[nom.sg.m]
+*Náklad
+cargo[nom.sg.m]
+
+na
+on
+na
+on
+na
+on
+na
+on
+na
+on
+na
+on
+
+parník
+steamboat[acc.sg.m]
+střech-u
+roof-acc.sg.f≠nom.sg
+loď
+ship[acc.sg.f=nom.sg]
+parník
+steam.boat[acc.sg.m]
+střech-u
+roof-f.acc.sg≠nom.sg
+loď
+ship[acc.sg.f=nom.sg]
+
+překvapivě
+surprisingly
+překvapivě
+surprisingly
+překvapivě
+surprisingly
+překvapivě
+surprisingly
+překvapivě
+surprisingly
+překvapivě
+surprisingly
+
+byl
+was[3sg.m]
+byl
+was[3sg.m]
+byl
+was[3sg.m]
+byl-a
+was-3sg.f
+byl-a
+was-3sg.f
+byl-a
+was-3sg.f
+
+naložen
+loaded[3sg.m]
+naložen
+loaded[3sg.m]
+naložen
+loaded[3sg.m]
+naložen-a
+loaded-3sg.f
+naložen-a
+loaded-3sg.f
+naložen-a
+loaded-3sg.f
+
+námezdn-ími
+hired-ins
+námezdn-ími
+hired-ins
+námezdn-ími
+hired-ins
+námezdn-ími
+hired-ins
+námezdn-ími
+hired-ins
+námezdn-ími
+hired-ins
+
+dělník-y.
+workers-ins
+dělník-y.
+workers-ins
+dělník-y.
+workers-ins
+dělník-y.
+workers-ins
+dělník-y.
+workers-ins
+dělník-y.
+workers-ins
+
+‘The cargo for the steam boat/roof/ship surprisingly was loaded by hired workers.’
+
+the OSF entry at https://osf.io/h8bfw/). Fillers also had comprehension questions that targeted different pieces of information contained
+within the sentence. In the whole experiment, the correct answers to
+comprehension questions were counterbalanced (50% were yes, 50%
+no).
+
+Table 2
+Results of Experiment 1 (Czech). Estimated effects and their corresponding 95% credible
+intervals.
+Estimate (log-ms)
+
+95% CrI
+
+𝑃 (𝛽 > 0)
+
+5.93
+0.00
+−0.00
+0.00
+0.00
+−0.00
+
+[5.89; 5.97]
+[−0.00; 0.01]
+[−0.01; 0.01]
+[−0.00; 0.01]
+[−0.01; 0.01]
+[−0.01; 0.00]
+
+>0.99
+0.88
+0.37
+0.91
+0.54
+0.23
+
+5.98
+0.02
+−0.00
+0.00
+0.00
+−0.00
+
+[5.94; 6.03]
+[0.01; 0.03]
+[−0.01; 0.01]
+[−0.00; 0.01]
+[−0.01; 0.01]
+[−0.01; 0.00]
+
+>0.99
+>0.99
+0.32
+0.966
+0.59
+0.13
+
+6.12
+0.03
+0.01
+−0.00
+−0.00
+−0.01
+
+[6.06; 6.17]
+[0.02; 0.04]
+[−0.01; 0.02]
+[−0.01; 0.00]
+[−0.01; 0.01]
+[−0.01; 0.00]
+
+>0.99
+>0.99
+0.84
+0.22
+0.46
+0.032
+
+Verb
+Intercept
+Ungrammatical
+Identical vs. non-syncretic
+Syncretic vs. other
+Ungr. × (identical vs. non-syncretic)
+Ungr. × (syncretic vs. other)
+
+Procedure
+We employed the moving window word-by-word self-paced reading
+method administered online on the PCIbex platform (Zehr & Schwarz,
+2018). Participants were given access to a link to the experimental
+website. Upon clicking on it, they were first given a consent form. Next,
+they filled out a brief demographic questionnaire. They were then given
+three practice sentences to get used to the self-paced reading method
+and the task, which was reading sentences at their own pace and
+answering yes–no comprehension questions that appeared after each
+trial. These questions targeted the content of the preceding sentences
+and were answered by mouse clicking. We set no time limit for the
+answer and gave no feedback. Individual participants saw only one of
+the six conditions of each item. These were distributed using the Latinsquare design. Participants were therefore exposed to six exemplars of
+each condition. The average completion time for the experiment was
+about 20 min.
+
+Verb+1
+Intercept
+Ungrammatical
+Identical vs. non-syncretic
+Syncretic vs. other
+Ungr. × (identical vs. non-syncretic)
+Ungr. × (syncretic vs. other)
+Verb+2
+Intercept
+Ungrammatical
+Identical vs. non-syncretic
+Syncretic vs. other
+Ungr. × (identical vs. non-syncretic)
+Ungr. × (syncretic vs. other)
+
+Data analysis
+Reading times smaller than 130 ms or greater than 6000 ms were excluded from the analysis. Overall, 0.46% of data points were excluded
+in this way.
+To model reading times, we ran Bayesian hierarchical models with
+log-normal likelihood on three regions of interest: the verb, verb+1
+and verb+2 regions. We used the brms (Bürkner, 2017) package in the
+programming language R (R Core Team, 2022). As fixed effects, we
+included the two factors of attractor and grammaticality, and their interaction. The attractor factor was coded using Helmert contrast coding,
+with the first level comparing identical (−1) and non-syncretic (1) conditions, and the second level comparing the average of identical (−1)
+and non-syncretic (−1) conditions against the syncretic (2) condition.
+The grammaticality factor was sum-coded, with grammatical conditions
+coded as −1, and ungrammatical conditions as 1. The random effects
+structure included random intercepts for participants and items, as well
+as random slopes for the two fixed effects and their interaction for both
+participants and items. Correlations between random effects were not
+estimated.
+For effect estimation, models were run with four chains, 2000
+iterations per chain, where the first 1000 iterations were discarded as
+warmup. We report 95% credible intervals (95%-CrI) for the effects
+of interest, i.e., the intervals which contain the parameter of interest
+with 95% probability. However, formal hypothesis testing requires a
+likelihood ratio test comparing two alternative models (Schad, Nicenboim, Bürkner, Betancourt, & Vasishth, 2022). Hypothesis tests were
+performed using Bayes factors.
+
+Bayes factor analyses. The models were run with 20,000 iterations
+per chain, with 2000 initial iterations discarded as warmup. Because
+Bayes factors can be sensitive to prior specification (Schad et al., 2022),
+we report the outcomes under a range of priors for the interaction
+of interest: 𝑁𝑜𝑟𝑚𝑎𝑙(0, 0.005), 𝑁𝑜𝑟𝑚𝑎𝑙(0, 0.05), and 𝑁𝑜𝑟𝑚𝑎𝑙(0, 0.1), which
+correspond approximately to the effect sizes of 4 ms, 20 ms, and 40 ms.
+Due to Bayes factors being unstable for the full model, the random
+effects structure was simplified: The models included random intercepts
+for participants and items, and by-participant random slopes for the
+interaction between grammaticality and attractor type.
+Results
+Reading times per region across conditions can be viewed in Fig. 4.
+Average comprehension question accuracy was very high: 96% (SD =
+5%) for critical experimental items, and 93.5% (SD = 3.9%) for filler
+items.
+In reading times at the verb, there was no effect of either grammaticality or attractor type (see Table 4). Both in the verb+1 and the
+verb+2 regions, ungrammatical conditions were read longer (verb+1:
+𝛽̂ = 18 ms, 95%-CrI: [11, 24] ms, 𝑃 (𝛽 > 0) > 0.99; verb+2: 𝛽̂ = 24 ms,
+95%-CrI: [14, 33] ms, 𝑃 (𝛽 > 0) > 0.99). There were no other main effects
+or interactions (see Table 2). In particular, there was no evidence for
+an interaction between grammaticality and attractor type, see Fig. 5.
+6
+
+Journal of Memory and Language 143 (2025) 104623
+
+R. Lacina et al.
+
+Fig. 4. Results of Experiment 1 (Czech). Reading times across sentence regions and 95% confidence intervals.
+
+Fig. 5. Summary of Bayes factor evidence for the interaction between grammaticality and attractor type. Bayes factor values greater than 1 favour the interaction, while the values
+lower than 1 favour the absence of the interaction. The more extreme the Bayes factor value, the stronger the evidence.
+
+Discussion
+
+Materials
+The stimuli for the Slovak Experiment 2 were created together
+with the items for the Czech Experiment 1 (see Section ‘‘Materials’’ of
+Experiment 1). Both the experimental and filler items were translation
+equivalents of the Czech stimuli used in Experiment 1. An example
+experimental item with a masculine subject is given in Table 3.
+
+In line with most previous experiments conducted on Czech, no
+gender attraction was observed. Neither non-syncretic nor syncretic
+attractors caused speed-ups in the ungrammatical conditions. Bayes
+factors either favoured the model without the interaction, or were
+inconclusive. These outcomes do not fully align with the predictions of
+the cue-based retrieval model. We will further address the theoretical
+implications of this result in the General discussion (Section ‘‘General
+discussion’’).
+
+Procedure
+The procedure in Experiment 2 was identical to that of Experiment
+1. Importantly, the instructions and demographic questionnaire were
+direct translations from the Czech experiment.
+
+Experiment 2: Slovak
+Participants
+
+Data analysis
+Reading times below 130 ms and above 6000 ms were excluded
+from analysis. This loss constituted 0.28% of the reading times data.
+
+Data was collected from 123 native speakers of Slovak, who were
+part of the Charles University student participant pool and participated
+for course credit. Four participants who did not meet the 75% threshold
+for accuracy on filler items were excluded from analysis. The final
+sample consisted of 119 participants with the mean age of 21.4 years
+(SD = 2.74), 85 women and 34 men.
+
+Results
+The reading times per region across conditions can be viewed in Fig.
+6. Average question response accuracy was high: 96% (SD = 4.6%) for
+critical experimental items, and 93.75% (SD = 4.1%) for filler items.
+At the verb, verb+1, and verb+2 regions, ungrammatical conditions
+were read longer (verb: 𝛽̂ = 12 ms, 95%-CrI: [4, 21] ms, 𝑃 (𝛽 > 0) > 0.99;
+7
+
+Journal of Memory and Language 143 (2025) 104623
+
+R. Lacina et al.
+
+Table 3
+Experimental item example from Experiment 3 (Slovak) with masculine subject heads together with glosses according to the Leipzig glossing rules (Comrie et al., 2008).
+Gender match
+
+Syncretic
+
+1
+
+2
+
+3
+
+4
+
+5
+
+6
+
+7
+
+8
+
+a
+
+Match
+
+No
+
+b
+
+Mismatch
+
+No
+
+c
+
+Mismatch
+
+Yes
+
+d
+
+Match
+
+No
+
+e
+
+Mismatch
+
+No
+
+f
+
+Mismatch
+
+Yes
+
+Náklad
+cargo[nom.sg.m]
+Náklad
+cargo[nom.sg.m]
+Náklad
+cargo[nom.sg.m]
+*Náklad
+cargo[nom.sg.m]
+*Náklad
+cargo[nom.sg.m]
+*Náklad
+cargo[nom.sg.m]
+
+na
+on
+na
+on
+na
+on
+na
+on
+na
+on
+na
+on
+
+parník
+steamboat[acc.sg.m]
+strech-u
+roof-acc.sg.f≠nom.sg
+loď
+ship[acc.sg.f=nom.sg]
+parník
+steamboat[acc.sg.m]
+strech-u
+roof-acc.sg.f≠nom.sg
+loď
+ship[acc.sg.f=nom.sg]
+
+prekvapivo
+surprisingly
+prekvapivo
+surprisingly
+prekvapivo
+surprisingly
+prekvapivo
+surprisingly
+prekvapivo
+surprisingly
+prekvapivo
+surprisingly
+
+bol
+was[3sg.m]
+bol
+was[3sg.m]
+bol
+was[3sg.m]
+bol-a
+was-3sg.f
+bol-a
+was-3sg.f
+bol-a
+was-3sg.f
+
+naložen-ý
+loaded-nom.sg.m
+naložen-ý
+loaded-nom.sg.m
+naložen-ý
+loaded-nom.sg.m
+naložen-á
+loaded-nom.sg.f
+naložen-á
+loaded-nom.sg.f
+naložen-á
+loaded-nom.sg.f
+
+námezdn-ými
+hired-ins
+námezdn-ými
+hired-ins
+námezdn-ými
+hired-ins
+námezdn-ými
+hired-ins
+námezdn-ými
+hired-ins
+námezdn-ými
+hired-ins
+
+robotník-mi.
+workers-ins
+robotník-mi.
+workers-ins
+robotník-mi.
+workers-ins
+robotník-mi.
+workers-ins
+robotník-mi.
+workers-ins
+robotník-mi.
+workers-ins
+
+‘The cargo for the steam boat/roof/ship surprisingly was loaded by hired workers.’
+
+Fig. 6. Results of Experiment 2 (Slovak). Reading times across sentence regions and 95% confidence intervals.
+
+verb+1: 𝛽̂ = 27 ms, 95%-CrI: [15, 39] ms, 𝑃 (𝛽 > 0) > 0.99; verb+2:
+𝛽̂ = 32 ms, 95%-CrI: [18, 45] ms, 𝑃 (𝛽 > 0) > 0.99). There were no other
+main effects or interactions (see Table 4). In particular, there was no
+evidence for interaction between grammaticality and attractor type, see
+Fig. 5.
+
+Table 4
+Results of Experiment 2 (Slovak comprehension). Estimated effects and their corresponding 95% credible intervals.
+Estimate (log-ms)
+
+95% CrI
+
+𝑃 (𝛽 > 0)
+
+6.00
+0.02
+−0.01
+0.00
+−0.01
+0.00
+
+[5.96; 6.04]
+[0.00; 0.03]
+[−0.02; 0.00]
+[−0.00; 0.01]
+[−0.02; 0.00]
+[−0.01; 0.01]
+
+>0.99
+>0.99
+0.11
+0.80
+0.10
+0.57
+
+6.11
+0.03
+−0.00
+−0.01
+−0.00
+−0.00
+
+[6.04; 6.17]
+[0.02; 0.04]
+[−0.01; 0.01]
+[−0.01; 0.00]
+[−0.02; 0.01]
+[−0.01; 0.01]
+
+>0.99
+>0.99
+0.42
+0.064
+0.38
+0.36
+
+6.24
+0.03
+0.00
+−0.01
+−0.01
+−0.01
+
+[6.18; 6.31]
+[0.02; 0.04]
+[−0.01; 0.02]
+[−0.02; 0.00]
+[−0.02; 0.01]
+[−0.02; 0.00]
+
+>0.99
+>0.99
+0.73
+0.052
+0.17
+0.12
+
+Verb
+Intercept
+Ungrammatical
+Identical vs. non-syncretic
+Syncretic vs. other
+Ungr. × (identical vs. non-syncretic)
+Ungr. × (syncretic vs. other)
+
+Discussion
+In Slovak, we again found only a slowdown due to ungrammaticality, but no evidence of gender attraction, either with non-syncretic
+or syncretic attractors. While in Czech, no prior study examined gender agreement attraction, for Slovak, Badecker and Kuminiak (2007)
+showed that Slovak speakers can be induced to make gender agreement
+attraction errors in production. The discrepancy between the results of
+Experiment 2 and findings by Badecker and Kuminiak suggests that
+in Slovak, there might be a divergence between attraction effects in
+production and comprehension.
+It comes as no surprise that the outcomes of the Czech and Slovak
+experiments mirror each other. The two languages are mutually intelligible and, overall, very similar (Golubović & Gooskens, 2015; Short,
+2018, also compare Tables 1 and 3). This similarity and translationequivalence of the stimuli provide an opportunity to perform a joint
+analysis on both data sets. If the attraction effect was very small, such
+a pooled analysis would have higher chances of detecting the effect due
+to increased power and precision.5
+
+Verb + 1
+Intercept
+Ungrammatical
+Identical vs. non-syncretic
+Syncretic vs. other
+Ungr. × (identical vs. non-syncretic)
+Ungr. × (syncretic vs. other)
+Verb + 2
+Intercept
+Ungrammatical
+Identical vs. non-syncretic
+Syncretic vs. other
+Ungr. × (identical vs. non-syncretic)
+Ungr. × (syncretic vs. other)
+
+Another reason why we might not have seen a gender attraction
+effect in either the Czech or Slovak experiment, is that the region
+directly following the gender-marked auxiliary verb, i.e, the verb+1
+region, was itself gender-marked. This may potentially be problematic,
+
+5
+
+Note, however, that the samples in both experiments are large enough to
+detect more standard-sized number attraction effects attested in English and
+other languages.
+8
+
+Journal of Memory and Language 143 (2025) 104623
+
+R. Lacina et al.
+
+Table 5
+Joint analysis of the verb+2 region in Experiments 1 and 2 (Czech and Slovak). Estimated effects and their
+corresponding 95% credible intervals.
+Estimate (log-ms)
+
+95% CrI
+
+𝑃 (𝛽 > 0)
+
+6.17
+0.03
+0.01
+−0.00
+−0.00
+−0.01
+−0.05
+−0.00
+−0.00
+0.00
+0.00
+0.00
+
+[6.12; 6.22]
+[0.02; 0.04]
+[−0.00; 0.02]
+[−0.01; 0.00]
+[−0.01; 0.01]
+[−0.01; −0.00]
+[−0.07; −0.04]
+[−0.02; 0.01]
+[−0.01; 0.01]
+[−0.00; 0.01]
+[−0.01; 0.02]
+[−0.01; 0.01]
+
+>0.99
+>0.99
+0.88
+0.045
+0.251
+0.019
+<0.001
+0.395
+0.496
+0.805
+0.713
+0.514
+
+Verb + 2
+Intercept
+Ungrammatical
+Identical vs. non-syncretic
+Syncretic vs. other
+Ungr. × (identical vs. non-syncretic)
+Ungr. × (syncretic vs. other)
+Czech
+Czech × Ungrammatical
+Czech × (identical vs. non-syncretic)
+Czech × (syncretic vs. other)
+Ungr. × Czech × (identical vs. non-syncretic)
+Ungr. × Czech × (syncretic vs. other)
+
+as attraction effects have often been found on the region following the
+verb when this region was invariant between conditions and carried no
+(number or gender) marking. Therefore, in the joint analysis, we will
+focus on the verb+2 region.
+
+Discussion
+The main outcome of the joint analysis is that in syncretic ungrammatical conditions in the verb+2 region, the slowdown due to
+ungrammaticality was smaller than in the other conditions. This echoes
+the classic agreement attraction effect, and is in line with the predictions of the cue-based retrieval model, assuming that an attractor
+syncretic between nominative and accusative partially matches the
+nominative retrieval cue.
+Another finding of the joint analysis is that reading in Czech was
+faster than reading in Slovak by 50 ms. There are two potential explanations for this effect. Firstly, the masculine form of the participle
+(the verb+1 region) is one letter shorter in Czech compared to Slovak
+(naložen vs. naložený, ‘loaded’), and the length effect could have spilled
+over to the following region. The second potential explanation is that
+the native Slovak speakers in our sample were students residing in the
+Czech Republic. It is possible that due to wide exposure to Czech, their
+Slovak could have been subjected to some attrition (see Kříž & Chromý,
+2022).
+Overall, our finding an agreement attraction effect in the verb+2
+region, which is the first region not requiring gender (or number)
+agreement with the subject, suggests that gender marking in the verb+1
+region may have interfered with the gender attraction effect. In addition, the estimated attraction effect is very small (≈ 6 ms), which means
+that more observations are needed to detect it.
+Alternatively, it could be that in Czech and Slovak, gender agreement attraction only arises late. In their study on Arabic, Tucker et al.
+(2021) also found that gender attraction effects occurred later, in
+verb+1 (gender attraction) compared to verb (number attraction). From
+the current data we cannot rule out that in Czech and Slovak, gender
+attraction is only seen in the verb+2 region regardless of what comes
+immediately after the first gender-marked verb.
+Given that the Bayes factor analysis did not conclusively support
+the attraction effect, and that the effect occurred uncharacteristically
+late, we decided to run a final experiment in Czech with an improved
+item design and an increased number of participants. The goal of the
+experiment is to get a more precise estimate of the gender attraction
+effect and to establish whether gender attraction indeed occurs late in
+the language.
+
+Joint analysis of Experiments 1 and 2
+Here, we explore whether there are any differences in (a) the
+strength of the attraction effect, (b) the size of the ungrammaticality
+slow-down and (c) general reading times between the two studied
+languages, Czech and Slovak. To this end, we conducted a joint analysis
+of the two equivalent experiments reported above. We analysed the
+verb+2 region, which was the first region that did not differ in gender
+marking between the conditions.
+On the combined dataset, we ran a Bayesian hierarchical model
+similar to the models for individual experiments. We added language
+as a predictor, with Czech being coded as 1 and Slovak as −1. Thus,
+the fixed effects were grammaticality, attractor type, and language, as
+well as all possible interactions between these. Given that language
+was a between-participant factor, we did not add by-language random
+slopes for participants. Since the experimental items are translational
+equivalents, we added by-item random slopes for all the main effects
+and all interactions. Correlations between random slopes were not
+estimated.
+As expected, ungrammatical conditions were read longer: 𝛽̂ = 27 ms,
+95%-CrI: [18, 36] ms, 𝑃 (𝛽 > 0) > 0.99. In addition, reading in Czech
+was faster than reading in Slovak: 𝛽̂ = −53 ms, 95%-CrI: [−64, −41] ms,
+𝑃 (𝛽 < 0) > 0.99. Finally, across languages, there was an interaction
+between grammaticality and attractor type: 𝛽̂ = −6.3 ms, 95%-CrI:
+[−12, −0.47] ms, 𝑃 (𝛽 < 0) = 0.98. Nested comparisons showed that
+the slowdown due to ungrammaticality was smaller in the syncretic
+condition than in two other conditions (see also Fig. 7). Syncretic:
+𝛽̂ = 14.9 ms, 95%-CrI: [0.51, 29.1] ms, 𝑃 (𝛽 > 0) = 0.978; non-syncretic:
+𝛽̂ = 30.2 ms, 95%-CrI: [15.7, 45.6] ms, 𝑃 (𝛽 > 0) > 0.999; matching:
+𝛽̂ = 37.3 ms, 95%-CrI: [21.9, 52.6] ms, 𝑃 (𝛽 > 0) > 0.999. In grammatical
+sentences, the difference between the matching and mismatching nonsyncretic conditions was estimated to be 𝛽̂ = −8.86 ms, 95%-CrI:
+[−22.4, 5.6] ms, 𝑃 (𝛽 > 0) = 0.11; the difference between matching
+and mismatching syncretic conditions was 𝛽̂ = −6.56 ms, 95%-CrI:
+[−19.9, 7.25] ms, 𝑃 (𝛽 > 0) = 0.164.
+
+Experiment 3: Czech replication
+Participants
+Data from 260 native speakers of Czech was collected. Five participants who did not meet the 75% accuracy threshold on filler items were
+excluded from the analysis. The final sample comprised 255 individuals
+(compare to 𝑁 = 291 for the joint analysis of Experiments 1 and 2): 206
+women, 45 men, and four individuals who chose to not disclose their
+gender. The mean age in the sample was 23.1 years, with 𝑆𝐷 = 6.16
+years.
+
+The interaction between grammaticality and attractor type was not
+supported by the Bayes factor analysis: Under broader priors, there was
+evidence against the interaction (𝐵𝐹10 = 0.0001 and 𝐵𝐹10 = 0.0008),
+and under the narrow prior, the evidence was inconclusive (𝐵𝐹10 =
+1.12). There were no other effects or interactions (see Table 5).
+9
+
+Journal of Memory and Language 143 (2025) 104623
+
+R. Lacina et al.
+
+Fig. 7. Estimated interaction between grammaticality and attractor type in the joint analysis (left) and Experiment 3 (right). Note that for the joint analysis, data are collapsed
+across languages.
+
+Table 6
+Experimental item example from Experiment 3 (Czech) with masculine subject head together with glosses according to the Leipzig glossing rules (Comrie et al., 2008).
+Gender match
+
+Syncretic
+
+1
+
+2
+
+3
+
+4
+
+5
+
+6
+
+7
+
+8
+
+9
+
+10
+
+a
+
+Match
+
+No
+
+b
+
+Mismatch
+
+No
+
+c
+
+Mismatch
+
+Yes
+
+d
+
+Match
+
+No
+
+e
+
+Mismatch
+
+No
+
+f
+
+Mismatch
+
+Yes
+
+Náklad
+Cargo-m.nom.sg
+Náklad
+Cargo-m.nom.sg
+Náklad
+Cargo-m.nom.sg
+*Náklad
+Cargo-m.nom.sg
+*Náklad
+Cargo-m.nom.sg
+*Náklad
+Cargo-m.nom.sg
+
+na
+on
+na
+on
+na
+on
+na
+on
+na
+on
+na
+on
+
+parník
+steam.boat-m.acc.sg
+střechu
+roof-f.acc.sg≠nom.sg
+loď
+ship-f.acc.sg=nom.sg
+parník
+steam.boat-m.acc.sg
+střechu
+roof-f.acc.sg≠nom.sg
+loď
+ship-f.acc.sg=nom.sg
+
+překvapivě
+surprisingly
+překvapivě
+surprisingly
+překvapivě
+surprisingly
+překvapivě
+surprisingly
+překvapivě
+surprisingly
+překvapivě
+surprisingly
+
+byl
+was-m.sg
+byl
+was-m.sg
+byl
+was-m.sg
+byla
+was-f.sg
+byla
+was-f.sg
+byla
+was-f.sg
+
+velmi
+very
+velmi
+very
+velmi
+very
+velmi
+very
+velmi
+very
+velmi
+very
+
+rychle
+quickly
+rychle
+quickly
+rychle
+quickly
+rychle
+quickly
+rychle
+quickly
+rychle
+quickly
+
+naložen
+loaded-m.sg
+naložen
+loaded-f.sg
+naložen
+loaded-f.sg
+naložena
+loaded-f.sg
+naložena
+loaded-f.sg
+naložena
+loaded-f.sg
+
+námezdními
+hired
+námezdními
+hired
+námezdními
+hired
+námezdními
+hired
+námezdními
+hired
+námezdními
+hired
+
+dělníky.
+workers-ins
+dělníky.
+workers-ins
+dělníky.
+workers-ins
+dělníky.
+workers-ins
+dělníky.
+workers-ins
+dělníky.
+workers-ins
+
+‘The cargo for the steam boat/roof/ship surprisingly was very quickly loaded by hired workers.’
+
+and grammaticality (see Fig. 7): 𝛽̂ = −4.9 ms, 95%-CrI: [−9, −0.77] ms,
+𝑃 (𝛽 < 0) = 0.99. The interaction was supported by the Bayes factor
+analysis under narrow priors, see Fig. 5. Nested comparisons showed
+that ungrammatical conditions were read more slowly than their grammatical counterparts in the identical and non-syncretic, but not in the
+syncretic conditions (identical: 𝛽̂ = 21.2 ms, 95%-CrI: [11.5, 31.3] ms,
+𝑃 (𝛽 > 0) > 0.99); non-syncretic: 𝛽̂ = 23.7 ms, 95%-CrI: [13.6, 33.8] ms,
+𝑃 (𝛽 > 0) > 0.99); syncretic: 𝛽̂ = 7.93 ms, 95%-CrI: [−2.7, 18.5] ms,
+𝑃 (𝛽 > 0) > 0.928). There were no other main effects or interactions
+(see Table 7). In particular, in grammatical sentences, the difference
+between the matching and mismatching non-syncretic conditions was
+estimated to be 𝛽̂ = 4.15 ms, 95%-CrI: [−5.08, 13.5] ms, 𝑃 (𝛽 > 0) = 0.82;
+the difference between matching and mismatching syncretic conditions
+was 𝛽̂ = −7.73 ms, 95%-CrI: [−17.7, 2.55] ms, 𝑃 (𝛽 > 0) = 0.067.
+
+Materials
+The items used in Experiment 1 were modified: two adverbs were
+added between the verbal auxiliary and the participle, while pragmatic
+felicity was maintained. This was done in order to create two regions
+with no gender marking for potential spillover effects. For an example
+item, we refer the reader to Table 6. The same set of fillers as in
+Experiment 1 was used.
+Procedure
+We followed the same procedure as in the previous two experiments.
+Data analysis
+The same steps were taken as in the analysis of Experiments 1 and 2.
+Reading times below 130 ms and above 6000 ms were trimmed, which
+resulted in the exclusion of 0.45% of reading times.
+
+Discussion
+
+Results
+The reading times per region across conditions can be viewed in
+Fig. 8. Average comprehension question accuracy was very high and
+comprised 96.3% (SD = 4.85%) for critical experimental items, and
+93.1% (SD = 5.71%) for filler items.
+In reading times at the verb, there was no effect of either grammaticality or attractor type, or any interaction (see Table 7). Both at
+the verb+1 and the verb+2 regions, ungrammatical conditions were
+read longer (verb+1: 𝛽̂ = 18 ms, 95%-CrI: [11, 24] ms, 𝑃 (𝛽 > 0) >
+0.99; verb+2: 𝛽̂ = 15 ms, 95%-CrI: [8.5, 21] ms, 𝑃 (𝛽 > 0) > 0.99). In
+the verb+1 region, there was an interaction between attractor type
+
+Adding two adverbs after the verbal auxiliary as a spillover region
+proved to be effective: We found a clear, although very small, gender
+attraction effect in the verb+1 region. The attraction effect was specific
+to syncretic attractors only and was absent in the following region
+(verb+2). These findings suggest that attraction effects in Experiment 1
+(and potentially Experiment 2) were masked by the presence of another
+gender marked verb following the auxiliary, and that attraction in
+Czech gender agreement only arises with syncretic attractors. In addition, the results suggest the timeline of gender agreement attraction
+in Czech is the same as in the other languages tested.
+10
+
+Journal of Memory and Language 143 (2025) 104623
+
+R. Lacina et al.
+
+Fig. 8. Results of Experiment 3 (Czech replication). Reading times across sentence regions and 95% confidence intervals.
+Table 7
+Results of Experiment 3 (Czech replication). Estimated effects and their corresponding
+95% credible intervals.
+Estimate (log-ms)
+
+95% CrI
+
+𝑃 (𝛽 > 0)
+
+6.00
+0.00
+−0.00
+0.00
+0.00
+0.00
+
+[5.96; 6.03]
+[−0.00; 0.01]
+[−0.01; 0.01]
+[−0.01; 0.01]
+[−0.01; 0.01]
+[−0.01; 0.01]
+
+>0.99
+0.86
+0.19
+0.50
+0.67
+0.56
+
+5.99
+0.02
+−0.00
+0.00
+0.00
+−0.01
+
+[5.95; 6.03]
+[0.01; 0.03]
+[−0.01; 0.00]
+[−0.00; 0.01]
+[−0.01; 0.01]
+[−0.01; −0.00]
+
+>0.99
+>0.99
+0.19
+0.78
+0.65
+0.01
+
+6.00
+0.02
+−0.00
+0.00
+0.00
+0.00
+
+[5.96; 6.04]
+[0.01; 0.03]
+[−0.01; 0.00]
+[−0.00; 0.01]
+[−0.01; 0.01]
+[−0.00; 0.01]
+
+>0.99
+>0.99
+0.21
+0.86
+0.68
+0.76
+
+Attraction in Czech and Slovak from a cross-linguistic perspective
+Recall that recent findings suggest that in Czech, number agreement
+attraction is non-existent or tiny at best (Chromý, Brand et al., 2023;
+Chromý, Lacina et al., 2023; Lacina & Chromý, 2022; Lacina & Dotlačil,
+2024). The current study, on the other hand, provides evidence in
+favour of gender agreement attraction in Czech and Slovak (through the
+combined analysis). However, what at first seems to be a contradiction
+is in fact a consistent set of findings: The largest estimated number
+attraction effect in Czech comprises −12 ms,6 and the estimated gender
+attraction effect in Experiment 3 is −5 ms (−6 ms in the joint analysis
+of Experiments 1 and 2). These estimates are much smaller than those
+reported for other languages. The meta-analysis by Jäger et al. (2017)
+estimates the number attraction effect to be on average −21.9 ms, with
+95% credible interval between −36.4 and −9 ms. In a similar vein,
+Slioussar et al. (2022) estimated gender attraction in Russian, a Slavic
+language that shares many relevant features with Czech and Slovak, to
+be on average −44.76 ms. This is a difference of an order of magnitude.
+Also recall that the size of the grammaticality illusion effect reported
+in Lacina and Dotlačil (2024) was likewise a magnitude smaller than in
+English. It thus appears that in general, attraction effects in Czech (and,
+possibly, Slovak) are much smaller than in other languages, including
+other Slavic languages, and appear only under the condition of case
+syncretism.
+Although the reasons underlying these cross-linguistic differences
+remain largely unclear, the present study reinforces the role case syncretism plays in the emergence of agreement attraction effects. In
+Czech and Slovak, only case-syncretic attractors lead to attraction effects. More broadly, this means that attraction only occurs if attractors
+are sufficiently subject-like (see also recent evidence from Romanian
+by Bleotu & Dillon, 2024). It comes as no surprise that agreement
+attraction was first attested in English, a language where nouns are
+largely unmarked for case and therefore do not signal their syntactic
+status in this way. Moreover, most studies included in the meta-analysis
+by Jäger et al. (2017) were based on English, French, and Spanish,
+which are all languages without grammatical case marking on nouns.
+The only language with a case system that entered the meta-analysis
+was Modern Standard Arabic (Tucker et al., 2015). If case syncretism
+is indeed crucial for the emergence of attraction effects, evidence from
+under-researched languages with well-developed case and/or agreement systems, such as the Uralic, Baltic, and Bantu languages, is of
+critical importance.
+
+Verb
+Intercept
+Ungrammatical
+Identical vs. non-syncretic
+Syncretic vs. other
+Ungr. × (identical vs. non-syncretic)
+Ungr. × (syncretic vs. other)
+Verb + 1
+Intercept
+Ungrammatical
+Identical vs. non-syncretic
+Syncretic vs. other
+Ungr. × (identical vs. non-syncretic)
+Ungr. × (syncretic vs. other)
+Verb + 2
+Intercept
+Ungrammatical
+Identical vs. non-syncretic
+Syncretic vs. other
+Ungr. × (identical vs. non-syncretic)
+Ungr. × (syncretic vs. other)
+
+General discussion
+In the current study, we set out to test for the presence of gender agreement attraction effects in the comprehension of two closely
+related and mutually intelligible West Slavic languages, Czech and
+Slovak, and to assess the role of case syncretism in the emergence of
+attraction effects. Our second goal was to evaluate the predictions of the
+cue-based retrieval model against the observed effects. We conducted
+three self-paced reading experiments, comparing potential attraction
+effects from case-syncretic and non-syncretic attractors. In Experiments
+1 (Czech) and 2 (Slovak), only the slowdowns due to ungrammaticality
+were found. In the joint analysis of the data from both experiments,
+a small gender attraction effect was detected in the ungrammatical
+conditions in the verb+2 region, yet only with case-syncretic attractors.
+In the follow-up Experiment 3 (Czech), a gender attraction effect was
+detected in the verb+1 region, again only in the conditions with casesyncretic attractors. Overall, we found evidence for gender agreement
+attraction, specific to the ungrammatical conditions with case-syncretic
+attractors.
+
+6
+Only if attractors are syncretic (Chromý, Lacina et al., 2023); for
+non-syncretic attractors, the estimate is non-distinguishable from 0.
+
+11
+
+Journal of Memory and Language 143 (2025) 104623
+
+R. Lacina et al.
+
+Fig. 9. Predicted gender attraction (in ungrammatical sentences) and inhibitory interference (in grammatical sentences) compared to effect estimates from the joint analysis of
+Experiments 1 and 2, and from Experiment 3. Full match refers to the syncretic attractor matching the ‘‘+nominative’’ retrieval cue fully; half match refers to the syncretic attractor
+matching the ‘‘+nominative’’ retrieval cue by 0.5.
+
+is mixed: While all ungrammatical conditions were read more slowly
+than grammatical ones in the joint analysis of Experiments 1 and 2, in
+Experiment 3, reading times in syncretic ungrammatical condition did
+not differ from those of its grammatical counterpart. We are reluctant to
+interpret this null effect as a strong argument against the repair version
+of the cue-based retrieval model, and suggest that this explanation is
+still possible.
+To summarise, the classic version of the cue-based retrieval model
+by Lewis and Vasishth (2005) cannot account for the processing times
+in grammatical sentences. It remains an open question whether the
+reanalysis version of the cue-based retrieval model can be reconciled
+with the reading times observed in ungrammatical sentences. Next,
+we briefly evaluate other alternative processing models of agreement
+attraction in view of our results.
+
+Evaluating the predictions of the cue-based retrieval account
+The second goal of the present study was to evaluate the predictions
+of the cue-based retrieval model. Six experimental conditions allowed
+us to evaluate the fine-grained predictions of the model, such as the relative magnitudes of attraction effects from syncretic and non-syncretic
+attractors, respectively. To model case syncretism, we for the first time
+applied the ACT-R partial cue matching functionality within a language
+processing model. The predictions of the model and the outcomes of the
+experiments are summarised in Fig. 9.
+Overall, while the attraction effects in ungrammatical sentences
+somewhat align with the predictions of the cue-based retrieval model,
+the effects observed in grammatical sentences do not.
+In ungrammatical sentences, the observed differences between attraction effects in matching and mismatching conditions fall roughly
+in between the predictions of model variants that assume or do not
+assume a syntactic retrieval cue. Using the partial cue-feature matching
+functionality to model case syncretism was not sufficient to capture
+the observed effect sizes. Although no model configuration perfectly
+accounts for the results, the predictions align with the direction of the
+effect.
+In grammatical sentences, the observed effects strongly disagree
+with the model’s predictions. To remind the reader, the classic cuebased retrieval model by Lewis and Vasishth (2005) predicts inhibitory
+interference, i.e., a slowdown in processing times, when the attractor
+matches some of the retrieval cues. Inhibitory interference should be
+stronger in the matching condition, and weaker in the mismatching conditions (a positive difference between conditions is predicted).
+However, the empirical estimates are indistinguishable from 0, and if
+anything, rather go in the opposite direction. Our findings reinforce the
+conclusions of previous studies suggesting that the cue-based retrieval
+model fails to account for the processing of grammatical attraction-like
+configurations (Jäger et al., 2017; Laurinavichyute & von der Malsburg,
+2024; Yadav et al., 2023).
+One potential explanation for the model’s failure to capture the
+processing of grammatical sentences is that cue-based retrieval is only
+deployed as a part of the repair process after sentence ungrammaticality
+detection, as suggested by Wagers et al. (2009) and Lago et al. (2015).
+Crucially, under this account, ungrammatical conditions should always
+be processed more slowly than their grammatical counterparts. The
+slowdown can be smaller in the attraction conditions, but it should
+still be present because ungrammaticality detection and the following
+repair cannot be instantaneous. The evidence from the present study
+
+Alternative theoretical accounts
+The marking and morphing account of agreement attraction was
+introduced to explain attraction errors in production (Bock & Eberhard,
+1993; Eberhard, Cutting, & Bock, 2005b) and was later applied to comprehension (Hammerly et al., 2019). It assumes that the subject noun
+phrase can be miscast as having a different feature due to erroneous
+percolation of this feature from the distractor noun. This theoretical
+explanation is especially useful for number attraction, where the default
+singular feature is believed to be underspecified. Applying the same
+logic to gender attraction is less straightforward. In contrast to number,
+gender is lexically bound in nouns: a certain word is either masculine,
+neuter, or feminine, whereas the same noun can take different number
+values (singular, plural, in some languages also dual). In gender opposition, no feature is underspecified, which means that a percolating
+gender feature cannot overwrite the gender of the subject head noun.
+Masculine can be seen as unmarked in the sense that it can stand
+generically (for example, studenti which is masculine, may refer to all
+the students, not only to males). However, this holds only for specific
+groups of animate nouns (e.g., role nouns) and we did not use these as
+subjects.
+Alternatively, the gender mismatch configuration could create confusion about where the gender feature belongs (Dempsey et al., 2022;
+Konieczny, Schimke, & Hemforth, 2004). This should lead to slowdowns in grammatical and speed-ups in ungrammatical gender mismatch configurations. For grammatical sentences, the slowdown predicted by the feature misencoding account is the opposite of the speedup predicted by cue-based retrieval. Importantly, the degree of feature
+12
+
+Journal of Memory and Language 143 (2025) 104623
+
+R. Lacina et al.
+
+misencoding should depend on how much the attractor looks like a subject. In the syncretic condition, where the attractor has the appearance
+of a noun in the nominative case, confusion with the subject can arise,
+and therefore, attraction should be greater. This fits the results observed
+for the ungrammatical sentences, but leaves open the question of why
+the slowdown in attraction conditions is not observed in grammatical
+sentences.
+It is possible that gender attraction predicted by the feature misencoding account is, in fact, present in grammatical sentences, but
+concealed by task effects. Hammerly et al. (2019) showed that number
+attraction in grammatical sentences surfaces in ratings when participants expect to encounter ungrammatical constructions. In a similar
+vein, Laurinavichyute and von der Malsburg (2024) demonstrated that
+number attraction (but not inhibitory interference) in grammatical
+sentences arises in reading times when participants are asked to judge
+sentence grammaticality and disappears when participants are asked
+to answer comprehension questions (recall that in the present experiments, comprehension questions were used). Speculatively, the
+direction of the effect in grammatical sentences (see Fig. 9) is in line
+with the expected attraction effect.
+To summarise, the present results are broadly compatible with two
+existing accounts of agreement attraction, the retrieval-at-reanalysis
+and the feature misencoding plus task demands accounts. However, the
+current study cannot at the moment further arbitrate between the two
+accounts.
+
+Based on these considerations, we believe that free word order
+in Czech cannot account for the differences in the rates of attraction
+between Czech and English. It also cannot account for the agreement
+attraction effects arising only in the ungrammatical syncretic condition,
+because if the first noun is occasionally miscast as an object, it must be
+miscast in all conditions, and this should affect all conditions to the
+same degree.
+
+Limitations and future research
+One potential limitation of our study is that it does not explore the
+Czech and Slovak gender system in full—both languages distinguish not
+only between the masculine and feminine gender, but also the neuter.
+In addition, masculine nouns have different forms and agreement patterns depending on their animacy (Short, 2018). Future research ought
+to examine different combinations of genders and animacy to determine
+whether gender agreement attraction in Czech is dependent on specific
+permutations of gender in the subject and the attractor. Another limitation is that our feminine-subject and masculine-subject items differed in
+the syncretism of the gender-matching attractor. While in the masculine
+subject configurations, this noun was always syncretic, this was not
+the case in the feminine subject configurations, where the matching
+attractor was not syncretic. Still, we do not believe that this property
+of the design affected the results to a great degree: gender-matching
+non-syncretic attractors should have made sentence ungrammaticality
+more prominent, which is desired in the control condition.
+
+Potential word order influences
+Another potential explanation is that in Czech and Slovak, attraction
+might only arise in situations where the comprehender experiences
+uncertainty about which constituent is the subject. This might explain
+why Badecker and Kuminiak (2007) report that agreement attraction
+errors were found only when both the subject and the attractor were
+syncretic. The key might lie in the free word order that both Czech
+and Slovak have (Junghanns, 2001). Corpus research has shown that
+all combinations of the basic arguments S, V, and O are acceptable
+(with SVO being the most frequent), meaning that orders beginning
+with O are possible and present (Siewierska & Uhlířová, 1998). If the
+subject head of a sentence is syncretic between the nominative and
+accusative case and is at the beginning of a sentence, comprehenders
+cannot reliably disambiguate its syntactic role until later on in the
+sentence. In other words, the NP might be an object as well as the
+subject. Therefore, its representation as the subject might be weaker
+compared to (a) cases where it is marked unambiguously with the
+nominative, and (b) languages where word order fully determines the
+grammatical function of each constituent (e.g., English).
+However, temporal miscasting of the subject as an object should
+actually increase attraction effects, not decrease them. If participants
+miscast the subject, they might encode its number and gender with
+lower precision because objects do not control verb agreement in
+Czech. When participants later realise that the noun was, in fact, the
+subject, its number and gender features might be less available, which,
+in turn, should lead to more errors and increase attraction.
+If the first noun is correctly cast as the subject and its features
+are encoded with high precision, attraction rates should be lower.
+However, in English, object-first word order is even rarer than in Czech,
+which means that English speakers strongly expect the first noun to be
+the subject, and yet attraction rates are much higher in English than in
+Czech.
+Finally, if the miscasting of the subject noun as an object does not
+affect the quality of its features’ encoding, the reanalysis alone cannot
+explain weaker attraction effects in Czech. According to the cue-based
+retrieval model, at the reanalysis (which must occur at the verb), the
+reanalysed NP must be retrieved from memory. Without reanalysis,
+the subject NP must also be retrieved from memory when the verb is
+processed, so these scenarios do not differ.
+
+Finally, the hypothesis that comprehenders might not be disambiguating the initial NP as either the subject or the object when the
+head noun is syncretic between the nominative and accusative should
+be tested, and its role within attraction effects examined. We leave this
+to future research.
+
+Conclusion
+The aim of the current study was to establish the role of case
+syncretism for the emergence of agreement attraction effects, and to
+evaluate the fine-grained predictions of the cue-based retrieval model
+for gender attraction configurations. We ran three self-paced reading
+experiments—two in Czech and one in Slovak, which are mutually
+intelligible Slavic languages,—to examine gender agreement attraction
+in comprehension. Our findings support the claims that attraction
+arises only with case-syncretic forms. The discrepancies between the
+observed effects and model predictions once again demonstrate that
+while cue-based retrieval models correctly capture the processing of
+ungrammatical sentences, they cannot account for the processing of
+attraction-like configurations in grammatical sentences. Overall, our
+study suggests that attraction effects are less universal than what the
+evidence from languages with only syncretic word forms led us to
+believe. This highlights the need for testing more diverse languages for
+the evaluation and refinement of sentence processing theories.
+
+CRediT authorship contribution statement
+Radim Lacina: Writing – original draft, Writing – review and
+editing, Resources, Project administration, Methodology, Conceptualization. Anna Laurinavichyute: Writing – original draft, Writing –
+review and editing, Visualization, Methodology, Formal analysis, Conceptualization. Jan Chromý: Writing – original draft, Writing – review
+and editing, Software, Resources, Project administration, Methodology,
+Data curation, Conceptualization.
+13
+
+Journal of Memory and Language 143 (2025) 104623
+
+R. Lacina et al.
+
+Funding
+
+Cunnings, I., & Sturt, P. (2018). Retrieval interference and semantic interpretation.
+Journal of Memory and Language, 102, 16–27. http://dx.doi.org/10.1016/j.jml.2018.
+05.001.
+Cvrček, V., et al. (2015). Mluvnice současné češtiny: Jak se píše a jak se mluví. Univerzita
+Karlova v Praze, NakladatelstvíKarolinum.
+Dempsey, J., Christianson, K., & Tanner, D. (2022). Misretrieval but not misrepresentation: A feature misbinding account of post-interpretive effects in number attraction.
+Quarterly Journal of Experimental Psychology, 75(9), 1727–1745.
+Eberhard, K. M., Cutting, J. C., & Bock, K. (2005a). Making syntax of sense: Number
+agreement in sentence production. Psychological Review, 112(3), 531–559. http:
+//dx.doi.org/10.1037/0033-295X.112.3.531.
+Eberhard, K. M., Cutting, J. C., & Bock, K. (2005b). Making syntax of sense: Number
+agreement in sentence production. Psychological Review, 112(3), 531.
+Engelmann, F., Jäger, L. A., & Vasishth, S. (2019). The effect of prominence and
+cue association on retrieval processes: A computational account. Cognitive Science,
+43(12), Article e12800. http://dx.doi.org/10.1111/cogs.12800.
+Finocchiaro, C., & Cieślicka, A. (2004). Phenomena of gender attraction in Polish.
+Quaderni del Laboratorio di Linguistica, 5(2005).
+Franck, J., Colonna, S., & Rizzi, L. (2015). Task-dependency and structure-dependency
+in number interference effects in sentence comprehension. Frontiers in Psychology,
+6(349), http://dx.doi.org/10.3389/fpsyg.2015.00349.
+Franck, J., & Wagers, M. (2020). Hierarchical structure and memory mechanisms in
+agreement attraction. PLoS One, 15(5), Article e0232163. http://dx.doi.org/10.
+1371/journal.pone.0232163.
+Golubović, J., & Gooskens, C. (2015). Mutual intelligibility between West and South
+Slavic languages. Russian Linguistics, 35, 1–373.
+Gonzalez Alonso, J., Cunnings, I., Fujita, H., Miller, D., & Rothman, J. (2021). Gender
+attraction in sentence comprehension. Glossa: A Journal of General Linguistics, 6(1).
+Hammerly, C., Staub, A., & Dillon, B. (2019). The grammaticality asymmetry in
+agreement attraction reflects response bias: Experimental and modeling evidence.
+Cognitive Psychology, 110, 70–104. http://dx.doi.org/10.1016/j.cogpsych.2019.01.
+001.
+Ivanova-Sullivan, T., Sekerina, I. A., & Lago, S. (2024). Bulgarian clitics are sensitive
+to number attraction. Glossa Psycholinguistics, 3(1).
+Jäger, L. A., Engelmann, F., & Vasishth, S. (2017). Similarity-based interference in
+sentence comprehension: Literature review and Bayesian meta-analysis. Journal of
+Memory and Language, 94, 316–339. http://dx.doi.org/10.1016/j.jml.2017.01.004.
+Jäger, L. A., Mertzen, D., Van Dyke, J. A., & Vasishth, S. (2020). Interference patterns
+in subject-verb agreement and reflexives revisited: A large-sample study. Journal of
+Memory and Language, 111, Article 104063. http://dx.doi.org/10.1016/j.jml.2019.
+104063.
+Junghanns, U. (2001). On rightward backgrounding. In U. Junghanns, G. Zybatow,
+G. Mehlhorn, & L. Szucsich (Eds.), Current issues in formal Slavic linguistics (pp.
+329–343). Peter Lang.
+Keshev, M., Cartner, M., Meltzer-Asscher, A., & Dillon, B. (2024). A working memory
+model of sentence processing as binding morphemes to syntactic positions. vol. 46,
+In Proceedings of the Annual Meeting of the Cognitive Science Society.
+Konieczny, L., Schimke, S., & Hemforth, B. (2004). An activation-based model of
+agreement errors in production and comprehension. vol. 26, In Proceedings of the
+Annual Meeting of the Cognitive Science Society. (26).
+Kříž, A., & Chromý, J. (2022). Interlanguage correspondences and their manifestation
+in receptive bilinguals. Linguistica Pragensia, 32(1), 107–124.
+Lacina, R. (2024). Under no illusion: An acceptability study on Czech agreement
+attraction. Naše řeč, 107(3), 119–132.
+Lacina, R., & Chromý, J. (2022). No agreement attraction facilitation observed in
+Czech: Not even syncretism helps. vol. 44, In Proceedings of the Annual Meeting
+of the Cognitive Science Society (pp. 2423–2430). https://escholarship.org/uc/item/
+2vq4g622.
+Lacina, R., & Dotlačil, J. (2024). Grammaticality illusions in Czech: A speeded
+acceptability study of agreement attraction. vol. 46, In Proceedings of the Annual
+Meeting of the Cognitive Science Society.
+Lago, S., & Felser, C. (2018). Agreement attraction in native and nonnative speakers
+of German. Applied Psycholinguistics, 39(3), 619–647. http://dx.doi.org/10.1017/
+S0142716417000601.
+Lago, S., Gračanin-Yuksek, M., Şafak, D. F., Demir, O., Kırkıcı, B., & Felser, C.
+(2019). Straight from the horse’s mouth: Agreement attraction effects with Turkish
+possessors. Linguistic Approaches to Bilingualism, 9(3), 398–426.
+Lago, S., Shalom, D. E., Sigman, M., Lau, E. F., & Phillips, C. (2015). Agreement
+attraction in Spanish comprehension. Journal of Memory and Language, 82, 133–149.
+http://dx.doi.org/10.1016/j.jml.2015.02.002.
+Laurinavichyute, A., & von der Malsburg, T. (2024). Agreement attraction in grammatical sentences and the role of the task. Journal of Memory and Language, 137,
+Article 104525.
+Lewis, R. L., & Vasishth, S. (2005). An activation-based model of sentence processing
+as skilled memory retrieval. Cognitive Science, 29(3), 375–419. http://dx.doi.org/
+10.1207/s15516709cog0000_25.
+Logačev, P., & Vasishth, S. (2016). A multiple-channel model of task-dependent
+ambiguity resolution in sentence comprehension. Cognitive Science, 40(2), 266–298.
+http://dx.doi.org/10.1111/cogs.12228.
+
+The first author was supported by the German Research Foundation
+(DFG) as part of the Emmy Noether project awarded to Nicole Gotzner
+(Grant Nr. GO 3378/1-1, 441607011), and by the German Academic
+Exchange Service’s (DAAD) programme Forschungsstipendien für Doktoranden und Doktorandinnen (2023, Project-ID 57694189). The second author was funded by the Deutsche Forschungsgemeinschaft (DFG,
+German Research Foundation)–Project-ID 317633480–SFB 1287. The
+last author was supported by the European Regional Development Fund
+project ‘‘Beyond Security: Role of Conflict in Resilience-Building’’ (reg.
+no.: CZ.02.01.01/00/22_008/0004595) and by the Charles University
+institutional programme Cooperatio.
+Declaration of competing interest
+The authors declare that they have no known competing financial interests or personal relationships that could have appeared to
+influence the work reported in this paper.
+Acknowledgement
+We would like to express our thanks to Adam Kříž who initially
+helped us with the creation of Slovak stimuli and translations of the
+instructions. We also thank Fero Kuminiak for answering our questions
+regarding his study and providing us with the materials and data.
+Data availability
+All the stimuli and filler sentences, the experimental code used
+to present the stimuli, the anonymised data collected, as well as the
+analysis and computational modelling scripts have been made publicly
+available on OSF under https://osf.io/h8bfw/.
+
+References

@@ -1,0 +1,1556 @@
+Introduction
+One of the central traits of human communicative interaction is turn
+taking — the rapid exchange of turns at talk between interlocutors, who
+repeatedly switch roles of being listener and speaker (Sacks, Schegloff,
+& Jefferson, 1974). While both comprehending and producing speech
+are cognitively highly complex processes (e.g., Gambi & Pickering,
+2017; Hagoort, 2019; Pickering & Garrod, 2004), they are frequently
+executed simultaneously in conversational contexts (Barthel, Meyer, &
+Levinson, 2017; Bögels, 2020; Pickering & Garrod, 2013).
+Comprehenders are known to process incoming turns incrementally (Altmann & Kamide, 1999; Kamide, Altmann, & Haywood, 2003;
+Tanenhaus, Magnuson, Dahan, & Chambers, 2000), building anticipations about the upcoming message and its relation to the unfolding
+discourse (Barthel, Tomasello, & Liu, 2024; Gisladottir, Bögels, & Levinson, 2018; Heilbron, Armeni, Schoffelen, Hagoort, & de Lange, 2022;
+Huettig, 2015; Ryskin & Nieuwland, 2023). These anticipations, in turn,
+are frequently used to start planning a relevant next turn already in
+overlap with the incoming turn (Barthel, 2020; Barthel & Rühlemann,
+2025; Bögels, Magyari, & Levinson, 2015; Corps, Crossley, Gambi, &
+
+Pickering, 2018). Interlocutors commonly overlap these related processes of comprehension and production presumably for a combination
+of two reasons: First, planning complex turns takes a considerable
+amount of time. Even planning to produce a single noun takes about
+600 ms (Indefrey, 2011; Strijkers & Costa, 2011), and planning a
+full sentence can take about one and a half seconds (Griffin & Bock,
+2000; Sauppe, 2017; Schnur, Costa, & Caramazza, 2006). Second,
+interlocutors treat the timing of speaking turns as being meaningful.
+If, for instance, a request or an offer are not responded to within a
+short amount of time, the request might be down-scaled or the offer
+reformulated in a way to display the expectation of a non-preferred
+response, like a rejection or a denial (Davidson, 1984; Pomeranz,
+Atkinson, & Heritage, 1984; Pomeranz & Heritage, 2012). Even in less
+extreme cases, in which the first speaker (who put forth the request
+or offer) does not re-select for another turn after some time without
+getting a response, a markedly long delay before the response would
+still be interpreted to be meaningful. Even if the request is granted or
+the offer accepted, a long gap before the response can be interpreted to
+signal low willingness of the second speaker or to be relevant in some
+
+E-mail address: barthel@ids-mannheim.de.
+https://doi.org/10.1016/j.jml.2025.104717
+Received 1 April 2025; Received in revised form 14 November 2025; Accepted 21 November 2025
+Available online 26 November 2025
+0749-596X/© 2025 The Author. Published by Elsevier Inc. This is an open access article under the CC BY-NC license (http://creativecommons.org/licenses/bync/4.0/).
+
+Journal of Memory and Language 146 (2026) 104717
+
+M. Barthel
+
+other meaningful way (Blohm & Barthel, 2025; Henetz, 2017; Roberts,
+Francis, & Morgan, 2006; Roberts, Margutti, & Takano, 2011). For
+these reasons, taking turns in conversation regularly proceeds fast and
+interlocutors are motivated to produce their turns quickly as soon as
+the floor is open, which puts their language production processes under
+considerable time pressure during conversation (Levinson & Torreira,
+2015; Roberts & Levinson, 2017).
+Speech planning has been shown to be cognitively demanding in
+unscripted conversational contexts (Barthel & Rühlemann, 2025; Rühlemann & Barthel, 2024). Particularly when executed in overlap with
+the incoming turn, speech planning has been found to both lead to
+increased processing load and to take longer than when executed
+in silence between turns (Barthel & Sauppe, 2019; Barthel, Sauppe,
+Levinson, & Meyer, 2016). The most probable cause for the reduced
+efficiency of speech planning processes during speech comprehension
+has been proposed to be interference of the two processes (Fargier
+& Laganaro, 2016; He, Meyer, & Brehm, 2021; Levelt, Roelofs, &
+Meyer, 1999; Roelofs, 2021). One main strand of evidence for interference between comprehension and production comes from pictureword-interference experiments (e.g., Bürki, Elbuy, Madec, & Vasishth,
+2020; Schriefers, Meyer, & Levelt, 1990; Wilshire, Singh, & Tattersall,
+2016), where the presentation of a word (visual or auditory) can
+decrease participants’ speed and accuracy in a picture-naming task.
+The candidate explanation for the observed interference effects is that
+speech production and comprehension compete for the same cognitive
+resources and are run on partly overlapping neural infrastructure and
+mental representations (Hagoort & Indefrey, 2014; Menenti, Gierhan,
+Segaert, & Hagoort, 2011; Segaert, Menenti, Weber, Petersson, & Hagoort, 2012; Silbert, Honey, Simony, Poeppel, & Hasson, 2014). This
+overlap in processes is particularly relevant in turn taking situations,
+where both comprehension and production are under time pressure and
+might compete for processing capacities within the ‘crunch zone’ in the
+vicinity of turn transitions, where one speaker’s turn comes to an end
+and the next speaker’s turn should start within a short gap, often as
+short as 200 ms (Levinson & Torreira, 2015; Stivers et al., 2009).
+Given that speech planning in overlap with the incoming turn is
+a common strategy in conversational situations, and given that the
+processes of planning and comprehension regularly interfere with each
+other, two hypotheses are conceivable about the processes of comprehension in overlap with speech planning: Either comprehension is
+prioritised over planning at times of resource competition, which we
+will call the comprehension-prioritised hypothesis, or planning is prioritised over comprehension, which we will call the planning-prioritised
+hypothesis.
+Both hypotheses can be argued for a-priori from a goal-oriented
+processing point of view: Favouring the comprehension-prioritised hypothesis, the primary task in dialogue situations may reasonably be
+argued to be accurate comprehension, since perceived auditory information can only be held in working memory for a very limited amount
+of time (e.g., Baddeley, 2003; Christiansen & Chater, 2016). Because
+the rate and timing of information contained in the incoming turn is
+not under the comprehender’s control, this information needs to be
+processed as soon as it is encountered and translated into more abstract
+representations that can be kept in memory more permanently and
+used to update the comprehender’s discourse model of the ongoing
+conversation. As a consequence, comprehension of the incoming turn
+cannot be delayed and should thus take priority over speech planning,
+lest the input remains unprocessed until its phonological traces fade,
+which would jeopardise conversational success. Hence, in cases of
+limited processing capacity, speech planning processes would need to
+be deferred in favour of comprehension processes.
+Alternatively, favouring the planning-prioritised hypothesis, the primary task in dialogue situations may reasonably be argued to be speech
+planning, since early planning serves the goal of producing a turn
+in tight coordination with the point of completion of the incoming
+turn. Producing a turn at talk without a marked delay is frequently
+
+essential to communicate the intended message and to avoid being
+misinterpreted (Blohm & Barthel, 2025; Kendrick & Torreira, 2014;
+Roberts & Francis, 2013). In moments of high processing load during
+dialogue, speech planning would therefore have to be prioritised over
+comprehension. In such cases, the planning of a relevant next turn
+needs to be partly based on the anticipated message of the incoming
+turn (Levinson & Torreira, 2015). While prioritising planning, next
+speakers would have to rely mainly on previously generated anticipations of the input would and thus risk comprehension accuracy in
+moments when the input is monitored only shallowly for the sake
+of effective speech planning (e.g., Ferreira, Bailey, & Ferraro, 2002;
+Ferreira & Patson, 2007).
+While the planning-prioritised hypothesis and the comprehensionprioritised hypothesis represent extreme positions on a continuum and
+interlocutors might adjust their processing strategies depending on
+the conversational context, these opposing hypotheses make distinct
+testable predictions about interlocutors’ language comprehension performance in dialogue situations that feature parallel comprehension
+and planning: According to the comprehension-prioritised hypothesis,
+planning should only be pursued in overlap with the incoming turn if
+resources are permitting, so that comprehension should not suffer from
+parallel planning. According to the planning-prioritised hypothesis, in
+contrast, comprehension accuracy should be reduced in situations of
+resource scarcity, so that a timely production of the next turn is not
+compromised by input comprehension processes. In either case, one
+process would be momentarily prioritised at the cost of another in moments of high processing load, since the two processes are competing
+for processing resources and potentially interfere with one another.
+The sources of these observed interferences can be located on
+(a combination of) any linguistic processing level(s), ranging from
+phonetic analysis/assembly to semantic and discourse representations.
+Hence, the two opposing hypotheses, prioritising either planning or
+comprehension, can be tested on different levels of linguistic processing. Testing a verbal question response task with quiz questions
+that contained semantic illusions, Barthel (2021) showed that comprehension accuracy is reduced on the semantic level during concurrent
+speech planning. Participants in that study accepted semantic illusions
+like ‘‘What animal ate Little Red Riding Hood | when she visited
+her aunt?’’1 (early planning condition) more often than illusions like
+‘‘When Little Red Riding Hood visited her aunt, what animal ate
+her |?’’ (late planning condition).2 In the early planning condition,
+participants already engaged in planning their response at the point
+in time when they encountered the illusion, making the illusion go
+undetected significantly more often than in the late-planning condition,
+where participants did not yet engage in response planning when they
+encountered the illusion. These results suggest that semantic input
+processing during parallel speech planning can be more shallow than
+in the absence of speech planning, supporting the planning-prioritised
+hypothesis.
+Investigating related research questions using EEG in a go/no-go
+picture naming task with sentence primes, Hustá, Nieuwland, and
+Meyer (2023) tested N400 effects, which are related to semantic input
+processing, when participants listened to a sentence containing an
+expected versus unexpected final word and additionally overtly named
+a picture that was presented either while hearing the final word or
+two seconds later. Hustá et al. (2023) found the N400 to be more
+negative in unexpected words than in expected words. In line with
+the results by Barthel (2021), the authors found this N400 effect to be
+attenuated when participants were planning their response in overlap
+with being presented with the sentence final word, indicating that
+
+1
+The ‘|’ symbol marks the point in the question when planning the answer
+can begin.
+2
+Participants were subsequently checked to know that Little Red Riding
+Hood actually visited her grandma.
+
+2
+
+Journal of Memory and Language 146 (2026) 104717
+
+M. Barthel
+
+semantic processing of the target word was reduced during concurrent
+planning. Interestingly, in trials in which the picture was presented
+in overlap with the target word, the authors also found evidence for
+an increased N400 component in unexpected as compared to expected
+words when subjects did not have to overtly name the picture. When
+the picture showed an object from the no-go category (either fruit or
+vegetable, depending on the experimental list), subjects did not have to
+go through with naming the picture but instead had to press a button
+to skip the naming. These no-go trials showed a comparable, while
+reduced, effect of predictability of the sentence final word, suggesting
+that not the processes of phonological or articulatory planning but
+rather processes of conceptual preparation are the main source location
+of the observable interference of speech planning with comprehension.
+Nonetheless, these results do not exclude the possibility of additional
+interference on lower processing levels, since the picture categorisation
+task will probably have led to phonological processing of the picture
+name (Bles & Jansma, 2008; Meyer & Damian, 2007; Navarrete & Costa,
+2005). Moreover, the sentence comprehension and picture naming
+tasks were unrelated to each other, calling for an investigation using a
+more ecologically valid test that contains a speech planning task which
+is designed to be conditionally relevant to the just comprehended input.
+While language comprehension has been found to be more shallow
+on the level of semantic processing during intervals of parallel speech
+planning, it is unknown whether these effects can already be observed
+on lower levels of abstraction. Since the speech planning process in
+overlap with comprehension of the incoming turn is pursued at least until the phonological level (Barthel & Levinson, 2020), it is conceivable
+that comprehension accuracy in overlap with speech planning suffers
+already at the rather early stage of phonological processing. To pursue
+this question, the present study tests participants’ phoneme detection accuracy in question-response sequences, comparing participants’
+phoneme detection performance during intervals of speech comprehension in isolation on the one hand with intervals of comprehension in
+overlap with response planning on the other hand. If phonological input
+processing deteriorates during concurrent speech planning, phoneme
+monitoring performance should be observed to be worse than in situations without concurrent planning. If, however, input comprehension is
+prioritised during phases of processing resource scarcity, phoneme detection performance should not significantly differ between situations
+of parallel planning on the one hand and comprehension in absence of
+planning on the other hand.
+To evaluate these hypotheses, participants’ phoneme detection performance was tested in three Experiments 1a, 1b, and 1c. In Experiment
+1a, participants performed a dual task in which they heard a question
+that they had to verbally respond to and at the same time monitor
+for a target phoneme. Firstly, if next speakers start planning their
+responses in overlap with the incoming turn, if possible, participants’
+verbal response latencies should be shorter in early planning questions
+than in late planning questions, as has been shown before (e.g. Barthel
+& Levinson, 2020; Bögels, 2020). Secondly, if planning is prioritised
+during phases of concurrent planning and comprehension, phoneme
+detection performance should be worse and probably also slower when
+the target phoneme is presented while participants are concurrently
+planning their response as compared to while they are not concurrently
+planning. If, however, comprehension is prioritised in these situations,
+phoneme detection performance should be unimpaired by concurrent
+planning. In Experiment 1b, participants performed the same phoneme
+monitoring task but without having to verbally respond to the questions. Since participants do not engage in verbal response planning
+in this Experiment, the type of question should not affect phoneme
+detection performance or speed (unless there is an inherent difference
+in difficulty to detect a target phoneme at different positions in the
+question). In Experiment 1c, participants were given a speech planning
+task that they had to do subsequent to the phoneme monitoring task.
+While participants are engaged in speech planning in this Experiment,
+phases of speech planning do never overlap with the presentation of
+
+the target phoneme, so that the type of question should also not affect
+phoneme detection performance or speed (again, unless phonemes are
+generally more easily detected in one sentence position than in another, e.g., because the probability of encountering the target phoneme
+continuously rises as the question unfolds).
+To test whether not phonological processing in particular but rather
+auditory processing in general was affected by parallel planning, participants in Experiment 2 were given the same question-answering task
+as participants in Experiment 1a, but with the additional task to detect
+tones instead of phonemes while hearing the question. Firstly, participants’ verbal response latencies should pattern like in Experiment
+1a, indicating that early planning questions indeed led to planning in
+overlap with the incoming questions. Secondly, if this tone detection
+Experiment shows an effect of question type that matches the predicted
+effect of Experiment 1a (worse detection performance when planning
+during the presentation of the target phoneme), than this would be
+taken as evidence that auditory processing in general is affected by
+parallel speech planning. If, however, this Experiment shows no effects
+of question type, as predicted for Experiments 1b and 1c, the respective
+effects in Experiment 1a would be taken as evidence that phonological
+processing in particular is affected by parallel speech planning.
+Methods
+Participants
+Sixty participants were tested in each of the four Experiments. Each
+participant took part in only one of the Experiments. Six participants
+have been excluded from analyses of Experiment 1a and two have been
+excluded from Experiment 1c (see Section ‘Data Coding and Analysis’).
+All participants were healthy German native speakers between 18 and
+49 years of age who were recruited online via Prolific, gave their
+written consent to participate in the data collection, and received
+monetary compensation for their participation.
+Regarding one experiment in isolation (and ignoring any increase in
+measurement reliability due to repeated measures), to attest the effect
+of Planning (early/late, see Section ‘Materials and Design’) in a given
+experiment would call for 52 participants (Brysbaert, 2019). Further,
+sample size recommendations by Brysbaert (2019) to obtain sufficient
+power to detect an interaction effect of a 2-level between-subjects
+factor and a 2-level within subjects factor for repeated-measures tests
+containing a sufficiently large number of items (as we do here, with
+60 items tested per participant, see Section ‘Materials and Design’;
+see also Brysbaert and Stevens (2018)) range between 90 and 130
+participants in total. This would call for 45 to 65 participants per
+experiment to reach a power of .8 to detect an interaction of Planning
+× Experiment at an alpha level of .05. Testing 60 participants per
+Experiment can thus be expected to detect an interaction effect with
+an effect size of f = .26 with a power of .8 at an alpha level of .05 and
+a simple effect of the within-subjects variable with an effect size of d
+= .37 with the same power at the same alpha level, as calculated using
+G*Power (Faul, Erdfelder, Lang, & Buchner, 2007).
+Materials and design
+In total, 100 German questions were created in two versions that
+were used to make the answer to the question known either already
+during the question (early-planning condition; e.g.: ‘‘Wenn man Rot
+und Gelb mischt, | welche Farbe erhält man dann?’’ (When you mix red
+and yellow, | what colour do you get?); the ‘‘|’’ symbol representing
+the point in time when the answer to the question can be known)
+or only at the very end of the question (late-planning condition; e.g.:
+‘‘Welche Farbe erhält man, wenn man Rot und Gelb mischt | ?’’ (What
+colour do you get when you mix red and yellow | ?)). Quiz questions
+required short responses, mainly single word answers (e.g., ‘‘Berlin’’) or
+proper nouns (e.g., ‘‘Neil Armstrong’’). The different versions of each
+3
+
+Journal of Memory and Language 146 (2026) 104717
+
+M. Barthel
+
+Table 1
+Example stimuli for one of the four tested target phonemes (Experiments 1a, 1b, and 1c) or target
+tones (Experiment 2) in the early and late planning condition.
+Target phoneme or tone
+
+Question type
+
+Question
+
+[v]/680 Hz
+
+early planning
+
+[v]/680 Hz
+
+late planning
+
+Diese Tiere, die auch Briefe ausliefern können, |
+sind ein wichtiges Symbol in der Kunst.
+(These animals, which can also deliver mail,
+are an important symbol in art.)
+Diese Tiere, die ein wichtiges Symbol in der Kunst sind,
+können auch Briefe ausliefern |.
+(These animals, which are an important symbol in art,
+can also deliver mail.)
+
+The bold, underlined characters represent the target phoneme. In Experiment 2, the target tone was played
+for 250 ms, starting at the onset of the phoneme that is the target in the phoneme detection task of
+Experiments 1a, b, and c. The | symbol shows the point at which the answer to the question can be known.
+
+of the questions required the same answers and were worded almost
+identically, only differing in the order of their components (see Table
+1).3 Sixty critical questions contained one word starting with one of
+the target phonemes [f], [b], [g], or [v] (15 questions for each of the
+four target phonemes; each question only featured a single token of
+the target phoneme). In the early-planning condition, the answer to the
+question could be planned early on during the question. Questions in
+this condition contained the word beginning with the target phoneme
+towards the end, i.e., after the answer to the question could be known.
+Questions in the late-planning condition were designed so that the answer could only be known at the end of the question. Questions in this
+condition contained the word beginning with the target phoneme closer
+to the question beginning, where the answer to the question could not
+yet be known (cf. the underlined ‘F’ in the example above). Thereby,
+participants could start to plan their response earlier than when being
+presented with the target phoneme in the early-planning condition,
+but later than when being presented with the target phoneme in the
+late-planning condition. For Experiment 2, the critical questions were
+additionally overlaid with 250 ms long sine tones, generated with
+Audacity (Audacity Team, 2024), that were played at the position of
+the target phonemes. The fifteen questions with the target phoneme
+[b] contained a tone of 440 Hz at the position of the [b]; the questions
+with the target phoneme [f] contained tones of 520 Hz; the questions
+with the target phoneme [g] contained tones of 600 Hz; and the
+questions with the target phoneme [v] contained tones of 680 Hz. Forty
+questions were designed as filler questions and did not contain a target
+phoneme (and therefore also no tone in Experiment 2). All questions
+were recorded by a female native speaker of German and had a mean
+length of 5393 ms (SD = 1491 ms; 𝑀𝑐𝑟𝑖𝑡𝑖𝑐𝑎𝑙∕𝑒𝑎𝑟𝑙𝑦 = 5248 ms, SD =
+1222 ms; 𝑀𝑐𝑟𝑖𝑡𝑖𝑐𝑎𝑙∕𝑙𝑎𝑡𝑒 = 5768 ms, SD = 1514 ms). Two experimental
+lists were created, with half of the questions appearing in the earlyplanning condition and half appearing in the late-planning condition
+in each list, so that each question was played to any participant in only
+one of the conditions. The order of items was randomised within lists
+and participants were randomly assigned to one of the two lists.
+In Experiment 1c (phoneme detection with subsequent picture naming task), one-hundred pictures of easy-to-name concrete objects were
+selected from the MultiPic database (Duñabeitia, Crepaldi, Meyer, New,
+Pliatsikas, Smolka, & Brysbaert, 2018) and assigned to the items so as
+to be unrelated to the questions or their answers.
+
+lead to valid and reliable measures and effects given sufficiently large
+sample sizes (Anwyl-Irvine, Dalmaijer, Hodges, & Evershed, 2021; Fairs
+& Strijkers, 2021; Rodd, 2024; Vogt, Hauber, Kuhlen, & Abdel Rahman,
+2021).
+Experiment 1a: Dual task phoneme monitoring and response planning
+In Experiment 1a, participants were auditorily presented with quiz
+questions and had to give their answers verbally as fast and accurately
+as possible (Fig. 1, panel A). Moreover, they were instructed to monitor
+the question for one out of four target phonemes at a time, which
+occurred in 60% of the questions (critical items), and to press the space
+bar as fast as possible when they heard the target phoneme. The four
+target phonemes ([f], [b], [g], or [v]) were monitored in four blocks
+of 25 trials each, one block per phoneme, with the order of blocks
+being randomised across participants. Each block contained 15 critical
+items and 10 filler items, which did not contain the respective target
+phoneme in the question.
+The experiment began with a sound check to ensure that the voice of
+the participants could be recorded. Participants were then introduced
+to the verbal quiz task and answered four practice questions as fast
+as possible to familiarise themselves with the task. Next, participants
+received instructions about the manual phoneme detection task. They
+were then presented with a recording of the phoneme they had to focus
+on in the first block of 25 questions, followed by a recording containing
+a series of twenty single words, ten of which started with the target
+phoneme of the first block while the other ten did not contain the target
+phoneme. Participants were instructed to press the space bar each time
+they recognised the target phoneme in the presented list of words, with
+each button press receiving visual feedback in the shape of a space
+bar presented on the screen for 500 ms. This familiarisation with the
+target phoneme together with the short practice phase preceded each
+of the four blocks, instructing participants to monitor the questions of
+the respective block for one particular target phoneme ([f], [b], [g], or
+[v]).
+Each trial began with a fixation cross presented for 1000 ms in the
+centre of the screen, followed by the auditorily presented question. In
+critical trials, which contained a target phoneme, participants had to
+press the space bar as soon as they detected the phoneme. In all trials,
+critical as well as filler, participants answered the question verbally as
+fast as possible, with their responses being recorded. After giving their
+answer, participants could proceed to the next trial by clicking a button
+on the screen with their mouse.
+
+Procedure
+All four Experiments were tested online via PCIbex (Zehr & Schwarz,
+2018) using participants’ own computers, which has been shown to
+
+Experiment 1b: Single task phoneme monitoring (no verbal response)
+The design, materials, and procedure of the single control task in
+Experiment 1b were identical to Experiment 1a, with the difference that
+participants in Experiment 1b were instructed that they did not have to
+give any verbal responses to the quiz questions and only had to perform
+the phoneme detection task (Fig. 1, panel B). Also, participants did not
+go through a practice phase for the verbal response task.
+
+3
+Note that in Experiments 1b and 1c, participants were not required to
+answer the questions. For the sake of comparison, the two question types will
+still be referred to as ’early planning questions’ and ’late planning questions’
+in these conditions, even though no response planning is required.
+
+4
+
+Journal of Memory and Language 146 (2026) 104717
+
+M. Barthel
+
+Fig. 1. Trial structures of the four Experiments. Experiment 1a (panel A): Phoneme monitoring plus verbal question answering; Experiment 1b (panel B): Phoneme
+monitoring without speech planning; Experiment 1c (panel C): Phoneme monitoring with subsequent unrelated picture naming.; Experiment 2 (panel D): Tone
+monitoring plus question answering.
+
+Audacity (Audacity Team, 2024, v.3.6.1) from question offset (Exp. 1a
+and 2) or picture onset (Exp. 1c) to response onset. Participants’
+button press accuracy and latencies (from target phoneme/tone onset) were logged during the experiment. All data were analysed in
+R (R. Core Team, 2023) using the packages lme4 (Bates, Mächler,
+Bolker, & Walker, 2015) to build (generalised) linear mixed-effects
+regression models, lmerTest (Kuznetsova, Brockhoff, & Christensen,
+2017) to assess the statistical significance of single predictors, and
+emmeans (Lenth, 2022) to conduct post-hoc tests to assess the significance of simple effects by comparing estimated marginal means of
+factor levels based on F -tests with Kenward-Roger approximations of
+degrees of freedom (Fox & Weisberg, 2011; Halekoh & Hojsgaard, 2014;
+Kenward & Roger, 1997; Searle, Speed, & Milliken, 1980), correcting
+significance levels for multiple testing using multivariate t adjustment.
+Three subjects in Exp. 1a were discarded from the analysis, since their
+verbal responses were either not given or not recorded. Three more
+subjects in Exp. 1a were excluded from analyses, because they did not
+perform the phoneme detection task. Two subjects in Exp. 1c were
+discarded since their audio was not recorded during the testing session.
+Two items were discarded from the analyses of Exp. 1a and 1b due to
+technical errors. 719 trials in Exp. 1a, 166 trials in Exp. 1c, and 762
+trials in Exp. 2 containing wrong answers or ‘I don’t know’ answers
+to the quiz questions or the picture naming task were discarded from
+the analyses. 70 trials from Exp. 1a, 193 trials from Exp. 1b, 239 trials
+
+Experiment 1c: Dual-task phoneme monitoring and subsequent picture naming
+The design, materials, and procedure of Experiment 1c were identical to Experiment 1b, with the difference that participants in Experiment 1c were instructed that, in addition to the phoneme detection
+task, they had to name a picture that would appear after each question
+as fast as possible (Fig. 1, panel C). The picture was presented 500 ms
+after question offset and disappeared when subjects clicked the proceed
+button with their mouse to continue with the next trial. The objects
+presented in the pictures were unrelated to the respective questions or
+their answers, so that the speech planning task would not be related to
+the listening task.
+Experiment 2: Dual task tone detection and response planning
+The design, materials, and procedure of Experiment 2 were identical
+to Experiment 1a, with the difference that participants in Experiment
+2 were instructed that they had to do a tone detection task instead
+of a phoneme detection task (Fig. 1, panel D). Also, the practice and
+familiarisation parts of the experiment used tones in place of phonemes.
+Data coding and analysis
+Participants’ verbal response latencies in Exp. 1a and 2 (answers to
+questions) and Exp. 1c (picture naming) were measured manually in
+5
+
+Journal of Memory and Language 146 (2026) 104717
+
+M. Barthel
+
+Table 2
+Numbers and percentages of undetected phonemes/tones by Experiment for
+early vs. late planning trials, and overall.
+Experiment 1a
+Experiment 1b
+Experiment 1c
+Experiment 2
+
+n missed/total𝑒𝑎𝑟𝑙𝑦
+
+n missed/total𝑙𝑎𝑡𝑒
+
+n missed/total𝑜𝑣𝑒𝑟𝑎𝑙𝑙
+
+378/1150 (32.8%)
+201/1623 (12.3%)
+231/1487 (15.5%)
+23/1434 (0.8%)
+
+153/1193 (12.8%)
+185/1694 (10.9%)
+216/1588 (13.6%)
+15/1398 (0.5%)
+
+531/2343 (22.6%)
+386/3317 (11.6%)
+447/3075 (14.5%)
+38/2832 (1.3%)
+
+Exp. 1a and 1b was not merely due to the fact that Exp. 1a contained
+a speech planning task on top of the phoneme detection task. A significant interaction of Planning and Experiment was attested comparing
+detection rates when the questions had to be answered (Exp. 1a) vs.
+not answered (Exp. 1b) (p < .001). This interaction was not significant
+in the comparison of the picture naming task (Exp. 1c) vs. no verbal
+response task (Exp. 1b), nor in the comparison of the no verbal response
+task (Exp. 1b) vs. tone detection plus question answering task (Exp. 2).
+Post-hoc tests on single effects revealed that the significant interaction
+effect was due to a significant effect of Planning in Exp. 1a, with
+significantly more undetected target phonemes in early planning trials
+than in late planning trials (𝛽 = −1.399; SE = 0.169; z = −8.274; p
+< .001), indicating that phoneme detection accuracy was lower during
+concurrent speech planning than without concurrent speech planning.
+This effect was not significant Exp. 1b or 1c, which did not feature
+speech planning during the target phoneme (Exp. 1b: 𝛽 = −0.191; SE
+= 0.182; z = −1.047; p = .295; Exp. 1c: 𝛽 = −0.251; SE = 0.177;
+z = −1.413; p = .157), supporting that concurrent speech planning
+is indeed the driving factor of the effect of Planning in Exp. 1a. The
+effect of Planning was also not significant in Exp. 2, which required
+participants to detect tones instead of phonemes while answering the
+question (𝛽 = −0.640; SE = 0.419; z = −1.528; p = .126), suggesting
+that speech planning affects phoneme detection accuracy but not tone
+detection accuracy.
+
+from Exp. 1c, and 5 trials from Exp. 2 with erroneous button presses
+that were given before the target phoneme/tone was presented were
+discarded. In total, 72.3% of the critical trials originally presented to
+the 54 valid participants of Exp. 1a, 92.1% of the 60 participants of
+Exp. 1b, 88.3% of the 58 participants of Exp. 1c, and 78.6% of the
+60 participants of Exp. 2 were retained for analyses. For the results
+presented here, filler trials were not analysed.
+Results
+The main question of the study is whether language comprehension
+on the phonological level is impaired during concurrent speech planning. To target this question, phoneme and tone detection performance
+in the early planning condition versus the late planning condition will
+be analysed and compared between the present experiments. To test
+whether participants indeed planned their verbal responses early in the
+early planning conditions, verbal response latencies are analysed at the
+end of this section.
+
+Phoneme and tone detection latencies
+To test whether phoneme/tone detection latencies match the results pattern of detection accuracies and/or whether speech planning
+generally affects manual response latencies in the present experiments,
+detection latencies in the early versus late planning condition were
+compared between experiments. Analysing the trials in which the target
+phoneme/tone was correctly detected (see caption of Fig. 3), a linear
+mixed-effects regression model was built to estimate detection latencies
+in these trials, with Planning and Experiment as well as their interaction as fixed predictors and Phoneme/Tone as an additional control
+predictor.6 The model contained random intercepts by subject and by
+item and random slopes of Planning by subject and by item (Fig. 3).7
+Planning and Experiment were dummy coded, with early planning and
+the single-task Experiment 1b as reference levels. Phoneme/Tone was
+deviation coded.
+Detection latencies in Exp. 1b were found to be significantly slower
+in late planning trials as compared to early planning trials (Table 4;
+𝛽 = 61 ms; SE = 25 ms; p = .016), indicating that target phonemes
+are generally detected faster when they appear later in the question.
+Similarly, detection latencies in Exp. 1c (picture naming task) were also
+significantly slower in late planning trials compared to early planning
+trials (𝛽 = 52 ms; SE = 26 ms; p = .044, as attested by post-hoc
+tests), corroborating the result of Exp. 1b. Contrarily, in Exp. 1a, where
+participants verbally responded to the question, detection latencies
+were found to be significantly faster in late planning trials as compared
+to early planning trials (𝛽 = −102 ms; SE = 30 ms; p < .001, as attested
+by post-hoc tests), indicating that button press latencies were greater
+during concurrent planning than while not concurrently planning. This
+led to a significant interaction of Planning and Experiment when comparing Exp. 1a and 1b (p < .001). Like in Exp. 1a, detection latencies
+in Exp. 2 were found to be significantly faster in late planning trials as
+compared to early planning trials (𝛽 = −114 ms; SE = 25 ms; p < .001,
+as attested by post-hoc tests), also indicating that button presses were
+slower while planning than while not planning, and also leading to
+a significant interaction of Planning and Experiment when comparing
+Exp. 2 and 1b (p < .001).
+
+Detection tasks
+Phoneme and tone detection accuracy
+To test whether phoneme and/or tone detection rates were worse
+during concurrent speech planning, detection rates in the early versus late planning condition were compared between the present experiments. In the four experiments, different proportions of target
+phonemes/tones went undetected (see Table 2 and Fig. 2). A generalised linear mixed-effects model was built to estimate the proportion of trials with successful phoneme/tone detection4 using Planning
+and Experiment as well as their interaction as fixed predictors and
+Phoneme/Tone as an additional control predictor. The model contained
+random intercepts by subject and by item and random slopes of Planning by subject and by item as well as random slopes of Experiment
+by item.5 Planning and Experiment were dummy coded, with early
+planning and the single-task Exp. 1b as reference levels. Phoneme/Tone
+was deviation coded.
+No significant difference was found in subjects’ phoneme detection
+performance in early vs. late planning questions when participants did
+not have to give a verbal response (Exp. 1b) (Table 3), indicating that
+the position of the target phoneme in the question did not affect participants’ detection accuracy in itself. When participants had to verbally
+answer the question (Exp. 1a), significantly more target phonemes were
+not detected compared to Exp. 1b in the early planning condition (p
+< .001), indicating that phoneme detection accuracy is reduced during
+concurrent speech planning. In contrast, when participants had to name
+a picture after the question had been presented (Exp. 1c), detection
+rates in early planning trials were not found to be significantly different
+from Exp. 1b, indicating that the difference in detection rates between
+
+4
+Since in Exp. 2 the critical tones were played at the moments of the
+phonemes that were critical in Exp. 1a, 1b, and 1c, the critical tones and
+the respective critical phonemes were treated as the same for the sake of this
+analysis, making up a single factor with four levels ([b]/440 Hz, [f]/520 Hz,
+[g]/600 Hz, [v]/680 Hz).
+5
+No interaction of random slopes of Experiment with Planning by item was
+modelled, to avoid singularity of model fit.
+
+6
+
+Phoneme/Tone was treated as a single factor with four levels, see footnote
+
+a.
+7
+No random effects of Experiment by item were modelled to avoid
+singularity of model fit.
+
+6
+
+Journal of Memory and Language 146 (2026) 104717
+
+M. Barthel
+
+Table 3
+Model output of mixed-effects model on phoneme/tone detection rates.
+Intercept
+Planning_late
+Experiment_1a
+Experiment_1c
+Experiment_2
+Phoneme_1
+Phoneme_2
+Phoneme_3
+Planning_late:Experiment_1a
+Planning_late:Experiment_1c
+Planning_late:Experiment_2
+
+𝛽
+
+SE
+
+z
+
+p
+
+2.497
+0.190
+−1.685
+−0.281
+2.428
+0.102
+0.059
+−0.167
+1.208
+0.059
+0.449
+
+0.204
+0.182
+0.237
+0.237
+0.379
+0.145
+0.138
+0.139
+0.221
+0.220
+0.430
+
+12.231
+1.047
+−7.091
+−1.186
+6.408
+0.700
+0.430
+−1.202
+5.462
+0.273
+1.044
+
+0.295
+<0.001
+0.236
+<0.001
+0.484
+0.667
+0.229
+<0.001
+0.785
+0.296
+
+***
+***
+
+***
+
+Formula = hit ∼ planning * experiment + phoneme + (1 + planning | subjectID) + (1 + planning
++ experiment | itemID); Family = binomial(link=logit). Experiment 1a = dual task of phoneme
+detection plus question answering; Experiment 1c = dual task of phoneme detection plus picture
+naming; Experiment 2 = dual task of tone detection plus question answering.
+
+Fig. 2. Phoneme detection accuracy by Experiment. Dots indicate mean detection rates by subject. Lines between dots connect subjects’ detection rates across
+conditions. n𝐸𝑥𝑝.1𝑎 ∕𝑒𝑎𝑟𝑙𝑦 = 1150; n𝐸𝑥𝑝.1𝑎 ∕𝑙𝑎𝑡𝑒 = 1193; n𝐸𝑥𝑝.1𝑏 ∕𝑒𝑎𝑟𝑙𝑦 = 1623; n𝐸𝑥𝑝.1𝑏 ∕𝑙𝑎𝑡𝑒 = 1694; n𝐸𝑥𝑝.1𝑐 ∕𝑒𝑎𝑟𝑙𝑦 = 1487; n𝐸𝑥𝑝.1𝑐 ∕𝑙𝑎𝑡𝑒 = 1558; n𝐸𝑥𝑝.2 ∕𝑒𝑎𝑟𝑙𝑦 = 1434; n𝐸𝑥𝑝.2 ∕𝑙𝑎𝑡𝑒 = 1398.
+
+To additionally test for a relation of phoneme/tone detection latencies with verbal response latencies in the Experiments that required a
+verbal response to the question (Exp. 1a and 2), an additional model
+was built, estimating detection latencies with verbal response latencies as an additional predictor next to Planning and Experiment and
+their interaction (see Table A.3 in the Appendix). Phoneme/Tone was
+added as a control variable.8 The model contained random intercepts
+by subject and by item and random slopes of Planning by subject
+
+and by item.9 Planning and Experiment were dummy coded, with
+early planning and Exp. 1a (phoneme detection) as reference levels.
+Phoneme/tone was deviation coded. This model’s output shows that
+verbal response latencies and phoneme detection latencies are linearly
+correlated in Exp. 1a, with early planning trials with longer verbal
+response latencies showing later button presses (p < .001). While going
+in the same direction, this effect is smaller in late planning trials, as
+shown by a significant interaction of verbal RT and Planning (p =
+
+8
+Phoneme vs. tone was treated as a single factor with four levels, see
+footnote a.
+
+9
+No random effects of Experiment by item were modelled to avoid
+singularity of model fit.
+
+7
+
+Journal of Memory and Language 146 (2026) 104717
+
+M. Barthel
+
+Table 4
+Model output of mixed-effects model on phoneme detection latencies.
+Intercept
+Planning_late
+Experiment_1a
+Experiment_1c
+Experiment_2
+Phoneme_1
+Phoneme_2
+Phoneme_3
+Planning_late:Experiment_1a
+Planning_late:Experiment_1c
+Planning_late:Experiment_2
+
+𝛽
+
+SE
+
+t
+
+p
+
+935.542
+61.132
+177.130
+−165.338
+−196.975
+−65.077
+71.417
+−31.627
+−163.948
+−8.713
+−175.876
+
+40.044
+25.128
+45.361
+41.248
+41.336
+41.742
+41.739
+41.915
+38.429
+34.848
+34.384
+
+23.363
+2.433
+3.905
+−4.008
+−4.765
+−1.559
+1.711
+−0.755
+−4.266
+−0.250
+−5.115
+
+0.016
+<0.001
+<0.001
+<0.001
+0.124
+0.092
+0.453
+<0.001
+0.802
+<0.001
+
+*
+***
+***
+***
+
+***
+***
+
+Formula = detectionLatency ∼ planning * experiment + phoneme + (1 + planning | subjectID) +
+(1 + planning | itemID); Family = gaussian(link=identity). Experiment 1a = dual task of phoneme
+detection plus question answering; Experiment 1c = dual task of phoneme detection plus picture
+naming; Experiment 2 = dual task of tone detection plus question answering.
+
+Fig. 3. Model predictions of phoneme detection latencies (see Table 4 for model details). Error bars represent one standard deviation from the mean. n𝐸𝑥𝑝.1𝑎 ∕𝑒𝑎𝑟𝑙𝑦
+= 772; n𝐸𝑥𝑝.1𝑎 ∕𝑙𝑎𝑡𝑒 = 1040.; n𝐸𝑥𝑝.1𝑏 ∕𝑒𝑎𝑟𝑙𝑦 = 1422; n𝐸𝑥𝑝.1𝑏 ∕𝑙𝑎𝑡𝑒 = 1509; n𝐸𝑥𝑝.1𝑐 ∕𝑒𝑎𝑟𝑙𝑦 = 1256; n𝐸𝑥𝑝.1𝑐 ∕𝑙𝑎𝑡𝑒 = 1372; n𝐸𝑥𝑝.2 ∕𝑒𝑎𝑟𝑙𝑦 = 1411; n𝐸𝑥𝑝.2 ∕𝑙𝑎𝑡𝑒 = 1383. Overlaid dots represent
+predicted means by participant and condition.
+
+.014). In Exp. 2 (tone detection), verbal response latencies and tone
+detection latencies are not found to be significantly correlated, neither
+in the early planning condition, nor in the late planning condition, as
+attested by post-tests, leading to a significant interaction of verbal RT
+and Experiment (p < .001).
+
+in a linear mixed-effects regression with early versus late Planning as a
+fixed predictor and as random slopes by subject and by item in addition
+to random intercepts by subject and by item (Fig. 4, left panels).
+Detection of the target phoneme (detected vs. missed) was included
+as a control predictor, together with its interaction with Planning.
+Both Planning and Detection were dummy coded, with early planning
+and phoneme detected as reference levels. Subjects were found to
+respond significantly slower to late planning questions than to early
+planning questions (Table 5), indicating that participants indeed started
+to plan their answer to the question during the incoming question in
+the early planning condition. As shown by a significant interaction
+of Planning with Detection, this effect was even stronger in trials in
+which the target phoneme was not detected as compared to trials with
+successful phoneme detection (p = .027). As attested by post-hoc-tests,
+
+Verbal response tasks
+Verbal response latencies in Experiment 1a (phoneme detection plus question
+answering)
+In order to test whether participants indeed planned their responses
+in overlap with the incoming question in the early planning condition,
+matching the logic of the study’s manipulation, latencies of verbal
+responses to critical questions in Exp. 1a (N = 2832) were modelled
+8
+
+Journal of Memory and Language 146 (2026) 104717
+
+M. Barthel
+
+Fig. 4. Top panels: Density distributions of verbal response latencies in Experiments 1a (left) and 2 (right). The vertical dashed lines indicate question offset.
+Bottom panels: Model predictions of verbal response latencies (see Tables 5 and 6 for model details). Error bars represent one standard deviation from the mean.
+n𝐸𝑥𝑝. 1𝑎_𝑒𝑎𝑟𝑙𝑦∕ℎ𝑖𝑡 = 772; n𝐸𝑥𝑝. 1𝑎_𝑒𝑎𝑟𝑙𝑦∕𝑚𝑖𝑠𝑠 = 378; n𝐸𝑥𝑝. 1𝑎_𝑙𝑎𝑡𝑒∕ℎ𝑖𝑡 = 1040; n𝐸𝑥𝑝. 1𝑎_𝑙𝑎𝑡𝑒∕𝑚𝑖𝑠𝑠 = 153; n𝐸𝑥𝑝. 2_𝑒𝑎𝑟𝑙𝑦∕ℎ𝑖𝑡 = 1411; n𝐸𝑥𝑝. 2_𝑙𝑎𝑡𝑒∕ℎ𝑖𝑡 = 1383. Modelled estimates for trials
+with undetected tones in Experiment 2 are not displayed here since they are unreliable due to the low number of cases (n = 38).
+
+Detection was no significant predictor of verbal response times in early
+planning trials (𝛽 = −3 ms; SE = 62 ms; t = −0.052; p = .958), but
+was a significant predictor in late planning trials (𝛽 = 224 ms; SE =
+83 ms; t = 2.692; p = .007).10 An additional model predicting verbal
+response latencies in trials in which the target phoneme was detected
+(n = 1812), with detection latency (in seconds) as a predictor and
+random intercepts by subject and by item showed that detection latency
+and verbal response latency were positively correlated, with trials in
+which the phoneme was detected more slowly showing slower verbal
+responses to the question (𝛽 = 116 ms; SE = 25 ms; t = 4.593; p <
+.001).
+
+respond significantly slower to late planning questions than to early
+planning questions (Table 6). An additional model predicting verbal
+response latencies in trials in which the target phoneme was detected
+(n = 2794), with detection latency (in seconds) as a predictor and
+random intercepts by subject and by item showed that detection latency
+and verbal response latency were positively correlated, with trials in
+which the phoneme was detected more slowly showing slower verbal
+responses to questions (𝛽 = 147 ms; SE = 56 ms; t = 2.624; p < .01).
+Picture naming latencies in Experiment 1c (phoneme detection plus picture
+naming)
+To test whether picture naming latencies in Exp. 1c were affected
+by Planning (early vs. late)12 or not, verbal response times (N = 3075)
+were modelled in a linear mixed-effects regression model with Planning
+as a fixed predictor and random intercepts by subject and by item13 (see
+Fig. A.1 in the Appendix). Detection of the target phoneme (detected
+vs. missed) was included as a control predictor, together with its interaction with Planning. Both Planning and Detection were dummy coded,
+with early planning and phoneme detected as reference levels. No
+significant difference in picture naming latencies was found between
+early and late planning questions (Table 7), indicating that performance
+
+Verbal response latencies in Experiment 2 (tone detection plus question
+answering)
+To test whether participants also started to plan their verbal response in overlap with the question in the early planning condition in
+Exp. 2, latencies of verbal responses to critical questions (N = 2832)
+were modelled in a linear mixed-effects regression model with early
+versus late Planning as a fixed predictor and random intercepts by
+subject and by item (Fig. 4, right panels).11 Planning was dummy coded,
+with early planning as the reference level. Subjects were found to
+
+10
+The respective mirror relation of verbal response times and detection
+performance was attested in a separate model on detection rates, with verbal
+response times as a predictor, finding that late planning trials with longer
+verbal response latencies show reduced phoneme detection rates (𝛽 = −0.160;
+SE = 0.071; z = −2.233; p = .025; see Tables A.1 and A.2 in a.
+11
+Detection of the target phoneme (detected vs. missed) was not included
+as a control predictor, as results on the effects of Detection on verbal reaction
+times cannot be expected to be reliable in Exp. 2 due to a small number of trials
+
+in which the target tone was not detected, making prediction very difficult for
+regression models.
+12
+Participants did not have to plan answers to the questions in this Experiment; Planning only indicates the type of question here, parallel to the other
+experiments.
+13
+Planning was not included as a random slope in order to avoid singularity
+of model fit.
+9
+
+Journal of Memory and Language 146 (2026) 104717
+
+M. Barthel
+
+Table 5
+Model output of mixed-effects model on verbal response latencies in Experiment 1a.
+Intercept
+Planning_late
+Detection_missed
+Planning_late:Detection_missed
+
+𝛽
+
+SE
+
+t
+
+p
+
+1.235
+0.146
+−0.003
+0.227
+
+0.007
+0.066
+0.062
+0.103
+
+15.514
+2.192
+−0.052
+2.212
+
+0.032
+0.958
+0.027
+
+*
+*
+
+Formula = verbalRT ∼ planning * detection + (1 + planning | subjectID) + (1 + planning | itemID).
+Family = gaussian(link=identity).
+
+Table 6
+Model output of mixed-effects model on verbal response latencies in Experiment 2.
+Intercept
+Planning_late
+
+𝛽
+
+SE
+
+t
+
+p
+
+1.125
+0.357
+
+0.084
+0.060
+
+13.327
+5.859
+
+<0.001
+
+phonological, but not general auditory input processing is reduced during concurrent speech planning. However, tone detection performance
+in Exp. 2 was at ceiling in both planning conditions, which might have
+covered up a possible interference effect of concurrent planning on tone
+detection. We will return to this point again in the discussion below.
+In line with the results on participants’ phoneme detection accuracy,
+phoneme detections in the main dual-task experiment (Exp. 1a) were
+found to be significantly slower in the early planning condition, in
+which speech planning happened in overlap with the target phoneme,
+than in the late planning condition, in which phoneme detection was
+performed without concurrent speech planning. The fact that this effect
+was only obtained when the question had to be answered verbally
+(Exp. 1a) but not when no response planning was required (Exp. 1b and
+1c) shows that it is indeed due to speech planning in overlap rather than
+to the position of the respective target phonemes in the two sentence
+formats. Just as phoneme detection latencies in Exp. 1a, tone detection
+latencies in Exp. 2 were also found to be significantly slower in the early
+planning condition than in the late planning condition. This finding was
+to be expected, since speech planning has previously been shown to impair processes of (minute) motor control and hence affects the manual
+component of the phoneme/tone detection tasks in the present button
+press experiments. Earlier studies found speakers’ motor activity to be
+impaired during phases of taxing speech planning, e.g., during mousetracking of an object on the screen, finger tapping, or driving (Boiteau,
+Malone, Peters, & Almor, 2014; Drews, Pasupathi, & Strayer, 2008;
+Sjerps & Meyer, 2015, see also below), possibly because at least some
+components of the manual detection task (like planning and executing
+the finger movement) and the speech preparation task (like planning
+and preparing the movement of the involved articulators) are carried
+out by processing mechanisms that are shared by these two tasks.
+The verbal response latencies of the answers given to the quiz
+questions in the phoneme detection dual-task experiment (Exp. 1a)
+and the tone detection dual-task experiment (Exp. 2) were significantly faster in the early planning condition, where speech planning
+and phoneme/tone monitoring are executed concurrently, than in the
+late planning condition, where phoneme/tone monitoring and speech
+planning are executed consecutively, showing that subjects did indeed
+plan their answers in overlap with the incoming questions, if possible.
+This result is in line with previous findings on early planning strategies
+in dialogue situations (e.g., Barthel et al. (2016) on German; Barthel
+and Levinson (2020) and Bögels (2020) on Dutch; Corps et al. (2018)
+on English). Notably, response latencies in the late planning condition
+were particularly long in trials in which the critical phoneme was not
+detected. Since phonemes in the late planning condition were certainly
+not missed because of concurrent speech planning, these (rare) misses
+must be due to temporarily low levels of attention spent on the experimental task, which also lead to slow verbal responses in these trials.
+Moreover, verbal response latencies and phoneme detection latencies
+were positively correlated, with trials with longer verbal response
+times showing later reactions to the encounter of the target phonemes.
+This correlation was not found for verbal response latencies and tone
+detection latencies. These results are in line with previous research
+finding that both language comprehension and speech planning require
+attention (e.g., Cohen, Salondy, Pallier, & Dehaene, 2021; Roelofs,
+2021; Roelofs & Piai, 2011).
+Taken together, the obtained findings clearly support the planningprioritised hypothesis. Participants were shown to plan their responses
+
+***
+
+Formula = verbalRT ∼ planning + (1 + planning | subjectID) + (1 + planning | itemID).
+Family = gaussian(link=identity).
+
+Table 7
+Model output of mixed-effects model on picture naming latencies in Experiment 1c.
+Intercept
+planning_late
+Detection_missed
+Planning_late:Detection_missed
+
+𝛽
+
+SE
+
+t
+
+p
+
+1.305
+0.023
+0.049
+−0.034
+
+0.051
+0.019
+0.039
+0.052
+
+25.353
+1.174
+1.259
+−0.661
+
+0.240
+0.208
+0.509
+
+Formula = verbalRT ∼ planning * detection + (1 | subjectID) + (1 | itemID). Family
+= gaussian(link=identity).
+
+in the picture naming task was not affected by the format of the
+preceding question. Furthermore, no significant effect of Detection was
+found, and no significant interaction of Detection and Planning.
+Discussion
+This study investigated whether phonological input processing during turn taking is less accurate while concurrently planning speech than
+while not concurrently planning speech, as predicted by the planningprioritised hypothesis (in contrast to the comprehension-prioritised hypothesis). The reported experiments required participants to perform
+a manual phoneme detection task either in isolation (Exp. 1b), in
+combination with a verbal question response task (Exp. 1a), or in
+combination with a delayed picture naming task (Exp. 1c). Questions
+were presented in two versions, either allowing participants to start to
+plan their answer before the target phoneme appeared in the question
+(early planning condition) or allowing them to plan the answer only
+after the target phoneme had been presented (late planning condition).
+Participants were found to show significantly reduced phoneme
+detection performance when they were concurrently planning their
+response to the quiz question (i.e., in the early planning condition in
+Exp. 1a) as compared to when they were not (yet) planning their verbal
+response (i.e., in Exp. 1b and 1c and in the late planning condition
+in Exp. 1a). The finding that question format (early planning question
+versus late planning question) affected phoneme detection accuracy
+only in Exp. 1a shows that the effect on detection performance was
+not due to the position of the target phoneme in the question but to
+concurrent planning of the answer in the early planning condition in
+Exp. 1a.
+In an additional experiment (Exp. 2), participants were required to
+verbally answer the questions and perform a tone detection task, with
+the target tones presented at the positions of the phonemes that were
+the target phonemes in Exp. 1a. In contrast to the phoneme detection
+accuracy in Exp. 1a, participants’ tone detection accuracy in Exp. 2
+was not found to be impaired by concurrent planning, suggesting that
+10
+
+Journal of Memory and Language 146 (2026) 104717
+
+M. Barthel
+
+to the questions as early as possible, which was in overlap with part of
+the question in the early planning condition. When processing capacities were supposedly insufficient, which was most frequent in early
+planning questions in Exp. 1a, the target phonemes were not detected.
+In late planning questions, detection misses were much less frequent
+and most probably due to a momentary lack of attention to the experimental task. In these rare cases, this lack of attention also lead to slower
+verbal response latencies. This conclusion finds support in the fact that
+questions that are particularly taxing, and thus get slower responses,
+were found to also show significantly reduced detection performance
+as compared to questions that get faster responses.
+The attested pattern of results can be explained in two plausible,
+interconnected ways. As one possible, domain-general explanation,
+reduced phoneme detection performance in the early planning condition in Exp. 1a might be caused by divided attention and increased
+processing load during parallel speech planning and comprehension.
+Alternatively, reduced phoneme detection task performance might be
+driven by domain-specific interference between the processes of speech
+planning and language decoding, especially on the level of phonological processing. Each of these two accounts will be discussed in the
+following paragraphs.
+Attention plays a crucial role in managing conversations in general and verbal turn taking in particular. Understanding and planning speech are complex cognitive tasks that rely heavily on attention (Chwilla, 2022; He et al., 2021; Hubbard & Federmeier, 2021;
+Jongman, Roelofs, & Meyer, 2015; Kristensen, Wang, Petersson, &
+Hagoort, 2013; Laganaro, Bonnans, & Fargier, 2019; Moisala et al.,
+2015; Shitova, Roelofs, Coughler, & Schriefers, 2017). Phases of speech
+planning in overlap with input decoding can therefore temporarily
+exhaust the limited capacity of attentional resources, as has been
+demonstrated in previous dual-task studies. For instance, Ferreira and
+Pashler (2002) demonstrated that in dual-tasks involving discriminating tones while preparing to name a picture, both picture naming
+performance and tone discrimination performance were reduced in
+difficult naming conditions (e.g., naming low-frequency words after
+low-cloze context sentences) as compared to easy naming conditions
+(e.g., naming high-frequency words after high-cloze context sentences),
+indicating that more difficult speech planning tasks lead to increased
+attentional demand. Investigating actual conversations, Boiteau et al.
+(2014) found that interlocutors’ performance of continuously tracking
+a moving dot with their mouse was reduced during phases of speech
+planning, where speech comprehension and preparation regularly overlap. Similarly, Sjerps and Meyer (2015) found that participants who had
+to continuously tap their fingers in a pre-defined pattern while taking
+turns with the computer to name rows of pictures showed reduced
+tapping performance already shortly before the end of the incoming
+turn, i.e., just as they planned their own turn in overlap with speech
+comprehension. And a number of earlier experiments showed that both
+speech production and speech planning reduce concurrent driving performance (e.g., Kubose et al., 2006), which leads drivers to make use of
+numerous, partly multi-modal strategies to manage the attentional demand of the multi-task situation (Drews et al., 2008; Mondada, 2012).
+Thus, both language production planning and speech comprehension
+require attentional resources, which can lead to capacity limitations
+during phases of simultaneous processing.
+The competition for attention of concurrent speech planning and
+comprehension has been shown to lead to increased processing load
+at turn transitions. In a controlled experimental setting in which participants exchanged conditionally relevant speaking turns with a confederate, Barthel and Sauppe (2019) found that participants’ pupil
+sizes, an indicator for cognitive load (Beatty & Lucero-Wagoner, 2000),
+increased more intensely and for longer when they were planning their
+turns in overlap with the incoming turn as compared to when they
+planned their turn in silence after the incoming turn. This pattern has
+been confirmed in question-response sequences taken from unrestricted
+
+conversations (Barthel & Rühlemann, 2025), showing that conversational dual-tasking is cognitively taxing, even though it has been shown
+to be a common turn taking strategy (e.g., Bögels, 2020; Levinson
+& Torreira, 2015). Notably, the increase in processing load at turn
+transitions is not dependent on the actual articulation of the planned
+speech but has also been observed in potential next speakers in triadic
+conversations who do not actually produce the next turn but were
+merely co-selected as a potential next speaker (Rühlemann & Barthel,
+2025).
+In light of these previous findings, attention capacity limitations
+during phases of speech planning are a plausible candidate explanation
+for the observed reduced performance in phonological input processing. Both comprehension and production are known to be dependent on speakers’ domain-general aptitude and information-processing
+speed (Hintz et al., 2020). Limitations in general processing resources
+or a processing bottleneck (Ferreira & Pashler, 2002; Kahneman, 1973;
+Navon & Miller, 2002; Pashler, 2000; Ruthruff, Pashler, & Klaassen,
+2001; Tombu & Jolicœ ur, 2003, 2005) are thus conceivable causes
+of the reduced phoneme detection performance, and would explain
+the obtained pattern of results. Both phoneme detection accuracy and
+latencies were lower and longer, respectively, when subjects were
+planning their verbal response at the time when the target phoneme
+was encountered. Moreover, even in trials in which planning and
+comprehension did not overlap, verbal response latencies were longer
+when the critical phoneme was missed as compared to when it was
+detected. The same pattern holds the other way around, with late
+planning trials (where comprehension and planning did not overlap)
+showing a negative relation between phoneme detection rates and
+verbal response latencies, with more target phonemes being missed in
+trials with longer verbal response latencies. In line with these results,
+verbal response latencies and phoneme detection latencies were also
+found to be correlated, with trials with longer verbal reaction times
+also showing longer phoneme detection latencies. The combination of
+these findings indicates that a general momentary lapse of attention can
+affect both the processes of speech planning and phoneme detection.
+An alternative, related approach to explain the reduced performance
+in phoneme detection during parallel speech planning centres around
+domain-specific dual-task interference. Speech production and comprehension are both assumed to operate on highly interconnected, if not
+partly identical mental representations (Indefrey & Levelt, 2004; Kempen, Olsthoorn, & Sprenger, 2012; MacKay, 1987), including coupled
+phonological representations (Buchsbaum, Hickok, & Humphries, 2001;
+Kittredge & Dell, 2016; Mitterer & Ernestus, 2008), and to operate on
+at least partly overlapping neural systems (Hagoort & Indefrey, 2014;
+Menenti et al., 2011; Silbert et al., 2014). When production and comprehension processes try to access the target representations at the same
+time, task performance is known to decrease. Abundant evidence for
+such interference effects comes from picture-word-interference experiments, which show that linguistic input can have detrimental effects
+on picture naming performance (e.g., Damian & Bowers, 2003; Glaser
+& Diingelhoff, 1984; Jescheniak, Schriefers, & Hantsch, 2003; Levelt
+et al., 1999). As a general finding of these studies, the observed
+interference of speech input with speech production is reduced when
+the input is phonologically similar to the intended output (Damian &
+Martin, 1999; Schriefers et al., 1990) (see also Barthel & Levinson,
+2020, for related evidence in lexical decision). The standard explanation for this phonological similarity effect is that any input activates its
+respective phonological representations, which compete with the target
+representations that need to be selected to produce the output, causing
+phonological interference. Thus, any phonological overlap between
+input and output leads to activation of the output-relevant representations by the input, leading to reduced interference. This explanation
+is supported by findings of dual-task experiments that show that a
+picture naming task can be performed more easily with a concurrent
+tone-discrimination task than with a concurrent syllable-identification
+task (Fairs, Bögels, & Meyer, 2018); an effect that has been argued to
+11
+
+Journal of Memory and Language 146 (2026) 104717
+
+M. Barthel
+
+Table A.1
+Model output of generalised linear mixed-effects model on detection rate in
+Experiment 1a.
+
+be due to the fact that non-linguistic tones, contrary to syllables, do
+not activate competing linguistic representations. Corroborating results
+come from a phoneme monitoring study by Roelofs, Özdemir, and
+Levelt (2007), in which participants were presented with single spoken
+words and found to show shorter phoneme monitoring latencies when
+the name of a picture that was presented simultaneously also contained
+the target phoneme. Importantly, this phoneme priming effect was
+not found when subjects never had to react to the presented pictures
+in any way, which shows that speech production, including active
+phonological encoding, is the source of the obtained interference effect.
+Based on these previous results, both attentional capacity limitations during dual-task phases as well as phonological interference of
+speech planning with phonological decoding are plausible candidate
+explanations for the reduction of phonological input processing efficiency during verbal response planning. Moreover, these two causes
+are not mutually exclusive and might in fact both have a share in
+the observed net effects. However, given the present results of the
+dual-task of tone detection and question answering in Exp. 2, languagespecific effects seem to be the more likely (main) cause of the observed
+effects on phoneme detection performance in Exp. 1a. Tone detection
+accuracy was found to be equally high during phases of concurrent
+speech planning and phases without concurrent speech planning in
+Exp. 2, indicating that interference between response planning and
+input processing, especially on the phonological level, is the more likely
+reason for the observed decline in phoneme detection performance during speech planning in Exp. 1a than domain general attention capacity
+limitations. These results suggest that phonological input processing in
+particular is impaired during phases of concurrent speech planning in
+turn taking situations.
+The absence of an effect of concurrent speech planning of tone
+detection performance in Exp. 2 needs to be interpreted with some
+caution, though. In both the early and the late planning conditions,
+tone detection performance is almost at ceiling for many of the tested
+participants. This limits the certainty about these results’ interpretation,
+due to the possibility that any detrimental effect of concurrent planning
+on tone detection was not detected because the tone detection task was
+too easy even in the early planning condition. Future studies could directly target this remaining uncertainty by testing a dual-task scenario
+that balances the level of difficulty between the language-related and
+the language-unrelated task more carefully. Furthermore, the phoneme
+detection task and the tone detection task are inherently not perfectly
+comparable, since in the tone detection task, participants need to pay
+attention to a part of the incoming signal that is not only not part of the
+phonological makeup of the input that needs to be comprehended for
+the quiz task, but also is it not part of the linguistic signal in general.
+Thus, the two tasks differ from one another in more than one respect,
+leaving some uncertainty about why exactly concurrent planning did
+not affect tone detection performance: only because the target tones
+are not part of the phonological signal of the input or because they are
+entirely non-linguistic. For the rational of this study’s manipulations
+and comparisons, however, this was unavoidable.
+Regardless of the respective shares of phonological versus general
+auditory processing in the observed net effect in the present dual-task
+study, phoneme detection has been shown to be more difficult during
+phases of concurrent speech planning, even though parallel processing
+of verbal input and output is a common strategy of interlocutors in
+turn taking situations (e.g., Barthel et al., 2017; Bögels et al., 2015).
+One reason why interlocutors commonly pursue this strategy in spite
+of these processing difficulties is that they are thereby able to start
+to articulate their responses with shorter gaps between turns of talk,
+making more efficient use of the time spent in conversation (Bögels
+& Levinson, 2017; Levinson & Torreira, 2015). A second reason for an
+overlapping processes strategy is that being able to produce timely wellaligned turns avoids any potentially unwanted mis-interpretations that
+might be triggered by speaking after a markedly long gap, which has
+been shown to lead to inferences of, for example, social distance (Blohm
+
+Intercept
+Planning_early
+verbalRT_centred
+Phoneme_1
+Phoneme_2
+Phoneme_3
+Planning_early:verbalRT_c
+
+𝛽
+
+SE
+
+z
+
+p
+
+2.578
+−1.323
+−0.160
+−0.275
+−0.397
+−0.083
+0.162
+
+0.265
+0.212
+0.071
+0.264
+0.273
+0.256
+0.111
+
+9.728
+−6.231
+−2.233
+−1.043
+−1.455
+−0.326
+1.453
+
+<0.001
+0.025
+0.297
+0.145
+0.744
+0.146
+
+***
+*
+
+Formula = hit ∼ 1 + planning * verbalRT_centred + phoneme + (1 + planning |
+subjectID) + (1 + planning | itemID); Family = binomial(link=logit).
+
+& Barthel, 2025) or low willingness to grant a request or accept an
+offer (Henetz, 2017; Roberts & Francis, 2013). A third and very fundamental reason lies in the basic systematics of turn allocation during
+conversation (Sacks et al., 1974). Whenever speaker transition becomes
+relevant during a conversation and the now-open speaking floor is
+not taken by the listener of the previous turn, the previous speaker
+might self-select again for the next turn and the present opportunity
+for the listener to take a turn is gone. This tension is obviously even
+more pronounced in multi-party interactions, where situations in which
+more than one current listener is entitled to take the next turn are
+common (Holler et al., 2021; Rühlemann & Barthel, 2025).
+In sum, planning in overlap is a frequently employed strategy, even
+though its execution is less efficient than planning in silence (Barthel &
+Sauppe, 2019). The presented evidence indicates that not only is planning less efficient in overlap with comprehension but comprehension
+efficiency is also reduced during concurrent planning (see also Fargier
+& Laganaro, 2019). After related evidence had been put forth for
+language comprehension on the level of semantic processing (Barthel,
+2021), the present results show that also phonological input processing
+is reduced during parallel speech planning in dialogical turn taking situations, lending further support to the planning-prioritised hypothesis.
+CRediT authorship contribution statement
+Mathias Barthel: Writing – review & editing, Writing – original draft, Visualization, Validation, Supervision, Software, Resources,
+Project administration, Methodology, Investigation, Funding acquisition, Formal analysis, Data curation, Conceptualization.
+Declaration of competing interest
+The author declares that the research was conducted in the absence
+of any commercial or financial relationships that could be construed as
+a potential conflict of interest.
+Acknowledgements
+This research was partly funded by DFG grant InterTurn, Germany
+(grant No. 497498146) granted to the author, and partly by Berlin University Alliance grant Language Comprehension in Dialogue, Germany
+granted to the author.
+Appendix
+See Fig. A.1 and Tables A.1–A.3.
+
+Data availability
+The list of stimuli, raw data, and analysis scripts are available on
+OSF at https://osf.io/fzha2/?view_only=b7cfc71964d84864b9c5c660f
+ec8cc6f.
+
+12
+
+Journal of Memory and Language 146 (2026) 104717
+
+M. Barthel
+
+Fig. A.1. Model predictions of picture naming latencies in the Experiment 1c (see Table 7 for model details). Error bars represent one standard deviation from
+the mean. n𝑒𝑎𝑟𝑙𝑦∕ℎ𝑖𝑡 = 1256; n𝑒𝑎𝑟𝑙𝑦∕𝑚𝑖𝑠𝑠 = 231; n𝑙𝑎𝑡𝑒∕ℎ𝑖𝑡 = 1372; n𝑙𝑎𝑡𝑒∕𝑚𝑖𝑠𝑠 = 216.
+Table A.2
+Post-hoc tests on effect of verbal response latency on phoneme detection rate
+by condition in Experiment 1a.
+Planning
+
+𝛽
+
+SE
+
+z
+
+p
+
+early
+late
+
+0.002
+−0.160
+
+0.087
+0.071
+
+0.026
+−2.233
+
+0.999
+0.050
+
+Behavior Research Methods, 53(4), 1407–1425. http://dx.doi.org/10.3758/s13428020-01501-5.
+Audacity Team (2024). Audacity.
+Baddeley, A. (2003). Working memory and language: an overview. Journal of Communication Disorders, 36(3), 189–208. http://dx.doi.org/10.1016/S0021-9924(03)000194.
+Barthel, M. (2020). Speech planning in dialogue - psycholinguistic studies of the timing of
+turn taking (Ph.D. thesis), Nijmegen: Radboud University Nijmegen.
+Barthel, M. (2021). Speech planning interferes with language comprehension: Evidence
+from semantic illusions in question-response sequences. In Proceedings of the 25th
+workshop on the semantics and pragmatics of dialogue (pp. 1–14). Potsdam, Germany.
+Barthel, M., & Levinson, S. C. (2020). Next speakers plan word forms in overlap
+with the incoming turn: evidence from gaze-contingent switch task performance.
+Language, Cognition and Neuroscience, 35(9), 1183–1202. http://dx.doi.org/10.1080/
+23273798.2020.1716030.
+Barthel, M., Meyer, A. S., & Levinson, S. C. (2017). Next speakers plan their turn
+early and speak after turn-final ‘‘go-signals’’. Frontiers in Psychology, 8, 393. http:
+//dx.doi.org/10.3389/fpsyg.2017.00393.
+Barthel, M., & Rühlemann, C. (2025). Pupil size indicates planning effort at turn
+transitions in natural conversation. In E. Zima, & A. Stukenbrock (Eds.), vol.
+351, New perspectives on gaze in social interaction: mobile eye tracking studies (pp.
+188–205). Amsterdam: John Benjamins Publishing Company, https://doi.org/10.
+1075/pbns.351.07bar.
+Barthel, M., & Sauppe, S. (2019). Speech planning at turn transitions in dialog is
+associated with increased processing load. Cognitive Science, 43(7), Article e12768.
+http://dx.doi.org/10.1111/cogs.12768.
+Barthel, M., Sauppe, S., Levinson, S. C., & Meyer, A. S. (2016). The timing of utterance
+planning in task-oriented dialogue: Evidence from a novel list-completion paradigm.
+Frontiers in Psychology, 7, 1858. http://dx.doi.org/10.3389/fpsyg.2016.01858.
+Barthel, M., Tomasello, R., & Liu, M. (2024). Conditionals in context: Brain signatures
+of prediction in discourse processing. Cognition, 242, Article 105635. http://dx.doi.
+org/10.1016/j.cognition.2023.105635.
+Bates, D., Mächler, M., Bolker, B., & Walker, S. (2015). Fitting linear mixed-effects
+models using lme4. Journal of Statistical Software, 67(1), http://dx.doi.org/10.
+18637/jss.v067.i01.
+Beatty, J., & Lucero-Wagoner, B. (2000). The pupillary system. In J. Cacioppo,
+L. Tassinary, & G. Berntson (Eds.), Handbook of psychophysiology (pp. 142–162).
+New York: Cambridge University Press.
+
+*
+
+Table A.3
+Model output of linear mixed-effects model on phoneme/tone detection latencies in Experiments 1a and 2.
+Intercept
+Planning_late
+Experiment_2
+verbalRT_centred
+Phoneme_1
+Phoneme_2
+Phoneme_3
+Planning_late:Exp._2
+Planning_late:verbalRT_c
+verbalRT_centred:Exp._2
+Planning_late:verbalRT_centred:Exp._2
+
+𝛽
+
+SE
+
+t
+
+p
+
+1073.22
+−146.11
+−352.42
+159.83
+73.56
+−26.77
+7.35
+32.13
+−71.24
+−132.43
+66.35
+
+64.28
+33.91
+48.89
+24.43
+71.24
+72.36
+71.33
+42.57
+29.23
+29.17
+36.47
+
+16.696
+−4.308
+−7.209
+6.543
+1.033
+−0.370
+0.103
+0.755
+−2.437
+−4.539
+1.819
+
+<0.001
+<0.001
+<0.001
+0.306
+0.712
+0.918
+0.451
+0.014
+<0.001
+0.069
+
+***
+***
+***
+
+*
+*
+***
+.
+
+Formula = buttonRT ∼ planning * experiment * verbalRT_centred + phoneme + (1 +
+planning | subjectID) + (1 + planning | itemID); Family = gaussian(link=identity).
+
+References

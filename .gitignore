@@ -1,5 +1,6 @@
 *.rds
-
+**/correspondence/
+**/submission_package/
 /.luarc.json
 .Rproj.user
 *.Rproj

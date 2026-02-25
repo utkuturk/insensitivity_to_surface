@@ -1,0 +1,1872 @@
+Introduction
+Acquiring new words is an important part of developing language
+skills (Gaskell & Ellis, 2009). Linking new words to objects is chal­
+lenging as each word could refer to any number of objects, actions, or
+ideas (McMurray et al., 2012; Quine, 1960). Yet, in ambiguous contexts
+containing both novel and familiar objects, toddlers easily and quickly
+link a novel word to a novel referent (Halberda, 2003; Mervis & Ber­
+trand, 1994). One explanation for this ability, referred to as fast map­
+ping (Carey & Bartlett, 1978) or referent selection (e.g., Horst &
+Samuelson, 2008), is that toddlers rely on a mutual exclusivity
+assumption — that each object has only one name (e.g., Waxman &
+Booth, 2000), an assumption similar to lexical contrast (Clark, 1990),
+and the novel noun nameless category principles (Golinkoff et al., 1992;
+Merriman et al., 1995). These assumptions help to describe children’s
+choices in ambiguous word learning contexts, but do not sufficiently
+explain the underlying mechanisms (Mather, 2013). One explanation is
+that children engage in a process-of-elimination during referent
+
+selection, ruling out familiar competitors to map novel words to novel
+objects (Axelsson et al., 2012; Halberda, 2003; Repnik et al., 2021;
+Spiegel & Halberda, 2011). Another is that children choose a novel
+target due to its novelty (e.g., Holland et al., 2018; Mather, 2013). More
+evidence on children’s attention and encoding during referent selection
+is needed to disentangle whether referent selection is best explained as a
+process-of-elimination or a novelty bias. We also question whether this
+changes across repeated exposures and under conditions where children
+receive reinforcement for their selections. There are also mixed findings
+regarding the degree of attention to novel objects during referent se­
+lection and how much this supports retention (e.g., Bion et al., 2013;
+Booth et al., 2008; Kucker et al., 2020).
+Encoding during referent selection and later retention
+Measuring eye movements during referent selection can provide
+access to children’s real-time interpretations of words and allow us to
+make assumptions about children’s decision making (Fernald et al.,
+
+* Corresponding author at: School of Psychological Sciences, University of Newcastle, Callaghan 2308, Australia.
+E-mail address: emma.axelsson@newcastle.edu.au (E.L. Axelsson).
+https://doi.org/10.1016/j.jml.2024.104596
+Received 14 March 2024; Received in revised form 2 December 2024; Accepted 4 December 2024
+Available online 12 December 2024
+0749-596X/© 2024 The Author(s). Published by Elsevier Inc. This is an open access article under the CC BY license (http://creativecommons.org/licenses/by/4.0/).
+
+E.L. Axelsson et al.
+
+Journal of Memory and Language 141 (2025) 104596
+
+novel word will help us differentiate between these two accounts.
+Halberda (2006) is consistent with the process-of-elimination ac­
+count. In that study, when both adults and 3-year-old children were
+fixating on a target at the onset of a word (e.g., blick in “Look at the
+blick”), they shifted their gaze back-and-forth between targets and
+competitors on a greater proportion of novel target trials than familiar
+target trials. This looking pattern even occurred when the participants
+had already seen both the target and competitor prior to noun onset, that
+is, when it should be unnecessary to check on the competitor object.
+Shifting their gaze between the target and competitors at the onset of the
+word also led to the children and adults taking longer to point in the
+novel than in the familiar trials. Thus, Halberda (2006) argued, based on
+these converging pieces of evidence, that lexical knowledge and
+assessment of competitors is an important step during referent selection.
+Other studies have found better referent selection accuracy among
+toddlers who could spontaneously name competitor objects rather than
+only comprehend their labels, suggesting that lexical knowledge of
+competitors improved toddlers’ capacity to rule them out (Grassmann
+et al., 2015; but see Kucker et al., 2020). More recently, Hilton et al.
+(2019) found greater than chance looking at familiar targets during
+referent selection, but chance level looking at novel targets suggesting
+more diffused attention across objects during novel target trials.
+Mather (2013), who instead argued for a novelty bias, where chil­
+dren link novel words with novel objects with little need to consider
+familiar competitors, also notes a confound in referent selection studies,
+specifically that novel targets are often both novel and nameless. Several
+studies have explored this confound with children between 10 and 30
+months of age. A study with 10-month-olds, who were yet to acquire
+familiar competitor words, found that they looked longer at the novel
+target than familiar competitor (particularly towards the later portion of
+trials), suggesting that at lower levels of vocabulary size the preference
+for novelty is based more on cognitive than language constraints (Kucker
+et al., 2020; Mather & Plunkett, 2010). Similarly, Mather and Plunkett
+(2012) found that, relative to previously seen novel objects, 22-monthold toddlers looked longer at a completely novel object when presented
+with a novel word (e.g., “Look at the Gub!”). Toddlers in that study were
+also faster to demonstrate a novelty preference in the context of familiar
+competitors. In an object selection task, Horst et al. (2011) observed that
+when all objects present are nameless (i.e., novel), toddlers will choose
+the most novel object as a referent of a novel word relative to recently
+familiarised novel objects (for a similar finding see also Holland et al.,
+2018). In sum, there is a developmental effect that is linked with the
+development of children’s lexicon such that with an increasing vocab­
+ulary size, referent selection likely shifts from cognitive to more lin­
+guistic constraints. The studies above demonstrate that toddlers also use
+novelty to solve disambiguation trials, but neither study tested chil­
+dren’s retention. Thus, it remains unclear whether a novelty bias during
+disambiguation affects later retention.
+Current Study. In the current paper we explore toddlers’ looking
+behaviours during referent selection to disentangle whether children
+solve referential disambiguation by using a process-of-elimination or
+relying on a novelty bias. Our other key aim is to better understand
+whether a focus on novelty supports later retention. We randomly
+assigned children to either an ostensive naming or non-ostensive naming
+condition to assess the effect of reinforcing children’s attention to target
+objects following the initial encoding phase on immediate as well as
+delayed retention. We tested 2.5-year-old children to extend the findings
+of previous referent selection studies with novel targets (e.g., Bion et al.,
+2013; Golinkoff et al., 1992; Heibeck & Markman, 1987; Horst, 2011).
+Children completed two blocks of referent selection trials and we
+measured children’s looking proportions to the target objects relative to
+two competitors in each trial to determine if attention to targets changes
+across trial blocks. For consistency with previous referent selection
+studies that included overt behaviours (e.g., reaching toward, picking
+up, and pointing to target objects), we also asked children to point to the
+target objects (e.g., Halberda, 2006). Relative to familiar target trials, in
+
+2008; Halberda, 2006). Children’s looking proportions to targets across
+time can provide an indication of not only the focus on targets, but how
+it changes relative to a focus on competitors. Better understanding of
+what drives looking behaviours during the earliest stages of word
+learning could also highlight whether a focus on targets supports later
+retention.
+Despite children’s effective ability to disambiguate novel words,
+retention of multiple fast-mapped words is more difficult (Axelsson &
+Horst, 2013; Horst & Samuelson, 2008). Endogenous factors, such as
+attention to the target during the encoding stage could affect retention.
+A key aspect of the encoding stage is attending to a novel object while
+hearing a novel word (Wojcik, 2013), but it is uncertain if the degree of
+attention during encoding supports retention. Bredemann and Vlach
+(2021) argued that the speed and ease associated with referent selection
+might involve reduced attention to novel targets and inhibit retention.
+Relatedly, Bion et al. (2013) found that greater target looking pro­
+portions was associated with better retention in toddlers (see also Hilton
+et al., 2019; Twomey et al., 2018). However, Booth et al. (2008) found
+that target attention did not predict better retention even when they
+increased toddler attention through target manipulation (i.e., moving
+targets during labelling; see also Kucker et al., 2020). Therefore, more
+evidence is needed on the associations between target attention and
+retention of novel words and what this relationship looks like over
+longer time scales.
+External factors during encoding can also affect retention. Axelsson
+and Horst (2014) repeated referent selection trials presenting targets
+with the same competitors, and Benitez and Smith (2012) presented
+targets in the same locations across trials. Both studies found faster
+target detection across trials and enhanced retention later. Repetition
+likely added a degree of predictability (Benitez & Smith, 2012), and
+ability to rule out competitors. Horst, Scott and Pollard (2010) also
+found better retention among 2.5-year-old toddlers who encountered
+fewer familiar competitors on referent selection trials. This is further
+evidence that conditions supporting a better focus on novel targets
+supports retention.
+Feedback, such as repetition of the words, after the initial encoding
+stage can also affect retention (e.g.,Gurteen et al., 2011; Storkel et al.,
+2017). Ostensive naming is one form of feedback where the word is
+repeated while directing children’s attention closely to the object and
+making it visually distinct from competitor objects. For example, Horst
+and Samuelson (2008) lifted and pointed to targets while naming them
+after each referent selection trial, and found enhanced retention of novel
+words among 2-year-olds (see also Axelsson et al., 2012; Vlach &
+Sandhofer, 2012). However, without ostensive naming, simple repeti­
+tion of the correct mapping did not facilitate retention (Axelsson et al.,
+2012; Horst & Samuelson, 2008). More evidence is needed on the role of
+ostensive naming along with target attention during referent selection
+and how they relate to retention over longer time scales.
+Differentiating between process-of-elimination and a novelty bias
+Approaching referent selection from the perspective that children
+use a process-of-elimination to disambiguate makes two assumptions:
+first, that children know which referents are already associated with a
+name and which are not (Halberda, 2003); and second, that children
+attend to and rule out familiar competitors before selecting what they
+think is the target referent (e.g., Halberda, 2006). In contrast, from a
+novelty bias perspective, the novelty of the target drives children’s se­
+lections (Mather & Plunkett, 2012). Therefore, according to the novelty
+bias perspective, there is little need to attend to the familiar competitors
+before making a selection. Mather (2013) argues that recognising each
+familiar object before identifying a novel referent is cognitively
+demanding and inefficient because the novelty of the target word and
+the novelty of the referent object is sufficient without needing to
+consider the nameability of the competitors. Thus, determining if and
+how much children attend to the familiar competitors after hearing a
+2
+
+E.L. Axelsson et al.
+
+Journal of Memory and Language 141 (2025) 104596
+
+novel target trials, if children engage in a process-of-elimination, they
+should spend more time looking at familiar competitors and conse­
+quently their target looking proportions should be lower and they
+should take longer to point to targets (see also Hilton et al., 2019). In
+contrast, if children’s behaviour is driven by a novelty bias, they should
+spend more time looking at novel targets relative to the familiar com­
+petitors. However, this alone would be insufficient in supporting a
+process-of-elimination account. We also assessed the time course of all
+the children’s target looking to determine when they focus longer on
+novel targets relative to familiar competitors. With these analyses, we
+expected an initial focus on familiar competitors prior to an increase in
+novel target looking in novel target trials. In the second block of trials,
+we predicted faster target selections and higher target looking pro­
+portions as the novel objects become more familiar – particularly for the
+ostensive naming group who received feedback after each trial.
+Few studies have considered the effect of attention to targets during
+referent selection on retention over longer time scales. We assessed how
+much children’s target looking proportions relative to familiar com­
+petitors during referent selection relates to immediate retention, reten­
+tion four hours later, and retention the following morning. As greater
+target looking proportions are associated with better retention (Bion
+et al., 2013; Wojcik, 2013), we hypothesised that this would support
+both better immediate and longer-term retention, especially for children
+who received ostensive naming (e.g., Axelsson et al., 2012) as it guides
+children’s attention in early encoding.
+
+Apparatus and materials
+Stimuli. Fifty-eight images of familiar objects (e.g., tree, shoe) were
+presented across warm-up and referent selection trials. These images
+were sourced from the Bank of Standardised Stimuli (Brodeur et al.,
+2014) and Shutterstock.com. The familiar words were chosen as they are
+known by at least 50 % of Australian children according to the Austra­
+lian English Developmental Inventory (OZI, Kalashnikova et al., 2016).
+For the novel objects, four images of unknown objects and novel words
+were sourced from the Novel Object and Unusual Name (NOUN) Data­
+base (Horst & Hout, 2016). The novel words were all monosyllabic:
+cheem, hux, kiv, and noop. The images were presented on a 24-inch Dell
+monitor (1920 × 1080 resolution) and all images were on average of
+77.11 mm × 65.99 mm (7.35◦ × 6.30◦ at a 60 cm distance). Interest
+areas (IAs), not visible to children, were positioned around each image
+for later extraction of fixation data. The IAs were all the same size, and
+were sized to fit all objects (see Figs. 1 & 2).
+A female native speaker of Australian English recorded auditory in­
+structions with an AKG C4000 microphone. The audio files were edited
+in Pro Tools 12 to ensure consistency in sound level, tempo, and
+duration.
+Eye tracking. Children’s fixations were recorded with an EyeLink
+1000 system using a 16 mm lens and a sampling rate of 500 Hz and 0.5◦
+spatial accuracy. A high contrast sticker placed above the child’s right
+eye aided in gaze capture. Children sat on a caregiver’s lap 55–60 cm
+from the camera and 60–65 cm from the display screen. The camera was
+desktop-mounted in front of and beneath the display monitor using the
+remote setting which allows for participant movement in an area of 22
+cm × 18 cm × 20 cm. The images were presented using Experiment
+Builder software (1.10.1630; SR Research). Eye tracking data was
+extracted using Data Viewer software (4.2.1).
+
+Method
+Participants
+A power analysis performed with G*Power (with 7 predictors, power
+= 0.85, α = .05, effect size f2 = .25 based on Horst et al., 2020; Twomey
+et al., 2014) revealed that 72 participants were needed (but see below
+for power with extra predictors). The final sample included 72 typically
+developing monolingual children (34 girls, 38 boys, M age = 30.28
+months, SD = 1.32, range = 28.07 – 32.89 months) with 36 in the
+ostensive naming group and 36 in the non-ostensive naming group.
+Additional children were excluded from the analyses for difficulties with
+the pointing task (ostensive n = 3; non-ostensive n = 7), fussiness/
+inattentiveness (ostensive n = 2; non-ostensive n = 2), and eye tracking
+issues (ostensive n = 2; non-ostensive n = 4). Two children in the nonostensive naming group did not point during the immediate retention
+test and were excluded from the retention analyses aside from their gaze
+data in the immediate retention test. Otherwise, all children completed
+all the delayed test trials. All children had normal vision. Vocabulary
+size did not differ significantly between children in the ostensive (M =
+467.14, SD = 80.61) and non-ostensive groups (M = 469.23, SD =
+76.23), t(69) = 0.11, p = .911, d = 0.03; as was also the case for gender,
+Fisher’s Exact test, p = .238 (ostensive: 39 % female, non-ostensive: 56
+% female); but they did differ in age, with the ostensive group older by
+30.08 days, t(70) = 3.76, p < .001, d = 0.89 (ostensive: M = 30.82
+months, SD = 1.43; non-ostensive: M = 29.74 months, SD = 0.96).
+Therefore, we included age and an age-by-group interaction in the an­
+alyses. Due to the addition of these two predictors our post-hoc power
+was 0.80. The children’s mothers’ mean age was 35.19 years (SD = 5.28)
+and they had 17.49 years in education (SD = 2.40); and fathers’ mean
+age was 37.21 (SD = 7.88) with 16.57 years in education (SD = 3.22).
+The ethnicity of the mothers was white Australian (92 %), white Euro­
+pean (4 %), and Australian Asian (4 %). The ethnicity of the fathers was
+white Australian (93 %), indigenous Australian (1 %), white European
+(4 %), and South African (1 %). Participants were recruited via posts on
+social media and flyers at childcare centres, cafés, and libraries. Data are
+available on the Open Science Framework https://osf.io/6yvdw/.
+
+Design and procedure
+Ethical approval was obtained from the Human Research Ethics
+Committee at The Australian National University (Protocol Number
+2015/078) and caregivers provided written consent.
+Warm-up. Toddlers at 17 months (Mervis & Bertrand, 1994) and 2
+years of age (Spiegel & Halberda, 2011) are capable of successful
+referent selection via pointing, but we first provided three warm-up
+trials with familiar objects (e.g., train, spoon, elephant) using A3 post­
+ers on a wall to familiarise children with the pointing task. The exper­
+imenter praised children’s correct choices or provided guidance for
+incorrect choices.
+Additional Warm-up. Once seated in front of the eye tracker, three
+
+Fig. 1. Example referent selection trial with two familiar and one novel object
+and interest areas (not visible to participants).
+3
+
+E.L. Axelsson et al.
+
+Journal of Memory and Language 141 (2025) 104596
+
+Block 1 and Block 2 to allow even time spacing across novel objects and
+to avoid the same novel target appearing on consecutive trials. Pre­
+senting the novel targets across two blocks enabled us to assess how
+children’s fixations and looking times changed across blocks as the novel
+targets became more familiar. Different familiar competitors were pre­
+sented on each novel target trial to maintain children’s attention in the
+task. This also increases variability and makes the task less predictable
+(see Twomey et al., 2018 for a review on the usefulness of variability in
+word learning). Whether children were asked to point to a familiar or
+novel target alternated across trials, which also ensured that two novel
+target trials did not occur sequentially. Target object locations (i.e., left,
+middle, right) and novel target order (i.e., first, second, third, fourth)
+were counterbalanced across children using four different presentation
+orders.
+For half of the children, each referent selection trial was followed
+immediately by ostensive naming of the target. The target object moved
+up the screen, bounced four times, and the object’s name was repeated
+once, e.g., “Can you see the noop?” For children in the non-ostensive
+naming group, there was no naming or movement.
+For pointing accuracy, two experimenters stood behind the child and
+recorded independently where the the child was pointing. A camera,
+positioned behind the display monitor also recorded the child’s point­
+ing, providing a frontal view, and was consulted for trials where the two
+experimenters disagreed.
+Immediate novel word retention. Immediately after the referent
+selection trials, one new familiar target trial (sock) was presented to
+familiarise children to the new stimuli layout with four objects per trial
+(one object in each quadrant; see Fig. 2). Children were then presented
+with the four novel word retention test trials. Presenting four objects in
+each trial ensured that children saw each possible novel target on each
+trial and an equal number of times. Object locations changed in each
+trial. The same audio and novel word-order was used as in the referent
+selection trials, but no feedback was provided in either condition. Par­
+ticipants received a gift voucher (10AUD) and a book before leaving.
+Medium- and long-delayed novel word retention. To test how
+children’s looking behaviours related to their longer-term retention of
+novel words, children were re-tested later the same day (medium delay)
+and the following morning (long delay). These tests took place in chil­
+dren’s homes using an iPad (4th generation) with a 9.7″ screen, pro­
+grammed using Xcode 6. The average size of the objects was 51 mm ×
+52 mm (10.82 × 11.03◦ at ~ 27 cm distance). Conducting the later tests
+in children’s homes was aimed at reducing participant attrition.
+An experimenter sat next to the child in a quiet room and held the
+iPad in front of the child in easy reach. To familiarise children with the
+touch-screen task, children first saw four warm-up trials (flower, bird,
+clock, boat). Before proceeding to the retention test trials, we ensured
+children could understand how to use the tablet. If they struggled to
+complete the task (n = 17), we restarted the familiarisation trials. Ac­
+curacy for the completed familiarisation trials was 99.31 % (i.e., one
+child was wrong in two trials). Four novel word retention trials followed
+and were presented only once. These were presented in the same order
+as the immediate test trials with one exception. The instructions for
+these trials asked children to touch the screen. (e.g., “Can you see the
+noop? Touch the noop. Where is the noop?”). Again, no guidance was
+provided. No ostensive naming was provided for either group. The same
+procedure was used for the long-delayed retention trials the next
+morning.
+
+Fig. 2. Example retention trial with four novel objects (from top left to right:
+hux, cheem, kiv, noop) and interest areas (not visible to participants).
+
+additional warm-up trials with familiar objects (e.g., cup, star, pig) were
+presented. These warm-up trials familiarised children with pointing to a
+computer screen (for a similar task see Halberda, 2006; Spiegel & Hal­
+berda, 2011). Before the start of each trial, an animated attention-getter
+appeared to direct children’s attention to the centre of the screen. Ob­
+jects appeared after children looked at the attention-getter for 300 ms.
+Children saw three familiar objects displayed horizontally across the
+display screen (see Fig. 1) and heard, “Can you see the__? Point to the__.
+Where is the__?” The onset of the images and audio was identical and
+there were no pauses between utterances. The recording played on a
+loop until the child pointed, after which the experimenter ended the
+trial. If the child did not point, the software ended the trial after 30 s
+(2.5 % of all trials). The experimenters provided guidance if needed, or a
+break if children failed to point in any of the three warm-up trials, and
+the task was attempted once more (n = 6). In previous studies, children’s
+referent selections were measured during shorter time frames (e.g.,
+Halberda, 2006; Mather & Plunkett, 2009; Mather & Plunkett, 2012).
+However, these studies presented only one competitor per trial and we
+presented two competitors. Additionally, allowing a longer time frame
+was aimed at determining how long children take to make a selection in
+familiar and novel target trials. We presented one target and two com­
+petitors in each trial to remain comparable to previous object-based and
+eye tracking-based referent selection studies that typically present 3
+objects (e.g., Axelsson et al., 2012; Hilton & Westermann, 2017; Horst &
+Samuelson, 2008; Kucker et al., 2020).
+Referent selection. Immediately after the eye tracking warm-up
+trials, the referent selection trials began. These trials were identical to
+the warm-up trials with two exceptions: children saw two familiar and
+one novel object on each trial, and the experimenters did not provide
+any guidance. Previous studies (e.g., Axelsson et al., 2018) revealed that
+children were more comfortable with the eye tracker when they sat on
+their caregiver’s lap. Caregivers were asked to help keep their children
+still, and that we were interested in their child’s independent responses,
+and that guidance or directing their child’s attention was unnecessary.
+Children received two blocks of eight trials, for a total of 16 trials. Across
+trials, children were asked to point to eight familiar target objects once
+and four novel target objects twice (one in each block, for a total of eight
+novel target trials). Presenting familiar target trials was aimed at
+ensuring that children were listening to the instructions and not merely
+choosing the most novel object present (see Holland et al., 2018; Horst
+et al., 2011; Mather & Plunkett, 2009). Four novel objects were pre­
+sented because children this age struggle to retain words beyond four in
+this kind of task (e.g., Axelsson et al., 2012; Bion et al., 2013; Horst &
+Samuelson, 2008). The novel targets were presented in the same order in
+
+Analysis Plan
+The code and anonymised data for regenerating this paper are
+available from https://osf.io/6yvdw/.
+Referent Selection Accuracy Over the Entire Trial. First, referent
+selection accuracy was assessed for the familiar and novel target trials by
+calculating the proportion of trials where children correctly pointed to
+the target (of 8 for each target type). These proportions were compared
+4
+
+Journal of Memory and Language 141 (2025) 104596
+
+E.L. Axelsson et al.
+
+to chance (0.33 due to the presence of 3 objects in each trial) using onesample t-tests to confirm whether children could successfully solve
+disambiguation trials. We then compared pointing accuracy between the
+target types (familiar and novel targets), the two trial blocks (first vs.
+second), and the ostensive and non-ostensive groups using linear mixed
+effects models (LMMs).
+Second, children’s proportions of target looking over entire trials
+were calculated to determine the amount of looking to a target relative
+to all three objects in a given trial, target/(target + competitor 1 +
+competitor 2). Proportions were averaged separately for the familiar and
+novel target trials and were compared to chance (0.33) to assess referent
+selection accuracy based on looking. These proportions of target looking
+were also compared between the familiar and novel target trials, be­
+tween the ostensive and non-ostensive groups, and across the first and
+second trial blocks using LMMs. Higher target proportions indicate a
+greater focus on the target and less on the competitors, and vice versa.
+Target proportions at around 33 % would indicate a fairly equal spread
+across a target and the competitors in a given trial and importantly,
+would contribute to support for a process-of-elimination explanation
+with children spending time fixating on competitors and not merely
+focusing on the novel target.
+Trial durations were determined by how long it took children to
+point to a referent. Trial durations were therefore compared across the
+familiar and novel target trials, between the ostensive and non-ostensive
+groups, and across the first and second half of the referent selection trials
+using LMMs.
+The LMMs were performed using jamovi 2.2.5 software and the
+GAMLj module 2.0.1 developed in R (Galluci, 2019) with the lme4
+package (Bates et al., 2015). The aim here was to focus on the fixed
+effects (with fixed intercepts) as we were largely interested in the
+comparison between looking behaviours across familiar and novel target
+trials, and the interactions with the ostensive and non-ostensive groups
+and across trial blocks. Each analysis contained the random effect of
+participant (with random intercepts) which was assessed using the loglikelihood ratio test. The default convergence optimiser (bobyqa) was
+used to fit the models and parameters were estimated using maximum
+likelihood due to the focus on the fixed effects. For the initial default
+Type III ANOVA-style F-tests, the degrees of freedom were calculated
+using the Satterthwaite method. Categorical predictors were sum-coded
+(due to the inclusion of interactions) using simple contrasts, and
+continuous predictors were centred (see OSF https://osf.io/6yvdw/ for
+output files and code).
+Fine-grained analyses. Cluster-based permutation analyses were
+performed to determine when familiar and novel target looking pro­
+portion ratios differed to chance across the first 3500 ms from noun
+onsets in the referent selection trials. This more detailed assessment can
+help determine when target looking proportions differ to chance and can
+detect effects that otherwise could be missed when looking proportions
+are calculated over an entire trial (see Borovsky et al., 2015). The eye
+trackingR.com package (Dink & Ferguson, 2015) in R Studio 3.5.1.,
+was used to convert the target looking samples to logit-adjusted looking
+time proportion ratios (log(Prop to target/(1 – Prop to target))) and
+these were segmented into 50 ms time bins (see also Borovsky et al.,
+2015). Converting the raw proportions to logit-adjusted proportion ra­
+tios allows the values to go beyond 0 and 1 which is necessary as the
+confidence intervals for proportions near 0 and 1 can be reduced when
+the values are bounded (see https://www.eyetracking-r.com/vignett
+es/window_analysis and Barr, 2008). As proportions of 0 or 1 cannot
+be log-transformed, the eyetrackingR package adds a very small value to
+proportions of 0, and subtracts a small value from proportions of 1 (1/2
+the smallest non-zero proportion, see eyetrackingR.com). We limited the
+analyses to the first block to allow us to assess looking responses for the
+first encounter with the novel targets. This is because subsequent en­
+counters with novel objects can differ to initial encounters (Bredemann
+& Vlach, 2021; Horst et al., 2011; Mather & Plunkett, 2012), and we
+were interested in the time course of children’s focus on novel targets
+
+when they are completely novel (but see Supplementary Materials for
+analyses with the second trial block).
+Retention Analyses. Target accuracy during the immediate, me­
+dium-, and long-delayed retention tests were assessed by calculating
+proportions of correct novel object selections (out of 4). These pro­
+portions were compared to chance (0.25 due to the presence of four
+objects in each trial) using one-sample t-tests to determine if children
+had successfully retained the words. How much target attention during
+referent selection predicts immediate, medium-, and long-delayed
+retention was also assessed and compared between the ostensive and
+non-ostensive groups using a LMM analysis.
+Results
+Referent selection accuracy over the entire trial
+Referent Selection Pointing Accuracy Compared to Chance. The
+distribution of scores for the familiar target trials was negatively skewed
+as the scores were largely at ceiling. Wilcoxon’s one-sample signed rank
+tests indicated that for the ostensive and non-ostensive groups, the
+proportions of trials with correct familiar target pointing was greater
+than chance (see Table 1). Pointing accuracy was also greater than
+chance for the novel target trials.
+Referent Selection Pointing Accuracy Comparisons. The following
+variables were added as fixed effects into a linear mixed model: groups
+(ostensive naming, non-ostensive naming), target types (familiar,
+novel), trial blocks (first, second), and age and the following in­
+teractions: group-by-target type, group-by-trial block, trial block-bytarget type, group-by-age, and group-by-trial block-by-target type. The
+random effect of participant was significant, LRT(1) = 12.62, p < .001
+(random intercept variance = 0.01 SD = 0.08), and the intra-class cor­
+relation (ICC) was 0.19 suggesting small-to-moderate variability across
+participants. All the fixed effects and interactions were non-significant
+aside from target type, F(1,216) = 161.07, p < .001 (see also Table 2
+for the fixed effects estimates and Fig. 3; see Table S1 in Supplementary
+Materials for remaining F-tests). Pointing accuracy was significantly
+greater for the familiar (M = 0.98, SE = 0.02) compared to the novel
+targets (M = 0.74, SE = 0.02), which is expected as the familiar targets
+were chosen to be words already known by children before the study and
+Table 1
+Referent selection pointing accuracy and target proportion looking times
+compared to chance.
+M
+
+SD
+
+Comparison to chance (0.33)
+
+Referent selection pointing accuracy
+Familiar targets
+Ostensive naming
+Non-ostensive
+naming
+
+0.99
+
+0.04
+
+0.97
+
+0.07
+
+Mdn ¼ 1.00; Wilcoxon z ¼ 666.00, p <
+.001; rrb ¼ 1.00
+Mdn ¼ 1.00; Wilcoxon z ¼ 666.00, p <
+.001; rrb ¼ 1.00
+
+Novel targets
+Ostensive naming
+0.78
+0.2
+t(35) ¼ 13.54, p < .001, d ¼ 2.26
+Non-ostensive
+0.7
+0.2
+t(35) ¼ 11.20, p < .001, d ¼ 1.87
+naming
+Referent selection proportions of target looking
+
+5
+
+Familiar targets
+Ostensive naming
+Non-ostensive
+naming
+
+0.59
+0.5
+
+0.07
+0.07
+
+t(35) ¼ 20.68, p < .001, d ¼ 3.45
+t(35) ¼ 13.61, p < .001, d ¼ 2.27
+
+Novel targets
+Ostensive naming
+Non-ostensive
+naming
+
+0.4
+0.4
+
+0.09
+0.09
+
+t(35) ¼ 4.64, p < .001, d ¼ 0.77
+t(35) ¼ 4.43, p < .001, d ¼ 0.74
+
+Journal of Memory and Language 141 (2025) 104596
+
+E.L. Axelsson et al.
+
+Table 2
+Referent selection pointing accuracy and group, trial block, and target type comparison.
+95 % Confidence Interval
+Names
+
+Effect
+
+Estimate
+
+SE
+
+Lower
+
+Upper
+
+df
+
+t
+
+p
+
+(Intercept)
+Group
+Target Type
+Trial Block
+Child Age
+Group * Target Type
+Group * Trial Block
+Trial Block * Target Type
+Group * Child Age
+Group * Trial Block * Target Type
+
+(Intercept)
+Ostensive – Non-ostensive
+Novel ¡ Familiar
+Second − First
+Child Age
+Ost – Non-ost * Novel − Familiar
+Ost – Non-ost * Second − First
+Second − First * Novel − Familiar
+Ost – Non-ost * Child Age
+Ost – Non-ost * Second − First * Novel − Familiar
+
+0.86
+0.03
+¡0.24
+− 0.04
+0.01
+0.06
+0.02
+− 0.07
+− 0.01
+0.15
+
+0.01
+0.03
+0.02
+0.02
+0.01
+0.04
+0.04
+0.04
+0.02
+0.07
+
+0.83
+− 0.03
+¡0.27
+− 0.07
+− 0.01
+− 0.01
+− 0.06
+− 0.15
+− 0.05
+− 0.00
+
+0.89
+0.09
+¡0.20
+0.00
+0.03
+0.13
+0.09
+0.00
+0.04
+0.29
+
+72.00
+72.00
+216.00
+216.00
+72.00
+216.00
+216.00
+216.00
+72.00
+216.00
+
+59.80
+1.09
+¡12.69
+− 1.95
+0.94
+1.57
+0.46
+− 1.95
+− 0.35
+1.95
+
+<.001
+.278
+<.001
+.053
+.348
+.117
+.644
+.053
+.724
+.053
+
+Fig. 3. Proportions of accurate target pointing in the familiar and novel target referent selection trials for the ostensive and non-ostensive groups across trial blocks
+note. Dashed line = chance (0.33).
+
+the novel targets were used to ensure children did not know them at the
+start of the study.
+Referent Selection Proportions of Target Looking Compared to
+Chance. For both the ostensive and non-ostensive groups, children’s
+proportions of target looking in the novel and familiar target trials were
+significantly greater than chance (0.33, see Table 1). Therefore, both
+pointing accuracy and looking proportions to the targets indicated that
+the children could successfully solve disambiguation trials. The rela­
+tionship between pointing accuracy and target looking time proportions
+was also assessed. Spearman’s correlations were used for the familiar
+target trials due to the negatively skewed pointing scores. For the
+familiar target trials, the relationship was non-significant for both the
+ostensive ρ(30) = 0.23, p = .178, and the non-ostensive group ρ(30) =
+.13, p = .448. For the novel target trials, there was a significant positive
+
+correlation between pointing and target looking time proportions for
+both the ostensive r(30) = .69, p < .001, and the non-ostensive group r
+(30) = .46, p = .004. Thus, for novel target trials, proportions of target
+looking related to their accuracy as indicated by proportions of pointing
+accuracy. For the familiar target trials, children were at ceiling for
+pointing accuracy, which could explain the weaker relationship with
+looking proportions.
+Referent Selection Proportions of Target Looking Comparisons. A
+linear mixed model analysis was performed comparing the groups
+(ostensive naming, non-ostensive naming), target types (familiar,
+novel), and trial blocks (first, second) along with age, and the following
+interactions: group-by-target type, group-by-trial block, group-by-age,
+trial block-by-target type, and group-by-trial block by target type (see
+Table 3 for fixed effects parameter estimates). The random effect of
+
+Table 3
+Referent selection target looking time proportions and group, trial block, and target type comparison.
+95 % Confidence Interval
+Names
+
+Effect
+
+Estimate
+
+SE
+
+Lower
+
+Upper
+
+df
+
+t
+
+p
+
+(Intercept)
+Group
+Target Type
+Trial Block
+Child Age
+Group * Target Type
+Group * Trial Block
+Target Type * Trial Block
+Group * Child Age
+Group * Target Type * Trial Block
+
+(Intercept)
+Ostensive – Non-ostensive
+Novel – Familiar
+Second – First
+Child Age
+Ost – Non-ost * Novel – Familiar
+Ost – Non-ost * Second – First
+Novel – Familiar * Second – First
+Ost – Non-ost * Child Age
+Ost – Non-ost * Novel ¡ Familiar * Second –First
+
+0.47
+0.04
+¡0.15
+¡0.05
+0.00
+¡0.08
+0.03
+¡0.06
+− 0.01
+¡0.12
+
+0.01
+0.02
+0.01
+0.01
+0.01
+0.03
+0.03
+0.03
+0.01
+0.05
+
+0.46
+0.01
+¡0.17
+¡0.07
+− 0.01
+¡0.14
+− 0.02
+¡0.11
+− 0.04
+¡0.22
+
+0.49
+0.07
+¡0.12
+¡0.02
+0.02
+¡0.03
+0.08
+¡0.01
+0.02
+¡0.02
+
+71.98
+71.98
+215.41
+215.41
+73.39
+215.41
+215.41
+215.41
+73.39
+215.41
+
+59.87
+2.80
+¡11.04
+¡3.70
+0.41
+¡3.22
+1.21
+¡2.35
+− 0.78
+¡2.29
+
+<.001
+.007
+<.001
+<.001
+.680
+.001
+.226
+.020
+.440
+.023
+
+6
+
+E.L. Axelsson et al.
+
+Journal of Memory and Language 141 (2025) 104596
+
+participant was non-significant, LRT(1) = 0.65, p = .421 (random
+intercept variance = 0.001 SD = 0.023), and the intra-class correlation
+(ICC) was 0.04 suggesting minimal variability across participants. There
+was a main effect of group, F(1,71.98) = 7.82, p = .007, with signifi­
+cantly greater target looking time proportions in the ostensive (M =
+0.49, SE = 0.01) compared to the non-ostensive group (M = 0.45, SE =
+0.01). There was a main effect of target type, F(1,215.41) = 121.80, p <
+.001, with greater target looking proportions in the familiar target trials
+(M = 0.54, SE = 0.01) compared to the novel target trials (M = 0.40, SE
+= 0.01). There was a main effect of trial block, F(1,215.41) = 13.67, p <
+.001, with significantly larger target looking proportions in the first half
+(M = 0.50, SE = 0.01) compared to the second half (M = 0.45, SE =
+0.01). The main effect of age was non-significant, F(1,73.39) = 0.17, p =
+.680, as was the group-by-age interaction, F(1,73.39) = 0.60, p = .440.
+There were significant interactions between group and target type, F
+(1,215.41) = 10.35, p = .001, trial block and target type, F(1,215.41) =
+5.52, p = .020, as well as group, trial block, and target type, F(1,215.41)
+= 5.26, p = .023, but the group-by-trial block interaction was nonsignificant, F(1,215.41) = 1.47, p = .226. Post-hoc Bonferroni-cor­
+rected comparisons, revealed that these results are explained by greater
+novel target looking proportions in the first trial block compared to the
+second block for only the ostensive group (p = .014), but not the nonostensive group (p = .458). This suggests that ostensive naming led to
+less focus on the novel targets before pointing by the second trial block.
+For the familiar target trials, familiar target looking did not differ across
+trial blocks for the ostensive naming group (p = .999), and the nonostensive group (p = .479) suggesting it remained high across trial
+blocks. The difference between groups for familiar target looking was
+non-significant in the first trial block (p = .999), but in the second trial
+block, the ostensive naming group’s familiar target looking was signif­
+icantly greater than the non-ostensive group’s (p < .001, see Fig. 4). The
+difference between groups was non-significant for the novel targets for
+both trial blocks (ps = .999). This suggests that ostensive naming led to
+greater focus on targets for familiar targets.
+In sum, compared to familiar target looking proportions, the novel
+target looking proportions were lower indicating greater looking times
+to the competitors and contributes to the suggestion that children were
+completing a process-of-elimination. Compared to the first block of
+novel target trials, by the second block, the focus became more evenly
+spread across the three objects for the ostensive group and there was less
+focus on novel targets before the selection (see Fig. 4). Interestingly, we
+also found for the novel target trials in the first block, this corresponds to
+an average of 6 fixations to the target and an average of 4 fixations to the
+competitors, but by the second half, children fixated 4 times to the
+
+targets and 4 times to the competitors. For the familiar target trials,
+children fixated around 4 times to the target and twice to the competi­
+tors in both blocks. Therefore, there were double the amount of fixations
+to the competitors in novel target trials relative to familiar target trials.
+Referent Selection Trial Durations. Differences in referent selection
+trial durations were also compared between groups (ostensive naming,
+non-ostensive naming), between target types (familiar, novel), and
+across trial blocks (first, second) using a linear mixed model analysis
+along with the addition of age and age-by-group (see Table 4). Trial
+durations were positively skewed and were log-transformed which
+improved the distribution, but original descriptive statistics are pre­
+sented here and shown in Fig. 5 for ease of interpretation. The random
+effect of participant was significant, LRT(1) = 81.97, p < .001 (random
+intercept variance = 0.01 SD = 0.12), and the ICC was 0.50 suggesting
+moderate variability across participants. The main effect of group was
+non-significant, F(1,72) = 2.86, p = .095 (ostensive: M = 6263.32 ms, SE
+= 341.76; non-ostensive: M = 5411.59 ms, SE = 370.15), but there was a
+main effect of target type, F(1,214.60) = 119.95, p < .001, with
+significantly longer trial durations for the novel target trials (M =
+7175.15, SE = 280.12) compared to the familiar target trials (M =
+4499.76, SE = 279.77). Trial durations were overall significantly longer
+in the first trial block (M = 6323.62, SE = 279.77) than in the second
+block (M = 5351.28, SE = 280.12), F(1,214.60) = 15.84, p < .001. The
+main effect of age was significant, F(1,72.64) = 5.72, p = .019, but the
+group-by-age interaction was non-significant, F(1,72.64) = 0.18, p =
+.669. The relationship with age was negative (see Table 4), suggesting
+that trials were shorter with increasing child age, but this relationship
+did not differ between the ostensive and non-ostensive groups. There
+were significant interactions between group and target type F(1,214.60)
+= 6.57, p = .011, group and trial block F(1,214.60) = 6.16, p = .014,
+trial block and target type F(1,214.60) = 51.40, p < .001, and group,
+trial block, and target type F(1,214.60) = 9.91, p = .002 (see also
+Table 4). Bonferroni-corrected comparisons revealed that these in­
+teractions are explained by children in both groups taking longer in the
+novel target trials than the familiar target trials in the first trial block
+(ostensive: p < .001; non-ostensive p < .001). However, in the second
+trial block, the difference in trial durations between the novel and
+familiar target trials was non-significant for the ostensive naming group
+(p = .999), but for the non-ostensive group, children were still taking
+longer for the novel target than the familiar target trials (p < .001, see
+Fig. 5). Therefore, ostensive naming likely helped children find the novel
+targets when they encountered them again. Across trial blocks, differ­
+ences in trial durations were non-significant for the non-ostensive group
+for the familiar and novel target trials (ps > .05). For the ostensive
+
+Fig. 4. Referent selection proportions of target looking times in the familiar and novel target trials for the ostensive and non-ostensive groups across trial blocks note.
+Dashed line = chance (0.33).
+7
+
+E.L. Axelsson et al.
+
+Journal of Memory and Language 141 (2025) 104596
+
+Table 4
+Referent selection trial durations group, trial block, and target type comparison.
+95 % Confidence Interval
+Names
+
+Effect
+
+Estimate
+
+SE
+
+Lower
+
+Upper
+
+df
+
+t
+
+p
+
+(Intercept)
+Group
+Target Type
+Trial Block
+Child Age
+Group * Target Type
+Group * Trial Block
+Trial Block * Target Type
+Group * Child Age
+Group * Trial Block * Target Type
+
+(Intercept)
+Ostensive – Non-ostensive
+Novel – Familiar
+Second – First
+Child Age
+Ost – Non-ost * Novel – Familiar
+Ost – Non-ost * Second – First
+Second – First * Novel – Familiar
+Ost – Non-ost * Child Age
+Ost – Non-ost * Second – First * Novel – Familiar
+
+3.71
+0.06
+0.19
+¡0.05
+¡0.03
+¡0.10
+¡0.08
+¡0.22
+0.01
+¡0.21
+
+0.02
+0.03
+0.01
+0.01
+0.01
+0.03
+0.03
+0.03
+0.03
+0.06
+
+3.68
+− 0.01
+0.16
+¡0.08
+¡0.06
+¡0.15
+¡0.14
+¡0.28
+− 0.04
+¡0.32
+
+3.75
+0.12
+0.22
+¡0.02
+¡0.00
+¡0.04
+¡0.03
+¡0.17
+0.07
+¡0.10
+
+72.00
+72.00
+214.44
+214.44
+72.48
+214.44
+214.44
+214.44
+72.48
+214.44
+
+215.11
+1.64
+13.54
+¡3.72
+¡2.29
+¡3.54
+¡2.99
+¡7.99
+0.42
+¡3.73
+
+<.001
+.104
+<.001
+<.001
+.025
+<.001
+.003
+<.001
+.673
+<.001
+
+Fig. 5. Referent selection trial durations (ms) for the familiar and novel targets for the ostensive and non-ostensive groups across trial blocks.
+
+group, they were significantly faster for the novel target trials by the
+second trial compared to the first (p < .001), but trial durations did not
+differ for the familiar targets (p = .389). Finally, the difference in trial
+duration between groups for familiar target trials and novel target trials
+was significant in both trial blocks (ps > .05).
+
+chance ratio score (− 0.301) across the time window, the eyetrackingR
+package was used to conduct paired t-tests at each 50 ms time bin to find
+any clusters of time bins with t-scores greater than 2 (as t-values greater
+than 2 are significant at the .05 alpha level with this sample size, see
+https://www.eyetracking-r.com/vignettes/divergence). Chance was
+calculated based on the presence of 3 objects, the logit-adjusted pro­
+portional looking time ratio at chance level (log(0.3333/(1-.3333))). To
+allow for multiple tests, a cluster-based permutation analysis was per­
+formed, which involved summing clusters of adjacent t-scores that are
+greater than 2, and comparing them to a null hypothesis distribution of
+cluster t-scores, by randomly permuting the clusters 2000 times. This
+cluster-based permutations approach corrects for multiple comparisons
+by limiting the family-wise error rate (see also Barr et al., 2014; Bor­
+ovsky et al., 2015).
+Ostensive group’s familiar target looking compared to chance. For
+the familiar targets, logit-adjusted proportion ratios (log(Prop. to target/
+(1 – Prop, to target))) were associated with a cluster of t-scores greater
+than 2 between 500 and 1600 ms, and between 1700 and 1850 ms.
+Following 2000 permutations of the summed t-scores, the cluster be­
+tween 500 and 1600 ms was revealed as significantly greater than the
+chance ratio score (− 0.301), t = 87.67, p < .001, but the cluster between
+1700 and 1850 ms was non-significant, t = 7.02, p = .310 (see vertical
+dashed lines in Fig. 6). Therefore, children looked at the familiar targets
+at greater than chance levels from 867 ms (367 + 500 ms) after the noun
+onset. Given the mean noun onset was 861.38 ms; (SD = 99.54 ms), this
+suggests that toddlers looked significantly more at the familiar targets
+from around 1728.38 ms from the presentation of the images.
+Ostensive group’s novel target looking compared to chance. For the
+novel targets, paired t-tests performed at each time bin revealed that
+clusters of t-scores were less than 2 between 0 and 500 ms; between 600
+
+Referent selection fine-grained analyses
+To more closely investigate children’s looking behaviours during
+referent selection, the time course of the target looking proportion ratios
+during referent selection was assessed and compared to chance every 50
+ms (see Borovsky et al., 2015). Data Viewer was used to extract chil­
+dren’s looking samples to the familiar and novel targets during referent
+selection from 367 ms after the target noun onsets to 3500 ms after the
+noun onsets. The choice to start the time window at 367 ms after noun
+onset is because young children take around 200 ms to initiate an eye
+movement after the onset of an image; and fixations prior to 367 ms are
+less likely to be based on auditory prompts (see Canfield et al., 1997;
+Swingley, 2009; Swingley & Aslin, 2000). The mean noun onset time for
+the target words was 861.38 ms (SD = 99.54 ms). Therefore, the start of
+the analyses corresponds to 1228.38 ms after the trial start. Previous
+investigations assessing fine-grained looking ratios tend to limit the time
+windows to 2000 ms after the time window start (e.g., Borovsky et al.,
+2015; Swingley, 2009; Swingley & Aslin, 2000), as longer time windows
+involve more variable, less meaningful looking (Canfield et al., 1997;
+Fernald et al., 2006). However, most of these studies typically presented
+two objects. As children in the current study chose between three objects
+and needed to point to the targets, the time window was extended to
+3500 ms.
+To compare the logit-adjusted proportional looking ratios to a
+8
+
+E.L. Axelsson et al.
+
+Journal of Memory and Language 141 (2025) 104596
+
+Fig. 6. Ostensive Group’s Referent Selection Target Looking Proportion Ratios to the Novel and Familiar Targets in 50 ms Time Bins and Comparisons to Chance
+Note. 0 ms corresponds to 367 ms from noun onset; horizontal dashed line = chance level target proportion ratio (− 0.301); grey shaded area below chance = novel
+target cluster significantly less than chance; grey shaded area above chance and vertical dashed lines = familiar target cluster significantly greater than chance.
+
+and 650 ms, and greater than 2 between 1200 and 1250 ms. These tscores were summed and following 2000 permutations of the time bins,
+the cluster between 0 ms and 500 ms was revealed to be significantly less
+than the chance ratio score (− 0.301), t = -34.73, p = .017 (see grey
+shaded area in Fig. 6). The remaining clusters were non-significantly
+different to chance (between 600 and 650 ms, t = -2.20, p = .515; be­
+tween 1200 and 1250, t = 2.05, p = .594). Therefore, children focussed
+significantly less on the novel targets relative to chance between 367 ms
+(367 + 0 ms) and 867 ms from noun onset. Given the mean noun onset
+was 861.38 ms; (SD = 99.54 ms), this suggests that toddlers looked
+significantly less at the novel target from around 1228.38 ms from the
+presentation of the images.
+Non-ostensive group’s familiar target looking compared to chance.
+The non-ostensive group’s logit-adjusted proportion ratios to the
+familiar targets were associated with a cluster of t-scores greater than 2
+between 1050 and 1450 ms and between 1500 and 2350 ms. Following
+2000 permutations of the summed t-scores, both clusters were revealed
+as significantly greater than the chance ratio score (between 1050 and
+1450, t = 50.69, p = .035; between 1500 and 2350, t = 93.54, p = .020,
+see vertical dashed and dot-dashed lines in Fig. 7). Therefore, children
+looked at the familiar targets at greater than chance levels from 1417 ms
+(367 + 1050 ms) after the noun onset. Given the mean noun onset was
+861.38 ms; (SD = 99.54 ms), this suggests that toddlers looked signifi­
+cantly more at the familiar targets from around 1911 ms from the pre­
+sentation of the images.
+Non-ostensive group’s novel target looking compared to chance. For
+the novel targets, logit-adjusted proportion ratios were associated with
+clusters of t-scores less than 2 between 0 and 1500 ms, and greater than 2
+between 1900 and 2350 ms. Following 2000 permutations of the sum­
+med t-scores, the cluster between 0 and 1500 ms was revealed as
+significantly less than the chance ratio score (− 0.301), t = -157.88, p <
+.001, and the cluster between 1900 and 2350 was non-significant, t =
+22.74, p = .071 (see grey shaded area in Fig. 7). Therefore, children
+looked at the novel targets at less than chance levels from 367 ms (367
+
++ 0 ms) after the noun onset. Given the mean noun onset was 861.38 ms;
+(SD = 99.54 ms), this suggests that significantly less looking at the novel
+targets occurs from 1228.38 ms after trial start.
+Therefore, for both the ostensive and non-ostensive groups, children
+looked at the novel targets less than chance initially and then propor­
+tional looking times tended to be at chance. This is further evidence for
+children having an initial focus on competitors and then dividing their
+focus across both the target and the competitors (i.e., engaging in
+process-of-elimination). In contrast, for the familiar target trials, there is
+a clear focus on the targets relative to competitors.
+Retention analyses
+Immediate and Delayed Retention Compared to Chance: Target
+Selection Accuracy. For immediate and medium-delayed retention,
+both the ostensive and the non-ostensive group’s accuracy scores were
+significantly greater than chance (.25), but by the long-delayed test,
+only the ostensive group’s accuracy was greater than chance (see
+Table 5).
+Immediate Retention Compared to Chance: Target Looking Time
+Proportions. The ostensive group’s target looking proportions were at
+chance, and the non-ostensive group’s looking proportions were
+significantly less than chance (0.25, see Table 5).
+Proportions of Novel Target Looking During Referent Selection as a
+Predictor of Immediate and Delayed Retention. The aim of our next
+analysis was to determine how much children’s focus on the novel tar­
+gets during referent selection was associated with immediate and
+delayed retention. The following variables were added as fixed effects to
+a linear mixed model: novel target looking proportions during referent
+selection, group (ostensive naming, non-ostensive naming), retention
+phase (immediate, medium-delayed, long-delayed, coded as a poly­
+nomial variable), age, and the following interactions: group-byretention phase, retention phase-by-novel target looking, group-bynovel target looking, group-by-age, group-by-retention phase-by-novel
+9
+
+E.L. Axelsson et al.
+
+Journal of Memory and Language 141 (2025) 104596
+
+Fig. 7. Non-Ostensive Group’s referent selection target looking proportion ratios to the novel and familiar targets in 50 ms time bins and comparisons to chance
+Note. 0 ms corresponds to 367 ms from noun onset; horizontal dashed line = chance level target proportion ratio (− 0.301); grey shaded area below chance = target
+clusters significantly less than chance; grey shaded area above chance and vertical dashed and dot-dashed lines = familiar target clusters significantly greater
+than chance.
+
+there was a significant interaction between retention phase and group, F
+(2,137.35) = 7.91, p < .001. This was due to a significant difference
+between the groups in the linear relationship across the retention phases
+(β = 0.21, p < .001, see Table 6), which is explained by the ostensive
+group’s retention increasing from immediate to long-delayed testing, and
+the non-ostensive group’s retention decreasing from immediate to longdelayed testing (see also Table 5). Bonferroni-corrected post-hoc ana­
+lyses revealed that retention did not differ significantly between the
+groups for immediate, t(169.73) = 0.96, p = .999, or medium-delayed
+retention, t(136.00) = -1.63, p = .999, but long-delayed retention was
+significantly greater in the ostensive (M = 0.54, SE = 0.05) than in the
+non-ostensive group (M = 0.31, SE = 0.05), t(170.62) = -3.17, p = .028.
+There was also a significant effect of target looking proportions, F
+(1,68.32) = 5.41, p = .023, with greater target looking during referent
+selection predicting greater retention (β = .57, p = .023). The in­
+teractions between target looking and group, F(1,68.32) = 0.02, p =
+.896, and between target looking and retention phase, F(2,137.20) =
+0.08, p = .922, were non-significant, but there was a significant inter­
+action between target looking proportions, retention phase, and group, F
+(1,68.32) = 5.41, p = .023. This is explained by a significant difference
+between the groups in the linear relationship between target looking and
+retention across the phases (β = -1.65, p = .002, see Table 6). For the
+ostensive naming group, the greater the novel target looking during
+referent selection, the higher the immediate retention (p = .009, see
+Figs. 8 & 9). For the non-ostensive group, greater novel target looking
+was associated with better long-delayed retention (p = .032). This sug­
+gests that for the non-ostensive group, the benefits of greater target
+looking proportions were apparent after around 24 h; whereas for the
+ostensive group the benefits of greater target looking proportions were
+
+Table 5
+Retention target selection accuracy and target proportion looking times and
+compared to chance.
+M
+
+SD
+
+Immediate retention target pointing accuracy
+Ostensive naming
+0.41
+0.29
+Non-ostensive naming
+0.48
+0.31
+
+Comparison to chance (0.25)
+t(35) ¼ 3.26, p ¼ .002, d ¼ 0.54
+t(33) ¼ 4.36, p < .001, d ¼ 0.75
+
+Immediate retention proportions of target looking
+Ostensive naming
+0.25
+0.10
+t(35) = 0.27, p = .792, d = 0.04
+Non-ostensive naming
+0.22
+0.09
+t(35) ¼ -2.17, p ¼ .037, d ¼ -0.36
+Medium delay retention target selection accuracy
+Ostensive naming
+0.51
+0.27
+t(35) ¼ 5.93, p < .001, d ¼ 0.99
+Non-ostensive naming
+0.40
+0.27
+t(32) ¼ 3.26, p ¼ .003, d ¼ 0.57
+Long delay retention target selection accuracy
+Ostensive naming
+0.55
+0.30
+t(35) ¼ 5.90, p < .001, d ¼ 0.98
+Non-ostensive naming
+0.32
+0.29
+t(32) = 1.45, p = .157, d = 0.25
+
+target looking (see Table 6 for the fixed effects parameter estimates).
+The dependent variable was pointing accuracy for immediate retention
+and touch accuracy at the medium- and long-delayed tests. Participant
+was included as a random effect and was significant, LRT(1) = 19.65, p
+< .001 (random intercept variance = 0.02 SD = 0.16). The ICC was 0.33
+suggesting a small-to-moderate amount of variability across partici­
+pants. The main effects of group, F(1,67.87) = 2.94, p = .091, and
+retention phase, F(2,137.35) = 0.14, p = .871 were non-significant, but
+10
+
+E.L. Axelsson et al.
+
+Journal of Memory and Language 141 (2025) 104596
+
+Table 6
+Retention Accuracy and Proportions of Novel Target Looking Times During Referent Selection.
+95 % Confidence Interval
+Names
+
+Effect
+
+Estimate
+
+SE
+
+Lower
+
+Upper
+
+df
+
+t
+
+p
+
+(Intercept)
+Group
+Retention 1
+Retention 2
+Prop. Target Looking
+Child Age
+Group * Retention 1
+Group * Retention 2
+Retention 1 * Prop. Target Looking
+Retention 2 * Prop. Target Looking
+Group * Prop. Target Looking
+Group * Child Age
+Group * Retention 1 * Prop. Target Lkg
+Group * Retention 2 * Prop. Target Lkg
+
+(Intercept)
+Ostensive – Non-ostensive
+linear
+quadratic
+Prop. Target Looking
+Child Age
+Ostensive – Non-ostensive * linear
+Ostensive – Non-ostensive * quadratic
+linear * Prop. Target Looking
+quadratic * Prop. Target Looking
+Ost – Non-ost * Prop. Target Lkg
+Ost – Non-ost * Child Age
+Ost – Non-ost * linear * Prop. Target Lkg
+Ost – Non-ost * quadratic * Prop. Target Lkg
+
+0.44
+0.09
+− 0.00
+− 0.01
+0.57
+− 0.01
+0.21
+− 0.03
+0.11
+− 0.01
+0.06
+0.04
+¡1.65
+0.37
+
+0.03
+0.05
+0.03
+0.03
+0.24
+0.02
+0.05
+0.05
+0.27
+0.27
+0.49
+0.04
+0.54
+0.54
+
+0.38
+− 0.01
+− 0.06
+− 0.07
+0.09
+− 0.06
+0.11
+− 0.14
+− 0.42
+− 0.54
+− 0.89
+− 0.05
+¡2.70
+− 0.68
+
+0.49
+0.20
+0.05
+0.04
+1.05
+0.03
+0.32
+0.07
+0.63
+0.51
+1.02
+0.12
+¡0.60
+1.42
+
+67.87
+67.87
+137.66
+137.04
+68.32
+69.87
+137.66
+137.04
+137.43
+136.97
+68.32
+69.87
+137.43
+136.97
+
+15.96
+1.71
+− 0.08
+− 0.52
+2.33
+− 0.52
+3.93
+− 0.58
+0.40
+− 0.04
+0.13
+0.84
+¡3.08
+0.69
+
+<.001
+.091
+.940
+.604
+.023
+.603
+<.001
+.562
+.688
+.969
+.896
+.405
+.002
+.489
+
+Fig. 8. Ostensive Group’s proportions of novel target looking times during referent selection and immediate, medium-, and long-delayed retention accuracy note.
+Dashed line = chance (0.25).
+
+apparent for immediate retention with little benefit seen in the delayed
+retention tests. The main effect of age, F(1,69.87) = 0.27, p = .603, and
+the group-by-age interaction, F(1,69.87) = 0.70, p = .405, were nonsignificant.
+
+pointing to novel targets (for similar findings see Halberda, 2006; Hilton
+et al., 2019; Twomey et al., 2018). This is indicative of a process-ofelimination explanation of referent selection.
+For the ostensive group, novel target looking proportions dropped
+from the first to the second trial block, and children took less time to
+point, suggesting that a single trial of referent selection of a given target
+supported toddlers’ subsequent selection. However, the non-ostensive
+group still took longer to point at novel targets compared to familiar
+targets in the second block. Therefore, in the absence of additional
+feedback provided by, in this case, ostensive naming, there was less
+certainty compared to familiar targets in the second block when it came
+to pointing to novel referents.
+
+Discussion
+Although learning and remembering word-object associations is a
+long, gradual process (e.g., Gurteen et al., 2011; McMurray et al., 2012;
+Storkel et al., 2017), toddlers easily solve initial disambiguation trials
+when they encounter novel words and objects (e.g., Merriman et al.,
+1995). It is unclear whether toddlers do so by using a process-ofelimination or relying on a novelty bias – or a bit of both. In the cur­
+rent study, toddlers were highly capable of referential disambiguation as
+reflected in their greater than chance pointing accuracy and looking
+proportions to the novel and familiar targets. According to the more
+fine-grained analyses, looking at the familiar targets was significantly
+greater than chance soon after noun onset, but target looking was
+significantly less than chance for the novel targets. Children also took
+longer to point to novel targets than familiar targets. These converging
+findings suggest that in novel target trials, children focus on and
+consider the competitors first before increasing looking towards and
+
+Implications for understanding referent selection
+We hypothesised that if children engage in a process-of-elimination,
+they should take longer to point at novel than familiar targets (see also
+Halberda, 2006). This was expected not only due to uncertainty when
+faced with a new name, but also due to time spent considering com­
+petitors. We therefore expected overall novel target looking proportions
+to be at chance level (33 %). In the current study, children did take
+longer to point and children’s looking proportions to novel targets were
+11
+
+E.L. Axelsson et al.
+
+Journal of Memory and Language 141 (2025) 104596
+
+Fig. 9. Non-ostensive Group’s proportions of novel target looking times during referent selection and immediate, medium-, and long-delayed retention accuracy.
+
+at 40 % in the first trial block and closer to chance in the second block.
+Therefore, a focus on novelty is likely important during initial encoun­
+ters, but the more fine-grained analyses indicated that children’s initial
+focus is on familiar competitors before an increase in novel target
+looking. If referent selection was based primarily on a novelty bias, then
+children should have looked more at the novel targets relative to the
+familiar competitors throughout the trials. However, in the current
+study, children looked significantly less at novel targets for the first 1–2 s
+after noun onset. Therefore, we have converging evidence that disam­
+biguation of novel targets involves a process-of-elimination. One possi­
+bility is that children looked less at the novel targets initially due to an
+aversion to novelty, which has been found with shy children (e.g., Hilton
+et al., 2019). Mather and Plunkett (2009) found that prior to the onset of
+the target word, 19- to 22-month-old children look at familiar and novel
+targets at chance levels. Our time course analyses, assess target looking
+proportions after the initial prompt phrase and onset of the nouns, and
+this is when toddlers look significantly less than chance at novel targets.
+This is likely due to a preference for searching familiar competitors first,
+in line with a process-of-elimination.
+Halberda (2006) also assessed the proportion of trials in which 3year-old children looked at a competitor after hearing novel words
+while looking at novel targets. We analysed novel target looking pro­
+portions relative to competitors, and our results align with Halberda’s
+(2006) findings that children look at competitors before an increase in
+novel target looking. We also found children take longer to point to
+novel targets compared to familiar targets – providing further support­
+ing evidence for a process-of-elimination. Another difference between
+studies is that we allowed children up to 30 s to point rather than the
+shorter restricted time frames of previous studies (e.g., approx. 4 sec
+following word onset, Halberda, 2006; Mather & Plunkett, 2012).
+Therefore, the looking and pointing behaviours reported here reflect the
+time children needed to select a referent. In familiar target trials chil­
+dren took an average of 4.5 s, but in novel target trials children took 7 s
+and engaged in double the amount of fixations to competitors.
+By the second trial block, overall novel target looking proportions
+dropped to chance. This decline is possibly due to less need to focus on
+the novel target before initiating pointing, and because children were
+still checking competitors in these trials. This finding contrasts with
+Mather and Plunkett (2012) who found increasing novel target looking
+proportions in subsequent trials. A difference with Mather and Plun­
+kett’s (2012) study is that children were asked to find the referent a
+
+finite number of times in each trial (1–6), but in the current study
+children were asked multiple times as they continued to look until they
+pointed. The repetition in the current study likely sped up pointing in the
+second block (e.g., Benitez & Smith, 2012), but the novelty of the words
+still involved a need to check competitors before pointing. The nonostensive group were still slower at pointing to novel than to familiar
+targets in the second block, indicating that ostensive naming further
+sped up subsequent referent selections (e.g., Benitez & Smith, 2012),
+and possibly also increased children’s confidence in the testing context
+(see Axelsson et al., 2022; Hilton & Westermann, 2017).
+Children have an acute awareness of and bias towards novelty from
+early in life (Fantz, 1964; Perone & Spencer, 2013). Mather (2013)
+argued that as science favours parsimony, a simple and sufficient
+explanation of children’s referent selections is a novelty bias. Despite the
+differences between the methods in the current study and previous
+studies (e.g., Halberda, 2006; Mather & Plunkett, 2012), the evidence
+suggests that both a consideration of competitors and a bias to novelty
+are important for successful referent selection. This is due to children’s
+initial focus on competitors, and their greater overall novel target
+looking relative to chance. The combined evidence of previous studies
+(Halberda, 2006; Mather & Plunkett, 2012) and the current study sug­
+gest that a reasonably simple definition of referent selection is an initial
+consideration of familiar competitors and an attraction to novelty.
+Retention
+Based on pointing and touchscreen accuracy, both the ostensive and
+non-ostensive groups retained the novel words at greater than chance
+levels immediately after referent selection and four hours later, but the
+following morning only the ostensive naming group’s retention was
+greater than chance. For the non-ostensive group, retention dropped
+significantly from immediate testing to the following morning, whereas
+for the ostensive group, there was a significant increase from immediate
+to afternoon testing that was sustained the following morning. There­
+fore, there was a weakening in the strength of the word-object associa­
+tions over time if children had not heard the objects ostensively named,
+but for those who had, their memories for the words were maintained
+over time.
+Children’s retention looking times were only measured for immedi­
+ate retention. Interestingly, the children in the non-ostensive group
+looked significantly less to the target during immediate retention, and
+12
+
+E.L. Axelsson et al.
+
+Journal of Memory and Language 141 (2025) 104596
+
+disentangle whether the benefit of ostensive naming is due to the greater
+attention to the object or the provision of the label.
+Previous studies (e.g., (Kucker et al., 2018; Mather & Plunkett, 2010)
+found that a preference for novelty predominates before children have
+acquired the familiar competitors’ words (e.g., 10 months of age).
+Children in the current study, however, were older (M = 30 months) and
+had larger vocabularies (M = 468 words) and the familiar competitors
+were chosen to be known words to children in this age range
+(Kalashnikova et al., 2016). A preference for novelty is likely a driving
+force for referent selection when there is less lexical knowledge to
+support children’s choices and a process-of-elimination becomes more
+important as children acquire words. Future studies should investigate
+changes in looking behaviours during referent selection across age and
+vocabulary size such as between 10 and 30 months to determine if a
+novelty bias plays a larger role in referent selection at younger ages or
+when children have smaller vocabularies. A longitudinal approach
+following preverbal children could provide unique insight into the
+developing mechanisms underlying referent selection and later reten­
+tion. Interestingly, we found that children were faster to point with
+increasing age, suggesting a faster ability to rule out competitors. To
+further assess the role of vocabulary and/or familiarity, investigating
+looking patterns during referent selection with novel and nameless ob­
+jects with varying degrees of familiarity (e.g., Kucker et al., 2020;
+Mather & Plunkett, 2012) would be useful to determine if children still
+rely on a process of eliminating familiar objects (i.e., initial focus on
+more familiar novel objects) or whether it is driven by a novelty bias (i.
+e., a focus on the most novel object).
+Future studies could also investigate the influence referent selection
+has on children’s retention relative to other ways that words are pre­
+sented to children such as explicit naming. If referent selection largely
+involves engaging in a process of ruling out familiar competitors (e.g.,
+Halberda, 2006), does this limit attention to novel targets during the
+encoding stage? Bredemann and Vlach (2021) argued that the rapid
+nature of referent selection likely involves less attention to targets
+reducing long-term retention of word-object associations, which the
+current study indicates. The number of competitors present during
+referent selection can influence later novel word retention with one
+competitor better than none (Zosh et al., 2013), but too many compet­
+itors detrimental to retention (Horst et al., 2010). Therefore, at least one
+competitor during referent selection might provide a necessary difficulty
+that supports retention (Zosh et al., 2013). Comparing children’s looking
+times to novel targets under different word learning conditions could
+help tease apart the role of referent selection and attention to the target
+on long-term retention. Future studies should also test the influence of
+children’s attention during disambiguation on retention at even longer
+delays (Bredemann & Vlach, 2021), and with a varied number of novel
+words (Wojcik, 2021).
+Finally, the findings here relate to children’s word learning under
+controlled experimental conditions. As pointed out by Mather (2013), it
+would be inefficient for children to rule out every familiar object in
+ordinary ‘real-world’ environments where there is a large number of
+objects present. Schroer and Yu (2023) investigated children’s attention
+with head-mounted eye trackers during exploration of objects in a homelike setting while their caregivers named objects. The degree of visual
+attention to the objects was not a sufficient predictor of retention, but
+instead it was children’s manipulation of objects while attending to
+them that predicted retention. Investigating children’s referent selec­
+tions in a home-like environment with a head-mounted eye tracker
+could provide better ecologically valid conclusions about whether
+children engage in a process-of-elimination or rely on a novelty bias
+when there are more objects available in more scattered locations.
+
+the ostensive group’s focus on the target was at chance, but both groups
+pointed at the targets at greater than chance levels. These findings are
+perhaps a reflection of the switch from looking across 4 rather than 3
+objects and all objects now being novel meaning they could no longer
+rely on ruling out familiar objects to support their selections. These
+factors likely added to the uncertainty and as the non-ostensive group
+received no reinforcement of the word-object associations during the
+referent selection phase, they likely experienced a greater level of un­
+certainty. Future studies should investigate the focus on targets during
+retention at longer time scales in relation to differing initial encoding
+conditions.
+We hypothesised that greater novel target looking during referent
+selection would be associated with stronger retention, both immediately
+after and longer-term (e.g., Bion et al., 2013; Hilton et al., 2019; Two­
+mey et al., 2018), particularly for the ostensive naming group (e.g.,
+Axelsson et al., 2012). We found greater novel target looking was
+significantly associated with better retention for the ostensive group, but
+only for immediate retention. For the non-ostensive naming group, there
+was instead a significant relationship between novel target looking and
+retention the following morning. A focus on the target objects during
+referent selection is therefore, an important aspect of long-term acqui­
+sition of words. All children were asked to identify referents of novel
+words independently, but half the children were also explicitly told the
+novel words that referred to the novel objects to reinforce encoding of
+the link between the words and objects. Under these stronger encoding
+conditions, any benefit of greater attention to the novel targets was seen
+soon after, with little extra benefit later. We had speculated as to
+whether the supportive effect of ostensive naming would be due to the
+repetition of the words or due to focusing attention on novel targets.
+Children in the non-ostensive naming group identified the referents and
+arguably experienced weaker encoding conditions due to a lack of
+feedback on their selections, but with sufficient focus on targets during
+referent selection, their memories were more robust in the long term.
+There are few studies that investigate children’s memory for novel
+words following referent selection over longer time scales and there
+have been calls for more research on this (e.g., Bredemann & Vlach,
+2021). The current study provides important findings indicating that
+under weaker encoding conditions, helping children sufficiently focus
+on the word-object associations can support longer-term retention. A
+greater focus on the targets likely leads to better initial trace memory
+which has greater potential for strengthening over time such as during
+wakefulness and sleep (see also Henderson et al., 2021). When initial
+encoding conditions are strong, the current findings suggest that the
+word-object associations can continue to be strengthened over time.
+Limitations and future directions
+One limitation with the current study is that the provision of osten­
+sive naming likely meant that there were slight differences in the timing
+of the progression of trials relative to the non-ostensive group. Without
+ostensive naming, this group proceeded across referent selection trials
+with shorter time gaps. We did not find any significant difference be­
+tween the groups for the referent selection trial durations, but without
+ostensive naming, the non-ostensive group’s referent selection phase
+was shorter leading to a faster progression to the retention phase. The
+time course analyses of the target looking proportions (see also Figs. 6
+and 7) indicate that there are some differences between the groups. The
+non-ostensive group focus on the familiar targets 500 ms later than the
+ostensive group, but both groups focus on the novel targets at the same
+time, but the non-ostensive group stay significantly below chance for
+longer. This raises questions as to whether these slight differences are
+due to greater uncertainty associated with not receiving ostensive
+naming or due to differences in inter-trial-intervals. Future studies
+should equate the timing between the groups for the inter-trial-intervals
+with either a pause for the non-ostensive group or moving the target
+object up without the provision of the object’s label. This will also help
+
+Conclusions
+The current study comprised a mixed-method investigation of chil­
+dren’s referent selections including pointing and eye tracking data to
+13
+
+Journal of Memory and Language 141 (2025) 104596
+
+E.L. Axelsson et al.
+
+attempt to resolve the debate about whether children’s referent selec­
+tion is driven by process-of-elimination or novelty bias. Converging
+evidence indicated that children at this age are engaging in a process-ofelimination and likely ruling out familiar competitors before engaging in
+a focus on novel targets. Additional findings indicate that more focus on
+novel targets during referent selection was associated with better im­
+mediate retention for the ostensive naming condition, but better delayed
+retention for the non-ostensive group. Thus, referent selection is best
+described as a process-of-elimination, and a focus on novelty may sup­
+plement weaker encoding conditions such as when children do not
+receive feedback on their selections. Overall then, we conclude, with the
+current data, that at an age when children have acquired some familiar
+words, both an initial focus on familiar competitors prior to a focus on
+novelty are important to successful referent selection and a focus on
+novelty is important for retention following referent selection.
+Author Note
+Emma Axelsson https://orcid.org/0000-0002-6038-6254.
+Data and additional online materials are openly available at the
+project’s Open Science Framework page (https://osf.io/6yvdw/). We
+have no conflicts of interest to disclose.
+Correspondence concerning this article should be addressed to
+Emma Axelsson, School of Psychological Sciences, University of New­
+castle, Callaghan, 2308, Australia. Email: emma.axelsson@newcastle.
+edu.au.
+
+Barr, D. J., Jackson, L., & Phillips, I. (2014). Using a voice to put a name to a face: The
+psycholinguistics of proper name comprehension. Journal of Experimental Psychology:
+General, 143(1), 404–413. https://doi.org/10.1037/a0031813
+Bates, D., Maechler, M., Bolker, B., & Walker, S. (2015). Fitting linear mixed-effects
+models using lme4. Journal of Statistical Software, 67(1), 1–48. https://doi.org/
+10.18637/jss.v067.i01
+Benitez, V. L., & Smith, L. B. (2012). Predictable locations aid early object name learning.
+Cognition, 125, 339–352. https://doi.org/10.1016/j.cognition.2012.08.006
+Bion, R. A. H., Borovsky, A., & Fernald, A. (2013). Fast mapping, slow learning:
+Disambiguation of novel word-object mappings in relation to vocabulary learning at
+18, 24, and 30 months. Cognition, 126(1), 39–53. https://doi.org/10.1016/j.
+cognition.2012.08.008
+Booth, A. E., McGregor, K. K., & Rohlfing, K. J. (2008). Socio-pragmatics and attention:
+Contributions to gesturally guided word learning in toddlers. Language Learning and
+Development, 4(3), 179–202.
+Borovsky, A., Ellis, E., Evans, J. L., & Elman, J. (2015). Lexical leverage: Category
+knowledge boosts real-time novel word recognition in 2-year-olds. Developmental
+Science, 19(6), 918–932. https://doi.org/10.1111/desc.12343
+Bredemann, C. A., & Vlach, H. (2021). Where’s the advantage? Mutual exclusivity
+promotes children’s initial mapping, but not long-term memory, for words compared
+to other strategies, 686554 Frontiers in Developmental Psychology, 12. https://doi.org/
+10.3389/fpsyg.2021.686554.
+Canfield, R. L., Smith, E. G., Brezsnyak, M. P., Snow, K. L., Aslin, R. N., Haith, M. M.,
+Wass, T. S., & Adler, S. A. (1997). Information processing through the first year of
+life: A longitudinal study using the visual expectation paradigm. Monographs of the
+Society for Research in Child Development, 62(2), i–160. https://doi.org/10.2307/
+1166196
+Carey, S., & Bartlett, E. (1978). Acquiring a single new word. Proceedings of the Stanford
+Child Language Conference, 15(17-29).
+Clark, E. V. (1990). On the pragmatics of contrast. Journal of Child Language, 17(2),
+417–431.
+Dink, J. W., & Ferguson, B. (2015). eyetrackingR: An R Library for Eye-tracking Data
+Analysis. In http://www.eyetrackingr.com.
+Fantz, R. L. (1964). Visual experience in infants: decreased attention to familiar patterns
+relative to novel ones. Science, 146, 668-670. (NOT IN FILE).
+Fernald, A., Perfors, A., & Marchman, V. A. (2006). Picking up speed in understanding:
+Speech processing efficiency and vocabulary growth across the 2nd year.
+Developmental Psychology, 42(1), 98–116. https://doi.org/10.1037/00121649.42.1.98
+Fernald, A., Zangl, R., Portillo, A. L., & Marchman, V. A. (2008). Looking while listening:
+Using eye movements to monitor spoken language comprehension by infants and
+young children. In Developmental psycholinguistics: On-line methods in children’s
+language processing. [doi:10.1075/lald.44.06fer]. John Benjamins Publishing
+Company.
+Galluci, M. (2019). GAMLj: General Analyses for Linear Models. [jamovi module]. In
+https://gamlj.github.io/.
+Gaskell, M. G., & Ellis, A. W. (2009). Word learning and lexical development across the
+lifespan. Philosophical Transactions of the Royal Society B: Biological Sciences, 364
+(1536), 3607–3615. https://doi.org/10.1098/rstb.2009.0213
+Golinkoff, R. M., Hirsh-Pasek, K., Bailey, L. M., & Wenger, N. R. (1992). Young children
+and adults use lexical principles to learn new nouns. Developmental Psychology, 28(1),
+99–108.
+Grassmann, S., Schulze, C., & Tomasello, M. (2015). Children’s level of word knowledge
+predicts their exclusion of familiar objects as referents of novel words. Frontiers in
+Psychology, 6. https://doi.org/10.3389/fpsyg.2015.01200
+Gurteen, P. M., Horne, P. J., & Erjavec, M. (2011). Rapid word learning in 13- and 17month-olds in a naturalistic two-word procedure: Looking versus reaching measures.
+Journal of Experimental Child Psychology, 109, 201–217. https://doi.org/10.1016/j.
+jecp.2010.12.001
+Halberda, J. (2003). The development of a word-learning strategy. Cognition, 87(1),
+B23–B34.
+Halberda, J. (2006). Is this a dax which I see before me? Use of the logical argument
+disjunctive syllogism supports word-learning in children and adults. Cognitive
+Psychology, 53(4), 310–344.
+Heibeck, T. H., & Markman, E. M. (1987). Word learning in children - an examination of
+fast mapping. Child Development, 58(4), 1021–1034.
+Henderson, L. M., van Rijn, E., James, E., Walker, S., Knowland, V. C. P., & Gaskell, M. G.
+(2021). Timing storytime to maximize children’s ability to retain new vocabulary,
+105207 Journal of Experimental Child Psychology, 210. https://doi.org/10.1016/j.
+jecp.2021.105207.
+Hilton, M., Twomey, K. E., & Westermann, G. (2019). Taking their eye off the ball: How
+shyness affects children’s attention during word learning. Journal of Experimental
+Child Psychology, 183, 134–145. https://doi.org/10.1016/j.jecp.2019.01.023
+Hilton, M., & Westermann, G. (2017). The effect of shyness on children’s formation and
+retention of novel word–object mappings. Journal of Child Language, 44(6),
+1394–1412. https://doi.org/10.1017/S030500091600057X
+Holland, A. K., Hyde, G., Riggs, K. J., & Simpson, A. (2018). Preschoolers fast map and
+retain artifact functions as efficiently as artifact names, but artifact actions are the
+most easily learned. J Exp Child Psychol, 170, 57–71. https://doi.org/10.1016/j.
+jecp.2017.12.013
+Horst, J. S. (2011). Slow Down: High Attentional Demands Hinder Children’s Word Learning
+via Fast Mapping Xth International Congress for the Study of Child Language,
+Montreal, Canada.
+Horst, J. S., & Hout, M. C. (2016). The Novel Object and Unusual Name (NOUN)
+Database: A collection of novel images for use in experimental research. Behaviour
+Research Methods, 48(4), 1393–1409. https://doi.org/10.3758/s13428-015-0647-3
+
+CRediT authorship contribution statement
+Emma L. Axelsson: Writing – review & editing, Writing – original
+draft, Visualization, Supervision, Project administration, Investigation,
+Formal analysis, Data curation, Conceptualization. Jessica S. Horst:
+Writing – review & editing, Conceptualization. Samantha L. Playford:
+Writing – review & editing, Formal analysis, Data curation. Amanda I.
+Winiger: Writing – review & editing, Formal analysis, Data curation,
+Conceptualization.
+Declaration of competing interest
+The authors declare that they have no known competing financial
+interests or personal relationships that could have appeared to influence
+the work reported in this paper.
+Appendix A. Supplementary material
+Supplementary data to this article can be found online at https://doi.
+org/10.1016/j.jml.2024.104596.
+Data availability
+OSF link provided in manuscript

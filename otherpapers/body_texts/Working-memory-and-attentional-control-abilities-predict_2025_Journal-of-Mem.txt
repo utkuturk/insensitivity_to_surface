@@ -1,0 +1,1422 @@
+predictors of ability across many cognitive domains. In particular,
+multiple WMAC measures have been shown to be predictive of source
+memory performance, paired associated recall and delayed free recall
+performance (Unsworth et al., 2014). One follow-up study replicated the
+findings that multiple working memory task measures collectively pre­
+dicted variance in delayed free recall performance (Miller et al., 2019).
+Moreover, pupil dilation during encoding, a measure of attention con­
+trol, explained significant variance in delayed free recall performance,
+suggesting that successful recall of verbal materials relies on attentional
+control resources (Van der Wel & Van Steenbergen, 2018). These studies
+
+collectively suggest that attentional control differences have been shown
+to impact performance across a wide range of long-term memory tasks.
+The studies above measured long-term memory abilities using either
+recall of verbal materials (Miller et al., 2019), or source memory of vi­
+sual images (Unsworth et al., 2014). One common feature between these
+two paradigms is that the memory tests appear to be highly attention
+demanding, such that they exhibit higher costs under divided attention
+conditions as compared to recognition memory for single items. For
+instance, in a signature study, Craik et al. (1996) showed that when
+participants were asked to perform a secondary task while studying
+verbal materials, both recall and recognition memory were slower and
+less accurate compared to when participants were fully concentrating on
+the memory task alone. However, free recall performance showed more
+than twice as much accuracy cost (46 %) compared to recognition
+memory (22 %) when the divided attention task was administered
+during encoding. Furthermore, the response time cost was nearly five
+times larger for free recall (146 %) than recognition task (32 %) when
+the divided attention task was performed during retrieval. Therefore,
+free recall tasks appear to require more attentional control resources
+than recognition memory tasks during both encoding and retrieval.
+
+This article is part of a special issue entitled: ‘Individual differences in memory’ published in Journal of Memory and Language.
+* Corresponding author at: Institute for Mind and Biology, University of Chicago, 940 East 57th St., Chicago, Illinois 60637, USA.
+E-mail address: chongzhao@uchicago.edu (C. Zhao).
+
+☆
+
+https://doi.org/10.1016/j.jml.2025.104665
+Received 31 March 2024; Received in revised form 24 May 2025; Accepted 7 June 2025
+Available online 16 June 2025
+0749-596X/© 2025 Elsevier Inc. All rights are reserved, including those for text and data mining, AI training, and similar technologies.
+
+C. Zhao and E.K. Vogel
+
+Journal of Memory and Language 144 (2025) 104665
+
+Similarly, Troyer et al. (1999) showed that source memory, particularly
+spatial location retrieval, showed a higher memory cost with divided
+attention than item memory. They concluded that source processing
+required more attentional control resources than forming item memory.
+The divided attention literature raises the possibility that the robust
+correlations between attentional control and long-term memory may be
+specific to source memory and recall tasks, due to the higher level of
+attentional control these paradigms require. Therefore, simple recogni­
+tion memory performance for items, because of its reduced reliance on
+attention compared to either recall or source retrieval, may not be
+predicted by attentional control differences. Echoing this view, indi­
+vidual differences studies of item memory, source memory and recall
+had been shown to be better explained by a dual-factor or three-factor
+model than a single long-term memory factor model (Unsworth, 2019;
+Unsworth & Brewer, 2009). In their analyses, the recollection factor,
+shared by item recognition, source memory and recall, was explained by
+the working memory factor. By contrast, the familiarity factor, on which
+only item recognition loaded, did not predict the working memory factor
+formed with span tasks. This evidence converges with the dividedattention literature in suggesting that recognition memory for items
+has fewer demands for attentional or working memory resources than
+more effortful retrieval tasks, such as free recall or source memory tasks.
+A compelling alternative hypothesis is that recognition memory,
+despite being less effortful to perform at a high level, still requires
+substantial attentional control resources for successful performance.
+Supporting this view, more recent literature using divided attention
+paradigms has suggested that performing a secondary task during
+encoding induces similar costs for both item and source memory. In a
+series of experiments, Naveh-Benjamin et al. (2003) showed that the
+detrimental effects of divided attention were equal for item memory and
+source memory between the item and its source information, such as
+fonts, a paired word, or a paired non-word. Moreover, they tested the
+participants with free recall, cued recall, and recognition memory under
+divided attention conditions, and found that performance under divided
+attention condition was equally hurt with all three test conditions. The
+findings suggest that the encoding of item memory may rely on similar
+resources to those during the encoding of source information in memory.
+A parallel line of research on individual differences discovered that span
+task performance loaded positively on both recognition and recall fac­
+tors, suggesting that attentional control might be involved in both
+recognition and recall (Unsworth, 2010). One potential caveat to the
+study, however, is that the authors included the source recognition task
+into the recognition factor, on which item recognition memory also
+loaded. As a result, the structural equation model in the paper did not
+separate the contribution of attentional resources to source memory
+from those to item recognition memory, leaving the question open for
+future studies.
+Our review above was based on divided attention and attentional
+control side of the question. Although it’s currently debatable on
+whether attentional control and working memory reflect the same
+construct, our primary goal here is to test whether working memory
+capacity predicts simple recognition memory. For instance, prior
+research has suggested that individual differences in working memory
+capacity stem from variations across multiple cognitive processes,
+including primary memory capacity, attentional control, and secondary
+memory abilities (Unsworth, 2016). More recent studies have further
+indicated that both attentional control and secondary memory pro­
+cesses, such as recognition and source memory, mediate the relationship
+between working memory capacity and higher-order cognitive func­
+tions, including reading comprehension and fluid intelligence (Robison
+et al., 2024). While these studies have examined how different facets of
+working memory support complex cognitive tasks, our focus in the
+current study is on whether working memory capacity also plays a role
+in simple recognition memory tasks, and if so, what factors may affect
+the correlation between working memory capacity and recognition
+memory performance. On one hand, working memory and recognition
+
+memory differ substantially in terms of capacity and activation levels.
+That is, because recognition memory is often supported by long-term
+memory, a correlation with working memory might not necessarily be
+expected. On the other hand, because working memory and recognition
+memory may share similar decision-making processes under uncer­
+tainty, it’s possible that this shared component leads to a measurable
+correlation between working memory capacity and simple recognition
+memory performance.
+The work reviewed above raises an important secondary question
+about whether individual differences in recognition and source memory
+form a coherent long-term memory factor. Prior studies have suggested
+that item recognition memory and source memory rely on distinct
+neural signatures. For example, when participants were instructed to
+encode the source of a visual item, the event-related potential (ERP) old/
+new effect during the test phase was observed to be larger and earlier
+compared to when they were instructed to memorize the item itself
+without source information (Guo et al., 2006). Additionally, item
+memory elicited an earlier onset of visual ERP than source memory,
+indicating that source memory retrieval required more extensive
+conscious processing (Thakral & Slotnick, 2015). However, other evi­
+dence supports a more unified view, such that recognition and source
+memory depend upon on similar neural processes used by long-term
+memory. For instance, a neuroimaging study suggested that item and
+source memory rely on the medial temporal lobe to a similar degree
+(Gold et al., 2006). Furthermore, they found that hippocampal lesion
+participants were similarly impaired on item and source memory tasks.
+Together, the question of whether item and source memory task rely on
+different levels of attentional resources, or instead form a single
+coherent long-term memory factor, remains unresolved.
+In our current study, we directly tested whether working memory
+differences predict recognition memory performance. In each of our
+Studies, subjects completed a visual working memory task, a source
+memory task, and a recognition memory task within a single session. In
+Study 1, we tested whether working memory abilities, measured with a
+change detection paradigm with visual arrays (Luck & Vogel, 1997),
+predicted simple item recognition memory differences for real-world
+objects (Brady et al., 2008). In Study 2, we examined whether work­
+ing memory differences continued to predict item recognition memory
+performance when items were presented during study at rapid rates (2
+items per second) that are known to tax the temporal limits of atten­
+tional and working memory encoding (Potter, 1976). In Study 3, we
+tested whether the lack of correlation between working memory and
+rapid serial visual presentation (RSVP) recognition performance was
+due to the brief exposure duration of each image rather than the rapid
+rate of incoming images during the study phase. Lastly, to generalize our
+findings to the working memory and attentional control (WMAC) psy­
+chological factor, we administered a wide range of newly developed
+attentional control tasks to measure the construct in Study 4 (Burgoyne
+et al., 2023; Martin et al., 2021; Zhao et al., 2022), along with a visual
+working memory capacity measure. This design also allowed us to test a
+secondary hypothesis within each of our experiments regarding whether
+source memory and recognition memory were highly correlated with
+each other, despite the differences in retrieval demands.
+Study 1
+Humans have an exceptional ability to recognize visual objects. For
+example, after only a single brief presentation, we can accurately (~90
+%) recognize thousands of visual scenes and individually presented
+objects (Standing, 1973; Brady et al., 2008). This exceptional level of
+recognition memory ability stands in sharp contrast with other measures
+of long-term memory, such as free recall or source memory judgments in
+which accurate mnemonic performance is much more effortful and
+limited even for much smaller sets of stimuli. One potential explanation
+for the difference is that tasks such as free recall and source memory may
+depend more on attention-demanding processes at encoding and
+2
+
+C. Zhao and E.K. Vogel
+
+Journal of Memory and Language 144 (2025) 104665
+
+retrieval, as compared to less effortful recognition judgements which
+may rely more heavily on a general sense of familiarity. In line with this
+proposal, previous research has demonstrated that individual differ­
+ences in WMAC measures predict source memory performance
+(Unsworth et al., 2014). However, whether the easier, familiarity-driven
+visual recognition process also demands WMAC resources remains un­
+resolved. To test on this question, in Study 1, we measured working
+memory, recognition memory and source memory abilities of partici­
+pants. We aimed to test if 1) individual differences in working memory
+predicted recognition memory, 2) individual differences in familiaritydriven recognition memory predicted recollection-driven source mem­
+ory, and 3) individual differences in working memory uniquely pre­
+dicted familiarity-driven recognition memory even after the
+contribution of source memory was regressed out.
+
+%).
+Materials and procedure
+For Study 1, all participants signed an informed consent, and
+completed three tasks. Each participant started with an attentional
+control task (Fig. 1A), followed by a visuo-spatial source memory task
+(Fig. 1B) and a visual recognition memory task (Fig. 1C).
+Working memory Task: Change detection paradigm
+During each trial, six colored squares were displayed on the screen
+simultaneously for 250 ms. This was followed by a blank retention in­
+terval lasting 1,000 ms. Subsequently, a single-colored square appeared,
+and participants were required to determine whether the color of this
+square had changed compared to the one presented earlier in that po­
+sition. Changes happened with a probability of 0.5. Participants
+completed a total of 140 trials for the change detection task. The
+dependent variable of interest was the K capacity measure (N x (hit-false
+alarm)) of the working memory task.
+
+Method
+Participants
+For Study 1, 385 young residents of the United States (18–35 years
+old) were recruited through Prolific and received monetary compensa­
+tion ($10.00/hour). All participants reported normal or corrected-tonormal vision, no color blindness, fluency in English, no history of
+mental illness/condition, and no cognitive impairment. All participants
+had successfully completed 90 % or more of the studies that they had
+participated in previously on Prolific (filtered by approval rate >= 90
+
+Source memory Task: Visuo-spatial source memory
+In the study phase, we presented 30 images of real-world objects. The
+average picture size was approximately 4.6◦ by 4.6◦ of visual angle,
+assuming the subject was seated 80 cm from the screen. Each image was
+centered on the screen during both the study and test phases.
+During the study phase, each trial started with a 500-ms fixation
+
+Fig. 1. Experimental Procedures for Study 1. (A) Attentional Control task: simultaneous change detection paradigm. Six colored squares appeared on the screen
+simultaneously. At the end of the trial, participants were cued with a square at one of the six original locations, with 50% exhibited a color change and 50%. without
+change. (B) Source Memory task. During each trial of the study phase, a real-world object appeared at one of the four quadrants on the screen for 2 s. The participants
+need to encode the content of the picture as well as where it was placed on the screen. We had thirty pictures in total for the study phase. During each trial of the test
+phase, we cued the participants with the studied object at the center of the screen, and they were asked to recall which quadrant the object was in during the study
+phase. (C) A sample of the recognition memory paradigm used in Study 1. During each trial of the study phase, a real-world object appeared at the center of the
+screen for 3 s. The participants need to encode the content of the picture. During each trial of the test phase, participants were shown two real-world images on the
+screen, one on the left and the other on the right. They were asked to recognize which of the image was studied. In each trial, one image was always a studied picture,
+and the other image was a new image that the participants had never studied in the experiment.
+3
+
+C. Zhao and E.K. Vogel
+
+Journal of Memory and Language 144 (2025) 104665
+
+cross. Following that, a picture was displayed in one of the four quad­
+rants of the screen for 2000 ms. The participants were instructed to
+memorize the visual appearance as well as the spatial location of the
+image. In the test phase, we presented each participant with the same 30
+pictures one at a time, and the participants were asked to press W/E/S/D
+to indicate which quadrant the image was originally at (W for upper left,
+E for upper right, S for lower left and D for lower right). Each trial in the
+test phase began with a 500-ms fixation cross, followed by the presen­
+tation of the test picture at the center of the screen until the participant
+made a button press to record their source memory response. The stimuli
+were drawn from a previously published set of real-world objects (Brady
+et al., 2008). Both parts of the experiment were programmed using the
+jsPsych package (De Leeuw, 2015). The dependent variable of interest
+was the accuracy of the source memory task.
+
+cross. Following that, a picture was displayed at the center of the screen
+for 3000 ms. In the test phase, we presented each participant with 100
+pairs of pictures, two at a time, one on the left side of the screen and the
+other one on the right side of the screen. Among the two images on
+screen, one image had already been shown in the study phase and the
+other one was novel to the participant. The participants were asked to
+perform a two-alternative forced choice task to report which image was
+the one they had seen during the study phase. Each trial in the test phase
+began with a 250-ms fixation cross, followed by the presentation of the
+test picture at the center of the screen until the participant made a
+button press to record their old versus new response, along with their
+confidence level.
+Participants used the number keys on a keyboard to indicate their
+confidence and which image was the one they studied earlier. Specif­
+ically, the number keys 1 and 2 indicated that the item on the left side of
+the screen was the studied one, with high and low confidence levels,
+respectively. On the other hand, the number keys 9 and 8 indicated that
+the item on the right side of the screen was the studied one, with high
+and low confidence levels, respectively. The stimuli were drawn from a
+previously published set of real-world objects (Brady et al., 2008). Both
+parts of the experiment were programmed using the jsPsych package (De
+
+Recognition memory task
+In the study phase, we presented 100 images of real-world objects.
+The average picture size was approximately 4.6◦ by 4.6◦ of visual angle,
+assuming the subject was seated 80 cm from the screen. Each image was
+centered on the screen during both the study and test phases (Fig. 2A).
+During the study phase, each trial started with a 250-ms fixation
+
+Fig. 2. Results of Study 1. (A) Schema of Recognition Memory Task in Study 1: the images were presented on screen for 3250 ms, and 250 ms of inter-stimulus
+interval. (B) Working memory differences significantly predicted source memory performances (r(383) = 0.30, p < 0.001). (C) Source memory performances
+significantly predicted recognition memory accuracies (r(383) = 0.49, p < 0.001). (D) Working memory differences significantly predicted recognition memory
+accuracies (r(383) = 0.33, p < 0.001). (E) A sample Venn diagram on variance explained by working memory, source memory and recognition memory.
+4
+
+C. Zhao and E.K. Vogel
+
+Journal of Memory and Language 144 (2025) 104665
+
+Leeuw, 2015). The dependent variable of interest was the accuracy of
+the recognition memory task.
+
+Table 2
+Correlations among all measures in Study 1 (** indicates p < .01 level).
+
+Sample size estimation and exclusion criterion
+In Study 1, a stopping criterion was established when the Bayes
+Factor (BF) exceeded 3, indicating support for the alternative hypothesis
+(i.e., working memory predicted simple recognition memory), or fell
+below 0.33, indicating support for the null hypothesis (i.e., working
+memory did not predict simple recognition memory). Here, without
+prior data on the correlation strength between working memory and
+recognition memory measures, we estimated the required sample size
+based on a correlation of r = 0.15 and a beta of 0.2 to capture mean­
+ingful correlations between the two variables. This estimation indicated
+a need for 347 subjects. A multivariate exclusion criterion was applied to
+the behavioral data, excluding participants whose task performance fell
+below chance and more than 2.5 standard deviations below the mean.
+
+SD
+
+Skewness
+
+Kurtosis
+
+Reliability
+
+2.46
+0.81
+0.74
+
+1.15
+0.13
+0.14
+
+0.17
+− 0.51
+− 0.56
+
+− 0.51
+− 0.64
+− 0.14
+
+0.84
+0.92
+0.89
+
+Working Memory
+Recognition Memory
+Source Memory
+
+−
+0.33**
+0.30**
+
+−
+−
+0.49**
+
+Contrary to our predictions, in Study 1 we found that individual
+differences in working memory capacity predicted performance in a
+relatively easy visual recognition memory task; a relationship that was
+comparable to what we observed for the more effortful source memory
+task. One possibility for the correlation between recognition memory
+and working memory capacity is that the relatively slow encoding rate
+(3 s) during study provided sufficient time to rely on attentional and
+working memory mechanisms to bolster performance. Prior work using
+rapid serial visual presentation (RSVP) during the study phase of visual
+recognition tasks has shown that these rapid rates produce overall lower
+recognition performance in part because they exceed the temporal limits
+of an attention-demanding short-term consolidation process (e.g.,
+Potter, 1975). However, despite the reduced recognition rate, the RSVP
+items appear to still receive relatively deep amounts of perceptual and
+semantic processing, reflected by the intact accuracy in picture and
+name search tasks (Potter, 1976). Considering the depth of perceptual
+and semantic processing, these rapidly presented items may still leave a
+detectable mnemonic trace. Furthermore, rapid streams of items are
+known to exceed the limits of working memory encoding. Participants
+are often unable to encode the second target into memory if it is pre­
+sented too close in time following the first target (i.e., attentional blink,
+Shapiro et al., 1997). Similarly participants often miss the repetition of
+targets in rapid presentation streams (i.e., repetition blindness, Kanw­
+isher & Potter, 1990). In Study 2, we directly tested whether WM dif­
+ferences will continue to predict recognition memory for rapid streams
+of images. That is, do attention control and working memory still play a
+role in recognition performance for items that were presented at rates
+that exceed the temporal limits of attention and working memory
+encoding?
+Method
+Participants
+For Study 2, 199 young residents of the United States (18–35 years
+old) were recruited through Prolific and received monetary compensa­
+tion ($10.00/hour). All participants reported normal or corrected-tonormal vision, no color blindness, fluency in English, no history of
+mental illness/condition, and no cognitive impairment. All participants
+had successfully completed 90 % or more of the studies that they had
+participated in previously on Prolific (filtered by approval rate >= 90
+%).
+
+Table 1
+Descriptive statistics and reliability estimates for all measures in Study 1.
+Mean
+
+Recognition Memory
+
+Study 2
+
+Table 1 lists descriptive statistics and split half reliability for working
+memory, recognition memory and source memory tasks used in Study 1.
+Table 2 lists correlations between working memory, recognition mem­
+ory and source memory tasks.
+In Study 1, we first tested whether individual differences in working
+memory predicted source memory accuracy. We found out that working
+memory differences positively correlated to source memory perfor­
+mance differences (r(383) = 0.30, p < 0.001, Fig. 2B), as shown in
+previous studies (Unsworth et al., 2014). More importantly, we tested
+whether working memory also predicted visual recognition memory, a
+paradigm that was presumably relying less on visual attentional re­
+sources than source memory. If the hypothesis held, then we would
+expect a weaker or nonsignificant correlation than that with source
+memory. Surprisingly, our correlation analysis revealed that working
+memory positively predicted recognition memory accuracies (r(383) =
+0.33, p < 0.001, Fig. 2D), and the correlation strength was not signifi­
+cantly different from the correlation between working memory and
+source memory (z(383) = 0.62, p = 0.27). A further correlational
+analysis revealed that recognition and source memory strongly corre­
+lated with each other (r(383) = 0.49, p < 0.001, Fig. 2C), suggesting the
+existence of a more generalized visual long-term memory construct.
+These results suggest that both source and item recognition versions of
+visual long-term memory tasks rely on working memory resources.
+To better quantify the level of working memory resources involved in
+each visual long-term memory task, we performed a three-way partial
+regression analysis to determine the pairwise shared variance among
+working memory, source memory, and recognition memory tasks.
+Echoing our correlational results, we first found that working memory
+differences continued to share variance with source memory perfor­
+mance after recognition memory was regressed out (r(383) = 0.16, p <
+0.001, BF = 15.68, Fig. 2E). Likewise, working memory differences also
+continued to explain a significant amount of variance with recognition
+memory even after source memory performance was regressed out (r
+(383) = 0.22, p < 0.001, BF > 1000, Fig. 2E). Additionally, recognition
+memory and source memory continued to share significant portions of
+variance even after working memory was regressed out (r(383) = 0.44,
+p < 0.001, BF > 1000, Fig. 2E). Collectively, our findings suggest that
+simple visual recognition memory tasks appear to rely on working
+
+Working Memory
+Recognition Memory
+Source Memory
+
+Working Memory
+
+memory resources just as much as source memory tasks. Moreover, vi­
+sual recognition memory and source memory differences remained
+highly correlated with or without attention control differences in the
+regression model, suggesting that both may form a coherent visual longterm memory factor in explaining individual differences in human
+cognition.
+
+Results
+
+Measure
+
+Correlation
+
+Materials and procedure
+For Study 2, all participants provided informed consent, and
+completed three tasks. Each participant started with a working memory
+task, followed by a visuo-spatial source memory task and a visual
+recognition memory task, as in Study 1.
+5
+
+C. Zhao and E.K. Vogel
+
+Journal of Memory and Language 144 (2025) 104665
+
+size based on a correlation of r = 0.3 and a beta of 0.2 to capture
+meaningful correlations between the two variables. This estimation
+indicated a need for 85 subjects. A multivariate exclusion criterion was
+applied to the behavioral data, excluding participants whose task per­
+formance fell below chance and more than 2.5 standard deviations
+below the mean.
+
+Working memory Task: Change detection paradigm
+The working memory task was the same as in Study 1.
+Source memory Task: Visuo-spatial source memory
+The source memory task was the same as in Study 1.
+Recognition memory Task: Rapid presentation
+The recognition memory task used the same materials and study-test
+procedures as in Study 1. Different from Study 1, during the study phase,
+each trial started with a 250-ms fixation cross. Following that, a picture
+was displayed at the center of the screen for 250 ms. Therefore, each
+participant was presented images at a 250-ms on and 250-ms off pace
+(see Fig. 3A). Note that this presentation rate is more than six times
+faster than the rate used in Study 1.
+
+Results
+Table 3 lists descriptive statistics and split half reliability for working
+memory, recognition memory and source memory tasks used in Study 2.
+Table 4 lists correlations between working memory, recognition
+Table 3
+Descriptive statistics and reliability estimates for all measures in Study 2.
+
+Sample size estimation and exclusion criterion
+In Study 2, a stopping criterion was established for when the Bayes
+Factor (BF) exceeded 3, indicating support for the alternative hypothe­
+sis, or fell below 0.33, indicating support for the null hypothesis. Here,
+with our observations from Study 1, we estimated the required sample
+
+Measure
+
+Mean
+
+SD
+
+Skewness
+
+Kurtosis
+
+Reliability
+
+Working Memory
+Recognition Memory
+Source Memory
+
+2.57
+0.69
+0.73
+
+1.23
+0.12
+0.15
+
+0.14
+− 0.11
+− 0.73
+
+− 0.38
+− 0.31
+0.17
+
+0.73
+0.85
+0.91
+
+Fig. 3. Results of Study 2. (A) Schema of Recognition Memory Task in Study 2: the images were presented on screen for 250 ms, and 250 ms of inter-stimulus interval,
+at a presentation rate six times faster than used in Study 1. (B) Working memory differences significantly predicted source memory performances (r(197) = 0.28, p <
+0.001). (C) Source memory performances significantly predicted recognition memory accuracies at a fast presentation rate (r(197) = 0.39, p < 0.001). (D) Working
+memory differences did not predict recognition memory accuracies at a fast presentation rate (r(197) = 0.14, p = 0.057). (E) A sample Venn diagram on variance
+explained by working memory, source memory and recognition memory.
+6
+
+C. Zhao and E.K. Vogel
+
+Journal of Memory and Language 144 (2025) 104665
+
+presented at study because these two factors were confounded. Here, we
+tested whether working memory differences predicted recognition
+memory for items with brief (250 ms) exposure durations but with a
+slow presentation rate between items by increasing the inter-stimulus
+interval to 3000 ms. If the null correlation between working memory
+and RSVP recognition was due to the rapid rate of item presentation,
+rather than the brief exposure duration, we would expect that the cor­
+relation will reemerge for briefly presented items that were presented at
+a rate that is slow enough between items to allow for full attention and
+working memory processing for each item.
+
+Table 4
+Correlations among all measures in Study 2 (** indicates p < .01 level).
+Correlation
+
+Working Memory
+
+Recognition Memory
+
+Working Memory
+Recognition Memory
+Source Memory
+
+−
+0.14
+0.28**
+
+−
+−
+0.39**
+
+memory and source memory tasks.
+In Study 2, we first tested whether individual differences in working
+memory predicted source memory accuracy. We replicated our findings
+in Study 1 that working memory differences positively correlated to
+source memory performance differences (r(197) = 0.28, p < 0.001,
+Fig. 3B). Furthermore, we tested whether working memory predicted
+visual recognition memory when the images were presented rapidly. If
+the ability to encode a rapid stream of images similarly relies on working
+memory resources, then we would expect a strong positive correlation
+between working memory and recognition memory with fast presenta­
+tion rates. However, in contrast with Study 1 when images were pre­
+sented slowly (> 3000 ms per image), our correlation analysis revealed
+that working memory did not predict recognition memory accuracies
+with rapid presentation (r(197) = 0.14, p = 0.057, Fig. 3D). Moreover,
+we found that this nonsignificant correlation with working memory was
+significantly weaker than the correlation between working memory and
+source memory (z(197) = 1.83, p = 0.03). One possibility for the lack of
+correlation is that recognition memory with RSVP presentation no
+longer relies on the common visual long-term memory factor we
+observed in Study 1. If this is the case, we would expect RSVP recog­
+nition to no longer predict source memory performance. However,
+instead we found that rapid recognition and source memory were still
+strongly correlated with each other (r(197) = 0.39, p < 0.001, Fig. 3C).
+The robust correlation between RSVP recognition memory and the
+slowly-presented source memory task indicates that both forms of
+memory continue to form a general visual long-term memory factor,
+suggesting that RSVP recognition performance still utilizes the same
+common long term memory mechanisms as we observed in Study 1.
+Instead, the null correlation between working memory and RSVP
+recognition performance suggests that the reduced attentional and
+working memory processing for these rapidly presented items is what
+disconnected recognition performance from working memory capacity.
+To better quantify the level of working memory resources involved in
+each visual long-term memory task, we performed a three-way partial
+regression analysis to determine the pairwise shared variances among
+working memory, source memory, and RSVP recognition tasks. Similar
+to our correlational findings, we first replicated our findings that
+working memory differences shared variance with source memory per­
+formance when recognition memory was regressed out (r(197) = 0.25, p
+< 0.001, BF = 59.44, Fig. 3E). Different from Study 1, working memory
+differences stop explaining shared variances with recognition memory
+when images were presented rapidly (r(197) = 0.03, p = 0.69, BF =
+0.096, Fig. 3E). However, RSVP recognition memory and source mem­
+ory shared significant portions of variance after working memory was
+regressed out (r(197) = 0.37, p < 0.001, BF > 1000, Fig. 3E). Collec­
+tively, our findings reveal that visual recognition memory tasks do not
+rely on working memory resources if images were presented rapidly
+during study. Moreover, despite the severe difference between presen­
+tation rates at encoding, recognition memory and source memory indi­
+vidual differences remained highly correlated, suggesting that both
+tasks form a coherent visual long-term memory factor.
+
+Method
+Participants
+For Study 3, 112 young residents of the United States (18–35 years
+old) were recruited through Prolific and received monetary compensa­
+tion ($10.00/hour). All participants reported normal or corrected-tonormal vision, no color blindness, fluency in English, no history of
+mental illness/condition, and no cognitive impairment. All participants
+had successfully completed 90 % or more of the studies that they had
+participated in previously on Prolific (filtered by approval rate >= 90
+%).
+Materials and procedure
+For Study 3, all participants provided informed consent, and
+completed three tasks. Each participant started with a working memory
+task, followed by a visuo-spatial source memory task and a visual
+recognition memory task, as in Exp 1.
+Working memory Task: Change detection paradigm. The working memory
+task was the same as in Study 1.
+Source memory Task: Visuo-spatial source memory. The source memory
+task was the same as in Study 1.
+Recognition memory Task: Long inter-stimulus interval. The recognition
+memory task used the same materials and study-test procedures as in
+Exp 1. Unlike Study 1, each study item was displayed at the center of the
+screen for 250 ms. Following that, a 3250-ms fixation cross was dis­
+played during the blank inter-stimulus interval. Therefore, each partic­
+ipant saw the images at a 250-ms on and 3250-ms off pace (Fig. 4A),
+such that the exposure duration was the same as Study 2, but the pre­
+sentation rate was the same as used in Study 1.
+Sample size estimation and exclusion criterion
+In Study 3, a stopping criterion was established when the Bayes
+Factor (BF) exceeded 3, indicating support for the alternative hypothe­
+sis, or fell below 0.33, indicating support for the null hypothesis. Here,
+with our observations from Study 1, we estimated the required sample
+size based on a correlation of r = 0.3 and a beta of 0.2 to capture
+meaningful correlations between the two variables. This estimation
+indicated a need for 85 subjects. A multivariate exclusion criterion was
+applied to the behavioral data, excluding participants whose task per­
+formance fell below chance and more than 2.5 standard deviations
+below the mean.
+Results
+
+Study 3
+
+Table 5 lists descriptive statistics and split half reliability for working
+memory, recognition memory and source memory tasks used in Study 3.
+Table 6 lists correlations between working memory, recognition mem­
+ory and source memory tasks.
+In Study 3, we first tested whether individual differences in working
+memory predicted source memory accuracy. We replicated the findings
+
+In Study 2, we found that working memory differences did not pre­
+dict RSVP recognition memory performance. However, it is unclear
+whether the lack of correlation was due to the rapid rate of item pre­
+sentation (2 per second) or brief stimulus exposure (250 ms) of each item
+7
+
+Journal of Memory and Language 144 (2025) 104665
+
+C. Zhao and E.K. Vogel
+
+Fig. 4. Results of Study 3. (A) Schema of Recognition Memory Task in Study 3: the images were presented on screen for 250 ms, and 3250 ms of inter-stimulus
+interval. (B) Attentional control differences significantly predicted source memory performances (r(110) = 0.42, p < 0.001). (C) Source memory performances
+significantly predicted recognition memory accuracies (r(110) = 0.49, p < 0.001). (D) Attentional control differences significantly predicted recognition memory
+accuracies (r(110) = 0.43, p < 0.001). (E) A sample Venn diagram on variance explained by attentional control, source memory and recognition memory.
+
+working memory processing. Similar to Study 1, we found that that
+working memory significantly predicted recognition memory accuracy
+with brief exposure durations (r(110) = 0.43, p < 0.001, Fig. 4D), and
+this correlation strength was no different from the correlation we
+observed between working memory and source memory (z(110) = 0.12,
+p = 0.45). Our findings suggest that the lack of correlation between
+working memory abilities and RSVP recognition in Study 2 was not due
+to the brief exposure duration of the images themselves but was instead
+due to the high number of images presented per second. Thus, when
+items are presented at a rate that is sufficient for attention and working
+memory processing, the recognition of even briefly presented items
+(250 ms) is well predicted by working memory ability. Moreover, we
+performed a correlational analysis between recognition memory with
+brief presentations and source memory. Similar to Study 1 and 2, we
+found that recognition and source memory remained strongly correlated
+with each other (r(110) = 0.49, p < 0.001, Fig. 4C). The robust corre­
+lation between recognition memory and source memory are consistent
+with our hypothesis that both forms of memory collectively form a
+generalized long-term memory construct.
+To better quantify the level of working memory resources involved in
+each visual long-term memory task, we performed a three-way partial
+
+Table 5
+Descriptive statistics and reliability estimates for all measures in Experiment 3.
+Measure
+
+Mean
+
+SD
+
+Skewness
+
+Kurtosis
+
+Reliability
+
+Working Memory
+Recognition Memory
+Source Memory
+
+2.06
+0.71
+0.70
+
+1.29
+0.14
+0.15
+
+− 0.01
+− 0.21
+− 0.49
+
+− 0.56
+− 1.00
+− 0.31
+
+0.76
+0.93
+0.89
+
+Table 6
+Correlations among all measures in Experiment 3 (** indicates p < .01 level).
+Correlation
+
+Working Memory
+
+Recognition Memory
+
+Working Memory
+Recognition Memory
+Source Memory
+
+−
+0.43**
+0.42**
+
+−
+−
+0.49**
+
+from Experiment 1 and 2 that working memory differences positively
+correlated to source memory performance differences (r(110) = 0.42, p
+< 0.001, Fig. 4B). Furthermore, we tested whether working memory
+predicted visual recognition memory when the images were presented
+briefly, but with a slow presentation rate to allow for attention and
+8
+
+C. Zhao and E.K. Vogel
+
+Journal of Memory and Language 144 (2025) 104665
+
+regression analysis to determine the pairwise shared variances among
+working memory, source memory, and brief-exposure recognition
+memory tasks. Similar to our correlational findings, we first replicated
+our findings that working memory differences shared variance with
+source memory performance after recognition memory was regressed
+out (r(110) = 0.26, p < 0.001, BF = 6.00, Fig. 4E). Similar to Study 1,
+working memory differences explained significant portions of shared
+variances with brief-exposure recognition memory (r(110) = 0.38, p <
+0.001, BF = 514.05, Fig. 4E). Moreover, recognition memory and source
+memory shared significant portions of variance after working memory
+was regressed out (r(110) = 0.28, p < 0.001, BF = 9.87, Fig. 4E).
+Collectively, our findings demonstrate that visual recognition memory
+tasks rely upon working memory resources if sufficient time is provided
+for attention and working memory processing. Additionally, recognition
+memory and source memory differences remained highly correlated
+after working memory contributions are removed, suggesting that both
+tasks may form a coherent visual long-term memory factor.
+
+task (Zhao, Vogel & Awh, 2023).
+
+Study 4
+
+Flanker Square
+The Flanker Square task is a modified Flanker task (Burgoyne et al.,
+2023). In each trial of the Flanker Square task, participants were pre­
+sented with a target stimulus alongside two possible responses. Both the
+target stimulus and response options consisted of sets of five arrows
+arranged horizontally (i.e., ≪>≪). Participants were instructed to
+choose the response option where the middle arrow aligned in direction
+with the outer arrows in the target stimulus. For instance, if the target
+stimulus displayed arrows pointing left and right (i.e., ≪>≪), partici­
+pants would select the response option with a central arrow pointing left
+(i.e., ≫<≫). Therefore, the task required participants to focus on the
+outer arrows of the target stimulus and the central arrow of the response
+options while disregarding the central arrow of the target stimulus and
+the outer arrows of the response options. Each participant completed 30
+s of practice, and 90 s of test phase. The Flanker Square score was
+calculated as the difference between number of correct and incorrect
+responses.
+
+Filtering Change Localization
+The Filtering Change Localization task was modified from the
+Filtering Change Detection task (Luck & Vogel, 1997; Martin et al.,
+2021). On the start of each trial, a word, either RED or BLUE, denoting
+the color of the items to be remembered (the selection instruction), was
+presented for 200 ms, followed by a 100-ms interval. Subsequently, 10
+bars were displayed for 250 ms, with half of them being drawn in red
+and the other half in blue, which is effectively a set size 5 condition.
+After a 900-ms delay, only the bars corresponding to the attended color
+reappeared. During test phase, only one of the bars changed its orien­
+tation compared to the encoding phase. The participants were asked to
+determine which one of the five bars had changed its orientation
+compared to the initial presentation. This Filtering Localization phase
+had 60 trials in total. The Filtering Localization measure was the accu­
+racy of the localization task.
+
+In Studies 1–3, we found that working memory capacity was pre­
+dictive of recognition memory so long as the presentation rate of items
+during study did not exceed attention and working memory limits.
+However, it is unclear whether broader measures of attentional control
+abilities (e.g., Kane & Engle, 2002) would also show a similar rela­
+tionship with visual long-term memory performance. In Study 4, we
+administered a battery of four WMAC tasks and tested whether they
+revealed a relationship with recognition and source memory that was
+comparable to what we have observed with measures of working
+memory capacity.
+Method
+Participants
+For Study 4, 145 young residents of the United States (18–35 years
+old) were recruited through Prolific and received monetary compensa­
+tion ($10.00/hour). All participants reported normal or corrected-tonormal vision, no color blindness, fluency in English, no history of
+mental illness/condition, and no cognitive impairment. All participants
+had successfully completed 90 % or more of the studies that they had
+participated in previously on Prolific (filtered by approval rate >= 90
+%).
+
+Simon Square
+The Simon Square task was a modified Simon task (Burgoyne et al.,
+2023). In each trial of the Simon Square task, participants were pre­
+sented with a target stimulus and two response options. The target
+stimulus was represented by an arrow, and the response options were
+the words “RIGHT” and “LEFT.” Participants were instructed to choose
+the response option that corresponded to the direction indicated by the
+arrow in the target stimulus. For instance, if the arrow in the target
+stimulus pointed to the left, the participant should select the response
+option with the word “LEFT.” Both the target stimulus arrow and the
+response options could appear on either side of the computer screen with
+equal probability. Consequently, participants had to attend to the di­
+rection indicated by the target stimulus arrow while understanding the
+meaning of the response options. Simultaneously, they must disregard
+the side of the screen where the target stimulus arrow and response
+options were presented. Each participant completed 30 s of practice, and
+90 s of test phase. The Simon Square score was calculated as the dif­
+ference between number of correct and incorrect responses.
+
+Materials and procedure
+For Study 4, all participants provided informed consent and
+completed six tasks. Each participant started with four attentional
+control tasks (change localization paradigm, filtering change localiza­
+tion paradigm, Flanker square task and Simon square task, see Fig. 5),
+followed by a visuo-spatial source memory task and a visual recognition
+memory task, as in Study 1.
+Working Memory and Attentional Control (WMAC) Tasks: Change
+localization, filtering change localization, Flanker Square, Simon square
+Change Localization
+The Change Localization task was adopted from the color Change
+Localization task used in prior research (Zhao et al., 2022). During every
+trial, six colored squares were simultaneously displayed for a duration of
+250 ms, followed by a blank retention interval lasting 1,000 ms. Sub­
+sequently, the same six squares reappeared in their original positions,
+but with one of the colors was changed to a hue not previously shown in
+that trial. Each square was assigned a digit ranging from 1 to 6, and
+participants were required to press the corresponding key to identify the
+square that changed color. The spatial arrangement of the six numbers
+was randomized across trials. The Change Localization measure was the
+capacity of the working memory, calculated from the accuracy of the
+
+Source Memory Task: Visuo-spatial source memory. The source memory
+task was the same as in Study 1.
+Recognition Memory Task: long inter-stimulus interval. The recognition
+memory task was the same as in Study 1.
+Sample size estimation and exclusion criterion
+In Study 4, a stopping criterion was established when the Bayes
+Factor (BF) exceeded 3, indicating support for the alternative
+9
+
+C. Zhao and E.K. Vogel
+
+Journal of Memory and Language 144 (2025) 104665
+
+Fig. 5. Experimental Procedures for Study 4. (A) Schema of Change Localization Task. (B) Schema of the Filtering Change Localization Task. (C) Schema of the Flanker
+Square Task. (D) Schema of the Simon Square Task.
+
+10
+
+C. Zhao and E.K. Vogel
+
+Journal of Memory and Language 144 (2025) 104665
+
+hypothesis, or fell below 0.33, indicating support for the null hypothesis.
+Here, with our observations from Study 1, we estimated the required
+sample size based on a correlation of r = 0.3 and a beta of 0.2 to capture
+meaningful correlations between the two variables. This estimation
+indicated a need for 85 subjects. A multivariate exclusion criterion was
+applied to the behavioral data, excluding participants whose task per­
+formance fell below chance and more than 2.5 standard deviations
+below the mean.
+
+Table 8
+Correlations among all measures in Study 4 (** indicates p < .01 level).
+
+Results
+
+Mean
+
+SD
+
+Skewness
+
+Kurtosis
+
+Reliability
+
+2.43
+0.47
+31.41
+38.34
+0.77
+0.79
+
+1.00
+0.15
+13.93
+13.21
+0.15
+0.14
+
+− 0.11
+0.30
+− 0.36
+− 0.39
+− 0.52
+− 0.98
+
+− 0.01
+− 0.22
+− 0.40
+0.83
+− 0.60
+0.53
+
+0.81
+0.83
+0.94
+0.93
+0.93
+0.93
+
+2
+
+3
+
+4
+
+5
+
+1. Change Localization
+2. Filtering Localization
+3. Flanker Square
+4. Simon Square
+5. Recognition Memory
+6. Source Memory
+
+−
+0.58**
+0.40**
+0.35**
+0.39**
+0.45**
+
+−
+−
+0.40**
+0.32**
+0.34**
+0.37**
+
+−
+−
+−
+0.43**
+0.32**
+0.36**
+
+−
+−
+−
+−
+0.23**
+0.31**
+
+−
+−
+−
+−
+−
+0.60**
+
+General Discussion
+In our study, we examined the relationship between individual dif­
+ferences in working memory, attentional control, source memory and
+recognition memory. First, we replicated previous findings that working
+memory and attentional control abilities predict source memory per­
+formance. Surprisingly, recognition memory performance, a paradigm
+that has been presumed to be less attention demanding than source
+memory, was also robustly predicted by working memory and atten­
+tional control abilities (Studies 1, 3 and 4). The only exception that we
+observed to this relationship was when the study items were presented
+rapidly (2 per second), at which point, working memory no longer
+predicted recognition memory (Study 2). In addition, we found that
+irrespective of differences in presentation rate and exposure duration of
+items during study, recognition memory performance remained highly
+correlated with source memory performance in all four Studies. An
+exploratory factor analysis confirmed our correlational results and
+suggests that both tasks load onto a common latent factor (Study 4), and
+that each of the WMAC tasks coherently loaded onto a separate latent
+factor.
+Our study suggests that under most circumstances, an individual’s
+overall recognition memory performance has significant contributions
+from his or her working memory and attentional control abilities. All
+five metrics of working memory and attentional control tasks, change
+detection in Studies 1 and 3, change localization, filtering localization,
+Flanker square and Simon square in Study 4 significantly predicted
+recognition memory performance. A potential challenge to this robust
+relationship would be that although certain levels of working memory
+and attentional control are necessary for recognition memory, source
+memory may require much higher contributions of working memory
+and attentional control resources than simple recognition. If this hy­
+pothesis was correct, then the remaining shared variance between
+WMAC measures and recognition would be expected to be close to zero
+
+Table 7
+Descriptive statistics and reliability estimates for all measures in Study 4.
+Change Localization
+Filtering Localization
+Flanker Square
+Simon Square
+Recognition Memory
+Source Memory
+
+1
+
+Square (0.52), Simon Square (0.58), Change Localization (0.67) and
+Filtering Localization (0.66) all significantly (> 0.3) loaded onto Factor
+1, and Source Memory (0.6) and Recognition Memory (0.86) both
+significantly loaded onto Factor 2. The exploratory factor analysis
+confirmed that a common WMAC factor underlay our four tasks. More
+importantly, the two forms of long-term memory formed a shared visual
+long-term memory factor, converging with our findings in Studies 1–3.
+Lastly, all six of our tasks loaded positively to both WMAC and long-term
+memory factors, suggesting that the predictive power between the two
+abilities may stem from the fact that visual long-term memory tasks
+generally require attentional control resources. To further validate if
+working memory and attentional control abilities would separately
+predict long-term memory abilities (Factor 2), we performed another
+partial correlational analysis on working memory (change localization
+and filtering localization), attentional control (Flanker square and
+Simon square), and long-term memory abilities (recognition and source
+memory, see Fig. 7C). We confirmed that attentional control and
+working memory abilities were closely correlated (r(143) = 0.37, p <
+0.001), and both working memory (r(143) = 0.36, p < 0.001) and
+attentional control (r(143) = 0.21, p < 0.001) predicted long-term
+memory.
+
+Table 7 lists descriptive statistics and split half reliability for working
+memory & attentional control, recognition memory and source memory
+tasks used in Study 4. Table 8 lists correlations between working
+memory & attentional control, recognition memory and source memory
+tasks.
+We tested whether a broad set of working memory attentional con­
+trol (WMAC) measures predict visual long-term memory performance
+similar to what we observed with working memory capacity in our
+previous experiments. First, we tested if WMAC abilities, measured with
+four paradigms, predicted source memory performance and found that
+performance in all four tasks was positively corelated to source memory
+performance (change localization: r(143) = 0.35, p < 0.001; filtering
+change localization: r(143) = 0.26, p = 0.002; Flanker square: r(143) =
+0.29, p < 0.001; Simon square: r(143) = 0.26, p = 0.002, see Fig. 6 A-D),
+which generalizes our findings from Studies 1–3. Moreover, we also
+found that the four WMAC tasks were all predictive of simple recogni­
+tion memory accuracies (change localization: r(143) = 0.39, p < 0.001;
+filtering change localization: r(143) = 0.34, p < 0.001; Flanker square: r
+(143) = 0.32, p < 0.001; Simon square: r(143) = 0.23, p = 0.006, see
+Fig. 6 E-H). These results indicate that the relationship we observed
+between visual long-term memory performance and working memory
+generalizes to other attention control and working memory measures.
+Furthermore, when we divide the WMAC measures into working
+memory and attentional control measures, visual long-term memory
+differences shared unique variance with both the WM and AC factors,
+which replicates and extends our findings with WM measures (Fig. 7C).
+Therefore, recognition memory appears to rely on similar levels of
+WMAC resources compared to source memory, despite prior evidence
+suggesting that source memory performance is impaired more severely
+under split-attention tasks than recognition memory.
+Lastly, we replicated our findings in Study 1 that source memory and
+recognition memory were highly correlated (r(143) = 0.60, p < 0.001,
+see Fig. 7A). To further examine if these two tasks form a coherent visual
+long-term memory factor, we performed an exploratory factor analysis
+with our four WMAC tasks and two visual long-term memory tasks. We
+first performed a Bartlett Sphericity test and got a significant chi square
+of 237.79 (p < 0.001), fulfilling a prerequisite to perform factor analysis.
+We then conducted a Kaiser-Meyer-Olkin criterion test with KMO of
+0.79, indicating that our observed variables were sufficiently correlated
+with each other. To determine the optimal number of factors, we
+calculated the eigenvalues for our data. Our first two eigenvalues
+returned as 2.96 and 0.92, higher than the third eigenvalue 0.74 and
+were both close to or larger than 1.0. Therefore, we performed a twofactor factor analysis on our data (see Fig. 7B). We found that Flanker
+
+Measure
+
+Correlation
+
+11
+
+C. Zhao and E.K. Vogel
+
+Journal of Memory and Language 144 (2025) 104665
+
+Fig. 6. Results of Study 4. (A-D) Working Memory Attentional Control (WMAC) differences significantly predicted source memory performances (ps < 0.001). (E-H)
+Working Memory Attentional Control (WMAC) differences significantly predicted recognition memory performances (ps < 0.001).
+
+once contributions from source memory were regressed out. Contrary to
+such prediction, we found that the shared variance between recognition
+memory and WMAC measures remained significant even after regressing
+source memory performance in Studies 1, 3 and 4. Therefore, simple
+item recognition memory appears to require extensive attentional con­
+trol resources, and this reliance is partially independent from the
+attentional control resources that source memory requires.
+The one exception to this robust correlation that we observed was
+that when the sequence of 100 images was presented at a rapid pre­
+sentation rate during study, working memory abilities no longer pre­
+dicted recognition memory performance. Storage of items in working
+
+memory is known to depend upon a somewhat slow, attentiondemanding consolidation process (Potter, 1976; Vogel et al., 2006)
+that can take several hundred milliseconds per item (Jolicøeur & Del­
+l’Acqua, 1998). Our RSVP presentation rate of 2 items per second likely
+exceeded the temporal limits of this consolidation process, which would
+explain why RSVP recognition performance no longer depended on
+working memory ability. This implies that recognition performance for
+rapidly presented items reflects learning that occurred in the absence of
+significant contributions from attention and working memory resources.
+Our findings may be consistent with prior reports that individual
+differences in working memory capacity (as measured by OSPAN)
+12
+
+C. Zhao and E.K. Vogel
+
+Journal of Memory and Language 144 (2025) 104665
+
+Fig. 7. Results of Study 4. (A) Source Memory differences significantly predicted recognition memory performances (r(143) = 0.60, ps < 0.001). (B) Exploratory
+factor analysis results for Study 4. A darker green suggested a higher loading of the task on the latent factor. We observed that Flanker Square, Simon Square, Change
+Localization and Filtering Change Localization loaded significantly onto Factor 1. Furthermore, Recognition and Source Memory significantly loaded onto Factor 2,
+suggesting the existence of a long-term memory factor. (C) A sample Venn diagram on variance explained by attentional control, working memory and visual longterm memory. (For interpretation of the references to color in this figure legend, the reader is referred to the web version of this article.)
+
+predict the magnitude of the attentional blink (Dale et al., 2013; Willems
+& Martens, 2016). While Attentional Blink paradigms use similar rapid
+stimulus presentation procedures to what we used in our RSVP recog­
+nition task, they differ substantially in the working memory storage
+demands they require. In Attentional blink tasks, subjects must selec­
+tively consolidate and store just two predetermined targets from the
+stream into working memory. By contrast, our RSVP recognition task
+requires the consolidation and storage of ALL of the items in the stream.
+It is plausible that when attempting to store just a few items from a rapid
+stream (as in Attentional Blink tasks), individuals with high WMAC
+ability have an advantage over those with low ability because the task
+may rely heavily on successfully selecting just the targets for storage and
+filtering out the remaining distractors: an ability that is well known to be
+reduced in individuals with low working memory capacity (Adam et al.,
+2015; Fukuda & Vogel, 2011; Vogel et al., 2005). By contrast, the RSVP
+recognition task we used in Study 2 had no distractor filtering demands
+during encoding because all items were to be remembered. Here, we
+presume RSVP recognition performance does not correlate with working
+memory ability because the heavy storage demands exceed even the
+highest capacity individual’s ability to attend and store each item in the
+rapid sequence into working memory.
+Our findings suggest that the process of consolidating items into
+working memory may play a key role in explaining the correlation be­
+tween WMAC and long-term memory. This process is thought to reflect
+the binding of item information to its spatial and temporal context
+(Karlsen et al., 2010). Computational models have long proposed similar
+binding mechanisms as a key component of working memory (Oberauer,
+2019), plausibly binding an item to both the location and time it was
+encountered (Thyer et al., 2022). Supporting this hypothesis, individual
+differences in working memory, as typically measured using simulta­
+neous change detection (i.e., entire set of to-be-remembered objects
+presented together during encoding), are highly predictive of change
+detection measured with sequential presentations (i.e., one item pre­
+sented at a time, Zhao & Vogel, 2023). Therefore, visual array tasks, or
+WMAC tasks in general, may engage the participants’ ability to bind
+multiple items to different positions in displays with items presented
+together in time, as well as the ability to temporally bind multiple items
+to the same location when presented at different times within the
+sequence. In our visuo-spatial source memory task, working memory
+uniquely predicted spatial binding ability, which was not utilized in the
+recognition memory task. Conversely, in the recognition memory task,
+temporal binding appeared to play a more significant role in recognition
+memory formation, given that a temporal structure is often present for
+recognition memory even when order was is not being tested (Schwartz
+
+et al., 2005). Supporting this hypothesis, we argue that the rapid stream
+of images in Study 2 prevented the formation of sufficient temporal
+binding in recognition memory. Consequently, working memory per­
+formance no longer predicted recognition memory performance when
+items were presented rapidly.
+We consistently found that recognition memory and source memory
+for real-world images remained correlated regardless of the presentation
+rate and exposure duration of the images in all four of our Studies.
+Moreover, the shared variance between source and recognition memory
+remained significant even after attentional control abilities were
+regressed out. Therefore, we believe that individual differences in visual
+long-term memory form a construct that is somewhat correlated with,
+yet distinct from, the known attentional control factor established in
+previous research (Kane et al., 2004; Kane & Engle, 2002). Evidence
+from Study 4 shows that both source memory and recognition memory
+exhibit significantly positive loadings for the same underlying factor,
+and that this factor is not the same as the attentional control factor from
+the exploratory factor analysis. Therefore, our results suggest that there
+is a generalized visual long-term memory factor, as suggested by a recent
+theoretical review (Unsworth, 2019). Future studies on this long-term
+memory factor are necessary to better explore the correlational and
+mediational relationship between this factor and other established fac­
+tors such as attentional control (Engle et al., 1999), fluid intelligence
+(Unsworth et al., 2014), and false memory (Roediger, III & Mcdermott,
+1995), to name a few.
+The current study examined the relationships amongst performance
+measures from several attention, working memory and visual long term
+memory tasks. However, because there are other general ability mea­
+sures such as fluid intelligence and processing speed that are known to
+correlate with WMAC measures (Kail & Salthouse, 1994; Unsworth
+et al., 2014), there are always lingering concerns that these untested
+measures may be contributing to the correlational structure we are
+observing between these constructs. For example, one possibility is that
+long-term memory tasks require certain aspects of overall general ability
+such as fluid intelligence (gF) instead of attention control per se. Pre­
+vious research has suggested that measures of working memory capac­
+ity, attentional control, and secondary memory all mediate the
+relationship between working memory storage and gF (Unsworth et al.,
+2014). Given the positive correlations among gF, WMAC, and long-term
+memory, it remains unclear whether gF and WMAC explain distinct
+variance in long-term memory. Likewise, declines in processing speed
+have been shown to impact working memory declines associated with
+aging (Salthouse, 1991, 1996, 2000). Thus, it is also plausible that the
+common resources that we observed between visual long-term memory
+13
+
+Journal of Memory and Language 144 (2025) 104665
+
+C. Zhao and E.K. Vogel
+
+tasks and WMAC measures may be impacted by the individual’s pro­
+cessing speed. That said, the results of Study 2 cast some doubt on
+whether these alternative general ability constructs are sufficient to
+explain our current findings. For example, our RSVP recognition study
+was considerably more difficult than our slow recognition memory
+procedure as evidenced by the large difference in average recognition
+accuracy (i.e., 69 % vs 81 %), yet it is only the more challenging RSVP
+recognition task that is not correlated with working memory capacity.
+Individuals with high fluid intelligence are generally better at just about
+all novel task environments (Kyllonen & Kell, 2017; Tschentscher et al.,
+2017; Zook et al., 2004) and it’s not obvious why this general ability
+wouldn’t have also given these individuals an advantage in the chal­
+lenging RSVP recognition task. Relatedly, if processing speed differences
+were what was producing the relationship between WMAC measures
+and visual long-term memory one would expect that such a relationship
+would continue (if not become stronger) when we increased the
+encoding speed demands of the stimulus presentation in Study 2.
+Instead, we found that this seemingly more processing speed-dependent
+task condition no longer correlated with working memory. These ar­
+guments notwithstanding, without measuring these other constructs
+there will always be remaining uncertainty about the role of these
+general factor constructs in the relationship between WMAC measures
+and visual long-term memory. Future work should measure these con­
+structs directly to better reveal the relationships between working
+memory, attention control and visual long term memory. Furthermore,
+our current study assesses recognition and source memory constructs
+using single tasks for each, which may introduce task-specific variance
+into our results. To achieve a more robust construct-level analysis that is
+less susceptible to task-specific influences, future research should
+incorporate multiple tasks representing both recognition and source
+memory constructs.
+
+Burgoyne, A. P., Tsukahara, J. S., Mashburn, C. A., Pak, R., & Engle, R. W. (2023). Nature
+and measurement of attention control. Journal of Experimental Psychology: General,
+2369–2402. https://doi.org/10.1037/xge0001408
+Craik, F. I., Govoni, R., Naveh-Benjamin, M., & Anderson, N. D. (1996). The effects of
+divided attention on encoding and retrieval processes in human memory. Journal of
+Experimental Psychology. General, 125(2), 159–180. https://doi.org/10.1037//00963445.125.2.159
+Dale, G., Dux, P. E., & Arnell, K. M. (2013). Individual differences within and across
+attentional blink tasks revisited. Attention, Perception, & Psychophysics, 75, 456–467.
+Draheim, C., Pak, R., Draheim, A. A., & Engle, R. W. (2022). The role of attention control
+in complex real-world tasks. Psychonomic Bulletin & Review, 29(4), 1143–1197.
+https://doi.org/10.3758/s13423-021-02052-2
+Engle, R. W., Laughlin, J. E., Tuholski, S. W., & Conway, A. R. A. (1999). Working
+memory, short-term memory, and general fluid intelligence: A latent-variable
+approach. Journal of Experimental Psychology: General, 128(3), 309–331. https://doi.
+org/10.1037/0096-3445.128.3.309
+Fukuda, K., & Vogel, E. K. (2011). Individual differences in recovery time from
+attentional capture. Psychological Science, 22(3), 361–368. https://doi.org/10.1177/
+0956797611398493
+Gold, J. J., Smith, C. N., Bayley, P. J., Shrager, Y., Brewer, J. B., Stark, C. E.,
+Hopkins, R. O., & Squire, L. R. (2006). Item memory, source memory, and the medial
+temporal lobe: Concordant findings from fMRI and memory-impaired patients.
+Proceedings of the National Academy of Sciences, 103(24), 9351–9356.
+Guo, C., Duan, L., Li, W., & Paller, K. A. (2006). Distinguishing source memory and item
+memory: Brain potentials at encoding and retrieval. Brain Research, 1118(1),
+142–154.
+Jolicøeur, P., & Dell’Acqua, R. (1998). The demonstration of short-term consolidation.
+Cognitive Psychology, 36(2), 138–202.
+Kail, R., & Salthouse, T. A. (1994). Processing speed as a mental capacity. Acta
+Psychologica, 86(2–3), 199–225.
+Kane, M. J., & Engle, R. W. (2002). The role of prefrontal cortex in working-memory
+capacity, executive attention, and general fluid intelligence: An individualdifferences perspective. Psychonomic Bulletin and Review, 9(4), 637–671. https://doi.
+org/10.3758/BF03196323
+Kane, M. J., Tuholski, S. W., Hambrick, D. Z., Wilhelm, O., Payne, T. W., & Engle, R. W.
+(2004). The generality of working memory capacity: A latent-variable approach to
+verbal and visuospatial memory span and reasoning. Journal of Experimental
+Psychology: General, 133(2), 189–217. https://doi.org/10.1037/00963445.133.2.189
+Kanwisher, N. G., & Potter, M. C. (1990). Repetition blindness: Levels of processing.
+Journal of Experimental Psychology: Human Perception and Performance, 16(1), 30–47.
+https://doi.org/10.1037/0096-1523.16.1.30
+Karlsen, P. J., Allen, R. J., Baddeley, A. D., & Hitch, G. J. (2010). Binding across space
+and time in visual working memory. Memory and Cognition, 38(3), 292–303. https://
+doi.org/10.3758/MC.38.3.292
+Kyllonen, P., & Kell, H. (2017). What is fluid intelligence? Can it be improved? Cognitive
+Abilities and Educational Outcomes: A Festschrift in Honour of Jan-Eric Gustafsson,
+15–37.
+Luck, S. J., & Vogel, E. K. (1997). The capacity of visual working memory for features and
+conjunctions. Nature, 390(6657), 279–284. https://doi.org/10.1038/36846
+Martin, J. D., Tsukahara, J. S., Draheim, C., Shipstead, Z., Mashburn, C. A., Vogel, E. K.,
+& Engle, R. W. (2021). The Visual Arrays Task: Visual Storage Capacity or Attention
+Control? Journal of Experimental Psychology: General, 150(12), 2525–2551. https://
+doi.org/10.1037/xge0001048
+Meier, M. E., & Kane, M. J. (2017). Attentional control and working memory capacity.
+The Wiley Handbook of Cognitive Control, 50–63.
+Miller, A. L., Gross, M. P., & Unsworth, N. (2019). Individual differences in working
+memory capacity and long-term memory: The influence of intensity of attention to
+items at encoding as measured by pupil dilation. Journal of Memory and Language,
+104(January 2018), 25–42. Doi: 10.1016/j.jml.2018.09.005.
+Naveh-Benjamin, M., Guez, J., & Marom, M. (2003). The effects of divided attention at
+encoding on item and associative memory. Memory & Cognition, 31, 1021–1035.
+Oberauer, K. (2019). Working memory and attention–A conceptual analysis and review.
+Journal of Cognition, 2(1).
+Potter, M. C. (1975). Meaning in visual search. Science, 187(4180), 965–966.
+Potter, M. C. (1976). Short-term conceptual memory for pictures. Journal of Experimental
+Psychology: Human Learning and Memory, 2(5), 509.
+Robison, M. K., Miller, A. L., Wiemers, E. A., Ellis, D. M., Unsworth, N., Redick, T. S., &
+Brewer, G. A. (2024). What makes working memory work? A multifaceted account of
+the predictive power of working memory capacity. Journal of Experimental
+Psychology: General, 153(9), 2193–2215. https://doi.org/10.1037/xge0001629
+Roediger, H. L., III, & Mcdermott, K. B. (1995). Creating false memories: Remembering
+words not presented in lists. Journal of Experimental Psychology: Learning, Memory,
+and Cognition, 21(4), 803–814.
+Salthouse, T. A. (1991). Mediation of adult age differences in cognition by reductions in
+working memory and speed of processing. Psychological Science, 2(3), 179–183.
+Salthouse, T. A. (1996). The processing-speed theory of adult age differences in
+cognition. Psychological Review, 103(3), 403–428. https://doi.org/10.1037/0033295X.103.3.403
+Salthouse, T. A. (2000). Aging and measures of processing speed. Biological Psychology,
+54(1–3), 35–54.
+Schwartz, G., Howard, M. W., Jing, B., & Kahana, M. J. (2005). Shadows of the past:
+Temporal retrieval effects in recognition memory. Psychological Science, 16(11),
+898–904.
+Shapiro, K. L., Raymond, J. E., & Arnell, K. M. (1997). The attentional blink. Trends in
+Cognitive Sciences, 1(8), 291–296.
+
+CRediT authorship contribution statement
+Chong Zhao: Writing – review & editing, Writing – original draft,
+Visualization, Software, Methodology, Formal analysis, Data curation,
+Conceptualization. Edward K. Vogel: Writing – review & editing, Su­
+pervision, Project administration, Investigation, Funding acquisition,
+Conceptualization.
+Declaration of competing interest
+The authors declare that they have no known competing financial
+interests or personal relationships that could have appeared to influence
+the work reported in this paper.
+Acknowledgements
+We acknowledge the funding from National Institute of Mental
+Health (grant ROIMH087214); Office of Naval Research (grant N0001412-1-0972).
+Data availability
+The data, stimuli, and experimental codes will be posted at the Open
+Science Framework (https://osf.io/vt8wu/). This study was not
+preregistered.

@@ -1,0 +1,808 @@
+Introduction
+The retention of spatial information serves as a crucial component of
+working memory (WM), as demonstrated by influential works
+(Baddeley, 1992; Baddeley & Hitch, 1974; Logie, 1986; Mishkin &
+Ungerleider, 1982). Its impact extends to diverse domains of human
+cognition, including mathematical abilities (Caviola et al., 2020; Holmes
+et al., 2008), social cognition (Parkinson & Wheatley, 2013), and nav­
+igation (Blacker et al., 2017; Maguire et al., 1997; Weisberg & New­
+combe, 2016). Consequently, WM representations of spatial information
+have intrigued vast investigations, encompassing topics such as the role
+of space in feature binding within WM (e.g., Heuer & Rolfs, 2021;
+Pertzov & Husain, 2014; Schneegans & Bays, 2017), neural correlates
+associated with spatial representations in WM (e.g., Alekseichuk et al.,
+2016; Foster et al., 2017; Tamura et al., 2017), and factors influencing
+WM of spatial information (e.g., Brady & Tenenbaum, 2013; Huang,
+2023; Langlois et al., 2021). However, few studies have addressed a
+fundamental question: What is the format of spatial representations in
+WM, which governs how these representations are manipulated and
+utilized (but see Huttenlocher et al., 1991; Yousif et al., 2024). While
+these studies have provided preliminary evidence that spatial
+
+information is represented in polar coordinates within WM, it remains
+unclear whether this format is constant or flexible. Moreover, these
+studies have primarily focused on laboratory settings. Given the
+importance of WM spatial representations in real-life tasks such as
+navigation, and the potential differences in cognitive mechanisms be­
+tween laboratory and real-world tasks (Taylor-Phillips et al., 2024), it is
+necessary to explore their format in large-scale environments. To bridge
+these gaps, our study aims to investigate the WM format of spatial
+representations across both small-scale and large-scale environments.
+While various mathematical representations exist for spatial infor­
+mation, our study specifically focuses on two common formats: Carte­
+sian coordinates (x, y) and polar coordinates (angle, radius). A Cartesian
+reference frame represents spatial locations via orthogonal x and y di­
+mensions, providing an allocentric encoding of spatial relationship
+(Klatzky, 1998). In contrast, a polar reference frame encodes space
+based on a radial distance from a central origin point and an angular
+direction. This format naturally captures the egocentric spatial re­
+lationships experienced from a first-person perspective, with the ob­
+server’s current position serving as the reference origin (Klatzky, 1998).
+Recent research has highlighted the discernibility of these two formats
+through an analysis of the correlation of reproduction errors in the two
+
+* Corresponding author at: Department of Psychology, Sun Yat-sen University, Guangzhou, China.
+E-mail address: dingxw3@mail.sysu.edu.cn (X. Ding).
+https://doi.org/10.1016/j.jml.2024.104587
+Received 16 April 2024; Received in revised form 10 September 2024; Accepted 29 November 2024
+Available online 2 December 2024
+0749-596X/© 2024 Elsevier Inc. All rights are reserved, including those for text and data mining, AI training, and similar technologies.
+
+W. Chen et al.
+
+Journal of Memory and Language 141 (2025) 104587
+
+dimensions within the same coordinate system (Yousif & Keil, 2021;
+Yousif et al., 2024). The underlying rationale stems from the orthogo­
+nality of dimensions within both coordinate systems. Specifically, the
+noise sources for each underlying coordinate dimension are assumed to
+be uncorrelated. Thus, if observers employ a certain coordinate system
+to represent space, then unsigned errors in the two dimensions within
+that system should be independent or unrelated. For polar representa­
+tions, this analytical approach makes further assumptions that unsigned
+errors on the x and y axes will exhibit a significant correlation concur­
+rently. In contrast, the pattern of polar correlations predicted by Car­
+tesian representations depends on specific task details (Yousif et al.,
+2024). Thus, polar representations predict both correlated Cartesian
+errors and uncorrelated polar errors, whereas Cartesian representations
+predict only uncorrelated Cartesian errors. These assumptions are wellsupported by simulation analyses from previous research (Yousif & Keil,
+2021; Yousif et al., 2024), which confirm the validity of this approach. A
+similar analytical approach has also been applied to differentiate
+whether WM stores items as a bound unit or independent features (Bays
+et al., 2011). Remarkably, employing this error correlation analysis,
+researchers have discovered that spatial information defaults to being
+represented in polar coordinates within WM (Yousif et al., 2024).
+Additional evidence supporting the utilization of polar coordinates in­
+cludes findings from animal studies, where desert ants were revealed to
+navigate home by continuously updating their homing direction and
+distance (Sommer & Wehner, 2005; Wittlinger et al., 2006).
+Beyond these studies, an unresolved question is whether the repre­
+sentation of polar coordinates in WM is invariant or operates in a flexible
+way. Existing evidence seems to support the latter. For instance, in
+perception, Yousif and Keil (2021) found that participants’ mis­
+localizations were more consistent with the use of Cartesian coordinates
+under grid-like contexts, rather than polar coordinates. Furthermore,
+different spatial formats have been identified for representing different
+types of information or fulfilling different task demands (Hudson &
+Landy, 2012; Park et al., 2020; Peer et al., 2021; Yousif et al., 2024). In
+large-scale navigation tasks, task settings have also been revealed to
+influence the format of spatial representations (He & Brown, 2019; Peer
+et al., 2024). Additionally, researchers have proposed flexible or hybrid
+models that integrate the advantageous characteristics of both Euclidean
+and topological models for representing space (Chown et al., 1995;
+Kuipers, 2000; Mallot & Basten, 2009; Trullier et al., 1997). These
+findings collectively imply the flexible use of different spatial formats in
+WM. To directly examine the flexibility of spatial representations in
+WM, the current study implemented distinct memory contexts. We
+examined whether the formats of spatial information varied across these
+contexts by employing error correlation analysis. Crucially, we inde­
+pendently manipulated contexts during encoding and retrieval stages to
+determine the critical stage that governs the utilization of divergent
+representation formats.
+Moreover, considering the practical implications of spatial infor­
+mation in WM, particularly in navigation, arises the question of how
+such information is represented in large-scale real-world environments.
+While much spatial WM research has been confined to laboratory set­
+tings, where encoding and retrieval occur within a limited area on a
+computer screen, real-world navigation often involves transitions across
+different scales. For instance, in a typical navigation task, individuals
+must first memorize spatial locations on a small-scale 2D map and then
+locate the target within a larger-scale real-world setting. It remains
+uncertain whether spatial information retains its representation as polar
+coordinates during this process. Relevant to this issue, massive studies
+have examined the structure of spatial knowledge in long-term memory
+used for navigation in large-scale spatial systems. Nevertheless, ongoing
+debates persist, with various proposals being put forward. One such
+proposal is the Euclidean cognitive map, which is akin to Cartesian co­
+ordinates (Jacobs et al., 2013; Maidenbaum et al., 2018; O’Keefe &
+Nadel, 1978; Siegel & White, 1975). Another proposal is the theory of a
+network-like cognitive graph, which emphasizes angle and distance
+
+information, resembling polar coordinates (Kuipers, 1978; Warren,
+2019; Warren et al., 2017). To investigate whether spatial information
+encoded in a small-scale environment automatically translates into polar
+coordinates for navigation in a larger-scale environment, the current
+study employs virtual reality (VR) technology to simulate navigation
+environment. Through the error correlation analysis, we directly
+examine the representation formats of space in large-scale WM. Addi­
+tionally, this study examines the flexibility of representation formats.
+For that in the large-scale VR environment, participants are unable to
+accurately perceive the full scope of the terrain context, and the grid
+appears distorted from the participant’s first-person perspective, we did
+not examine the influence of context. Instead, we drew inspirations from
+prior research (Yousif et al., 2024), which found that the format of
+presented information (direct vs. indirect) influenced the representation
+format adopted in motor WM. Specifically, we examined how the
+response type (direct vs. indirect) modulated the format of spatial rep­
+resentations by manipulating participants to reproduce the spatial lo­
+cations freely or indirectly within the large-scale scenario.
+Taken together, to investigate the WM format of spatial representa­
+tions in small and large environments, we conducted a series of exper­
+iments. Participants were tasked with reproducing target locations
+presented either on a computer screen (small-scale, Experiments 1, 2,
+3A, and 3B) or within a VR environment (large-scale, Experiments 4A
+and 4B) after memorizing these locations on a 2D display. Experiment 1
+investigated the default format of spatial representations in small-scale
+WM by manipulating memory contexts as blank. While in Experiment
+2, we examined the flexibility of spatial representations by manipulating
+memory contexts as grid-like. Furthermore, we independently manipu­
+lated memory contexts during encoding (Experiment 3A) and response
+phases (Experiment 3B) to determine the critical stages that govern the
+utilization of divergent representation formats. Experiment 4 utilized a
+VR environment to simulate navigation tasks in large-scale real-world
+settings. By manipulating participants’ navigation methods to either
+freely (Experiment 4A) or indirectly (Experiment 4B) reach the target
+location, we investigated the potential flexibility of representation for­
+mats in large-scale spatial memory tasks.
+Data availability
+All data have been made publicly available via Open Science
+Framework and can be accessed at https://osf.io/ubkym/.
+Experiment 1: The default format of spatial representation in
+small-scale WM
+Experiment 1 employed blank memory contexts (Fig. 1A) to inves­
+tigate how spatial information is represented in WM by default. Our aim
+was to determine whether participants’ patterns of errors were more
+consistent with polar or Cartesian coordinates.
+Methods
+Participants. Twenty volunteers (11 males and 9 females, aged
+18–24) from Sun Yat-sen University participated in this experiment for
+payment. All participants were all right-handed and reported normal or
+corrected-to-normal visual acuity. The sample size was determined a
+priori based on PANGEA (Westfall, 2016). Based on similar designs from
+prior studies (Yousif & Keil, 2021; the polar correlation vs. the Cartesian
+correlation in Experiment 1a; Cohen’s d = 1.62), we anticipated an ef­
+fect size (Cohen’s d) of 1.62 for paired t-tests in our experimental setup.
+To achieve at least 95 % power for the effect of paired t-tests at a sig­
+nificance level of 0.05, a suggested sample size of 16 was calculated. We
+recruited twenty participants for Experiment 1 to ensure robust statis­
+tical power.
+Before participation, all individuals provided signed informed con­
+sent. The study received approval from the Research Ethics Board of Sun
+2
+
+W. Chen et al.
+
+Journal of Memory and Language 141 (2025) 104587
+
+Fig. 1. Experimental conditions and procedures in Experiments 1-3B. A. Memory context manipulation: Experiment 1 employed blank memory contexts during both
+encoding and response phases, while Experiment 2 utilized grid-like contexts in both phases. Experiment 3A exclusively introduced grid-like contexts during the
+encoding phase, whereas Experiment 3B introduced them solely during the response phase. B. Experimental task description: Participants were required to remember
+the positions of three shapes first. After a 1000 ms blank interval, the fixation reappeared. Participants should click the left mouse button twice, and then reproduce
+the positions of the three shapes serially through mouse.
+
+Yat-sen University and was conducted in accordance with the approved
+guidelines.
+Stimuli and apparatus. The experiment was programmed in Python
+with the PsychoPy libraries (Peirce et al., 2019). The experimental
+stimuli were presented on a 27-inch LCD monitor (resolution: 2560 ×
+1440, refresh rate: 60 Hz) against a grey background (RGB: 128, 128,
+128). Participants’ viewing distance from the screen was approximately
+57 cm.
+The memory stimuli consisted of three shapes − a red square, a blue
+circle, and a green triangle, each with a radius of 0.36◦ . For each trial,
+the positions of these three shapes were randomly selected within a
+range of 4.48◦ horizontally and 4.48◦ vertically relative to the center of
+the screen. Besides, a constraint was imposed that the distance between
+any two shapes should be more than 1.25◦ .
+Procedure and Experimental design. The experimental procedure
+was depicted in Fig. 1B. After a 500 ms fixation period, a memory
+display featuring three shapes appeared for 800 ms. Participants were
+instructed to memorize the positions of these three shapes. Following a
+1000 ms blank interval, the fixation reappeared, prompting participants
+to click the left mouse button to make the mouse cursor (x) visible.
+Subsequently, participants should click the left mouse button again,
+causing one randomly chosen shape to appear at the mouse location.
+Their task was to place the shape to its corresponding position in the
+
+memory display by clicking the left mouse button. This process can be
+repeated multiple times until the right mouse button was clicked, indi­
+cating a locked response. Participants then proceeded to click the left
+mouse button again to make another memory shape visible and repro­
+duce its position in the same manner. The trial ended after all three
+shapes have been responded to. Each response must be completed
+within 14 s. Otherwise, this trial was skipped, and a warning message
+was displayed, urging participants to respond more quickly in the later
+responses. Skipped trials would be randomly interleaved into subse­
+quent trials.
+Each participant completed 192 trials, distributed randomly across
+six blocks. Before formal trials, participants underwent 10–15 practice
+trials to familiarize themselves with the procedure. The entire task took
+approximately 50 min.
+Data analysis. The first, second and last responses were analyzed
+separately. Responses with reproduction errors (calculated as Euclidean
+distance between the target and reported position) exceeding +/- 3
+standard deviations (SD) from the participant’s mean error were
+excluded from subsequent analyses. We mainly focused on the correla­
+tion between the absolute errors in the constitutive dimensions within
+each coordinate system. Consequently, correlations were calculated
+between the absolute errors in the x and y dimensions, as well as be­
+tween the absolute errors in the angle and distance dimensions, for each
+3
+
+W. Chen et al.
+
+Journal of Memory and Language 141 (2025) 104587
+
+participant. These two correlation values were then respectively
+compared to 0 using one-sample t-tests. Additionally, a paired t-test was
+conducted to compare the two correlation values.
+
+persistently support the advantageous role of polar representations in
+WM under default conditions.
+Experiment 2: The flexibility of spatial representation formats in
+small-scale WM
+
+Results & discussion
+1.6 % of responses were removed due to reproduction errors
+exceeding +/- 3 standard deviations (SD) from the mean error of each
+participant.
+First responses: Analysis of the first responses revealed a significant
+correlation solely between the absolute errors in the x and y dimensions
+(r = 0.16; t(19) = 5.19, p < .001, Cohen’s d = 1.16, 95 % CI for the mean
+= [0.094, 0.222]). In contrast, the correlation between the absolute
+errors in the angle and distance dimensions was insignificant (r = 0.03; t
+(19) = 1.36, p = .189, Cohen’s d = 0.30, 95 % CI for the mean = [-0.018,
+0.083]). Notably, a significant discrepancy emerged between these
+correlation values (r = 0.13; t(19) = 5.02, p < .001, Cohen’s d = 1.12,
+95 % CI for the mean = [0.073, 0.178]).
+Second and Third responses: In both second and third responses,
+significant correlations were observed for Cartesian errors (Second: r =
+0.29, t(19) = 7.72, p < .001, Cohen’s d = 1.73, 95 % CI for the mean =
+[0.214, 0.373]; Third: r = 0.26, t(19) = 7.11, p < .001, Cohen’s d = 1.59,
+95 % CI for the mean = [0.181, 0.333]). Polar errors also exhibited
+significant correlations (Second: r = 0.11, t(19) = 3.60, p = .002,
+Cohen’s d = 0.81, 95 % CI for the mean = [0.045, 0.170]; Third: r =
+0.07, t(19) = 2.43, p = .025, Cohen’s d = 0.54, 95 % CI for the mean =
+[0.010, 0.129]), which were significantly smaller than those in Carte­
+sian dimensions (Second: r = 0.19, t(19) = -7.82, p < .001, Cohen’s d =
+-1.75, 95 % CI for the mean difference = [-0.236, − 0.136]; Third: r =
+0.19, t(19) = -6.18, p < .001, Cohen’s d = -1.38, 95 % CI for the mean
+difference = [-0.252, − 0.124]) (see Fig. 2).
+These results indicate that, particularly in the first responses, par­
+ticipants spontaneously adopted polar coordinates to represent spatial
+information, consistent with previous findings (Yousif et al., 2024).
+However, in the case of the last two responses, we still observed small
+correlations in polar dimensions. This could be attributed to the incon­
+sistent anchoring behavior exhibited by certain participants when
+reproducing the positions of the second and third targets. They may
+have employed the first responses as the anchor points in some trials,
+deviating from the expected anchoring at the center point. Conse­
+quently, the polar errors calculated based on the center point were
+highly correlated for these participants, who were likely to be the out­
+liers shown in Fig. 2. Nonetheless, the larger Cartesian correlations
+
+Experiment 1 replicated previous findings that in tasks with minimal
+intervening spatial structure, participants’ error patterns aligned more
+with the use of polar coordinate representations. However, the critical
+question remained: Is spatial format fixed, or does it adapt based on the
+provided spatial layout and reference frame. To address this, in Exper­
+iment 2, we drew inspirations from the manipulation employed in the
+prior research (Yousif & Keil, 2021). Specifically, we structured the
+memory context as a grid-like environment (Fig. 1A) that strongly
+implied a Cartesian system, aiming to determine whether spatial rep­
+resentations in WM would remain in polar coordinates under such a
+context.
+Methods
+Another group of twenty volunteers (7 males and 13 females, aged
+18–24) from Sun Yat-sen University participated in Experiment 2. The
+sample size determination followed a similar approach to that of
+Experiment 1. The whole task took approximately 50 min.
+The procedures in Experiment 2 closely paralleled those in Experi­
+ment 1, with a few key distinctions. Specifically, the memory contexts
+during both the encoding and response phases were configured in a grid
+pattern, contrasting Experiment 1′s utilization of blank memory
+contexts.
+Results & discussion
+2.7 % of responses were removed due to reproduction errors
+exceeding +/- 3 standard deviations (SD) from the mean error of each
+participant. Across all responses, only the correlations in polar di­
+mensions exhibited significance (First: 0.20, t(19) = 11.15, p < .001,
+Cohen’s d = 2.49, 95 % CI for the mean = [0.165, 0.242]; Second: 0.15, t
+(19) = 6.62, p < .001, Cohen’s d = 1.48, 95 % CI for the mean = [0.104,
+0.200]; Third: 0.14, t(19) = 5.47, p < .001, Cohen’s d = 1.22, 95 % CI for
+the mean = [0.088, 0.198]). In contrast, the correlations in Cartesian
+dimensions were not statistically significant (First: 0.03, t(19) = 1.82, p
+= .085, Cohen’s d = 0.41, 95 % CI for the mean = [-0.005, 0.070];
+Second: 0.04, t(19) = 1.96, p = .065, Cohen’s d = 0.44, 95 % CI for the
+
+Fig. 2. The results in Experiment 1. The correlation values were separately calculated for each response (first, second, and third) and coordinate system (Cartesian and
+polar). The black triangles represented group mean, while error bars indicating the within-subject 95 % confidence intervals. The smaller white dots represented the
+results of each participant. ‘*’ represented the significance of the data comparing to zero or paired t-tests. n.s. > .05, *p < 0.05, **p < 0.005, ***p < .001.
+4
+
+W. Chen et al.
+
+Journal of Memory and Language 141 (2025) 104587
+
+0.15, t(19) = 4.97, p < .001, Cohen’s d = 1.11, 95 % CI for the mean =
+[0.084, 0.207]; Third: 0.17, t(19) = 6.43, p < .001, Cohen’s d = 1.44, 95
+% CI for the mean = [0.113, 0.223]); Polar: First: 0.08, t(19) = 2.91, p =
+.009, Cohen’s d = 0.65, 95 % CI for the mean = [0.022, 0.136]; Second:
+0.10, t(19) = 5.38, p < .001, Cohen’s d = 1.20, 95 % CI for the mean =
+[0.063, 0.143]; Third: 0.07, t(19) = 2.62, p = .017, Cohen’s d = 0.59, 95
+% CI for the mean = [0.013, 0.121]). In contrast to the results in
+Experiment 1, the two correlations did not differ from each other
+significantly in the first two responses (First: 0.03, t(19) = 0.95, p =
+.355, Cohen’s d = 0.21, 95 % CI for the mean difference = [-0.037,
+0.099]; Second: 0.04, t(19) = 1.43, p = .168, Cohen’s d = 0.32, 95 % CI
+for the mean difference = [-0.019, 0.104]; Third: 0.10, t(19) = 3.36, p =
+.003, Cohen’s d = 0.75, 95 % CI for the mean difference = [0.038,
+0.164]) (Fig. 4).
+The results indicate that the introduction of a grid-like context dur­
+ing the encoding phase may potentially induce a change in the spatial
+representation format adopted by participants, even though these results
+neither align with the predictions of the Cartesian representations nor
+the predictions of the polar representations.
+A cross-experiment analysis between Experiments 1 and 3A: To
+further confirm the effects of solely introducing grid-like memory con­
+texts during the encoding phase, we selected the first responses as a
+typical example and conducted a cross-experiment analysis comparing
+Experiments 1 and 3A. The results revealed a significant interaction
+between memory context and coordinate system (Interaction: F(1, 38) =
+5.28, p = .027, ηp2 = 0.12; Context: F(1, 38) < 0.001, p = .991, ηp2 <
+0.001; Coordinate system: F(1, 38) = 14.46, p < .001, ηp2 = 0.28),
+indicating a degree of change in the representation format.
+Experiment 3B: 1.4 % of responses were removed due to repro­
+duction errors exceeding +/- 3 standard deviations (SD) from the mean
+error of each participant. Similar to the results in Experiment 1, across
+all responses, only Cartesian correlations exhibited significance (Carte­
+sian: First: 0.16, t(19) = 4.50, p < .001, Cohen’s d = 1.01, 95 % CI for the
+mean = [0.084, 0.231]; Second: 0.19, t(19) = 5.66, p < .001, Cohen’s d
+= 1.27, 95 % CI for the mean = [0.121, 0.264]; Third: 0.18, t(19) = 5.41,
+p < .001, Cohen’s d = 1.21, 95 % CI for the mean = [0.109, 0.247]);
+Polar: First: − 0.02, t(19) = -0.78, p = .448, Cohen’s d = 0.17, 95 % CI for
+the mean = [-0.062, 0.028]; Second: 0.03, t(19) = 1.30, p = .208,
+Cohen’s d = 0.29, 95 % CI for the mean = [-0.030, 0.084]; Third: 0.02, t
+(19) = 1.01, p = .323, Cohen’s d = 0.23, 95 % CI for the mean = [-0.026,
+0.074]). And the Cartesian correlations were significantly larger than
+polar correlations (First: 0.18, t(19) = 5.26, p < .001, Cohen’s d = 1.18,
+95 % CI for the mean difference = [0.105, 0.244]; Second: 0.16, t(19) =
+4.82, p < .001, Cohen’s d = 1.08, 95 % CI for the mean difference =
+
+mean = [-0.003, 0.090]; Third: 0.04, t(19) = 1.88, p = .076, Cohen’s d =
+0.42, 95 % CI for the mean = [-0.005, 0.092]). The correlation values in
+Cartesian dimensions were consistently and significantly smaller
+compared to those observed in polar dimensions (First: − 0.17, t(19) =
+-8.00, p < .001, Cohen’s d = 1.79, 95 % CI for the mean difference =
+[-0.216, − 0.126]; Second: − 0.11, t(19) = -3.04, p = .007, Cohen’s d =
+0.68, 95 % CI for the mean = [-0.183, − 0.034]; Third: − 0.10, t(19) =
+-2.67, p = .015, Cohen’s d = 0.60, 95 % CI for the mean = [-0.178,
+− 0.022]) (Fig. 3).
+These findings provide evidence that participants tend to adopt a
+Cartesian representation format in grid-like contexts, suggesting a flex­
+ibility in their capacity to utilize distinct spatial representation formats
+contingent upon the characteristics of the memory context.
+Experiment 3: The decisive stage of transitions in spatial
+representation format within small-scale WM
+The results of Experiment 2 revealed the flexible nature of spatial
+representations in WM. In Experiment 3, we aimed to pinpoint the
+critical stage that determines whether participants adopt a polar or
+Cartesian representation. To do this, Experiment 3 consisted of two subexperiments. In Experiment 3A, only the encoding phase featured a grid
+pattern in the memory background, while in Experiment 3B, this pattern
+was introduced solely during the response phase.
+Methods
+Two separate groups of twenty new volunteers from Sun Yat-sen
+University participated in Experiment 3A (10 males and 10 females,
+aged 18–24) and Experiment 3B (8 males and 12 females, aged 18–23)
+respectively. The sample size determination followed a similar approach
+to that of Experiment 1.
+The experimental procedures were similar to Experiment 1, except
+for that the memory contexts during either the encoding or response
+phases were configured in a grid pattern. Each task took approximately
+50 min.
+Results & discussion
+Experiment 3A: 1.6 % of responses were removed due to repro­
+duction errors exceeding +/- 3 standard deviations (SD) from the mean
+error of each participant. Both Cartesian errors and polar errors
+exhibited reliable correlations (Cartesian: First: 0.11, t(19) = 3.50, p =
+.002, Cohen’s d = 0.78, 95 % CI for the mean = [0.044, 0.176]; Second:
+
+Fig. 3. The results in Experiment 2. The correlation values were separately calculated for each response (first, second, and third) and coordinate system (Cartesian and
+polar). The black triangles represented group mean, while error bars indicating the within subject 95 % confidence intervals. The smaller white dots represented the
+results of each participant. ‘*’ represented the significance of the data comparing to zero or paired t-tests. n.s. > .05, *p < 0.05, **p < 0.005, ***p < .001.
+5
+
+W. Chen et al.
+
+Journal of Memory and Language 141 (2025) 104587
+
+Fig. 4. The results in Experiment 3A and 3B. The correlation values were separately calculated for each response (first, second, and third) and coordinate system
+(Cartesian and polar). The black triangles represented group mean, while error bars indicating the within subject 95 % confidence intervals. The smaller white dots
+represented the results of each participant. ‘*’ represented the significance of the data comparing to zero or paired t-tests. n.s. > .05, *p < 0.05, **p < 0.005, ***p
+< .001.
+
+[0.091, 0.230]; Third: 0.15, t(19) = 4.14, p < .001, Cohen’s d = 0.93, 95
+% CI for the mean difference = [0.076, 0.232]) (Fig. 4). These results
+demonstrate that space is still represented in polar coordinates when
+only the memory context during the response phase is configured as a
+grid pattern.
+A cross-experiment analysis between Experiments 1 and 3B:
+Similarly, to further confirm the effects of solely introducing grid-like
+memory contexts during the response phase, we selected the first re­
+sponses as a typical example and conducted a cross-experiment analysis
+comparing Experiments 1 and 3B. The results revealed an insignificant
+interaction between memory context and coordinate system (Interac­
+tion: F(1, 38) = 1.40, p = .243, ηp2 = 0.04; Context: F(1, 38) = 0.52, p =
+.475, ηp2 = 0.013; Coordinate system: F(1, 38) = 52.05, p < .001, ηp2 =
+0.58), indicating no change in the representation format.
+Combined with the results in previous two sub-experiments, Exper­
+iment 3 illustrates the constrained flexibility of spatial representations in
+WM. Specifically, the dominance of a Cartesian coordinate system for
+representing spatial information is only observed when both the
+encoding and response phases are configured as a grid-like memory
+context. Notably, the encoding phase appears to play a more crucial role
+in determining the spatial representation format, whereas the response
+phase seems to have little influence on the representation format.
+
+investigate the representation format of spatial information in smallscale WM. In Experiment 4, we employed virtual reality (VR) technol­
+ogy to further examine how space was represented in large-scale WM.
+Results from previous experiments suggested that the use of polar co­
+ordinates was context-dependent. In grid-like environments that sug­
+gested a more Cartesian structure, error patterns aligned with Cartesian
+coordinates. Therefore, in the current experiment, we also examined the
+flexibility of spatial representation format in large-scale WM. To address
+this, participants were required to complete a spatial localization task
+similar to Experiment 1, but in a VR environment. Given the distortion of
+grid structure experienced from a first-person perspective within the VR
+environment, we subsequently employed an alternative manipulation
+approach. Drawing inspirations from Yousif et al. (2024), we examined
+the influence of two distinct response types in separate sub-experiments.
+In Experiment 4A, participants were asked to directly navigate to the
+target location during the response phase. In Experiment 4B, partici­
+pants were required to navigate horizontally and then vertically (or vice
+versa) to the target location during the response phase.
+Methods
+Participants. Two separate groups of twenty new volunteers from
+Sun Yat-sen University participated in Experiment 4A (10 males and 10
+females, aged 18–24) and Experiment 4B (8 males and 12 females, aged
+18–23) respectively. All participants were right-handed and reported
+normal or corrected-to-normal visual acuity. The sample size was
+determined in the similar manner as Experiment 1.
+
+Experiment 4: The flexibility of spatial representations in largescale WM
+Experiments 1-3B were conducted in laboratory settings to
+6
+
+W. Chen et al.
+
+Journal of Memory and Language 141 (2025) 104587
+
+Before participation, all individuals provided signed informed con­
+sent. The study received approval from the Research Ethics Board of Sun
+Yat-sen University and was conducted in accordance with the approved
+guidelines.
+
+Stimuli and apparatus. The experiment was implemented using
+Unity software (Peirce et al., 2019). Participants were positioned at a
+stationary location and equipped with a joystick and an HTC Vive headmounted display. SteamVR was utilized to enable the access and
+
+Fig. 5. Experimental conditions and procedures in Experiment 4. A. VR environment: Experiment 4 utilized a square area as the VR environment, enclosed by four walls.
+The north wall was colored red, while the south wall was colored blue. The left panel illustrated the top view of the VR environment, and the right panel depicted the
+first-person perspective from the reset position within the VR environment. The top image in the right panel showed the absence of a grid-like pattern, while the
+bottom one showed the VR environment configured with a grid pattern. B. Experimental task description: Participants were first reset to the center of the VR
+environment. Subsequently, they were presented with a map and were required to memorize the position of the red target on this map. After a 1000 ms blank
+interval, participants should manipulate a joystick to move to the corresponding location of the target within the current VR environment. During practice trials, a
+while cube would appear at the correct target position to aid navigation, while no cube would be present during the normal trials. (For interpretation of the ref­
+erences to color in this figure legend, the reader is referred to the web version of this article.)
+7
+
+W. Chen et al.
+
+Journal of Memory and Language 141 (2025) 104587
+
+interaction with virtual reality contents.
+The VR environment employed in Experiment 4 consisted of a square
+area enclosed by four walls (150 m × 150 m). In order to facilitate the
+differentiation of directions, the north wall was colored red, while the
+south wall was colored blue. And the center of the VR environment was
+marked as a red circle. Notably, in Experiment 4B, the terrain within the
+VR environment was gridded to assist participants in indirectly navi­
+gating to the target locations (Fig. 5A). Target locations in each trial
+were randomly generated within a range of 11.25 m to 63.75 m hori­
+zontally and vertically from the central point.
+Experimental design and procedure. The experimental procedure
+is depicted in Fig. 5B. Prior to the start of each trial, participants’ po­
+sitions were reset to the center of the current environment, corre­
+sponding to the location of the central cross on the map, and their
+orientations were reset to face northward. In each trial, a square map
+composed of a central cross and a red circle as the memory target was
+presented for 1000 ms. Participants were instructed to memorize the
+position of the target. After a blank interval of 1000 ms, participants
+were required to manipulate a joystick to move to the corresponding
+location of the target within the current VR environment. The distinc­
+tion between Experiments 4A and 4B lay in the participants’ movement
+constraints: in Experiment 4A, participants had unrestricted movement,
+whereas in Experiment 4B, the terrain within the VR environment was
+gridded, and participants were directed to navigate along the grid lines.
+The entire trajectories of participants in each trial were recorded.
+Each participant completed a total of 192 trials, distributed
+randomly across four blocks. Before formal trials, participants under­
+went 10–15 practice trials to familiarize themselves with the procedure.
+During these practice trials, a white cube would appear at the correct
+target position in the VR environment during the response phase,
+serving as a navigation aid—an element absent in the subsequent
+normal trials. On average, each task session lasted approximately 60
+min.
+Data analysis. To unify the unit of distance between the map and the
+VR environment, we first normalized the distances by dividing them by
+the corresponding maximum possible values in each respective context
+(map size/2 or terrain size/2). Other analyses followed the same pro­
+cedures as those employed in previous experiments.
+
+Fig. 6. The results in Experiment 4. The correlation values were separately
+calculated for each response type (direct and indirect) and coordinate system
+(Cartesian and polar). The black triangles represented group mean, while error
+bars indicating the within subject 95 % confidence intervals. The smaller white
+dots represented the results of each participant. ‘*’ represented the significance
+of the data comparing to zero or paired t-tests. n.s. > .05, ***p < .001.
+
+predictions of both hypothesized representation formats. However,
+previous research (Yousif et al., 2024) demonstrated that the pattern of
+results generated by polar representation was highly robust, with
+correlated Cartesian errors and uncorrelated polar errors. Conversely,
+the pattern of results produced by Cartesian representations depended
+on specific task details. Actually, the results in Experiment 4B were
+consistent with the simulation analysis of Cartesian representations
+using the actual noise estimated from Experiment 4B. Specifically, this
+analysis revealed insignificant correlations for both coordinate systems
+(see supplementary results). However, caution should be taken when
+interpreting these results. Nevertheless, we can at least conclude that the
+manner of response affected the representation format of spatial infor­
+mation in large-scale WM.
+A cross-experiment analysis between Experiments 4A and 4B: To
+further verify the flexibility of spatial information formats in large-scale
+WM, we conducted a cross-experiment comparison between Experi­
+ments 4A and 4B. The results revealed a significant interaction between
+response type and coordinate system (Interaction: F(1, 38) = 6.93, p =
+.012, ηp2 = 0.15; Response type: F(1, 38) = 7.59, p = .009, ηp2 = 0.17;
+Coordinate system: F(1, 38) = 13.26, p < .001, ηp2 = 0.26), indicating
+the presence of flexible utilization of spatial representation formats
+which is dependent on the response type (Fig. 6).
+In summary, the results in Experiment 4 indicate that akin to smallscale WM, space is also represented in polar coordinate system in largescale WM by default, despite involving transitions of spatial information
+across different scales in WM. Moreover, the representation formats of
+space in large-scale WM are flexible as well, which are notably influ­
+enced by the specific response requirements.
+
+Results & discussion
+Experiment 4A: 1.6 % of responses were removed due to repro­
+duction errors exceeding +/- 3 standard deviations (SD) from the mean
+error of each participant or RT exceeding 15 s. By examining the entire
+trajectories of participants, we found that all participants navigated to
+the target position directly in all trials. Only Cartesian correlations were
+significant (0.15; t(19) = 5.00, p < .001, Cohen’s d = 1.12, 95 % CI for
+the mean = [0.090, 0.219]). In contrast, polar correlations were not
+significant (− 0.01; t(19) = -0.38, p = .705, Cohen’s d = -0.09, 95 % CI
+for the mean = [-0.061, 0.042]), which were smaller than Cartesian
+correlations (− 0.16, t(19) = -3.77, p = .001, Cohen’s d = -0.84, 95 % CI
+for the mean difference = [-0.254, − 0.073]) (Fig. 6).
+These results demonstrate that, consistent with laboratory findings,
+spatial information in large-scale environment is also represented in
+polar coordinates by default within WM.
+Experiment 4B: 3.9 % of responses were removed due to repro­
+duction errors exceeding +/- 3 standard deviations (SD) from the mean
+error of each participant or RT exceeding 15 s. The entire trajectories of
+participants showed that as requested, participants indeed navigated to
+the target position indirectly. Both Cartesian correlations and polar
+correlations were insignificant (Cartesian: 0.02, t(19) = 0.84, p = .409,
+Cohen’s d = 0.19, 95 % CI for the mean = [-0.032, 0.075]; Polar: − 0.01,
+t(19) = -0.31, p = .759, Cohen’s d = 0.07, 95 % CI for the mean =
+[-0.036, 0.027]). And these two correlations were not significantly
+different (0.03, t(19) = 0.91, p = .375, Cohen’s d = 0.20, 95 % CI for the
+mean difference = [-0.034, 0.087]). This pattern deviated from the
+
+Discussion
+By utilizing error correlation analysis, the current study uncovered
+the WM format of spatial representations within both small and large
+environments. In Experiments 1–3, participants were tasked with
+reproducing previously memorized locations of three targets. The results
+in Experiment 1 aligned with prior research (Yousif et al., 2024),
+affirming that participants spontaneously employed polar coordinates to
+represent space within WM in small-scale environments. These findings
+also validated the error correlation analysis. Consistent with previous
+research (Yousif & Keil, 2021), Experiment 2 revealed the utilization of a
+8
+
+W. Chen et al.
+
+Journal of Memory and Language 141 (2025) 104587
+
+Cartesian representation format in grid-like contexts, indicating the
+flexible nature of spatial representations within WM. Furthermore,
+when introducing a grid pattern solely in the encoding phase (Experi­
+ment 3A), the results did not align with predictions of either Cartesian or
+polar representations. Conversely, when grid-like contexts were intro­
+duced solely during the response phase (Experiment 3B), spatial repre­
+sentation remained predominantly in polar coordinates. These results
+demonstrated that the changes in representation format were driven by
+the combined influence of context modifications during both the
+encoding phase and the response phase. Specifically, changes to the
+context during the encoding phase alone elicit moderate modifications
+to the format of spatial representations. In contrast, changes solely to the
+response phase context have minimal impact on altering the represen­
+tation format.
+In Experiment 4, participants initially memorized the target’s posi­
+tion on a map, and then navigate to the corresponding target position in
+a VR environment. In unconstrained situations, polar representations
+were employed by default (Experiment 4A). Conversely, when partici­
+pants were constrained to navigate indirectly to the target position, they
+adopted Cartesian coordinates to represent space (Experiment 4B).
+Overall, these findings provide compelling evidence supporting the
+prevalence of polar representations in WM for spatial information across
+both small and large environments. Moreover, these polar representa­
+tions exhibit considerable flexibility. Specifically, in laboratory settings
+where both the encoding and response phases incorporate grid-like
+memory backgrounds, or in large-scale environments where partici­
+pants are required to indirectly reproduce locations, Cartesian repre­
+sentations are employed.
+Although numerous studies have explored WM representations, little
+research has specifically addressed how spatial information is repre­
+sented in WM. Typically, current investigations either conflate spatial
+information with other visual stimuli or emphasize its unique role in
+representing other features. In the classic debate over whether WM
+stores independent or hierarchical representations, locations are treated
+similarly to other features. Traditional theories assume that items are
+stored independently in WM (Adam et al., 2017; Luck & Vogel, 1997;
+Zhang & Luck, 2008). However, recent evidence challenges this notion.
+For example, Brady and Alvarez (2011) found that participants’ memory
+for the size of a circle was biased toward the average size of circles of the
+same color. This led to the hierarchical encoding model, which posits
+that WM operates on multi-tiered displays that integrate objects and
+ensembles (Brady & Alvarez, 2011; Brady & Alvarez, 2015; Utochkin &
+Brady, 2020). Since then, numerous studies have provided support for
+the hierarchical representation theory by adopting various features like
+orientation and color (Oh et al., 2019; Son & Chong, 2023; Son et al.,
+2020). Similarly, researchers have also utilized locations as experi­
+mental material solely to furnish additional evidence for this theory
+(Brady & Tenenbaum, 2013; Lew & Vul, 2015).
+In the ongoing debate about the basic unit of WM, spatial informa­
+tion has been suggested to play a crucial role in representing other
+features. The object-based theory posits that WM stores features as in­
+tegrated objects, with non-spatial features automatically binding to
+specific locations (Balaban & Luria, 2017; Kondo & Saiki, 2012; Luck &
+Vogel, 1997). However, some findings challenge this theory. For
+instance, some studies have reported a modest decline in accuracy when
+additional features are included (Oberauer & Eichenberger, 2013;
+Hardman & Cowan, 2015). This has led to an alternative theory sug­
+gesting that features are the basic units of WM. In this framework, lo­
+cations seem to hold a unique status as well. Researchers employing
+surprise tests have found that recall accuracy for non-spatial features
+drops to chance levels when they are task-irrelevant (Chen & Wyble,
+2016; Wyble et al., 2019). In contrast, task-irrelevant locations can still
+be robustly recalled (Chen & Wyble, 2015; Foster et al., 2017). The
+recently proposed Boolean map theory further emphasizes the critical
+role of spatial information, positing that WM represents spatial occu­
+pancy as Boolean maps and all features within a single map can be
+
+simultaneously processed (Huang, 2020).
+In sum, our study enriches the theoretical understanding of WM by
+focusing on the specific representation format of spatial information.
+This contributes to a better understanding of how spatial information is
+encoded and represented, thereby advancing theoretical models of WM.
+Additionally, our research aids in creating training programs to improve
+spatial information processing skills (e.g., navigation, map usage) and
+provides a foundation for optimizing spatial information representation
+in fields such as VR and human–computer interaction.
+Our study contributes to the understanding of spatial information
+representation within WM compared to Yousif et al. (2024) in two key
+ways. Firstly, building upon their work, our study further explored the
+flexibility of spatial representation formats and elucidated the deter­
+mining stages that governed the utilization of divergent representation
+formats. This deepens our understanding of the inherent nature of
+spatial representation formats in WM. Specifically, how spatial infor­
+mation is represented depends on task demands and which format is
+more conducive to task completion within the given situation or task.
+Secondly, our study extended beyond a laboratory computer setting to a
+large-scale VR environment to investigate this issue, given the practical
+significance of spatial representations. The results revealed that despite
+involving transitions of spatial information across different scales, the
+default representation remained in polar coordinates, while also
+demonstrating flexible utilizations depending on task demands.
+Besides, these findings are in line with previous studies on mis­
+localizations, suggesting the prevalence of polar representations in
+cognitive processes involving spatial information. For instance, Yousif
+et al. (2020) demonstrated distinct sensitivities to deviations in the
+angle dimension across different regions when participants judged
+whether the positions of two dots within separate shapes were matched.
+Conversely, no region-specific sensitivities were observed in the distance
+dimension. These findings imply independent perceptual judgments of
+spatial location within the polar coordinate system, highlighting the
+utilization of polar representations in spatial perception. Similarly, ev­
+idence for polar representations emerged in large-scale spatial naviga­
+tion tasks (Chrastil & Warren, 2014; Ericson & Warren, 2020; Warren,
+2019). Additionally, studies on motor actions have identified a reliance
+on polar coordinates as well (Flanders et al., 1992; Gordon et al., 1994).
+In contrast to previous studies, our work quantitatively demonstrated
+polar representations of space within WM in both small and large con­
+texts by analyzing error correlations across different dimensions.
+Moreover, we presented an alternative hypothesis of polar representa­
+tions, specifically Cartesian representations, and conducted a compari­
+son between the two through this error correlation analysis.
+Collectively, these findings suggest the general applicability of polar
+coordinates in various spatial information processes domains.
+Moreover, our study advances the understanding of how we repre­
+sent spatial information within WM in the context of natural behavior.
+Recently, with the increasing emphasis on ecological validity in exper­
+iments, VR has been widely adopted to investigate visual search and
+spatial navigation (e.g., Draschkow & Võ, 2016; Helbing et al., 2020;
+Igloi et al., 2010; Kit et al., 2014; Warren et al., 2017). However, the use
+of VR in studying WM has been limited (but see Draschkow et al., 2021;
+Draschkow et al., 2022). In this study, we utilized VR technology to
+simulate a real-life task that requires the utilization of WM spatial rep­
+resentations. The results showed that in this immersive WM task, spatial
+information is still represented in polar coordinates and is influenced by
+the response type. Our study combines methodological rigor and
+ecological validity, revealing the consistency of spatial WM represen­
+tation formats between real-life and laboratory environments, as well as
+the flexibility of cognitive systems in real-world settings. These findings
+provide valuable insights for future endeavors aiming to incorporate
+ecological elements into laboratory-based research.
+Finally, the current study has several limitations, which holds im­
+plications for future research. The first one regards the analytical
+approach employed, which only considered two simple opposing
+9
+
+W. Chen et al.
+
+Journal of Memory and Language 141 (2025) 104587
+
+hypotheses − Cartesian representation and polar representation. How­
+ever, these two hypotheses may not be mutually exclusive. As suggested
+by Yousif (2022), spatial information may be simultaneously repre­
+sented in multiple formats. Certain results obtained in this study that did
+not align with the predictions of either Cartesian or polar coordinates
+also implied this possibility. For example, in Experiment 1, significant
+correlations were observed in both Cartesian and polar dimensions
+during the second and third responses. To explore this aspect further,
+future research could leverage more sensitive analysis methods or task
+paradigms capable of investigating spatial information representation in
+more complex scenarios.
+Secondly, although our study revealed the flexibility of spatial rep­
+resentation formats in WM, it focused solely on the effects of memory
+context and response type. It remains unclear whether other factors
+influence the conversion of representation formats and what funda­
+mentally determines these transitions. Additionally, in large-scale en­
+vironments, we observed that direct or indirect navigation to target
+locations influenced the representation format of spatial information.
+However, real-life situations often involve non-linear paths with multi­
+ple turns. Further research is needed to examine if these findings hold
+true in such cases.
+Lastly, in light of previous research, the universality of polar repre­
+sentations in various spatial information processes is suggested. How­
+ever, the neural basis of this trait remains unclear. Numerous studies
+have already identified neural cells that represent spatial information,
+such as place cells that are sensitive to specific locations (Moser et al.,
+2008; O’Keefe & Dostrovsky, 1971), head-direction cells that represent
+an organism’s heading direction (Taube, 1998), and grid cells (Hafting
+et al., 2005; Kraus et al., 2015) that represent multiple structured lo­
+cations. Future research could explore which neural activities of these
+cells determine the use of polar representation.
+
+Declaration of competing interest
+The authors declare that they have no known competing financial
+interests or personal relationships that could have appeared to influence
+the work reported in this paper.
+Appendix A. Supplementary material
+Supplementary data to this article can be found online at https://doi.
+org/10.1016/j.jml.2024.104587.
+Data availability
+The data that has been used is confidential.

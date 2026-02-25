@@ -1,0 +1,146 @@
+% APA-style manuscript template for Quarto
+\documentclass[12pt]{article}
+
+% Page setup
+\usepackage[letterpaper, margin=1in]{geometry}
+
+% Double spacing
+\usepackage{setspace}
+\doublespacing
+
+% Font
+\usepackage{fontspec}
+\setmainfont{Times New Roman}
+
+% Better typography
+\usepackage{microtype}
+
+% Math support
+\usepackage{amsmath}
+
+% Tables and figures
+\usepackage{booktabs}
+\usepackage{longtable}
+\usepackage{array}
+\usepackage{multirow}
+\usepackage{makecell}
+\usepackage{graphicx}
+\usepackage{float}
+
+% Colors
+\usepackage{xcolor}
+
+% Links
+\usepackage{hyperref}
+\hypersetup{
+    colorlinks=true,
+    linkcolor=blue,
+    filecolor=magenta,
+    urlcolor=cyan,
+    citecolor=blue
+}
+
+% Line numbers for submission
+\usepackage{lineno}
+\linenumbers
+
+% Linguistics examples
+\usepackage{gb4e}
+\noautomath
+
+% Leipzig glossing
+\usepackage{leipzig}
+
+% Custom glossing
+\usepackage{typgloss}
+
+% Paragraphs with indent
+\usepackage{indentfirst}
+\setlength{\parindent}{0.5in}
+
+% Running header
+\usepackage{fancyhdr}
+\pagestyle{fancy}
+\fancyhf{}
+\rhead{\thepage}
+\renewcommand{\headrulewidth}{0pt}
+
+% Abstract formatting
+\usepackage{abstract}
+\renewcommand{\abstractnamefont}{\normalfont\bfseries}
+\renewcommand{\abstracttextfont}{\normalfont}
+
+% Section formatting
+\usepackage{titlesec}
+\titleformat{\section}
+  {\normalfont\bfseries}{\thesection}{1em}{}
+\titleformat{\subsection}
+  {\normalfont\bfseries}{\thesubsection}{1em}{}
+\titleformat{\subsubsection}
+  {\normalfont\itshape}{\thesubsubsection}{1em}{}
+
+% Bibliography
+\usepackage{natbib}
+\bibliographystyle{apalike}
+
+% CSL/Pandoc compatibility
+\providecommand{\tightlist}{%
+  \setlength{\itemsep}{0pt}\setlength{\parskip}{0pt}}
+
+$if(highlighting-macros)$
+$highlighting-macros$
+$endif$
+
+$for(header-includes)$
+$header-includes$
+$endfor$
+
+\begin{document}
+
+$if(title)$
+\begin{center}
+{\Large\bfseries $title$}
+
+\vspace{1em}
+
+$for(author)$
+$author.name$$if(author.email)$\textsuperscript{*}$endif$\\
+$for(author.affiliations)$
+$author.affiliations.name$$if(author.affiliations.department)$, $author.affiliations.department$$endif$\\
+$endfor$
+$endfor$
+
+$if(author)$
+$for(author)$
+$if(author.email)$
+\vspace{0.5em}
+\textsuperscript{*}Corresponding author: \href{mailto:$author.email$}{$author.email$}
+$endif$
+$endfor$
+$endif$
+
+\end{center}
+$endif$
+
+$if(abstract)$
+\begin{abstract}
+$abstract$
+\end{abstract}
+$endif$
+
+$if(keywords)$
+\vspace{1em}
+\noindent\textbf{Keywords:} $for(keywords)$$keywords$$sep$, $endfor$
+$endif$
+
+\newpage
+
+$body$
+
+$if(bibliography)$
+\newpage
+\singlespacing
+\bibliography{$for(bibliography)$$bibliography$$sep$,$endfor$}
+$endif$
+
+\end{document}

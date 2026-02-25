@@ -1,0 +1,1626 @@
+Introduction
+Producing language involves generating temporally or spatially
+linear sequences of sounds or symbols, which are the products of piecing
+together smaller units to form bigger units; from morphemes to words,
+from words to phrases, and from phrases to sentences. These linguistic
+units are organized in a hierarchical manner, as the functions and
+meanings of the units are determined by the process of integrating units
+that are not necessarily adjacent to one another. As such, the same linear
+sequence of linguistic units can be structured in different ways, and the
+message or interpretation could differ depending on the specific struc­
+ture one commits to. For example, in sentences such as “I met the stu­
+dents of the teacher who played the violin”, the relative clause “who
+played the violin” can either have a high attachment (HA) configuration,
+which means “the students” played the violin, or a low attachment (LA)
+configuration, which means “the teacher” played the violin. Similarly, in
+noun phrases such as “social psychologist”, the morpheme “-ist” can
+either attach high to “social psycholog(y)” to mean someone who studies
+
+the discipline of social psychology, or attach low to “psycholog(y)” only
+to mean someone who studies psychology and enjoys the companion­
+ship of others. Despite the difference in the grain size of the linguistic
+units involved, these examples illustrate that words and sentences are at
+least abstractly similar in their internal structures, in that processing
+words and sentences both require combining hierarchically organized
+units. That leads to the question: Are the cognitive mechanisms that
+process the internal structures of words and sentences shared? Here we
+first introduce paradigms in structural priming, which have been
+commonly used to test whether two superficially distinct forms of
+structures share the same underlying representation or operation. Then,
+we review previous work on cross-domain and linguistic priming.
+Speakers can often choose between multiple structures to convey a
+similar message, but studies have shown that they are more likely to
+repeat a sentence structure that they have recently been exposed to (say,
+in the preceding sentence) than to produce an alternative structure that
+conveys a similar meaning, even if the priming and the primed material
+are not conceptually related. This phenomenon of abstract structure
+
+* Corresponding author at: Department of Psychology, University of California San Diego, 9500 Gilman Drive, La Jolla, CA 92093, United States.
+E-mail address: aubreylausinhang@gmail.com (S.H. Lau).
+https://doi.org/10.1016/j.jml.2025.104708
+Received 22 March 2023; Received in revised form 18 October 2025; Accepted 20 October 2025
+Available online 25 October 2025
+0749-596X/Published by Elsevier Inc.
+
+S.H. Lau et al.
+
+Journal of Memory and Language 146 (2026) 104708
+
+reuse is one form of structural priming. For example, in a picture
+description task, Bock (1986) found that after participants heard and
+repeated out loud a passive voice prime sentence (e.g., “The referee was
+punched by one of the fans”), as opposed to an active voice prime sen­
+tence (e.g., “One of the fans punched the referee”), they were more likely
+to subsequently describe an unrelated target picture in passive voice (e.
+g., “The church is being struck by lightning”). Similar patterns were also
+found for other structures, such as between producing a prepositional
+dative (e.g., “The rock star sold some cocaine to the undercover agent”)
+or a double object dative sentence (e.g., “A rock star sold the undercover
+agent some cocaine”; see Bock, 1986, 1989, and Bock & Loebell, 1990);
+and between completing the relative clause sentence fragment “The
+pensioner railed about the author of the fliers that…” with an HA
+(describing the author) versus LA continuation (describing the fliers;
+Scheepers, 2003).
+Structural priming has also been observed in comprehension (see
+Tooley & Traxler, 2010 for a review). For example, Pickering et al.
+(2013) used a sentence-picture matching task to observe priming in the
+interpretation of sentences with ambiguous prepositional phrase
+attachment such as “The waitress is prodding the clown with the um­
+brella,” with either the HA interpretation (i.e., the waitress is using the
+umbrella to prod) or the LA interpretation (i.e., the clown has an um­
+brella). They manipulated the attachment interpretation of prime sen­
+tences by asking participants to select a picture that matched a prime
+sentence, with only one picture matching either the HA or LA inter­
+pretation of the prime sentence. In the target items, participants per­
+formed the same task again, except that they picked between a picture
+depicting the HA interpretation and another depicting the LA interpre­
+tation instead. Results showed that after reading a sentence with a
+particular attachment interpretation, comprehenders were more likely
+to interpret the following sentence the same way.
+Patterns of structural priming have been replicated regardless of
+whether participants were exposed to the primes through reading and
+repeating (Bock, 1986), reading and picture-matching (Pickering et al.,
+2013), writing (Pickering & Branigan, 1998), typing (Corley &
+Scheepers, 2002), or listening to another interlocutor in dialogue
+(Branigan et al., 2000). Indeed, Tooley’s (2023) review contrasting
+structural priming effects in production and comprehension concluded
+that abstract structural priming occurs in both modalities. Differences
+that are sometimes observed between production and comprehension
+studies likely reflect differences in dependent variables and tasks, rather
+than speakers and comprehenders engaging different modality-specific
+cognitive mechanisms. Priming is also observed between modalities,
+that is, from comprehension to production (Bock et al., 2007) and from
+production to comprehension (Ferreira et al., 2012). That is, structuring
+operations in language appear to be modality-independent. Generally,
+the aforementioned studies suggest that structural priming occurs
+because the representation of the abstract sentence structure in use re­
+mains accessible for some time, making that template more likely to be
+reused compared to its alternatives (see Pickering & Ferreira, 2008 for a
+review on structural priming and its implications for models of language
+processing). Thus, when structural priming occurs between two lin­
+guistic units that are seemingly different on the surface, the units are
+argued to likely have a shared underlying structural representation in
+processing.
+Even though structural priming has been found with various lin­
+guistic structures, some argue that priming effects on active/passive
+voice and dative constructions may not be purely structural because the
+lexical entries of verbs include information about argument structure of
+the sentence (e.g., Ziegler et al., 2019). On the contrary, because relative
+clauses are modifiers that are not commonly viewed as part of the core
+argument structure of a lexical item, they are likely not encoded in the
+lexical entries of the nouns that they modify and thus in some ways
+provide a more purely structural test case for priming (e.g., Desmet &
+Declercq, 2006, Scheepers, 2003). However, it is important to note that
+relative clause attachment priming is qualitatively different from other
+
+forms of structural priming. In particular, the two attachment alterna­
+tives convey different propositional meanings of “who did what to
+whom” (compared to standard alternations such as transitives and da­
+tives, where the message is comparable between the two alternative
+structures). Because the choice of attachment structure is conflated with
+the choice of propositional meaning, Pickering and Ferreira (2008)
+suggested that relative clause attachment priming is at least in part
+message level or comprehension priming. From a production perspec­
+tive, attachment manipulations may affect speakers’ subsequent choice
+of meaning because the typical sentence continuation (target produc­
+tion) task does not require speakers to commit to expressing one
+meaning versus the other, making message priming possible. From a
+comprehension perspective, attachment manipulations may prime the
+speakers to comprehend the target fragment as HA or LA before
+continuing with their production, suggesting that the source of any
+priming effect is a comprehension process. Nevertheless, relative clause
+attachment priming has been widely used as a test for shared structuring
+mechanisms in linguistic and non-linguistic domains alike.
+Within the language domain, relative clause attachment priming has
+been used to study whether bilinguals have shared structural represen­
+tations for the two languages that they speak. For example, Desmet and
+Declercq (2006) demonstrated cross-linguistic relative clause attach­
+ment priming from Dutch to English in Dutch-English bilinguals. Par­
+ticipants first completed a sentence fragment such as “Gabriel scratched
+on the cover of the magazine that…” in Dutch, where “that” was
+manipulated to induce an HA or LA attachment with grammatical
+gender features agreeing with either “the cover” or “the magazine,”
+respectively. Then, participants completed another fragment in English
+that did not contain attachment-biasing grammatical features (e.g., “The
+farmer fed the calves of the cow that…”). The results replicated the
+structural priming effect: Participants were more likely to produce HA
+continuations in English following HA Dutch primes, compared to
+following LA Dutch primes. Similarly, Hartsuiker et al. (2016) reported
+cross-linguistic priming in Dutch-French-English trilinguals, regardless
+of whether priming was between the first and second language or two
+different second languages. The authors took cross-linguistic relative
+clause attachment priming as evidence that bilinguals may have a single
+abstract representation for each of the relative clause attachment
+structures that is shared between the languages they speak (see Van
+Gompel & Arai, 2018 for a review on structural priming in bilinguals).
+Priming effects of attachment height in relative clauses can be
+explained by two different accounts of what information is mentally
+represented. Scheepers (2003) suggested that priming results from the
+specific order of applying the same set of phrase-structure rules. This
+account is supported by the basic attachment priming effects that were
+described above. Alternatively, Desmet and Declercq (2006) proposed a
+much more general account that it is the abstract attachment height and
+location that is being represented independently of phrase-structure
+rules. In a sentence completion task, Loncke et al. (2011) found that
+relative clause attachment (identical structure with the target, e.g., “The
+tables of the restaurant that…”, with “that” grammatically agreeing with
+“the tables” or “the restaurant”) and prepositional phrase attachment
+(dissimilar structure with the target, e.g., “The tables of the restaurant
+with their/with its…”) both primed subsequent relative clause attach­
+ment. That is, priming can occur both within the same structure and
+between two different structures, which supports the more general ac­
+count that structural priming of attachment occurs due to the activation
+of a representation of the abstract hierarchical configuration (instead of
+the activation of sequences of phrase-structure rules).
+Outside of language, humans frequently interact with hierarchical
+structures in other domains of cognition, which raises the question of
+whether structuring mechanisms of abstract structures are domaingeneral – that is, extend to representational domains beyond language.
+For example, parentheses are used in arithmetic to denote the order and
+scope of operations, and the resulting configurations of equations
+sometimes resemble the structure of relative clause sentences. Scheepers
+2
+
+S.H. Lau et al.
+
+Journal of Memory and Language 146 (2026) 104708
+
+et al. (2011) noted these structural similarities and tested whether
+priming occurs across arithmetic and language. They found that par­
+ticipants were more likely to produce an HA sentence continuation after
+successfully solving an equation with a structure analogous to an HA
+relative clause (e.g., 80 − (9 + 1) × 5) than after solving a baseline
+equation without hierarchical structure (e.g., 5 + 15). Similarly, par­
+ticipants were more likely to produce a LA sentence continuation after
+solving an equation analogous to a LA relative clause (e.g., 80–9 + 1 ×
+5) than after the baseline condition. The observation of cross-domain
+structural priming suggests that hierarchical structural information
+(such as the global configuration or the shape of the structure) may be
+represented at a very high level of abstraction such that it may be shared
+across domains.
+In a later conceptual replication of the math-to-language priming
+effect (Scheepers & Sturt, 2014), it was shown that the effect is bidi­
+rectional (i.e., language-to-math priming also occurs) and extends
+beyond the sentence level to adjective-noun-noun compounds. Arith­
+metic equations and adjective-noun-noun compounds are similar in that
+they can both be organized as left- (i.e., (A B) C structure) or rightbranching (i.e., A (B C) structure), such as “5 × 2 + 7” versus “5 + 2
+× 7” in math, and “organic coffee dealer” (meaning “a dealer of organic
+coffee” rather than “a coffee dealer who is organic”) versus “bankrupt
+coffee dealer” (meaning “a coffee dealer who is bankrupt” rather than “a
+dealer of bankrupt coffee”) in adjective-noun-noun compounds. In a
+series of experiments where participants solved math equations and
+gave sensibility ratings (on a scale of 1 “makes no sense” to 5 “makes
+perfect sense”) for the linguistic compounds, it was found that sensibility
+ratings for linguistic items were higher after successfully solving an
+equation of a congruent branching structure, compared to an incon­
+gruent one, replicating the math-to-language priming effect. Moreover,
+in a sample of participants who were predetermined to be relatively less
+adept in math, arithmetic equations were more likely to be successfully
+solved after giving sensibility ratings for linguistic components of a
+congruent branching structure, compared to an incongruent one,
+demonstrating a language-to-math priming effect. Once again, these
+results corroborate the claim that structural representation may be
+domain-general.
+Note, however, that both Scheepers et al. (2011) and Scheepers and
+Sturt (2014) pointed out that math priming effects are sensitive to many
+extraneous factors, such as whether the instructions of the task explicitly
+remind participants of the rules of arithmetic order of operations,
+whether there are redundant parentheses in the math equations, and the
+participants’ baseline math abilities. Nevertheless, Van de Cavey and
+Hartsuiker (2016) further supported the cross-domain shared structural
+representation account by providing evidence for both within- and
+cross-domain priming. Specifically, attachment configurations in prime
+items constructed with musical sequences, math, structured descriptions
+of events, and relative clause sentences affected subsequent attachment
+preferences in relative clause production. Additionally, the magnitude of
+priming effects did not differ by whether the prime was cross-domain or
+within-domain. Note, however, that when the targets were structured
+descriptions of events, there was a slight advantage of within-domain
+priming: attachment preferences in subsequent event descriptions
+were influenced most strongly by attachment configurations in event
+description primes, marginally less by relative clause primes, and
+significantly less by music and math primes.
+If structuring mechanisms are shared across cognitive domains, as
+suggested by the ubiquitous cross-domain priming effects found across
+different tasks and linguistic structures, it seems reasonable to assume
+that the mechanisms may also be shared within the language domain
+across units of different grain sizes (i.e., across words and sentences).
+There is suggestive evidence from priming between math and language
+that this assumption may be true. Recall that Scheepers et al. (2011)
+found that math primed relative clause sentences, whereas Scheepers
+and Sturt (2014) found bidirectional priming between math and com­
+pounds of words. When combined together, these two studies suggest
+
+that relative clause sentences and compounds of words may prime each
+other, despite the difference in grain size. The current work aims to test
+that exact prediction and confirm whether words and sentences indeed
+have shared structuring mechanisms.
+Experiment 1 tested whether attachment in relative clause sentence
+production and free recall of noun phrases affected subsequent relative
+clause sentence production; Experiment 2 tested whether attachment in
+sentence production and noun phrase interpretation affected subsequent
+noun phrase interpretation; and lastly, Experiment 3 simultaneously
+tested whether attachment in sentence and noun phrase interpretation
+affected subsequent sentence and noun phrase interpretation. If struc­
+turing mechanisms across different linguistic levels are shared, we
+should expect preferences in relative clause attachment in sentences and
+morphological attachment in words to affect subsequent attachment
+preferences both within- and across-grain size. Conversely, if structuring
+mechanisms are not shared, we should expect sentence attachment to
+only affect subsequent sentence attachment but not morphological
+attachment, and vice versa.
+Experiment 1
+Data availability
+The data, analysis scripts, and pre-registration reports can be found
+at https://osf.io/jrmkw/.
+Method
+Participants
+Sixty undergraduates from the University of California San Diego
+participated in the experiment in exchange for course credit. Twelve
+participants were excluded from our analyses because they either did
+not produce more than 50 % usable data (exclusion criteria explained
+below in Coding and Data Analysis) or did not complete the experiment
+due to technical issues. All 48 remaining participants indicated that they
+were native English speakers.
+Materials
+The experiment was hosted on Qualtrics. We used a within-subjects 2
+(Prime Attachment: High or Low) × 2 (Prime Type: Sentence or
+Morphological) design. Each trial contained one prime and one target.
+That is, for each trial, participants either completed a sentence fragment
+prime (Sentence condition) or memorized a morphological prime
+(Morphological condition), which either has a predominantly high (HA)
+or low attachment (LA) meaning, before completing the target sentence
+continuation task (see Procedure section below). Both the prime and
+target sentence fragments were adopted from Desmet and Declercq
+(2006) and Scheepers et al. (2011), whereas the morphological primes
+were designed for the current work. There were 24 sentence primes and
+24 morphological primes, with an equal split of HA and LA for each
+prime type. There were 48 target items in total (i.e., each participant
+completed 48 critical trials in this experiment). Participants were
+randomly assigned to one of two experimental lists, which counter­
+balanced whether a given target item was preceded by an HA or LA
+prime.
+The sentence primes were sentence fragments with agreement fea­
+tures that coerced the production of a high or low attachment continu­
+ation, such as “The firemen saved the residents of the penthouse who
+were… (HA; coercing a continuation about the residents)/that was…
+(LA; coercing a continuation about the penthouse)”. For morphological
+primes, we constructed noun phrases of professions that either had
+predominantly high or low attachment meanings. For example, “primate
+researcher” was considered an HA item, with the morpheme “-er”
+attaching to a higher and larger unit of “primate research” to mean
+someone who studies primates (i.e., [[primate research][er]]) rather
+than a primate that conducts academic studies (i.e., [[primate]
+3
+
+S.H. Lau et al.
+
+Journal of Memory and Language 146 (2026) 104708
+
+[[research][er]]]); whereas “diligent researcher” was considered an LA
+item, with “-er” attaching low to “research” to mean a hardworking
+person who conducts academic studies (i.e., [[diligent][[research]
+[er]]]) rather than someone who studies a discipline called “diligent
+research” (i.e., [[diligent research][er]]).
+Similar to the sentence primes, the target items were also sentence
+fragments, except that they did not contain agreement features that
+biased attachment preferences. For example, in the fragment “the florist
+befriended the servant of the princesses who…”, participants could
+freely choose to describe the servant (HA) or the princesses (LA).
+In addition to the critical trials, participants also completed 24 filler
+trials, which were interleaved with the target trials in a pseudor­
+andomized order such that participants did not complete more than two
+trials of the same type in a row. The filler primes were mathematical
+primes adapted from the original study that reported the math priming
+effect (Scheepers et al., 2011), with half of them being arithmetic
+equations with HA structures (e.g., “31 + (8 – 5) × 2”) and the other half
+with LA structures (e.g., “31 + 8 – 5 × 2”). Similar to critical trials, the
+target items were sentence fragments that allowed participants to freely
+produce a high or low attachment continuation. An analysis of the filler
+items revealed that we failed to replicate the math priming effect. That
+is, participants were about equally likely to produce a HA continuation
+regardless of whether they successfully solved an HA or LA arithmetic
+problem beforehand (44.1 % vs. 43.3 %; β = 0.002, SE = 0.16, z = 0.01,
+p = .99). We performed a follow-up, Bayesian analysis to distinguish a
+true null effect and inconclusive evidence, and Bayes Factor compari­
+sons provide strong evidence for a null model with no effect of priming
+(β = − 0.03, 95 % CI = [-0.33, 0.27], BF10 = 0.079). Given the main goal
+of the current work to establish whether there are shared cognitive
+mechanisms between linguistic units of different grain size rather than
+across domains, we did not continue to include the mathematical fillers
+in later experiments and focus our discussion below on any potential
+linguistic priming effects.
+The full list of prime and target materials for Experiment 1 can be
+found in Appendix A.
+
+high or low attachment noun phrase were also excluded. There were
+1,782 (out of 2,304; 77 %) analyzable trials in total. Of the excluded
+trials, 262 were sentence prime items that did not elicit the intended
+attachment (i.e., participants creating sentences that violated agreement
+features) and 260 were morphological prime items that were mis­
+remembered. Valid target responses were coded in terms of whether the
+freely produced relative clause attached high (HA) or low (LA).
+We built a generalized linear mixed effects model with the dependent
+variable of whether the target response was HA (1) or LA (0), in order to
+analyze the likelihood of HA sentence continuation as a function of
+Prime Type (sentence or morphological), Prime Attachment (HA or LA),
+and their interaction. Fixed effects were sum-coded. Although we
+attempted to use the maximal random effects structure for both models,
+we removed all random slopes due to convergence issues. The model
+included random intercepts for participants and items.
+
+Procedure
+Participants completed the experiment hosted on Qualtrics in the
+laboratory under the supervision of an experimenter. All responses were
+produced by typing.
+Each trial consisted of a prime and a target task. The prime was either
+a sentence or a morphological prime, which was manipulated to have
+either a high (HA) or low (LA) attachment structural organization.
+Participants were given instructions to perform a sentence continuation
+task and a noun phrase free recall task, but they were not informed of the
+prime-target manipulation. For sentence continuation, participants were
+instructed to type a response that formed a complete sentence whenever
+they were presented with a sentence fragment. For free recall, partici­
+pants were told to expect to see a noun phrase displayed on the screen
+for three seconds and to memorize the given noun phrase in preparation
+for free recall at a later time. Free recall for each morphological prime
+was always prompted immediately after the associated target item. In
+other words, when the participant completed a trial with a sentence
+prime, they first completed a sentence with attachment-biasing agree­
+ment features, then another sentence without such features. If the
+participant completed a trial with a morphological prime, they first saw
+a noun phrase and attempted to keep it in their working memory while
+completing a sentence without attachment-biasing agreement features,
+then recalled the noun phrase afterwards.
+
+Post-hoc Bayesian analyses
+Frequentist analyses can only reject a null hypothesis, so we per­
+formed post-hoc Bayesian analyses to adjudicate whether observed null
+results from frequentist analyses reflect support for the null hypothesis
+or whether the results are simply inconclusive. These analyses were not
+pre-registered. Using the brms package in R (Bürkner, 2019), we fit
+generalized linear mixed effects models with the same specifications as
+the frequentist models. We assumed a Bernoulli distribution with a logit
+link function due to the binary nature of the data. We used default priors
+for all random effects and variance estimates (half-student t-distribu­
+tions with 3 degrees of freedom). All priors are in log-odds terms. We did
+not use default priors for coefficients of fixed effects, as these default
+priors are uniform (and, therefore, improper), and using them can lead
+to inconsistent calculations. Coefficient estimates for fixed effects were
+given a normal prior with a mean of 0 and a standard deviation of 2. This
+prior choice avoids flat, improper priors but is wide enough to avoid
+making stringent assumptions. Each Bayesian model had four Markov
+Chain Monte Carlo (MCMC) chains of 10,000 iterations total, 2,000 of
+which were for warm-up. This resulted in 32,000 post-warm up samples
+per model. Divergent transitions during sampling can lead to inaccurate
+posterior estimates, so when we encountered divergent transitions, we
+increased “adapt delta” from the default value of 0.85. Higher values of
+this parameter slow down the sampler but ensure more accurate tran­
+sitions. All R-hat values were equal to 1.00 after sampling, indicating no
+convergence issues.
+For critical (sentence and morphological priming) trials, we fit five
+nested models for our main analysis: a full model with Prime Type,
+Prime Attachment, and a Prime Type × Prime Attachment interaction; a
+model with both main effects but no interaction term; a model with only
+Prime Type as a fixed effect; a model with only Prime Attachment as a
+fixed effect; and an intercept-only model (i.e., a model without fixed
+effects). We fit four models for the follow-up planned comparisons.
+Within each prime type, we fit models with and without prime attach­
+ment as a fixed effect. We compared nested models using brms functions
+to produce Bayes Factors indicating relative support for one model over
+the other. We generally used guidelines from Kass and Raftery (1995)
+when interpreting strength of evidence given by Bayes Factors but these
+analyses (and, therefore, these inference criteria) were not preregistered. Generally, Bayes Factors less than 1 indicate relative sup­
+port for the model with fewer terms, and Bayes Factors greater than 1
+indicate relative support for the model with more terms. We reported the
+coefficient estimate of the term, the 95 % credible interval of the coef­
+ficient estimate, and the Bayes Factor.
+
+Coding and analyses
+Every prime response that was incompatible with our intended prime
+attachment manipulation (i.e., when participants ignored the sentence
+agreement features or inaccurately recalled the memory items) was
+deemed invalid and left out of our analyses. Additionally, target re­
+sponses in which it was unclear whether the relative clause modified the
+
+Results and discussion
+Fig. 1 shows the average proportion of HA responses following HA or
+LA sentence or morphological primes. On average, participants were
+numerically more likely to produce a HA sentence following a HA prime,
+compared to a LA prime (the main effect of Prime Attachment was
+marginally significant; β = − 0.20, SE = 0.11, z = − 1.86, p = .06). We
+4
+
+S.H. Lau et al.
+
+Journal of Memory and Language 146 (2026) 104708
+
+limitation, rather than a distinct structuring mechanism for words. To
+further test the robustness and directionality of the priming effects (or
+the lack thereof), we changed how the morphological primes were
+presented and switched the target task to a morphological task in
+Experiment 2.
+Experiment 2
+Method
+Participants
+Two hundred and fifty-two undergraduates from the University of
+California San Diego participated in exchange for course credit. All
+participants indicated that they were native English speakers. Experi­
+ment 2 contained many fewer trials than did Experiment 1 (only eight
+items), so a power analysis was conducted using data from a pilot
+experiment to determine the target sample size. The analysis estimated
+that 250 participants would be sufficient to achieve 80 % power in this
+experiment. All participants produced more than 50 % valid data for
+analysis (see Coding and Analyses for criteria) and thus no one was
+excluded.
+Materials
+Similar to Experiment 1, we used a within-subjects 2 (Prime
+Attachment: High or Low) × 2 (Prime Type: Sentence or Morphological)
+design, with each trial containing a prime and target pair. The sentence
+primes were sentence fragments with agreement features that coerced
+either a high (HA) or low attachment (LA) continuation, whereas the
+morphological primes were noun phrases of professions that had pre­
+dominantly HA or LA interpretations. The prime materials in Experi­
+ment 2 were a subset of the ones used in Experiment 1.
+The target items were noun phrases that were judged to be relatively
+ambiguous in a pilot experiment (e.g., “Russian teacher”). On a 1–7
+Likert scale (with 1 meaning the given noun phrase can only have the LA
+interpretation, e.g., “someone who teaches and is of Russian descent”;
+and 7 only the HA interpretation, e.g., “someone who teaches the
+Russian language”), we selected eight noun phrases (out of 48 in the
+pilot) with mean ratings closest to the midpoint of the scale (mean
+ratings ranged from 3.19 to 4.65) and relatively high variance in ratings
+(standard deviations ranged from 1.97 to 2.52). These two features of
+the selected items maximized the chance of the interpretations of these
+noun phrases being influenced depending on the preceding prime, if
+there was indeed any priming effect.
+The pilot experiment had the same design as Experiment 2 (described
+below). The main difference was that the pilot included 48 target items,
+many of which we eliminated due to participants having an extremely
+strong preference for one interpretation. For example, we eliminated
+“animal activist” due to a strong preference for the HA interpretation (a
+mean rating of 6.82, SD = 0.44, in favor of the interpretation “someone
+who advocates for animal rights”), as opposed to the LA interpretation
+(“an animal who advocates for a cause”). After narrowing down to eight
+items by considering the mean and variability in ratings, we simulated
+new data using pilot data for those specific items to estimate the new
+sample size required by using the “simr” package.
+Due to the difficulty in finding relatively ambiguous noun phrases,
+there were only eight target trials in Experiment 2. That is, there were
+four sentence and four morphological primes (equal split of HA and LA),
+paired with eight morphological target items. Participants were
+randomly assigned to one of four counterbalancing lists, in which the
+Prime Type and Prime Attachment for each target item were counter­
+balanced across lists. The full list of prime and target materials for
+Experiment 2 can be found in Appendix B.
+
+Fig. 1. Proportion of high attachment sentence continuations following highor low-attachment morphological or sentence primes, color-coded by prime
+attachment and separated into two panels by prime type. Error bars represent
+standard errors.
+
+also observed a marginal Prime Type × Prime Attachment interaction (β
+= − 0.38, SE = 0.21, z = − 1.76, p = .08). Participants were no more
+likely to produce HA sentences following HA morphological primes (M
+= 49.2 %, SE = 2.47 %), compared to following LA morphological
+primes (M = 49 %, SE = 2.94 %); the pairwise comparison was not
+significant (z = 0.07, p = .94). However, participants were 9.3 % more
+likely to produce HA sentences following HA sentence primes (M = 46.2
+%, SE = 3.38 %), compared to following LA sentence primes (M = 36.9
+%, SE = 3.27 %), and this pairwise comparison was significant (z = 2.56,
+p = .01).
+We performed three Bayes Factor comparisons between nested
+models. First, to evaluate the Prime Type × Prime Attachment interac­
+tion, we compared the full model to a reduced model with Prime Type
+and Prime Attachment as fixed effects but no interaction. The Bayes
+Factor obtained is generally considered to indicate inconclusive evi­
+dence (β = − 0.37, 95 % CI = [-0.80, 0.05], BF10 = 0.489). Follow-up
+planned comparisons show evidence against an effect of Prime Attach­
+ment with morphological primes (β = 0.02, CI = [-0.49, 0.50], BF10 =
+0.074). There was equivocal evidence for a main effect of Prime
+Attachment with sentence primes (β = − 0.42, CI = [-0.72, − 0.12], BF10
+= 2.96), but the model estimates are numerically consistent with the
+frequentist statistics. To test for main effects, we compared a model with
+the term of interest to the intercept-only model. We found evidence
+against main effects of Prime Type (β = − 0.34, CI = [-0.89, 0.20], BF10
+= 0.300) and Prime Attachment (β = − 0.20, CI = [-0.41, 0.01], BF10 =
+0.310).
+In sum, our results from Experiment 1 provide suggestive evidence
+that only sentence (but not morphological) attachment preference
+affected later sentence production. The marginal interaction is consis­
+tent with the possibility that the structuring mechanisms between the
+two levels may not be shared. However, the lack of morphological effect
+on later sentence production may be attributed to one limitation of the
+design: The free recall task did not require the participants to think
+about the possible meanings of the morphological primes. If the hier­
+archical structures of morphemes that give rise to different meanings of
+noun phrases were not activated by the free recall task, the absence of
+priming effects in the morphological conditions may reflect this
+
+Procedure
+The experiment was a typed experiment hosted on Qualtrics. Par­
+ticipants completed the experiment online without supervision.
+5
+
+S.H. Lau et al.
+
+Journal of Memory and Language 146 (2026) 104708
+
+Each trial consisted of a prime and a target task. The prime was either
+a sentence or a morphological prime, which was manipulated to have
+either a high (HA) or low (LA) attachment structural organization.
+Participants were given instructions to perform a sentence continuation
+task and a semantic judgment task, but they were not informed of the
+prime-target manipulation. For sentence continuation, participants were
+instructed to type a response that formed a complete sentence whenever
+they were presented with a sentence fragment. This task served as the
+sentence prime. For semantic judgment, participants were instructed to
+rate the likelihood of the possible meanings of noun phrases on a 1–7
+Likert scale (with 1 meaning the given noun phrase can only have the LA
+interpretation, and 7 only the HA interpretation). When participants
+were asked to rate noun phrases with predominant meanings, this task
+served as the morphological prime (and to validate the manipulation;
+see below); when participants were asked to rate relatively ambiguous
+noun phrases, this task served as the target task.
+To summarize, when the participant completed a trial with a sen­
+tence prime, they first completed a sentence with attachment-biasing
+agreement features, then gave a semantic judgment for an ambiguous
+noun phrase. If the participant completed a trial with a morphological
+prime, they first rated a noun phrase with a predominant meaning, then
+rated an ambiguous noun phrase. Because the semantic judgment task
+specifically required participants to think about the possible meanings of
+the morphological primes and targets, it resolved the limitation pre­
+sented by Experiment 1.
+
+Fig. 2. Mean rating (in z-score unit) for ambiguous noun phrases following
+high- or low-attachment morphological or sentence primes, color-coded by
+prime attachment and separated into two panels by prime type. Higher means
+more likely to accept high-attachment reading only. Error bars represent
+standard errors.
+
+− 2.61, p = .009). However, this was likely driven by the morphological
+primes; there was a significant Prime Type × Prime Attachment inter­
+action (β ¼ 0.18, SE = 0.18, z = 2.10, p = .036). Participants rated
+ambiguous noun phrases similarly following HA sentence primes (M =
+− 0.02, SE = 0.19), compared to following LA sentence primes (M =
+0.01, SE = 0.19); the pairwise comparison was not significant (t = 0.34,
+p = .73). In contrast, participants rated ambiguous noun phrases 0.21 zscore units higher following HA morphological primes (M = 0.16, SE =
+0.19), compared to LA sentence primes (M = − 0.05, SE = 0.19), and this
+pairwise comparison was significant (t = 3.50, p = .0005).
+Parallel Bayesian analyses were consistent with our frequentist re­
+sults. The computed Bayes Factor was inconclusive regarding the Prime
+Type × Prime Attachment interaction (β = 0.18, 95 % CI = [0.01, 0.34],
+BF10 = 0.386). Taken together with the significant effect in our fre­
+quentist analysis, we interpret the interaction as marginally significant.
+Follow-up planned comparisons revealed strong evidence for an effect of
+Prime Attachment for morphological primes (β = − 0.20, CI = [-0.31,
+− 0.09], BF10 = 15.70) and strong evidence against an effect of Prime
+Attachment for sentence primes (β = − 0.02, CI = [-0.15, 0.10], BF10 =
+0.033).
+Evidence was inconclusive with regards to a main effect of Prime
+Attachment (β = − 0.12, 95 % CI = [-0.20, − 0.04], BF10 = 1.04) and
+strongly against a main effect of Prime Type (β = − 0.04, 95 % CI =
+[-0.12, 0.05], BF10 = 0.031).
+To summarize, Experiment 2 showed stronger evidence that only
+morphological (but not sentence) attachment preference affected later
+ambiguous noun phrase interpretation. Along with the results in
+Experiment 1, our results suggest that structuring mechanisms are not
+shared across grain size.
+One alternative interpretation for the results of Experiment 1 and 2 is
+that the patterns simply reflected task priming (i.e., sentence completion
+primes sentence completion and semantic interpretation primes se­
+mantic interpretation) rather than priming within linguistic units of the
+same grain size. Specifically, Experiment 1 showed that sentence
+completion (but not morphological recall) primed sentence completion,
+and Experiment 2 showed that semantic interpretation (but not sentence
+completion) primed semantic interpretation. In other words, the target
+task and grain size were confounded. To control for the possibility of
+task priming, we ensured that all tasks were semantic interpretation
+tasks in Experiment 3. Additionally, the target task was always sentence
+production in Experiment 1 and noun phrase semantic interpretation in
+
+Coding and analyses
+Prime responses that were incompatible with our intended prime
+attachment manipulation (i.e., when participants ignored the sentence
+agreement features, rated LA primes as 4 or above, or HA primes as 4 or
+below) were deemed invalid and left out of our analyses, leaving 1,661
+(out of 2016; 82 %) analyzable trials in total. The ratings for valid target
+responses (1–7) were then transformed into z-score units using bysubject means and standard deviations to account for individual differ­
+ences in how participants use scales and susceptibility to priming.
+We built a linear mixed effects model with the dependent variable
+being the rating for each trial in z-score units, in order to analyze the
+attachment preference for ambiguous noun phrases as a function of
+Prime Type (sentence or morphological), Prime Attachment (HA or LA),
+and their interaction. Fixed effects were sum-coded. Although we
+attempted to use the maximal random effects structures, we removed all
+random slopes due to convergence issues. We also removed the partic­
+ipant random intercept due to convergence issues and by-participant
+variance estimates of 0. Because the response variable was z-scored
+within a participant, it was not surprising that there was very little
+variation between participants.
+Post-hoc Bayesian analyses
+We fit Bayesian mixed effects models using the same specifications
+and approach as Experiment 1, except where noted below. The depen­
+dent variable in Experiment 2 was the z-scored rating for ambiguous
+noun phrases, so we used linear mixed effects models with a Gaussian
+distribution and an identity link function. We fit five models for our
+main analysis: a full model with Prime Type and Prime Attachment as
+fixed effects and their interaction, a model without the interaction term,
+a model with only Prime Type, a model with only Prime Attachment,
+and an intercept-only model. We fit four models for the follow-up
+planned comparisons. Within each prime type, we fit models with and
+without prime attachment as a fixed effect.
+Results and discussion
+Fig. 2 shows the mean rating for ambiguous noun phrases (in z-score
+units) following HA or LA sentence or morphological primes. On
+average, participants rated ambiguous noun phrases following HA
+primes 0.09 z-score units higher than following LA primes (the main
+effect of Prime Attachment was significant; β = − 0.11, SE = 0.04, z =
+6
+
+S.H. Lau et al.
+
+Journal of Memory and Language 146 (2026) 104708
+
+Experiment 2 regardless of the prime type, which led to participants
+experiencing more trials of a particular grain size in each experiment. In
+Experiment 3, we assessed semantic interpretation of both sentences and
+noun phrases in the target task.
+
+HA sentence prime “the boy teased the hamsters of the girl that were
+running around”, participants first attempted to memorize the sentence
+and advanced to the next page when ready. Then, when prompted with
+the question “Who was/were running around?”, participants rated on a
+scale of 1–7 the likelihood of the interpretation being “the girl” (LA; 1 on
+the scale) or “the hamsters” (HA; 7 on the scale).
+In the Same Prime-Target Pairing condition, participants rated an
+unambiguous sentence prime (HA or LA meaning) followed by an
+ambiguous sentence target, or rated an unambiguous noun phrase prime
+(HA or LA) followed by an ambiguous noun phrase target. In the
+Different Prime-Target Pairing condition, participants rated an unam­
+biguous sentence prime followed by an ambiguous noun phrase target,
+or rated an unambiguous noun phrase prime followed by an ambiguous
+sentence target. Because both prime types operated under a semantic
+interpretation task, this design helped us rule out the possibility that the
+pattern priming effects revealed in Experiments 1 and 2 were due to
+task-specific priming. That is, given that all primes are now in the same
+task, if the structuring mechanisms are indeed not shared across grain
+sizes, we should only observe priming effects in the Same but not
+Different Prime-Target Pairing conditions.
+
+Experiment 3
+Method
+Participants
+Two hundred and sixty-two undergraduates from the University of
+California San Diego participated in exchange for course credit. Ten
+participants were excluded who either did not produce more than 50 %
+valid data (see Coding and Analyses for criteria) or otherwise did not
+complete the experiment due to technical issues. The remaining two
+hundred and fifty-two participants indicated that they were native En­
+glish speakers.
+Materials
+To address concerns of task priming and imbalanced numbers of
+trials for different grain sizes in previous experiments, we used a withinsubjects 2 (Prime Attachment: High or Low) × 2 (Prime Type: Sentence
+or Morphological) × 2 (Prime-Target Pairing: Same or Different grain
+size) design. Consistent with previous experiments, each trial contained
+a prime and target pair, and the prime was either a sentence or a noun
+phrase of an HA or LA organization. Unlike previous experiments, the
+grain size of the linguistic unit in the target was not held constant.
+Instead, it was an equal split between sentence and noun phrase targets.
+That is, the Same Prime-Target Pairing condition included trials in
+which the prime and target were both sentences, or both noun phrases;
+the Different Prime-Target Pairing condition included trials where a
+noun phrase target was primed by a sentence, or where a sentence target
+was primed by a noun phrase.
+The sentence primes were similar to the materials in Experiments 1
+and 2. Instead of sentence fragments, we presented participants with
+complete sentences that utilized agreement features to coerce HA or LA
+meanings in Experiment 3, such as “The boy teased the hamsters of the
+girl that were running around (HA)/who was an animal advocate (LA)”.
+The morphological primes were identical to the materials of Experiment
+2 (i.e., noun phrases with predominantly HA or LA meanings).
+The sentence targets were complete sentences with ambiguous
+agreement features, such that both HA and LA meanings were plausible.
+For instance, in “someone shot the servant of the actress who was on the
+balcony”, it is unclear who was on the balcony (i.e., both “the servant”
+and “the actress” are plausible). The morphological targets were rela­
+tively ambiguous noun phrases identical to the materials in Experiment
+2.
+There were eight sentence primes and eight morphological primes,
+with an equal split between HA and LA structures. They were paired
+with eight sentence and eight morphological targets. That is, each
+participant completed 16 trials in total. Participants were randomly
+assigned to one of four counterbalancing lists, in which the prime type
+and attachment that preceded each target were counterbalanced. The
+full list of prime and target materials for Experiment 3 can be found in
+Appendix C.
+
+Coding and analyses
+Prime responses that were incompatible with our intended prime
+attachment manipulation (i.e., when participants rated LA primes as 4 or
+above, or HA primes as 4 or below) were deemed invalid and left out of
+our analyses, leaving 3653 (out of 4032 trials; 90 %) analyzable trials in
+total. The ratings for valid target responses (1–7) were then transformed
+into z-score units using by-subject means and standard deviations to
+account for individual differences in how participants used scales and
+susceptibility to priming.
+In the main analysis, we built a linear mixed effects model with the
+dependent variable being the rating for each trial in z-score units, in
+order to analyze the attachment preference of ambiguous target items as
+a function of Prime Attachment (HA or LA), Prime-Target Pairing (Same
+or Different), and their interaction. The random effects structure
+included a by-item intercept. Consistent with Experiment 2, we removed
+random slopes and the intercept for participants due to convergence
+issues and small participants variability after z-scoring. This analysis
+allowed us to confirm whether there was a baseline attachment priming
+effect, and whether such an effect was unique to linguistic units of the
+same grain size.
+In a secondary analysis, we added to the original linear mixed effects
+model. The dependent variable was still the rating for each trial in zscore units, whereas the independent variables were Prime Type (Sen­
+tence or Morphological), Prime Attachment (HA or LA), Prime-Target
+Pairing (Same or Different), as well as all two-way and three-way in­
+teractions. Fixed effects were sum-coded. The random effects structure
+was the same as above. This analysis lent insights into whether the
+priming effects (if any) differed for sentence versus morphological items.
+Post-hoc Bayesian analyses
+Our model fitting procedures were nearly identical to Experiment 2,
+except where noted below. Our first analysis involved a model with
+Prime-Target Pairing, Prime Attachment, and their interaction with a
+by-item random intercept. We then built four additional nested models:
+a model with Prime-Target Pairing and Prime Attachment but no
+interaction, a model with only Prime-Target Pairing, a model with only
+Prime Attachment, and an intercept-only model. For the second analysis,
+we fit a model with Prime-Target Pairing, Prime Attachment, and Prime
+Type as well as all two-way interactions and a three-way interaction
+between Prime-Target Pairing, Prime Attachment, and Prime Type. Our
+goal with this model was to assess whether the interaction between
+Prime-Target Pairing and Prime Attachment further differs across
+morphological and sentential prime types, so we only tested for the
+three-way interaction with Bayesian analyses.
+
+Procedure
+The experiment was a typed experiment hosted on Qualtrics. Par­
+ticipants completed the experiment online without supervision.
+The task in Experiment 3 was a semantic judgment task, regardless of
+whether participants were responding to a sentence or a noun phrase,
+and whether the item served as a prime or a target. Participants were
+instructed to first memorize the item on the screen, then to perform a
+semantic judgment task with a 1–7 Likert scale (with 1 meaning the LA
+interpretation was possible and 7 meaning only the HA interpretation
+was possible) on the next page. For example, when presented with the
+7
+
+S.H. Lau et al.
+
+Journal of Memory and Language 146 (2026) 104708
+
+Results and discussion
+Fig. 3 shows the mean ratings for ambiguous target items (in z-score
+units) following HA or LA primes of same or different prime-target
+pairing. On average, when the prime and target were of the same
+grain size, the ratings were 0.17 z-score units higher than when the
+prime and target were of different grain sizes (the main effect of PrimeTarget Pairing was significant; β = 0.18, SE = 0.03, t = 5.16, p < .001).
+To address whether attachment priming was specific to linguistic
+units of the same grain size only, we turned to the main effect of Prime
+Attachment and the Prime Attachment × Prime-Target Pairing interac­
+tion. The average ratings for target items following HA and LA primes
+were comparable (i.e., no main effect of Prime Attachment; β = − 0.03,
+SE = 0.03, t = − 1.30, p = .19). However, when grain size was taken into
+account, we found that priming effect was present among linguistic units
+of the same grain size but not among units of different grain sizes (i.e., a
+significant Prime Attachment × Prime Target Pairing interaction; β =
+− 0.20, SE = 0.06, t = − 3.43, p < .001). Specifically, when the prime and
+the target were of the same grain size, there was a 0.12 z-score units
+difference in ratings for target items following HA primes (M = 0.14, SE
+= 0.09) versus LA primes (M = 0.02, SE = 0.09); the pairwise compar­
+ison was significant (z = 3.39, p < .001). However, when the prime and
+the target were of different grain sizes, the ratings following HA (M =
+− 0.12, SE = 0.09) and LA primes (M = − 0.05, SE = 0.09) were com­
+parable; the pairwise comparison was not significant (z = − 1.49, p =
+.14).
+Post-hoc Bayesian analyses replicated and extended our frequentist
+results. We observed a main effect of Prime-Target pairing (β = 0.18, 95
+% CI = [0.12, 0.24], BF10 = 1.91 × 106) and an interaction between
+Prime-Target pairing and Prime Attachment (β = − 0.20, 95 % CI = [
+− 0.32, − 0.09], BF10 = 10.46). There was evidence against a main effect
+of Prime Attachment (β = − 0.05, 95 % CI = [-0.10, 0.01], BF10 = 0.049).
+Follow-up comparisons show evidence for a main effect of Prime
+Attachment when grain size is the same (β = − 0.14, CI = [-0.22, − 0.06],
+BF10 = 5.56) and evidence against a main effect of Prime Attachment
+when grain size is different (β = 0.06, CI = [-0.02, 0.14], BF10 = 0.062).
+In our secondary analysis, we added the variable of Prime Type into
+the model to examine whether the priming effect was modulated by
+whether the prime was a sentence or a noun phrase. Fig. 4 further breaks
+down Fig. 3 into the two prime types. In regards to results involving the
+new addition of Prime Type, we only found a marginal Prime Type ×
+Prime-Target Pairing interaction (β = − 0.71, SE = 0.36, t = − 1.94, p =
+.07), such that the average ratings for morphological targets were 0.54 z-
+
+Fig. 4. Mean rating (in z-score unit) for ambiguous target items following highor low-attachment primes, color-coded by prime attachment and separated into
+four panels by prime-target pairing and prime type. Higher means more likely
+to accept high-attachment reading only. Error bars represent standard errors.
+
+score units higher when the primes were also morphological, compared
+to when the primes were sentences (z = − 2.91, p = .003). The ratings for
+sentence targets were comparable when primes were of the same or
+different grain size (− 1.70 z-score units difference; z = 0.92, p = .36).
+Critically, there was no main effect of Prime Type, Prime Attach­
+ment × Prime Type interaction, nor Prime Attachment × Prime-Target
+Pairing × Prime Type interaction. The main effect of Prime-Target
+Pairing reported in the main analysis remained significant after add­
+ing Prime Type to the model (β = − 0.18, SE = 0.03, t = 6.27, p < .001),
+as did the interaction between Prime-Target Pairing and Prime Attach­
+ment (β = − 0.20, SE = 0.06, t = − 3.48, p < .001). In other words, there
+was no evidence to suggest that the priming effects we reported were
+dependent on whether the prime was a sentence or a noun phrase.
+Our second set of Bayesian analyses involved testing whether there
+was a three-way interaction between Prime Type, Prime Attachment,
+and Prime-Target Pairing. Bayes Factor comparisons produced evidence
+against such an interaction (β = − 0.07, 95 % CI = [-0.31, 0.16], BF10 =
+0.073). We also obtained Bayes Factor evidence in favor of a Prime
+Attachment × Prime-Target Pairing interaction, consistent with our
+main analysis (β = − 0.20, CI = [-0.32, − 0.09], BF10 = 11.34).
+Taken together, we found evidence suggesting that attachment
+priming most likely only occurs when the prime and target were lin­
+guistic units of the same grain size. That is, structuring mechanisms are
+likely not shared between the sentence and the morphological level.
+General discussion
+In three experiments, the current work investigated whether the
+structuring mechanisms for linguistic units of different grain sizes are
+shared. Specifically, we tested whether relative clause attachment in
+sentences and morphological attachment in noun phrases shared struc­
+turing mechanisms and thus showed bidirectional priming effects. We
+used a variety of tasks throughout the experiments, but priming was
+generally operationalized throughout as whether participants were
+more likely to produce or interpret a relatively attachment-neutral
+target item with high attachment (HA) bias following the production
+
+Fig. 3. Mean rating (in z-score unit) for ambiguous target items following highor low-attachment primes, color-coded by prime attachment and separated into
+two panels by prime-target pairing. Higher means more likely to accept highattachment reading only. Error bars represent standard errors.
+8
+
+S.H. Lau et al.
+
+Journal of Memory and Language 146 (2026) 104708
+
+or comprehension of an HA prime, compared to following producing or
+interpreting a low attachment (LA) prime. Based on previous work on
+structural priming in relative clause sentences (e.g., Desmet & Declercq,
+2006; Scheepers, 2003), we expected to replicate this priming effect
+within the same grain size at least on the sentence level. At the time of
+the completion of our work, we were not aware of any previous work
+showing within-domain priming on the morphological level among
+ambiguous noun phrases (only cross-domain priming from math to
+adjective-noun-noun compounds in Scheepers & Sturt, 2014). However,
+we expected to see the priming effect from noun phrases to other noun
+phrases if such an effect extends beyond the sentence level (i.e., priming
+should be observed in any linguistic units that indeed have similar un­
+derlying structures despite differences in surface features and mean­
+ings). Critically, if the structuring mechanisms were shared across grain
+sizes, we should see attachment priming from sentences to noun phrases,
+and vice versa. If the mechanisms were distinct, then we should see
+within-level priming as described above only.
+Experiment 1 examined whether attachment preferences in relative
+clause sentence production and in free recall of noun phrases affected
+subsequent relative clause sentence production. The results showed that
+participants were numerically more likely to produce HA relative clause
+sentences following HA primes (compared to following LA primes), but a
+marginal interaction (and the accompanying pairwise comparisons)
+suggested that this should only be taken as suggestive evidence that the
+effect was most likely driven by the sentence primes. That is, we repli­
+cated the relative clause priming effect reported in the literature but
+found no strong evidence that noun phrases could prime sentence pro­
+duction. However, to establish that there is no cross-grain size priming,
+we needed to establish a double dissociation. Moreover, it was unclear at
+that point whether noun phrases could produce priming effects at all,
+even within-level. If there is no cross-grain size priming, the result
+should be bi-directional.
+Experiment 2 examined whether attachment preferences in relative
+clause sentence production and in noun phrase comprehension affected
+subsequent noun phrase comprehension. The results demonstrated that
+participants rated the HA interpretation of an ambiguous noun phrase as
+more probable following an HA prime (compared to following an LA
+prime), but the patterns were mostly driven by the morphological
+primes. These patterns are important in two different ways: First, we
+presented novel evidence showing that structural priming effects within
+the linguistic domain extend beyond the sentence level to ambiguous
+noun phrase comprehension. Second, morphological (but not sentence)
+attachment preferences affected subsequent morphological attachment
+preferences. Crucial to the question of the sharedness of structuring
+mechanisms across linguistic units of different grain sizes, the combi­
+nation of the results in Experiment 1 and 2 resembled a double disso­
+ciation, suggesting that the mechanisms are distinct.
+However, the interpretation of Experiments 1 and 2 is challenged by
+the fact that because the tasks for the two linguistic levels were different,
+our results could have been explained by preferences in sentence
+continuation priming sentence continuation but not semantic interpre­
+tation, and vice versa, regardless of grain size. As such, Experiment 3
+sought to confirm the double dissociation and to eliminate the possi­
+bility of explaining the dissociation via task priming by holding the tasks
+across grain sizes constant (i.e., all tasks were semantic interpretation
+tasks).
+Experiment 3 compared whether attachment preferences in sentence
+and morphological comprehension affected subsequent comprehension
+preferences in the same versus different linguistic level. The results
+showed that attachment priming was indeed only present in linguistic
+units of the same grain size. Further analysis found no evidence sug­
+gesting any difference in priming magnitude for different grain sizes,
+meaning that the results are unlikely to be driven by one particular grain
+size. Additionally, prime and target tasks for all conditions were the
+same, so the results could not be reduced to task priming. Altogether, the
+results from three experiments suggested that structuring mechanisms
+
+for linguistic units of different grain sizes are not shared.
+Given the evidence for cross-domain priming in the literature (e.g.,
+Scheepers et al., 2011; Scheepers & Sturt, 2014; Van de Cavey & Hart­
+suiker, 2016), it is somewhat surprising that we failed to observe crossgrain size priming within the linguistic domain. Our main goal with
+these experiments was to explore cross-domain priming within language
+systems rather than outside of them, and so we can only speculate as to
+why there is evidence in the literature that mathematics and music
+prime relative clause attachment, but morphological organization does
+not (and why relative clause attachment does not prime morphological
+organization).
+One straightforward possibility is that processes that underlie
+morphological organization themselves are isolated from influences of
+processes that drive structural organization outside the morphological
+system. In addition to being consistent with the current results, this
+possibility predicts that manipulations of morphological organization
+should fail to prime or be primed by the non-linguistic systems of or­
+ganization that have been shown to affect relative-clause attachment
+(namely, music and math).
+An observation relevant to the possible isolability of the processes
+that organize morphological representations comes from Scheepers and
+Sturt (2014). They showed that the structural organization of math
+problems (e.g., 25–4 × 3, which is right-branching, vs. 25 × 4–3, which
+is left-branching) affected how adjective-noun-noun phrases were
+interpreted (bankrupt coffee dealer, which is right branching, vs. organic
+coffee dealer, which is left-branching), and vice versa. Two consider­
+ations potentially limit the informativeness of this result with respect to
+the claim here of the potential isolation of morphological processes.
+First, as with relative clauses (as noted next), it is possible that a level of
+organization outside of morphology affects performance (e.g., rhythm,
+prosody) in both the linguistic and nonlinguistic domains, which is less
+likely to be true with respect to the level of morphology at stake here (e.
+g., Russian teacher). Second, it is reasonable to posit that the structural
+organization of an adjective-noun-noun sequence is at a syntactic level,
+unlike the organization that distinguishes the interpretations of the
+morphological structural alternatives here. In all, further research is
+needed to directly address this point.
+More generally, the possible isolability of the processes that deter­
+mine the type of morphological organization investigated here has not
+(to our knowledge) been addressed in the broader psycholinguistic
+literature (indeed, filling just this gap was a main objective of this
+project). Most investigations of the processes that determine morpho­
+logical organization have focused on more traditional questions of, for
+example, whether morphology operates in a structurally independent
+manner (separately from phonology or semantics; e.g., Dohmes, Zwit­
+serlood, & Bölte, 2004; Koester & Schiller, 2008; Zwitserlood, Bölte, and
+Dohmes, 2000). This literature generally suggests that morphological
+processing can be characterized as operating in a structurally indepen­
+dent way, which is consistent with, but does not necessarily require, a
+system isolated from external influences.
+A different (but perhaps related) possibility about which we can only
+offer vague speculations is that relative-clause attachment, mathe­
+matics, and music may share some organizational component that is not
+shared with morphological organization. For example, it may be that
+some rhythmic, prosody-like process (e.g., Jun & Bishop, 2015) operates
+in relative-clause attachment, mathematics, and music but not during
+morphological organization. Or, relative-clause attachment, mathe­
+matics, and music may share some less-superficial level of organization
+that is more abstract and general (i.e., global configuration and shape).
+Finally, it is worth noting that cross-domain structural priming may
+be highly sensitive to nuances in processing. For example, Scheepers
+et al. (2011) did not observe math priming in participants who were
+explicitly reminded of the operator-precedence rules before the experi­
+ment, which may have encouraged them to strategically direct their
+attention towards searching for the multiplication and division opera­
+tors. The authors speculated that explicit instruction dampened priming
+9
+
+S.H. Lau et al.
+
+Journal of Memory and Language 146 (2026) 104708
+
+the case of relative clause attachment, English speakers tend to have a
+low attachment preference in production (as shown in our data and
+previous work, e.g., Scheepers et al., 2011), and other semantic cues in
+discourse may aid in comprehension. Additionally, our pilot data indi­
+cated that comprehenders often have strong interpretation preferences
+for noun phrases that could have more than one plausible meanings due
+to attachment ambiguity (which led to the small number of morpho­
+logical target items in our experiments). It is unclear whether there is a
+clear morphological attachment preference in noun phrases and multi­
+morphemic words in the English language as a whole, and whether that
+preference aligns with the low attachment preference in sentences. And
+if so, how do cognitive factors (such as memory and attentional con­
+straints) guide those statistics? In Scheepers and Sturt (2014)’s data,
+sensibility ratings tended to be higher for right-branching than for leftbranching adjective-noun-noun compounds, though it is unclear in what
+the preference would be in noun phrases like our materials where both
+HA and LA alternatives are right-branching. Corpus studies with
+attachment statistics on the morphological level and comparisons with
+statistics on the sentence level will lend important insights into the
+universality of cognitive biases in language use.
+To conclude, the current study used attachment ambiguity and
+priming to investigate the sharedness of structuring mechanisms for
+linguistic units of different grain sizes, namely relative clause sentences
+and noun phrases. Based on results across three experiments showing
+that priming was only observed between linguistic units of the same
+grain size, we concluded that the structuring mechanisms on the sen­
+tence level and the morphological level are likely not shared.
+
+effects due to these effects being relatively dependent on implicit pro­
+cessing. In terms of the online processing dynamics of words versus
+sentences, it is possible that high frequency noun phrases and words
+have “larger chunks” of stored meanings, whose semantics are not
+computed by assembling each morpheme on-the-fly in ways comparable
+to how comprehenders identifies what entity a relative clause modifies
+in real-time (although such a possibility fails to explain why the current
+experiments found priming from morphology to morphology). Thus, low
+frequency morphological items or a task that requires participants to
+create new words and phrases may offer a promising avenue into
+furthering our understanding of the processing of morphological
+structures.
+The current work ultimately demonstrates within-level linguistic
+attachment priming in comprehension, but a few modality-specific
+research questions remain unanswered. On the sentence level, there is
+evidence that distributional patterns in relative clause production are
+linked to comprehension performance. For example, Gennari and Mac­
+Donald (2009) reported compatible production preferences in both ex­
+periments and corpora, showing that passive structures were more likely
+to be produced with theme-experiencer verbs than with agent-theme
+verbs, and when two nouns mismatched in animacy than when were
+both animate. Critically, they also showed that passive production rates
+predicted reading times in comprehending active object relative clauses,
+with more commonly passivized verb type and animacy configurations
+in production being associated with more comprehension difficulties in
+an active relative clause. While sentence production distributional pat­
+terns and comprehension performances are linked, due to the difficulty
+in designing a production task on the morphological level, it is unclear
+whether noun phrase production affects subsequent noun phrase pro­
+duction or comprehension.
+Aside from innovating ways to measure morphological production,
+future work may also specify how the structuring mechanisms for
+different linguistic units differ, and further explore how these nonshared mechanisms are integrated in online production and compre­
+hension. In the interest of keeping the results and the experimental logic
+comparable to previous work in the generality of structuring mecha­
+nisms, the current work chose to use specific test cases of linguistic
+ambiguity coupled with a structural priming paradigm, which allowed
+for clear predictions of behaviors. Although ambiguity is ubiquitous in
+everyday language use, speakers and comprehenders do not always
+detect it because their prior knowledge and linguistic biases often help
+them convey or derive the intended meaning effectively. For instance, in
+
+CRediT authorship contribution statement
+Sin Hang Lau: Writing – review & editing, Writing – original draft,
+Visualization, Validation, Methodology, Investigation, Formal analysis,
+Data curation, Conceptualization. Janna W. Wennberg: Writing – re­
+view & editing, Methodology, Formal analysis, Data curation. Victor S.
+Ferreira: Writing – review & editing, Supervision, Conceptualization.
+Declaration of competing interest
+The authors declare that they have no known competing financial
+interests or personal relationships that could have appeared to influence
+the work reported in this paper.
+
+Appendix A
+Full Lists of Prime and Target Materials in Experiment 1
+Table A1
+Prime materials (presented in the specified counterbalanced and pseudorandomized order).
+Item
+
+HA Prime
+
+LA Prime
+
+1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+15
+
+3 + (6 − 2)/2 =
+10 + (7 − 5) × 3 =
+41 − (8 + 3) × 3 =
+20 + (32 – 6)/2 =
+56 – (5 + 3) × 4 =
+31 + (8 – 5) × 2 =
+43 – (27 – 9)/3 =
+19 + (24 – 8)/4 =
+90 – (5 + 15)/5 =
+78 – (9 + 6) × 2 =
+45 – (10 + 5) × 3 =
+70 – (25 + 5)/5 =
+80 − (9 + 1) × 5 =
+67 − (24 − 12)/3 =
+7 + (28 − 4) × 2 =
+
+3 + 6 − 2/2 =
+10 + 7 − 5 × 3 =
+41 − 8 + 3 × 3 =
+20 + 32 – 6/2 =
+56 – 5 + 3 × 4 =
+31 + 8 – 5 × 2 =
+43 – 27 – 9/3 =
+19 + 24 – 8/4 =
+90 – 5 + 15/5 =
+78 – 9 + 6 × 2 =
+45 – 10 + 5 × 3 =
+70 – 25 + 5/5 =
+80 − 9 + 1 × 5 =
+67 − 24 − 12/3 =
+7 + 28 – 4 × 2 =
+(continued on next page)
+
+10
+
+S.H. Lau et al.
+
+Journal of Memory and Language 146 (2026) 104708
+
+Table A1 (continued )
+Item
+
+HA Prime
+
+16
+17
+18
+19
+20
+21
+22
+23
+24
+25
+26
+27
+28
+29
+30
+31
+32
+33
+34
+35
+36
+37
+38
+39
+40
+41
+42
+43
+44
+45
+46
+47
+48
+49
+50
+51
+52
+53
+54
+55
+56
+57
+58
+59
+60
+
+9 + (20 + 10)/5 =
+9 + 20 + 10/5 =
+15 – (12 – 4)/2 =
+15 – 12 – 4/2 =
+2 + (8 + 4) × 3 =
+2+8+4×3=
+85 – (14 + 21)/7 =
+85 – 14 + 21/7 =
+10 + (6 + 3) × 2 =
+10 + 6 + 3 × 2 =
+56 + (6 + 6)/2 =
+56 + 6 + 6/2 =
+4 + (22 – 4)/2 =
+4 + 22 – 4/2 =
+98 – (50 – 30)/10 =
+98 – 50 – 30/10 =
+12 + (26 – 1) × 4 =
+12 + 26 – 1 × 4 =
+social psychologist
+careless psychologist
+political scientist
+poor scientist
+criminal lawyer
+stubborn lawyer
+quantitative analyst
+wealthy analyst
+pure mathematician
+talkative mathematician
+standup comedian
+boring comedian
+classical musician
+creative musician
+primate researcher
+diligent researcher
+marine biologist
+adventurous biologist
+organic chemist
+angry chemist
+electrical engineer
+lazy engineer
+nuclear physicist
+meticulous physicist
+Gabriel cut the tags of the shirt that were (HA)/that was (LA)____.
+Everyone stared at the mansion of the millionaire that was (HA)/who was (LA)____.
+The witness recognized the driver of the vehicle who was (HA)/that was (LA)____.
+The recruiters discussed the performance of the candidates that was (HA)/who were (LA)____.
+We consulted the accountants of the bank who were (HA)/that was (LA)____.
+Martin hugged the pets of the school friend that were (HA)/who was (LA)____.
+The storm destroyed the stairs of the house that were (HA)/that was (LA)____.
+Hans cleaned the windows of the pharmacy that were (HA)/that was (LA)____.
+The boy teased the hamsters of the girl that were (HA)/who was (LA)____.
+Frank thought of the brothers of the friend who were (HA)/who was (LA)____.
+The voters supported the policies of the politician that were (HA)/who was (LA)____.
+The firefighters saved the occupants of the penthouse who were (HA)/that was (LA)____.
+Maria consoled the friends of the roommate who were (HA)/who was (LA)____.
+Peter heard the birds of the girl that were (HA)/who was (LA)____.
+The police interrogated the suspect of the crimes who was (HA)/that were (LA)____.
+Judith prosecuted the owner of the animals who was (HA)/that were (LA)____.
+Peter used the printers of the department that were (HA)/that was (LA)____.
+Someone shot the cousins of the actress who were (HA)/who was (LA)____.
+Frida complained to the butchers of the supermarket who were (HA)/that was (LA)____.
+The gardener mowed the lawns of the park that were (HA)/that was (LA)____.
+The patient contacted the head physician of the neurologists who was (HA)/who were (LA)____.
+Leo pointed to the drawings of the old man that were (HA)/who was (LA)____.
+The portraitist painted the grandparents of the king who were (HA)/who was (LA)____.
+The officer searched the house of the criminals that was (HA)/who were (LA)____.
+
+LA Prime
+
+Note. Participants saw either the HA or the LA version of items 1–24 and 37–60. Due to the scarcity of appropriate morphological items, par­
+ticipants saw both HA and LA versions of items 25–36. As a result, there were 72 primes in total.
+Table A2
+Target materials.
+Item
+
+Target Fragment
+
+1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+15
+16
+17
+18
+19
+20
+
+The philanthropist drove the limo of the charities that____.
+They were shocked by the paragraphs of the essay that____.
+The hairdresser helped the stylist of the celebrities who____.
+John met the supervisor of the employees who____.
+The bus driver talked to the leader of the boy scouts who____.
+The writer deleted the lines of the poem that____.
+The hacker attacked the websites of the service provider that____.
+Klara interviewed the mentees of the mentor who____.
+The commission referred to the source of the donations that____.
+The broker communicated with the agent of the buyers who____.
+The thief stole the documents of the organization that____.
+The volunteer bathed the kittens of the cat that____.
+The barista broke the parts of the machine that____.
+Kurt distributed the tickets of the show that____.
+The frost ruined the harvest of the fruit farms that____.
+The tutor advised the students of the lecturer who____.
+The personal trainer adjusted the settings of the treadmill that____.
+The security guard comforted the visitor of the tenants who____.
+The mover called the landlord of the customers who____.
+The homeowner kept the letters of the office that____.
+(continued on next page)
+
+11
+
+Journal of Memory and Language 146 (2026) 104708
+
+S.H. Lau et al.
+
+Table A2 (continued )
+Item
+
+Target Fragment
+
+21
+22
+23
+24
+25
+26
+27
+28
+29
+30
+31
+32
+33
+34
+35
+36
+37
+38
+39
+40
+41
+42
+43
+44
+45
+46
+47
+48
+49
+50
+51
+52
+53
+54
+55
+56
+57
+58
+59
+60
+61
+62
+63
+64
+65
+66
+67
+68
+69
+70
+71
+72
+
+Ben attacked the boss of the workers who____.
+The expert praised the investor of the young entrepreneurs who____.
+The manager waited for the musicians of the pop star who____.
+The train conductor criticized the kid of the passengers who____.
+The mover insured the furniture of the apartments that____.
+The superintendent checked the earnings of the company that____.
+The florist befriended the servant of the princesses who____.
+We were amused at the articles of the newspaper that____.
+The reader insulted the partners of the editor who____.
+The journalist stalked the dancers of the singer who____.
+The scholar studied the language of the tribes that____.
+The professor taught the daughters of the president who____.
+The astronomer observed the stars of the spiral galaxy that____.
+The farmer fed the calves of the cow that____.
+Donna laughed at the apprentices of the designer who____.
+The historians documented the stories of the city that____.
+The dentist scraped the surface of the teeth that____.
+The restaurant owner fired the helper of the chefs who____.
+The researcher reviewed the debates in the field that____.
+The marketing officer advertised the promotions of the month that____.
+The businessman thanked the newcomer of the workers who____.
+The knight slayed the dragons of the cavern that____.
+The minister saw the bodyguard of the diplomats who____.
+The lifeguard saved the toddler of the parents who____.
+The tour guide mentioned the bells of the church that____.
+The witch cursed the ancestors of the villager who____.
+The pensioner complained about the content of the fliers that____.
+The flower girl waved at the relatives of the bride who____.
+The mermaid polished the diamonds of the ring that____.
+Francesca corrected the supporters of the author who____.
+The social worker greeted the nurse of the senior-citizens who____.
+The botanist examined the roses of the garden that____.
+The scientist criticized the method of the studies that____.
+The woman stared at the decorations of the box that____.
+The data scientists analyzed the strategies of the company that____.
+The producer described the plot of the episodes that____.
+The frost destroyed the products of the farm that____.
+The public admired the doctor of the patients who____.
+The protesters disagreed with the general of the soldiers who____.
+The mechanic threatened the driver of the performers who____.
+Nora visited the students of the piano teacher who____.
+A stranger blackmailed the butler of the royals who____.
+The housekeeper replaced the remote of the lights that____.
+The secret service confiscated all files of the organization that____.
+The programmer improved the software of the games that____.
+The economist questioned the report of the businesses that____.
+The reporter spoke to the captain of the players who____.
+The neurologist operated on the mother of the twins who____.
+The chauffeur met the representative of the state guests who____.
+The concierge escorted the negotiator of the union members who____.
+The pilot nodded at the head of the flight attendants who____.
+The porter smiled at the children of the hotel resident who____.
+
+Appendix B
+Full Lists of Prime and Target Materials in Experiment 2.
+Table B1
+Prime materials (presented in the specified counterbalanced and pseudorandomized order).
+Item
+
+Prime Material
+
+1
+2
+3
+4
+5
+6
+7
+8
+
+political scientist (HA)
+marine biologist (HA)
+skillful musician (LA)
+careless psychologist (LA)
+Frank thought of the brothers of the friend who were (HA)/who was (LA)____.
+The recruiters discussed the performance of the candidates that was (HA) /who were (LA)____.
+Hans cleaned the windows of the pharmacy that were (HA)/that was (LA)____.
+The boy teased the hamsters of the girl that were (HA)/who was (LA)____.
+
+12
+
+S.H. Lau et al.
+
+Journal of Memory and Language 146 (2026) 104708
+
+Table B2
+Target Materials.
+Item
+
+Target Material
+
+1
+2
+3
+4
+5
+6
+7
+8
+
+baroque painter
+fine artist
+revolutionary scholar
+Latin dancer
+creative writer
+canine detective
+artistic gymnast
+Russian teacher
+
+Appendix C
+Full Lists of Prime and Target Materials in Experiment 3.
+Table C1
+Prime materials (presented in the specified counterbalanced and pseudorandomized order).
+Item
+
+Prime Material
+
+1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+15
+16
+
+political scientist (HA)
+marine biologist (HA)
+primate researcher (HA)
+criminal lawyer (HA)
+skillful musician (LA)
+careless psychologist (LA)
+talkative mathematician (LA)
+angry chemist (LA)
+Frank thought of the brothers of the friend who were twins (HA)/who was sick (LA).
+The recruiters discussed the performance of the candidates that was surprising (HA) /who were international students (LA).
+Hans cleaned the windows of the pharmacy that were full of fingerprints (HA)/that was broken into (LA).
+The boy teased the hamsters of the girl that were running around (HA)/who was an animal advocate (LA).
+The farmer fed the calves of the cow that were crying (HA)/that was big and strong (LA).
+The witness recognized the driver of the vehicle who had a suspended license (HA)/that was stolen (LA).
+Everyone stared at the mansion of the millionaire that was renovated recently (HA) /who was generous (LA).
+The priest spoke to the leader of the scouts who was dishonest (HA)/who were going camping (LA).
+
+Table C2
+Target materials.
+Item
+
+Target Material
+
+1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+15
+16
+
+baroque painter
+fine artist
+revolutionary scholar
+Latin dancer
+creative writer
+canine detective
+artistic gymnast
+Russian teacher
+John met the friend of the teacher who was in Germany.
+Someone shot the servant of the actress who was on the balcony.
+Andrew was speaking with the niece of the cleaner who was in Brazil.
+The journalist interviewed the daughter of the colonel who had the accident.
+The police arrested the sister of the porter who was in Melilla.
+The boys poked fun at the son of the painter who was in the park.
+My mother argued with the maid of the duchess who left the house.
+Amilia exchanges letters with the cousin of the singer who was in the church.
+
+Data availability
+
+Bock, J. K. (1989). Closed-class immanence in sentence production. Cognition, 31(2),
+163–186.
+Bock, J. K., Dell, G. S., Chang, F., & Onishi, K. H. (2007). Structural persistence from
+language comprehension to language production. Cognition, 104, 437–458.
+Bock, J. K., & Loebell, H. (1990). Framing sentences. Cognition, 35(1), 1–39.
+Branigan, H. P., Pickering, M. J., & Cleland, A. A. (2000). Syntactic co-ordination in
+dialogue. Cognition, 75(2), B13–B25.
+Bürkner, P. C. (2019). Bayesian item response modeling in R with brms and Stan. arXiv
+preprint arXiv:1905.09501.
+
+Already shared above.
+References

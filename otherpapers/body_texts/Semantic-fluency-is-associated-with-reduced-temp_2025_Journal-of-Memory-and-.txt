@@ -1,0 +1,1132 @@
+over smaller, sooner ones. The precise cognitive capacities that facilitate
+future-oriented choice are still unknown, though. Recent research has
+pointed to a link between better declarative memory and reduced
+temporal discounting (Bulley & Schacter, 2023; Lempert, MacNear,
+et al., 2020; Lempert, Mechanic-Hamilton, et al., 2020), but this work
+has focused primarily on episodic memory. Here we tested the novel
+hypothesis that better semantic memory ability is associated with lower
+
+temporal discounting.
+Temporal discounting is typically measured by having participants
+make a series of choices between smaller, sooner monetary rewards (e.
+g., “$10 today”) and larger, later monetary rewards (e.g., “$25 in 14
+days”). From these choices, a discount rate can be derived. Higher dis­
+count rates reflect a tendency to choose immediate rewards at one’s
+long-term expense, whereas lower discount rates reflect more patience.
+Discount rates measured in the laboratory are associated with many
+real-world behaviors that have delayed consequences (Bartels et al.,
+2023; Bradford et al., 2017; Chabris et al., 2008). For example, people
+with higher discount rates are more likely to smoke (Bickel et al., 1999),
+use alcohol (Bradford et al., 2017; Vuchinich & Simpson, 1998), buy
+unhealthy foods (Appelhans et al., 2019), gamble (Dixon et al., 2006),
+have credit card debt (Meier & Sprenger, 2012), and exercise less
+(Bradford et al., 2017). Temporal discounting is also reliably higher in
+some forms of psychopathology, such as substance use disorder (Amlung
+et al., 2017, 2019; MacKillop et al., 2011). Understanding the cognitive
+processes underlying individual differences in temporal discounting will
+
+This article is part of a special issue entitled: ‘Individual differences in memory’ published in Journal of Memory and Language.
+* Corresponding author at: Adelphi University, Blodgett Hall 212B, One South Avenue, Garden City, NY 11530, USA.
+E-mail address: kmlempert@adelphi.edu (K.M. Lempert).
+
+☆
+
+https://doi.org/10.1016/j.jml.2025.104616
+Received 1 April 2024; Received in revised form 18 December 2024; Accepted 8 January 2025
+Available online 14 January 2025
+0749-596X/© 2025 The Authors. Published by Elsevier Inc. This is an open access article under the CC BY license (http://creativecommons.org/licenses/by/4.0/).
+
+D. Akilov and K.M. Lempert
+
+Journal of Memory and Language 142 (2025) 104616
+
+not only help elucidate the mechanisms by which intertemporal choices
+are made; this knowledge can also help us develop interventions for
+reducing discounting.
+The notion that long-term, declarative memory plays a key role in
+temporal discounting is inspired by research showing that the neural
+mechanisms of thinking about the future overlap with the neural
+mechanisms of episodic memory retrieval (Bulley & Schacter, 2023;
+Schacter et al., 2007). Moreover, people who are better able to recollect
+the past in detail (i.e., those who have better episodic memory retrieval
+ability) have also been shown to imagine the future in more detail (Addis
+et al., 2011; Hassabis et al., 2007). Imagining future outcomes more
+vividly can enhance the value of those outcomes, perhaps by making
+them seem more proximal and concrete (Rick & Loewenstein, 2008;
+Trope & Liberman, 2010). Indeed, just having people engage in episodic
+future thinking before they make intertemporal choices has been shown
+to reduce temporal discounting (Benoit et al., 2011; Peters & Büchel,
+2010). This effect has been replicated many times (Rösch et al., 2022),
+and other manipulations of temporal discounting have generally been
+less successful (Lempert & Phelps, 2016; Rung & Madden, 2018).
+If imagining the future can attenuate temporal discounting, and if
+people with better episodic memory are better at imagining the future,
+then perhaps individual differences in temporal discounting are driven
+by individual differences in episodic memory. There is not much evi­
+dence for an association between episodic memory and temporal dis­
+counting, though. Two studies showed no relationship between episodic
+memory and temporal discounting in cognitively normal older adults
+(Boyle et al., 2012; Seinstra et al., 2015). Another study found that
+standard neuropsychological measures of delayed episodic recall were
+associated with temporal discounting in older adults, but this relation­
+ship was driven by the subset of participants who were diagnosed with
+mild cognitive impairment (Lempert, Mechanic-Hamilton, et al., 2020).
+Two studies using Human Connectome Project data (>1000 adult par­
+ticipants) did not find significant correlations between episodic memory
+scores and temporal discounting (Garzón et al., 2023; Yeh et al., 2021).
+Finally, although people with amnesia due to hippocampal damage
+show severe episodic memory deficits (Rosenbaum et al., 2005), their
+discount rates are no different from those of healthy controls (Craver
+et al., 2014; Kwan et al., 2012). It is difficult to argue that episodic
+memory is critical for choosing delayed rewards, when people who
+cannot form new episodic memories are still capable of choosing
+delayed rewards.
+One explanation for these null results is that semantic memory, which
+remains unimpaired in people with damage restricted to the hippo­
+campus, is sufficient for considering the future in decision making. Se­
+mantic memory is not entirely distinct from episodic memory; episodic
+memories become “semanticized” over time (Renoult et al., 2019;
+Sekeres et al., 2018). Semantic memories can be distinguished from
+episodic memories, though, because they are not confined to a single
+time and place (Tulving, 1987). Rather, semantic memory comprises
+categories, concepts, and schemas that are learned over time. Schemas
+stored in semantic memory provide the scaffolding for episodic future
+thinking (Irish et al., 2012), since imagined future events, no matter how
+vividly they can be conjured, lack specific time and place details by
+definition. Therefore, if someone is able to draw on semantic knowledge
+– that is, knowledge of how things usually are – then they may be able to
+make decisions in their long-term best interest, even if they cannot
+envision future events in detail.
+The strongest evidence for the idea that future-oriented choice de­
+pends on semantic memory comes from the neuroscience literature. The
+brain region that is most crucial for semantic memory is the anterior
+temporal lobe (Lambon Ralph et al., 2012). The anterior temporal lobe is
+also the region where cortical thickness is most robustly and uniquely
+associated with temporal discounting (Garzón et al., 2023): people with
+more intact anterior temporal lobes have lower discount rates.
+Furthermore, people who are known to have extensive damage to the
+anterior temporal lobe, such as those with semantic variant primary
+
+progressive aphasia (svPPA), do show steep discounting, both compared
+to healthy controls and to people with other neurodegenerative diseases
+(Beagle et al., 2020; Chiong et al., 2016). The defining feature of svPPA
+is a loss of semantic knowledge, but patients with this disorder also have
+a severe deficit in prospection (Irish et al., 2012; Irish & Piolino, 2016),
+because they lack the schemas needed to imagine events that haven’t
+occurred yet. Therefore, it is possible that what enables future-oriented
+decision making is conceptual information that is stored in semantic
+memory.
+To our knowledge, no study has directly examined semantic memory
+and temporal discounting in the same set of participants in order to see if
+they are associated. We used two measures to assess different aspects of
+semantic memory: semantic fluency and the Deese-Roediger-McDermott
+(DRM) false memory paradigm. Semantic fluency is a semantic memory
+retrieval task that is known to engage the anterior temporal lobe (Baldo
+et al., 2006; Poch et al., 2021). In the semantic fluency task (Morris
+et al., 1989), participants name as many exemplars as they can from a
+category that is provided to them (e.g., animals) in a short amount of
+time. The number of unique exemplars named in that time is a measure
+of semantic retrieval ability. Of course, semantic fluency is also shaped
+by other cognitive processes, such as inhibition, working memory, ver­
+bal ability, and processing speed (Unsworth et al., 2011), so finding a
+relationship between semantic fluency and temporal discounting does
+not provide conclusive evidence that semantic retrieval underlies futureoriented choice. For that reason, we also included a measure of letter
+fluency as a control task. In letter fluency, participants name as many
+words beginning with a certain letter (e.g., “L”) as they can. Letter
+fluency and semantic fluency are highly correlated with each other, and
+they both rely on executive functions (Unsworth et al., 2011), but only
+semantic fluency requires that participants retrieve meanings of words,
+since letter fluency can be performed using phonological cues alone.
+Moreover, semantic fluency requires the temporal lobe, while letter
+fluency does not (Baldo et al., 2010; Gourovitch et al., 2000; Henry &
+Crawford, 2004), and semantic memory retrieval is associated with se­
+mantic fluency performance, but not letter fluency performance
+(Stolwyk et al., 2015). Therefore, we hypothesized that better semantic
+fluency would be associated with lower temporal discounting, even after
+controlling for letter fluency.
+Semantic fluency is a measure of voluntary semantic retrieval; we
+sought convergent evidence for the relationship between semantic
+memory and temporal discounting by also examining a measure of
+involuntary semantic retrieval: the DRM false memory paradigm. In the
+DRM false memory paradigm (Roediger & McDermott, 1995), partici­
+pants are first asked to encode a list of words that are drawn from a small
+number of categories. Later, they are asked whether they recognize: (1)
+previously seen words, (2) words that were strong semantic associates of
+the previously seen words, but were not seen at encoding (critical
+words), and (3) new words that were unrelated to the encoded words
+(distractor words). In this task, people often falsely remember seeing
+new words that are strong semantic associates of previously seen words
+(Gallo, 2010; Pardilla-Delgado & Payne, 2017). This modulation of
+episodic memory by semantic knowledge depends on the anterior tem­
+poral lobe (Gallate et al., 2009), and people with better semantic
+memory abilities tend to show more false memories for critical lures
+(Gatti et al., 2024). Thus, our second measure of semantic memory was
+the critical word false alarm rate in the DRM task. If we were to find that
+both semantic fluency and the critical word false alarm rate are asso­
+ciated with temporal discounting, then that would suggest that the as­
+sociation between semantic memory and temporal discounting
+generalizes across tasks, and does not depend on semantic retrieval
+being voluntary. Since episodic memory ability can also influence the
+critical word false alarm rate, here we calculated and controlled for d’ in
+our analysis. We also controlled for the criterion, a response bias toward
+endorsing words as familiar. We hypothesized that a higher critical word
+false alarm rate would be associated with lower temporal discounting,
+even after controlling for d’ and criterion.
+2
+
+D. Akilov and K.M. Lempert
+
+Journal of Memory and Language 142 (2025) 104616
+
+Just as we included control measures for semantic fluency and false
+memory rate in our study, we also included a control decision-making
+task, to ensure that any relationships that we found were specific to
+intertemporal preferences. Therefore, we also assessed risk tolerance, by
+having participants make a series of choices between smaller, certain
+and larger, probabilistic rewards (Levy et al., 2010). Risk tolerance re­
+flects the extent to which people devalue rewards that are uncertain,
+rather than delayed. Since we expect that semantic memory is involved
+specifically in considering delayed outcomes, we did not expect to see
+any significant relationships between our semantic memory measures
+and risk tolerance.
+In sum, here we examined semantic memory and decision making in
+an online community sample. We hypothesized that better semantic
+memory would be associated with reduced temporal discounting.
+
+American Indian or Alaska Native Hispanic, 4 Other/Mixed Race His­
+panic, 2 Other/Mixed race non-Hispanic, and 7 Not Reported). Partici­
+pants were paid $5 for completing the study (~$10.46 / hour). In
+addition, one participant per data collection day (five participants total)
+received a bonus based on their choices in the decision-making tasks (see
+below for details). All participants gave informed consent, and approval
+was obtained from Adelphi University’s Institutional Review Board
+(protocol #060323). The research was conducted in accordance with
+the Declaration of Helsinki.
+Procedure
+Participants performed a series of tasks and surveys in the following
+order: Deese-Roediger-McDermott (DRM) encoding task, temporal dis­
+counting task, risk tolerance task, semantic fluency, letter fluency, de­
+mographic and survey measures, and, finally, a DRM recognition
+memory task (Fig. 1). The average time it took to complete the study was
+28.68 min (SD = 8.03 min). The study was presented in Qualtrics
+(Provo, UT).
+
+Method
+Participants
+Participants were recruited online via Prolific. A recent meta-analysis
+of individual differences research found that a typical correlation effect
+size in this literature is about r = 0.2 (Gignac & Szodorai, 2016). To
+achieve 80% power to detect a correlation of that size (at α = 0.05), 191
+participants are required. To account for exclusions, we adhered to a
+data collection stopping rule of 230 participants. To be included, par­
+ticipants had to be at least eighteen years of age, fluent in English, and
+currently residing in the United States. They were also required to
+complete the survey on either their laptops or desktop computers (no
+mobile devices). No other inclusion criteria were used. The survey
+should have taken approximately 30 min to complete, so participants
+were excluded if they took less than 15 min (n = 1) or more than 50 min
+(n = 20) to complete it. We excluded participants at these extremes
+because we wanted to make sure that the delay time between encoding
+and retrieval was similar for all participants. Participants were also
+excluded if they failed at least two of four attention check questions in
+the decision-making tasks (n = 2 additional participants) or if they did
+not follow instructions in the fluency tasks (n = 3). Two of those three
+participants attempted to write down words from the encoding list
+instead of listing exemplars from categories; the remaining participant
+provided a numbered list of more exemplars than it would be possible to
+type in just one minute (50, 50, 100, and 98 in each of the four cate­
+gories). We decided that this participant must have copy and pasted this
+word list from another source (e.g., artificial intelligence). Finally, one
+participant was excluded for admitting that they wrote down the words
+from the encoding list to study them.
+Therefore, a total of 203 participants were included in the study (114
+F, 84 M, 3 non-binary, 2 not reported; mean age = 37.2; SD = 12.4;
+range: 19–76; 134 White Non-Hispanic, 15 White Hispanic, 9 Asian NonHispanic, 1 Asian Hispanic, 28 Black Non-Hispanic, 2 Black Hispanic, 1
+
+DRM encoding task
+Participants viewed a list of 54 words for three seconds each. They
+were told ahead of time that they would be tested for their memory of
+those words later in the study. These words were drawn from the DRM
+lists (Roediger & McDermott, 1995). There were nine words drawn from
+six semantic categories (i.e., masculine traits, sleep, sweets, emotions,
+insects, and colors; see Supplementary Tables 1 and 2 for full word lists).
+After three seconds passed, the next word appeared automatically. The
+encoding task was split into three blocks of eighteen words each, so that
+participants could have a thirty second break between blocks.
+Temporal discounting task
+Next, participants completed two decision-making tasks. Before the
+tasks began, participants were given the following instructions: “Later
+today, we will be holding a lottery, which will randomly select one
+participant out of every 50 participants and award them with one of the
+options they have chosen in one of the two tasks. Each choice has an
+equal chance of being selected, so you should respond on each choice as
+if it were the one that was going to be paid.” Right before the temporal
+discounting task, we added the following: “If, on the choice selected, you
+chose money today, you will get that money today as a bonus in Prolific.
+If, on the choice selected, you chose a delayed amount of money, you
+will get that amount of money as a bonus in Prolific, after the delay has
+passed.” In the temporal discounting task (Lempert, MechanicHamilton, et al., 2020; Senecal et al., 2012), participants made 53 de­
+cisions. Each question required the participant to choose between two
+options: one was an amount of money that the participant could receive
+immediately, and the other was an amount of money the participant
+could receive after a delay (e.g., $24 now or $25 in 166 days; see
+
+Fig. 1. Procedure timeline. The study was presented in five parts in Qualtrics, and it took about 30 min total.
+3
+
+D. Akilov and K.M. Lempert
+
+Journal of Memory and Language 142 (2025) 104616
+
+Supplementary Tables 3 and 4 for full list of choices from both decisionmaking tasks). The task has 51 choices, designed to capture a range of
+discount rates. We included an additional two “catch” trials in which we
+asked participants whether they wanted more money now or less money
+later (“$10 now or $9 in 180 days?” and “$28 now or $26 in 100 days?”).
+On these trials, any participant who is paying attention should select the
+immediate option since it dominates the delayed option on both attri­
+butes − amount and delay.
+
+understand the extent to which people feel like events are within their
+control (internal locus of control) or outside of their control (external
+locus of control; Rotter, 1966). This questionnaire was included to test a
+separate research question, and so, we will not discuss the results
+further.
+DRM recognition memory task
+Finally, participants were tested on their memory for the words that
+they saw in the encoding task. They were provided with a list of 54
+words, one at a time, and asked whether they recognized each word
+from the earlier list. Participants were presented with four options on
+each trial: “definitely old,” “probably old,” “definitely new,” and
+“probably new.” There was no time constraint given, and participants
+would move on to the next trial automatically, as soon as they respon­
+ded. Of the 54 words on the list, 18 of those words were from the original
+encoding list (“old” words), 18 were not on the list, but were drawn from
+the same semantic categories as the words on the encoding list (“critical”
+words), and 18 were novel words that were unrelated to any of the
+words in the encoding list (“distractor” words).
+At the very end of the procedure, participants were asked to indicate
+whether or not they had written the words from the encoding list down.
+We excluded anyone who admitted to doing so.
+
+Risk tolerance task
+Right before the risk tolerance task, participants were once again
+reminded about the lottery. The following language was added before
+this block: “If, on the choice selected, you chose money for sure, you will
+get that money today as a bonus in Prolific. If, on the choice selected,
+you chose a gamble option, we will flip a coin to see if you get that
+amount of money that you gambled for, or if you get $0. That amount
+would also be sent to you today as a bonus in Prolific.” During the risk
+tolerance task, participants made 62 choices. On each trial, one option
+was an amount of money that the participant could receive for sure (i.e.,
+with a 100% chance), and the other option was an amount of money
+they could receive with a 50% chance (i.e., the gamble option). If the
+gamble option was selected, the participant would have a 50% chance of
+getting that amount of money; otherwise, they would receive $0. Two
+“catch” trials were included that asked if participants preferred more
+money for sure or less money with a 50 % chance (“$13 for sure or $10
+with a 50% chance?” and “$21 for sure or $20 with a 50% chance?”). On
+these trials, since the lower monetary value was also more uncertain,
+any participant who is trying to maximize potential earnings should
+select the higher value. Any participants who failed to select the higher
+value on two or more of these catch trials – across both decision-making
+tasks – was excluded.
+
+Analysis
+Decision-making tasks
+Participants’ individual choice data for the temporal discounting and
+risk tolerance tasks were fit with the following logistic function using
+maximum likelihood estimation in MATLAB:
+P1 =
+
+Fluency tasks
+Next, participants did four fluency tasks. In each task, they were
+asked to name as many exemplars from a category as they could in 60 s
+(the task would automatically end after 60 s). The first two tasks were
+semantic fluency tasks; participants were asked to name as many ani­
+mals as they could, and then as many vegetables as they could. The next
+two were letter fluency tasks; participants were asked to name as many
+words beginning with the letter “F,” as they could, and then as many “L”
+words as they could. The number of unique exemplars that fit into the
+category was taken as a measure of fluency. Plural forms of nouns and
+different conjugations of verbs were accepted, however. Misspellings
+were allowed as long as the meaning of the word was clear. The number
+of animals and vegetables named were added together to create a se­
+mantic fluency score, and the number of F-words and L-words were
+summed to determine the letter fluency score.
+
+1
+, P2 = 1 − P1
+1 + e− β(SV1− SV2)
+
+(1)
+
+Here P1 refers to the probability that the participant chose option 1, and
+P2 refers to the probability that the participant chose option 2. SV1 and
+SV2 refer to the participant’s estimated subjective value of option 1 and
+option 2 respectively. The scaling factor β was fitted for each individual
+task.
+In the temporal discounting task, P1 was the probability of choosing
+the delayed option, and the subjective values of the options were esti­
+mated using a hyperbolic discounting function (Green & Myerson, 2004;
+Kable & Glimcher, 2007; Mazur, 1987):
+SV =
+
+A
+1 + kD
+
+(2)
+
+Here A is the amount received, D is the delay until receipt (for immediate
+rewards, D = 0), and k is a discount rate parameter that varies across
+subjects. Higher k indicates higher discounting (more impatience). Since
+k is not normally distributed, these values were natural log-transformed
+before statistical analyses were conducted. The log-transformed dis­
+count rate parameter k was our measure of temporal discounting.
+In the risk tolerance task, P1 was the probability of choosing the risky
+option. SV1 and SV2 (for the risky option and safe option, respectively)
+were estimated using a power utility function:
+
+Demographic and survey measures
+Participants were next asked about their age, religion, race,
+ethnicity, occupation, place of residence, socioeconomic status, income,
+and political orientation. Income took on one of three values: 1 (corre­
+sponding to < $52k/year), 2 (corresponding to >$52k/year, but
+<$156k/year, or middle-class), or 3 (corresponding to >$156k/year).
+Participants were also asked to report their “subjective” socioeconomic
+status, by rating where they stood on a metaphorical ladder. This mea­
+sure is known as the MacArthur Scale of Subjective Social Status (Adler
+et al., 2000). Participants were instructed as follows: “Imagine that this
+ladder is a representation of how the United States of America is set up.
+At the top of the ladder are the people who are the best off, those who
+have the most money, most education, and best jobs. At the bottom are
+the people who are the worst off, those who have the least money, least
+education, worst jobs, or no job.” Participants then entered a numerical
+value ranging from 1 (top of the ladder) to 10 (bottom of the ladder).
+After the MacArthur Scale of Subjective Social Status, participants
+did the Rotter Locus of Control questionnaire. This questionnaire aims to
+
+SV = p*Aα
+
+(3)
+
+Here A is the amount that could be received, p is the probability of
+receipt (p = .5 for the risky option, p = 1 for the certain option), and α is
+a risk tolerance parameter that varies across subjects. Higher α indicates
+greater risk tolerance (less risk aversion). The values of α were also
+natural log-transformed before statistical analyses were conducted.
+Fluency analyses
+We took a hierarchical regression approach to analyze our data, with
+the log-transformed discount rate as the dependent variable. In the first
+step, we entered demographic variables which may have an impact on
+4
+
+D. Akilov and K.M. Lempert
+
+Journal of Memory and Language 142 (2025) 104616
+
+temporal discounting: age, gender, years of education, income level, and
+subjective socioeconomic status. Gender and income level were entered
+as factor variables, rather than continuous variables, with three levels
+each. For gender, the levels were male, female, and other; the “other”
+category comprised individuals who identified as non-binary or third
+gender (n = 3), or who did not report their gender (n = 2; note that we
+did not have enough power to investigate these categories separately).
+For income level, the three levels were: <$52,000/year, between
+$52,000 and $156,000/year, and >$156,000/year. In the second step,
+we entered letter fluency (sum of F-words and L-words), thus controlling
+for any effects of processing speed, executive function, or verbal ability
+on temporal discounting. Finally, the semantic fluency score (sum of
+animals and vegetables named) was entered in the third step. We hy­
+pothesized that better semantic fluency would be associated with lower
+temporal discounting. To ensure that this relationship, if significant, was
+specific to temporal discounting, we re-ran this regression with risk
+tolerance as the dependent variable.
+
+word false alarm rate was entered in the third step. We expected that the
+critical word false alarm rate would be negatively associated with
+temporal discounting. We also ran this regression again with risk
+tolerance score as the dependent variable, to verify that any relation­
+ships we found were specific to temporal discounting. We set an α level
+of 0.05 for significance testing for all analyses.
+Results
+Descriptive statistics and inter-item reliability estimates for all
+measures are shown in Table 1, and bivariate Pearson correlations
+among our measures are shown in Table 2.
+In line with our first hypothesis, semantic fluency was negatively
+associated with temporal discounting. Semantic fluency significantly
+predicted temporal discounting above and beyond the effects of age,
+gender, education, income, subjective socioeconomic status, and letter
+fluency (standardized β = -0.269; 95 % CI: − 0.440 – − 0.096; p = 0.002;
+R2 = 0.107; ΔR2 = 0.044; Table 3). That is, participants who named
+more unique animals and vegetables when prompted to do so were more
+likely to select larger, later rewards over smaller, sooner ones. A scat­
+terplot illustrating the bivariate correlation between semantic fluency
+and temporal discounting is shown in Fig. 2. Demonstrating the speci­
+ficity of this association to intertemporal decision making, semantic
+fluency was not associated with risk tolerance (standardized β = -0.064;
+95 % CI: − 0.239 – 0.112; p = 0.477; R2 = 0.068; ΔR2 = 0.002; Sup­
+plementary Table 5).
+Turning to the recognition task results, participants performed
+significantly above chance on the DRM task (mean d’ = 2.04; SD = 1.23;
+t202 = 23.7; p < 0.001; Cohen’s d = 1.66). They falsely recalled the
+critical words (i.e., strong associates of the encoded words) at a rate of
+46.8 % on average. Unsurprisingly, given the large literature on false
+memory in the DRM paradigm, people were more likely to mistakenly
+recognize a critical word rather than a distractor word (t202 = 20.1; p <
+0.001; Cohen’s dz = 1.41).
+Contrary to our second hypothesis, however, the critical word false
+alarm rate was not associated with temporal discounting (standardized
+β = -0.053; 95 % CI: − 0.225 – 0.118; p = 0.543; R2 = 0.096; ΔR2 =
+0.002; Table 4). Therefore, the extent to which semantic knowledge
+influences episodic memory retrieval in the DRM task does not predict
+people’s intertemporal preferences. False memory rate was also not
+associated with risk tolerance (standardized β = 0.035; 95 % CI: − 0.134
+– 0.205; p = 0.680; R2 = 0.119; ΔR2 = 0.0008; Supplementary Table 6).
+
+False memory analyses
+For the analysis of the recognition memory task, all responses of
+either “definitely old” or “probably old” were labeled as “yes” responses,
+and all responses of either “definitely new” or “probably new” were
+considered “no” responses. If a word had appeared in the encoding task,
+and the participant indicated that they saw it, that trial was labeled as a
+“hit,” and the participant’s hit rate was defined as the percentage of
+times that they answered “yes,” to seeing a word from the encoding task.
+The novel words were divided into those that were strong semantic as­
+sociates of words that appeared in the encoding task (“critical words”)
+and those that were drawn from categories that never appeared in the
+encoding task (“distractor words”). If a participant responded that they
+saw one of the novel words before, then that was considered a false
+alarm. False alarm rates were computed separately for the critical words
+and the distractor words. We conducted a paired-samples t-test to
+compare each participant’s distractor word false alarm rate to their
+critical word false alarm rate. We expected that the false alarm rate
+would be higher for the critical words compared to the distractor words,
+in line with previous research.
+The critical word false alarm rate was our measure of semantic
+memory from this task. Of course, the critical word false alarm rate may
+also reflect episodic memory ability. Therefore, we planned to include a
+d’ measure as a covariate. The d′ measure was calculated as z-score (hit
+rate) – z-score (distractor word false alarm rate). We implemented
+standard correction procedures to account for hit rates of 1 and false
+alarm rates of 0, by adjusting extreme values by 1/2N, where N is the
+number of old words for hit rates and the number of novel foils for false
+alarms. We ensured that participants performed above chance on the
+episodic memory task, by conducting a one-sample t-test to compare d’
+to 0. In addition to calculating d’, we also calculated the criterion, as
+defined by − .5*(z-score (hit rate) + z-score (distractor word false alarm
+rate). Controlling for this measure of response bias is important, since
+the extent to which someone is biased toward endorsing a word as “old”
+can also impact the false memory rate.
+We took a similar hierarchical regression approach to examine the
+relationship between false memory rate and temporal discounting. In
+the first step, we entered age, gender, years of education, income level,
+and subjective socioeconomic status. In the second step, we entered d’,
+criterion, and the total task duration in seconds. These variables repre­
+sent non-semantic influences on false memory: d’ and criterion are
+measures of episodic memory accuracy and response bias, respectively,
+and task duration is a proxy for the time delay that separated the
+encoding task and the recognition memory task. While the delay was set
+to be approximately 20 min for all participants, it did vary somewhat
+between subjects since the decision-making tasks and demographic
+surveys were self-paced. Since the encoding task was the same length for
+all participants, the total task duration was directly proportional to the
+length of the delay between encoding and retrieval. Finally, the critical
+
+Discussion
+Here, in an online sample of 203 adults recruited through Prolific, we
+Table 1
+Descriptive statistics and reliability estimates for measures of interest.
+Measure
+
+M
+
+SD
+
+Skew
+
+Kurtosis
+
+Cronbach’s
+
+α
+Discount rate (log-k)
+Risk tolerance
+(log-alpha)
+Semantic fluency
+Letter fluency
+DRM hit rate
+DRM critical word FA
+rate
+DRM distractor word
+FA rate
+DRM d’
+DRM criterion
+
+− 3.89
+− 0.434
+
+1.65
+0.593
+
+− 0.599
+− 0.119
+
+− 0.089
+− 0.424
+
+0.959
+0.969
+
+25.9
+30.5
+0.778
+0.468
+
+7.96
+9.53
+0.186
+0.201
+
+− 0.064
+0.365
+− 0.926
+− 0.091
+
+− 0.232
+0.982
+0.589
+− 0.268
+
+0.711
+0.831
+0.773
+0.727
+
+0.172
+
+0.199
+
+1.61
+
+2.53
+
+0.853
+
+2.04
+0.111
+
+1.23
+0.368
+
+− 0.757
+− 0.081
+
+0.813
+− 0.010
+
+n/a
+n/a
+
+Note. DRM = Deese-Roediger-McDermott paradigm. FA = false alarm. SD =
+standard deviation. Hit rate and distractor word false alarm rates are included in
+the table since inter-item reliability estimates were not available for d’ and
+criterion, but only d’ and criterion were used in analyses.
+5
+
+D. Akilov and K.M. Lempert
+
+Journal of Memory and Language 142 (2025) 104616
+
+Table 2
+Correlation matrix for measures of interest.
+Measure
+
+1.
+
+2.
+
+3.
+
+4.
+
+5.
+
+6.
+
+7.
+
+1. Discount rate (log-k)
+2. Risk tolerance
+(log-alpha)
+3. Semantic fluency
+4. Letter fluency
+5. DRM critical word FA rate
+6. DRM d’
+7. DRM criterion
+
+—
+− 0.125
+​
+
+​
+
+​
+
+​
+
+​
+
+​
+
+—
+​
+
+​
+
+​
+
+​
+
+​
+
+− 0.217**
+− 0.083
+0.087
+− 0.115
+− 0.131
+
+− 0.008
+0.044
+0.014
+− 0.131
+0.058
+
+—
+0.577***
+− 0.110
+0.285***
+0.014
+​
+
+​
+
+​
+
+​
+
+—
+− 0.007
+0.287***
+− 0.083
+​
+
+​
+
+​
+
+—
+− 0.282***
+− 0.502***
+​
+
+​
+—
+0.105
+​
+—
+
+Note: DRM = Deese-Roediger-McDermott paradigm. FA = false alarm. **p < 0.01, ***p < 0.001.
+Table 3
+Hierarchical regression results for semantic fluency predicting discount rate.
+Predictor
+
+Model 1
+
+Model 2
+
+Model 3
+
+Stand. β
+
+Stand. 95 % CI
+
+Stand. β
+
+Stand. 95 % CI
+
+Stand. β
+
+Stand. 95 % CI
+
+Age
+
+− 0.092
+
+[-0.231, 0.048]
+
+− 0.103
+
+[-0.243, 0.037]
+
+− 0.124
+
+[-0.261, 0.014]
+
+Gender†:
+Male − Female
+Other − Female
+
+− 0.098
+− 0.337
+
+[-0.380, 0.184]
+[-1.260, 0.586]
+
+− 0.132
+− 0.333
+
+[-0.418, 0.155]
+[-1.255, 0.588]
+
+− 0.224
+− 0.193
+
+[-0.510, 0.063]
+[-1.099, 0.714]
+
+0.213
+0.020
+0.030
+− 0.199**
+
+[-0.105, 0.531]
+[-0.473, 0.514]
+[-0.121, 0.180]
+[-0.345, − 0.053]
+
+​
+
+​
+
+0.217
+0.045
+0.018
+− 0.197**
+− 0.092
+
+[-0.101, 0.534]
+[-0.449, 0.539]
+[-0.134, 0.169]
+[-0.343, − 0.051]
+[-0.235, 0.050]
+
+​
+
+​
+
+​
+
+0.190
+− 0.017
+0.020
+− 0.172*
+0.052
+− 0.268**
+0.107
+
+[-0.121, 0.501]
+[-0.502, 0.468]
+[-0.129, 0.168]
+[-0.315, − 0.028]
+[-0.116, 0.220]
+[-0.440, − 0.096]
+
+Income‡:
+Middle − Low
+High − Low
+MacArthur SSS
+Education
+Letter fluency
+Semantic fluency
+R2
+​
+
+0.055
+
+0.063
+
+Note. Discount rate was log-transformed prior to analysis. SSS = Subjective Social Status. CI = Confidence Interval. †Reference level is Female. ‡Reference level is low
+income, < $52k/year. Middle income = between $52k/year and $156k/year. High income = >$156k/year. *p < 0.05, **p < 0.01.
+Table 4
+Hierarchical regression results for false memory rate predicting discount rate.
+Predictor
+
+Model 1
+
+Model 2
+
+Model 3
+
+Stand. β
+
+Stand. 95 % CI
+
+Stand. β
+
+Stand. 95 % CI
+
+Stand. β
+
+Stand. 95 % CI
+
+Age
+
+− 0.092
+
+[-0.231, 0.048]
+
+− 0.064
+
+[-0.203, 0.075]
+
+− 0.069
+
+[-0.209, 0.071]
+
+Gender†:
+Male − Female
+Other − Female
+
+− 0.098
+− 0.337
+
+[-0.380, 0.184]
+[-1.260, 0.586]
+
+− 0.155
+− 0.286
+
+[-0.437, 0.127]
+[-1.198, 0.626]
+
+− 0.152
+− 0.293
+
+[-0.435, 0.131]
+[-1.206, 0.621]
+
+0.213
+0.020
+0.030
+− 0.199**
+
+[-0.105, 0.531]
+[-0.473, 0.514]
+[-0.121, 0.180]
+[-0.345, − 0.053]
+
+​
+
+​
+​
+
+​
+​
+
+​
+
+0.237
+0.036
+0.049
+− 0.206**
+− 0.117
+− 0.113
+− 0.091
+
+[-0.080, 0.554]
+[-0.451, 0.524]
+[-0.101, 0.199]
+[-0.351, − 0.061]
+[-0.255, 0.022]
+[-0.252, 0.026]
+[-0.230, 0.047]
+
+​
+
+​
+
+​
+
+0.256
+0.064
+0.051
+− 0.209**
+− 0.125
+− 0.125
+− 0.115
+− 0.053
+0.096
+
+[-0.067, 0.578]
+[-0.432, 0.561]
+[-0.099, 0.201]
+[-0.354, − 0.063]
+[-0.116, 0.220]
+[-0.268, 0.019]
+[-0.273, 0.044]
+[-0.225, 0.118]
+
+Income‡:
+Middle − Low
+High − Low
+MacArthur SSS
+Education
+Task duration
+D’
+Criterion
+Critical word FA rate
+R2
+​
+
+0.055
+
+0.094
+
+Note. Discount rate was log-transformed prior to analysis. SSS = Subjective Social Status. FA = false alarm. CI = Confidence Interval. †Reference level is Female.
+‡
+Reference level is low income, < $52k/year. Middle income = between $52k/year and $156k/year. High income = >$156k/year. **p < 0.01.
+
+tested the novel hypothesis that semantic memory abilities are associ­
+ated with reduced temporal discounting. To this end, we examined in­
+dividual differences in semantic fluency and DRM false memory rate and
+related them to individual differences in temporal discounting. We
+found that semantic fluency, a measure of voluntary semantic memory
+retrieval, was negatively associated with temporal discounting. Specif­
+ically, participants who generated more category exemplars in the se­
+mantic fluency task were more likely to select larger, later rewards over
+smaller, sooner rewards. In contrast, the false memory rate, which
+
+measures the extent to which semantic knowledge incidentally biases
+episodic memory, was not associated with temporal discounting.
+This study has a few noteworthy limitations. First of all, we used a
+correlational design. Therefore, we do not know whether semantic
+memory influences temporal discounting, or vice versa. It is also possible
+that a third, latent variable is related to both constructs. Nevertheless,
+demonstrating this association is an important step in understanding the
+cognitive mechanisms underlying temporal discounting. Another limi­
+tation is that our study was done online, which gave us less experimental
+6
+
+D. Akilov and K.M. Lempert
+
+Journal of Memory and Language 142 (2025) 104616
+
+fluency both assess executive functions, such as processing speed,
+working memory, and cognitive flexibility (Unsworth et al., 2011), but
+semantic fluency relies on semantic memory much more than letter
+fluency does (Stolwyk et al., 2015). If we had found a significant asso­
+ciation between both types of fluency and temporal discounting, then we
+would not have known which of the many cognitive processes captured
+by both tasks is associated with temporal discounting. That relationship
+might have been driven by executive function, conscientiousness,
+attention, or even just general intelligence. The dissociation between
+letter fluency and semantic fluency thus strengthens our conclusions visà-vis semantic memory and temporal discounting.
+On the other hand, a different measure of semantic memory – the
+false memory rate from the DRM paradigm (Roediger & McDermott,
+1995) – was not associated with temporal discounting. One possible
+explanation for this null result is that only voluntary semantic memory
+retrieval – which is assessed by the semantic fluency task but not by the
+DRM paradigm – is important for intertemporal decision making. In our
+sample, the critical word false alarm rate was not even associated with
+semantic fluency (r = -0.11; p = 0.118), so despite the fact that semantic
+processes are involved in both tasks, the tasks are clearly not measuring
+the same construct. Future studies using additional semantic memory
+tasks (e.g., semantic priming; Gatti et al., 2024) are needed to further
+understand the precise mechanism by which semantic memory supports
+future-oriented choice.
+In sum, here we directly tested whether measures of semantic
+memory are associated with temporal discounting. Semantic fluency, a
+measure of voluntary semantic memory retrieval, was associated with
+more future-oriented choice. The DRM false memory rate, a measure of
+the extent to which semantic knowledge incidentally biases episodic
+memory, was not. Semantic memory is necessary for imagining the
+future (Irish et al., 2012; Irish & Piolino, 2016); our finding suggests that
+it may be critical for the valuation of future rewards as well.
+
+Fig. 2. Scatterplot illustrating significant Pearson correlation between seman­
+tic fluency and temporal discounting. Note that the primary analysis was a
+hierarchical regression in which demographic variables were controlled for in a
+first step, and letter fluency was controlled for in a second step. Semantic
+fluency was quantified as the total number of animal and vegetable exemplars
+provided in the semantic fluency tasks. Discount rates were log-transformed
+prior to analysis.
+
+control. We excluded people who showed evidence of cheating on the
+tasks, but some participants who used artificial intelligence or other aids
+might have escaped detection. There was also some variability between
+participants in how long the delay between encoding and retrieval was,
+although we did try to control for that in our models. A strength of our
+online study is that it allowed us to collect a large sample size, which was
+necessary, given that most effect sizes from individual differences ana­
+lyses are small (Gignac & Szodorai, 2016). It also allowed us to collect a
+sample that was diverse with respect to age, geographical location, in­
+come, and education. Still, we hope that future research will replicate
+this effect in different samples and settings. Finally, it is a limitation that
+we did not pre-register the hypotheses and analyses used in this study.
+However, we have been transparent here about our hypotheses, and we
+did establish our exclusion criteria and stopping rule for data collection
+before we collected data.
+To our knowledge, this is the first study to show that semantic
+memory abilities are associated with temporal discounting in a general
+population. Episodic future thinking has been shown to reduce temporal
+discounting (Rösch et al., 2022). This discovery prompted several pre­
+vious studies to examine the links between episodic memory – a key
+contributor to episodic future thinking – and temporal discounting, but
+these studies have been inconclusive (Boyle et al., 2012; Garzón et al.,
+2023; Lempert, MacNear, et al., 2020; Lempert, Mechanic-Hamilton,
+et al., 2020; Seinstra et al., 2015). Imagining the future and making
+decisions about it may actually depend more on semantic memory than
+on episodic memory, though. Semantic memory provides the “scaf­
+folding” for prospection (Irish et al., 2012), since it is where schemas and
+scripts are drawn from. Indeed, previous neuroscience research has
+shown that semantic memory deficits and atrophy in the temporal lobe
+are associated with increased temporal discounting (Beagle et al., 2020;
+Chiong et al., 2016; Garzón et al., 2023; Owens et al., 2017).
+Although our study was correlational, the semantic fluency result
+suggests that individual differences in temporal discounting may emerge
+from individual differences in the ability to retrieve conceptual infor­
+mation, including conceptual information about the future. This puta­
+tive mechanism is further supported by the specificity of the association
+that we found. First of all, semantic fluency was not related to risk
+preferences, in line with the idea that semantic memory is involved
+specifically in deciding about future rewards. Second, semantic fluency
+predicted significant variance in temporal discounting even after ac­
+counting for effects of letter fluency. In fact, letter fluency alone did not
+significantly predict temporal discounting. Letter fluency and semantic
+
+CRediT authorship contribution statement
+Danielle Akilov: Writing – review & editing, Software, Methodol­
+ogy, Investigation, Formal analysis, Data curation, Conceptualization.
+Karolina M. Lempert: Writing – review & editing, Writing – original
+draft, Visualization, Supervision, Software, Methodology, Investigation,
+Funding acquisition, Formal analysis, Conceptualization.
+Declaration of competing interest
+The authors declare that they have no known competing financial
+interests or personal relationships that could have appeared to influence
+the work reported in this paper.
+Acknowledgements
+This work was supported by a Derner Dean Scholarship and Research
+Grant from Adelphi University.
+Appendix A. Supplementary data
+Supplementary data to this article can be found online at https://doi.
+org/10.1016/j.jml.2025.104616.
+Data availability
+Data and materials from this study have been shared publicly via the
+Open Science Framework (https://osf.io/dnsha/).
+
+7
+
+D. Akilov and K.M. Lempert
+
+Journal of Memory and Language 142 (2025) 104616
+

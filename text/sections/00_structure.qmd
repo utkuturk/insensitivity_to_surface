@@ -1,0 +1,53 @@
+
+
+```{r}
+#| label: setup
+
+set.seed(01110011)
+library(tidyverse)
+library(brms)
+library(data.table)
+library(gdata)
+library(magrittr)
+library(DescTools)
+library(posterior)
+library(glue)
+library(bayestestR)
+select <- dplyr::select
+library(lingglosses)
+```
+
+
+```{r}
+#| label: functions
+source("../../utility/functions.R")
+```
+
+
+
+
+
+# Introduction
+
+```{r child='../sections/01_intro.qmd'}
+```
+
+# Experiment 1: Testing Surface-Form Overlap
+
+```{r child='../sections/02_exp1.qmd'}
+```
+
+# Experiment 2: Isolating Verbal Attractors
+
+```{r child='../sections/03_exp2.qmd'}
+```
+
+# General Discussion
+
+```{r child='../sections/04_discussion.qmd'}
+```
+
+# Appendix
+
+```{r child='../sections/99_appendix.qmd'}
+```
