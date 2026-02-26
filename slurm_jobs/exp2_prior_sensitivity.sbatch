@@ -5,7 +5,7 @@
 #SBATCH --time=48:00:00
 #SBATCH --partition=cpu
 #SBATCH --mem=64G
-#SBATCH --cpus-per-task=4
+#SBATCH --cpus-per-task=28
 #SBATCH --chdir=/home/uturk_umass_edu/insensitivity_to_surface
 
 set -euo pipefail
@@ -18,7 +18,7 @@ cd "${PROJECT_DIR}"
 mkdir -p slurm_jobs/logs
 
 MODEL_IDS="${MODEL_IDS:-1 2 3 4 5 6 7 8 9}"
-THREADS="${THREADS:-1}"
+THREADS="${THREADS:-7}"
 CHAINS="${CHAINS:-4}"
 CORES="${CORES:-4}"
 ITER="${ITER:-12000}"
