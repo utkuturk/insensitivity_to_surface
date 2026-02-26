@@ -1394,12 +1394,30 @@ Interpretation note: a prior with more mass near zero can increase BF~01~ by con
 
 ## Discussion
 
+- Experiment 1 tested the effects of plural number marking in speeded acceptability judgments of sentences with nominal and verbal modifiers in Turkish.
+- We were able to replicate the canonical attraction pattern for nominal attractors, with plural-marked nominal attractors [@TurkLogacev2024; @LagoEtAl2019]. 
+- On the other hand, experiment 1 found no evidence that phonological overlap between nominal and verbal plural morphemes in Turkish induces attraction. 
+- Participants reliably rejected ungrammatical sentences with plural-marked verbal attractors, contrasting with the canonical attraction effects observed for nominal attractors. 
+- We verified that the negative three way interaction (Grammaticality x Attractor Number x RC vs Nominal) was not an artifact of the mixed design by fitting a model restricted to verbal conditions, which showed no evidence for an interaction between grammaticality and number on the attractor.
+- We also verified that the null effect for verbal attractors was not due to a lack of power by computing Bayes Factors with bridge sampling, which provided moderate evidence for the null hypothesis of no verbal attraction. This conclusion was robust across a range of reasonable fixed-effect priors.
 
-Experiment 1 found no evidence that phonological overlap between nominal and verbal plural morphemes in Turkish induces attraction. Participants reliably rejected ungrammatical sentences with plural-marked verbal attractors, contrasting with the canonical attraction effects observed for nominal attractors. This indicates that the verbal plural marker *-lAr* does not generate interference comparable to nominal plurals.
+- Our aim was to test whether an attractor with phonological overlap to possible subjects with necessary features would induce attraction effects. 
+- The account of cue-based theory proposed by @Slioussar2018 would predict that the Verbal RC would also activate features of the subjecthood, nominative marking, and plural number due to string ambiguity, and thus induce attraction. 
+- On the other hand, the statistical association account of @LagoEtAl2019 would predict that only nominal attractors would induce attraction, since they are more strongly associated with the subjecthood and plural features in the input.
+- And The fact that Verbal RCs cannot act as controllers, they would not have increased association with subjecthood, thus would not induce attraction.
+- Our results support the statistical association account, as we observed strong attraction effects for nominal attractors but no evidence for attraction from verbal attractors, despite their phonological overlap. 
 
-Our results and between-experiment comparisons indicate that within-experiment statistics---specifically, exposure to verbal attraction items---did not substantially reduce attraction magnitude. However, overall acceptability for nominal attractor sentences was lower than in @TurkLogacev2024. This aligns with prior work showing that trial distributions modulate judgments. While previous studies drove this effect via instructions or fillers [@HammerlyEtAl2019;@ArehalliWittenberg2021], we demonstrate that experimental conditions and the presence of an effect in a condition subset also modulate overall acceptability, but surprisingly not the attraction.
+- In our experiment, we included nominal attractors for a better direct comparison to prior work and to ensure that participants were exposed to robust attraction items. 
+- Our results and between-experiment comparisons indicate that overall acceptability for nominal attractor sentences was lower than in @TurkLogacev2024.
+- This aligns with prior work showing that trial distributions modulate judgments. While previous studies drove this effect via instructions or fillers [@HammerlyEtAl2019;@ArehalliWittenberg2021], we demonstrate that experimental conditions and the presence of an effect in a condition subset also modulate overall acceptability. 
+- Despite this shift in acceptability, the within-experiment statistics---specifically, exposure to verbal attraction items---did not substantially reduce attraction magnitude within nominal items.
+- This is unexpected given that the previous studies showed that the distribution of no attraction-inducing items might affect participants a priori bias, thus changing the overall attraction pattern [@HammerlyEtAl2019;@Turk2022]. 
+- It seems that high number of fillers prevented participants from adjusting their a priori bias towards 'yes' responses. 
+- The number of no attraction-inducing items (verbal) did not change the overall distribution of items enough to shift the bias, thus not changing the attraction pattern in nominal items.
 
-A potential concern is that our mixed design---combining canonical nominal attractors with verbal ones---influenced response patterns. The presence of robust nominal attraction may have altered participant strategies, potentially masking weaker verbal effects [@HammerlyEtAl2019;@Turk2022]. To determine if the absence of verbal attraction in Experiment 1 was genuine rather than a distributional artifact, Experiment 2 removed all nominal attractors. This design tests whether the null effect persists when verbal morphology is the sole potential source of interference.
+- A potential concern is that our mixed design---combining canonical nominal attractors with verbal ones---influenced response patterns. 
+- The presence of robust nominal attraction may have altered participant strategies, potentially masking weaker verbal effects or making participants directly compare verbal attractor conditions to nominal ones. 
+- To determine if the absence of verbal attraction in Experiment 1 was genuine rather than a distributional artifact, Experiment 2 removed all nominal attractors. This design tests whether the null effect persists when verbal morphology is the sole potential source of interference.
 
 ### Null-effect inference plan for Experiment 1
 
