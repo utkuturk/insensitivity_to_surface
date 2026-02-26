@@ -67,7 +67,7 @@ exp2.clean %<>% ungroup() %>%
                                     response_yes,
                                     RT,
                                     ResponseCorrect)
-exp2.clean$experiment <- "Experiment 1"
+exp2.clean$experiment <- "Experiment 2"
 exp2.clean$grammatical %<>% dplyr::recode(gram="grammatical", ungram="ungrammatical")
 exp2.clean$attractor_num %<>% dplyr::recode(pl="plural", sg="singular")
 exp2.clean$item %<>% as.factor()
@@ -192,6 +192,12 @@ exp2.p_trials.removed_total <- round(100 * exp2.n_trials.removed_total / exp2.n_
 
 exp2.deletion <- round(100 * ((nrow(exp2.no.practice) - nrow(exp2.clean)) / nrow(exp2.no.practice)), 2)
 
+exp2.missing_sentence <- ifelse(
+  exp2.n_missing_trials == 0,
+  "After RT trimming, there were no missing responses.",
+  paste0("After RT trimming, ", exp2.n_missing_trials, " trials had missing responses and were excluded.")
+)
+
 exp2.meanage <- mean(asi(exp2.clean$age)) %>% round()
 exp2.maxage <- max(asi(exp2.clean$age))
 exp2.minage <- min(asi(exp2.clean$age))
@@ -204,15 +210,21 @@ exp2.avgs %<>% mutate(text = paste0("M = ", round(p_hat,2), ", CI = [", round(lw
 
 ```
 
-## Participants, Materials, and Procedure
+## Participants
 
-`r exp2.nsubj.raw` new undergraduate students who are native Turkish speakers (M = `r exp2.meanage`, range: `r exp2.minage`-`r exp2.maxage`) were recruited.
+We recruited `r exp2.nsubj.raw` undergraduate students to participate in the experiment in exchange for course credit. All participants self-identified as native Turkish speakers, with an average age of `r exp2.meanage` years (range: `r exp2.minage`-`r exp2.maxage`).
 
-Subject-level screening used a discrimination check, defined as $\Delta = p(yes\mid d) - p(yes\mid c)$, with exclusion when $\Delta$ was less than or equal to `r exp2.acc.threshold`. This removed `r exp2.n_bad` participant(s) (`r exp2.p_subj_excluded`% of the recruited sample). For experimental+filler trials, subject-level filtering removed `r exp2.n_rows_removed_subject_nonpractice` rows before trial-level trimming.
+Subject-level screening used one discrimination check, defined as $\Delta = p(yes\mid d) - p(yes\mid c)$, where conditions *d* and *c* form the singular-verb control contrast. We excluded participants with $\Delta \leq$ `r exp2.acc.threshold` (`r 100*exp2.acc.threshold`%). This removed `r exp2.n_bad` participant(s) (`r exp2.p_subj_excluded`% of the recruited sample). This subject-level filtering removed `r exp2.n_rows_removed_subject_nonpractice` rows before trial-level trimming.
 
-At the trial level (experimental+filler trials only), response-time trimming removed `r exp2.n_removed_rt` trials (`r exp2.n_rt_fast` with RT <= 200 ms; `r exp2.n_rt_slow` with RT >= 4999 ms; `r exp2.p_removed_rt`% of subject-screened experimental+filler trials). After RT trimming, `r exp2.n_missing_trials` trials had missing responses and were excluded. In total, `r exp2.p_trials.removed_total`% of collected experimental+filler trials were excluded, and the final dataset contained `r exp2.nsubj.analysis` participants and `r exp2.n_trials.analysis` observations.
+At the trial level, response-time trimming removed `r exp2.n_removed_rt` trials (`r exp2.n_rt_fast` with RT <= 200 ms; `r exp2.n_rt_slow` with RT >= 4999 ms; `r exp2.p_removed_rt`% of trials). `r exp2.missing_sentence` In total, `r exp2.p_trials.removed_total`% of collected trials were excluded, and the final dataset contained `r exp2.nsubj.analysis` participants and `r exp2.n_trials.analysis` observations.
 
-We utilized the same verbal attractor items and fillers from Experiment 1, removing all nominal attractor trials. The experimental procedure was identical to Experiment 1.
+## Materials
+
+We used the same verbal attractor items and fillers as in Experiment 1, removing all nominal attractor trials.
+
+## Procedures
+
+The procedure was identical to Experiment 1.
 
 ## Analysis and Results
 
@@ -326,9 +338,9 @@ txt <- list(
 
 
 txt_p <- list(
-    gram  = fmt(p_gt0(m.exp2, coef_names$gram), 2),
-    attr  = fmt(p_gt0(m.exp2, coef_names$attr), 2),
-    inter = fmt(p_gt0(m.exp2, coef_names$inter), 2)
+    gram  = fmt_prob(p_gt0(m.exp2, coef_names$gram), d = 2),
+    attr  = fmt_prob(p_gt0(m.exp2, coef_names$attr), d = 2),
+    inter = fmt_prob(p_gt0(m.exp2, coef_names$inter), d = 2)
 )
 
 ```
@@ -390,8 +402,8 @@ txt_g <- list(
 )
 
 txt_g_p <- list(
-    attr_g = fmt(p_gt0(m.exp2.g, coef_names$attr), 2),
-    attr_u = fmt(p_gt0(m.exp2.u, coef_names$attr), 2)
+    attr_g = fmt_prob(p_gt0(m.exp2.g, coef_names$attr), d = 2),
+    attr_u = fmt_prob(p_gt0(m.exp2.u, coef_names$attr), d = 2)
 )
 
 
@@ -527,40 +539,55 @@ To quantify evidence for the absence of attraction effects, we computed Bayes Fa
 ```{r}
 #| label: exp2-bayes-factor
 #| eval: false
+#| message: false
+#| warning: false
 
-# Savage-Dickey density ratio for the interaction (attraction effect)
-bf_interaction <- bayestestR::bayesfactor_parameters(
-    m.exp2,
-    null = 0,
-    effects = "fixed"
-)
+# Cache behavior:
+# - If bf_exp2.rds exists, it is loaded.
+# - If it does not exist, set bf_compute_if_missing_exp2 <- TRUE once to compute+save.
+bf_cache_path_exp2 <- "../../utility/models/bf_exp2.rds"
+bf_force_recompute_exp2 <- FALSE
+bf_compute_if_missing_exp2 <- FALSE
 
-# Extract the BF for the interaction term
-bf_int_row <- bf_interaction %>%
-    as.data.frame() %>%
-    filter(grepl("Gram_minus_Ungram:attractor_num", Parameter))
+compute_exp2_bf <- function(fit) {
+    bf_interaction <- bayestestR::bayesfactor_parameters(
+        fit,
+        null = 0,
+        effects = "fixed"
+    )
 
-bf_int_value <- bf_int_row$BF[1]
-bf01_int <- 1 / bf_int_value  # Convert BF10 to BF01 (evidence for null)
+    bf_int_row <- bf_interaction %>%
+        as.data.frame() %>%
+        filter(grepl("Gram_minus_Ungram:attractor_num", Parameter))
+    bf_int_value <- bf_int_row$BF[1]
+    bf01_int <- 1 / bf_int_value
 
-# Also compute for attractor number main effect
-bf_attr_row <- bf_interaction %>%
-    as.data.frame() %>%
-    filter(grepl("^attractor_num", Parameter))
+    bf_attr_row <- bf_interaction %>%
+        as.data.frame() %>%
+        filter(grepl("^attractor_num", Parameter))
+    bf_attr_value <- bf_attr_row$BF[1]
+    bf01_attr <- 1 / bf_attr_value
 
-bf_attr_value <- bf_attr_row$BF[1]
-bf01_attr <- 1 / bf_attr_value
+    list(
+        bf01_int = as.numeric(bf01_int),
+        bf01_attr = as.numeric(bf01_attr)
+    )
+}
 
 # Format for reporting
-bf01_int_txt <- ifelse(bf01_int > 100, ">100", 
-                       ifelse(bf01_int < 0.01, "<0.01", 
-                              sprintf("%.2f", bf01_int)))
-bf01_attr_txt <- ifelse(bf01_attr > 100, ">100", 
-                        ifelse(bf01_attr < 0.01, "<0.01", 
-                               sprintf("%.2f", bf01_attr)))
+format_bf <- function(bf) {
+    ifelse(
+        is.na(bf),
+        "NA",
+        ifelse(bf > 100, ">100", ifelse(bf < 0.01, "<0.01", sprintf("%.2f", bf)))
+    )
+}
 
 # Interpretation based on Jeffreys (1961) / Lee & Wagenmakers (2013)
 interpret_bf <- function(bf) {
+    if (is.na(bf)) {
+        return("not computed")
+    }
     case_when(
         bf > 100 ~ "extreme evidence for null",
         bf > 30 ~ "very strong evidence for null",
@@ -573,6 +600,23 @@ interpret_bf <- function(bf) {
     )
 }
 
+if (file.exists(bf_cache_path_exp2) && !bf_force_recompute_exp2) {
+    bf_exp2 <- readRDS(bf_cache_path_exp2)
+} else if (bf_force_recompute_exp2 || bf_compute_if_missing_exp2) {
+    bf_exp2 <- compute_exp2_bf(m.exp2)
+    dir.create(dirname(bf_cache_path_exp2), recursive = TRUE, showWarnings = FALSE)
+    saveRDS(bf_exp2, bf_cache_path_exp2)
+} else {
+    bf_exp2 <- list(
+        bf01_int = NA_real_,
+        bf01_attr = NA_real_
+    )
+}
+
+bf01_int <- bf_exp2$bf01_int
+bf01_attr <- bf_exp2$bf01_attr
+bf01_int_txt <- format_bf(bf01_int)
+bf01_attr_txt <- format_bf(bf01_attr)
 bf_int_interp <- interpret_bf(bf01_int)
 bf_attr_interp <- interpret_bf(bf01_attr)
 

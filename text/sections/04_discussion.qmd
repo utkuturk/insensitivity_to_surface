@@ -1,4 +1,88 @@
+## Summary of the Empirical Pattern
 
+This study asked whether surface-form overlap alone can trigger agreement attraction during comprehension. Turkish provided a strong test case because the plural morpheme *-lAr* appears on both nouns and verbs, but only nominal expressions can control agreement.
+
+The two experiments converge on a clear dissociation. In Experiment 1, we observed robust attraction for nominal attractors, including a close match to the nominal benchmark dataset [@TurkLogacev2024], but no attraction for verbal attractors. Critically, this was not only a relative effect ("smaller than nominal"): follow-up analyses restricted to verbal conditions also showed no evidence for a verbal attraction effect. In Experiment 2, where nominal conditions were removed and only verbal conditions remained, the same null pattern replicated. Ungrammatical sentences with plural verbal attractors were not accepted more often than the corresponding singular-attractor controls.
+
+Across experiments, the main conclusion is stable: verbal plural morphology that resembles nominal plural morphology in surface form does not behave like an agreement-relevant attractor.
+
+## Why This Matters Theoretically
+
+A pure surface-overlap account predicts that accidental phonological similarity to agreement-bearing morphology should increase attraction. Under that view, plural-marked verbal attractors should have produced at least a weak facilitation effect in ungrammatical sentences. We did not observe that in either experiment.
+
+The data are better captured by a controller-potential view of retrieval: overlap contributes only when it is linked to representations that can, in principle, function as agreement controllers. On this interpretation, the parser does not treat all plural-like forms as equally relevant cues. Instead, attraction depends on whether the attractor is representationally licensed as controller-like.
+
+This point is central for the broader debate on what memory retrieval is sensitive to in agreement dependencies. If the system were primarily surface-driven, form overlap should be enough. If the system is structure-sensitive, form overlap should be filtered by grammatical status and controllerhood. Our results support the second option.
+
+## Relation to Prior Cross-Linguistic Findings
+
+The present pattern aligns with findings in English and Czech showing little to no attraction from pseudo-plural or merely form-overlapping elements [@BockEberhard1993;@HaskellMacDonald2003;@NicolEtAl:2016;@LacinaChromy2022]. It also fits work arguing that attraction is strongest when attractors carry features associated with possible controllers [@LagoEtAl2019;@BhatiaDillon2022;@BleotuDillon2024].
+
+At first glance, these results seem to diverge from @Slioussar2018, where syncretic forms yielded attraction-like patterns. We do not interpret this as a direct contradiction. A more coherent cross-study reading is that not all "overlap" is equivalent: overlap that is tied to controller-compatible representations can drive attraction, while overlap on elements that are never controllers does not. In our materials, verbal attractors in reduced clauses fall into the second category.
+
+This interpretation also helps explain why nominal attraction remains robust while verbal attraction is absent under maximal surface similarity. The relevant contrast is not "phonology present vs phonology absent," but "controller-compatible vs controller-incompatible."
+
+## Interpreting Null Effects as a Primary Result
+
+The core theoretical claim in this paper is a null effect for verbal attraction, so evidential standards for null inference matter. We therefore treated this as a target estimand rather than a by-product of non-significance. Three points support the claim.
+
+First, the pattern replicates across experiments with different condition structures. Experiment 1 included both nominal and verbal conditions, while Experiment 2 isolated verbal conditions. The verbal result was the same in both.
+
+Second, the null pattern is coherent across descriptive and model-based analyses. In both experiments, the ungrammatical verbal conditions show very similar acceptance rates across attractor number, and the model-implied estimates for verbal attraction remain centered near zero.
+
+Third, the Experiment 1 follow-up analysis restricted to verbal trials directly addresses the most relevant question: whether verbal attraction is present at all, not only whether it is smaller than nominal attraction. That analysis also failed to find evidence for attraction.
+
+Taken together, the data argue against verbal attraction of the size expected under form-driven accounts. This does not imply that the true effect is mathematically zero. It implies that any residual effect, if present, is not strong enough to support the theoretical prediction that surface overlap alone should generate attraction.
+
+## Alternative Explanations and Scope Conditions
+
+One potential concern is that the mixed design in Experiment 1 could have altered response strategy. If exposure to strong nominal attraction changed participants' expectations or criteria, a weak verbal effect might have been masked. Experiment 2 addresses this directly by removing nominal items, and the same verbal null persists. This substantially weakens a strategy-only explanation.
+
+Another concern is that acceptability judgments may miss transient processing interference that does not survive to final choice. This is possible in principle, and it motivates future time-course work. However, the present data still constrain theory: any such transient effect would have to be weak enough not to produce reliable differences in final acceptability under the current designs.
+
+A further scope condition is highlighted by the unexpected grammatical asymmetry in Experiment 2 (lower acceptability in one grammatical verbal condition). This effect does not pattern like attraction and likely reflects a separate mechanism (e.g., distributional expectations, plausibility, or interpretation-level factors). Importantly, it does not alter the critical ungrammatical comparison that defines attraction.
+
+## Implications for Models of Agreement Retrieval
+
+The dissociation between nominal and verbal attractors under shared surface morphology places pressure on accounts that over-weight surface similarity in cue matching. At minimum, models need a representational filter that prevents controller-incompatible elements from competing as full agreement candidates.
+
+For cue-based retrieval frameworks, one natural implementation is weighted cue access where morphology contributes only jointly with controller-relevant syntactic or morphosyntactic features. On such a view, verbal plural morphology contributes little when the item cannot satisfy controller constraints, so it does not produce attraction despite form overlap.
+
+For misencoding or decision-level accounts, the current data constrain the space of viable explanations. Any account must explain why nominal attraction appears robustly while verbal attraction does not, even when both carry the same plural exponent. A global response bias toward plural-like forms cannot explain this selective pattern.
+
+More broadly, the results argue for models in which attraction is feature-selective and grammar-constrained, not a generic consequence of local form resemblance.
+
+## Methodological Contributions
+
+Beyond the theoretical result, the study design offers two methodological contributions.
+
+First, the two-experiment structure isolates a key inferential risk. Experiment 1 demonstrates the nominal-verbal dissociation within a shared session, while Experiment 2 tests robustness of the verbal null in isolation. This combination allows stronger claims than either design alone.
+
+Second, the analysis plan emphasizes explicit null-effect inference (directional posterior probabilities, condition-specific estimands, and Bayes-factor workflows with prior-sensitivity planning). Given how often attraction claims hinge on nulls in specific cells, this reporting strategy is useful beyond the present dataset.
+
+## Limitations and Future Directions
+
+Several limitations define the next steps.
+
+The current dependent measure is speeded acceptability. Future work should pair this with time-sensitive methods (self-paced reading, eye-tracking, or EEG) to test whether short-lived interference occurs without affecting final acceptability.
+
+The controller-potential account should be tested with graded manipulations rather than binary contrasts. For example, future designs can compare attractors that differ in how strongly they are associated with controllerhood across constructions, while matching surface morphology.
+
+Cross-linguistic extension is essential. Turkish is an ideal test bed for the present contrast, but the proposed mechanism should be evaluated in languages with different agreement architectures and different relationships between case, number, and controller licensing.
+
+Finally, planned null-inference standards should be preregistered, including ROPE bounds, prior families, and model-comparison criteria. This will make cross-study null claims easier to compare and less sensitive to analytic flexibility.
+
+# Conclusion
+
+The central finding is a dissociation under minimal surface contrast: nominal attractors produce attraction, verbal attractors with the same plural surface form do not. This pattern is difficult to reconcile with a purely surface-overlap account. It is more consistent with a structure-sensitive retrieval system in which attraction depends on controller-compatible representations.
+
+Agreement attraction in comprehension is therefore better characterized as grammar-constrained memory retrieval than as form-driven confusion.
+
+
+
+
+
+<!-- 
 Summary of findings
 
 Contextualizing of the findings
@@ -17,4 +101,4 @@ These results indicate that attraction depends on abstract feature overlap with 
 While the most obvious difference is syntactic---our non-attracting elements were verbs, whereas the attracting elements in Russian were nouns [@Slioussar2018]---this distinction alone is insufficient, as
 prior work shows that even pseudoplural nouns in English and the same surface-overlap in Czech fail to attract [@BockEberhard1993;@LacinaChromy2022]. We propose instead that the parser 'gates' its search based on an element's abstract potential to be a controller. The Russian genitive noun, despite its surface form, is recognized as an element that can control agreement in other constructions, thus passing this abstract gate. Our Turkish verbal attractors or Czech genitive nouns, by contrast, lack this potential entirely; they can never be controllers. They therefore fail this gating, and no attraction is observed, despite the perfect phonological overlap.
 
-This interpretation aligns with cross-linguistic findings showing that attraction is strongest when the attractor bears case or number morphology that can be associated with subjects or agreement controllers [@LagoEtAl2019;@BhatiaDillon2022;@BleotuDillon2024]. In other words, it is not form overlap per se, but feature ambiguity or a statistical association with controllerhood that matters. Earlier formulations of these models left open whether 'looking like' a controller or 'being able to be' a controller was critical. The present high-powered results from Turkish favor the latter: only morphologically licensed controllers, or those with a genuine abstract potential to be one, engage in attraction.
+This interpretation aligns with cross-linguistic findings showing that attraction is strongest when the attractor bears case or number morphology that can be associated with subjects or agreement controllers [@LagoEtAl2019;@BhatiaDillon2022;@BleotuDillon2024]. In other words, it is not form overlap per se, but feature ambiguity or a statistical association with controllerhood that matters. Earlier formulations of these models left open whether 'looking like' a controller or 'being able to be' a controller was critical. The present high-powered results from Turkish favor the latter: only morphologically licensed controllers, or those with a genuine abstract potential to be one, engage in attraction. -->

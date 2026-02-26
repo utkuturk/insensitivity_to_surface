@@ -256,6 +256,14 @@ summ_brms <- function(fit, par) {
 
 fmt <- function(x, d = 2) sprintf(paste0("%.", d, "f"), x)
 
+fmt_prob <- function(x, d = 2, lo = 0.01, hi = 0.99) {
+    ifelse(
+        x < lo,
+        paste0("<", fmt(lo, d)),
+        ifelse(x > hi, paste0(">", fmt(hi, d)), fmt(x, d))
+    )
+}
+
 trip <- function(v, d = 2) {
     glue::glue("{fmt(v['est'], d)} [{fmt(v['l95'], d)}, {fmt(v['u95'], d)}]")
 }

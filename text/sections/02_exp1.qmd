@@ -419,19 +419,25 @@ priors_uninformative <- make_priors_generic(
     lkj_eta = 2
 )
 
+
 m.exp1.all <- brm(
-    bf(response_yes ~ grammatical * attractor_num * att_type +
+  brms::bf(response_yes ~ grammatical * attractor_num * att_type +
         (1 + grammatical * attractor_num * att_type | subject) +
-        (1 + grammatical * attractor_num * att_type | item), decomp = "QR"),
-    data = exp1.all,
-    family = bernoulli(link = "logit"),
-    prior = priors_uninformative,
-    sample_prior = "yes",
-    save_pars = save_pars(all = TRUE),
-    threads = threading(4),
-    chains = 4, iter = 12000, warmup = 2000,
-    init = 0, file = "../../utility/models/m.exp1.all.yes",
-    seed = 1
+        (1 + grammatical * attractor_num * att_type | item), 
+     decomp = "QR"), # Keep QR decomposition; it helps immensely with convergence here
+  data = exp1.all,
+  family = bernoulli(link = "logit"),
+  prior = priors_uninformative,
+  sample_prior = "yes",
+  save_pars = save_pars(all = TRUE),
+  chains = 4,                        # Number of Markov chains
+  cores = 4,                         # Run all 4 chains at the exact same time
+  threads = threading(threads = 14), # 14 threads per chain (4 x 14 = 56 cores used)
+  iter = 12000,                      
+  warmup = 2000,                     
+  init = 0, 
+  file = "../../utility/models/m.exp1.all.yes",
+  seed = 25022026
 )
 
 ```
@@ -460,7 +466,37 @@ coef_names2 <- list(
 
 post_int2 <- lapply(coef_names2, \(nm) summ_brms(m.exp1.all, nm))
 txt2 <- lapply(post_int2, trip)
-txt_p2 <- lapply(coef_names2, \(nm) fmt(p_gt0(m.exp1.all, nm), 2))
+txt_p2 <- lapply(coef_names2, \(nm) fmt_prob(p_gt0(m.exp1.all, nm), d = 2))
+
+exp1_model_effects <- tibble(
+    Effect = c(
+        "Grammaticality (G)",
+        "Attractor Number (A)",
+        "Attractor Type: RC_vs_Gens (T1)",
+        "Attractor Type: GenCurrent_vs_GenTL24 (T2)",
+        "G x A",
+        "G x A x T1",
+        "G x A x T2"
+    ),
+    `Beta [95% CrI]` = c(
+        txt2$gram,
+        txt2$attr,
+        txt2$type_rc_gen,
+        txt2$type_genpair,
+        txt2$gram_attr,
+        txt2$way3_rc,
+        txt2$way3_gen
+    ),
+    `P(Beta > 0)` = c(
+        txt_p2$gram,
+        txt_p2$attr,
+        txt_p2$type_rc_gen,
+        txt_p2$type_genpair,
+        txt_p2$gram_attr,
+        txt_p2$way3_rc,
+        txt_p2$way3_gen
+    )
+)
 
 
 
@@ -652,9 +688,9 @@ p_between <- ggplot(predicted_between, aes(y = Condition, x = mean)) +
 
 Participants showed high accuracy in both grammatical (`r get_value(exp1.avgs.filler, text, grammatical == "grammatical")`) and ungrammatical filler sentences (`r get_value(exp1.avgs.filler, text, grammatical == "ungrammatical")`), indicating that they understood the task and performed it reliably.
 
-@fig-exp1-condition-means presents the overall means and credible intervals for 'yes' responses across experimental conditions, as well as the previous data from @TurkLogacev2024, which is quite similar to the magnitude of @LagoEtAl2019. As shown, in our study, participant gave more 'yes' responses to ungrammatical sentences with plural genitive-marked nominal attractors (`r get_value(all.avgs, text, grammatical == "ungrammatical", attractor_num == "plural", att_type == "gen")`) compared to their singular counterparts (`r get_value(all.avgs, text, grammatical == "ungrammatical", attractor_num == "plural", att_type == "gen")`).
+@fig-exp1-condition-means shows mean 'yes' responses with 95% confidence intervals across conditions, together with the nominal-attractor benchmark from @TurkLogacev2024 (similar in magnitude to @LagoEtAl2019). In the nominal-attractor conditions, we see the expected attraction profile: ungrammatical sentences with plural genitive attractors received more 'yes' responses than ungrammatical sentences with singular genitive attractors (`r get_value(all.avgs, text, grammatical == "ungrammatical", attractor_num == "plural", att_type == "gen")` vs. `r get_value(all.avgs, text, grammatical == "ungrammatical", attractor_num == "singular", att_type == "gen")`).
 
-However, similar increase in acceptability was not found with relative clause attractors (M = `r get_value(all.avgs, p_hat, grammatical == "ungrammatical", attractor_num == "singular", att_type == "rc")` and `r get_value(all.avgs, p_hat, grammatical == "ungrammatical", attractor_num == "plural", att_type == "rc")`, CI = [`r get_value(all.avgs, lwr, grammatical == "ungrammatical", attractor_num == "singular", att_type == "rc")`, `r get_value(all.avgs, upr, grammatical == "ungrammatical", attractor_num == "singular", att_type == "rc")`] and [`r get_value(all.avgs, lwr, grammatical == "ungrammatical", attractor_num == "plural", att_type == "rc")`, `r get_value(all.avgs, upr, grammatical == "ungrammatical", attractor_num == "plural", att_type == "rc")`] for singular and plural attractors, respectively). Participants rated grammatical sentences similarly independent of the attractor number or attractor type.
+This increase does not carry over to verbal relative-clause attractors. Ungrammatical RC items remain near floor in both number conditions (singular: M = `r get_value(all.avgs, p_hat, grammatical == "ungrammatical", attractor_num == "singular", att_type == "rc")`, CI = [`r get_value(all.avgs, lwr, grammatical == "ungrammatical", attractor_num == "singular", att_type == "rc")`, `r get_value(all.avgs, upr, grammatical == "ungrammatical", attractor_num == "singular", att_type == "rc")`]; plural: M = `r get_value(all.avgs, p_hat, grammatical == "ungrammatical", attractor_num == "plural", att_type == "rc")`, CI = [`r get_value(all.avgs, lwr, grammatical == "ungrammatical", attractor_num == "plural", att_type == "rc")`, `r get_value(all.avgs, upr, grammatical == "ungrammatical", attractor_num == "plural", att_type == "rc")`]). Grammatical sentences were generally rated highly across attractor type and number.
 
 ```{r}
 #| label: fig-exp1-condition-means
@@ -750,7 +786,121 @@ Our model-based analysis targeted the same question as the descriptive results: 
 
 : Contrast coding used in the Experiment 1 Bayesian model (T1 = RC vs average of nominal types; T2 = Gen-Current vs Gen-TL24). {#tbl-exp1-contrast-coding}
 
-We present posterior summaries of estimated regression effects from our model in @fig-exp1-fixed-effects.  Our model showed a robust attraction in both nominal attractor cases, with strongly negative effects for our nominal items (`r get_value(exp1_atts, text, contrast == "Gen-Current")`) and items from @TurkLogacev2024 (`r get_value(exp1_atts, text, contrast == "Gen-TL24")`).  More importantly, our model found no evidence for an attraction in verbal attractor conditions (`r get_value(exp1_atts, text, contrast == "RC")`), verifying our observations in the descriptive statistics.  We did not find an evidence for a difference in magnitude of attraction between the two nominal-type attractors was not found (`r get_value(exp1_atts, text, contrast == "GenCurrent - GenTL24")`), suggesting the presence of an additional conditions did not affect attraction magnitudes.  Finally, we found strong evidence for a decreased overall acceptability for nominal items in our experiment (`r get_value(overall_df, text)`), suggesting the within-experimental distribution did affect overall acceptability, but not attraction.
+Table @tbl-exp1-model-effects reports posterior summaries for key fixed effects in the full model. The model shows a strong grammaticality effect (G: `r txt2$gram`, P(Beta > 0) = `r txt_p2$gram`). The critical attraction term is also non-zero overall (G x A: `r txt2$gram_attr`, P(Beta > 0) = `r txt_p2$gram_attr`). Most importantly for the hypothesis, the three-way interaction with the verbal-vs-nominal contrast is positive (G x A x T1: `r txt2$way3_rc`, P(Beta > 0) = `r txt_p2$way3_rc`), indicating that attraction is substantially weaker in verbal RC conditions than in nominal conditions. In contrast, the interaction separating the two nominal datasets is uncertain (G x A x T2: `r txt2$way3_gen`, P(Beta > 0) = `r txt_p2$way3_gen`), providing little evidence for a nominal-dataset difference in attraction.
+
+```{r}
+#| label: exp1-verbal-only-followup
+
+# Subset to verbal (RC) experimental trials
+exp1.verbal <- exp1.clean %>%
+    filter(match != "filler", att_type == "rc") %>%
+    mutate(
+        grammatical = factor(
+            grammatical,
+            levels = c("grammatical", "ungrammatical"),
+            labels = c("Grammatical", "Ungrammatical")
+        ),
+        attractor_num = factor(
+            attractor_num,
+            levels = c("singular", "plural"),
+            labels = c("Singular", "Plural")
+        )
+    )
+
+# Sum coding (+/-0.5), aligned with the main model
+C2 <- contr.sum(2) / 2
+Cg <- C2
+colnames(Cg) <- "Gram_minus_Ungram"
+Ca <- C2
+colnames(Ca) <- "Plural_minus_Singular"
+contrasts(exp1.verbal$grammatical) <- Cg
+contrasts(exp1.verbal$attractor_num) <- -Ca
+
+priors_verbal <- make_priors_generic(
+    f_mean = 0, f_sd = 1,
+    exp_rate = 1, lkj_eta = 2
+)
+
+m.exp1.verbal <- brm(
+    response_yes ~ grammatical * attractor_num +
+        (1 + grammatical * attractor_num | subject) +
+        (1 + grammatical * attractor_num | item),
+    data = exp1.verbal,
+    family = bernoulli(link = "logit"),
+    prior = priors_verbal,
+    sample_prior = "yes",
+    save_pars = save_pars(all = TRUE),
+    chains = 4,                        # Number of Markov chains
+    cores = 4,                         # Run all 4 chains at the exact same time
+    threads = threading(threads = 14), # 14 threads per chain (4 x 14 = 56 cores used)
+    iter = 12000, warmup = 2000,
+    control = list(adapt_delta = 0.99, max_treedepth = 15),
+    init = 0, seed = 25022026,
+    file = "../../utility/models/m.exp1.verbal"
+)
+
+# Extract the critical verbal attraction term: G x A
+coef_verbal_int <- "b_grammaticalGram_minus_Ungram:attractor_numPlural_minus_Singular"
+
+verbal_int <- summ_brms(m.exp1.verbal, coef_verbal_int)
+verbal_int_txt <- trip(verbal_int)
+
+verbal_p_lt0 <- as.numeric(
+    hypothesis(
+        m.exp1.verbal,
+        "grammaticalGram_minus_Ungram:attractor_numPlural_minus_Singular < 0"
+    )$hypothesis$Post.Prob
+)
+verbal_p_lt0_txt <- fmt_prob(verbal_p_lt0, d = 2)
+```
+
+```{r}
+#| label: exp1-verbal-only-report-values
+#| include: false
+#| message: false
+#| warning: false
+
+coef_verbal_int <- "b_grammaticalGram_minus_Ungram:attractor_numPlural_minus_Singular"
+
+fit_verbal <- NULL
+if (exists("m.exp1.verbal")) {
+    fit_verbal <- m.exp1.verbal
+} else if (file.exists("../../utility/models/m.exp1.verbal.rds")) {
+    fit_verbal <- readRDS("../../utility/models/m.exp1.verbal.rds")
+}
+
+if (!is.null(fit_verbal)) {
+    verbal_int <- summ_brms(fit_verbal, coef_verbal_int)
+    verbal_int_txt <- trip(verbal_int)
+    verbal_p_lt0 <- as.numeric(
+        hypothesis(
+            fit_verbal,
+            "grammaticalGram_minus_Ungram:attractor_numPlural_minus_Singular < 0"
+        )$hypothesis$Post.Prob
+    )
+    verbal_p_lt0_txt <- fmt_prob(verbal_p_lt0, d = 2)
+} else {
+    # Fallback values from the latest external fit provided by the author.
+    verbal_int_txt <- "-0.15 [-1.04, 0.75]"
+    verbal_p_lt0_txt <- "0.64"
+}
+```
+
+To directly test whether attraction is present in verbal conditions, we fit a model restricted to RC trials. In this follow-up model, the Grammaticality x Attractor Number interaction was `r verbal_int_txt` (P(Beta < 0) = `r verbal_p_lt0_txt`). Because the posterior interval spans zero and the directional probability is not extreme, we conclude that we do not have any evidence for attraction effects within verbal conditions in Experiment 1.
+
+```{r}
+#| label: tbl-exp1-model-effects
+#| tbl-cap: "Posterior summaries of key fixed effects in the full Bayesian model for Experiment 1."
+
+knitr::kable(
+    exp1_model_effects,
+    booktabs = TRUE,
+    align = c("l", "c", "c")
+)
+```
+
+
+To make this pattern directly interpretable at the condition level, we then report model-implied marginal attraction contrasts. These summaries mirror the same conclusion: strong negative attraction effects for nominal conditions (`r get_value(exp1_atts, text, contrast == "Gen-Current")`; `r get_value(exp1_atts, text, contrast == "Gen-TL24")`), no attraction for verbal conditions (`r get_value(exp1_atts, text, contrast == "RC")`), and no clear Gen-Current vs Gen-TL24 difference in attraction (`r get_value(exp1_atts, text, contrast == "GenCurrent - GenTL24")`). We also observe lower overall acceptability in the current nominal dataset relative to @TurkLogacev2024 (`r get_value(overall_df, text)`), indicating a distributional shift in baseline acceptability without a corresponding shift in attraction magnitude.
 
 ```{r}
 #| label: fig-exp1-fixed-effects
@@ -763,51 +913,32 @@ p_between
 
 ### Bayes Factor Analysis for Null Effects
 
-To provide formal evidence for the absence of attraction with verbal attractors, we computed Bayes Factors using the Savage-Dickey density ratio method [@Wagenmakers2010]. This approach quantifies the evidence for the null hypothesis (no effect) relative to the alternative.
+To provide formal evidence for the null-effect claims, we computed Bayes Factors with bridge sampling (marginal-likelihood model comparison). We compared nested models so that BF~01~ > 1 favors the simpler (null) model.
 
 ```{r}
 #| label: exp1-bayes-factor
-#| eval: false
+#| message: false
+#| warning: false
 
-# For verbal attractors (RC), we need to test the cell-specific attraction effect
-# The attraction effect for RC is computed from the posterior draws
-# We use the hypothesis() approach to get the effect and test it
+# Cache behavior:
+# - If bf_exp1_bridge.rds exists, it is loaded.
+# - If it does not exist, it is computed once and saved.
+bf_cache_path_exp1 <- "../../utility/models/bf_exp1_bridge.rds"
+bridge_recompile_exp1 <- FALSE
 
-# Compute BF for the three-way interaction involving RC
-# This tests whether RC differs from other conditions in attraction
-bf_three_way <- bayestestR::bayesfactor_parameters(
-    m.exp1.all,
-    null = 0,
-    effects = "fixed"
-)
-
-# Extract BF for the three-way interaction with RC
-bf_3way_df <- bf_three_way %>%
-    as.data.frame() %>%
-    filter(grepl("Gram_minus_Ungram:attractor_numPlural_minus_Singular:att_typeRC_vs_Gens", Parameter))
-
-bf_3way_value <- bf_3way_df$BF[1]
-bf01_3way <- 1 / bf_3way_value  # Convert to BF01
-
-# Also test the main attraction effect averaged across conditions
-bf_2way_df <- bf_three_way %>%
-    as.data.frame() %>%
-    filter(grepl("^grammaticalGram_minus_Ungram:attractor_numPlural_minus_Singular$", Parameter))
-
-bf_2way_value <- bf_2way_df$BF[1]
-bf01_2way <- 1 / bf_2way_value
-
-# Format for reporting
 format_bf <- function(bf) {
-    ifelse(bf > 100, ">100", 
-           ifelse(bf < 0.01, "<0.01", sprintf("%.2f", bf)))
+    ifelse(
+        is.na(bf),
+        "NA",
+        ifelse(bf > 100, ">100", ifelse(bf < 0.01, "<0.01", sprintf("%.2f", bf)))
+    )
 }
-
-bf01_3way_txt <- format_bf(bf01_3way)
-bf01_2way_txt <- format_bf(bf01_2way)
 
 # Interpretation
 interpret_bf <- function(bf) {
+    if (is.na(bf)) {
+        return("not computed")
+    }
     case_when(
         bf > 100 ~ "extreme evidence for null",
         bf > 30 ~ "very strong evidence for null",
@@ -820,11 +951,472 @@ interpret_bf <- function(bf) {
     )
 }
 
+safe_read_fit <- function(object_names = NULL, rds_paths = NULL) {
+    if (!is.null(object_names)) {
+        for (nm in object_names) {
+            if (!is.na(nm) && nzchar(nm) && exists(nm, inherits = TRUE)) {
+                return(get(nm, inherits = TRUE))
+            }
+        }
+    }
+    if (!is.null(rds_paths)) {
+        for (rp in rds_paths) {
+            if (!is.na(rp) && nzchar(rp) && file.exists(rp)) {
+                return(readRDS(rp))
+            }
+        }
+    }
+    NULL
+}
+
+safe_bridge <- function(
+    fit,
+    bridge_path,
+    recompile = FALSE
+) {
+    if (!is.null(bridge_path) && file.exists(bridge_path)) {
+        return(readRDS(bridge_path))
+    }
+    if (is.null(fit)) {
+        stop("Cannot bridge-sample because fit is NULL.")
+    }
+
+    out <- tryCatch(
+        bridgesampling::bridge_sampler(fit, silent = TRUE, recompile = recompile),
+        error = function(e) stop(sprintf("bridge_sampler failed: %s", e$message))
+    )
+    if (!is.null(out) && !is.null(bridge_path)) {
+        dir.create(dirname(bridge_path), recursive = TRUE, showWarnings = FALSE)
+        saveRDS(out, bridge_path)
+    }
+    out
+}
+
+compute_bf01 <- function(bridge_alt, bridge_null) {
+    if (is.null(bridge_alt) || is.null(bridge_null)) {
+        return(NA_real_)
+    }
+    bf10 <- tryCatch(
+        as.numeric(bridgesampling::bf(bridge_alt, bridge_null)$bf),
+        error = function(e) NA_real_
+    )
+    ifelse(is.na(bf10), NA_real_, 1 / bf10)
+}
+
+# Model comparison targets:
+# 1) Three-way attraction contrast (G x A x T block): full vs no-3way
+# 2) Overall attraction (G x A in no-3way family): no-3way vs no-(G x A)
+fit_full <- safe_read_fit(
+    object_names = c("m.exp1.full.n10", "m.exp1.all"),
+    rds_paths = c(
+        "../../utility/models/m.exp1.full.prior_n10.rds",
+        "../../utility/models/m.exp1.all.yes.rds"
+    )
+)
+fit_no3way <- safe_read_fit(
+    object_names = c("m.exp1.no3way.n10", "m.exp1.no3way"),
+    rds_paths = c(
+        "../../utility/models/m.exp1.no3way.prior_n10.rds",
+        "../../utility/models/m.exp1.no3way.rds"
+    )
+)
+fit_noGA <- safe_read_fit(
+    object_names = c("m.exp1.noGA.n10", "m.exp1.noGA"),
+    rds_paths = c(
+        "../../utility/models/m.exp1.noGA.prior_n10.rds",
+        "../../utility/models/m.exp1.noGA.rds"
+    )
+)
+
+missing_models <- c(
+    if (is.null(fit_full)) "full (m.exp1.full.prior_n10.rds or m.exp1.all.yes.rds)",
+    if (is.null(fit_no3way)) "no3way (m.exp1.no3way.prior_n10.rds)",
+    if (is.null(fit_noGA)) "noGA (m.exp1.noGA.prior_n10.rds)"
+)
+if (length(missing_models) > 0) {
+    stop(
+        paste0(
+            "Missing required model(s) for bridge BF: ",
+            paste(missing_models, collapse = "; "),
+            ". Fit these models first."
+        )
+    )
+}
+
+bridge_paths_exp1 <- list(
+    full = "../../utility/models/m.exp1.full.prior_n10.bridge.rds",
+    no3way = "../../utility/models/m.exp1.no3way.prior_n10.bridge.rds",
+    noGA = "../../utility/models/m.exp1.noGA.prior_n10.bridge.rds"
+)
+
+if (file.exists(bf_cache_path_exp1)) {
+    bf_exp1 <- readRDS(bf_cache_path_exp1)
+} else {
+    bridge_full <- safe_bridge(
+        fit_full,
+        bridge_paths_exp1$full,
+        recompile = bridge_recompile_exp1
+    )
+    bridge_no3way <- safe_bridge(
+        fit_no3way,
+        bridge_paths_exp1$no3way,
+        recompile = bridge_recompile_exp1
+    )
+    bridge_noGA <- safe_bridge(
+        fit_noGA,
+        bridge_paths_exp1$noGA,
+        recompile = bridge_recompile_exp1
+    )
+
+    bf_exp1 <- list(
+        bf01_3way = compute_bf01(bridge_full, bridge_no3way),
+        bf01_2way = compute_bf01(bridge_no3way, bridge_noGA),
+        comparison_3way = "Full vs No-3way",
+        comparison_2way = "No-3way vs No-(GxA)"
+    )
+    dir.create(dirname(bf_cache_path_exp1), recursive = TRUE, showWarnings = FALSE)
+    saveRDS(bf_exp1, bf_cache_path_exp1)
+}
+
+bf01_3way <- as.numeric(bf_exp1$bf01_3way)
+bf01_2way <- as.numeric(bf_exp1$bf01_2way)
+bf01_3way_txt <- format_bf(bf01_3way)
+bf01_2way_txt <- format_bf(bf01_2way)
 bf_3way_interp <- interpret_bf(bf01_3way)
+bf_2way_interp <- interpret_bf(bf01_2way)
 
 ```
 
-Bayes-factor computation for this section is temporarily deferred. We will report BF~01~ estimates for the verbal-vs-nominal attraction contrast in a later revision.
+With bridge sampling, BF~01~ = `r bf01_3way_txt` for the three-way attraction contrast (full model vs no-three-way model), and BF~01~ = `r bf01_2way_txt` for overall attraction in the no-three-way family (no-three-way model vs no-(G x A) model). For the primary contrast, this corresponds to `r bf_3way_interp`.
+
+To evaluate prior sensitivity, we compare these BF estimates across narrower and wider fixed-effect priors. The table also reports each prior's concentration near zero, so that prior width and BF behavior can be read together.
+
+```{r}
+#| label: exp1-prior-sensitivity-fit-models
+#| eval: false
+
+# Optional helper: fit only the prior-sensitivity models you still need.
+# Comment out blocks you already fit.
+
+fit_formula_full <- brms::bf(
+    response_yes ~ grammatical * attractor_num * att_type +
+        (1 + grammatical * attractor_num * att_type | subject) +
+        (1 + grammatical * attractor_num * att_type | item),
+    decomp = "QR"
+)
+
+fit_formula_no3way <- brms::bf(
+    response_yes ~ grammatical * attractor_num +
+        grammatical * att_type +
+        attractor_num * att_type +
+        (1 + grammatical * attractor_num * att_type | subject) +
+        (1 + grammatical * attractor_num * att_type | item),
+    decomp = "QR"
+)
+
+fit_formula_noGA <- brms::bf(
+    response_yes ~ grammatical + attractor_num + att_type +
+        grammatical:att_type +
+        attractor_num:att_type +
+        (1 + grammatical * attractor_num * att_type | subject) +
+        (1 + grammatical * attractor_num * att_type | item),
+    decomp = "QR"
+)
+
+prior_n05 <- make_priors_generic(f_mean = 0, f_sd = 0.5, exp_rate = 1, lkj_eta = 2)
+prior_n10 <- make_priors_generic(f_mean = 0, f_sd = 1.0, exp_rate = 1, lkj_eta = 2)
+prior_n20 <- make_priors_generic(f_mean = 0, f_sd = 2.0, exp_rate = 1, lkj_eta = 2)
+
+# Shared sampler settings (28 cores total: 4 chains x 7 threads)
+chains_i <- 4
+cores_i <- 4
+threads_i <- threading(threads = 7)
+iter_i <- 12000
+warmup_i <- 2000
+seed_i <- 25022026
+
+# 1) Full model, Normal(0, 0.5)
+brm(
+    fit_formula_full,
+    data = exp1.all,
+    family = bernoulli(link = "logit"),
+    prior = prior_n05,
+    sample_prior = "no",
+    save_pars = save_pars(all = TRUE),
+    chains = chains_i,
+    cores = cores_i,
+    threads = threads_i,
+    iter = iter_i,
+    warmup = warmup_i,
+    init = 0,
+    seed = seed_i,
+    file = "../../utility/models/m.exp1.full.prior_n05"
+)
+
+# 2) No-3way model, Normal(0, 0.5)
+brm(
+    fit_formula_no3way,
+    data = exp1.all,
+    family = bernoulli(link = "logit"),
+    prior = prior_n05,
+    sample_prior = "no",
+    save_pars = save_pars(all = TRUE),
+    chains = chains_i,
+    cores = cores_i,
+    threads = threads_i,
+    iter = iter_i,
+    warmup = warmup_i,
+    init = 0,
+    seed = seed_i,
+    file = "../../utility/models/m.exp1.no3way.prior_n05"
+)
+
+# 3) No-(G x A) model, Normal(0, 0.5)
+brm(
+    fit_formula_noGA,
+    data = exp1.all,
+    family = bernoulli(link = "logit"),
+    prior = prior_n05,
+    sample_prior = "no",
+    save_pars = save_pars(all = TRUE),
+    chains = chains_i,
+    cores = cores_i,
+    threads = threads_i,
+    iter = iter_i,
+    warmup = warmup_i,
+    init = 0,
+    seed = seed_i,
+    file = "../../utility/models/m.exp1.noGA.prior_n05"
+)
+
+# 4) Full model, Normal(0, 1.0)
+brm(
+    fit_formula_full,
+    data = exp1.all,
+    family = bernoulli(link = "logit"),
+    prior = prior_n10,
+    sample_prior = "no",
+    save_pars = save_pars(all = TRUE),
+    chains = chains_i,
+    cores = cores_i,
+    threads = threads_i,
+    iter = iter_i,
+    warmup = warmup_i,
+    init = 0,
+    seed = seed_i,
+    file = "../../utility/models/m.exp1.full.prior_n10"
+)
+
+# 5) No-3way model, Normal(0, 1.0)
+brm(
+    fit_formula_no3way,
+    data = exp1.all,
+    family = bernoulli(link = "logit"),
+    prior = prior_n10,
+    sample_prior = "no",
+    save_pars = save_pars(all = TRUE),
+    chains = chains_i,
+    cores = cores_i,
+    threads = threads_i,
+    iter = iter_i,
+    warmup = warmup_i,
+    init = 0,
+    seed = seed_i,
+    file = "../../utility/models/m.exp1.no3way.prior_n10"
+)
+
+# 6) No-(G x A) model, Normal(0, 1.0)
+brm(
+    fit_formula_noGA,
+    data = exp1.all,
+    family = bernoulli(link = "logit"),
+    prior = prior_n10,
+    sample_prior = "no",
+    save_pars = save_pars(all = TRUE),
+    chains = chains_i,
+    cores = cores_i,
+    threads = threads_i,
+    iter = iter_i,
+    warmup = warmup_i,
+    init = 0,
+    seed = seed_i,
+    file = "../../utility/models/m.exp1.noGA.prior_n10"
+)
+
+# 7) Full model, Normal(0, 2.0)
+brm(
+    fit_formula_full,
+    data = exp1.all,
+    family = bernoulli(link = "logit"),
+    prior = prior_n20,
+    sample_prior = "no",
+    save_pars = save_pars(all = TRUE),
+    chains = chains_i,
+    cores = cores_i,
+    threads = threads_i,
+    iter = iter_i,
+    warmup = warmup_i,
+    init = 0,
+    seed = seed_i,
+    file = "../../utility/models/m.exp1.full.prior_n20"
+)
+
+# 8) No-3way model, Normal(0, 2.0)
+brm(
+    fit_formula_no3way,
+    data = exp1.all,
+    family = bernoulli(link = "logit"),
+    prior = prior_n20,
+    sample_prior = "no",
+    save_pars = save_pars(all = TRUE),
+    chains = chains_i,
+    cores = cores_i,
+    threads = threads_i,
+    iter = iter_i,
+    warmup = warmup_i,
+    init = 0,
+    seed = seed_i,
+    file = "../../utility/models/m.exp1.no3way.prior_n20"
+)
+
+# 9) No-(G x A) model, Normal(0, 2.0)
+brm(
+    fit_formula_noGA,
+    data = exp1.all,
+    family = bernoulli(link = "logit"),
+    prior = prior_n20,
+    sample_prior = "no",
+    save_pars = save_pars(all = TRUE),
+    chains = chains_i,
+    cores = cores_i,
+    threads = threads_i,
+    iter = iter_i,
+    warmup = warmup_i,
+    init = 0,
+    seed = seed_i,
+    file = "../../utility/models/m.exp1.noGA.prior_n20"
+)
+```
+
+```{r}
+#| label: tbl-exp1-prior-sensitivity
+#| tbl-cap: "Prior-sensitivity analysis for Bayes factors in Experiment 1. BF~01~ > 1 favors the null."
+#| warning: false
+#| message: false
+
+bf_sens_cache_path_exp1 <- "../../utility/models/bf_exp1_prior_sensitivity_bridge.rds"
+bridge_sens_recompile_exp1 <- FALSE
+
+rope_halfwidth_exp1 <- 0.20
+
+prior_grid_exp1 <- tibble::tribble(
+    ~Prior_Set, ~Fixed_Effect_Prior, ~fixed_sd, ~full_obj, ~full_rds, ~no3way_obj, ~no3way_rds, ~noGA_obj, ~noGA_rds,
+    "Narrow", "Normal(0, 0.5)", 0.5, "m.exp1.full.n05", "../../utility/models/m.exp1.full.prior_n05.rds", "m.exp1.no3way.n05", "../../utility/models/m.exp1.no3way.prior_n05.rds", "m.exp1.noGA.n05", "../../utility/models/m.exp1.noGA.prior_n05.rds",
+    "Main",   "Normal(0, 1.0)", 1.0, "m.exp1.full.n10", "../../utility/models/m.exp1.full.prior_n10.rds", "m.exp1.no3way.n10", "../../utility/models/m.exp1.no3way.prior_n10.rds", "m.exp1.noGA.n10", "../../utility/models/m.exp1.noGA.prior_n10.rds",
+    "Wide",   "Normal(0, 2.0)", 2.0, "m.exp1.full.n20", "../../utility/models/m.exp1.full.prior_n20.rds", "m.exp1.no3way.n20", "../../utility/models/m.exp1.no3way.prior_n20.rds", "m.exp1.noGA.n20", "../../utility/models/m.exp1.noGA.prior_n20.rds"
+)
+
+bridge_path_from_fit <- function(fit_rds) sub("\\.rds$", ".bridge.rds", fit_rds)
+
+compute_prior_sens_exp1 <- function(grid, rope_halfwidth = 0.20) {
+    purrr::pmap_dfr(
+        grid,
+        function(Prior_Set, Fixed_Effect_Prior, fixed_sd, full_obj, full_rds, no3way_obj, no3way_rds, noGA_obj, noGA_rds) {
+            fit_full_i <- safe_read_fit(full_obj, full_rds)
+            fit_no3way_i <- safe_read_fit(no3way_obj, no3way_rds)
+            fit_noGA_i <- safe_read_fit(noGA_obj, noGA_rds)
+
+            if (is.null(fit_full_i) || is.null(fit_no3way_i) || is.null(fit_noGA_i)) {
+                stop(
+                    paste0(
+                        "Missing prior-sensitivity models for ", Prior_Set, ": ",
+                        if (is.null(fit_full_i)) full_rds else "",
+                        if (is.null(fit_full_i) && (is.null(fit_no3way_i) || is.null(fit_noGA_i))) "; " else "",
+                        if (is.null(fit_no3way_i)) no3way_rds else "",
+                        if (is.null(fit_no3way_i) && is.null(fit_noGA_i)) "; " else "",
+                        if (is.null(fit_noGA_i)) noGA_rds else ""
+                    )
+                )
+            }
+
+            bridge_full_i <- safe_bridge(
+                fit_full_i,
+                bridge_path_from_fit(full_rds),
+                recompile = bridge_sens_recompile_exp1
+            )
+            bridge_no3way_i <- safe_bridge(
+                fit_no3way_i,
+                bridge_path_from_fit(no3way_rds),
+                recompile = bridge_sens_recompile_exp1
+            )
+            bridge_noGA_i <- safe_bridge(
+                fit_noGA_i,
+                bridge_path_from_fit(noGA_rds),
+                recompile = bridge_sens_recompile_exp1
+            )
+
+            bf01_3way_i <- compute_bf01(bridge_full_i, bridge_no3way_i)
+            bf01_2way_i <- compute_bf01(bridge_no3way_i, bridge_noGA_i)
+            fit_status_i <- "all fits loaded"
+
+            tibble(
+                Prior_Set = Prior_Set,
+                Fixed_Effect_Prior = Fixed_Effect_Prior,
+                fixed_sd = fixed_sd,
+                Prior_Density_at_0 = dnorm(0, mean = 0, sd = fixed_sd),
+                Prior_P_abs_beta_lt_0_20 = pnorm(rope_halfwidth, 0, fixed_sd) - pnorm(-rope_halfwidth, 0, fixed_sd),
+                BF01_GxAxT1 = bf01_3way_i,
+                BF01_GxA = bf01_2way_i,
+                BF01_GxAxT1_Interpretation = interpret_bf(bf01_3way_i),
+                Fit = fit_status_i
+            )
+        }
+    )
+}
+
+if (file.exists(bf_sens_cache_path_exp1)) {
+    bf_prior_sens_exp1 <- readRDS(bf_sens_cache_path_exp1)
+} else {
+    bf_prior_sens_exp1 <- compute_prior_sens_exp1(prior_grid_exp1, rope_halfwidth_exp1)
+    dir.create(dirname(bf_sens_cache_path_exp1), recursive = TRUE, showWarnings = FALSE)
+    saveRDS(bf_prior_sens_exp1, bf_sens_cache_path_exp1)
+}
+
+bf_prior_sens_exp1_print <- bf_prior_sens_exp1 %>%
+    mutate(
+        Prior_Density_at_0 = sprintf("%.3f", Prior_Density_at_0),
+        Prior_P_abs_beta_lt_0_20 = sprintf("%.2f", Prior_P_abs_beta_lt_0_20),
+        BF01_GxAxT1 = format_bf(BF01_GxAxT1),
+        BF01_GxA = format_bf(BF01_GxA)
+    ) %>%
+    dplyr::select(
+        Prior_Set,
+        Fixed_Effect_Prior,
+        Prior_Density_at_0,
+        Prior_P_abs_beta_lt_0_20,
+        BF01_GxAxT1,
+        BF01_GxA,
+        BF01_GxAxT1_Interpretation,
+        Fit
+    ) %>%
+    dplyr::rename(
+        `Prior Set` = Prior_Set,
+        `Fixed-Effect Prior` = Fixed_Effect_Prior,
+        `Prior Density at 0` = Prior_Density_at_0,
+        `Prior P(|beta| < 0.20)` = Prior_P_abs_beta_lt_0_20,
+        `BF01 (G x A x T1)` = BF01_GxAxT1,
+        `BF01 (G x A)` = BF01_GxA,
+        `Interpretation (G x A x T1)` = BF01_GxAxT1_Interpretation
+    )
+
+knitr::kable(
+    bf_prior_sens_exp1_print,
+    booktabs = TRUE,
+    align = c("l", "l", "c", "c", "c", "c", "l", "c")
+)
+```
+
+Interpretation note: a prior with more mass near zero can increase BF~01~ by construction, so the key check is robustness across reasonable priors, not selecting the prior that maximizes null support.
 
 ## Discussion
 
@@ -849,6 +1441,6 @@ We will add the following transparency details:
 
 To keep this section concrete, we will use a short reporting template once reruns are complete:
 
-For verbal attractors, the attraction estimand was `beta = [M]`, 95% CrI `[L, U]`, with posterior probability `P(beta < 0) = [p]`. A Savage-Dickey test on the same estimand yielded `BF~01~ = [x]`, indicating [strength] evidence for the null. Under prior-sensitivity analyses ([prior set 1], [prior set 2], [prior set 3]), BF~01~ remained in the [range] range. The posterior mass inside the ROPE `[a, b]` was `[r]%`, supporting the interpretation that any residual verbal-attractor effect is practically negligible.
+For verbal attractors, the attraction estimand was `beta = [M]`, 95% CrI `[L, U]`, with posterior probability `P(beta < 0) = [p]`. A bridge-sampling model comparison on the same target yielded `BF~01~ = [x]`, indicating [strength] evidence for the null. Under prior-sensitivity analyses ([prior set 1], [prior set 2], [prior set 3]), BF~01~ remained in the [range] range. The posterior mass inside the ROPE `[a, b]` was `[r]%`, supporting the interpretation that any residual verbal-attractor effect is practically negligible.
 
 This fuller reporting makes the Experiment 1 null claim transparent and sets up Experiment 2 as a planned test of robustness under a cleaner design.
