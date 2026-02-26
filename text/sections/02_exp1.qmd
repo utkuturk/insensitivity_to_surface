@@ -420,25 +420,11 @@ priors_uninformative <- make_priors_generic(
 )
 
 
-m.exp1.all <- brm(
-  brms::bf(response_yes ~ grammatical * attractor_num * att_type +
-        (1 + grammatical * attractor_num * att_type | subject) +
-        (1 + grammatical * attractor_num * att_type | item), 
-     decomp = "QR"), # Keep QR decomposition; it helps immensely with convergence here
-  data = exp1.all,
-  family = bernoulli(link = "logit"),
-  prior = priors_uninformative,
-  sample_prior = "yes",
-  save_pars = save_pars(all = TRUE),
-  chains = 4,                        # Number of Markov chains
-  cores = 4,                         # Run all 4 chains at the exact same time
-  threads = threading(threads = 14), # 14 threads per chain (4 x 14 = 56 cores used)
-  iter = 12000,                      
-  warmup = 2000,                     
-  init = 0, 
-  file = "../../utility/models/m.exp1.all.yes",
-  seed = 25022026
-)
+exp1_all_fit_path <- "../../utility/models/m.exp1.all.yes.rds"
+if (!file.exists(exp1_all_fit_path)) {
+    stop(sprintf("Missing fitted model file: %s", exp1_all_fit_path))
+}
+m.exp1.all <- readRDS(exp1_all_fit_path)
 
 ```
 
@@ -821,23 +807,11 @@ priors_verbal <- make_priors_generic(
     exp_rate = 1, lkj_eta = 2
 )
 
-m.exp1.verbal <- brm(
-    response_yes ~ grammatical * attractor_num +
-        (1 + grammatical * attractor_num | subject) +
-        (1 + grammatical * attractor_num | item),
-    data = exp1.verbal,
-    family = bernoulli(link = "logit"),
-    prior = priors_verbal,
-    sample_prior = "yes",
-    save_pars = save_pars(all = TRUE),
-    chains = 4,                        # Number of Markov chains
-    cores = 4,                         # Run all 4 chains at the exact same time
-    threads = threading(threads = 14), # 14 threads per chain (4 x 14 = 56 cores used)
-    iter = 12000, warmup = 2000,
-    control = list(adapt_delta = 0.99, max_treedepth = 15),
-    init = 0, seed = 25022026,
-    file = "../../utility/models/m.exp1.verbal"
-)
+exp1_verbal_fit_path <- "../../utility/models/m.exp1.verbal.rds"
+if (!file.exists(exp1_verbal_fit_path)) {
+    stop(sprintf("Missing fitted model file: %s", exp1_verbal_fit_path))
+}
+m.exp1.verbal <- readRDS(exp1_verbal_fit_path)
 
 # Extract the critical verbal attraction term: G x A
 coef_verbal_int <- "b_grammaticalGram_minus_Ungram:attractor_numPlural_minus_Singular"
@@ -1098,204 +1072,204 @@ To evaluate prior sensitivity, we compare these BF estimates across narrower and
 # Optional helper: fit only the prior-sensitivity models you still need.
 # Comment out blocks you already fit.
 
-fit_formula_full <- brms::bf(
-    response_yes ~ grammatical * attractor_num * att_type +
-        (1 + grammatical * attractor_num * att_type | subject) +
-        (1 + grammatical * attractor_num * att_type | item),
-    decomp = "QR"
-)
+# fit_formula_full <- brms::bf(
+#     response_yes ~ grammatical * attractor_num * att_type +
+#         (1 + grammatical * attractor_num * att_type | subject) +
+#         (1 + grammatical * attractor_num * att_type | item),
+#     decomp = "QR"
+# )
 
-fit_formula_no3way <- brms::bf(
-    response_yes ~ grammatical * attractor_num +
-        grammatical * att_type +
-        attractor_num * att_type +
-        (1 + grammatical * attractor_num * att_type | subject) +
-        (1 + grammatical * attractor_num * att_type | item),
-    decomp = "QR"
-)
+# fit_formula_no3way <- brms::bf(
+#     response_yes ~ grammatical * attractor_num +
+#         grammatical * att_type +
+#         attractor_num * att_type +
+#         (1 + grammatical * attractor_num * att_type | subject) +
+#         (1 + grammatical * attractor_num * att_type | item),
+#     decomp = "QR"
+# )
 
-fit_formula_noGA <- brms::bf(
-    response_yes ~ grammatical + attractor_num + att_type +
-        grammatical:att_type +
-        attractor_num:att_type +
-        (1 + grammatical * attractor_num * att_type | subject) +
-        (1 + grammatical * attractor_num * att_type | item),
-    decomp = "QR"
-)
+# fit_formula_noGA <- brms::bf(
+#     response_yes ~ grammatical + attractor_num + att_type +
+#         grammatical:att_type +
+#         attractor_num:att_type +
+#         (1 + grammatical * attractor_num * att_type | subject) +
+#         (1 + grammatical * attractor_num * att_type | item),
+#     decomp = "QR"
+# )
 
-prior_n05 <- make_priors_generic(f_mean = 0, f_sd = 0.5, exp_rate = 1, lkj_eta = 2)
-prior_n10 <- make_priors_generic(f_mean = 0, f_sd = 1.0, exp_rate = 1, lkj_eta = 2)
-prior_n20 <- make_priors_generic(f_mean = 0, f_sd = 2.0, exp_rate = 1, lkj_eta = 2)
+# prior_n05 <- make_priors_generic(f_mean = 0, f_sd = 0.5, exp_rate = 1, lkj_eta = 2)
+# prior_n10 <- make_priors_generic(f_mean = 0, f_sd = 1.0, exp_rate = 1, lkj_eta = 2)
+# prior_n20 <- make_priors_generic(f_mean = 0, f_sd = 2.0, exp_rate = 1, lkj_eta = 2)
 
-# Shared sampler settings (28 cores total: 4 chains x 7 threads)
-chains_i <- 4
-cores_i <- 4
-threads_i <- threading(threads = 7)
-iter_i <- 12000
-warmup_i <- 2000
-seed_i <- 25022026
+# # Shared sampler settings (28 cores total: 4 chains x 7 threads)
+# chains_i <- 4
+# cores_i <- 4
+# threads_i <- threading(threads = 7)
+# iter_i <- 12000
+# warmup_i <- 2000
+# seed_i <- 25022026
 
-# 1) Full model, Normal(0, 0.5)
-brm(
-    fit_formula_full,
-    data = exp1.all,
-    family = bernoulli(link = "logit"),
-    prior = prior_n05,
-    sample_prior = "no",
-    save_pars = save_pars(all = TRUE),
-    chains = chains_i,
-    cores = cores_i,
-    threads = threads_i,
-    iter = iter_i,
-    warmup = warmup_i,
-    init = 0,
-    seed = seed_i,
-    file = "../../utility/models/m.exp1.full.prior_n05"
-)
+# # 1) Full model, Normal(0, 0.5)
+# brm(
+#     fit_formula_full,
+#     data = exp1.all,
+#     family = bernoulli(link = "logit"),
+#     prior = prior_n05,
+#     sample_prior = "no",
+#     save_pars = save_pars(all = TRUE),
+#     chains = chains_i,
+#     cores = cores_i,
+#     threads = threads_i,
+#     iter = iter_i,
+#     warmup = warmup_i,
+#     init = 0,
+#     seed = seed_i,
+#     file = "../../utility/models/m.exp1.full.prior_n05"
+# )
 
-# 2) No-3way model, Normal(0, 0.5)
-brm(
-    fit_formula_no3way,
-    data = exp1.all,
-    family = bernoulli(link = "logit"),
-    prior = prior_n05,
-    sample_prior = "no",
-    save_pars = save_pars(all = TRUE),
-    chains = chains_i,
-    cores = cores_i,
-    threads = threads_i,
-    iter = iter_i,
-    warmup = warmup_i,
-    init = 0,
-    seed = seed_i,
-    file = "../../utility/models/m.exp1.no3way.prior_n05"
-)
+# # 2) No-3way model, Normal(0, 0.5)
+# brm(
+#     fit_formula_no3way,
+#     data = exp1.all,
+#     family = bernoulli(link = "logit"),
+#     prior = prior_n05,
+#     sample_prior = "no",
+#     save_pars = save_pars(all = TRUE),
+#     chains = chains_i,
+#     cores = cores_i,
+#     threads = threads_i,
+#     iter = iter_i,
+#     warmup = warmup_i,
+#     init = 0,
+#     seed = seed_i,
+#     file = "../../utility/models/m.exp1.no3way.prior_n05"
+# )
 
-# 3) No-(G x A) model, Normal(0, 0.5)
-brm(
-    fit_formula_noGA,
-    data = exp1.all,
-    family = bernoulli(link = "logit"),
-    prior = prior_n05,
-    sample_prior = "no",
-    save_pars = save_pars(all = TRUE),
-    chains = chains_i,
-    cores = cores_i,
-    threads = threads_i,
-    iter = iter_i,
-    warmup = warmup_i,
-    init = 0,
-    seed = seed_i,
-    file = "../../utility/models/m.exp1.noGA.prior_n05"
-)
+# # 3) No-(G x A) model, Normal(0, 0.5)
+# brm(
+#     fit_formula_noGA,
+#     data = exp1.all,
+#     family = bernoulli(link = "logit"),
+#     prior = prior_n05,
+#     sample_prior = "no",
+#     save_pars = save_pars(all = TRUE),
+#     chains = chains_i,
+#     cores = cores_i,
+#     threads = threads_i,
+#     iter = iter_i,
+#     warmup = warmup_i,
+#     init = 0,
+#     seed = seed_i,
+#     file = "../../utility/models/m.exp1.noGA.prior_n05"
+# )
 
-# 4) Full model, Normal(0, 1.0)
-brm(
-    fit_formula_full,
-    data = exp1.all,
-    family = bernoulli(link = "logit"),
-    prior = prior_n10,
-    sample_prior = "no",
-    save_pars = save_pars(all = TRUE),
-    chains = chains_i,
-    cores = cores_i,
-    threads = threads_i,
-    iter = iter_i,
-    warmup = warmup_i,
-    init = 0,
-    seed = seed_i,
-    file = "../../utility/models/m.exp1.full.prior_n10"
-)
+# # 4) Full model, Normal(0, 1.0)
+# brm(
+#     fit_formula_full,
+#     data = exp1.all,
+#     family = bernoulli(link = "logit"),
+#     prior = prior_n10,
+#     sample_prior = "no",
+#     save_pars = save_pars(all = TRUE),
+#     chains = chains_i,
+#     cores = cores_i,
+#     threads = threads_i,
+#     iter = iter_i,
+#     warmup = warmup_i,
+#     init = 0,
+#     seed = seed_i,
+#     file = "../../utility/models/m.exp1.full.prior_n10"
+# )
 
-# 5) No-3way model, Normal(0, 1.0)
-brm(
-    fit_formula_no3way,
-    data = exp1.all,
-    family = bernoulli(link = "logit"),
-    prior = prior_n10,
-    sample_prior = "no",
-    save_pars = save_pars(all = TRUE),
-    chains = chains_i,
-    cores = cores_i,
-    threads = threads_i,
-    iter = iter_i,
-    warmup = warmup_i,
-    init = 0,
-    seed = seed_i,
-    file = "../../utility/models/m.exp1.no3way.prior_n10"
-)
+# # 5) No-3way model, Normal(0, 1.0)
+# brm(
+#     fit_formula_no3way,
+#     data = exp1.all,
+#     family = bernoulli(link = "logit"),
+#     prior = prior_n10,
+#     sample_prior = "no",
+#     save_pars = save_pars(all = TRUE),
+#     chains = chains_i,
+#     cores = cores_i,
+#     threads = threads_i,
+#     iter = iter_i,
+#     warmup = warmup_i,
+#     init = 0,
+#     seed = seed_i,
+#     file = "../../utility/models/m.exp1.no3way.prior_n10"
+# )
 
-# 6) No-(G x A) model, Normal(0, 1.0)
-brm(
-    fit_formula_noGA,
-    data = exp1.all,
-    family = bernoulli(link = "logit"),
-    prior = prior_n10,
-    sample_prior = "no",
-    save_pars = save_pars(all = TRUE),
-    chains = chains_i,
-    cores = cores_i,
-    threads = threads_i,
-    iter = iter_i,
-    warmup = warmup_i,
-    init = 0,
-    seed = seed_i,
-    file = "../../utility/models/m.exp1.noGA.prior_n10"
-)
+# # 6) No-(G x A) model, Normal(0, 1.0)
+# brm(
+#     fit_formula_noGA,
+#     data = exp1.all,
+#     family = bernoulli(link = "logit"),
+#     prior = prior_n10,
+#     sample_prior = "no",
+#     save_pars = save_pars(all = TRUE),
+#     chains = chains_i,
+#     cores = cores_i,
+#     threads = threads_i,
+#     iter = iter_i,
+#     warmup = warmup_i,
+#     init = 0,
+#     seed = seed_i,
+#     file = "../../utility/models/m.exp1.noGA.prior_n10"
+# )
 
-# 7) Full model, Normal(0, 2.0)
-brm(
-    fit_formula_full,
-    data = exp1.all,
-    family = bernoulli(link = "logit"),
-    prior = prior_n20,
-    sample_prior = "no",
-    save_pars = save_pars(all = TRUE),
-    chains = chains_i,
-    cores = cores_i,
-    threads = threads_i,
-    iter = iter_i,
-    warmup = warmup_i,
-    init = 0,
-    seed = seed_i,
-    file = "../../utility/models/m.exp1.full.prior_n20"
-)
+# # 7) Full model, Normal(0, 2.0)
+# brm(
+#     fit_formula_full,
+#     data = exp1.all,
+#     family = bernoulli(link = "logit"),
+#     prior = prior_n20,
+#     sample_prior = "no",
+#     save_pars = save_pars(all = TRUE),
+#     chains = chains_i,
+#     cores = cores_i,
+#     threads = threads_i,
+#     iter = iter_i,
+#     warmup = warmup_i,
+#     init = 0,
+#     seed = seed_i,
+#     file = "../../utility/models/m.exp1.full.prior_n20"
+# )
 
-# 8) No-3way model, Normal(0, 2.0)
-brm(
-    fit_formula_no3way,
-    data = exp1.all,
-    family = bernoulli(link = "logit"),
-    prior = prior_n20,
-    sample_prior = "no",
-    save_pars = save_pars(all = TRUE),
-    chains = chains_i,
-    cores = cores_i,
-    threads = threads_i,
-    iter = iter_i,
-    warmup = warmup_i,
-    init = 0,
-    seed = seed_i,
-    file = "../../utility/models/m.exp1.no3way.prior_n20"
-)
+# # 8) No-3way model, Normal(0, 2.0)
+# brm(
+#     fit_formula_no3way,
+#     data = exp1.all,
+#     family = bernoulli(link = "logit"),
+#     prior = prior_n20,
+#     sample_prior = "no",
+#     save_pars = save_pars(all = TRUE),
+#     chains = chains_i,
+#     cores = cores_i,
+#     threads = threads_i,
+#     iter = iter_i,
+#     warmup = warmup_i,
+#     init = 0,
+#     seed = seed_i,
+#     file = "../../utility/models/m.exp1.no3way.prior_n20"
+# )
 
-# 9) No-(G x A) model, Normal(0, 2.0)
-brm(
-    fit_formula_noGA,
-    data = exp1.all,
-    family = bernoulli(link = "logit"),
-    prior = prior_n20,
-    sample_prior = "no",
-    save_pars = save_pars(all = TRUE),
-    chains = chains_i,
-    cores = cores_i,
-    threads = threads_i,
-    iter = iter_i,
-    warmup = warmup_i,
-    init = 0,
-    seed = seed_i,
-    file = "../../utility/models/m.exp1.noGA.prior_n20"
-)
+# # 9) No-(G x A) model, Normal(0, 2.0)
+# brm(
+#     fit_formula_noGA,
+#     data = exp1.all,
+#     family = bernoulli(link = "logit"),
+#     prior = prior_n20,
+#     sample_prior = "no",
+#     save_pars = save_pars(all = TRUE),
+#     chains = chains_i,
+#     cores = cores_i,
+#     threads = threads_i,
+#     iter = iter_i,
+#     warmup = warmup_i,
+#     init = 0,
+#     seed = seed_i,
+#     file = "../../utility/models/m.exp1.noGA.prior_n20"
+# )
 ```
 
 ```{r}

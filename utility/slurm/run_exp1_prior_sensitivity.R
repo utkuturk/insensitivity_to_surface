@@ -76,6 +76,13 @@ as_int <- function(x, default = NA_integer_) {
     as.integer(x)
 }
 
+as_num <- function(x, default = NA_real_) {
+    if (is.null(x)) {
+        return(default)
+    }
+    as.numeric(x)
+}
+
 as_bool <- function(x, default = FALSE) {
     if (is.null(x)) {
         return(default)
@@ -100,6 +107,8 @@ iter <- as_int(cmd[["iter"]], 12000L)
 warmup <- as_int(cmd[["warmup"]], 2000L)
 seed <- as_int(cmd[["seed"]], 25022026L)
 force_refit <- as_bool(cmd[["force"]], FALSE)
+adapt_delta <- as_num(cmd[["adapt-delta"]], NA_real_)
+max_treedepth <- as_int(cmd[["max-treedepth"]], NA_integer_)
 
 backend <- Sys.getenv("BRMS_BACKEND", unset = "")
 
@@ -122,6 +131,10 @@ message(
     iter,
     ", warmup=",
     warmup,
+    ", adapt_delta=",
+    ifelse(is.na(adapt_delta), "auto", format(adapt_delta, digits = 3)),
+    ", max_treedepth=",
+    ifelse(is.na(max_treedepth), "auto", as.character(max_treedepth)),
     ", seed=",
     seed
 )
@@ -421,6 +434,13 @@ prior_i <- make_priors_generic(
     lkj_eta = 2
 )
 
+if (is.na(adapt_delta)) {
+    adapt_delta <- if (spec$prior_sd[[1]] >= 2.0) 0.995 else 0.99
+}
+if (is.na(max_treedepth)) {
+    max_treedepth <- if (spec$prior_sd[[1]] >= 2.0) 15L else 12L
+}
+
 file_i <- file.path(project_dir, "utility", "models", spec$file_stub[[1]])
 file_rds_i <- paste0(file_i, ".rds")
 
@@ -446,7 +466,11 @@ fit_args <- list(
     warmup = warmup,
     init = 0,
     seed = seed,
-    file = file_i
+    file = file_i,
+    control = list(
+        adapt_delta = adapt_delta,
+        max_treedepth = max_treedepth
+    )
 )
 
 if (threads > 1L) {

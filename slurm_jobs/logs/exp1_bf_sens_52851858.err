@@ -1,0 +1,176 @@
+Loading r-rocker-ml-verse version R4.5.1_cuda12.8.1+apptainer
+Loading apptainer version latest
+
+No apptainer cache directory found. To prevent apptainer from filling up your
+home directory, you can create a new directory at
+`/work/pi_<your_pi_name>/.apptainer/cache` and reload the module. 
+Registered S3 method overwritten by 'DescTools':
+  method         from 
+  reorder.factor gdata
+Project dir: /home/uturk_umass_edu/insensitivity_to_surface
+Requested model id: 4
+Sampler settings: chains=4, cores=4, threads=7, iter=12000, warmup=2000, seed=25022026
+Joining with `by = join_by(subject)`
+`summarise()` has grouped output by 'subject', 'experiment', 'condition',
+'grammatical', 'verb_num', 'attractor_num'. You can override using the
+`.groups` argument.
+Joining with `by = join_by(subject)`
+`summarise()` has grouped output by 'subject', 'experiment', 'condition',
+'grammatical', 'verb_num'. You can override using the `.groups` argument.
+Fitting full_n10 -> /home/uturk_umass_edu/insensitivity_to_surface/utility/models/m.exp1.full.prior_n10
+Compiling Stan program...
+Start sampling
+Warning messages:
+1: There were 19 divergent transitions after warmup. See
+https://mc-stan.org/misc/warnings.html#divergent-transitions-after-warmup
+to find out why this is a problem and how to eliminate them. 
+2: Examine the pairs() plot to diagnose sampling problems
+ 
+3: There were 19 divergent transitions after warmup. Increasing adapt_delta above 0.8 may help. See http://mc-stan.org/misc/warnings.html#divergent-transitions-after-warmup 
+Done: /home/uturk_umass_edu/insensitivity_to_surface/utility/models/m.exp1.full.prior_n10
+Registered S3 method overwritten by 'DescTools':
+  method         from 
+  reorder.factor gdata
+Project dir: /home/uturk_umass_edu/insensitivity_to_surface
+Requested model id: 5
+Sampler settings: chains=4, cores=4, threads=7, iter=12000, warmup=2000, seed=25022026
+Joining with `by = join_by(subject)`
+`summarise()` has grouped output by 'subject', 'experiment', 'condition',
+'grammatical', 'verb_num', 'attractor_num'. You can override using the
+`.groups` argument.
+Joining with `by = join_by(subject)`
+`summarise()` has grouped output by 'subject', 'experiment', 'condition',
+'grammatical', 'verb_num'. You can override using the `.groups` argument.
+Fitting no3way_n10 -> /home/uturk_umass_edu/insensitivity_to_surface/utility/models/m.exp1.no3way.prior_n10
+Compiling Stan program...
+Start sampling
+Warning messages:
+1: There were 20 divergent transitions after warmup. See
+https://mc-stan.org/misc/warnings.html#divergent-transitions-after-warmup
+to find out why this is a problem and how to eliminate them. 
+2: Examine the pairs() plot to diagnose sampling problems
+ 
+3: There were 20 divergent transitions after warmup. Increasing adapt_delta above 0.8 may help. See http://mc-stan.org/misc/warnings.html#divergent-transitions-after-warmup 
+Done: /home/uturk_umass_edu/insensitivity_to_surface/utility/models/m.exp1.no3way.prior_n10
+Registered S3 method overwritten by 'DescTools':
+  method         from 
+  reorder.factor gdata
+Project dir: /home/uturk_umass_edu/insensitivity_to_surface
+Requested model id: 6
+Sampler settings: chains=4, cores=4, threads=7, iter=12000, warmup=2000, seed=25022026
+Joining with `by = join_by(subject)`
+`summarise()` has grouped output by 'subject', 'experiment', 'condition',
+'grammatical', 'verb_num', 'attractor_num'. You can override using the
+`.groups` argument.
+Joining with `by = join_by(subject)`
+`summarise()` has grouped output by 'subject', 'experiment', 'condition',
+'grammatical', 'verb_num'. You can override using the `.groups` argument.
+Fitting noGA_n10 -> /home/uturk_umass_edu/insensitivity_to_surface/utility/models/m.exp1.noGA.prior_n10
+Compiling Stan program...
+Start sampling
+Warning messages:
+1: There were 16 divergent transitions after warmup. See
+https://mc-stan.org/misc/warnings.html#divergent-transitions-after-warmup
+to find out why this is a problem and how to eliminate them. 
+2: Examine the pairs() plot to diagnose sampling problems
+ 
+3: There were 16 divergent transitions after warmup. Increasing adapt_delta above 0.8 may help. See http://mc-stan.org/misc/warnings.html#divergent-transitions-after-warmup 
+Done: /home/uturk_umass_edu/insensitivity_to_surface/utility/models/m.exp1.noGA.prior_n10
+Registered S3 method overwritten by 'DescTools':
+  method         from 
+  reorder.factor gdata
+Project dir: /home/uturk_umass_edu/insensitivity_to_surface
+Requested model id: 7
+Sampler settings: chains=4, cores=4, threads=7, iter=12000, warmup=2000, seed=25022026
+Joining with `by = join_by(subject)`
+`summarise()` has grouped output by 'subject', 'experiment', 'condition',
+'grammatical', 'verb_num', 'attractor_num'. You can override using the
+`.groups` argument.
+Joining with `by = join_by(subject)`
+`summarise()` has grouped output by 'subject', 'experiment', 'condition',
+'grammatical', 'verb_num'. You can override using the `.groups` argument.
+Fitting full_n20 -> /home/uturk_umass_edu/insensitivity_to_surface/utility/models/m.exp1.full.prior_n20
+Compiling Stan program...
+Start sampling
+Warning messages:
+1: There were 2 divergent transitions after warmup. See
+https://mc-stan.org/misc/warnings.html#divergent-transitions-after-warmup
+to find out why this is a problem and how to eliminate them. 
+2: Examine the pairs() plot to diagnose sampling problems
+ 
+3: There were 2 divergent transitions after warmup. Increasing adapt_delta above 0.8 may help. See http://mc-stan.org/misc/warnings.html#divergent-transitions-after-warmup 
+Done: /home/uturk_umass_edu/insensitivity_to_surface/utility/models/m.exp1.full.prior_n20
+Registered S3 method overwritten by 'DescTools':
+  method         from 
+  reorder.factor gdata
+Project dir: /home/uturk_umass_edu/insensitivity_to_surface
+Requested model id: 8
+Sampler settings: chains=4, cores=4, threads=7, iter=12000, warmup=2000, seed=25022026
+Joining with `by = join_by(subject)`
+`summarise()` has grouped output by 'subject', 'experiment', 'condition',
+'grammatical', 'verb_num', 'attractor_num'. You can override using the
+`.groups` argument.
+Joining with `by = join_by(subject)`
+`summarise()` has grouped output by 'subject', 'experiment', 'condition',
+'grammatical', 'verb_num'. You can override using the `.groups` argument.
+Fitting no3way_n20 -> /home/uturk_umass_edu/insensitivity_to_surface/utility/models/m.exp1.no3way.prior_n20
+Compiling Stan program...
+Start sampling
+Warning messages:
+1: There were 41 divergent transitions after warmup. See
+https://mc-stan.org/misc/warnings.html#divergent-transitions-after-warmup
+to find out why this is a problem and how to eliminate them. 
+2: Examine the pairs() plot to diagnose sampling problems
+ 
+3: There were 41 divergent transitions after warmup. Increasing adapt_delta above 0.8 may help. See http://mc-stan.org/misc/warnings.html#divergent-transitions-after-warmup 
+Done: /home/uturk_umass_edu/insensitivity_to_surface/utility/models/m.exp1.no3way.prior_n20
+Registered S3 method overwritten by 'DescTools':
+  method         from 
+  reorder.factor gdata
+Project dir: /home/uturk_umass_edu/insensitivity_to_surface
+Requested model id: 9
+Sampler settings: chains=4, cores=4, threads=7, iter=12000, warmup=2000, seed=25022026
+Joining with `by = join_by(subject)`
+`summarise()` has grouped output by 'subject', 'experiment', 'condition',
+'grammatical', 'verb_num', 'attractor_num'. You can override using the
+`.groups` argument.
+Joining with `by = join_by(subject)`
+`summarise()` has grouped output by 'subject', 'experiment', 'condition',
+'grammatical', 'verb_num'. You can override using the `.groups` argument.
+Fitting noGA_n20 -> /home/uturk_umass_edu/insensitivity_to_surface/utility/models/m.exp1.noGA.prior_n20
+Compiling Stan program...
+Start sampling
+Warning messages:
+1: There were 16 divergent transitions after warmup. See
+https://mc-stan.org/misc/warnings.html#divergent-transitions-after-warmup
+to find out why this is a problem and how to eliminate them. 
+2: Examine the pairs() plot to diagnose sampling problems
+ 
+3: There were 16 divergent transitions after warmup. Increasing adapt_delta above 0.8 may help. See http://mc-stan.org/misc/warnings.html#divergent-transitions-after-warmup 
+Done: /home/uturk_umass_edu/insensitivity_to_surface/utility/models/m.exp1.noGA.prior_n20
+Computing Exp1 bridge BFs (recompile=FALSE)
+Warning message:
+logml could not be estimated within maxiter, rerunning with adjusted starting value. 
+Estimate might be more variable than usual. 
+Warning message:
+logml could not be estimated within maxiter, rerunning with adjusted starting value. 
+Estimate might be more variable than usual. 
+Warning message:
+logml could not be estimated within maxiter, rerunning with adjusted starting value. 
+Estimate might be more variable than usual. 
+Saved: utility/models/bf_exp1_bridge.rds
+Warning messages:
+1: logml could not be estimated within maxiter, rerunning with adjusted starting value. 
+Estimate might be more variable than usual. 
+2: logml could not be estimated within maxiter, rerunning with adjusted starting value. 
+Estimate might be more variable than usual. 
+3: logml could not be estimated within maxiter, rerunning with adjusted starting value. 
+Estimate might be more variable than usual. 
+4: logml could not be estimated within maxiter, rerunning with adjusted starting value. 
+Estimate might be more variable than usual. 
+5: Infinite value in iterative scheme, returning NA.
+ Try rerunning with more samples. 
+6: Infinite value in iterative scheme, returning NA.
+ Try rerunning with more samples. 
+Saved: utility/models/bf_exp1_prior_sensitivity_bridge.rds
+Done.

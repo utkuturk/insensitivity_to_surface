@@ -5,7 +5,7 @@
 #SBATCH --time=48:00:00
 #SBATCH --partition=cpu
 #SBATCH --mem=64G
-#SBATCH --cpus-per-task=28
+#SBATCH --cpus-per-task=4
 #SBATCH --chdir=/home/uturk_umass_edu/insensitivity_to_surface
 
 set -euo pipefail
@@ -18,20 +18,42 @@ cd "${PROJECT_DIR}"
 mkdir -p slurm_jobs/logs
 
 MODEL_IDS="${MODEL_IDS:-1 2 3 4 5 6 7 8 9}"
+THREADS="${THREADS:-1}"
+CHAINS="${CHAINS:-4}"
+CORES="${CORES:-4}"
+ITER="${ITER:-12000}"
+WARMUP="${WARMUP:-2000}"
+SEED="${SEED:-25022026}"
+FORCE_REFIT="${FORCE_REFIT:-false}"
+ADAPT_DELTA="${ADAPT_DELTA:-0.99}"
+MAX_TREEDEPTH="${MAX_TREEDEPTH:-12}"
+BRIDGE_FORCE="${BRIDGE_FORCE:-false}"
+BRIDGE_METHOD="${BRIDGE_METHOD:-normal}"
+BRIDGE_REPETITIONS="${BRIDGE_REPETITIONS:-1}"
+BRIDGE_MAXITER="${BRIDGE_MAXITER:-2000}"
+BRIDGE_USE_NEFF="${BRIDGE_USE_NEFF:-true}"
 
 for MODEL_ID in ${MODEL_IDS}; do
   echo "[$(date)] Starting model ${MODEL_ID}"
   Rscript --no-restore --no-save "${PROJECT_DIR}/utility/slurm/run_exp1_prior_sensitivity.R" \
     --model-id "${MODEL_ID}" \
-    --threads 7 \
-    --chains 4 \
-    --cores 4 \
-    --iter 12000 \
-    --warmup 2000 \
-    --seed 25022026
+    --threads "${THREADS}" \
+    --chains "${CHAINS}" \
+    --cores "${CORES}" \
+    --iter "${ITER}" \
+    --warmup "${WARMUP}" \
+    --seed "${SEED}" \
+    --force "${FORCE_REFIT}" \
+    --adapt-delta "${ADAPT_DELTA}" \
+    --max-treedepth "${MAX_TREEDEPTH}"
   echo "[$(date)] Finished model ${MODEL_ID}"
 done
 
 echo "[$(date)] Starting Exp1 bridge BF computations"
-Rscript --no-restore --no-save "${PROJECT_DIR}/utility/slurm/compute_exp1_bridge_bf.R"
+Rscript --no-restore --no-save "${PROJECT_DIR}/utility/slurm/compute_exp1_bridge_bf.R" \
+  --force-bridge "${BRIDGE_FORCE}" \
+  --bridge-method "${BRIDGE_METHOD}" \
+  --bridge-repetitions "${BRIDGE_REPETITIONS}" \
+  --bridge-maxiter "${BRIDGE_MAXITER}" \
+  --bridge-use-neff "${BRIDGE_USE_NEFF}"
 echo "[$(date)] Finished Exp1 bridge BF computations"

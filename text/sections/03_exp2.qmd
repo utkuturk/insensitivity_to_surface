@@ -299,17 +299,20 @@ priors_uninformative <- make_priors(
 )
 
 
-m.exp2 <- brm(
-    response_yes ~ grammatical * attractor_num +
-        (1 + grammatical * attractor_num | subject) +
-        (1 + grammatical * attractor_num | item),
-    data = exp2.dfModel,
-    family = bernoulli(link = "logit"),
-    prior = priors_uninformative,
-    sample_prior = "yes", file = "../../utility/models/m.exp2",
-    save_pars = save_pars(all = TRUE),
-    chains = 4, iter = 10000, warmup = 2500, seed = 1
+exp2_fit_paths <- c(
+    "../../utility/models/m.exp2.rds",
+    "../../utility/models/m.exp2.full.prior_n10.rds"
 )
+exp2_fit_available <- exp2_fit_paths[file.exists(exp2_fit_paths)]
+if (length(exp2_fit_available) == 0) {
+    stop(
+        sprintf(
+            "Missing fitted Exp2 model file. Checked: %s",
+            paste(exp2_fit_paths, collapse = ", ")
+        )
+    )
+}
+m.exp2 <- readRDS(exp2_fit_available[[1]])
 
 
 
@@ -349,51 +352,26 @@ txt_p <- list(
 #| label: nested-models
 
 
-grammaticals <- exp2.dfModel %>% filter(grammatical == "Grammatical")
+draws_exp2 <- as_draws_df(m.exp2)
+b_attr <- get_col(draws_exp2, coef_names$attr)
+b_inter <- get_col(draws_exp2, coef_names$inter)
 
-ungrammaticals <- exp2.dfModel %>% filter(grammatical == "Ungrammatical")
+# With Grammaticality coded as Grammatical = +0.5, Ungrammatical = -0.5:
+# attractor effect within each grammaticality level is b_A +/- 0.5 * b_G:A
+eff_attr_g <- b_attr + 0.5 * b_inter
+eff_attr_u <- b_attr - 0.5 * b_inter
 
-make_priors_g <- function(inter_mean = 0.4, inter_sd = 0.1,
-                        exp_rate = 1, lkj_eta = 2) {
+summ_draw <- function(x) {
     c(
-        set_prior("normal(0.85, 0.7)", class = "Intercept"),
-        set_prior("normal(0.30, 0.40)",
-            class = "b",
-            coef = "attractor_numPlural_minus_Singular"
-        ),
-        set_prior(sprintf("exponential(%g)", exp_rate), class = "sd"),
-        set_prior(sprintf("lkj(%g)", lkj_eta), class = "cor")
+        est = mean(x),
+        l95 = unname(quantile(x, 0.025)),
+        u95 = unname(quantile(x, 0.975))
     )
 }
 
-m.exp2.g <- brm(
-    response_yes ~ attractor_num +
-        (1 + attractor_num | subject) +
-        (1 + attractor_num | item),
-    data = grammaticals,
-    family = bernoulli(link = "logit"),
-    prior = make_priors_g(),
-    sample_prior = "yes", file = "../../utility/models/m.exp2.g",
-    save_pars = save_pars(all = TRUE),
-    chains = 4, iter = 4000, warmup = 2000, seed = 1
-)
-
-
-m.exp2.u <- brm(
-    response_yes ~ attractor_num +
-        (1 + attractor_num | subject) +
-        (1 + attractor_num | item),
-    data = ungrammaticals,
-    family = bernoulli(link = "logit"),
-    prior = make_priors_g(),
-    sample_prior = "yes", file = "../../utility/models/m.exp2.u",
-    save_pars = save_pars(all = TRUE),
-    chains = 4, iter = 4000, warmup = 2000, seed = 1
-)
-
 post_int_g <- list(
-    attr_g  = summ_brms(m.exp2.g, coef_names$attr),
-    attr_u  = summ_brms(m.exp2.u, coef_names$attr)
+    attr_g = summ_draw(eff_attr_g),
+    attr_u = summ_draw(eff_attr_u)
 )
 
 txt_g <- list(
@@ -402,8 +380,8 @@ txt_g <- list(
 )
 
 txt_g_p <- list(
-    attr_g = fmt_prob(p_gt0(m.exp2.g, coef_names$attr), d = 2),
-    attr_u = fmt_prob(p_gt0(m.exp2.u, coef_names$attr), d = 2)
+    attr_g = fmt_prob(mean(eff_attr_g > 0), d = 2),
+    attr_u = fmt_prob(mean(eff_attr_u > 0), d = 2)
 )
 
 
@@ -477,11 +455,11 @@ ggsave(
 
 These descriptive trends were confirmed by our Bayesian mixed-effects models implemented in brms,  assuming a Bernoulli logit link. The model was fitted to the binary *yes/no* responses and included fixed effects for Grammaticality and Attractor Number and their interaction, and random intercepts and slopes for both subjects and items.
 
-Posterior estimates are summarized in @fig-exp2-fixed-effects. The model revealed a positive effect of grammaticality ($\beta$ = `r txt$gram`, P($\beta$ > `r txt_p$gram`)), but no reliable main effect of attractor number ($\beta$ = `r txt$attr`, P($\beta$ > `r txt_p$attr`)). On the other hand, there was a small but positive interaction ($\beta$ = `r txt$inter`, P($\beta$ > `r txt_p$inter`)). To clarify the effects' presence in grammaticals only, we fitted two more models that is fitted to the subset of the data. While the model fitted to grammatical conditions only showed an effect of attractor number ($\beta$ = `r txt_g$attr_g`, P($\beta$ > `r txt_g_p$attr_g`)), the model fitted to ungrammatical conditions, attraction relevant conditions, did not provide evidence for the effect of number manipulation ($\beta$ = `r txt_g$attr_u`, P($\beta$ > `r txt_g_p$attr_g`)). These results suggest that the presence of a plural attractor did not increase the acceptability of ungrammatical sentences, nor was this relationship modulated by grammaticality.
+Posterior estimates are summarized in @fig-exp2-fixed-effects. The model revealed a positive effect of grammaticality ($\beta$ = `r txt$gram`, P($\beta$ > `r txt_p$gram`)), but no reliable main effect of attractor number ($\beta$ = `r txt$attr`, P($\beta$ > `r txt_p$attr`)). On the other hand, there was a small but positive interaction ($\beta$ = `r txt$inter`, P($\beta$ > `r txt_p$inter`)). To clarify the pattern within each grammaticality level, we computed model-implied attractor-number effects from posterior draws. Grammatical conditions showed a positive attractor-number effect ($\beta$ = `r txt_g$attr_g`, P($\beta$ > 0) = `r txt_g_p$attr_g`), whereas ungrammatical conditions (the attraction-relevant cases) did not provide evidence for an attractor-number effect ($\beta$ = `r txt_g$attr_u`, P($\beta$ > 0) = `r txt_g_p$attr_u`). These results suggest that the presence of a plural attractor did not increase the acceptability of ungrammatical sentences, nor was this relationship modulated by grammaticality.
 
 ```{r}
 #| label: fig-exp2-fixed-effects
-#| fig-cap: "Posterior means and 95% credible intervals for fixed effects in the two Bayesian models. The x-axis shows the posterior mean (log-odds scale). The blue intervals correspond to the model in which a positive interaction was assumed, and the orange intervals to the model in which it was not. "
+#| fig-cap: "Posterior means and 95% credible intervals for fixed effects in the Experiment 2 Bayesian model (log-odds scale)."
 #| fig-width: 6
 #| fig-height: 2
 
