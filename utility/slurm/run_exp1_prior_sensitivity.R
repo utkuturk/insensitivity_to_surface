@@ -103,16 +103,13 @@ force_refit <- as_bool(cmd[["force"]], FALSE)
 
 backend <- Sys.getenv("BRMS_BACKEND", unset = "")
 
-full_cmd <- commandArgs(trailingOnly = FALSE)
-file_arg <- full_cmd[grep("^--file=", full_cmd)]
-if (length(file_arg) == 0) {
-    stop("Could not determine script location from commandArgs().")
+project_dir <- "/home/uturk_umass_edu/insensitivity_to_surface"
+if (!dir.exists(project_dir)) {
+    stop("Project directory does not exist: ", project_dir)
 }
-script_path <- normalizePath(sub("^--file=", "", file_arg[[1]]))
-repo_root <- normalizePath(file.path(dirname(script_path), "..", ".."))
-setwd(repo_root)
+setwd(project_dir)
 
-message("Repo root: ", repo_root)
+message("Project dir: ", project_dir)
 message("Requested model id: ", model_id)
 message(
     "Sampler settings: chains=",
@@ -129,10 +126,10 @@ message(
     seed
 )
 
-source(file.path(repo_root, "utility", "functions.R"))
+source(file.path(project_dir, "utility", "functions.R"))
 
 exp1 <- read_experimental_data(
-    file.path(repo_root, "utility", "data", "results_8cond.txt"),
+    file.path(project_dir, "utility", "data", "results_8cond.txt"),
     subj_offset = 2500,
     item_offset = 2500
 )
@@ -286,7 +283,7 @@ exp1.clean$att_type %<>% dplyr::recode(gen = "gen", rc = "rc")
 exp1.clean$item %<>% as.factor()
 exp1.clean$subject %<>% as.character()
 
-source(file.path(repo_root, "utility", "hsp", "turklogacev24.R"), chdir = TRUE)
+source(file.path(project_dir, "utility", "hsp", "turklogacev24.R"), chdir = TRUE)
 
 exp1.dfModel <- exp1.clean %>% subset(match != "filler")
 exp1.dfModel %<>% mutate(exp = "current") %>% droplevels()
@@ -424,7 +421,7 @@ prior_i <- make_priors_generic(
     lkj_eta = 2
 )
 
-file_i <- file.path(repo_root, "utility", "models", spec$file_stub[[1]])
+file_i <- file.path(project_dir, "utility", "models", spec$file_stub[[1]])
 file_rds_i <- paste0(file_i, ".rds")
 
 if (file.exists(file_rds_i) && !force_refit) {

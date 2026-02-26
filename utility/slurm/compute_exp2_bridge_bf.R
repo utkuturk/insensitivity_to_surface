@@ -82,16 +82,13 @@ as_bool <- function(x, default = FALSE) {
 cmd <- parse_args(commandArgs(trailingOnly = TRUE))
 recompile <- as_bool(cmd[["recompile"]], FALSE)
 
-full_cmd <- commandArgs(trailingOnly = FALSE)
-file_arg <- full_cmd[grep("^--file=", full_cmd)]
-if (length(file_arg) == 0) {
-    stop("Could not determine script location from commandArgs().")
+project_dir <- "/home/uturk_umass_edu/insensitivity_to_surface"
+if (!dir.exists(project_dir)) {
+    stop("Project directory does not exist: ", project_dir)
 }
-script_path <- normalizePath(sub("^--file=", "", file_arg[[1]]))
-repo_root <- normalizePath(file.path(dirname(script_path), "..", ".."))
-setwd(repo_root)
+setwd(project_dir)
 
-models_dir <- file.path(repo_root, "utility", "models")
+models_dir <- file.path(project_dir, "utility", "models")
 
 safe_read_fit <- function(stub) {
     p <- file.path(models_dir, paste0(stub, ".rds"))

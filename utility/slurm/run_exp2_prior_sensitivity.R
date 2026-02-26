@@ -103,16 +103,13 @@ force_refit <- as_bool(cmd[["force"]], FALSE)
 
 backend <- Sys.getenv("BRMS_BACKEND", unset = "")
 
-full_cmd <- commandArgs(trailingOnly = FALSE)
-file_arg <- full_cmd[grep("^--file=", full_cmd)]
-if (length(file_arg) == 0) {
-    stop("Could not determine script location from commandArgs().")
+project_dir <- "/home/uturk_umass_edu/insensitivity_to_surface"
+if (!dir.exists(project_dir)) {
+    stop("Project directory does not exist: ", project_dir)
 }
-script_path <- normalizePath(sub("^--file=", "", file_arg[[1]]))
-repo_root <- normalizePath(file.path(dirname(script_path), "..", ".."))
-setwd(repo_root)
+setwd(project_dir)
 
-message("Repo root: ", repo_root)
+message("Project dir: ", project_dir)
 message("Requested model id: ", model_id)
 message(
     "Sampler settings: chains=", chains,
@@ -123,10 +120,10 @@ message(
     ", seed=", seed
 )
 
-source(file.path(repo_root, "utility", "functions.R"))
+source(file.path(project_dir, "utility", "functions.R"))
 
 exp2 <- read_experimental_data(
-    file.path(repo_root, "utility", "data", "results.txt"),
+    file.path(project_dir, "utility", "data", "results.txt"),
     subj_offset = 2000,
     item_offset = 2000
 )
@@ -274,7 +271,7 @@ prior_i <- make_priors_exp2(
     lkj_eta = 2
 )
 
-file_i <- file.path(repo_root, "utility", "models", spec$file_stub[[1]])
+file_i <- file.path(project_dir, "utility", "models", spec$file_stub[[1]])
 file_rds_i <- paste0(file_i, ".rds")
 
 if (file.exists(file_rds_i) && !force_refit) {
