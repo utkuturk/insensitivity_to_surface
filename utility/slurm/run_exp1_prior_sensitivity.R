@@ -100,7 +100,7 @@ if (is.na(model_id)) {
     stop("Missing required argument: --model-id (1..9)")
 }
 
-threads <- as_int(cmd[["threads"]], 7L)
+threads <- as_int(cmd[["threads"]], 1L)
 chains <- as_int(cmd[["chains"]], 4L)
 cores <- as_int(cmd[["cores"]], 4L)
 iter <- as_int(cmd[["iter"]], 12000L)

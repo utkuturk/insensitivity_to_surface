@@ -17,16 +17,17 @@ export PROJECT_DIR
 cd "${PROJECT_DIR}"
 mkdir -p slurm_jobs/logs
 
-MODEL_IDS="${MODEL_IDS:-1 2 3 4 5 6 7 8 9}"
+MODEL_IDS="${MODEL_IDS:-7 8 9}"
 THREADS="${THREADS:-1}"
 CHAINS="${CHAINS:-4}"
 CORES="${CORES:-4}"
 ITER="${ITER:-12000}"
 WARMUP="${WARMUP:-2000}"
 SEED="${SEED:-25022026}"
-FORCE_REFIT="${FORCE_REFIT:-false}"
-ADAPT_DELTA="${ADAPT_DELTA:-0.99}"
-MAX_TREEDEPTH="${MAX_TREEDEPTH:-12}"
+FORCE_REFIT="${FORCE_REFIT:-true}"
+ADAPT_DELTA="${ADAPT_DELTA:-0.995}"
+MAX_TREEDEPTH="${MAX_TREEDEPTH:-15}"
+RUN_BRIDGE="${RUN_BRIDGE:-false}"
 BRIDGE_FORCE="${BRIDGE_FORCE:-false}"
 BRIDGE_METHOD="${BRIDGE_METHOD:-normal}"
 BRIDGE_REPETITIONS="${BRIDGE_REPETITIONS:-1}"
@@ -49,11 +50,15 @@ for MODEL_ID in ${MODEL_IDS}; do
   echo "[$(date)] Finished model ${MODEL_ID}"
 done
 
-echo "[$(date)] Starting Exp1 bridge BF computations"
-Rscript --no-restore --no-save "${PROJECT_DIR}/utility/slurm/compute_exp1_bridge_bf.R" \
-  --force-bridge "${BRIDGE_FORCE}" \
-  --bridge-method "${BRIDGE_METHOD}" \
-  --bridge-repetitions "${BRIDGE_REPETITIONS}" \
-  --bridge-maxiter "${BRIDGE_MAXITER}" \
-  --bridge-use-neff "${BRIDGE_USE_NEFF}"
-echo "[$(date)] Finished Exp1 bridge BF computations"
+if [ "${RUN_BRIDGE}" = "true" ]; then
+  echo "[$(date)] Starting Exp1 bridge BF computations"
+  Rscript --no-restore --no-save "${PROJECT_DIR}/utility/slurm/compute_exp1_bridge_bf.R" \
+    --force-bridge "${BRIDGE_FORCE}" \
+    --bridge-method "${BRIDGE_METHOD}" \
+    --bridge-repetitions "${BRIDGE_REPETITIONS}" \
+    --bridge-maxiter "${BRIDGE_MAXITER}" \
+    --bridge-use-neff "${BRIDGE_USE_NEFF}"
+  echo "[$(date)] Finished Exp1 bridge BF computations"
+else
+  echo "[$(date)] Skipping Exp1 bridge BF computations (RUN_BRIDGE=${RUN_BRIDGE})"
+fi
