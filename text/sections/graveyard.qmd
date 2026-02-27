@@ -1,0 +1,563 @@
+# Graveyard
+
+Archived sections removed from the main manuscript but kept here with their original code and prose for reference. This file is not included by `00_structure.qmd`.
+
+## Experiment 1 Combined-Model Bayes Factors (Archived)
+
+### Bayes Factor Analysis for Null Effects
+
+
+```{r}
+#| label: exp1-bayes-factor
+#| message: false
+#| warning: false
+
+# Cache behavior:
+# - If bf_exp1_bridge.rds exists, it is loaded.
+# - If it does not exist, it is computed once and saved.
+bf_cache_path_exp1 <- "../../utility/models/bf_exp1_bridge.rds"
+bridge_recompile_exp1 <- TRUE
+
+format_bf <- function(bf) {
+    ifelse(
+        is.na(bf),
+        "NA",
+        ifelse(
+            bf > 100,
+            ">100",
+            ifelse(bf < 0.01, "<0.01", sprintf("%.2f", bf))
+        )
+    )
+}
+
+# Interpretation
+interpret_bf <- function(bf) {
+    if (is.na(bf)) {
+        return("not computed")
+    }
+    case_when(
+        bf > 100 ~ "extreme evidence for null",
+        bf > 30 ~ "very strong evidence for null",
+        bf > 10 ~ "strong evidence for null",
+        bf > 3 ~ "moderate evidence for null",
+        bf > 1 ~ "anecdotal evidence for null",
+        bf > 1 / 3 ~ "anecdotal evidence against null",
+        bf > 1 / 10 ~ "moderate evidence against null",
+        TRUE ~ "strong evidence against null"
+    )
+}
+
+safe_read_fit <- function(object_names = NULL, rds_paths = NULL) {
+    if (!is.null(object_names)) {
+        for (nm in object_names) {
+            if (!is.na(nm) && nzchar(nm) && exists(nm, inherits = TRUE)) {
+                return(get(nm, inherits = TRUE))
+            }
+        }
+    }
+    if (!is.null(rds_paths)) {
+        for (rp in rds_paths) {
+            if (!is.na(rp) && nzchar(rp) && file.exists(rp)) {
+                return(readRDS(rp))
+            }
+        }
+    }
+    NULL
+}
+
+safe_bridge <- function(
+    fit,
+    bridge_path,
+    recompile = FALSE) {
+    if (!is.null(bridge_path) && file.exists(bridge_path)) {
+        return(readRDS(bridge_path))
+    }
+    if (is.null(fit)) {
+        stop("Cannot bridge-sample because fit is NULL.")
+    }
+
+    out <- tryCatch(
+        bridgesampling::bridge_sampler(
+            fit,
+            silent = TRUE,
+            recompile = recompile
+        ),
+        error = function(e) {
+            stop(sprintf("bridge_sampler failed: %s", e$message))
+        }
+    )
+    if (!is.null(out) && !is.null(bridge_path)) {
+        dir.create(dirname(bridge_path), recursive = TRUE, showWarnings = FALSE)
+        saveRDS(out, bridge_path)
+    }
+    out
+}
+
+compute_bf01 <- function(bridge_alt, bridge_null) {
+    if (is.null(bridge_alt) || is.null(bridge_null)) {
+        return(NA_real_)
+    }
+    bf10 <- tryCatch(
+        as.numeric(bridgesampling::bf(bridge_alt, bridge_null)$bf),
+        error = function(e) NA_real_
+    )
+    ifelse(is.na(bf10), NA_real_, 1 / bf10)
+}
+
+# Model comparison targets:
+# 1) Three-way attraction contrast (G x A x T block): full vs no-3way
+# 2) Overall attraction (G x A in no-3way family): no-3way vs no-(G x A)
+fit_full <- safe_read_fit(
+    object_names = c("m.exp1.full.n10", "m.exp1.all"),
+    rds_paths = c(
+        "../../utility/models/m.exp1.full.prior_n10.rds",
+        "../../utility/models/m.exp1.all.yes.rds"
+    )
+)
+fit_no3way <- safe_read_fit(
+    object_names = c("m.exp1.no3way.n10", "m.exp1.no3way"),
+    rds_paths = c(
+        "../../utility/models/m.exp1.no3way.prior_n10.rds",
+        "../../utility/models/m.exp1.no3way.rds"
+    )
+)
+fit_noGA <- safe_read_fit(
+    object_names = c("m.exp1.noGA.n10", "m.exp1.noGA"),
+    rds_paths = c(
+        "../../utility/models/m.exp1.noGA.prior_n10.rds",
+        "../../utility/models/m.exp1.noGA.rds"
+    )
+)
+
+missing_models <- c(
+    if (is.null(fit_full)) {
+        "full (m.exp1.full.prior_n10.rds or m.exp1.all.yes.rds)"
+    },
+    if (is.null(fit_no3way)) "no3way (m.exp1.no3way.prior_n10.rds)",
+    if (is.null(fit_noGA)) "noGA (m.exp1.noGA.prior_n10.rds)"
+)
+if (length(missing_models) > 0) {
+    stop(
+        paste0(
+            "Missing required model(s) for bridge BF: ",
+            paste(missing_models, collapse = "; "),
+            ". Fit these models first."
+        )
+    )
+}
+
+bridge_paths_exp1 <- list(
+    full = "../../utility/models/m.exp1.full.prior_n10.bridge.rds",
+    no3way = "../../utility/models/m.exp1.no3way.prior_n10.bridge.rds",
+    noGA = "../../utility/models/m.exp1.noGA.prior_n10.bridge.rds"
+)
+
+if (file.exists(bf_cache_path_exp1)) {
+    bf_exp1 <- readRDS(bf_cache_path_exp1)
+} else {
+    bridge_full <- safe_bridge(
+        fit_full,
+        bridge_paths_exp1$full,
+        recompile = bridge_recompile_exp1
+    )
+    bridge_no3way <- safe_bridge(
+        fit_no3way,
+        bridge_paths_exp1$no3way,
+        recompile = bridge_recompile_exp1
+    )
+    bridge_noGA <- safe_bridge(
+        fit_noGA,
+        bridge_paths_exp1$noGA,
+        recompile = bridge_recompile_exp1
+    )
+
+    bf_exp1 <- list(
+        bf01_3way = compute_bf01(bridge_full, bridge_no3way),
+        bf01_2way = compute_bf01(bridge_no3way, bridge_noGA),
+        comparison_3way = "Full vs No-3way",
+        comparison_2way = "No-3way vs No-(GxA)"
+    )
+    dir.create(
+        dirname(bf_cache_path_exp1),
+        recursive = TRUE,
+        showWarnings = FALSE
+    )
+    saveRDS(bf_exp1, bf_cache_path_exp1)
+}
+
+bf01_3way <- as.numeric(bf_exp1$bf01_3way)
+bf01_2way <- as.numeric(bf_exp1$bf01_2way)
+bf01_3way_txt <- format_bf(bf01_3way)
+bf01_2way_txt <- format_bf(bf01_2way)
+bf_3way_interp <- interpret_bf(bf01_3way)
+bf_2way_interp <- interpret_bf(bf01_2way)
+
+```
+
+To provide formal evidence for the null-effect claims, we computed Bayes Factors with bridge sampling (marginal-likelihood model comparison) between nested models. We report BF~01~, where values > 1 favor the simpler model (the null for the tested term[s]) and values < 1 favor the more complex model. More specifically, we compared (i) a full model that included the three-way interaction block (G x A x T1 and G x A xxT2) with a nested model that omitted that block, and (ii) within the no-three-way family, a model that included G x A with a nested model that omitted G x A. If the key hypothesis is correct, attraction should be type-specific (present in nominal conditions but absent or much smaller in RC conditions). In that case, the full model should be preferred over the no-three-way model, so we expect `BF~01~ (3-way block)` to be `< 1`. By contrast, if attraction is similar across attractor types, we expect `BF~01~ (3-way block) > 1`; and for the second comparison, `BF~01~ (G x A) > 1` would support no overall attraction, whereas `< 1` would support a shared overall attraction effect.
+
+We found that BF~01~ in the 3-way block is `r bf01_3way_txt`, which means that the data are `r bf_3way_interp` for the simpler model without the three-way interaction block than for the full model; this comparison tests whether attraction differs across attractor types, not whether attraction is absent in RC conditions by itself.
+
+For BF~01~ = `r bf01_2way_txt` (no-three-way vs no-(G x A)), the null hypothesis is that there is no overall attraction effect once three-way terms are removed (G x A = 0 in that model family). Under these comparisons, the primary three-way result corresponds to `r bf_3way_interp`.
+
+To evaluate prior sensitivity, we compare these BF estimates across narrower and wider fixed-effect priors. The table also reports each prior's concentration near zero, so that prior width and BF behavior can be read together.
+
+```{r}
+#| label: exp1-prior-sensitivity-fit-models
+#| eval: false
+
+# Optional helper: fit only the prior-sensitivity models you still need.
+# Comment out blocks you already fit.
+
+# fit_formula_full <- brms::bf(
+#     response_yes ~ grammatical * attractor_num * att_type +
+#         (1 + grammatical * attractor_num * att_type | subject) +
+#         (1 + grammatical * attractor_num * att_type | item),
+#     decomp = "QR"
+# )
+
+# fit_formula_no3way <- brms::bf(
+#     response_yes ~ grammatical * attractor_num +
+#         grammatical * att_type +
+#         attractor_num * att_type +
+#         (1 + grammatical * attractor_num * att_type | subject) +
+#         (1 + grammatical * attractor_num * att_type | item),
+#     decomp = "QR"
+# )
+
+# fit_formula_noGA <- brms::bf(
+#     response_yes ~ grammatical + attractor_num + att_type +
+#         grammatical:att_type +
+#         attractor_num:att_type +
+#         (1 + grammatical * attractor_num * att_type | subject) +
+#         (1 + grammatical * attractor_num * att_type | item),
+#     decomp = "QR"
+# )
+
+# prior_n05 <- make_priors_generic(f_mean = 0, f_sd = 0.5, exp_rate = 1, lkj_eta = 2)
+# prior_n10 <- make_priors_generic(f_mean = 0, f_sd = 1.0, exp_rate = 1, lkj_eta = 2)
+# prior_n20 <- make_priors_generic(f_mean = 0, f_sd = 2.0, exp_rate = 1, lkj_eta = 2)
+
+# # Shared sampler settings (28 cores total: 4 chains x 7 threads)
+# chains_i <- 4
+# cores_i <- 4
+# threads_i <- threading(threads = 7)
+# iter_i <- 12000
+# warmup_i <- 2000
+# seed_i <- 25022026
+
+# # 1) Full model, Normal(0, 0.5)
+# brm(
+#     fit_formula_full,
+#     data = exp1.all,
+#     family = bernoulli(link = "logit"),
+#     prior = prior_n05,
+#     sample_prior = "no",
+#     save_pars = save_pars(all = TRUE),
+#     chains = chains_i,
+#     cores = cores_i,
+#     threads = threads_i,
+#     iter = iter_i,
+#     warmup = warmup_i,
+#     init = 0,
+#     seed = seed_i,
+#     file = "../../utility/models/m.exp1.full.prior_n05"
+# )
+
+# # 2) No-3way model, Normal(0, 0.5)
+# brm(
+#     fit_formula_no3way,
+#     data = exp1.all,
+#     family = bernoulli(link = "logit"),
+#     prior = prior_n05,
+#     sample_prior = "no",
+#     save_pars = save_pars(all = TRUE),
+#     chains = chains_i,
+#     cores = cores_i,
+#     threads = threads_i,
+#     iter = iter_i,
+#     warmup = warmup_i,
+#     init = 0,
+#     seed = seed_i,
+#     file = "../../utility/models/m.exp1.no3way.prior_n05"
+# )
+
+# # 3) No-(G x A) model, Normal(0, 0.5)
+# brm(
+#     fit_formula_noGA,
+#     data = exp1.all,
+#     family = bernoulli(link = "logit"),
+#     prior = prior_n05,
+#     sample_prior = "no",
+#     save_pars = save_pars(all = TRUE),
+#     chains = chains_i,
+#     cores = cores_i,
+#     threads = threads_i,
+#     iter = iter_i,
+#     warmup = warmup_i,
+#     init = 0,
+#     seed = seed_i,
+#     file = "../../utility/models/m.exp1.noGA.prior_n05"
+# )
+
+# # 4) Full model, Normal(0, 1.0)
+# brm(
+#     fit_formula_full,
+#     data = exp1.all,
+#     family = bernoulli(link = "logit"),
+#     prior = prior_n10,
+#     sample_prior = "no",
+#     save_pars = save_pars(all = TRUE),
+#     chains = chains_i,
+#     cores = cores_i,
+#     threads = threads_i,
+#     iter = iter_i,
+#     warmup = warmup_i,
+#     init = 0,
+#     seed = seed_i,
+#     file = "../../utility/models/m.exp1.full.prior_n10"
+# )
+
+# # 5) No-3way model, Normal(0, 1.0)
+# brm(
+#     fit_formula_no3way,
+#     data = exp1.all,
+#     family = bernoulli(link = "logit"),
+#     prior = prior_n10,
+#     sample_prior = "no",
+#     save_pars = save_pars(all = TRUE),
+#     chains = chains_i,
+#     cores = cores_i,
+#     threads = threads_i,
+#     iter = iter_i,
+#     warmup = warmup_i,
+#     init = 0,
+#     seed = seed_i,
+#     file = "../../utility/models/m.exp1.no3way.prior_n10"
+# )
+
+# # 6) No-(G x A) model, Normal(0, 1.0)
+# brm(
+#     fit_formula_noGA,
+#     data = exp1.all,
+#     family = bernoulli(link = "logit"),
+#     prior = prior_n10,
+#     sample_prior = "no",
+#     save_pars = save_pars(all = TRUE),
+#     chains = chains_i,
+#     cores = cores_i,
+#     threads = threads_i,
+#     iter = iter_i,
+#     warmup = warmup_i,
+#     init = 0,
+#     seed = seed_i,
+#     file = "../../utility/models/m.exp1.noGA.prior_n10"
+# )
+
+# # 7) Full model, Normal(0, 2.0)
+# brm(
+#     fit_formula_full,
+#     data = exp1.all,
+#     family = bernoulli(link = "logit"),
+#     prior = prior_n20,
+#     sample_prior = "no",
+#     save_pars = save_pars(all = TRUE),
+#     chains = chains_i,
+#     cores = cores_i,
+#     threads = threads_i,
+#     iter = iter_i,
+#     warmup = warmup_i,
+#     init = 0,
+#     seed = seed_i,
+#     file = "../../utility/models/m.exp1.full.prior_n20"
+# )
+
+# # 8) No-3way model, Normal(0, 2.0)
+# brm(
+#     fit_formula_no3way,
+#     data = exp1.all,
+#     family = bernoulli(link = "logit"),
+#     prior = prior_n20,
+#     sample_prior = "no",
+#     save_pars = save_pars(all = TRUE),
+#     chains = chains_i,
+#     cores = cores_i,
+#     threads = threads_i,
+#     iter = iter_i,
+#     warmup = warmup_i,
+#     init = 0,
+#     seed = seed_i,
+#     file = "../../utility/models/m.exp1.no3way.prior_n20"
+# )
+
+# # 9) No-(G x A) model, Normal(0, 2.0)
+# brm(
+#     fit_formula_noGA,
+#     data = exp1.all,
+#     family = bernoulli(link = "logit"),
+#     prior = prior_n20,
+#     sample_prior = "no",
+#     save_pars = save_pars(all = TRUE),
+#     chains = chains_i,
+#     cores = cores_i,
+#     threads = threads_i,
+#     iter = iter_i,
+#     warmup = warmup_i,
+#     init = 0,
+#     seed = seed_i,
+#     file = "../../utility/models/m.exp1.noGA.prior_n20"
+# )
+```
+
+```{r}
+#| label: tbl-exp1-prior-sensitivity
+#| tbl-cap: "Prior-sensitivity analysis for Bayes factors in Experiment 1. BF~01~ > 1 favors the null; the first BF column compares the full model to a model with no three-way interaction block (G x A x T1/T2)."
+#| warning: false
+#| message: false
+
+bf_sens_cache_path_exp1 <- "../../utility/models/bf_exp1_prior_sensitivity_bridge.rds"
+bridge_sens_recompile_exp1 <- FALSE
+
+rope_halfwidth_exp1 <- 0.20
+
+prior_grid_exp1 <- tibble::tribble(
+    ~Prior_Set, ~Fixed_Effect_Prior, ~fixed_sd, ~full_obj, ~full_rds, ~no3way_obj, ~no3way_rds, ~noGA_obj, ~noGA_rds,
+    "Narrow", "Normal(0, 0.5)", 0.5, "m.exp1.full.n05", "../../utility/models/m.exp1.full.prior_n05.rds", "m.exp1.no3way.n05", "../../utility/models/m.exp1.no3way.prior_n05.rds", "m.exp1.noGA.n05", "../../utility/models/m.exp1.noGA.prior_n05.rds",
+    "Main", "Normal(0, 1.0)", 1.0, "m.exp1.full.n10", "../../utility/models/m.exp1.full.prior_n10.rds", "m.exp1.no3way.n10", "../../utility/models/m.exp1.no3way.prior_n10.rds", "m.exp1.noGA.n10", "../../utility/models/m.exp1.noGA.prior_n10.rds",
+    "Wide", "Normal(0, 2.0)", 2.0, "m.exp1.full.n20", "../../utility/models/m.exp1.full.prior_n20.rds", "m.exp1.no3way.n20", "../../utility/models/m.exp1.no3way.prior_n20.rds", "m.exp1.noGA.n20", "../../utility/models/m.exp1.noGA.prior_n20.rds"
+)
+
+bridge_path_from_fit <- function(fit_rds) sub("\\.rds$", ".bridge.rds", fit_rds)
+
+compute_prior_sens_exp1 <- function(grid, rope_halfwidth = 0.20) {
+    purrr::pmap_dfr(
+        grid,
+        function(Prior_Set,
+                 Fixed_Effect_Prior,
+                 fixed_sd,
+                 full_obj,
+                 full_rds,
+                 no3way_obj,
+                 no3way_rds,
+                 noGA_obj,
+                 noGA_rds) {
+            fit_full_i <- safe_read_fit(full_obj, full_rds)
+            fit_no3way_i <- safe_read_fit(no3way_obj, no3way_rds)
+            fit_noGA_i <- safe_read_fit(noGA_obj, noGA_rds)
+
+            if (
+                is.null(fit_full_i) ||
+                    is.null(fit_no3way_i) ||
+                    is.null(fit_noGA_i)
+            ) {
+                stop(
+                    paste0(
+                        "Missing prior-sensitivity models for ",
+                        Prior_Set,
+                        ": ",
+                        if (is.null(fit_full_i)) full_rds else "",
+                        if (
+                            is.null(fit_full_i) &&
+                                (is.null(fit_no3way_i) || is.null(fit_noGA_i))
+                        ) {
+                            "; "
+                        } else {
+                            ""
+                        },
+                        if (is.null(fit_no3way_i)) no3way_rds else "",
+                        if (is.null(fit_no3way_i) && is.null(fit_noGA_i)) {
+                            "; "
+                        } else {
+                            ""
+                        },
+                        if (is.null(fit_noGA_i)) noGA_rds else ""
+                    )
+                )
+            }
+
+            bridge_full_i <- safe_bridge(
+                fit_full_i,
+                bridge_path_from_fit(full_rds),
+                recompile = bridge_sens_recompile_exp1
+            )
+            bridge_no3way_i <- safe_bridge(
+                fit_no3way_i,
+                bridge_path_from_fit(no3way_rds),
+                recompile = bridge_sens_recompile_exp1
+            )
+            bridge_noGA_i <- safe_bridge(
+                fit_noGA_i,
+                bridge_path_from_fit(noGA_rds),
+                recompile = bridge_sens_recompile_exp1
+            )
+
+            bf01_3way_i <- compute_bf01(bridge_full_i, bridge_no3way_i)
+            bf01_2way_i <- compute_bf01(bridge_no3way_i, bridge_noGA_i)
+            fit_status_i <- "all fits loaded"
+
+            tibble(
+                Prior_Set = Prior_Set,
+                Fixed_Effect_Prior = Fixed_Effect_Prior,
+                fixed_sd = fixed_sd,
+                Prior_Density_at_0 = dnorm(0, mean = 0, sd = fixed_sd),
+                Prior_P_abs_beta_lt_0_20 = pnorm(rope_halfwidth, 0, fixed_sd) -
+                    pnorm(-rope_halfwidth, 0, fixed_sd),
+                BF01_GxAxT1 = bf01_3way_i,
+                BF01_GxA = bf01_2way_i,
+                BF01_GxAxT1_Interpretation = interpret_bf(bf01_3way_i),
+                Fit = fit_status_i
+            )
+        }
+    )
+}
+
+if (file.exists(bf_sens_cache_path_exp1)) {
+    bf_prior_sens_exp1 <- readRDS(bf_sens_cache_path_exp1)
+} else {
+    bf_prior_sens_exp1 <- compute_prior_sens_exp1(
+        prior_grid_exp1,
+        rope_halfwidth_exp1
+    )
+    dir.create(
+        dirname(bf_sens_cache_path_exp1),
+        recursive = TRUE,
+        showWarnings = FALSE
+    )
+    saveRDS(bf_prior_sens_exp1, bf_sens_cache_path_exp1)
+}
+
+bf_prior_sens_exp1_print <- bf_prior_sens_exp1 %>%
+    mutate(
+        Prior_Density_at_0 = sprintf("%.3f", Prior_Density_at_0),
+        Prior_P_abs_beta_lt_0_20 = sprintf("%.2f", Prior_P_abs_beta_lt_0_20),
+        BF01_GxAxT1 = format_bf(BF01_GxAxT1),
+        BF01_GxA = format_bf(BF01_GxA)
+    ) %>%
+    dplyr::select(
+        Prior_Set,
+        Fixed_Effect_Prior,
+        Prior_Density_at_0,
+        Prior_P_abs_beta_lt_0_20,
+        BF01_GxAxT1,
+        BF01_GxA,
+        BF01_GxAxT1_Interpretation,
+        Fit
+    ) %>%
+    dplyr::rename(
+        `Prior Set` = Prior_Set,
+        `Fixed-Effect Prior` = Fixed_Effect_Prior,
+        `Prior Density at 0` = Prior_Density_at_0,
+        `Prior P(|beta| < 0.20)` = Prior_P_abs_beta_lt_0_20,
+        `BF01 (3-way block: G x A x T1/T2)` = BF01_GxAxT1,
+        `BF01 (G x A)` = BF01_GxA,
+        `Interpretation (3-way block)` = BF01_GxAxT1_Interpretation
+    )
+
+knitr::kable(
+    bf_prior_sens_exp1_print,
+    booktabs = TRUE,
+    align = c("l", "l", "c", "c", "c", "c", "l", "c")
+)
+```
+
+Interpretation note: a prior with more mass near zero can increase BF~01~ by construction, so the key check is robustness across reasonable priors, not selecting the prior that maximizes null support.

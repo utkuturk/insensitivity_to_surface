@@ -78,7 +78,7 @@ The core theoretical claim in this paper is a null effect for verbal attraction,
 
 First, the pattern replicates across experiments with different condition structures. Experiment 1 included both nominal and verbal conditions, while Experiment 2 isolated verbal conditions. The verbal result was the same in both. This cross-design replication is important because it rules out the possibility that the null arises from a specific feature of one experimental context.
 
-Second, the null pattern is coherent across descriptive and model-based analyses. In both experiments, the ungrammatical verbal conditions show very similar acceptance rates across attractor number, and the model-implied estimates for verbal attraction remain centered near zero. The Bayes Factor analyses from Experiment 1 provided moderate evidence for the null, a conclusion that was robust across a range of reasonable fixed-effect priors.
+Second, the null pattern is coherent across descriptive and model-based analyses. In both experiments, the ungrammatical verbal conditions show very similar acceptance rates across attractor number, and the model-implied estimates for verbal attraction remain centered near zero. In Experiment 1, the RC-only follow-up model also failed to show evidence for a Grammaticality × Attractor Number interaction.
 
 Third, the Experiment 1 follow-up analysis restricted to verbal trials directly addresses the most relevant question: whether verbal attraction is present at all, not only whether it is smaller than nominal attraction. That analysis also failed to find evidence for attraction.
 
