@@ -2,28 +2,67 @@
 ```{r}
 #| label: exp2-data-prep
 
-exp2 <- read_experimental_data("../../utility/data/results.txt", subj_offset = 2000, item_offset = 2000)
+exp2 <- read_experimental_data(
+    "../../utility/data/results.txt",
+    subj_offset = 2000,
+    item_offset = 2000
+)
 
-exp2 %<>% mutate(exp_condition = case_when(
-  exp_condition == "filler" & item_num <= 120 ~ "filler_ung",
-  exp_condition == "filler" & item_num >= 121 ~ "filler_g",
-  exp_condition == "practice" ~ "practice",
-  exp_condition == "condition_b" ~ "condition_b",
-  exp_condition == "condition_a" ~ "condition_a",
-  exp_condition == "condition_c" ~ "condition_c",
-  exp_condition == "condition_d" ~ "condition_d"
-))
+exp2 %<>%
+    mutate(
+        exp_condition = case_when(
+            exp_condition == "filler" & item_num <= 120 ~ "filler_ung",
+            exp_condition == "filler" & item_num >= 121 ~ "filler_g",
+            exp_condition == "practice" ~ "practice",
+            exp_condition == "condition_b" ~ "condition_b",
+            exp_condition == "condition_a" ~ "condition_a",
+            exp_condition == "condition_c" ~ "condition_c",
+            exp_condition == "condition_d" ~ "condition_d"
+        )
+    )
 
 
 exp2.conditions <- data.frame(
-  exp_condition = c("practice", "condition_a", "condition_b", "condition_c", "condition_d", "filler_ung", "filler_g"),
-  experiment =    c("practice", "AgrAttr",     "AgrAttr",     "AgrAttr",     "AgrAttr",     "filler",     "filler"),
-  condition =     c("practice", "a",           "b",           "c",           "d",           "filler_ung", "filler_g"),
-  grammatical =   c("practice", "ungram",      "gram",        "ungram",      "gram",        "ungram",     "gram"),
-  verb_num =      c("practice", "pl",          "sg",          "pl",          "sg",          "sg",         "pl"),
-  attractor_num = c("practice", "pl",          "pl",          "sg",          "sg",          'filler',     'filler'),
-  match =         c("practice", "mismatch",    "mismatch",    "match",       "match",       'filler',     'filler'),
-  stringsAsFactors = T
+    exp_condition = c(
+        "practice",
+        "condition_a",
+        "condition_b",
+        "condition_c",
+        "condition_d",
+        "filler_ung",
+        "filler_g"
+    ),
+    experiment = c(
+        "practice",
+        "AgrAttr",
+        "AgrAttr",
+        "AgrAttr",
+        "AgrAttr",
+        "filler",
+        "filler"
+    ),
+    condition = c("practice", "a", "b", "c", "d", "filler_ung", "filler_g"),
+    grammatical = c(
+        "practice",
+        "ungram",
+        "gram",
+        "ungram",
+        "gram",
+        "ungram",
+        "gram"
+    ),
+    verb_num = c("practice", "pl", "sg", "pl", "sg", "sg", "pl"),
+    attractor_num = c("practice", "pl", "pl", "sg", "sg", 'filler', 'filler'),
+    match = c(
+        "practice",
+        "mismatch",
+        "mismatch",
+        "match",
+        "match",
+        'filler',
+        'filler'
+    ),
+    stringsAsFactors = T
 )
 
 exp2 %<>% left_join(exp2.conditions, by = "exp_condition")
@@ -34,10 +73,10 @@ exp2.no.practice <- exp2 %>% subset(exp_condition != "practice")
 # rt_below: 200
 # rt_upper: 4999
 exp2.clean <- exclude_bad_subjects(
-  exp2,
-  accuracy_threshold = 0.25,
-  rt_below = 200,
-  rt_upper = 4999
+    exp2,
+    accuracy_threshold = 0.25,
+    rt_below = 200,
+    rt_upper = 4999
 )
 
 exp2.clean %<>% no_null_no_practice(.)
@@ -46,30 +85,35 @@ stopifnot(exp2.clean %>% subset(is.na(response_yes)) %>% nrow() == 0)
 
 # DIFF DATA =====
 exp2.diff <- dplyr::anti_join(exp2, exp2.clean) %>%
-  filter(exp_condition != "practice")
+    filter(exp_condition != "practice")
 
 exp2.clean$isGram <- ifelse(exp2.clean$grammatical == "ungram", F, T)
 exp2.clean$p_acc <- with(exp2.clean, response_yes & isGram)
-exp2.clean %<>% mutate(ResponseCorrect = (response_yes == (grammatical == "gram")))
+exp2.clean %<>%
+    mutate(ResponseCorrect = (response_yes == (grammatical == "gram")))
 
 # Merge
 
-exp2.clean %<>% ungroup() %>%
-                      dplyr::select(source=experiment,
-                                    grammatical,
-                                    attractor_num,
-                                    match,
-                                    age,
-                                    # condition,
-                                    subject,
-                                    trial_no,
-                                    item,
-                                    response_yes,
-                                    RT,
-                                    ResponseCorrect)
+exp2.clean %<>%
+    ungroup() %>%
+    dplyr::select(
+        source = experiment,
+        grammatical,
+        attractor_num,
+        match,
+        age,
+        # condition,
+        subject,
+        trial_no,
+        item,
+        response_yes,
+        RT,
+        ResponseCorrect
+    )
 exp2.clean$experiment <- "Experiment 2"
-exp2.clean$grammatical %<>% dplyr::recode(gram="grammatical", ungram="ungrammatical")
-exp2.clean$attractor_num %<>% dplyr::recode(pl="plural", sg="singular")
+exp2.clean$grammatical %<>%
+    dplyr::recode(gram = "grammatical", ungram = "ungrammatical")
+exp2.clean$attractor_num %<>% dplyr::recode(pl = "plural", sg = "singular")
 exp2.clean$item %<>% as.factor()
 exp2.clean$subject %<>% as.character()
 
@@ -79,46 +123,60 @@ exp2.clean$subject %<>% as.character()
 #| label: exp2-avgs
 
 exp2.avgs <- exp2.clean %>%
-  filter(match != "filler") %>%
-  group_by(grammatical, attractor_num, match) %>%
-  summarise(
-    successes = sum(response_yes, na.rm = TRUE),
-    N         = sum(!is.na(response_yes)),
-    .groups = "drop"
-  ) %>%
-  mutate(ci_mat = purrr::pmap(
-    list(successes, N),
-    ~ DescTools::BinomCI(x = ..1, n = ..2, conf.level = 0.95, method = "clopper-pearson")
-  )) %>%
-  mutate(ci_mat = purrr::map(ci_mat, ~ as_tibble(.))) %>%
-  unnest(ci_mat) %>%
-  mutate(
-    p_hat = successes / N,
-    lwr   = lwr.ci,
-    upr   = upr.ci
-  ) %>%
-  select(grammatical, attractor_num, match, successes, N, p_hat, lwr, upr)
+    filter(match != "filler") %>%
+    group_by(grammatical, attractor_num, match) %>%
+    summarise(
+        successes = sum(response_yes, na.rm = TRUE),
+        N = sum(!is.na(response_yes)),
+        .groups = "drop"
+    ) %>%
+    mutate(
+        ci_mat = purrr::pmap(
+            list(successes, N),
+            ~ DescTools::BinomCI(
+                x = ..1,
+                n = ..2,
+                conf.level = 0.95,
+                method = "clopper-pearson"
+            )
+        )
+    ) %>%
+    mutate(ci_mat = purrr::map(ci_mat, ~ as_tibble(.))) %>%
+    unnest(ci_mat) %>%
+    mutate(
+        p_hat = successes / N,
+        lwr = lwr.ci,
+        upr = upr.ci
+    ) %>%
+    select(grammatical, attractor_num, match, successes, N, p_hat, lwr, upr)
 
 exp2.avgs.filler <- exp2.clean %>%
-  filter(match == "filler") %>%
-  group_by(grammatical, attractor_num, match) %>%
-  summarise(
-    successes = sum(ResponseCorrect == TRUE, na.rm = TRUE),
-    N         = sum(!is.na(ResponseCorrect)),
-    .groups = "drop"
-  ) %>%
-  mutate(ci_mat = purrr::pmap(
-    list(successes, N),
-    ~ DescTools::BinomCI(x = ..1, n = ..2, conf.level = 0.95, method = "clopper-pearson")
-  )) %>%
-  mutate(ci_mat = purrr::map(ci_mat, ~ as_tibble(.))) %>%
-  unnest(ci_mat) %>%
-  mutate(
-    p_hat = successes / N,
-    lwr   = lwr.ci,
-    upr   = upr.ci
-  ) %>%
-  select(grammatical, attractor_num, match, successes, N, p_hat, lwr, upr)
+    filter(match == "filler") %>%
+    group_by(grammatical, attractor_num, match) %>%
+    summarise(
+        successes = sum(ResponseCorrect == TRUE, na.rm = TRUE),
+        N = sum(!is.na(ResponseCorrect)),
+        .groups = "drop"
+    ) %>%
+    mutate(
+        ci_mat = purrr::pmap(
+            list(successes, N),
+            ~ DescTools::BinomCI(
+                x = ..1,
+                n = ..2,
+                conf.level = 0.95,
+                method = "clopper-pearson"
+            )
+        )
+    ) %>%
+    mutate(ci_mat = purrr::map(ci_mat, ~ as_tibble(.))) %>%
+    unnest(ci_mat) %>%
+    mutate(
+        p_hat = successes / N,
+        lwr = lwr.ci,
+        upr = upr.ci
+    ) %>%
+    select(grammatical, attractor_num, match, successes, N, p_hat, lwr, upr)
 
 
 ```
@@ -131,31 +189,38 @@ exp2.nsubj <- exp2$subject %>% unique() %>% length()
 exp2.acc.threshold <- 0.25
 
 exp2.subj_screen <- exp2 %>%
-  group_by(subject, experiment, condition, grammatical, verb_num, attractor_num) %>%
-  summarise(
-    p_yes = mean(response_yes, na.rm = TRUE),
-    .groups = "drop"
-  ) %>%
-  mutate(expcond = paste(experiment, condition, sep = "_")) %>%
-  dplyr::select(
-    -experiment,
-    -condition,
-    -grammatical,
-    -verb_num,
-    -attractor_num
-  ) %>%
-  tidyr::pivot_wider(
-    names_from = expcond,
-    values_from = p_yes
-  ) %>%
-  mutate(
-    delta_dc = AgrAttr_d - AgrAttr_c
-  )
+    group_by(
+        subject,
+        experiment,
+        condition,
+        grammatical,
+        verb_num,
+        attractor_num
+    ) %>%
+    summarise(
+        p_yes = mean(response_yes, na.rm = TRUE),
+        .groups = "drop"
+    ) %>%
+    mutate(expcond = paste(experiment, condition, sep = "_")) %>%
+    dplyr::select(
+        -experiment,
+        -condition,
+        -grammatical,
+        -verb_num,
+        -attractor_num
+    ) %>%
+    tidyr::pivot_wider(
+        names_from = expcond,
+        values_from = p_yes
+    ) %>%
+    mutate(
+        delta_dc = AgrAttr_d - AgrAttr_c
+    )
 
 exp2.bad_subjects <- exp2.subj_screen %>%
-  filter(delta_dc <= exp2.acc.threshold) %>%
-  pull(subject) %>%
-  unique()
+    filter(delta_dc <= exp2.acc.threshold) %>%
+    pull(subject) %>%
+    unique()
 
 exp2.n_bad <- length(exp2.bad_subjects)
 
@@ -165,37 +230,54 @@ exp2.nsubj.analysis <- n_distinct(exp2.clean$subject)
 exp2.p_subj_excluded <- round(100 * exp2.n_bad / exp2.nsubj.raw, 2)
 
 exp2.nsubj.nontr <- exp2 %>%
-  subset(natturk == "nat_non_turk") %>%
-  .$subject %>%
-  unique() %>%
-  length()
+    subset(natturk == "nat_non_turk") %>%
+    .$subject %>%
+    unique() %>%
+    length()
 
 exp2.after_subj <- exp2 %>%
-  filter(!subject %in% exp2.bad_subjects)
+    filter(!subject %in% exp2.bad_subjects)
 exp2.after_subj_nonpractice <- exp2.after_subj %>%
-  filter(exp_condition != "practice")
-exp2.n_rows_removed_subject_nonpractice <- nrow(exp2.no.practice) - nrow(exp2.after_subj_nonpractice)
+    filter(exp_condition != "practice")
+exp2.n_rows_removed_subject_nonpractice <- nrow(exp2.no.practice) -
+    nrow(exp2.after_subj_nonpractice)
 
 exp2.n_rt_fast <- exp2.after_subj_nonpractice %>% filter(RT <= 200) %>% nrow()
 exp2.n_rt_slow <- exp2.after_subj_nonpractice %>% filter(RT >= 4999) %>% nrow()
 exp2.n_removed_rt <- exp2.n_rt_fast + exp2.n_rt_slow
-exp2.p_removed_rt <- round(100 * exp2.n_removed_rt / nrow(exp2.after_subj_nonpractice), 2)
+exp2.p_removed_rt <- round(
+    100 * exp2.n_removed_rt / nrow(exp2.after_subj_nonpractice),
+    2
+)
 
 exp2.after_subj_rt_nonpractice <- exp2.after_subj_nonpractice %>%
-  filter(RT < 4999 & RT > 200)
-exp2.n_missing_trials <- exp2.after_subj_rt_nonpractice %>% filter(is.na(response_yes)) %>% nrow()
+    filter(RT < 4999 & RT > 200)
+exp2.n_missing_trials <- exp2.after_subj_rt_nonpractice %>%
+    filter(is.na(response_yes)) %>%
+    nrow()
 
 exp2.n_trials.analysis <- nrow(exp2.clean)
 exp2.n_trials.raw <- nrow(exp2.no.practice)
 exp2.n_trials.removed_total <- exp2.n_trials.raw - exp2.n_trials.analysis
-exp2.p_trials.removed_total <- round(100 * exp2.n_trials.removed_total / exp2.n_trials.raw, 2)
+exp2.p_trials.removed_total <- round(
+    100 * exp2.n_trials.removed_total / exp2.n_trials.raw,
+    2
+)
 
-exp2.deletion <- round(100 * ((nrow(exp2.no.practice) - nrow(exp2.clean)) / nrow(exp2.no.practice)), 2)
+exp2.deletion <- round(
+    100 *
+        ((nrow(exp2.no.practice) - nrow(exp2.clean)) / nrow(exp2.no.practice)),
+    2
+)
 
 exp2.missing_sentence <- ifelse(
-  exp2.n_missing_trials == 0,
-  "After RT trimming, there were no missing responses.",
-  paste0("After RT trimming, ", exp2.n_missing_trials, " trials had missing responses and were excluded.")
+    exp2.n_missing_trials == 0,
+    "After RT trimming, there were no missing responses.",
+    paste0(
+        "After RT trimming, ",
+        exp2.n_missing_trials,
+        " trials had missing responses and were excluded."
+    )
 )
 
 exp2.meanage <- mean(asi(exp2.clean$age)) %>% round()
@@ -204,17 +286,42 @@ exp2.minage <- min(asi(exp2.clean$age))
 
 # FILLER AVERAGES
 
-exp2.avgs.filler %<>% mutate(text = paste0("M = ", round(p_hat,2), ", CI = [", round(lwr,2) , ",", round(upr,2) ,"]"))
+exp2.avgs.filler %<>%
+    mutate(
+        text = paste0(
+            "M = ",
+            round(p_hat, 2),
+            ", CI = [",
+            round(lwr, 2),
+            ",",
+            round(upr, 2),
+            "]"
+        )
+    )
 
-exp2.avgs %<>% mutate(text = paste0("M = ", round(p_hat,2), ", CI = [", round(lwr,2) , ",", round(upr,2) ,"]"))
+exp2.avgs %<>%
+    mutate(
+        text = paste0(
+            "M = ",
+            round(p_hat, 2),
+            ", CI = [",
+            round(lwr, 2),
+            ",",
+            round(upr, 2),
+            "]"
+        )
+    )
 
 ```
+
+<!-- CHECK THIS: This intro paragraph is fine. Reads naturally. No major AI tells. -->
+Experiment 1 showed no attraction from verbal attractors, but the mixed design---combining nominal and verbal conditions in the same session---raises the concern that the presence of robust nominal-attractor items may have influenced response patterns. Experiment 2 addressed this by removing all nominal-attractor conditions, testing whether the null verbal effect persists when verbal morphology is the sole potential source of interference.
 
 ## Participants
 
 We recruited `r exp2.nsubj.raw` undergraduate students to participate in the experiment in exchange for course credit. All participants self-identified as native Turkish speakers, with an average age of `r exp2.meanage` years (range: `r exp2.minage`-`r exp2.maxage`).
 
-Subject-level screening used one discrimination check, defined as $\Delta = p(yes\mid d) - p(yes\mid c)$, where conditions *d* and *c* form the singular-verb control contrast. We excluded participants with $\Delta \leq$ `r exp2.acc.threshold` (`r 100*exp2.acc.threshold`%). This removed `r exp2.n_bad` participant(s) (`r exp2.p_subj_excluded`% of the recruited sample). This subject-level filtering removed `r exp2.n_rows_removed_subject_nonpractice` rows before trial-level trimming.
+Subject-level screening used one discrimination check. Because Experiment 2 contained only verbal attractor conditions, we computed each participant's difference in acceptance rates between grammatical (singular-verb) and ungrammatical (plural-verb) sentences with singular attractors. We excluded participants whose discrimination score fell at or below `r 100*exp2.acc.threshold`%. This removed `r exp2.n_bad` participant(s) (`r exp2.p_subj_excluded`% of the recruited sample). This subject-level filtering removed `r exp2.n_rows_removed_subject_nonpractice` rows before trial-level trimming.
 
 At the trial level, response-time trimming removed `r exp2.n_removed_rt` trials (`r exp2.n_rt_fast` with RT <= 200 ms; `r exp2.n_rt_slow` with RT >= 4999 ms; `r exp2.p_removed_rt`% of trials). `r exp2.missing_sentence` In total, `r exp2.p_trials.removed_total`% of collected trials were excluded, and the final dataset contained `r exp2.nsubj.analysis` participants and `r exp2.n_trials.analysis` observations.
 
@@ -240,11 +347,13 @@ exp2.dfModel <- exp2.clean %>% subset(match != "filler")
 
 exp2.dfModel %<>%
     mutate(
-        grammatical = factor(grammatical,
+        grammatical = factor(
+            grammatical,
             levels = c("grammatical", "ungrammatical"),
             labels = c("Grammatical", "Ungrammatical")
         ),
-        attractor_num = factor(attractor_num, # or attractor_num if that’s your column
+        attractor_num = factor(
+            attractor_num, # or attractor_num if that’s your column
             levels = c("singular", "plural"),
             labels = c("Singular", "Plural")
         )
@@ -263,25 +372,40 @@ contrasts(exp2.dfModel$attractor_num) <- -Ca
 
 
 make_priors <- function(
-    inter_ga_mean = 0.0, inter_ga_sd = 0.10, # Gram × Attr (classic attraction term)
-    main_g_mean = 1.0, main_g_sd = 0.50, # Grammaticality main effect (your previous spec)
-    main_a_mean = 0.30, main_a_sd = 0.40, # Attractor Number main effect
-    intercept_mean = 0.85, intercept_sd = 0.70,
-    exp_rate = 1, lkj_eta = 2) {
+    inter_ga_mean = 0.0,
+    inter_ga_sd = 0.10, # Gram × Attr (classic attraction term)
+    main_g_mean = 1.0,
+    main_g_sd = 0.50, # Grammaticality main effect (your previous spec)
+    main_a_mean = 0.30,
+    main_a_sd = 0.40, # Attractor Number main effect
+    intercept_mean = 0.85,
+    intercept_sd = 0.70,
+    exp_rate = 1,
+    lkj_eta = 2
+) {
     c(
         # Intercept
-        set_prior(sprintf("normal(%g, %g)", intercept_mean, intercept_sd), class = "Intercept"),
+        set_prior(
+            sprintf("normal(%g, %g)", intercept_mean, intercept_sd),
+            class = "Intercept"
+        ),
 
         # Main effects
-        set_prior(sprintf("normal(%g, %g)", main_g_mean, main_g_sd),
-            class = "b", coef = "grammaticalGram_minus_Ungram"
+        set_prior(
+            sprintf("normal(%g, %g)", main_g_mean, main_g_sd),
+            class = "b",
+            coef = "grammaticalGram_minus_Ungram"
         ),
-        set_prior(sprintf("normal(%g, %g)", main_a_mean, main_a_sd),
-            class = "b", coef = "attractor_numPlural_minus_Singular"
+        set_prior(
+            sprintf("normal(%g, %g)", main_a_mean, main_a_sd),
+            class = "b",
+            coef = "attractor_numPlural_minus_Singular"
         ),
         # Two-way interactions
-        set_prior(sprintf("normal(%g, %g)", inter_ga_mean, inter_ga_sd),
-            class = "b", coef = "grammaticalGram_minus_Ungram:attractor_numPlural_minus_Singular"
+        set_prior(
+            sprintf("normal(%g, %g)", inter_ga_mean, inter_ga_sd),
+            class = "b",
+            coef = "grammaticalGram_minus_Ungram:attractor_numPlural_minus_Singular"
         ),
         # Random-effect scales and correlations
         set_prior(sprintf("exponential(%g)", exp_rate), class = "sd"),
@@ -290,12 +414,16 @@ make_priors <- function(
 }
 
 priors_uninformative <- make_priors(
-    inter_ga_mean   = 0, inter_ga_sd   = 1,
-    main_g_mean     = 0, main_g_sd     = 1,
-    main_a_mean     = 0, main_a_sd     = 1,
-    intercept_mean  = 0, intercept_sd  = 1,
-    exp_rate        = 1,
-    lkj_eta         = 2
+    inter_ga_mean = 0,
+    inter_ga_sd = 1,
+    main_g_mean = 0,
+    main_g_sd = 1,
+    main_a_mean = 0,
+    main_a_sd = 1,
+    intercept_mean = 0,
+    intercept_sd = 1,
+    exp_rate = 1,
+    lkj_eta = 2
 )
 
 
@@ -315,7 +443,6 @@ if (length(exp2_fit_available) == 0) {
 m.exp2 <- readRDS(exp2_fit_available[[1]])
 
 
-
 ```
 
 ```{r}
@@ -323,26 +450,26 @@ m.exp2 <- readRDS(exp2_fit_available[[1]])
 
 # --- helpers ---
 coef_names <- list(
-    gram  = "b_grammaticalGram_minus_Ungram",
-    attr  = "b_attractor_numPlural_minus_Singular",
+    gram = "b_grammaticalGram_minus_Ungram",
+    attr = "b_attractor_numPlural_minus_Singular",
     inter = "b_grammaticalGram_minus_Ungram:attractor_numPlural_minus_Singular"
 )
 
 post_int <- list(
-    gram  = summ_brms(m.exp2, coef_names$gram),
-    attr  = summ_brms(m.exp2, coef_names$attr),
+    gram = summ_brms(m.exp2, coef_names$gram),
+    attr = summ_brms(m.exp2, coef_names$attr),
     inter = summ_brms(m.exp2, coef_names$inter)
 )
 txt <- list(
-    gram  = trip(post_int$gram),
-    attr  = trip(post_int$attr),
+    gram = trip(post_int$gram),
+    attr = trip(post_int$attr),
     inter = trip(post_int$inter)
 )
 
 
 txt_p <- list(
-    gram  = fmt_prob(p_gt0(m.exp2, coef_names$gram), d = 2),
-    attr  = fmt_prob(p_gt0(m.exp2, coef_names$attr), d = 2),
+    gram = fmt_prob(p_gt0(m.exp2, coef_names$gram), d = 2),
+    attr = fmt_prob(p_gt0(m.exp2, coef_names$attr), d = 2),
     inter = fmt_prob(p_gt0(m.exp2, coef_names$inter), d = 2)
 )
 
@@ -350,7 +477,6 @@ txt_p <- list(
 
 ```{r}
 #| label: nested-models
-
 
 draws_exp2 <- as_draws_df(m.exp2)
 b_attr <- get_col(draws_exp2, coef_names$attr)
@@ -385,14 +511,13 @@ txt_g_p <- list(
 )
 
 
-
 ```
 
 Participants showed high accuracy in both grammatical (`r get_value(exp2.avgs.filler, text, grammatical == "grammatical")`) and ungrammatical filler sentences (`r get_value(exp2.avgs.filler, text, grammatical == "ungrammatical")`), indicating that they understood the task and performed it reliably.
 
 @fig-exp2-condition-means presents the overall means and credible intervals for 'yes' responses across experimental conditions. As shown, ungrammatical sentences with plural attractors were rated as acceptable as their counterparts with singular attractors (M = `r get_value(exp2.avgs, p_hat, grammatical == "ungrammatical", attractor_num == "singular")` and `r get_value(exp2.avgs, p_hat, grammatical == "ungrammatical", attractor_num == "plural")`, CI = [`r get_value(exp2.avgs, lwr, grammatical == "ungrammatical", attractor_num == "singular")`, `r get_value(exp2.avgs, upr, grammatical == "ungrammatical", attractor_num == "singular")`] and [`r get_value(exp2.avgs, lwr, grammatical == "ungrammatical", attractor_num == "plural")`, `r get_value(exp2.avgs, upr, grammatical == "ungrammatical", attractor_num == "plural")`] for singular and plural attractors, respectively).
 
-On the other hand, accuracy in grammatical conditions was modulated by the number of the attractor in an unexpected way. Participants rated grammatical sentences with singular attractors as grammatical less often (`r get_value(exp2.avgs, text, grammatical == "grammatical", attractor_num == "singular")`) compared to their counterpars with plural attractors (`r get_value(exp2.avgs, text, grammatical == "grammatical", attractor_num == "plural")`).
+On the other hand, accuracy in grammatical conditions was modulated by the number of the attractor in an unexpected way. Participants rated grammatical sentences with singular attractors as grammatical less often (`r get_value(exp2.avgs, text, grammatical == "grammatical", attractor_num == "singular")`) compared to their counterparts with plural attractors (`r get_value(exp2.avgs, text, grammatical == "grammatical", attractor_num == "plural")`).
 
 ```{r}
 #| label: fig-exp2-condition-means
@@ -418,14 +543,24 @@ facet_limits <- data.frame(
 # responses
 
 exp2.avgs %>%
-    ggplot(aes(grammatical, p_hat,
+    ggplot(aes(
+        grammatical,
+        p_hat,
         linetype = attractor_num,
         group = attractor_num
     )) +
     geom_point(position = position_dodge(0.3)) +
     geom_blank(data = facet_limits, aes(y = p_hat), inherit.aes = FALSE) +
-    geom_errorbar(aes(ymin = lwr, ymax = upr), width = 0, position = position_dodge(0.3)) +
-    facet_wrap(~grammatical, labeller = as_labeller(exp2.gram.label), scale = "free") +
+    geom_errorbar(
+        aes(ymin = lwr, ymax = upr),
+        width = 0,
+        position = position_dodge(0.3)
+    ) +
+    facet_wrap(
+        ~grammatical,
+        labeller = as_labeller(exp2.gram.label),
+        scale = "free"
+    ) +
     ylab("Percentage 'acceptable'") +
     scale_y_continuous(labels = scales::percent) +
     scale_linetype_discrete(
@@ -437,25 +572,27 @@ exp2.avgs %>%
         legend.position = "bottom",
         strip.background = element_rect(fill = "white"),
         axis.title.x = element_blank(),
-        axis.text.x  = element_blank(),
+        axis.text.x = element_blank(),
         axis.ticks.x = element_blank()
     )
 
 ggsave(
-  filename = "../../utility/figures/fig-exp2-condition-means.pdf",
-  plot = last_plot(),
-  width = 6, 
-  height = 3, 
-  units = "in", 
-  dpi = 600,
-  bg = "white"
+    filename = "../../utility/figures/fig-exp2-condition-means.pdf",
+    plot = last_plot(),
+    width = 6,
+    height = 3,
+    units = "in",
+    dpi = 600,
+    bg = "white"
 )
 
 ```
 
-These descriptive trends were confirmed by our Bayesian mixed-effects models implemented in brms,  assuming a Bernoulli logit link. The model was fitted to the binary *yes/no* responses and included fixed effects for Grammaticality and Attractor Number and their interaction, and random intercepts and slopes for both subjects and items.
+<!-- CHECK THIS: Model spec paragraph is fine — technical and factual. No AI tells. -->
+We fitted a Bayesian mixed-effects logistic regression to binary *yes/no* responses using brms, with the same model family (Bernoulli, logit link) and uninformative priors as in Experiment 1. Because Experiment 2 included only verbal attractor conditions, the model had a simpler 2 × 2 structure: fixed effects for Grammaticality and Attractor Number (both sum-coded at ±0.5) and their interaction, with maximal random intercepts and slopes for both subjects and items.
 
-Posterior estimates are summarized in @fig-exp2-fixed-effects. The model revealed a positive effect of grammaticality ($\beta$ = `r txt$gram`, P($\beta$ > `r txt_p$gram`)), but no reliable main effect of attractor number ($\beta$ = `r txt$attr`, P($\beta$ > `r txt_p$attr`)). On the other hand, there was a small but positive interaction ($\beta$ = `r txt$inter`, P($\beta$ > `r txt_p$inter`)). To clarify the pattern within each grammaticality level, we computed model-implied attractor-number effects from posterior draws. Grammatical conditions showed a positive attractor-number effect ($\beta$ = `r txt_g$attr_g`, P($\beta$ > 0) = `r txt_g_p$attr_g`), whereas ungrammatical conditions (the attraction-relevant cases) did not provide evidence for an attractor-number effect ($\beta$ = `r txt_g$attr_u`, P($\beta$ > 0) = `r txt_g_p$attr_u`). These results suggest that the presence of a plural attractor did not increase the acceptability of ungrammatical sentences, nor was this relationship modulated by grammaticality.
+<!-- CHECK THIS: Results paragraph is okay — dense but results paragraphs are supposed to be. "crucially" is a minor AI tell but common in academic writing too. The final sentence ("the positive interaction is driven entirely by...") is a good interpretive closer. -->
+Posterior estimates are summarized in @fig-exp2-fixed-effects. The model revealed a positive effect of grammaticality ($\beta$ = `r txt$gram`, P($\beta$ > `r txt_p$gram`)), but no reliable main effect of attractor number ($\beta$ = `r txt$attr`, P($\beta$ > `r txt_p$attr`)). The interaction was small but positive ($\beta$ = `r txt$inter`, P($\beta$ > `r txt_p$inter`)); crucially, this interaction reflected a grammatical-condition asymmetry rather than attraction. To clarify the pattern within each grammaticality level, we computed model-implied attractor-number effects from posterior draws. In grammatical conditions, plural attractors increased acceptance relative to singular attractors ($\beta$ = `r txt_g$attr_g`, P($\beta$ > 0) = `r txt_g_p$attr_g`). In ungrammatical conditions---the attraction-relevant comparison---there was no evidence for an attractor-number effect ($\beta$ = `r txt_g$attr_u`, P($\beta$ > 0) = `r txt_g_p$attr_u`). Thus, the presence of a plural verbal attractor did not increase the acceptability of ungrammatical sentences; the positive interaction is driven entirely by a grammatical-condition pattern that is opposite in direction to what an attraction account would predict.
 
 ```{r}
 #| label: fig-exp2-fixed-effects
@@ -486,18 +623,22 @@ df_plot <- bind_rows(
         term_clean = case_when(
             term == "b_grammaticalGram_minus_Ungram" ~ "Grammaticality",
             term == "b_attractor_numPlural_minus_Singular" ~ "Attractor",
-            term == "b_grammaticalGram_minus_Ungram:attractor_numPlural_minus_Singular" ~ "Interaction",
+            term ==
+                "b_grammaticalGram_minus_Ungram:attractor_numPlural_minus_Singular" ~ "Interaction",
             TRUE ~ term
         ),
-        term_clean = factor(term_clean,
+        term_clean = factor(
+            term_clean,
             levels = rev(c("Grammaticality", "Attractor", "Interaction"))
         )
     )
 
 ggplot(df_plot, aes(x = est, y = term_clean)) +
     geom_vline(xintercept = 0, linetype = 3) +
-    geom_errorbarh(aes(xmin = l95, xmax = u95),
-        position = position_dodge(width = 0.5), height = 0.2
+    geom_errorbarh(
+        aes(xmin = l95, xmax = u95),
+        position = position_dodge(width = 0.5),
+        height = 0.2
     ) +
     geom_point(position = position_dodge(width = 0.5), size = 2.4) +
     labs(
@@ -523,7 +664,7 @@ To quantify evidence for the absence of attraction effects, we computed Bayes Fa
 # Cache behavior:
 # - If bf_exp2.rds exists, it is loaded.
 # - If it does not exist, set bf_compute_if_missing_exp2 <- TRUE once to compute+save.
-bf_cache_path_exp2 <- "../../utility/models/bf_exp2.rds"
+bf_cache_path_exp2 <- "../../utility/models/bf_exp2_bridge.rds"
 bf_force_recompute_exp2 <- FALSE
 bf_compute_if_missing_exp2 <- FALSE
 
@@ -557,7 +698,11 @@ format_bf <- function(bf) {
     ifelse(
         is.na(bf),
         "NA",
-        ifelse(bf > 100, ">100", ifelse(bf < 0.01, "<0.01", sprintf("%.2f", bf)))
+        ifelse(
+            bf > 100,
+            ">100",
+            ifelse(bf < 0.01, "<0.01", sprintf("%.2f", bf))
+        )
     )
 }
 
@@ -572,8 +717,8 @@ interpret_bf <- function(bf) {
         bf > 10 ~ "strong evidence for null",
         bf > 3 ~ "moderate evidence for null",
         bf > 1 ~ "anecdotal evidence for null",
-        bf > 1/3 ~ "anecdotal evidence against null",
-        bf > 1/10 ~ "moderate evidence against null",
+        bf > 1 / 3 ~ "anecdotal evidence against null",
+        bf > 1 / 10 ~ "moderate evidence against null",
         TRUE ~ "strong evidence against null"
     )
 }
@@ -582,7 +727,11 @@ if (file.exists(bf_cache_path_exp2) && !bf_force_recompute_exp2) {
     bf_exp2 <- readRDS(bf_cache_path_exp2)
 } else if (bf_force_recompute_exp2 || bf_compute_if_missing_exp2) {
     bf_exp2 <- compute_exp2_bf(m.exp2)
-    dir.create(dirname(bf_cache_path_exp2), recursive = TRUE, showWarnings = FALSE)
+    dir.create(
+        dirname(bf_cache_path_exp2),
+        recursive = TRUE,
+        showWarnings = FALSE
+    )
     saveRDS(bf_exp2, bf_cache_path_exp2)
 } else {
     bf_exp2 <- list(
@@ -604,6 +753,8 @@ Bayes-factor computation for this section is temporarily deferred. We will repor
 
 ## Discussion
 
-Experiment 2 replicated the verbal attractor conditions from Experiment 1 in isolation and again revealed no evidence for agreement attraction driven by verbal plural markers. Ungrammatical sentences with plural marked main verbs were rejected at similar rates regardless of whether the reduced clause verb bore plural *-lAr* or not, and there were no reliable effects of attractor number or interactions involving attractor number. This confirms that the absence of a verbal attraction effect in Experiment 1 was not due to the presence of nominal attractor items or to within experiment item statistics. 
+<!-- CHECK THIS: Para 1 is fine — direct and factual. "This confirms that" is slightly AI but passes. -->
+Experiment 2 replicated the verbal attractor conditions from Experiment 1 in isolation and again revealed no evidence for agreement attraction driven by verbal plural markers. Ungrammatical sentences with plural-marked reduced clause verbs were rejected at similar rates regardless of attractor number. This confirms that the absence of verbal attraction in Experiment 1 was not due to the presence of nominal attractor items or to the distributional properties of the mixed design.
 
-Unexpectedly, grammatical sentences with singular attractors were judged less acceptable than those with plural attractors. This effect is unlikely to reflect agreement attraction, since it arises in the opposite direction. One possibility is that it results from an interaction between plausibility and referential availability. The plural morpheme can license a more general interpretation by allowing an unspecific reference, whereas the singular reduced relative clause more strongly invites a specific referent, which may be less accessible in the context of the task. We do not pursue this explanation further, as it falls outside the scope of the present paper.
+<!-- CHECK THIS: Para 2 is mostly okay. "This effect is unlikely to reflect... since it arises" is slightly formulaic. "We do not pursue this explanation further, as it falls outside the scope" is very AI — consider "This lies beyond our present scope" or just cutting the sentence. The forward reference at the end is fine. -->
+Unexpectedly, grammatical sentences with singular attractors were judged less acceptable than those with plural attractors. This effect is unlikely to reflect agreement attraction, since it arises in the opposite direction from what attraction would predict. One possibility is that it results from an interaction between plausibility and referential availability: the plural morpheme can license a more general interpretation, whereas the singular reduced relative clause more strongly invites a specific referent that may be less accessible in the task context. We do not pursue this explanation further, as it falls outside the scope of the present paper. We return to the theoretical implications of the converging null result across both experiments in the General Discussion.
