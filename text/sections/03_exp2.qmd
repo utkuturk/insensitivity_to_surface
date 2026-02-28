@@ -314,14 +314,13 @@ exp2.avgs %<>%
 
 ```
 
-<!-- CHECK THIS: This intro paragraph is fine. Reads naturally. No major AI tells. -->
-Experiment 1 showed no attraction from verbal attractors, but the mixed design---combining nominal and verbal conditions in the same session---raises the concern that the presence of robust nominal-attractor items may have influenced response patterns. Experiment 2 addressed this by removing all nominal-attractor conditions, testing whether the null verbal effect persists when verbal morphology is the sole potential source of interference.
+Experiment 1 showed no attraction from verbal attractors, but the presence of robust nominal-attractor items may have influenced response patterns. Experiment 2 addressed this by removing all nominal-attractor conditions, testing whether the null verbal effect persists when verbal morphology is the sole potential source of interference.
 
 ## Participants
 
 We recruited `r exp2.nsubj.raw` undergraduate students to participate in the experiment in exchange for course credit. All participants self-identified as native Turkish speakers, with an average age of `r exp2.meanage` years (range: `r exp2.minage`-`r exp2.maxage`).
 
-Subject-level screening used one discrimination check. Because Experiment 2 contained only verbal attractor conditions, we computed each participant's difference in acceptance rates between grammatical (singular-verb) and ungrammatical (plural-verb) sentences with singular attractors. We excluded participants whose discrimination score fell at or below `r 100*exp2.acc.threshold`%. This removed `r exp2.n_bad` participant(s) (`r exp2.p_subj_excluded`% of the recruited sample). This subject-level filtering removed `r exp2.n_rows_removed_subject_nonpractice` rows before trial-level trimming.
+Subject-level screening used one discrimination check. Because Experiment 2 contained only verbal attractor conditions, we computed each participant's difference in acceptance rates between grammatical (singular-verb) and ungrammatical (plural-verb) sentences with singular attractors. We excluded participants whose discrimination score fell at or below `r 100*exp2.acc.threshold`%. This removed `r exp2.n_bad` participant(s) (`r exp2.p_subj_excluded`% of the recruited sample).
 
 At the trial level, response-time trimming removed `r exp2.n_removed_rt` trials (`r exp2.n_rt_fast` with RT <= 200 ms; `r exp2.n_rt_slow` with RT >= 4999 ms; `r exp2.p_removed_rt`% of trials). `r exp2.missing_sentence` In total, `r exp2.p_trials.removed_total`% of collected trials were excluded, and the final dataset contained `r exp2.nsubj.analysis` participants and `r exp2.n_trials.analysis` observations.
 
@@ -515,7 +514,7 @@ txt_g_p <- list(
 
 Participants showed high accuracy in both grammatical (`r get_value(exp2.avgs.filler, text, grammatical == "grammatical")`) and ungrammatical filler sentences (`r get_value(exp2.avgs.filler, text, grammatical == "ungrammatical")`), indicating that they understood the task and performed it reliably.
 
-@fig-exp2-condition-means presents the overall means and credible intervals for 'yes' responses across experimental conditions. As shown, ungrammatical sentences with plural attractors were rated as acceptable as their counterparts with singular attractors (M = `r get_value(exp2.avgs, p_hat, grammatical == "ungrammatical", attractor_num == "singular")` and `r get_value(exp2.avgs, p_hat, grammatical == "ungrammatical", attractor_num == "plural")`, CI = [`r get_value(exp2.avgs, lwr, grammatical == "ungrammatical", attractor_num == "singular")`, `r get_value(exp2.avgs, upr, grammatical == "ungrammatical", attractor_num == "singular")`] and [`r get_value(exp2.avgs, lwr, grammatical == "ungrammatical", attractor_num == "plural")`, `r get_value(exp2.avgs, upr, grammatical == "ungrammatical", attractor_num == "plural")`] for singular and plural attractors, respectively).
+@fig-exp2-condition-means presents the overall means and credible intervals for 'yes' (acceptable) responses across experimental conditions. As shown, ungrammatical sentences with plural attractors were rated as acceptable as their counterparts with singular attractors (M = `r get_value(exp2.avgs, p_hat, grammatical == "ungrammatical", attractor_num == "singular")` and `r get_value(exp2.avgs, p_hat, grammatical == "ungrammatical", attractor_num == "plural")`, CI = [`r get_value(exp2.avgs, lwr, grammatical == "ungrammatical", attractor_num == "singular")`, `r get_value(exp2.avgs, upr, grammatical == "ungrammatical", attractor_num == "singular")`] and [`r get_value(exp2.avgs, lwr, grammatical == "ungrammatical", attractor_num == "plural")`, `r get_value(exp2.avgs, upr, grammatical == "ungrammatical", attractor_num == "plural")`] for singular and plural attractors, respectively).
 
 On the other hand, accuracy in grammatical conditions was modulated by the number of the attractor in an unexpected way. Participants rated grammatical sentences with singular attractors as grammatical less often (`r get_value(exp2.avgs, text, grammatical == "grammatical", attractor_num == "singular")`) compared to their counterparts with plural attractors (`r get_value(exp2.avgs, text, grammatical == "grammatical", attractor_num == "plural")`).
 
@@ -588,10 +587,8 @@ ggsave(
 
 ```
 
-<!-- CHECK THIS: Model spec paragraph is fine — technical and factual. No AI tells. -->
 We fitted a Bayesian mixed-effects logistic regression to binary *yes/no* responses using brms, with the same model family (Bernoulli, logit link) and uninformative priors as in Experiment 1. Because Experiment 2 included only verbal attractor conditions, the model had a simpler 2 × 2 structure: fixed effects for Grammaticality and Attractor Number (both sum-coded at ±0.5) and their interaction, with maximal random intercepts and slopes for both subjects and items.
 
-<!-- CHECK THIS: Results paragraph is okay — dense but results paragraphs are supposed to be. "crucially" is a minor AI tell but common in academic writing too. The final sentence ("the positive interaction is driven entirely by...") is a good interpretive closer. -->
 Posterior estimates are summarized in @fig-exp2-fixed-effects. The model revealed a positive effect of grammaticality ($\beta$ = `r txt$gram`, P($\beta$ > `r txt_p$gram`)), but no reliable main effect of attractor number ($\beta$ = `r txt$attr`, P($\beta$ > `r txt_p$attr`)). The interaction was small but positive ($\beta$ = `r txt$inter`, P($\beta$ > `r txt_p$inter`)); crucially, this interaction reflected a grammatical-condition asymmetry rather than attraction. To clarify the pattern within each grammaticality level, we computed model-implied attractor-number effects from posterior draws. In grammatical conditions, plural attractors increased acceptance relative to singular attractors ($\beta$ = `r txt_g$attr_g`, P($\beta$ > 0) = `r txt_g_p$attr_g`). In ungrammatical conditions---the attraction-relevant comparison---there was no evidence for an attractor-number effect ($\beta$ = `r txt_g$attr_u`, P($\beta$ > 0) = `r txt_g_p$attr_u`). Thus, the presence of a plural verbal attractor did not increase the acceptability of ungrammatical sentences; the positive interaction is driven entirely by a grammatical-condition pattern that is opposite in direction to what an attraction account would predict.
 
 ```{r}
@@ -651,110 +648,9 @@ ggplot(df_plot, aes(x = est, y = term_clean)) +
 
 ```
 
-### Bayes Factor Analysis for Null Effects
-
-To quantify evidence for the absence of attraction effects, we computed Bayes Factors using the Savage-Dickey density ratio method [@Wagenmakers2010]. This approach compares the posterior density at the null value (zero) to the prior density at the same point, providing a ratio of evidence for the null hypothesis (BF~01~). 
-
-```{r}
-#| label: exp2-bayes-factor
-#| eval: false
-#| message: false
-#| warning: false
-
-# Cache behavior:
-# - If bf_exp2.rds exists, it is loaded.
-# - If it does not exist, set bf_compute_if_missing_exp2 <- TRUE once to compute+save.
-bf_cache_path_exp2 <- "../../utility/models/bf_exp2_bridge.rds"
-bf_force_recompute_exp2 <- FALSE
-bf_compute_if_missing_exp2 <- FALSE
-
-compute_exp2_bf <- function(fit) {
-    bf_interaction <- bayestestR::bayesfactor_parameters(
-        fit,
-        null = 0,
-        effects = "fixed"
-    )
-
-    bf_int_row <- bf_interaction %>%
-        as.data.frame() %>%
-        filter(grepl("Gram_minus_Ungram:attractor_num", Parameter))
-    bf_int_value <- bf_int_row$BF[1]
-    bf01_int <- 1 / bf_int_value
-
-    bf_attr_row <- bf_interaction %>%
-        as.data.frame() %>%
-        filter(grepl("^attractor_num", Parameter))
-    bf_attr_value <- bf_attr_row$BF[1]
-    bf01_attr <- 1 / bf_attr_value
-
-    list(
-        bf01_int = as.numeric(bf01_int),
-        bf01_attr = as.numeric(bf01_attr)
-    )
-}
-
-# Format for reporting
-format_bf <- function(bf) {
-    ifelse(
-        is.na(bf),
-        "NA",
-        ifelse(
-            bf > 100,
-            ">100",
-            ifelse(bf < 0.01, "<0.01", sprintf("%.2f", bf))
-        )
-    )
-}
-
-# Interpretation based on Jeffreys (1961) / Lee & Wagenmakers (2013)
-interpret_bf <- function(bf) {
-    if (is.na(bf)) {
-        return("not computed")
-    }
-    case_when(
-        bf > 100 ~ "extreme evidence for null",
-        bf > 30 ~ "very strong evidence for null",
-        bf > 10 ~ "strong evidence for null",
-        bf > 3 ~ "moderate evidence for null",
-        bf > 1 ~ "anecdotal evidence for null",
-        bf > 1 / 3 ~ "anecdotal evidence against null",
-        bf > 1 / 10 ~ "moderate evidence against null",
-        TRUE ~ "strong evidence against null"
-    )
-}
-
-if (file.exists(bf_cache_path_exp2) && !bf_force_recompute_exp2) {
-    bf_exp2 <- readRDS(bf_cache_path_exp2)
-} else if (bf_force_recompute_exp2 || bf_compute_if_missing_exp2) {
-    bf_exp2 <- compute_exp2_bf(m.exp2)
-    dir.create(
-        dirname(bf_cache_path_exp2),
-        recursive = TRUE,
-        showWarnings = FALSE
-    )
-    saveRDS(bf_exp2, bf_cache_path_exp2)
-} else {
-    bf_exp2 <- list(
-        bf01_int = NA_real_,
-        bf01_attr = NA_real_
-    )
-}
-
-bf01_int <- bf_exp2$bf01_int
-bf01_attr <- bf_exp2$bf01_attr
-bf01_int_txt <- format_bf(bf01_int)
-bf01_attr_txt <- format_bf(bf01_attr)
-bf_int_interp <- interpret_bf(bf01_int)
-bf_attr_interp <- interpret_bf(bf01_attr)
-
-```
-
-Bayes-factor computation for this section is temporarily deferred. We will report BF~01~ estimates for the interaction and main-effect tests in a later revision.
 
 ## Discussion
 
-<!-- CHECK THIS: Para 1 is fine — direct and factual. "This confirms that" is slightly AI but passes. -->
-Experiment 2 replicated the verbal attractor conditions from Experiment 1 in isolation and again revealed no evidence for agreement attraction driven by verbal plural markers. Ungrammatical sentences with plural-marked reduced clause verbs were rejected at similar rates regardless of attractor number. This confirms that the absence of verbal attraction in Experiment 1 was not due to the presence of nominal attractor items or to the distributional properties of the mixed design.
+Experiment 2 replicated the verbal attractor conditions from Experiment 1 in isolation and again revealed no evidence for agreement attraction driven by plural markers on the verbal attractor. Ungrammatical sentences with plural-marked reduced clause verbs were rejected at similar rates regardless of attractor number. This confirms that the absence of verbal attraction in Experiment 1 was not due to the presence of nominal attractor items or to the distributional properties of the mixed design.
 
-<!-- CHECK THIS: Para 2 is mostly okay. "This effect is unlikely to reflect... since it arises" is slightly formulaic. "We do not pursue this explanation further, as it falls outside the scope" is very AI — consider "This lies beyond our present scope" or just cutting the sentence. The forward reference at the end is fine. -->
-Unexpectedly, grammatical sentences with singular attractors were judged less acceptable than those with plural attractors. This effect is unlikely to reflect agreement attraction, since it arises in the opposite direction from what attraction would predict. One possibility is that it results from an interaction between plausibility and referential availability: the plural morpheme can license a more general interpretation, whereas the singular reduced relative clause more strongly invites a specific referent that may be less accessible in the task context. We do not pursue this explanation further, as it falls outside the scope of the present paper. We return to the theoretical implications of the converging null result across both experiments in the General Discussion.
+Unexpectedly, grammatical sentences with singular attractors were judged less acceptable than those with plural attractors. This effect is unlikely to reflect agreement attraction, since it arises in the opposite direction from what attraction would predict, meaning singular attractor results in increased rejection of singular verb as grammatical. One possibility is that it results from an interaction between plausibility and referential availability: the plural morpheme can license a more general interpretation, whereas the singular reduced relative clause more strongly invites a specific referent that may be less accessible in the task context. On the other hand, reduced relative clauses without a had may act like a correlative structures in Turkish. In the case of *Gör-düğ-ü* (See-NMLZ-POSS) induce a meaning close to *Whoever he saw,* and even though the meaning is plural, the agreement with such correlative surfaces as singular in Turkish as we discussed in the Introduction. However, it is possible that notional plurality might have resulted in *reverse* atrraction effects. We return to the possible explanations for such an effect as well as theoretical implications of the converging null result across both experiments in the General Discussion.

@@ -1,0 +1,6 @@
+Prior_Set,Fixed_Effect_Prior,fixed_sd,Prior_Density_at_0,Prior_P_abs_beta_lt_0_20,BF01_GxA,BF01_GxA_Display,BF01_GxA_Interpretation,Comparison,Fit
+Wide,"Normal(0, 2.0)",2,0.19947114020071635,0.07965567455405798,12.401416929089054,12.40,strong evidence for null,RC-only full vs RC-only no-(GxA),all fits loaded
+Main,"Normal(0, 1.0)",1,0.3989422804014327,0.15851941887820603,4.731343787597241,4.73,moderate evidence for null,RC-only full vs RC-only no-(GxA),all fits loaded
+Narrow,"Normal(0, 0.5)",0.5,0.7978845608028654,0.31084348322064836,4.597826530350996,4.60,moderate evidence for null,RC-only full vs RC-only no-(GxA),all fits loaded
+Very Narrow,"Normal(0, 0.2)",0.25,1.5957691216057308,0.5762892028332067,2.728700647446078,2.73,anecdotal evidence for null,RC-only full vs RC-only no-(GxA),all fits loaded
+Ultra Narrow,"Normal(0, 0.1)",0.1,3.989422804014327,0.9544997361036416,2.9985868289459736,3.00,anecdotal evidence for null,RC-only full vs RC-only no-(GxA),all fits loaded

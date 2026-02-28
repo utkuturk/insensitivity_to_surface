@@ -1038,7 +1038,7 @@ priors_verbal <- make_priors_generic(
     lkj_eta = 2
 )
 
-exp1_verbal_fit_path <- "../../utility/models/m.exp1.verbal.rds"
+exp1_verbal_fit_path <- "../../utility/models/m.exp1.verbal-backup.rds"
 if (!file.exists(exp1_verbal_fit_path)) {
     stop(sprintf("Missing fitted model file: %s", exp1_verbal_fit_path))
 }
@@ -1061,7 +1061,7 @@ verbal_p_lt0_txt <- fmt_prob(verbal_p_lt0, d = 2)
 
 ```{r}
 #| label: exp1-verbal-only-report-values
-#| include: false
+#| eval: false
 #| message: false
 #| warning: false
 
@@ -1107,7 +1107,6 @@ knitr::kable(
 
 ```{r}
 #| label: exp1-verbal-bf-fit-models
-#| eval: false
 
 fit_formula_verbal_full <- brms::bf(
     response_yes ~ grammatical * attractor_num +
@@ -1131,24 +1130,24 @@ warmup_i <- 2000
 seed_i <- 25022026
 
 # Uncomment if you want to refit the full RC-only model with matching settings.
-# brm(
-#     fit_formula_verbal_full,
-#     data = exp1.verbal,
-#     family = bernoulli(link = "logit"),
-#     prior = priors_verbal,
-#     sample_prior = "no",
-#     save_pars = save_pars(all = TRUE),
-#     chains = chains_i,
-#     cores = cores_i,
-#     threads = threads_i,
-#     iter = iter_i,
-#     warmup = warmup_i,
-#     init = 0,
-#     seed = seed_i,
-#     file = "../../utility/models/m.exp1.verbal"
-# )
+m.exp1.verbal <- brm(
+    fit_formula_verbal_full,
+    data = exp1.verbal,
+    family = bernoulli(link = "logit"),
+    prior = priors_verbal,
+    sample_prior = "no",
+    save_pars = save_pars(all = TRUE),
+    chains = chains_i,
+    cores = cores_i,
+    threads = threads_i,
+    iter = iter_i,
+    warmup = warmup_i,
+    init = 0,
+    seed = seed_i,
+    file = "../../utility/models/m.exp1.verbal"
+)
 
-brm(
+m.exp1.verbal.noGA <- brm(
     fit_formula_verbal_noGA,
     data = exp1.verbal,
     family = bernoulli(link = "logit"),
@@ -1164,173 +1163,125 @@ brm(
     seed = seed_i,
     file = "../../utility/models/m.exp1.verbal.noGA"
 )
+
+# bf_exp1_verbal <- bayes_factor(
+#   m.exp1.verbal,
+#   m.exp1.verbal.noGA,
+#   recompile = FALSE
+# )
+# Estimated Bayes factor in favor of m.exp1.verbal over m.exp1.verbal.noGA: 0.16309
+
+bf01 = round(1 / 0.16309,2)
+
 ```
 
 ```{r}
-#| label: exp1-verbal-bayes-factor
+#| label: exp1-verbal-bf-prior-sensitivity
 #| message: false
 #| warning: false
 
-# Cache behavior:
-# - If bf_exp1_verbal_bridge.rds exists, it is loaded.
-# - If it does not exist, set bf_compute_if_missing_exp1_verbal <- TRUE once.
-bf_cache_path_exp1_verbal <- "../../utility/models/bf_exp1_verbal_bridge.rds"
-bridge_recompile_exp1_verbal <- FALSE
-bf_force_recompute_exp1_verbal <- FALSE
-bf_compute_if_missing_exp1_verbal <- TRUE
+bf_prior_sens_exp1_verbal_path <-
+    "../../utility/models/bf_exp1_verbal_prior_sensitivity_bridge.csv"
+bf_prior_range_txt <- "NA"
+bf_prior_min_label <- "NA"
+bf_prior_max_label <- "NA"
 
-format_bf <- function(bf) {
-    ifelse(
-        is.na(bf),
-        "NA",
-        ifelse(
-            bf > 100,
-            ">100",
-            ifelse(bf < 0.01, "<0.01", sprintf("%.2f", bf))
+if (file.exists(bf_prior_sens_exp1_verbal_path)) {
+    bf_prior_sens_exp1_verbal <- readr::read_csv(
+        bf_prior_sens_exp1_verbal_path,
+        show_col_types = FALSE
+    ) %>%
+        dplyr::mutate(
+            Prior_Set = factor(
+                Prior_Set,
+                levels = c("Wide", "Main", "Narrow", "Very Narrow", "Ultra Narrow")
+            ),
+            Fixed_Effect_Prior = sprintf("Normal(0, %.2f)", fixed_sd)
+        ) %>%
+        dplyr::arrange(Prior_Set)
+
+    bf_prior_range_txt <- sprintf(
+        "%.2f-%.2f",
+        min(bf_prior_sens_exp1_verbal$BF01_GxA, na.rm = TRUE),
+        max(bf_prior_sens_exp1_verbal$BF01_GxA, na.rm = TRUE)
+    )
+    bf_prior_min_label <-
+        as.character(
+            bf_prior_sens_exp1_verbal$Prior_Set[
+                which.min(bf_prior_sens_exp1_verbal$BF01_GxA)
+            ]
         )
-    )
+    bf_prior_max_label <-
+        as.character(
+            bf_prior_sens_exp1_verbal$Prior_Set[
+                which.max(bf_prior_sens_exp1_verbal$BF01_GxA)
+            ]
+        )
 }
+```
 
-interpret_bf <- function(bf) {
-    if (is.na(bf)) {
-        return("not computed")
-    }
-    case_when(
-        bf > 100 ~ "extreme evidence for null",
-        bf > 30 ~ "very strong evidence for null",
-        bf > 10 ~ "strong evidence for null",
-        bf > 3 ~ "moderate evidence for null",
-        bf > 1 ~ "anecdotal evidence for null",
-        bf > 1 / 3 ~ "anecdotal evidence against null",
-        bf > 1 / 10 ~ "moderate evidence against null",
-        TRUE ~ "strong evidence against null"
-    )
-}
+To quantify evidence for the null effect in the verbal conditions, we compared two RC-only Bayesian mixed-effects models using Bayes Factors estimated by bridge sampling via `brms` [@Buerkner2017]. The main (alternative H) model included the critical Grammaticality x Attractor Number interaction, whereas the null model (H0) omitted this interaction while keeping the same main effects and random-effects structure. Thus, the comparison directly tests whether verbal attractors induce agreement attraction in RC conditions. We report BF~01~ = p(data | M~0~) / p(data | M~1~), where M~0~ is the simpler RC-only model without the interaction and M~1~ is the RC-only model with the interaction. Under equal prior odds for the two models, BF~01~ expresses how much more likely the observed data are under the null model than under the interaction model. In the present data, BF~01~ = `r sprintf("%.2f", bf01)`, indicating `r interpret_bf(bf01)` for the null model. Following Jeffreys (1961, as cited in @LeeWagenmakers2014), BF values between 3 and 10 are taken as moderate evidence, values between 10 and 30 as strong evidence, values between 30 and 100 as very strong evidence, and values above 100 as extreme evidence.
 
-safe_read_fit <- function(rds_path) {
-    if (!is.na(rds_path) && nzchar(rds_path) && file.exists(rds_path)) {
-        return(readRDS(rds_path))
-    }
-    NULL
-}
+Because Bayes Factors depend on the prior distribution assigned to the parameter of interest, we also conducted a prior-sensitivity analysis for the RC-only comparison. Specifically, we refit the same pair of nested models under a range of increasingly concentrated zero-centered normal priors on the fixed effects (`Normal(0, 2.0)`, `Normal(0, 1.0)`, `Normal(0, 0.5)`, `Normal(0, 0.25)`, and `Normal(0, 0.1)`) and recomputed BF~01~ for each comparison. This analysis asks whether the conclusion that there is no verbal attraction depends on assuming a broader prior that allows large effects, or whether it remains stable as the prior increasingly concentrates mass near zero. We therefore interpret the Bayes-factor results together with this sensitivity table, rather than treating a single prior specification as decisive.
 
-safe_bridge <- function(
-    fit,
-    bridge_path,
-    recompile = FALSE
+
+```{r}
+#| label: tbl-exp1-verbal-bf-prior-sensitivity
+#| tbl-cap: "Prior-sensitivity analysis for the RC-only Bayes factor comparison. BF01 > 1 favors the simpler RC-only model without the Grammaticality x Attractor Number interaction."
+
+if (
+    !exists("bf_prior_sens_exp1_verbal") &&
+        file.exists("../../utility/models/bf_exp1_verbal_prior_sensitivity_bridge.csv")
 ) {
-    if (!is.null(bridge_path) && file.exists(bridge_path)) {
-        return(readRDS(bridge_path))
-    }
-    if (is.null(fit)) {
-        stop("Cannot bridge-sample because fit is NULL.")
-    }
-
-    out <- tryCatch(
-        bridgesampling::bridge_sampler(
-            fit,
-            silent = TRUE,
-            recompile = recompile
-        ),
-        error = function(e) {
-            stop(sprintf("bridge_sampler failed: %s", e$message))
-        }
-    )
-
-    if (!is.null(out) && !is.null(bridge_path)) {
-        dir.create(dirname(bridge_path), recursive = TRUE, showWarnings = FALSE)
-        saveRDS(out, bridge_path)
-    }
-    out
+    bf_prior_sens_exp1_verbal <- readr::read_csv(
+        "../../utility/models/bf_exp1_verbal_prior_sensitivity_bridge.csv",
+        show_col_types = FALSE
+    ) %>%
+        dplyr::mutate(
+            Prior_Set = factor(
+                Prior_Set,
+                levels = c("Wide", "Main", "Narrow", "Very Narrow", "Ultra Narrow")
+            ),
+            Fixed_Effect_Prior = sprintf("Normal(0, %.2f)", fixed_sd)
+        ) %>%
+        dplyr::arrange(Prior_Set)
 }
 
-compute_bf01 <- function(bridge_alt, bridge_null) {
-    if (is.null(bridge_alt) || is.null(bridge_null)) {
-        return(NA_real_)
-    }
-    bf10 <- tryCatch(
-        as.numeric(bridgesampling::bf(bridge_alt, bridge_null)$bf),
-        error = function(e) NA_real_
-    )
-    ifelse(is.na(bf10), NA_real_, 1 / bf10)
-}
+if (exists("bf_prior_sens_exp1_verbal")) {
+    bf_prior_sens_exp1_verbal_print <- bf_prior_sens_exp1_verbal %>%
+        dplyr::select(
+            Prior_Set,
+            Fixed_Effect_Prior,
+            Prior_Density_at_0,
+            Prior_P_abs_beta_lt_0_20,
+            BF01_GxA_Display,
+            BF01_GxA_Interpretation
+        ) %>%
+        dplyr::mutate(
+            Prior_Density_at_0 = sprintf("%.2f", Prior_Density_at_0),
+            Prior_P_abs_beta_lt_0_20 = sprintf("%.2f", Prior_P_abs_beta_lt_0_20)
+        ) %>%
+        dplyr::rename(
+            `Prior Set` = Prior_Set,
+            `Prior Details` = Fixed_Effect_Prior,
+            `Prior Density at 0` = Prior_Density_at_0,
+            `Prior P(|beta| < 0.20)` = Prior_P_abs_beta_lt_0_20,
+            `BF01 (G x A)` = BF01_GxA_Display,
+            Interpretation = BF01_GxA_Interpretation
+        )
 
-verbal_full_fit_path <- "../../utility/models/m.exp1.verbal.rds"
-verbal_noGA_fit_path <- "../../utility/models/m.exp1.verbal.noGA.rds"
-
-fit_verbal_full_bf <- if (exists("m.exp1.verbal")) {
-    m.exp1.verbal
-} else {
-    safe_read_fit(verbal_full_fit_path)
-}
-fit_verbal_noGA_bf <- safe_read_fit(verbal_noGA_fit_path)
-
-if (file.exists(bf_cache_path_exp1_verbal) && !bf_force_recompute_exp1_verbal) {
-    bf_exp1_verbal <- readRDS(bf_cache_path_exp1_verbal)
-} else if (
-    !is.null(fit_verbal_full_bf) &&
-        !is.null(fit_verbal_noGA_bf) &&
-        (bf_force_recompute_exp1_verbal || bf_compute_if_missing_exp1_verbal)
-) {
-    bridge_full_verbal <- safe_bridge(
-        fit_verbal_full_bf,
-        "../../utility/models/m.exp1.verbal.bridge.rds",
-        recompile = bridge_recompile_exp1_verbal
-    )
-    bridge_noGA_verbal <- safe_bridge(
-        fit_verbal_noGA_bf,
-        "../../utility/models/m.exp1.verbal.noGA.bridge.rds",
-        recompile = bridge_recompile_exp1_verbal
-    )
-
-    bf_exp1_verbal <- list(
-        bf01 = compute_bf01(bridge_full_verbal, bridge_noGA_verbal),
-        comparison = "RC-only full vs RC-only no-(GxA)"
-    )
-    dir.create(
-        dirname(bf_cache_path_exp1_verbal),
-        recursive = TRUE,
-        showWarnings = FALSE
-    )
-    saveRDS(bf_exp1_verbal, bf_cache_path_exp1_verbal)
-} else {
-    bf_exp1_verbal <- list(
-        bf01 = NA_real_,
-        comparison = "RC-only full vs RC-only no-(GxA)"
-    )
-}
-
-bf01_verbal <- as.numeric(bf_exp1_verbal$bf01)
-bf01_verbal_txt <- format_bf(bf01_verbal)
-bf_verbal_interp <- interpret_bf(bf01_verbal)
-
-if (is.na(bf01_verbal)) {
-    bf_verbal_sentence <- paste(
-        "This BF has not yet been computed.",
-        "Fit ../../utility/models/m.exp1.verbal.noGA.rds and then either set",
-        "bf_compute_if_missing_exp1_verbal <- TRUE once or place",
-        "bf_exp1_verbal_bridge.rds in utility/models."
-    )
-} else {
-    bf_verbal_sentence <- paste0(
-        "We found BF~01~ = ",
-        bf01_verbal_txt,
-        ", indicating ",
-        bf_verbal_interp,
-        " for the RC-only null model without G x A."
+    knitr::kable(
+        bf_prior_sens_exp1_verbal_print,
+        booktabs = TRUE,
+        align = c("l", "l", "c", "c", "c", "l")
     )
 }
 ```
 
-This BF targets the verbal null directly. We compare the RC-only model with a Grammaticality x Attractor Number interaction against an otherwise matched RC-only model without that interaction. Here the null hypothesis is that there is no attraction in RC conditions (G x A = 0), so BF~01~ > 1 favors the null model and BF~01~ < 1 favors the model with verbal attraction.
-
-`r bf_verbal_sentence`
+Table @tbl-exp1-verbal-bf-prior-sensitivity can be read from left to right. The first two numeric columns (`Prior Density at 0` and `Prior P(|beta| < 0.20)`) indicate how strongly each prior concentrates mass near no effect, with larger values reflecting a more skeptical prior. The `BF01 (G x A)` column reports the evidence for the simpler RC-only model without the Grammaticality x Attractor Number interaction, so values greater than 1 favor the null model and values less than 1 favor the interaction model. The `Interpretation` column maps these values onto the conventional evidence categories following Jeffreys (1961, as cited in @LeeWagenmakers2014). In Table @tbl-exp1-verbal-bf-prior-sensitivity, BF~01~ favors the null model for all five priors, ranging from `r bf_prior_range_txt`; the weakest support is under the `r bf_prior_min_label` prior and the strongest support is under the `r bf_prior_max_label` prior. This means that the null conclusion is stable in direction across priors, although the strength of evidence varies from anecdotal to strong depending on prior width.
 
 
-
-
-
-To make this pattern directly interpretable at the condition level, we then report model-implied marginal attraction contrasts. These summaries mirror the same conclusion: strong negative attraction effects for nominal conditions (`r get_value(exp1_atts, text, contrast == "Gen-Current")`; `r get_value(exp1_atts, text, contrast == "Gen-TL24")`), no attraction for verbal conditions (`r get_value(exp1_atts, text, contrast == "RC")`), and no clear Gen-Current vs Gen-TL24 difference in attraction (`r get_value(exp1_atts, text, contrast == "GenCurrent - GenTL24")`). We also observe lower overall acceptability in the current nominal dataset relative to @TurkLogacev2024 (`r get_value(overall_df, text)`), indicating a distributional shift in baseline acceptability without a corresponding shift in attraction magnitude.
+To make this pattern directly interpretable at the condition level, we next derived model-implied attraction and acceptability contrasts from posterior draws of the full Experiment 1 model. Specifically, we extracted the posterior draws for the baseline Grammaticality x Attractor Number interaction (`G x A`) and the two three-way interaction terms (`G x A x T1`, `G x A x T2`), and then combined them using the Helmert-coding weights in Table @tbl-exp1-contrast-coding to recover the implied attraction effect separately for RC, Gen-Current, and Gen-TL24 conditions. We summarize each derived contrast by its posterior mean, 95% credible interval, and posterior probability of being negative, where more negative values indicate stronger attraction. These derived contrasts again show strong negative attraction effects for the nominal conditions (`r get_value(exp1_atts, text, contrast == "Gen-Current")`; `r get_value(exp1_atts, text, contrast == "Gen-TL24")`), little to no attraction for the verbal RC condition (`r get_value(exp1_atts, text, contrast == "RC")`), and no clear Gen-Current vs Gen-TL24 difference in attraction (`r get_value(exp1_atts, text, contrast == "GenCurrent - GenTL24")`). Separately, to assess the shift in baseline acceptability across the two nominal datasets, we extracted the posterior for the main effect of the `GenCurrent_vs_GenTL24` attractor-type contrast from the same full model; this showed lower overall acceptability in the current nominal dataset relative to @TurkLogacev2024 (`r get_value(overall_df, text)`), indicating a distributional shift in baseline acceptability without a corresponding shift in attraction magnitude.
 
 ```{r}
 #| label: fig-exp1-fixed-effects
@@ -1343,11 +1294,11 @@ p_between
 
 ## Discussion
 
-<!-- CHECK THIS: Para 1 is dense but okay stylistically. "The answer is no" is punchy and human. The sentence starting "We confirmed that this dissociation..." is long but natural. Main AI tell: the semicolon before "we return to this" — reads like an AI transition. Consider just ending the paragraph. -->
-Experiment 1 tested whether phonological overlap between nominal and verbal reflexes of plural marking in Turkish is sufficient to induce agreement attraction. The answer is no. Participants reliably rejected ungrammatical sentences with plural-marked verbal attractors, while showing canonical attraction in the nominal-attractor conditions that replicate prior work [@TurkLogacev2024; @LagoEtAl2019]. We confirmed that this dissociation is not an artifact of the mixed design: a follow-up model restricted to verbal-attractor trials showed no Grammaticality × Attractor Number interaction. This pattern is more consistent with accounts in which attraction depends on controller-relevant cues rather than surface-form overlap alone [@LagoEtAl2019]; we return to this in the General Discussion.
 
-<!-- CHECK THIS: Para 2 is mostly fine. "A potential concern" opener is slightly AI-formulaic but common in academic writing. The parenthetical "(we discuss the implications...)" is a bit AI — consider moving the forward reference to its own sentence or cutting it. -->
-A potential concern is that the mixed design---combining canonical nominal attractors with verbal ones---may have influenced response patterns in ways that obscure genuine verbal attraction. The presence of robust nominal-attractor items could have shifted participant strategies, either masking weaker verbal effects or encouraging direct comparison between the two attractor types. Moreover, overall acceptability for nominal-attractor items was lower in the present study than in @TurkLogacev2024, suggesting that the experimental context modulated response patterns (we discuss the implications of this distributional shift further in the General Discussion). To determine whether the absence of verbal attraction is genuine or a distributional artifact of the mixed design, Experiment 2 removed all nominal attractors, testing whether the null effect persists when verbal morphology is the sole potential source of interference.
+Experiment 1 tested whether phonological overlap between nominal and verbal plural marking in Turkish is sufficient to induce agreement attraction. Our results did not show evidence for verbal attraction. Participants reliably rejected ungrammatical sentences with plural-marked verbal attractors, while showing canonical attraction in the nominal-attractor conditions that replicate prior work [@TurkLogacev2024; @LagoEtAl2019]. We confirmed that this dissociation is not an artifact of the mixed design: a follow-up model restricted to verbal-attractor trials showed no interaction between Grammaticality and Attractor Number. Our Bayes Factor and prior sensitivity analysis also suggested that the models without the interactions were preferred over the models with interaction included. This pattern is more consistent with accounts in which attraction depends on controller-relevant cues rather than surface-form overlap alone [@LagoEtAl2019]; we return to this in the General Discussion.
+
+
+A potential concern is that our mixed design that combines canonical nominal attractors with verbal ones. The presence of robust nominal-attractor items may have influenced response patterns in ways that obscure genuine verbal attraction. The presence of robust nominal-attractor items could have shifted participant strategies, either masking weaker verbal effects or encouraging direct comparison between the two attractor types. Even though we did not see the reverse of such effect on the attraction in nominal conditions, overall acceptability for nominal items was lower in the present study than in @TurkLogacev2024, suggesting that the experimental context might have modulated response patterns (we discuss the implications of this distributional shift further in the General Discussion). To determine whether the absence of verbal attraction is genuine or a distributional artifact of the mixed design, Experiment 2 removed all nominal attractors, testing whether the null effect persists when verbal morphology is the sole potential source of interference.
 
 <!-- PREVIOUS LONGER VERSION (moved theoretical interpretation and distributional effects to 04_discussion.qmd):
 
